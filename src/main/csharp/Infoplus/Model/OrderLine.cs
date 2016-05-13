@@ -22,61 +22,61 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="OrderLine" /> class.
         /// Initializes a new instance of the <see cref="OrderLine" />class.
         /// </summary>
-        /// <param name="AccountCode">AccountCode (required).</param>
-        /// <param name="LowStockContact">LowStockContact (required).</param>
-        /// <param name="MajorGroup">MajorGroup (required).</param>
-        /// <param name="SubGroup">SubGroup (required).</param>
-        /// <param name="ProductionCode">ProductionCode.</param>
-        /// <param name="SummaryCode">SummaryCode (required).</param>
+        /// <param name="ItemAccountCodeId">ItemAccountCodeId (required).</param>
+        /// <param name="ItemLegacyLowStockContactId">ItemLegacyLowStockContactId (required).</param>
+        /// <param name="ItemMajorGroupId">ItemMajorGroupId (required).</param>
+        /// <param name="ItemSubGroupId">ItemSubGroupId (required).</param>
+        /// <param name="ItemProductCodeId">ItemProductCodeId.</param>
+        /// <param name="ItemSummaryCodeId">ItemSummaryCodeId (required).</param>
 
-        public OrderLine(string AccountCode = null, string LowStockContact = null, string MajorGroup = null, string SubGroup = null, string ProductionCode = null, string SummaryCode = null)
+        public OrderLine(int? ItemAccountCodeId = null, int? ItemLegacyLowStockContactId = null, int? ItemMajorGroupId = null, int? ItemSubGroupId = null, int? ItemProductCodeId = null, int? ItemSummaryCodeId = null)
         {
-            // to ensure "AccountCode" is required (not null)
-            if (AccountCode == null)
+            // to ensure "ItemAccountCodeId" is required (not null)
+            if (ItemAccountCodeId == null)
             {
-                throw new InvalidDataException("AccountCode is a required property for OrderLine and cannot be null");
+                throw new InvalidDataException("ItemAccountCodeId is a required property for OrderLine and cannot be null");
             }
             else
             {
-                this.AccountCode = AccountCode;
+                this.ItemAccountCodeId = ItemAccountCodeId;
             }
-            // to ensure "LowStockContact" is required (not null)
-            if (LowStockContact == null)
+            // to ensure "ItemLegacyLowStockContactId" is required (not null)
+            if (ItemLegacyLowStockContactId == null)
             {
-                throw new InvalidDataException("LowStockContact is a required property for OrderLine and cannot be null");
+                throw new InvalidDataException("ItemLegacyLowStockContactId is a required property for OrderLine and cannot be null");
             }
             else
             {
-                this.LowStockContact = LowStockContact;
+                this.ItemLegacyLowStockContactId = ItemLegacyLowStockContactId;
             }
-            // to ensure "MajorGroup" is required (not null)
-            if (MajorGroup == null)
+            // to ensure "ItemMajorGroupId" is required (not null)
+            if (ItemMajorGroupId == null)
             {
-                throw new InvalidDataException("MajorGroup is a required property for OrderLine and cannot be null");
+                throw new InvalidDataException("ItemMajorGroupId is a required property for OrderLine and cannot be null");
             }
             else
             {
-                this.MajorGroup = MajorGroup;
+                this.ItemMajorGroupId = ItemMajorGroupId;
             }
-            // to ensure "SubGroup" is required (not null)
-            if (SubGroup == null)
+            // to ensure "ItemSubGroupId" is required (not null)
+            if (ItemSubGroupId == null)
             {
-                throw new InvalidDataException("SubGroup is a required property for OrderLine and cannot be null");
+                throw new InvalidDataException("ItemSubGroupId is a required property for OrderLine and cannot be null");
             }
             else
             {
-                this.SubGroup = SubGroup;
+                this.ItemSubGroupId = ItemSubGroupId;
             }
-            // to ensure "SummaryCode" is required (not null)
-            if (SummaryCode == null)
+            // to ensure "ItemSummaryCodeId" is required (not null)
+            if (ItemSummaryCodeId == null)
             {
-                throw new InvalidDataException("SummaryCode is a required property for OrderLine and cannot be null");
+                throw new InvalidDataException("ItemSummaryCodeId is a required property for OrderLine and cannot be null");
             }
             else
             {
-                this.SummaryCode = SummaryCode;
+                this.ItemSummaryCodeId = ItemSummaryCodeId;
             }
-            this.ProductionCode = ProductionCode;
+            this.ItemProductCodeId = ItemProductCodeId;
             
         }
         
@@ -220,40 +220,40 @@ namespace Infoplus.Model
         public string Sector { get; private set; }
     
         /// <summary>
-        /// Gets or Sets AccountCode
+        /// Gets or Sets ItemAccountCodeId
         /// </summary>
-        [DataMember(Name="accountCode", EmitDefaultValue=false)]
-        public string AccountCode { get; set; }
+        [DataMember(Name="itemAccountCodeId", EmitDefaultValue=false)]
+        public int? ItemAccountCodeId { get; set; }
     
         /// <summary>
-        /// Gets or Sets LowStockContact
+        /// Gets or Sets ItemLegacyLowStockContactId
         /// </summary>
-        [DataMember(Name="lowStockContact", EmitDefaultValue=false)]
-        public string LowStockContact { get; set; }
+        [DataMember(Name="itemLegacyLowStockContactId", EmitDefaultValue=false)]
+        public int? ItemLegacyLowStockContactId { get; set; }
     
         /// <summary>
-        /// Gets or Sets MajorGroup
+        /// Gets or Sets ItemMajorGroupId
         /// </summary>
-        [DataMember(Name="majorGroup", EmitDefaultValue=false)]
-        public string MajorGroup { get; set; }
+        [DataMember(Name="itemMajorGroupId", EmitDefaultValue=false)]
+        public int? ItemMajorGroupId { get; set; }
     
         /// <summary>
-        /// Gets or Sets SubGroup
+        /// Gets or Sets ItemSubGroupId
         /// </summary>
-        [DataMember(Name="subGroup", EmitDefaultValue=false)]
-        public string SubGroup { get; set; }
+        [DataMember(Name="itemSubGroupId", EmitDefaultValue=false)]
+        public int? ItemSubGroupId { get; set; }
     
         /// <summary>
-        /// Gets or Sets ProductionCode
+        /// Gets or Sets ItemProductCodeId
         /// </summary>
-        [DataMember(Name="productionCode", EmitDefaultValue=false)]
-        public string ProductionCode { get; set; }
+        [DataMember(Name="itemProductCodeId", EmitDefaultValue=false)]
+        public int? ItemProductCodeId { get; set; }
     
         /// <summary>
-        /// Gets or Sets SummaryCode
+        /// Gets or Sets ItemSummaryCodeId
         /// </summary>
-        [DataMember(Name="summaryCode", EmitDefaultValue=false)]
-        public string SummaryCode { get; set; }
+        [DataMember(Name="itemSummaryCodeId", EmitDefaultValue=false)]
+        public int? ItemSummaryCodeId { get; set; }
     
         /// <summary>
         /// Returns the string presentation of the object
@@ -286,12 +286,12 @@ namespace Infoplus.Model
             sb.Append("  ItemWeight: ").Append(ItemWeight).Append("\n");
             sb.Append("  WeightPerWrap: ").Append(WeightPerWrap).Append("\n");
             sb.Append("  Sector: ").Append(Sector).Append("\n");
-            sb.Append("  AccountCode: ").Append(AccountCode).Append("\n");
-            sb.Append("  LowStockContact: ").Append(LowStockContact).Append("\n");
-            sb.Append("  MajorGroup: ").Append(MajorGroup).Append("\n");
-            sb.Append("  SubGroup: ").Append(SubGroup).Append("\n");
-            sb.Append("  ProductionCode: ").Append(ProductionCode).Append("\n");
-            sb.Append("  SummaryCode: ").Append(SummaryCode).Append("\n");
+            sb.Append("  ItemAccountCodeId: ").Append(ItemAccountCodeId).Append("\n");
+            sb.Append("  ItemLegacyLowStockContactId: ").Append(ItemLegacyLowStockContactId).Append("\n");
+            sb.Append("  ItemMajorGroupId: ").Append(ItemMajorGroupId).Append("\n");
+            sb.Append("  ItemSubGroupId: ").Append(ItemSubGroupId).Append("\n");
+            sb.Append("  ItemProductCodeId: ").Append(ItemProductCodeId).Append("\n");
+            sb.Append("  ItemSummaryCodeId: ").Append(ItemSummaryCodeId).Append("\n");
             
             sb.Append("}\n");
             return sb.ToString();
@@ -445,34 +445,34 @@ namespace Infoplus.Model
                     this.Sector.Equals(other.Sector)
                 ) && 
                 (
-                    this.AccountCode == other.AccountCode ||
-                    this.AccountCode != null &&
-                    this.AccountCode.Equals(other.AccountCode)
+                    this.ItemAccountCodeId == other.ItemAccountCodeId ||
+                    this.ItemAccountCodeId != null &&
+                    this.ItemAccountCodeId.Equals(other.ItemAccountCodeId)
                 ) && 
                 (
-                    this.LowStockContact == other.LowStockContact ||
-                    this.LowStockContact != null &&
-                    this.LowStockContact.Equals(other.LowStockContact)
+                    this.ItemLegacyLowStockContactId == other.ItemLegacyLowStockContactId ||
+                    this.ItemLegacyLowStockContactId != null &&
+                    this.ItemLegacyLowStockContactId.Equals(other.ItemLegacyLowStockContactId)
                 ) && 
                 (
-                    this.MajorGroup == other.MajorGroup ||
-                    this.MajorGroup != null &&
-                    this.MajorGroup.Equals(other.MajorGroup)
+                    this.ItemMajorGroupId == other.ItemMajorGroupId ||
+                    this.ItemMajorGroupId != null &&
+                    this.ItemMajorGroupId.Equals(other.ItemMajorGroupId)
                 ) && 
                 (
-                    this.SubGroup == other.SubGroup ||
-                    this.SubGroup != null &&
-                    this.SubGroup.Equals(other.SubGroup)
+                    this.ItemSubGroupId == other.ItemSubGroupId ||
+                    this.ItemSubGroupId != null &&
+                    this.ItemSubGroupId.Equals(other.ItemSubGroupId)
                 ) && 
                 (
-                    this.ProductionCode == other.ProductionCode ||
-                    this.ProductionCode != null &&
-                    this.ProductionCode.Equals(other.ProductionCode)
+                    this.ItemProductCodeId == other.ItemProductCodeId ||
+                    this.ItemProductCodeId != null &&
+                    this.ItemProductCodeId.Equals(other.ItemProductCodeId)
                 ) && 
                 (
-                    this.SummaryCode == other.SummaryCode ||
-                    this.SummaryCode != null &&
-                    this.SummaryCode.Equals(other.SummaryCode)
+                    this.ItemSummaryCodeId == other.ItemSummaryCodeId ||
+                    this.ItemSummaryCodeId != null &&
+                    this.ItemSummaryCodeId.Equals(other.ItemSummaryCodeId)
                 );
         }
 
@@ -557,23 +557,23 @@ namespace Infoplus.Model
                 if (this.Sector != null)
                     hash = hash * 59 + this.Sector.GetHashCode();
                 
-                if (this.AccountCode != null)
-                    hash = hash * 59 + this.AccountCode.GetHashCode();
+                if (this.ItemAccountCodeId != null)
+                    hash = hash * 59 + this.ItemAccountCodeId.GetHashCode();
                 
-                if (this.LowStockContact != null)
-                    hash = hash * 59 + this.LowStockContact.GetHashCode();
+                if (this.ItemLegacyLowStockContactId != null)
+                    hash = hash * 59 + this.ItemLegacyLowStockContactId.GetHashCode();
                 
-                if (this.MajorGroup != null)
-                    hash = hash * 59 + this.MajorGroup.GetHashCode();
+                if (this.ItemMajorGroupId != null)
+                    hash = hash * 59 + this.ItemMajorGroupId.GetHashCode();
                 
-                if (this.SubGroup != null)
-                    hash = hash * 59 + this.SubGroup.GetHashCode();
+                if (this.ItemSubGroupId != null)
+                    hash = hash * 59 + this.ItemSubGroupId.GetHashCode();
                 
-                if (this.ProductionCode != null)
-                    hash = hash * 59 + this.ProductionCode.GetHashCode();
+                if (this.ItemProductCodeId != null)
+                    hash = hash * 59 + this.ItemProductCodeId.GetHashCode();
                 
-                if (this.SummaryCode != null)
-                    hash = hash * 59 + this.SummaryCode.GetHashCode();
+                if (this.ItemSummaryCodeId != null)
+                    hash = hash * 59 + this.ItemSummaryCodeId.GetHashCode();
                 
                 return hash;
             }

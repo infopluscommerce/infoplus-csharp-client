@@ -25,10 +25,10 @@ namespace Infoplus.Model
         /// <param name="SecondDuration">SecondDuration (required).</param>
         /// <param name="UserId">UserId (required).</param>
         /// <param name="LobId">LobId (required).</param>
-        /// <param name="JobType">JobType (required).</param>
+        /// <param name="JobTypeId">JobTypeId (required).</param>
         /// <param name="Note">Note.</param>
 
-        public JobTime(int? SecondDuration = null, int? UserId = null, int? LobId = null, string JobType = null, string Note = null)
+        public JobTime(int? SecondDuration = null, int? UserId = null, int? LobId = null, int? JobTypeId = null, string Note = null)
         {
             // to ensure "SecondDuration" is required (not null)
             if (SecondDuration == null)
@@ -57,14 +57,14 @@ namespace Infoplus.Model
             {
                 this.LobId = LobId;
             }
-            // to ensure "JobType" is required (not null)
-            if (JobType == null)
+            // to ensure "JobTypeId" is required (not null)
+            if (JobTypeId == null)
             {
-                throw new InvalidDataException("JobType is a required property for JobTime and cannot be null");
+                throw new InvalidDataException("JobTypeId is a required property for JobTime and cannot be null");
             }
             else
             {
-                this.JobType = JobType;
+                this.JobTypeId = JobTypeId;
             }
             this.Note = Note;
             
@@ -114,10 +114,10 @@ namespace Infoplus.Model
         public int? LobId { get; set; }
     
         /// <summary>
-        /// Gets or Sets JobType
+        /// Gets or Sets JobTypeId
         /// </summary>
-        [DataMember(Name="jobType", EmitDefaultValue=false)]
-        public string JobType { get; set; }
+        [DataMember(Name="jobTypeId", EmitDefaultValue=false)]
+        public int? JobTypeId { get; set; }
     
         /// <summary>
         /// Gets or Sets Note
@@ -140,7 +140,7 @@ namespace Infoplus.Model
             sb.Append("  Date: ").Append(Date).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
-            sb.Append("  JobType: ").Append(JobType).Append("\n");
+            sb.Append("  JobTypeId: ").Append(JobTypeId).Append("\n");
             sb.Append("  Note: ").Append(Note).Append("\n");
             
             sb.Append("}\n");
@@ -215,9 +215,9 @@ namespace Infoplus.Model
                     this.LobId.Equals(other.LobId)
                 ) && 
                 (
-                    this.JobType == other.JobType ||
-                    this.JobType != null &&
-                    this.JobType.Equals(other.JobType)
+                    this.JobTypeId == other.JobTypeId ||
+                    this.JobTypeId != null &&
+                    this.JobTypeId.Equals(other.JobTypeId)
                 ) && 
                 (
                     this.Note == other.Note ||
@@ -259,8 +259,8 @@ namespace Infoplus.Model
                 if (this.LobId != null)
                     hash = hash * 59 + this.LobId.GetHashCode();
                 
-                if (this.JobType != null)
-                    hash = hash * 59 + this.JobType.GetHashCode();
+                if (this.JobTypeId != null)
+                    hash = hash * 59 + this.JobTypeId.GetHashCode();
                 
                 if (this.Note != null)
                     hash = hash * 59 + this.Note.GetHashCode();

@@ -210,6 +210,12 @@ namespace Infoplus.Model
         public int? UserId { get; set; }
     
         /// <summary>
+        /// Gets or Sets LobId
+        /// </summary>
+        [DataMember(Name="lobId", EmitDefaultValue=false)]
+        public int? LobId { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets WorkBatchId
         /// </summary>
         [DataMember(Name="workBatchId", EmitDefaultValue=false)]
@@ -236,6 +242,7 @@ namespace Infoplus.Model
             sb.Append("  PriorityCode: ").Append(PriorityCode).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  WorkBatchId: ").Append(WorkBatchId).Append("\n");
             
             sb.Append("}\n");
@@ -340,6 +347,11 @@ namespace Infoplus.Model
                     this.UserId.Equals(other.UserId)
                 ) && 
                 (
+                    this.LobId == other.LobId ||
+                    this.LobId != null &&
+                    this.LobId.Equals(other.LobId)
+                ) && 
+                (
                     this.WorkBatchId == other.WorkBatchId ||
                     this.WorkBatchId != null &&
                     this.WorkBatchId.Equals(other.WorkBatchId)
@@ -396,6 +408,9 @@ namespace Infoplus.Model
                 
                 if (this.UserId != null)
                     hash = hash * 59 + this.UserId.GetHashCode();
+                
+                if (this.LobId != null)
+                    hash = hash * 59 + this.LobId.GetHashCode();
                 
                 if (this.WorkBatchId != null)
                     hash = hash * 59 + this.WorkBatchId.GetHashCode();

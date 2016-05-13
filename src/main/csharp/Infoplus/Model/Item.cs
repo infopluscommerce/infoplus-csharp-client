@@ -22,15 +22,15 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="Item" /> class.
         /// Initializes a new instance of the <see cref="Item" />class.
         /// </summary>
-        /// <param name="AccountCode">AccountCode.</param>
+        /// <param name="AccountCodeId">AccountCodeId.</param>
         /// <param name="LowStockContactId">LowStockContactId.</param>
-        /// <param name="LegacyLowStockContact">LegacyLowStockContact.</param>
-        /// <param name="LowStockCode">LowStockCode.</param>
-        /// <param name="MajorGroup">MajorGroup (required).</param>
-        /// <param name="SubGroup">SubGroup (required).</param>
-        /// <param name="ProductionCode">ProductionCode.</param>
-        /// <param name="SummaryCode">SummaryCode.</param>
-        /// <param name="Buyer">Buyer.</param>
+        /// <param name="LegacyLowLevelContactId">LegacyLowLevelContactId.</param>
+        /// <param name="LowStockCodeId">LowStockCodeId.</param>
+        /// <param name="MajorGroupId">MajorGroupId (required).</param>
+        /// <param name="SubGroupId">SubGroupId (required).</param>
+        /// <param name="ProductCodeId">ProductCodeId.</param>
+        /// <param name="SummaryCodeId">SummaryCodeId.</param>
+        /// <param name="BuyerId">BuyerId.</param>
         /// <param name="LobId">LobId (required).</param>
         /// <param name="Sku">Sku (required).</param>
         /// <param name="VendorSKU">VendorSKU.</param>
@@ -80,25 +80,25 @@ namespace Infoplus.Model
         /// <param name="AllocationRule">AllocationRule (required).</param>
         /// <param name="Hazmat">Hazmat (required).</param>
 
-        public Item(string AccountCode = null, int? LowStockContactId = null, string LegacyLowStockContact = null, string LowStockCode = null, string MajorGroup = null, string SubGroup = null, string ProductionCode = null, string SummaryCode = null, string Buyer = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? ListPrice = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string Hazmat = null)
+        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? ListPrice = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string Hazmat = null)
         {
-            // to ensure "MajorGroup" is required (not null)
-            if (MajorGroup == null)
+            // to ensure "MajorGroupId" is required (not null)
+            if (MajorGroupId == null)
             {
-                throw new InvalidDataException("MajorGroup is a required property for Item and cannot be null");
+                throw new InvalidDataException("MajorGroupId is a required property for Item and cannot be null");
             }
             else
             {
-                this.MajorGroup = MajorGroup;
+                this.MajorGroupId = MajorGroupId;
             }
-            // to ensure "SubGroup" is required (not null)
-            if (SubGroup == null)
+            // to ensure "SubGroupId" is required (not null)
+            if (SubGroupId == null)
             {
-                throw new InvalidDataException("SubGroup is a required property for Item and cannot be null");
+                throw new InvalidDataException("SubGroupId is a required property for Item and cannot be null");
             }
             else
             {
-                this.SubGroup = SubGroup;
+                this.SubGroupId = SubGroupId;
             }
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -289,13 +289,13 @@ namespace Infoplus.Model
             {
                 this.Hazmat = Hazmat;
             }
-            this.AccountCode = AccountCode;
+            this.AccountCodeId = AccountCodeId;
             this.LowStockContactId = LowStockContactId;
-            this.LegacyLowStockContact = LegacyLowStockContact;
-            this.LowStockCode = LowStockCode;
-            this.ProductionCode = ProductionCode;
-            this.SummaryCode = SummaryCode;
-            this.Buyer = Buyer;
+            this.LegacyLowLevelContactId = LegacyLowLevelContactId;
+            this.LowStockCodeId = LowStockCodeId;
+            this.ProductCodeId = ProductCodeId;
+            this.SummaryCodeId = SummaryCodeId;
+            this.BuyerId = BuyerId;
             this.VendorSKU = VendorSKU;
             this.Upc = Upc;
             this.PackingSlipDescription = PackingSlipDescription;
@@ -334,10 +334,10 @@ namespace Infoplus.Model
         public int? Id { get; private set; }
     
         /// <summary>
-        /// Gets or Sets AccountCode
+        /// Gets or Sets AccountCodeId
         /// </summary>
-        [DataMember(Name="accountCode", EmitDefaultValue=false)]
-        public string AccountCode { get; set; }
+        [DataMember(Name="accountCodeId", EmitDefaultValue=false)]
+        public int? AccountCodeId { get; set; }
     
         /// <summary>
         /// Gets or Sets LowStockContactId
@@ -346,46 +346,46 @@ namespace Infoplus.Model
         public int? LowStockContactId { get; set; }
     
         /// <summary>
-        /// Gets or Sets LegacyLowStockContact
+        /// Gets or Sets LegacyLowLevelContactId
         /// </summary>
-        [DataMember(Name="legacyLowStockContact", EmitDefaultValue=false)]
-        public string LegacyLowStockContact { get; set; }
+        [DataMember(Name="legacyLowLevelContactId", EmitDefaultValue=false)]
+        public int? LegacyLowLevelContactId { get; set; }
     
         /// <summary>
-        /// Gets or Sets LowStockCode
+        /// Gets or Sets LowStockCodeId
         /// </summary>
-        [DataMember(Name="lowStockCode", EmitDefaultValue=false)]
-        public string LowStockCode { get; set; }
+        [DataMember(Name="lowStockCodeId", EmitDefaultValue=false)]
+        public int? LowStockCodeId { get; set; }
     
         /// <summary>
-        /// Gets or Sets MajorGroup
+        /// Gets or Sets MajorGroupId
         /// </summary>
-        [DataMember(Name="majorGroup", EmitDefaultValue=false)]
-        public string MajorGroup { get; set; }
+        [DataMember(Name="majorGroupId", EmitDefaultValue=false)]
+        public int? MajorGroupId { get; set; }
     
         /// <summary>
-        /// Gets or Sets SubGroup
+        /// Gets or Sets SubGroupId
         /// </summary>
-        [DataMember(Name="subGroup", EmitDefaultValue=false)]
-        public string SubGroup { get; set; }
+        [DataMember(Name="subGroupId", EmitDefaultValue=false)]
+        public int? SubGroupId { get; set; }
     
         /// <summary>
-        /// Gets or Sets ProductionCode
+        /// Gets or Sets ProductCodeId
         /// </summary>
-        [DataMember(Name="productionCode", EmitDefaultValue=false)]
-        public string ProductionCode { get; set; }
+        [DataMember(Name="productCodeId", EmitDefaultValue=false)]
+        public int? ProductCodeId { get; set; }
     
         /// <summary>
-        /// Gets or Sets SummaryCode
+        /// Gets or Sets SummaryCodeId
         /// </summary>
-        [DataMember(Name="summaryCode", EmitDefaultValue=false)]
-        public string SummaryCode { get; set; }
+        [DataMember(Name="summaryCodeId", EmitDefaultValue=false)]
+        public int? SummaryCodeId { get; set; }
     
         /// <summary>
-        /// Gets or Sets Buyer
+        /// Gets or Sets BuyerId
         /// </summary>
-        [DataMember(Name="buyer", EmitDefaultValue=false)]
-        public string Buyer { get; set; }
+        [DataMember(Name="buyerId", EmitDefaultValue=false)]
+        public int? BuyerId { get; set; }
     
         /// <summary>
         /// Gets or Sets LobId
@@ -702,15 +702,15 @@ namespace Infoplus.Model
             var sb = new StringBuilder();
             sb.Append("class Item {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  AccountCode: ").Append(AccountCode).Append("\n");
+            sb.Append("  AccountCodeId: ").Append(AccountCodeId).Append("\n");
             sb.Append("  LowStockContactId: ").Append(LowStockContactId).Append("\n");
-            sb.Append("  LegacyLowStockContact: ").Append(LegacyLowStockContact).Append("\n");
-            sb.Append("  LowStockCode: ").Append(LowStockCode).Append("\n");
-            sb.Append("  MajorGroup: ").Append(MajorGroup).Append("\n");
-            sb.Append("  SubGroup: ").Append(SubGroup).Append("\n");
-            sb.Append("  ProductionCode: ").Append(ProductionCode).Append("\n");
-            sb.Append("  SummaryCode: ").Append(SummaryCode).Append("\n");
-            sb.Append("  Buyer: ").Append(Buyer).Append("\n");
+            sb.Append("  LegacyLowLevelContactId: ").Append(LegacyLowLevelContactId).Append("\n");
+            sb.Append("  LowStockCodeId: ").Append(LowStockCodeId).Append("\n");
+            sb.Append("  MajorGroupId: ").Append(MajorGroupId).Append("\n");
+            sb.Append("  SubGroupId: ").Append(SubGroupId).Append("\n");
+            sb.Append("  ProductCodeId: ").Append(ProductCodeId).Append("\n");
+            sb.Append("  SummaryCodeId: ").Append(SummaryCodeId).Append("\n");
+            sb.Append("  BuyerId: ").Append(BuyerId).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
             sb.Append("  VendorSKU: ").Append(VendorSKU).Append("\n");
@@ -805,9 +805,9 @@ namespace Infoplus.Model
                     this.Id.Equals(other.Id)
                 ) && 
                 (
-                    this.AccountCode == other.AccountCode ||
-                    this.AccountCode != null &&
-                    this.AccountCode.Equals(other.AccountCode)
+                    this.AccountCodeId == other.AccountCodeId ||
+                    this.AccountCodeId != null &&
+                    this.AccountCodeId.Equals(other.AccountCodeId)
                 ) && 
                 (
                     this.LowStockContactId == other.LowStockContactId ||
@@ -815,39 +815,39 @@ namespace Infoplus.Model
                     this.LowStockContactId.Equals(other.LowStockContactId)
                 ) && 
                 (
-                    this.LegacyLowStockContact == other.LegacyLowStockContact ||
-                    this.LegacyLowStockContact != null &&
-                    this.LegacyLowStockContact.Equals(other.LegacyLowStockContact)
+                    this.LegacyLowLevelContactId == other.LegacyLowLevelContactId ||
+                    this.LegacyLowLevelContactId != null &&
+                    this.LegacyLowLevelContactId.Equals(other.LegacyLowLevelContactId)
                 ) && 
                 (
-                    this.LowStockCode == other.LowStockCode ||
-                    this.LowStockCode != null &&
-                    this.LowStockCode.Equals(other.LowStockCode)
+                    this.LowStockCodeId == other.LowStockCodeId ||
+                    this.LowStockCodeId != null &&
+                    this.LowStockCodeId.Equals(other.LowStockCodeId)
                 ) && 
                 (
-                    this.MajorGroup == other.MajorGroup ||
-                    this.MajorGroup != null &&
-                    this.MajorGroup.Equals(other.MajorGroup)
+                    this.MajorGroupId == other.MajorGroupId ||
+                    this.MajorGroupId != null &&
+                    this.MajorGroupId.Equals(other.MajorGroupId)
                 ) && 
                 (
-                    this.SubGroup == other.SubGroup ||
-                    this.SubGroup != null &&
-                    this.SubGroup.Equals(other.SubGroup)
+                    this.SubGroupId == other.SubGroupId ||
+                    this.SubGroupId != null &&
+                    this.SubGroupId.Equals(other.SubGroupId)
                 ) && 
                 (
-                    this.ProductionCode == other.ProductionCode ||
-                    this.ProductionCode != null &&
-                    this.ProductionCode.Equals(other.ProductionCode)
+                    this.ProductCodeId == other.ProductCodeId ||
+                    this.ProductCodeId != null &&
+                    this.ProductCodeId.Equals(other.ProductCodeId)
                 ) && 
                 (
-                    this.SummaryCode == other.SummaryCode ||
-                    this.SummaryCode != null &&
-                    this.SummaryCode.Equals(other.SummaryCode)
+                    this.SummaryCodeId == other.SummaryCodeId ||
+                    this.SummaryCodeId != null &&
+                    this.SummaryCodeId.Equals(other.SummaryCodeId)
                 ) && 
                 (
-                    this.Buyer == other.Buyer ||
-                    this.Buyer != null &&
-                    this.Buyer.Equals(other.Buyer)
+                    this.BuyerId == other.BuyerId ||
+                    this.BuyerId != null &&
+                    this.BuyerId.Equals(other.BuyerId)
                 ) && 
                 (
                     this.LobId == other.LobId ||
@@ -1121,32 +1121,32 @@ namespace Infoplus.Model
                 if (this.Id != null)
                     hash = hash * 59 + this.Id.GetHashCode();
                 
-                if (this.AccountCode != null)
-                    hash = hash * 59 + this.AccountCode.GetHashCode();
+                if (this.AccountCodeId != null)
+                    hash = hash * 59 + this.AccountCodeId.GetHashCode();
                 
                 if (this.LowStockContactId != null)
                     hash = hash * 59 + this.LowStockContactId.GetHashCode();
                 
-                if (this.LegacyLowStockContact != null)
-                    hash = hash * 59 + this.LegacyLowStockContact.GetHashCode();
+                if (this.LegacyLowLevelContactId != null)
+                    hash = hash * 59 + this.LegacyLowLevelContactId.GetHashCode();
                 
-                if (this.LowStockCode != null)
-                    hash = hash * 59 + this.LowStockCode.GetHashCode();
+                if (this.LowStockCodeId != null)
+                    hash = hash * 59 + this.LowStockCodeId.GetHashCode();
                 
-                if (this.MajorGroup != null)
-                    hash = hash * 59 + this.MajorGroup.GetHashCode();
+                if (this.MajorGroupId != null)
+                    hash = hash * 59 + this.MajorGroupId.GetHashCode();
                 
-                if (this.SubGroup != null)
-                    hash = hash * 59 + this.SubGroup.GetHashCode();
+                if (this.SubGroupId != null)
+                    hash = hash * 59 + this.SubGroupId.GetHashCode();
                 
-                if (this.ProductionCode != null)
-                    hash = hash * 59 + this.ProductionCode.GetHashCode();
+                if (this.ProductCodeId != null)
+                    hash = hash * 59 + this.ProductCodeId.GetHashCode();
                 
-                if (this.SummaryCode != null)
-                    hash = hash * 59 + this.SummaryCode.GetHashCode();
+                if (this.SummaryCodeId != null)
+                    hash = hash * 59 + this.SummaryCodeId.GetHashCode();
                 
-                if (this.Buyer != null)
-                    hash = hash * 59 + this.Buyer.GetHashCode();
+                if (this.BuyerId != null)
+                    hash = hash * 59 + this.BuyerId.GetHashCode();
                 
                 if (this.LobId != null)
                     hash = hash * 59 + this.LobId.GetHashCode();

@@ -20,17 +20,17 @@ namespace Infoplus.Client
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default configuration and base path (https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api/v1.0).
+        /// with default configuration and base path (https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api).
         /// </summary>
         public ApiClient()
         {
             Configuration = Configuration.Default;
-            RestClient = new RestClient("https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api/v1.0");
+            RestClient = new RestClient("https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api");
         }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="ApiClient" /> class
-        /// with default base path (https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api/v1.0).
+        /// with default base path (https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api).
         /// </summary>
         /// <param name="config">An instance of Configuration.</param>
         public ApiClient(Configuration config = null)
@@ -40,7 +40,7 @@ namespace Infoplus.Client
             else
                 Configuration = config;
 
-            RestClient = new RestClient("https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api/v1.0");
+            RestClient = new RestClient("https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api");
         }
 
         /// <summary>
@@ -48,7 +48,7 @@ namespace Infoplus.Client
         /// with default configuration.
         /// </summary>
         /// <param name="basePath">The base path.</param>
-        public ApiClient(String basePath = "https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api/v1.0")
+        public ApiClient(String basePath = "https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api")
         {
            if (String.IsNullOrEmpty(basePath))
                 throw new ArgumentException("basePath cannot be empty");

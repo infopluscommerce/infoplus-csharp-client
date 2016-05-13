@@ -25,10 +25,10 @@ namespace Infoplus.Model
         /// <param name="Quantity">Quantity (required).</param>
         /// <param name="UserId">UserId (required).</param>
         /// <param name="LobId">LobId (required).</param>
-        /// <param name="BillingCodeType">BillingCodeType (required).</param>
+        /// <param name="BillingCodeTypeId">BillingCodeTypeId (required).</param>
         /// <param name="Note">Note.</param>
 
-        public BillingCode(int? Quantity = null, int? UserId = null, int? LobId = null, string BillingCodeType = null, string Note = null)
+        public BillingCode(int? Quantity = null, int? UserId = null, int? LobId = null, int? BillingCodeTypeId = null, string Note = null)
         {
             // to ensure "Quantity" is required (not null)
             if (Quantity == null)
@@ -57,14 +57,14 @@ namespace Infoplus.Model
             {
                 this.LobId = LobId;
             }
-            // to ensure "BillingCodeType" is required (not null)
-            if (BillingCodeType == null)
+            // to ensure "BillingCodeTypeId" is required (not null)
+            if (BillingCodeTypeId == null)
             {
-                throw new InvalidDataException("BillingCodeType is a required property for BillingCode and cannot be null");
+                throw new InvalidDataException("BillingCodeTypeId is a required property for BillingCode and cannot be null");
             }
             else
             {
-                this.BillingCodeType = BillingCodeType;
+                this.BillingCodeTypeId = BillingCodeTypeId;
             }
             this.Note = Note;
             
@@ -114,10 +114,10 @@ namespace Infoplus.Model
         public int? LobId { get; set; }
     
         /// <summary>
-        /// Gets or Sets BillingCodeType
+        /// Gets or Sets BillingCodeTypeId
         /// </summary>
-        [DataMember(Name="billingCodeType", EmitDefaultValue=false)]
-        public string BillingCodeType { get; set; }
+        [DataMember(Name="billingCodeTypeId", EmitDefaultValue=false)]
+        public int? BillingCodeTypeId { get; set; }
     
         /// <summary>
         /// Gets or Sets Note
@@ -140,7 +140,7 @@ namespace Infoplus.Model
             sb.Append("  Date: ").Append(Date).Append("\n");
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
-            sb.Append("  BillingCodeType: ").Append(BillingCodeType).Append("\n");
+            sb.Append("  BillingCodeTypeId: ").Append(BillingCodeTypeId).Append("\n");
             sb.Append("  Note: ").Append(Note).Append("\n");
             
             sb.Append("}\n");
@@ -215,9 +215,9 @@ namespace Infoplus.Model
                     this.LobId.Equals(other.LobId)
                 ) && 
                 (
-                    this.BillingCodeType == other.BillingCodeType ||
-                    this.BillingCodeType != null &&
-                    this.BillingCodeType.Equals(other.BillingCodeType)
+                    this.BillingCodeTypeId == other.BillingCodeTypeId ||
+                    this.BillingCodeTypeId != null &&
+                    this.BillingCodeTypeId.Equals(other.BillingCodeTypeId)
                 ) && 
                 (
                     this.Note == other.Note ||
@@ -259,8 +259,8 @@ namespace Infoplus.Model
                 if (this.LobId != null)
                     hash = hash * 59 + this.LobId.GetHashCode();
                 
-                if (this.BillingCodeType != null)
-                    hash = hash * 59 + this.BillingCodeType.GetHashCode();
+                if (this.BillingCodeTypeId != null)
+                    hash = hash * 59 + this.BillingCodeTypeId.GetHashCode();
                 
                 if (this.Note != null)
                     hash = hash * 59 + this.Note.GetHashCode();

@@ -29,10 +29,10 @@ namespace Infoplus.Model
         /// <param name="Client">Client (required).</param>
         /// <param name="UserId">UserId (required).</param>
         /// <param name="WarehouseId">WarehouseId (required).</param>
-        /// <param name="LoggedTimeType">LoggedTimeType (required).</param>
+        /// <param name="LoggedTimeTypeId">LoggedTimeTypeId (required).</param>
         /// <param name="AppId">AppId (required).</param>
 
-        public LoggedTime(DateTime? Start = null, DateTime? End = null, int? Duration = null, string Description = null, int? Client = null, int? UserId = null, int? WarehouseId = null, string LoggedTimeType = null, int? AppId = null)
+        public LoggedTime(DateTime? Start = null, DateTime? End = null, int? Duration = null, string Description = null, int? Client = null, int? UserId = null, int? WarehouseId = null, int? LoggedTimeTypeId = null, int? AppId = null)
         {
             // to ensure "Duration" is required (not null)
             if (Duration == null)
@@ -70,14 +70,14 @@ namespace Infoplus.Model
             {
                 this.WarehouseId = WarehouseId;
             }
-            // to ensure "LoggedTimeType" is required (not null)
-            if (LoggedTimeType == null)
+            // to ensure "LoggedTimeTypeId" is required (not null)
+            if (LoggedTimeTypeId == null)
             {
-                throw new InvalidDataException("LoggedTimeType is a required property for LoggedTime and cannot be null");
+                throw new InvalidDataException("LoggedTimeTypeId is a required property for LoggedTime and cannot be null");
             }
             else
             {
-                this.LoggedTimeType = LoggedTimeType;
+                this.LoggedTimeTypeId = LoggedTimeTypeId;
             }
             // to ensure "AppId" is required (not null)
             if (AppId == null)
@@ -162,10 +162,10 @@ namespace Infoplus.Model
         public int? WarehouseId { get; set; }
     
         /// <summary>
-        /// Gets or Sets LoggedTimeType
+        /// Gets or Sets LoggedTimeTypeId
         /// </summary>
-        [DataMember(Name="loggedTimeType", EmitDefaultValue=false)]
-        public string LoggedTimeType { get; set; }
+        [DataMember(Name="loggedTimeTypeId", EmitDefaultValue=false)]
+        public int? LoggedTimeTypeId { get; set; }
     
         /// <summary>
         /// Gets or Sets AppId
@@ -192,7 +192,7 @@ namespace Infoplus.Model
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  WarehouseId: ").Append(WarehouseId).Append("\n");
-            sb.Append("  LoggedTimeType: ").Append(LoggedTimeType).Append("\n");
+            sb.Append("  LoggedTimeTypeId: ").Append(LoggedTimeTypeId).Append("\n");
             sb.Append("  AppId: ").Append(AppId).Append("\n");
             
             sb.Append("}\n");
@@ -287,9 +287,9 @@ namespace Infoplus.Model
                     this.WarehouseId.Equals(other.WarehouseId)
                 ) && 
                 (
-                    this.LoggedTimeType == other.LoggedTimeType ||
-                    this.LoggedTimeType != null &&
-                    this.LoggedTimeType.Equals(other.LoggedTimeType)
+                    this.LoggedTimeTypeId == other.LoggedTimeTypeId ||
+                    this.LoggedTimeTypeId != null &&
+                    this.LoggedTimeTypeId.Equals(other.LoggedTimeTypeId)
                 ) && 
                 (
                     this.AppId == other.AppId ||
@@ -343,8 +343,8 @@ namespace Infoplus.Model
                 if (this.WarehouseId != null)
                     hash = hash * 59 + this.WarehouseId.GetHashCode();
                 
-                if (this.LoggedTimeType != null)
-                    hash = hash * 59 + this.LoggedTimeType.GetHashCode();
+                if (this.LoggedTimeTypeId != null)
+                    hash = hash * 59 + this.LoggedTimeTypeId.GetHashCode();
                 
                 if (this.AppId != null)
                     hash = hash * 59 + this.AppId.GetHashCode();

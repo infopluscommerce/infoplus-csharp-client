@@ -90,6 +90,12 @@ namespace Infoplus.Model
         public string ProductionLot { get; private set; }
     
         /// <summary>
+        /// Gets or Sets OldestReceiptDate
+        /// </summary>
+        [DataMember(Name="oldestReceiptDate", EmitDefaultValue=false)]
+        public DateTime? OldestReceiptDate { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets LobId
         /// </summary>
         [DataMember(Name="lobId", EmitDefaultValue=false)]
@@ -123,6 +129,7 @@ namespace Infoplus.Model
             sb.Append("  UnitsPerWrap: ").Append(UnitsPerWrap).Append("\n");
             sb.Append("  RevisionDate: ").Append(RevisionDate).Append("\n");
             sb.Append("  ProductionLot: ").Append(ProductionLot).Append("\n");
+            sb.Append("  OldestReceiptDate: ").Append(OldestReceiptDate).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  PoNo: ").Append(PoNo).Append("\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
@@ -204,6 +211,11 @@ namespace Infoplus.Model
                     this.ProductionLot.Equals(other.ProductionLot)
                 ) && 
                 (
+                    this.OldestReceiptDate == other.OldestReceiptDate ||
+                    this.OldestReceiptDate != null &&
+                    this.OldestReceiptDate.Equals(other.OldestReceiptDate)
+                ) && 
+                (
                     this.LobId == other.LobId ||
                     this.LobId != null &&
                     this.LobId.Equals(other.LobId)
@@ -255,6 +267,9 @@ namespace Infoplus.Model
                 
                 if (this.ProductionLot != null)
                     hash = hash * 59 + this.ProductionLot.GetHashCode();
+                
+                if (this.OldestReceiptDate != null)
+                    hash = hash * 59 + this.OldestReceiptDate.GetHashCode();
                 
                 if (this.LobId != null)
                     hash = hash * 59 + this.LobId.GetHashCode();

@@ -62,6 +62,30 @@ namespace Infoplus.Api
         ApiResponse<Object> DeleteCustomerWithHttpInfo (int? customerId);
         
         /// <summary>
+        /// Get a customer by Customer No
+        /// </summary>
+        /// <remarks>
+        /// Returns the customer identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param>
+        /// <param name="customerNo">customerNo of the customer to be returned.</param>
+        /// <returns>Customer</returns>
+        Customer GetByCustomerNo (int? lobId, string customerNo);
+  
+        /// <summary>
+        /// Get a customer by Customer No
+        /// </summary>
+        /// <remarks>
+        /// Returns the customer identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param>
+        /// <param name="customerNo">customerNo of the customer to be returned.</param>
+        /// <returns>ApiResponse of Customer</returns>
+        ApiResponse<Customer> GetByCustomerNoWithHttpInfo (int? lobId, string customerNo);
+        
+        /// <summary>
         /// Search customers by filter
         /// </summary>
         /// <remarks>
@@ -110,30 +134,6 @@ namespace Infoplus.Api
         /// <param name="customerId">Id of the customer to be returned.</param>
         /// <returns>ApiResponse of Customer</returns>
         ApiResponse<Customer> GetCustomerByIdWithHttpInfo (int? customerId);
-        
-        /// <summary>
-        /// Get a customer by Customer No
-        /// </summary>
-        /// <remarks>
-        /// Returns the customer identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param>
-        /// <param name="customerNo">customerNo of the customer to be returned.</param>
-        /// <returns>Customer</returns>
-        Customer GetCustomerBygetByCustomerNo (int? lobId, string customerNo);
-  
-        /// <summary>
-        /// Get a customer by Customer No
-        /// </summary>
-        /// <remarks>
-        /// Returns the customer identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param>
-        /// <param name="customerNo">customerNo of the customer to be returned.</param>
-        /// <returns>ApiResponse of Customer</returns>
-        ApiResponse<Customer> GetCustomerBygetByCustomerNoWithHttpInfo (int? lobId, string customerNo);
         
         /// <summary>
         /// Update a customer
@@ -206,6 +206,30 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerAsyncWithHttpInfo (int? customerId);
         
         /// <summary>
+        /// Get a customer by Customer No
+        /// </summary>
+        /// <remarks>
+        /// Returns the customer identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param>
+        /// <param name="customerNo">customerNo of the customer to be returned.</param>
+        /// <returns>Task of Customer</returns>
+        System.Threading.Tasks.Task<Customer> GetByCustomerNoAsync (int? lobId, string customerNo);
+
+        /// <summary>
+        /// Get a customer by Customer No
+        /// </summary>
+        /// <remarks>
+        /// Returns the customer identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param>
+        /// <param name="customerNo">customerNo of the customer to be returned.</param>
+        /// <returns>Task of ApiResponse (Customer)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Customer>> GetByCustomerNoAsyncWithHttpInfo (int? lobId, string customerNo);
+        
+        /// <summary>
         /// Search customers by filter
         /// </summary>
         /// <remarks>
@@ -254,30 +278,6 @@ namespace Infoplus.Api
         /// <param name="customerId">Id of the customer to be returned.</param>
         /// <returns>Task of ApiResponse (Customer)</returns>
         System.Threading.Tasks.Task<ApiResponse<Customer>> GetCustomerByIdAsyncWithHttpInfo (int? customerId);
-        
-        /// <summary>
-        /// Get a customer by Customer No
-        /// </summary>
-        /// <remarks>
-        /// Returns the customer identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param>
-        /// <param name="customerNo">customerNo of the customer to be returned.</param>
-        /// <returns>Task of Customer</returns>
-        System.Threading.Tasks.Task<Customer> GetCustomerBygetByCustomerNoAsync (int? lobId, string customerNo);
-
-        /// <summary>
-        /// Get a customer by Customer No
-        /// </summary>
-        /// <remarks>
-        /// Returns the customer identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param>
-        /// <param name="customerNo">customerNo of the customer to be returned.</param>
-        /// <returns>Task of ApiResponse (Customer)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Customer>> GetCustomerBygetByCustomerNoAsyncWithHttpInfo (int? lobId, string customerNo);
         
         /// <summary>
         /// Update a customer
@@ -746,6 +746,189 @@ namespace Infoplus.Api
         }
         
         /// <summary>
+        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param> 
+        /// <param name="customerNo">customerNo of the customer to be returned.</param> 
+        /// <returns>Customer</returns>
+        public Customer GetByCustomerNo (int? lobId, string customerNo)
+        {
+             ApiResponse<Customer> localVarResponse = GetByCustomerNoWithHttpInfo(lobId, customerNo);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param> 
+        /// <param name="customerNo">customerNo of the customer to be returned.</param> 
+        /// <returns>ApiResponse of Customer</returns>
+        public ApiResponse< Customer > GetByCustomerNoWithHttpInfo (int? lobId, string customerNo)
+        {
+            
+            // verify the required parameter 'lobId' is set
+            if (lobId == null)
+                throw new ApiException(400, "Missing required parameter 'lobId' when calling CustomerApi->GetByCustomerNo");
+            
+            // verify the required parameter 'customerNo' is set
+            if (customerNo == null)
+                throw new ApiException(400, "Missing required parameter 'customerNo' when calling CustomerApi->GetByCustomerNo");
+            
+    
+            var localVarPath = "/v1.0/customer/getByCustomerNo";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
+            if (customerNo != null) localVarQueryParams.Add("customerNo", Configuration.ApiClient.ParameterToString(customerNo)); // query parameter
+            
+            
+            
+            
+
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+    
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+    
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling GetByCustomerNo: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling GetByCustomerNo: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+    
+            return new ApiResponse<Customer>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Customer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Customer)));
+            
+        }
+
+        
+        /// <summary>
+        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param>
+        /// <param name="customerNo">customerNo of the customer to be returned.</param>
+        /// <returns>Task of Customer</returns>
+        public async System.Threading.Tasks.Task<Customer> GetByCustomerNoAsync (int? lobId, string customerNo)
+        {
+             ApiResponse<Customer> localVarResponse = await GetByCustomerNoAsyncWithHttpInfo(lobId, customerNo);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the customer to be returned.</param>
+        /// <param name="customerNo">customerNo of the customer to be returned.</param>
+        /// <returns>Task of ApiResponse (Customer)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Customer>> GetByCustomerNoAsyncWithHttpInfo (int? lobId, string customerNo)
+        {
+            // verify the required parameter 'lobId' is set
+            if (lobId == null) throw new ApiException(400, "Missing required parameter 'lobId' when calling GetByCustomerNo");
+            // verify the required parameter 'customerNo' is set
+            if (customerNo == null) throw new ApiException(400, "Missing required parameter 'customerNo' when calling GetByCustomerNo");
+            
+    
+            var localVarPath = "/v1.0/customer/getByCustomerNo";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
+            if (customerNo != null) localVarQueryParams.Add("customerNo", Configuration.ApiClient.ParameterToString(customerNo)); // query parameter
+            
+            
+            
+            
+
+            
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+ 
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling GetByCustomerNo: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling GetByCustomerNo: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+
+            return new ApiResponse<Customer>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Customer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Customer)));
+            
+        }
+        
+        /// <summary>
         /// Search customers by filter Returns the list of customers that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1092,189 +1275,6 @@ namespace Infoplus.Api
                 throw new ApiException (localVarStatusCode, "Error calling GetCustomerById: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
                 throw new ApiException (localVarStatusCode, "Error calling GetCustomerById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            return new ApiResponse<Customer>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Customer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Customer)));
-            
-        }
-        
-        /// <summary>
-        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param> 
-        /// <param name="customerNo">customerNo of the customer to be returned.</param> 
-        /// <returns>Customer</returns>
-        public Customer GetCustomerBygetByCustomerNo (int? lobId, string customerNo)
-        {
-             ApiResponse<Customer> localVarResponse = GetCustomerBygetByCustomerNoWithHttpInfo(lobId, customerNo);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param> 
-        /// <param name="customerNo">customerNo of the customer to be returned.</param> 
-        /// <returns>ApiResponse of Customer</returns>
-        public ApiResponse< Customer > GetCustomerBygetByCustomerNoWithHttpInfo (int? lobId, string customerNo)
-        {
-            
-            // verify the required parameter 'lobId' is set
-            if (lobId == null)
-                throw new ApiException(400, "Missing required parameter 'lobId' when calling CustomerApi->GetCustomerBygetByCustomerNo");
-            
-            // verify the required parameter 'customerNo' is set
-            if (customerNo == null)
-                throw new ApiException(400, "Missing required parameter 'customerNo' when calling CustomerApi->GetCustomerBygetByCustomerNo");
-            
-    
-            var localVarPath = "/v1.0/customer/getByCustomerNo";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            
-            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
-            if (customerNo != null) localVarQueryParams.Add("customerNo", Configuration.ApiClient.ParameterToString(customerNo)); // query parameter
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerBygetByCustomerNo: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerBygetByCustomerNo: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            return new ApiResponse<Customer>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Customer) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Customer)));
-            
-        }
-
-        
-        /// <summary>
-        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param>
-        /// <param name="customerNo">customerNo of the customer to be returned.</param>
-        /// <returns>Task of Customer</returns>
-        public async System.Threading.Tasks.Task<Customer> GetCustomerBygetByCustomerNoAsync (int? lobId, string customerNo)
-        {
-             ApiResponse<Customer> localVarResponse = await GetCustomerBygetByCustomerNoAsyncWithHttpInfo(lobId, customerNo);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get a customer by Customer No Returns the customer identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the customer to be returned.</param>
-        /// <param name="customerNo">customerNo of the customer to be returned.</param>
-        /// <returns>Task of ApiResponse (Customer)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Customer>> GetCustomerBygetByCustomerNoAsyncWithHttpInfo (int? lobId, string customerNo)
-        {
-            // verify the required parameter 'lobId' is set
-            if (lobId == null) throw new ApiException(400, "Missing required parameter 'lobId' when calling GetCustomerBygetByCustomerNo");
-            // verify the required parameter 'customerNo' is set
-            if (customerNo == null) throw new ApiException(400, "Missing required parameter 'customerNo' when calling GetCustomerBygetByCustomerNo");
-            
-    
-            var localVarPath = "/v1.0/customer/getByCustomerNo";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            
-            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
-            if (customerNo != null) localVarQueryParams.Add("customerNo", Configuration.ApiClient.ParameterToString(customerNo)); // query parameter
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerBygetByCustomerNo: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerBygetByCustomerNo: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<Customer>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),

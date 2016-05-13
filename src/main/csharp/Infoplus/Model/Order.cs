@@ -26,7 +26,7 @@ namespace Infoplus.Model
         /// <param name="LobId">LobId (required).</param>
         /// <param name="WarehouseId">WarehouseId (required).</param>
         /// <param name="OrderDate">OrderDate (required).</param>
-        /// <param name="CustomerNo">CustomerNo (required).</param>
+        /// <param name="CustomerNo">CustomerNo.</param>
         /// <param name="FirstShipDate">FirstShipDate.</param>
         /// <param name="LastShipDate">LastShipDate.</param>
         /// <param name="DeliverOnDate">DeliverOnDate.</param>
@@ -107,15 +107,6 @@ namespace Infoplus.Model
             {
                 this.OrderDate = OrderDate;
             }
-            // to ensure "CustomerNo" is required (not null)
-            if (CustomerNo == null)
-            {
-                throw new InvalidDataException("CustomerNo is a required property for Order and cannot be null");
-            }
-            else
-            {
-                this.CustomerNo = CustomerNo;
-            }
             // to ensure "MediaCode" is required (not null)
             if (MediaCode == null)
             {
@@ -144,6 +135,7 @@ namespace Infoplus.Model
                 this.LineItems = LineItems;
             }
             this.CustomerOrderNo = CustomerOrderNo;
+            this.CustomerNo = CustomerNo;
             this.FirstShipDate = FirstShipDate;
             this.LastShipDate = LastShipDate;
             this.DeliverOnDate = DeliverOnDate;

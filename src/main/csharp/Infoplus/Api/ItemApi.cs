@@ -62,6 +62,30 @@ namespace Infoplus.Api
         ApiResponse<Object> DeleteItemWithHttpInfo (int? itemId);
         
         /// <summary>
+        /// Get an item by SKU
+        /// </summary>
+        /// <remarks>
+        /// Returns the item identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param>
+        /// <param name="sku">sku of the item to be returned.</param>
+        /// <returns>Item</returns>
+        Item GetBySKU (int? lobId, string sku);
+  
+        /// <summary>
+        /// Get an item by SKU
+        /// </summary>
+        /// <remarks>
+        /// Returns the item identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param>
+        /// <param name="sku">sku of the item to be returned.</param>
+        /// <returns>ApiResponse of Item</returns>
+        ApiResponse<Item> GetBySKUWithHttpInfo (int? lobId, string sku);
+        
+        /// <summary>
         /// Search items by filter
         /// </summary>
         /// <remarks>
@@ -110,30 +134,6 @@ namespace Infoplus.Api
         /// <param name="itemId">Id of the item to be returned.</param>
         /// <returns>ApiResponse of Item</returns>
         ApiResponse<Item> GetItemByIdWithHttpInfo (int? itemId);
-        
-        /// <summary>
-        /// Get an item by SKU
-        /// </summary>
-        /// <remarks>
-        /// Returns the item identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param>
-        /// <param name="sku">sku of the item to be returned.</param>
-        /// <returns>Item</returns>
-        Item GetItemBygetBySKU (int? lobId, string sku);
-  
-        /// <summary>
-        /// Get an item by SKU
-        /// </summary>
-        /// <remarks>
-        /// Returns the item identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param>
-        /// <param name="sku">sku of the item to be returned.</param>
-        /// <returns>ApiResponse of Item</returns>
-        ApiResponse<Item> GetItemBygetBySKUWithHttpInfo (int? lobId, string sku);
         
         /// <summary>
         /// Update an item
@@ -206,6 +206,30 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemAsyncWithHttpInfo (int? itemId);
         
         /// <summary>
+        /// Get an item by SKU
+        /// </summary>
+        /// <remarks>
+        /// Returns the item identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param>
+        /// <param name="sku">sku of the item to be returned.</param>
+        /// <returns>Task of Item</returns>
+        System.Threading.Tasks.Task<Item> GetBySKUAsync (int? lobId, string sku);
+
+        /// <summary>
+        /// Get an item by SKU
+        /// </summary>
+        /// <remarks>
+        /// Returns the item identified by the specified parameters.
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param>
+        /// <param name="sku">sku of the item to be returned.</param>
+        /// <returns>Task of ApiResponse (Item)</returns>
+        System.Threading.Tasks.Task<ApiResponse<Item>> GetBySKUAsyncWithHttpInfo (int? lobId, string sku);
+        
+        /// <summary>
         /// Search items by filter
         /// </summary>
         /// <remarks>
@@ -254,30 +278,6 @@ namespace Infoplus.Api
         /// <param name="itemId">Id of the item to be returned.</param>
         /// <returns>Task of ApiResponse (Item)</returns>
         System.Threading.Tasks.Task<ApiResponse<Item>> GetItemByIdAsyncWithHttpInfo (int? itemId);
-        
-        /// <summary>
-        /// Get an item by SKU
-        /// </summary>
-        /// <remarks>
-        /// Returns the item identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param>
-        /// <param name="sku">sku of the item to be returned.</param>
-        /// <returns>Task of Item</returns>
-        System.Threading.Tasks.Task<Item> GetItemBygetBySKUAsync (int? lobId, string sku);
-
-        /// <summary>
-        /// Get an item by SKU
-        /// </summary>
-        /// <remarks>
-        /// Returns the item identified by the specified parameters.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param>
-        /// <param name="sku">sku of the item to be returned.</param>
-        /// <returns>Task of ApiResponse (Item)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Item>> GetItemBygetBySKUAsyncWithHttpInfo (int? lobId, string sku);
         
         /// <summary>
         /// Update an item
@@ -746,6 +746,189 @@ namespace Infoplus.Api
         }
         
         /// <summary>
+        /// Get an item by SKU Returns the item identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param> 
+        /// <param name="sku">sku of the item to be returned.</param> 
+        /// <returns>Item</returns>
+        public Item GetBySKU (int? lobId, string sku)
+        {
+             ApiResponse<Item> localVarResponse = GetBySKUWithHttpInfo(lobId, sku);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Get an item by SKU Returns the item identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param> 
+        /// <param name="sku">sku of the item to be returned.</param> 
+        /// <returns>ApiResponse of Item</returns>
+        public ApiResponse< Item > GetBySKUWithHttpInfo (int? lobId, string sku)
+        {
+            
+            // verify the required parameter 'lobId' is set
+            if (lobId == null)
+                throw new ApiException(400, "Missing required parameter 'lobId' when calling ItemApi->GetBySKU");
+            
+            // verify the required parameter 'sku' is set
+            if (sku == null)
+                throw new ApiException(400, "Missing required parameter 'sku' when calling ItemApi->GetBySKU");
+            
+    
+            var localVarPath = "/v1.0/item/getBySKU";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
+            if (sku != null) localVarQueryParams.Add("sku", Configuration.ApiClient.ParameterToString(sku)); // query parameter
+            
+            
+            
+            
+
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+    
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+    
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling GetBySKU: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling GetBySKU: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+    
+            return new ApiResponse<Item>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Item) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Item)));
+            
+        }
+
+        
+        /// <summary>
+        /// Get an item by SKU Returns the item identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param>
+        /// <param name="sku">sku of the item to be returned.</param>
+        /// <returns>Task of Item</returns>
+        public async System.Threading.Tasks.Task<Item> GetBySKUAsync (int? lobId, string sku)
+        {
+             ApiResponse<Item> localVarResponse = await GetBySKUAsyncWithHttpInfo(lobId, sku);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Get an item by SKU Returns the item identified by the specified parameters.
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="lobId">lobId of the item to be returned.</param>
+        /// <param name="sku">sku of the item to be returned.</param>
+        /// <returns>Task of ApiResponse (Item)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<Item>> GetBySKUAsyncWithHttpInfo (int? lobId, string sku)
+        {
+            // verify the required parameter 'lobId' is set
+            if (lobId == null) throw new ApiException(400, "Missing required parameter 'lobId' when calling GetBySKU");
+            // verify the required parameter 'sku' is set
+            if (sku == null) throw new ApiException(400, "Missing required parameter 'sku' when calling GetBySKU");
+            
+    
+            var localVarPath = "/v1.0/item/getBySKU";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
+            if (sku != null) localVarQueryParams.Add("sku", Configuration.ApiClient.ParameterToString(sku)); // query parameter
+            
+            
+            
+            
+
+            
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
+                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+ 
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling GetBySKU: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling GetBySKU: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+
+            return new ApiResponse<Item>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (Item) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Item)));
+            
+        }
+        
+        /// <summary>
         /// Search items by filter Returns the list of items that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1092,189 +1275,6 @@ namespace Infoplus.Api
                 throw new ApiException (localVarStatusCode, "Error calling GetItemById: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
                 throw new ApiException (localVarStatusCode, "Error calling GetItemById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            return new ApiResponse<Item>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Item) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Item)));
-            
-        }
-        
-        /// <summary>
-        /// Get an item by SKU Returns the item identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param> 
-        /// <param name="sku">sku of the item to be returned.</param> 
-        /// <returns>Item</returns>
-        public Item GetItemBygetBySKU (int? lobId, string sku)
-        {
-             ApiResponse<Item> localVarResponse = GetItemBygetBySKUWithHttpInfo(lobId, sku);
-             return localVarResponse.Data;
-        }
-
-        /// <summary>
-        /// Get an item by SKU Returns the item identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param> 
-        /// <param name="sku">sku of the item to be returned.</param> 
-        /// <returns>ApiResponse of Item</returns>
-        public ApiResponse< Item > GetItemBygetBySKUWithHttpInfo (int? lobId, string sku)
-        {
-            
-            // verify the required parameter 'lobId' is set
-            if (lobId == null)
-                throw new ApiException(400, "Missing required parameter 'lobId' when calling ItemApi->GetItemBygetBySKU");
-            
-            // verify the required parameter 'sku' is set
-            if (sku == null)
-                throw new ApiException(400, "Missing required parameter 'sku' when calling ItemApi->GetItemBygetBySKU");
-            
-    
-            var localVarPath = "/v1.0/item/getBySKU";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            
-            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
-            if (sku != null) localVarQueryParams.Add("sku", Configuration.ApiClient.ParameterToString(sku)); // query parameter
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemBygetBySKU: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemBygetBySKU: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            return new ApiResponse<Item>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Item) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Item)));
-            
-        }
-
-        
-        /// <summary>
-        /// Get an item by SKU Returns the item identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param>
-        /// <param name="sku">sku of the item to be returned.</param>
-        /// <returns>Task of Item</returns>
-        public async System.Threading.Tasks.Task<Item> GetItemBygetBySKUAsync (int? lobId, string sku)
-        {
-             ApiResponse<Item> localVarResponse = await GetItemBygetBySKUAsyncWithHttpInfo(lobId, sku);
-             return localVarResponse.Data;
-
-        }
-
-        /// <summary>
-        /// Get an item by SKU Returns the item identified by the specified parameters.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="lobId">lobId of the item to be returned.</param>
-        /// <param name="sku">sku of the item to be returned.</param>
-        /// <returns>Task of ApiResponse (Item)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Item>> GetItemBygetBySKUAsyncWithHttpInfo (int? lobId, string sku)
-        {
-            // verify the required parameter 'lobId' is set
-            if (lobId == null) throw new ApiException(400, "Missing required parameter 'lobId' when calling GetItemBygetBySKU");
-            // verify the required parameter 'sku' is set
-            if (sku == null) throw new ApiException(400, "Missing required parameter 'sku' when calling GetItemBygetBySKU");
-            
-    
-            var localVarPath = "/v1.0/item/getBySKU";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            
-            if (lobId != null) localVarQueryParams.Add("lobId", Configuration.ApiClient.ParameterToString(lobId)); // query parameter
-            if (sku != null) localVarQueryParams.Add("sku", Configuration.ApiClient.ParameterToString(sku)); // query parameter
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemBygetBySKU: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemBygetBySKU: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             return new ApiResponse<Item>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
