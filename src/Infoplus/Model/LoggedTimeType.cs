@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ProductType
+    /// LoggedTimeType
     /// </summary>
     [DataContract]
-    public partial class ProductType :  IEquatable<ProductType>
+    public partial class LoggedTimeType :  IEquatable<LoggedTimeType>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ProductType" /> class.
+        /// Initializes a new instance of the <see cref="LoggedTimeType" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ProductType() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ProductType" /> class.
-        /// </summary>
-        public ProductType()
+        public LoggedTimeType()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ProductType {\n");
+            sb.Append("class LoggedTimeType {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ProductType);
+            return this.Equals(obj as LoggedTimeType);
         }
 
         /// <summary>
-        /// Returns true if ProductType instances are equal
+        /// Returns true if LoggedTimeType instances are equal
         /// </summary>
-        /// <param name="other">Instance of ProductType to be compared</param>
+        /// <param name="other">Instance of LoggedTimeType to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ProductType other)
+        public bool Equals(LoggedTimeType other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

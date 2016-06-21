@@ -62,19 +62,19 @@ limitations under the License.
         <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
         <HintPath Condition="Exists('..\packages')">..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
         <HintPath Condition="Exists('..\..\packages')">..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-        <HintPath Condition="Exists('..\..\..\..\vendor')">..\..\..\..\vendor\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+        <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp">
         <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
         <HintPath Condition="Exists('..\packages')">..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
         <HintPath Condition="Exists('..\..\packages')">..\..\packages\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
-        <HintPath Condition="Exists('..\..\..\..\vendor')">..\..\..\..\vendor\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
+        <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\RestSharp.105.1.0\lib\net45\RestSharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath Condition="Exists('$(SolutionDir)\packages')">$(SolutionDir)\packages\NUnit.3.2.1\lib\nunit.framework.dll</HintPath>
         <HintPath Condition="Exists('..\packages')">..\packages\NUnit.3.2.1\lib\nunit.framework.dll</HintPath>
         <HintPath Condition="Exists('..\..\packages')">..\..\packages\NUnit.3.2.1\lib\nunit.framework.dll</HintPath>
-        <HintPath Condition="Exists('..\..\..\..\vendor')">..\..\..\..\vendor\NUnit.3.2.1\lib\nunit.framework.dll</HintPath>
+        <HintPath Condition="Exists('..\..\vendor')">..\..\vendor\NUnit.3.2.1\lib\nunit.framework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -86,7 +86,7 @@ limitations under the License.
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Infoplus\Infoplus.csproj">
-          <Project>{E0854610-15A1-46E9-84F8-5D05372AC417}</Project>
+          <Project>{6892F984-CEE0-4E8F-9141-1AFD139DC023}</Project>
           <Name>Infoplus</Name>
       </ProjectReference>
   </ItemGroup>

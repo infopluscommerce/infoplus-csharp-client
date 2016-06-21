@@ -34,22 +34,17 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ProductionLot
+    /// BusinessTransaction
     /// </summary>
     [DataContract]
-    public partial class ProductionLot :  IEquatable<ProductionLot>
+    public partial class BusinessTransaction :  IEquatable<BusinessTransaction>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ProductionLot" /> class.
+        /// Initializes a new instance of the <see cref="BusinessTransaction" /> class.
         /// </summary>
-        /// <param name="ProductionLot">ProductionLot.</param>
-        /// <param name="Quantity">Quantity.</param>
-        /// <param name="Sku">Sku.</param>
-        public ProductionLot(string ProductionLot = null, int? Quantity = null, string Sku = null)
+        [JsonConstructorAttribute]
+        public BusinessTransaction()
         {
-            this.ProductionLot = ProductionLot;
-            this.Quantity = Quantity;
-            this.Sku = Sku;
         }
         
         /// <summary>
@@ -58,25 +53,40 @@ namespace Infoplus.Model
         [DataMember(Name="id", EmitDefaultValue=false)]
         public int? Id { get; private set; }
         /// <summary>
+        /// Gets or Sets CreateDate
+        /// </summary>
+        [DataMember(Name="createDate", EmitDefaultValue=false)]
+        public DateTime? CreateDate { get; private set; }
+        /// <summary>
+        /// Gets or Sets ModifyDate
+        /// </summary>
+        [DataMember(Name="modifyDate", EmitDefaultValue=false)]
+        public DateTime? ModifyDate { get; private set; }
+        /// <summary>
+        /// Gets or Sets ServerName
+        /// </summary>
+        [DataMember(Name="serverName", EmitDefaultValue=false)]
+        public string ServerName { get; private set; }
+        /// <summary>
+        /// Gets or Sets QueueName
+        /// </summary>
+        [DataMember(Name="queueName", EmitDefaultValue=false)]
+        public string QueueName { get; private set; }
+        /// <summary>
         /// Gets or Sets LobId
         /// </summary>
         [DataMember(Name="lobId", EmitDefaultValue=false)]
         public int? LobId { get; private set; }
         /// <summary>
-        /// Gets or Sets ProductionLot
+        /// Gets or Sets MessageBody
         /// </summary>
-        [DataMember(Name="productionLot", EmitDefaultValue=false)]
-        public string ProductionLot { get; set; }
+        [DataMember(Name="messageBody", EmitDefaultValue=false)]
+        public string MessageBody { get; private set; }
         /// <summary>
-        /// Gets or Sets Quantity
+        /// Gets or Sets Status
         /// </summary>
-        [DataMember(Name="quantity", EmitDefaultValue=false)]
-        public int? Quantity { get; set; }
-        /// <summary>
-        /// Gets or Sets Sku
-        /// </summary>
-        [DataMember(Name="sku", EmitDefaultValue=false)]
-        public string Sku { get; set; }
+        [DataMember(Name="status", EmitDefaultValue=false)]
+        public string Status { get; private set; }
         /// <summary>
         /// Returns the string presentation of the object
         /// </summary>
@@ -84,12 +94,15 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ProductionLot {\n");
+            sb.Append("class BusinessTransaction {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
+            sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
+            sb.Append("  ServerName: ").Append(ServerName).Append("\n");
+            sb.Append("  QueueName: ").Append(QueueName).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
-            sb.Append("  ProductionLot: ").Append(ProductionLot).Append("\n");
-            sb.Append("  Quantity: ").Append(Quantity).Append("\n");
-            sb.Append("  Sku: ").Append(Sku).Append("\n");
+            sb.Append("  MessageBody: ").Append(MessageBody).Append("\n");
+            sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -111,15 +124,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ProductionLot);
+            return this.Equals(obj as BusinessTransaction);
         }
 
         /// <summary>
-        /// Returns true if ProductionLot instances are equal
+        /// Returns true if BusinessTransaction instances are equal
         /// </summary>
-        /// <param name="other">Instance of ProductionLot to be compared</param>
+        /// <param name="other">Instance of BusinessTransaction to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ProductionLot other)
+        public bool Equals(BusinessTransaction other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -132,24 +145,39 @@ namespace Infoplus.Model
                     this.Id.Equals(other.Id)
                 ) && 
                 (
+                    this.CreateDate == other.CreateDate ||
+                    this.CreateDate != null &&
+                    this.CreateDate.Equals(other.CreateDate)
+                ) && 
+                (
+                    this.ModifyDate == other.ModifyDate ||
+                    this.ModifyDate != null &&
+                    this.ModifyDate.Equals(other.ModifyDate)
+                ) && 
+                (
+                    this.ServerName == other.ServerName ||
+                    this.ServerName != null &&
+                    this.ServerName.Equals(other.ServerName)
+                ) && 
+                (
+                    this.QueueName == other.QueueName ||
+                    this.QueueName != null &&
+                    this.QueueName.Equals(other.QueueName)
+                ) && 
+                (
                     this.LobId == other.LobId ||
                     this.LobId != null &&
                     this.LobId.Equals(other.LobId)
                 ) && 
                 (
-                    this.ProductionLot == other.ProductionLot ||
-                    this.ProductionLot != null &&
-                    this.ProductionLot.Equals(other.ProductionLot)
+                    this.MessageBody == other.MessageBody ||
+                    this.MessageBody != null &&
+                    this.MessageBody.Equals(other.MessageBody)
                 ) && 
                 (
-                    this.Quantity == other.Quantity ||
-                    this.Quantity != null &&
-                    this.Quantity.Equals(other.Quantity)
-                ) && 
-                (
-                    this.Sku == other.Sku ||
-                    this.Sku != null &&
-                    this.Sku.Equals(other.Sku)
+                    this.Status == other.Status ||
+                    this.Status != null &&
+                    this.Status.Equals(other.Status)
                 );
         }
 
@@ -166,14 +194,20 @@ namespace Infoplus.Model
                 // Suitable nullity checks etc, of course :)
                 if (this.Id != null)
                     hash = hash * 59 + this.Id.GetHashCode();
+                if (this.CreateDate != null)
+                    hash = hash * 59 + this.CreateDate.GetHashCode();
+                if (this.ModifyDate != null)
+                    hash = hash * 59 + this.ModifyDate.GetHashCode();
+                if (this.ServerName != null)
+                    hash = hash * 59 + this.ServerName.GetHashCode();
+                if (this.QueueName != null)
+                    hash = hash * 59 + this.QueueName.GetHashCode();
                 if (this.LobId != null)
                     hash = hash * 59 + this.LobId.GetHashCode();
-                if (this.ProductionLot != null)
-                    hash = hash * 59 + this.ProductionLot.GetHashCode();
-                if (this.Quantity != null)
-                    hash = hash * 59 + this.Quantity.GetHashCode();
-                if (this.Sku != null)
-                    hash = hash * 59 + this.Sku.GetHashCode();
+                if (this.MessageBody != null)
+                    hash = hash * 59 + this.MessageBody.GetHashCode();
+                if (this.Status != null)
+                    hash = hash * 59 + this.Status.GetHashCode();
                 return hash;
             }
         }

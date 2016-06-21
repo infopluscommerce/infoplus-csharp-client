@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ItemSubGroup
+    /// ItemSummaryCode
     /// </summary>
     [DataContract]
-    public partial class ItemSubGroup :  IEquatable<ItemSubGroup>
+    public partial class ItemSummaryCode :  IEquatable<ItemSummaryCode>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ItemSubGroup" /> class.
+        /// Initializes a new instance of the <see cref="ItemSummaryCode" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ItemSubGroup() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ItemSubGroup" /> class.
-        /// </summary>
-        public ItemSubGroup()
+        public ItemSummaryCode()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ItemSubGroup {\n");
+            sb.Append("class ItemSummaryCode {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ItemSubGroup);
+            return this.Equals(obj as ItemSummaryCode);
         }
 
         /// <summary>
-        /// Returns true if ItemSubGroup instances are equal
+        /// Returns true if ItemSummaryCode instances are equal
         /// </summary>
-        /// <param name="other">Instance of ItemSubGroup to be compared</param>
+        /// <param name="other">Instance of ItemSummaryCode to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ItemSubGroup other)
+        public bool Equals(ItemSummaryCode other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

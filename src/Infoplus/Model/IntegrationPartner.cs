@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// CarrierService
+    /// IntegrationPartner
     /// </summary>
     [DataContract]
-    public partial class CarrierService :  IEquatable<CarrierService>
+    public partial class IntegrationPartner :  IEquatable<IntegrationPartner>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="CarrierService" /> class.
+        /// Initializes a new instance of the <see cref="IntegrationPartner" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected CarrierService() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="CarrierService" /> class.
-        /// </summary>
-        public CarrierService()
+        public IntegrationPartner()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class CarrierService {\n");
+            sb.Append("class IntegrationPartner {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as CarrierService);
+            return this.Equals(obj as IntegrationPartner);
         }
 
         /// <summary>
-        /// Returns true if CarrierService instances are equal
+        /// Returns true if IntegrationPartner instances are equal
         /// </summary>
-        /// <param name="other">Instance of CarrierService to be compared</param>
+        /// <param name="other">Instance of IntegrationPartner to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(CarrierService other)
+        public bool Equals(IntegrationPartner other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

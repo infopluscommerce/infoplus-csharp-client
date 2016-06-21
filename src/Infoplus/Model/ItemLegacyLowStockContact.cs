@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ItemMajorGroup
+    /// ItemLegacyLowStockContact
     /// </summary>
     [DataContract]
-    public partial class ItemMajorGroup :  IEquatable<ItemMajorGroup>
+    public partial class ItemLegacyLowStockContact :  IEquatable<ItemLegacyLowStockContact>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ItemMajorGroup" /> class.
+        /// Initializes a new instance of the <see cref="ItemLegacyLowStockContact" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ItemMajorGroup() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ItemMajorGroup" /> class.
-        /// </summary>
-        public ItemMajorGroup()
+        public ItemLegacyLowStockContact()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ItemMajorGroup {\n");
+            sb.Append("class ItemLegacyLowStockContact {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ItemMajorGroup);
+            return this.Equals(obj as ItemLegacyLowStockContact);
         }
 
         /// <summary>
-        /// Returns true if ItemMajorGroup instances are equal
+        /// Returns true if ItemLegacyLowStockContact instances are equal
         /// </summary>
-        /// <param name="other">Instance of ItemMajorGroup to be compared</param>
+        /// <param name="other">Instance of ItemLegacyLowStockContact to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ItemMajorGroup other)
+        public bool Equals(ItemLegacyLowStockContact other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

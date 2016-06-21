@@ -43,19 +43,15 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="ServiceType" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ServiceType() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ServiceType" /> class.
-        /// </summary>
         public ServiceType()
         {
         }
         
         /// <summary>
-        /// Gets or Sets ServiceType
+        /// Gets or Sets _ServiceType
         /// </summary>
         [DataMember(Name="serviceType", EmitDefaultValue=false)]
-        public string ServiceType { get; private set; }
+        public string _ServiceType { get; private set; }
         /// <summary>
         /// Gets or Sets Label
         /// </summary>
@@ -69,7 +65,7 @@ namespace Infoplus.Model
         {
             var sb = new StringBuilder();
             sb.Append("class ServiceType {\n");
-            sb.Append("  ServiceType: ").Append(ServiceType).Append("\n");
+            sb.Append("  _ServiceType: ").Append(_ServiceType).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -108,9 +104,9 @@ namespace Infoplus.Model
 
             return 
                 (
-                    this.ServiceType == other.ServiceType ||
-                    this.ServiceType != null &&
-                    this.ServiceType.Equals(other.ServiceType)
+                    this._ServiceType == other._ServiceType ||
+                    this._ServiceType != null &&
+                    this._ServiceType.Equals(other._ServiceType)
                 ) && 
                 (
                     this.Label == other.Label ||
@@ -130,8 +126,8 @@ namespace Infoplus.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.ServiceType != null)
-                    hash = hash * 59 + this.ServiceType.GetHashCode();
+                if (this._ServiceType != null)
+                    hash = hash * 59 + this._ServiceType.GetHashCode();
                 if (this.Label != null)
                     hash = hash * 59 + this.Label.GetHashCode();
                 return hash;

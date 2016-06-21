@@ -34,28 +34,24 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ItemBuyer
+    /// Carrier
     /// </summary>
     [DataContract]
-    public partial class ItemBuyer :  IEquatable<ItemBuyer>
+    public partial class Carrier :  IEquatable<Carrier>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ItemBuyer" /> class.
+        /// Initializes a new instance of the <see cref="Carrier" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ItemBuyer() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ItemBuyer" /> class.
-        /// </summary>
-        public ItemBuyer()
+        public Carrier()
         {
         }
         
         /// <summary>
-        /// Gets or Sets Id
+        /// Gets or Sets _Carrier
         /// </summary>
-        [DataMember(Name="id", EmitDefaultValue=false)]
-        public int? Id { get; private set; }
+        [DataMember(Name="carrier", EmitDefaultValue=false)]
+        public int? _Carrier { get; private set; }
         /// <summary>
         /// Gets or Sets Label
         /// </summary>
@@ -68,8 +64,8 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ItemBuyer {\n");
-            sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("class Carrier {\n");
+            sb.Append("  _Carrier: ").Append(_Carrier).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ItemBuyer);
+            return this.Equals(obj as Carrier);
         }
 
         /// <summary>
-        /// Returns true if ItemBuyer instances are equal
+        /// Returns true if Carrier instances are equal
         /// </summary>
-        /// <param name="other">Instance of ItemBuyer to be compared</param>
+        /// <param name="other">Instance of Carrier to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ItemBuyer other)
+        public bool Equals(Carrier other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -108,9 +104,9 @@ namespace Infoplus.Model
 
             return 
                 (
-                    this.Id == other.Id ||
-                    this.Id != null &&
-                    this.Id.Equals(other.Id)
+                    this._Carrier == other._Carrier ||
+                    this._Carrier != null &&
+                    this._Carrier.Equals(other._Carrier)
                 ) && 
                 (
                     this.Label == other.Label ||
@@ -130,8 +126,8 @@ namespace Infoplus.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.Id != null)
-                    hash = hash * 59 + this.Id.GetHashCode();
+                if (this._Carrier != null)
+                    hash = hash * 59 + this._Carrier.GetHashCode();
                 if (this.Label != null)
                     hash = hash * 59 + this.Label.GetHashCode();
                 return hash;

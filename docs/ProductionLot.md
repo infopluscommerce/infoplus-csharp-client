@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** |  | [optional] 
 **LobId** | **int?** |  | [optional] 
-**ProductionLot** | **string** |  | [optional] 
+**_ProductionLot** | **string** |  | [optional] 
 **Quantity** | **int?** |  | [optional] 
 **Sku** | **string** |  | [optional] 
 

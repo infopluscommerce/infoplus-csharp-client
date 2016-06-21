@@ -34,28 +34,24 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// Carrier
+    /// User
     /// </summary>
     [DataContract]
-    public partial class Carrier :  IEquatable<Carrier>
+    public partial class User :  IEquatable<User>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Carrier" /> class.
+        /// Initializes a new instance of the <see cref="User" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected Carrier() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="Carrier" /> class.
-        /// </summary>
-        public Carrier()
+        public User()
         {
         }
         
         /// <summary>
-        /// Gets or Sets Carrier
+        /// Gets or Sets UserId
         /// </summary>
-        [DataMember(Name="carrier", EmitDefaultValue=false)]
-        public int? Carrier { get; private set; }
+        [DataMember(Name="userId", EmitDefaultValue=false)]
+        public int? UserId { get; private set; }
         /// <summary>
         /// Gets or Sets Label
         /// </summary>
@@ -68,8 +64,8 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class Carrier {\n");
-            sb.Append("  Carrier: ").Append(Carrier).Append("\n");
+            sb.Append("class User {\n");
+            sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as Carrier);
+            return this.Equals(obj as User);
         }
 
         /// <summary>
-        /// Returns true if Carrier instances are equal
+        /// Returns true if User instances are equal
         /// </summary>
-        /// <param name="other">Instance of Carrier to be compared</param>
+        /// <param name="other">Instance of User to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(Carrier other)
+        public bool Equals(User other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -108,9 +104,9 @@ namespace Infoplus.Model
 
             return 
                 (
-                    this.Carrier == other.Carrier ||
-                    this.Carrier != null &&
-                    this.Carrier.Equals(other.Carrier)
+                    this.UserId == other.UserId ||
+                    this.UserId != null &&
+                    this.UserId.Equals(other.UserId)
                 ) && 
                 (
                     this.Label == other.Label ||
@@ -130,8 +126,8 @@ namespace Infoplus.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.Carrier != null)
-                    hash = hash * 59 + this.Carrier.GetHashCode();
+                if (this.UserId != null)
+                    hash = hash * 59 + this.UserId.GetHashCode();
                 if (this.Label != null)
                     hash = hash * 59 + this.Label.GetHashCode();
                 return hash;

@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ItemAccountCode
+    /// ItemBuyer
     /// </summary>
     [DataContract]
-    public partial class ItemAccountCode :  IEquatable<ItemAccountCode>
+    public partial class ItemBuyer :  IEquatable<ItemBuyer>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ItemAccountCode" /> class.
+        /// Initializes a new instance of the <see cref="ItemBuyer" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ItemAccountCode() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ItemAccountCode" /> class.
-        /// </summary>
-        public ItemAccountCode()
+        public ItemBuyer()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ItemAccountCode {\n");
+            sb.Append("class ItemBuyer {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ItemAccountCode);
+            return this.Equals(obj as ItemBuyer);
         }
 
         /// <summary>
-        /// Returns true if ItemAccountCode instances are equal
+        /// Returns true if ItemBuyer instances are equal
         /// </summary>
-        /// <param name="other">Instance of ItemAccountCode to be compared</param>
+        /// <param name="other">Instance of ItemBuyer to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ItemAccountCode other)
+        public bool Equals(ItemBuyer other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

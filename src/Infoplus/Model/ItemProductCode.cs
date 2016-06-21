@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// LoggedTimeType
+    /// ItemProductCode
     /// </summary>
     [DataContract]
-    public partial class LoggedTimeType :  IEquatable<LoggedTimeType>
+    public partial class ItemProductCode :  IEquatable<ItemProductCode>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LoggedTimeType" /> class.
+        /// Initializes a new instance of the <see cref="ItemProductCode" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected LoggedTimeType() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="LoggedTimeType" /> class.
-        /// </summary>
-        public LoggedTimeType()
+        public ItemProductCode()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class LoggedTimeType {\n");
+            sb.Append("class ItemProductCode {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as LoggedTimeType);
+            return this.Equals(obj as ItemProductCode);
         }
 
         /// <summary>
-        /// Returns true if LoggedTimeType instances are equal
+        /// Returns true if ItemProductCode instances are equal
         /// </summary>
-        /// <param name="other">Instance of LoggedTimeType to be compared</param>
+        /// <param name="other">Instance of ItemProductCode to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(LoggedTimeType other)
+        public bool Equals(ItemProductCode other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ItemProductCode
+    /// OrderLoadProgram
     /// </summary>
     [DataContract]
-    public partial class ItemProductCode :  IEquatable<ItemProductCode>
+    public partial class OrderLoadProgram :  IEquatable<OrderLoadProgram>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ItemProductCode" /> class.
+        /// Initializes a new instance of the <see cref="OrderLoadProgram" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ItemProductCode() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ItemProductCode" /> class.
-        /// </summary>
-        public ItemProductCode()
+        public OrderLoadProgram()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ItemProductCode {\n");
+            sb.Append("class OrderLoadProgram {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ItemProductCode);
+            return this.Equals(obj as OrderLoadProgram);
         }
 
         /// <summary>
-        /// Returns true if ItemProductCode instances are equal
+        /// Returns true if OrderLoadProgram instances are equal
         /// </summary>
-        /// <param name="other">Instance of ItemProductCode to be compared</param>
+        /// <param name="other">Instance of OrderLoadProgram to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ItemProductCode other)
+        public bool Equals(OrderLoadProgram other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

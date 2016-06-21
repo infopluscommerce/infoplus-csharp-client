@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// LineOfBusiness
+    /// CarrierService
     /// </summary>
     [DataContract]
-    public partial class LineOfBusiness :  IEquatable<LineOfBusiness>
+    public partial class CarrierService :  IEquatable<CarrierService>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="LineOfBusiness" /> class.
+        /// Initializes a new instance of the <see cref="CarrierService" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected LineOfBusiness() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="LineOfBusiness" /> class.
-        /// </summary>
-        public LineOfBusiness()
+        public CarrierService()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class LineOfBusiness {\n");
+            sb.Append("class CarrierService {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as LineOfBusiness);
+            return this.Equals(obj as CarrierService);
         }
 
         /// <summary>
-        /// Returns true if LineOfBusiness instances are equal
+        /// Returns true if CarrierService instances are equal
         /// </summary>
-        /// <param name="other">Instance of LineOfBusiness to be compared</param>
+        /// <param name="other">Instance of CarrierService to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(LineOfBusiness other)
+        public bool Equals(CarrierService other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

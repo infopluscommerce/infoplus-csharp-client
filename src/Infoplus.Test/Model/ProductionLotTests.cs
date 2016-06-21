@@ -93,12 +93,12 @@ namespace Infoplus.Test
             // TODO unit test for the property 'LobId'
         }
         /// <summary>
-        /// Test the property 'ProductionLot'
+        /// Test the property '_ProductionLot'
         /// </summary>
         [Test]
-        public void ProductionLotTest()
+        public void _ProductionLotTest()
         {
-            // TODO unit test for the property 'ProductionLot'
+            // TODO unit test for the property '_ProductionLot'
         }
         /// <summary>
         /// Test the property 'Quantity'

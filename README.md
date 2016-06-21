@@ -30,7 +30,7 @@ http://developers.infopluscommerce.com/
 # C# Client Details
 - API version: v1.0
 - SDK version: 1.0
-- Build date: 2016-06-13T16:23:16.925-05:00
+- Build date: 2016-06-21T08:50:00.164-05:00
 - Build package: class io.swagger.codegen.languages.CSharpClientCodegen
     For more information, please visit [http://www.infopluscommerce.com](http://www.infopluscommerce.com)
 

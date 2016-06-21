@@ -42,6 +42,7 @@ namespace Infoplus.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="Alert" /> class.
         /// </summary>
+        [JsonConstructorAttribute]
         public Alert()
         {
         }

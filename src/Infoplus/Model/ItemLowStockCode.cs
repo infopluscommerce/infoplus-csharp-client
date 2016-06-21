@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// IntegrationPartner
+    /// ItemLowStockCode
     /// </summary>
     [DataContract]
-    public partial class IntegrationPartner :  IEquatable<IntegrationPartner>
+    public partial class ItemLowStockCode :  IEquatable<ItemLowStockCode>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="IntegrationPartner" /> class.
+        /// Initializes a new instance of the <see cref="ItemLowStockCode" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected IntegrationPartner() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="IntegrationPartner" /> class.
-        /// </summary>
-        public IntegrationPartner()
+        public ItemLowStockCode()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class IntegrationPartner {\n");
+            sb.Append("class ItemLowStockCode {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as IntegrationPartner);
+            return this.Equals(obj as ItemLowStockCode);
         }
 
         /// <summary>
-        /// Returns true if IntegrationPartner instances are equal
+        /// Returns true if ItemLowStockCode instances are equal
         /// </summary>
-        /// <param name="other">Instance of IntegrationPartner to be compared</param>
+        /// <param name="other">Instance of ItemLowStockCode to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(IntegrationPartner other)
+        public bool Equals(ItemLowStockCode other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

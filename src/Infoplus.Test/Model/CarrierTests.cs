@@ -77,12 +77,12 @@ namespace Infoplus.Test
         }
 
         /// <summary>
-        /// Test the property 'Carrier'
+        /// Test the property '_Carrier'
         /// </summary>
         [Test]
-        public void CarrierTest()
+        public void _CarrierTest()
         {
-            // TODO unit test for the property 'Carrier'
+            // TODO unit test for the property '_Carrier'
         }
         /// <summary>
         /// Test the property 'Label'

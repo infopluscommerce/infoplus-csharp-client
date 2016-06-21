@@ -34,28 +34,24 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// User
+    /// ItemAccountCode
     /// </summary>
     [DataContract]
-    public partial class User :  IEquatable<User>
+    public partial class ItemAccountCode :  IEquatable<ItemAccountCode>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="User" /> class.
+        /// Initializes a new instance of the <see cref="ItemAccountCode" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected User() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="User" /> class.
-        /// </summary>
-        public User()
+        public ItemAccountCode()
         {
         }
         
         /// <summary>
-        /// Gets or Sets UserId
+        /// Gets or Sets Id
         /// </summary>
-        [DataMember(Name="userId", EmitDefaultValue=false)]
-        public int? UserId { get; private set; }
+        [DataMember(Name="id", EmitDefaultValue=false)]
+        public int? Id { get; private set; }
         /// <summary>
         /// Gets or Sets Label
         /// </summary>
@@ -68,8 +64,8 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class User {\n");
-            sb.Append("  UserId: ").Append(UserId).Append("\n");
+            sb.Append("class ItemAccountCode {\n");
+            sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as User);
+            return this.Equals(obj as ItemAccountCode);
         }
 
         /// <summary>
-        /// Returns true if User instances are equal
+        /// Returns true if ItemAccountCode instances are equal
         /// </summary>
-        /// <param name="other">Instance of User to be compared</param>
+        /// <param name="other">Instance of ItemAccountCode to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(User other)
+        public bool Equals(ItemAccountCode other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)
@@ -108,9 +104,9 @@ namespace Infoplus.Model
 
             return 
                 (
-                    this.UserId == other.UserId ||
-                    this.UserId != null &&
-                    this.UserId.Equals(other.UserId)
+                    this.Id == other.Id ||
+                    this.Id != null &&
+                    this.Id.Equals(other.Id)
                 ) && 
                 (
                     this.Label == other.Label ||
@@ -130,8 +126,8 @@ namespace Infoplus.Model
             {
                 int hash = 41;
                 // Suitable nullity checks etc, of course :)
-                if (this.UserId != null)
-                    hash = hash * 59 + this.UserId.GetHashCode();
+                if (this.Id != null)
+                    hash = hash * 59 + this.Id.GetHashCode();
                 if (this.Label != null)
                     hash = hash * 59 + this.Label.GetHashCode();
                 return hash;

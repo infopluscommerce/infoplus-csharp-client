@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// OrderLoadProgram
+    /// LineOfBusiness
     /// </summary>
     [DataContract]
-    public partial class OrderLoadProgram :  IEquatable<OrderLoadProgram>
+    public partial class LineOfBusiness :  IEquatable<LineOfBusiness>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="OrderLoadProgram" /> class.
+        /// Initializes a new instance of the <see cref="LineOfBusiness" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected OrderLoadProgram() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="OrderLoadProgram" /> class.
-        /// </summary>
-        public OrderLoadProgram()
+        public LineOfBusiness()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class OrderLoadProgram {\n");
+            sb.Append("class LineOfBusiness {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as OrderLoadProgram);
+            return this.Equals(obj as LineOfBusiness);
         }
 
         /// <summary>
-        /// Returns true if OrderLoadProgram instances are equal
+        /// Returns true if LineOfBusiness instances are equal
         /// </summary>
-        /// <param name="other">Instance of OrderLoadProgram to be compared</param>
+        /// <param name="other">Instance of LineOfBusiness to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(OrderLoadProgram other)
+        public bool Equals(LineOfBusiness other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

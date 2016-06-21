@@ -34,20 +34,16 @@ using Newtonsoft.Json.Converters;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ItemLegacyLowStockContact
+    /// ItemSubGroup
     /// </summary>
     [DataContract]
-    public partial class ItemLegacyLowStockContact :  IEquatable<ItemLegacyLowStockContact>
+    public partial class ItemSubGroup :  IEquatable<ItemSubGroup>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ItemLegacyLowStockContact" /> class.
+        /// Initializes a new instance of the <see cref="ItemSubGroup" /> class.
         /// </summary>
         [JsonConstructorAttribute]
-        protected ItemLegacyLowStockContact() { }
-        /// <summary>
-        /// Initializes a new instance of the <see cref="ItemLegacyLowStockContact" /> class.
-        /// </summary>
-        public ItemLegacyLowStockContact()
+        public ItemSubGroup()
         {
         }
         
@@ -68,7 +64,7 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ItemLegacyLowStockContact {\n");
+            sb.Append("class ItemSubGroup {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Label: ").Append(Label).Append("\n");
             sb.Append("}\n");
@@ -92,15 +88,15 @@ namespace Infoplus.Model
         public override bool Equals(object obj)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
-            return this.Equals(obj as ItemLegacyLowStockContact);
+            return this.Equals(obj as ItemSubGroup);
         }
 
         /// <summary>
-        /// Returns true if ItemLegacyLowStockContact instances are equal
+        /// Returns true if ItemSubGroup instances are equal
         /// </summary>
-        /// <param name="other">Instance of ItemLegacyLowStockContact to be compared</param>
+        /// <param name="other">Instance of ItemSubGroup to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ItemLegacyLowStockContact other)
+        public bool Equals(ItemSubGroup other)
         {
             // credit: http://stackoverflow.com/a/10454552/677735
             if (other == null)

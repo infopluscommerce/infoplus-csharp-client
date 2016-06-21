@@ -77,12 +77,12 @@ namespace Infoplus.Test
         }
 
         /// <summary>
-        /// Test the property 'ServiceType'
+        /// Test the property '_ServiceType'
         /// </summary>
         [Test]
-        public void ServiceTypeTest()
+        public void _ServiceTypeTest()
         {
-            // TODO unit test for the property 'ServiceType'
+            // TODO unit test for the property '_ServiceType'
         }
         /// <summary>
         /// Test the property 'Label'
