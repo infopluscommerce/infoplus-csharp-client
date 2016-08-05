@@ -1,38 +1,38 @@
-# infoplus-csharp-client
-Infoplus is a cloud platform to manage your inventory, orders, warehouse, and shipments.
+# betaplus-csharp-client
+betaplus is a cloud platform to manage your inventory, orders, warehouse, and shipments.
 
-The Infoplus API exposes the full breadth and depth of the Infoplus platform to all clients.
-With the Infoplus API, you can integrate Infoplus functionality into other platforms 
+The betaplus API exposes the full breadth and depth of the betaplus platform to all clients.
+With the betaplus API, you can integrate betaplus functionality into other platforms 
 (e.g. your ERP, shopping cart, accounting system, etc.), enabling you to do, in your own platform, 
-anything you can do in Infoplus. 
+anything you can do in betaplus. 
 
-This repository is a native C# client for full access to the Infoplus API.
+This repository is a native C# client for full access to the betaplus API.
 
-## Infoplus API Resources
-The Resources listed below will provide all the information you need to integrate with the Infoplus API. 
+## betaplus API Resources
+The Resources listed below will provide all the betarmation you need to integrate with the betaplus API. 
 
 ### Developer's Home Page
-https://www.infopluscommerce.com/developers/
-* This site gives you an overview of the Infoplus API. 
+https://www.betapluscommerce.com/developers/
+* This site gives you an overview of the betaplus API. 
 * Get a general understanding of the API and quick steps on getting started. 
 
-### Infoplus API Reference Site
-http://developers.infopluscommerce.com/
-* The Infoplus API is a modern JSON + REST API, and the API Reference Site is the complete documentation of all endpoints, resources, and fields available in the API. 
+### betaplus API Reference Site
+http://developers.betapluscommerce.com/
+* The betaplus API is a modern JSON + REST API, and the API Reference Site is the complete documentation of all endpoints, resources, and fields available in the API. 
 * Whether you're using the API directly over HTTPS, or if you're using a pre-built Client Library like this one, the API Reference Site gives you the specific details you need for each API call available, along with live demo capabilities.
 * The API Reference Site also lets you request access to a free Demo Account to test out the API. 
 
 ### Have Questions?
-* Read an [Overview of the Infoplus API](https://support.infopluscommerce.com/support/solutions/articles/11000010373)
-* Get in touch with the [Infoplus Support Team](https://support.infopluscommerce.com/support/tickets/new)
-* Visit the [Infoplus API Forum](https://support.infopluscommerce.com/support/discussions/forums/11000000138)
+* Read an [Overview of the betaplus API](https://support.betapluscommerce.com/support/solutions/articles/11000010373)
+* Get in touch with the [betaplus Support Team](https://support.betapluscommerce.com/support/tickets/new)
+* Visit the [betaplus API Forum](https://support.betapluscommerce.com/support/discussions/forums/11000000138)
 
 # C# Client Details
 - API version: v1.0
 - SDK version: 1.0
 - Build date: 2016-06-21T08:50:00.164-05:00
 - Build package: class io.swagger.codegen.languages.CSharpClientCodegen
-    For more information, please visit [http://www.infopluscommerce.com](http://www.infopluscommerce.com)
+    For more betarmation, please visit [http://www.betapluscommerce.com](http://www.betapluscommerce.com)
 
 ## Frameworks supported
 - .NET 4.0 or later
@@ -57,8 +57,8 @@ Run the following command to generate the DLL
 
 Then include the DLL (under the `bin` folder) in the C# project, and use the namespaces:
 ```csharp
-using Infoplus.Api;
-using Infoplus.Client;
+using betaplus.Api;
+using betaplus.Client;
 using Model;
 ```
 
@@ -67,8 +67,8 @@ using Model;
 ```csharp
 using System;
 using System.Diagnostics;
-using Infoplus.Api;
-using Infoplus.Client;
+using betaplus.Api;
+using betaplus.Client;
 using Model;
 
 namespace Example
@@ -80,8 +80,8 @@ namespace Example
             // Configure API key authorization: api_key
             Configuration.Default.ApiKey.Add('API-Key', 'YOUR_API_KEY');
 
-            // Construct Api instances specifying your Infoplus domain:
-            var apiInstance = new AisleApi("https://YOUR_DOMAIN.infopluswms.com/");
+            // Construct Api instances specifying your betaplus domain:
+            var apiInstance = new AisleApi("https://YOUR_DOMAIN.betapluswms.com/");
             var body = new Aisle(); // Aisle | Aisle to be inserted.
 
             try
@@ -101,7 +101,7 @@ namespace Example
 
 ## Documentation for API Endpoints
 
-All URIs are relative to * https://YOUR_DOMAIN.infopluswms.com/infoplus-wms/api*
+All URIs are relative to * https://YOUR_DOMAIN.betapluswms.com/betaplus-wms/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -362,8 +362,8 @@ Class | Method | HTTP request | Description
  - [Model.ApiResponse](docs/ApiResponse.md)
  - [Model.Asn](docs/Asn.md)
  - [Model.BillOfLading](docs/BillOfLading.md)
- - [Model.BillOfLadingCarrierInfoLine](docs/BillOfLadingCarrierInfoLine.md)
- - [Model.BillOfLadingOrderInfoLine](docs/BillOfLadingOrderInfoLine.md)
+ - [Model.BillOfLadingCarrierbetaLine](docs/BillOfLadingCarrierbetaLine.md)
+ - [Model.BillOfLadingOrderbetaLine](docs/BillOfLadingOrderbetaLine.md)
  - [Model.BillingCode](docs/BillingCode.md)
  - [Model.BillingCodeType](docs/BillingCodeType.md)
  - [Model.Building](docs/Building.md)
