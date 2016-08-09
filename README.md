@@ -59,17 +59,15 @@ Then include the DLL (under the `bin` folder) in the C# project, and use the nam
 ```csharp
 using Infoplus.Api;
 using Infoplus.Client;
-using Model;
+using Infoplus.Model;
 ```
 
 ## Getting Started
 
 ```csharp
-using System;
-using System.Diagnostics;
 using Infoplus.Api;
 using Infoplus.Client;
-using Model;
+using Infoplus.Model;
 
 namespace Example
 {
@@ -77,24 +75,28 @@ namespace Example
     {
         public void main()
         {
-            
-            // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
-            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
-
-            var apiInstance = new AisleApi();
-            var body = new Aisle(); // Aisle | Aisle to be inserted.
-
             try
             {
-                // Create an aisle
-                Aisle result = apiInstance.AddAisle(body);
-                Debug.WriteLine(result);
+                // Configure the Api Client with your API-Key and Infoplus domain name.
+                Configuration.Default.ApiKey.Add("API-Key", "<YOUR-API-KEY>");
+                Configuration.Default.ApiClient = new ApiClient("https://<YOUR-SUBDOMAIN>.infopluswms.com/infoplus-wms/api/");
+
+                // Instantiate Api objects.
+                WarehouseApi warehouseApi = new WarehouseApi();
+                ZoneApi zoneApi = new ZoneApi();
+
+                // Get a list of Warehouse records.
+                List<Warehouse> warehouseList = warehouseApi.GetWarehouseByFilter();
+                warehouseList.ForEach(i => Debug.WriteLine(i));
+
+                // Create a new Zone in the first Warehouse found, with a random name.
+                Zone zone = new Zone(warehouseList[0].Id, "New Zone " + new Random().Next(1, 1000));
+                zone = zoneApi.AddZone(zone);
+                Debug.WriteLine("Added Zone: " + zone);
             }
             catch (Exception e)
             {
-                Debug.Print("Exception when calling AisleApi.AddAisle: " + e.Message );
+                Debug.Print("Exception in Infoplus API: " + e.Message);
             }
         }
     }
@@ -103,8 +105,6 @@ namespace Example
 
 <a name="documentation-for-api-endpoints"></a>
 ## Documentation for API Endpoints
-
-All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms.com:8443/infoplus-wms/api*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
