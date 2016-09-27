@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>infoplus-csharp-client</id>
+    <version>1.0</version>
+    <title>infoplus-csharp-client</title>
+    <authors>bherila</authors>
+    <owners>bherila</owners>
+    <licenseUrl>https://github.com/infopluscommerce/infoplus-csharp-client/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/infopluscommerce/infoplus-csharp-client</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>The Infoplus API exposes the full breadth and depth of the Infoplus platform to all clients.</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>infoplus</tags>
+    <dependencies>
+      <dependency id="RestSharp" version="105.1.0" />
+      <dependency id="Newtonsoft.Json" version="8.0.3" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Infoplus.*" target="lib\net40\" />
+	<file src="bin\Infoplus.*" target="lib\net45\" />
+  </files>
+</package>
