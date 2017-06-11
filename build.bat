@@ -26,3 +26,5 @@ copy packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll bin\Newtonsoft
 copy packages\RestSharp.105.1.0\lib\net45\RestSharp.dll bin\RestSharp.dll
 
 %CSCPATH%\csc /reference:bin\Newtonsoft.Json.dll;bin\RestSharp.dll /target:library /out:bin\Infoplus.dll /recurse:src\Infoplus\*.cs /doc:bin\Infoplus.xml
+
+nuget pack
