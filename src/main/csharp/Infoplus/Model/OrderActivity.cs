@@ -380,10 +380,16 @@ namespace Infoplus.Model
         public string PriceLevel { get; set; }
     
         /// <summary>
-        /// Gets or Sets EntryTime
+        /// Gets or Sets OrderCreateDate
         /// </summary>
-        [DataMember(Name="entryTime", EmitDefaultValue=false)]
-        public DateTime? EntryTime { get; private set; }
+        [DataMember(Name="orderCreateDate", EmitDefaultValue=false)]
+        public DateTime? OrderCreateDate { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets OrderModifyDate
+        /// </summary>
+        [DataMember(Name="orderModifyDate", EmitDefaultValue=false)]
+        public DateTime? OrderModifyDate { get; private set; }
     
         /// <summary>
         /// Gets or Sets ShipBy
@@ -836,6 +842,24 @@ namespace Infoplus.Model
         public int? TotalQty { get; private set; }
     
         /// <summary>
+        /// Gets or Sets NumberOfWraps
+        /// </summary>
+        [DataMember(Name="numberOfWraps", EmitDefaultValue=false)]
+        public int? NumberOfWraps { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets NumberOfCases
+        /// </summary>
+        [DataMember(Name="numberOfCases", EmitDefaultValue=false)]
+        public int? NumberOfCases { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets NumberOfTouches
+        /// </summary>
+        [DataMember(Name="numberOfTouches", EmitDefaultValue=false)]
+        public int? NumberOfTouches { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets EstimatedNumberOfPicks
         /// </summary>
         [DataMember(Name="estimatedNumberOfPicks", EmitDefaultValue=false)]
@@ -916,7 +940,8 @@ namespace Infoplus.Model
             sb.Append("  OrderReason: ").Append(OrderReason).Append("\n");
             sb.Append("  CustomerOrderNo: ").Append(CustomerOrderNo).Append("\n");
             sb.Append("  PriceLevel: ").Append(PriceLevel).Append("\n");
-            sb.Append("  EntryTime: ").Append(EntryTime).Append("\n");
+            sb.Append("  OrderCreateDate: ").Append(OrderCreateDate).Append("\n");
+            sb.Append("  OrderModifyDate: ").Append(OrderModifyDate).Append("\n");
             sb.Append("  ShipBy: ").Append(ShipBy).Append("\n");
             sb.Append("  StopBackOrders: ").Append(StopBackOrders).Append("\n");
             sb.Append("  WarehouseId: ").Append(WarehouseId).Append("\n");
@@ -992,6 +1017,9 @@ namespace Infoplus.Model
             sb.Append("  LeadPackageId: ").Append(LeadPackageId).Append("\n");
             sb.Append("  DeliveredDate: ").Append(DeliveredDate).Append("\n");
             sb.Append("  TotalQty: ").Append(TotalQty).Append("\n");
+            sb.Append("  NumberOfWraps: ").Append(NumberOfWraps).Append("\n");
+            sb.Append("  NumberOfCases: ").Append(NumberOfCases).Append("\n");
+            sb.Append("  NumberOfTouches: ").Append(NumberOfTouches).Append("\n");
             sb.Append("  EstimatedNumberOfPicks: ").Append(EstimatedNumberOfPicks).Append("\n");
             sb.Append("  OrderConfirmationEmailTemplateId: ").Append(OrderConfirmationEmailTemplateId).Append("\n");
             sb.Append("  ShipmentConfirmationEmailTemplateId: ").Append(ShipmentConfirmationEmailTemplateId).Append("\n");
@@ -1163,9 +1191,14 @@ namespace Infoplus.Model
                     this.PriceLevel.Equals(other.PriceLevel)
                 ) && 
                 (
-                    this.EntryTime == other.EntryTime ||
-                    this.EntryTime != null &&
-                    this.EntryTime.Equals(other.EntryTime)
+                    this.OrderCreateDate == other.OrderCreateDate ||
+                    this.OrderCreateDate != null &&
+                    this.OrderCreateDate.Equals(other.OrderCreateDate)
+                ) && 
+                (
+                    this.OrderModifyDate == other.OrderModifyDate ||
+                    this.OrderModifyDate != null &&
+                    this.OrderModifyDate.Equals(other.OrderModifyDate)
                 ) && 
                 (
                     this.ShipBy == other.ShipBy ||
@@ -1543,6 +1576,21 @@ namespace Infoplus.Model
                     this.TotalQty.Equals(other.TotalQty)
                 ) && 
                 (
+                    this.NumberOfWraps == other.NumberOfWraps ||
+                    this.NumberOfWraps != null &&
+                    this.NumberOfWraps.Equals(other.NumberOfWraps)
+                ) && 
+                (
+                    this.NumberOfCases == other.NumberOfCases ||
+                    this.NumberOfCases != null &&
+                    this.NumberOfCases.Equals(other.NumberOfCases)
+                ) && 
+                (
+                    this.NumberOfTouches == other.NumberOfTouches ||
+                    this.NumberOfTouches != null &&
+                    this.NumberOfTouches.Equals(other.NumberOfTouches)
+                ) && 
+                (
                     this.EstimatedNumberOfPicks == other.EstimatedNumberOfPicks ||
                     this.EstimatedNumberOfPicks != null &&
                     this.EstimatedNumberOfPicks.Equals(other.EstimatedNumberOfPicks)
@@ -1671,8 +1719,11 @@ namespace Infoplus.Model
                 if (this.PriceLevel != null)
                     hash = hash * 59 + this.PriceLevel.GetHashCode();
                 
-                if (this.EntryTime != null)
-                    hash = hash * 59 + this.EntryTime.GetHashCode();
+                if (this.OrderCreateDate != null)
+                    hash = hash * 59 + this.OrderCreateDate.GetHashCode();
+                
+                if (this.OrderModifyDate != null)
+                    hash = hash * 59 + this.OrderModifyDate.GetHashCode();
                 
                 if (this.ShipBy != null)
                     hash = hash * 59 + this.ShipBy.GetHashCode();
@@ -1898,6 +1949,15 @@ namespace Infoplus.Model
                 
                 if (this.TotalQty != null)
                     hash = hash * 59 + this.TotalQty.GetHashCode();
+                
+                if (this.NumberOfWraps != null)
+                    hash = hash * 59 + this.NumberOfWraps.GetHashCode();
+                
+                if (this.NumberOfCases != null)
+                    hash = hash * 59 + this.NumberOfCases.GetHashCode();
+                
+                if (this.NumberOfTouches != null)
+                    hash = hash * 59 + this.NumberOfTouches.GetHashCode();
                 
                 if (this.EstimatedNumberOfPicks != null)
                     hash = hash * 59 + this.EstimatedNumberOfPicks.GetHashCode();

@@ -46,7 +46,8 @@ namespace Infoplus.Model
         /// <param name="CriticalAmount">CriticalAmount (required).</param>
         /// <param name="OverallFixedReorderPoint">OverallFixedReorderPoint.</param>
         /// <param name="OverallLeadTime">OverallLeadTime.</param>
-        /// <param name="ListPrice">ListPrice.</param>
+        /// <param name="SellPrice">SellPrice.</param>
+        /// <param name="PricingPer">PricingPer.</param>
         /// <param name="LotControlFlag">LotControlFlag.</param>
         /// <param name="MaxCycle">MaxCycle (required).</param>
         /// <param name="MaxInterim">MaxInterim (required).</param>
@@ -73,6 +74,9 @@ namespace Infoplus.Model
         /// <param name="ExtrinsicDecimal1">ExtrinsicDecimal1.</param>
         /// <param name="ExtrinsicDecimal2">ExtrinsicDecimal2.</param>
         /// <param name="CasebreakEnabled">CasebreakEnabled.</param>
+        /// <param name="VendorId">VendorId.</param>
+        /// <param name="VendorPrice">VendorPrice.</param>
+        /// <param name="VendorPer">VendorPer.</param>
         /// <param name="ForwardLotMixingRule">ForwardLotMixingRule (required).</param>
         /// <param name="StorageLotMixingRule">StorageLotMixingRule (required).</param>
         /// <param name="ForwardItemMixingRule">ForwardItemMixingRule (required).</param>
@@ -102,7 +106,7 @@ namespace Infoplus.Model
         /// <param name="ShipSolo">ShipSolo (default to false).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? ListPrice = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string BarcodeField = null, string WarehouseDisplayField = null, int? ProductIdTagSchemeId = null, string Hazmat = null, bool? IsAlcohol = null, string AlcoholType = null, double? AlcoholContent = null, string AlcoholContainer = null, string AlcoholVintageYear = null, string AlcoholCountry = null, string AlcoholState = null, string AlcoholRegion = null, string AlcoholBrand = null, string AlcoholUPCCode = null, string AlcoholNAMBCACode = null, string AlcoholUNIMERCCode = null, string AlcoholSCCCode = null, double? Length = null, double? Width = null, double? Height = null, bool? TopUp = null, bool? ShipSolo = null, Dictionary<string, Object> CustomFields = null)
+        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? SellPrice = null, string PricingPer = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, int? VendorId = null, double? VendorPrice = null, string VendorPer = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string BarcodeField = null, string WarehouseDisplayField = null, int? ProductIdTagSchemeId = null, string Hazmat = null, bool? IsAlcohol = null, string AlcoholType = null, double? AlcoholContent = null, string AlcoholContainer = null, string AlcoholVintageYear = null, string AlcoholCountry = null, string AlcoholState = null, string AlcoholRegion = null, string AlcoholBrand = null, string AlcoholUPCCode = null, string AlcoholNAMBCACode = null, string AlcoholUNIMERCCode = null, string AlcoholSCCCode = null, double? Length = null, double? Width = null, double? Height = null, bool? TopUp = null, bool? ShipSolo = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "MajorGroupId" is required (not null)
             if (MajorGroupId == null)
@@ -327,7 +331,8 @@ namespace Infoplus.Model
             this.CompCode = CompCode;
             this.OverallFixedReorderPoint = OverallFixedReorderPoint;
             this.OverallLeadTime = OverallLeadTime;
-            this.ListPrice = ListPrice;
+            this.SellPrice = SellPrice;
+            this.PricingPer = PricingPer;
             this.LotControlFlag = LotControlFlag;
             this.NumericSortOrder = NumericSortOrder;
             this.OutsideVendor = OutsideVendor;
@@ -345,6 +350,9 @@ namespace Infoplus.Model
             this.ExtrinsicDecimal1 = ExtrinsicDecimal1;
             this.ExtrinsicDecimal2 = ExtrinsicDecimal2;
             this.CasebreakEnabled = CasebreakEnabled;
+            this.VendorId = VendorId;
+            this.VendorPrice = VendorPrice;
+            this.VendorPer = VendorPer;
             this.BarcodeField = BarcodeField;
             this.WarehouseDisplayField = WarehouseDisplayField;
             this.ProductIdTagSchemeId = ProductIdTagSchemeId;
@@ -552,10 +560,16 @@ namespace Infoplus.Model
         public int? OverallLeadTime { get; set; }
     
         /// <summary>
-        /// Gets or Sets ListPrice
+        /// Gets or Sets SellPrice
         /// </summary>
-        [DataMember(Name="listPrice", EmitDefaultValue=false)]
-        public double? ListPrice { get; set; }
+        [DataMember(Name="sellPrice", EmitDefaultValue=false)]
+        public double? SellPrice { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets PricingPer
+        /// </summary>
+        [DataMember(Name="pricingPer", EmitDefaultValue=false)]
+        public string PricingPer { get; set; }
     
         /// <summary>
         /// Gets or Sets LotControlFlag
@@ -718,6 +732,24 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="casebreakEnabled", EmitDefaultValue=false)]
         public string CasebreakEnabled { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets VendorId
+        /// </summary>
+        [DataMember(Name="vendorId", EmitDefaultValue=false)]
+        public int? VendorId { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets VendorPrice
+        /// </summary>
+        [DataMember(Name="vendorPrice", EmitDefaultValue=false)]
+        public double? VendorPrice { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets VendorPer
+        /// </summary>
+        [DataMember(Name="vendorPer", EmitDefaultValue=false)]
+        public string VendorPer { get; set; }
     
         /// <summary>
         /// Gets or Sets ModifyDate
@@ -999,7 +1031,8 @@ namespace Infoplus.Model
             sb.Append("  CriticalAmount: ").Append(CriticalAmount).Append("\n");
             sb.Append("  OverallFixedReorderPoint: ").Append(OverallFixedReorderPoint).Append("\n");
             sb.Append("  OverallLeadTime: ").Append(OverallLeadTime).Append("\n");
-            sb.Append("  ListPrice: ").Append(ListPrice).Append("\n");
+            sb.Append("  SellPrice: ").Append(SellPrice).Append("\n");
+            sb.Append("  PricingPer: ").Append(PricingPer).Append("\n");
             sb.Append("  LotControlFlag: ").Append(LotControlFlag).Append("\n");
             sb.Append("  MaxCycle: ").Append(MaxCycle).Append("\n");
             sb.Append("  MaxInterim: ").Append(MaxInterim).Append("\n");
@@ -1027,6 +1060,9 @@ namespace Infoplus.Model
             sb.Append("  ExtrinsicDecimal1: ").Append(ExtrinsicDecimal1).Append("\n");
             sb.Append("  ExtrinsicDecimal2: ").Append(ExtrinsicDecimal2).Append("\n");
             sb.Append("  CasebreakEnabled: ").Append(CasebreakEnabled).Append("\n");
+            sb.Append("  VendorId: ").Append(VendorId).Append("\n");
+            sb.Append("  VendorPrice: ").Append(VendorPrice).Append("\n");
+            sb.Append("  VendorPer: ").Append(VendorPer).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
             sb.Append("  ForwardLotMixingRule: ").Append(ForwardLotMixingRule).Append("\n");
             sb.Append("  StorageLotMixingRule: ").Append(StorageLotMixingRule).Append("\n");
@@ -1236,9 +1272,14 @@ namespace Infoplus.Model
                     this.OverallLeadTime.Equals(other.OverallLeadTime)
                 ) && 
                 (
-                    this.ListPrice == other.ListPrice ||
-                    this.ListPrice != null &&
-                    this.ListPrice.Equals(other.ListPrice)
+                    this.SellPrice == other.SellPrice ||
+                    this.SellPrice != null &&
+                    this.SellPrice.Equals(other.SellPrice)
+                ) && 
+                (
+                    this.PricingPer == other.PricingPer ||
+                    this.PricingPer != null &&
+                    this.PricingPer.Equals(other.PricingPer)
                 ) && 
                 (
                     this.LotControlFlag == other.LotControlFlag ||
@@ -1374,6 +1415,21 @@ namespace Infoplus.Model
                     this.CasebreakEnabled == other.CasebreakEnabled ||
                     this.CasebreakEnabled != null &&
                     this.CasebreakEnabled.Equals(other.CasebreakEnabled)
+                ) && 
+                (
+                    this.VendorId == other.VendorId ||
+                    this.VendorId != null &&
+                    this.VendorId.Equals(other.VendorId)
+                ) && 
+                (
+                    this.VendorPrice == other.VendorPrice ||
+                    this.VendorPrice != null &&
+                    this.VendorPrice.Equals(other.VendorPrice)
+                ) && 
+                (
+                    this.VendorPer == other.VendorPer ||
+                    this.VendorPer != null &&
+                    this.VendorPer.Equals(other.VendorPer)
                 ) && 
                 (
                     this.ModifyDate == other.ModifyDate ||
@@ -1672,8 +1728,11 @@ namespace Infoplus.Model
                 if (this.OverallLeadTime != null)
                     hash = hash * 59 + this.OverallLeadTime.GetHashCode();
                 
-                if (this.ListPrice != null)
-                    hash = hash * 59 + this.ListPrice.GetHashCode();
+                if (this.SellPrice != null)
+                    hash = hash * 59 + this.SellPrice.GetHashCode();
+                
+                if (this.PricingPer != null)
+                    hash = hash * 59 + this.PricingPer.GetHashCode();
                 
                 if (this.LotControlFlag != null)
                     hash = hash * 59 + this.LotControlFlag.GetHashCode();
@@ -1755,6 +1814,15 @@ namespace Infoplus.Model
                 
                 if (this.CasebreakEnabled != null)
                     hash = hash * 59 + this.CasebreakEnabled.GetHashCode();
+                
+                if (this.VendorId != null)
+                    hash = hash * 59 + this.VendorId.GetHashCode();
+                
+                if (this.VendorPrice != null)
+                    hash = hash * 59 + this.VendorPrice.GetHashCode();
+                
+                if (this.VendorPer != null)
+                    hash = hash * 59 + this.VendorPer.GetHashCode();
                 
                 if (this.ModifyDate != null)
                     hash = hash * 59 + this.ModifyDate.GetHashCode();

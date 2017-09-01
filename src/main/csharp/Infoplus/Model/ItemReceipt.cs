@@ -24,6 +24,7 @@ namespace Infoplus.Model
         /// </summary>
         /// <param name="LegacyPoNo">LegacyPoNo.</param>
         /// <param name="OrderDate">OrderDate.</param>
+        /// <param name="FullDescription">FullDescription.</param>
         /// <param name="FactCost">FactCost.</param>
         /// <param name="MlCost">MlCost.</param>
         /// <param name="OrderQuantity">OrderQuantity (required).</param>
@@ -32,7 +33,7 @@ namespace Infoplus.Model
         /// <param name="WrapCode">WrapCode (required).</param>
         /// <param name="UnitsPerWrap">UnitsPerWrap (required).</param>
         /// <param name="Cost">Cost.</param>
-        /// <param name="Sell">Sell.</param>
+        /// <param name="SellPrice">SellPrice.</param>
         /// <param name="PricingPer">PricingPer.</param>
         /// <param name="MaxFreight">MaxFreight.</param>
         /// <param name="ChargeFreight">ChargeFreight (required).</param>
@@ -88,7 +89,7 @@ namespace Infoplus.Model
         /// <param name="AsnLine">AsnLine.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ItemReceipt(string LegacyPoNo = null, DateTime? OrderDate = null, double? FactCost = null, double? MlCost = null, int? OrderQuantity = null, DateTime? RequestedDeliveryDate = null, string UnitCode = null, string WrapCode = null, int? UnitsPerWrap = null, double? Cost = null, double? Sell = null, string PricingPer = null, double? MaxFreight = null, string ChargeFreight = null, double? MaxOther = null, DateTime? DistDate = null, DateTime? VoidDate = null, string FreezeAction = null, string RevDate = null, string ArtBack = null, string Origin = null, int? Sample = null, string SampleTo = null, int? MaxOvers = null, int? MaxUnders = null, int? ReceivedSfp = null, string BudgetCode = null, string AccountingCode = null, string TaxExempt = null, string Capitalize = null, string Accrual = null, int? OddQuantity = null, double? FreightCost = null, DateTime? ReceivedDate = null, int? ReceivedQuantity = null, int? FromProd = null, string SfpComplete = null, int? EndQuantity = null, double? EndVal = null, double? EndFact = null, int? InterimQuantity = null, double? InterimVal = null, double? InterimFact = null, DateTime? LastAct = null, double? WeightPerWrap = null, string Norcs = null, int? VendorId = null, int? BsVendor = null, int? MlVendor = null, int? ReceiptNo = null, string PaidFull = null, string EnteredBy = null, string ReceivedBy = null, int? LineNo = null, string ProdLot = null, string ProductIdTag = null, int? UnitsPerCase = null, double? CaseWeight = null, double? Height = null, double? Width = null, double? Length = null, DateTime? DockDate = null, int? Impressions = null, int? AsnLine = null, Dictionary<string, Object> CustomFields = null)
+        public ItemReceipt(string LegacyPoNo = null, DateTime? OrderDate = null, string FullDescription = null, double? FactCost = null, double? MlCost = null, int? OrderQuantity = null, DateTime? RequestedDeliveryDate = null, string UnitCode = null, string WrapCode = null, int? UnitsPerWrap = null, double? Cost = null, double? SellPrice = null, string PricingPer = null, double? MaxFreight = null, string ChargeFreight = null, double? MaxOther = null, DateTime? DistDate = null, DateTime? VoidDate = null, string FreezeAction = null, string RevDate = null, string ArtBack = null, string Origin = null, int? Sample = null, string SampleTo = null, int? MaxOvers = null, int? MaxUnders = null, int? ReceivedSfp = null, string BudgetCode = null, string AccountingCode = null, string TaxExempt = null, string Capitalize = null, string Accrual = null, int? OddQuantity = null, double? FreightCost = null, DateTime? ReceivedDate = null, int? ReceivedQuantity = null, int? FromProd = null, string SfpComplete = null, int? EndQuantity = null, double? EndVal = null, double? EndFact = null, int? InterimQuantity = null, double? InterimVal = null, double? InterimFact = null, DateTime? LastAct = null, double? WeightPerWrap = null, string Norcs = null, int? VendorId = null, int? BsVendor = null, int? MlVendor = null, int? ReceiptNo = null, string PaidFull = null, string EnteredBy = null, string ReceivedBy = null, int? LineNo = null, string ProdLot = null, string ProductIdTag = null, int? UnitsPerCase = null, double? CaseWeight = null, double? Height = null, double? Width = null, double? Length = null, DateTime? DockDate = null, int? Impressions = null, int? AsnLine = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "OrderQuantity" is required (not null)
             if (OrderQuantity == null)
@@ -182,10 +183,11 @@ namespace Infoplus.Model
             }
             this.LegacyPoNo = LegacyPoNo;
             this.OrderDate = OrderDate;
+            this.FullDescription = FullDescription;
             this.FactCost = FactCost;
             this.MlCost = MlCost;
             this.Cost = Cost;
-            this.Sell = Sell;
+            this.SellPrice = SellPrice;
             this.PricingPer = PricingPer;
             this.MaxFreight = MaxFreight;
             this.MaxOther = MaxOther;
@@ -276,6 +278,12 @@ namespace Infoplus.Model
         public DateTime? OrderDate { get; set; }
     
         /// <summary>
+        /// Gets or Sets FullDescription
+        /// </summary>
+        [DataMember(Name="fullDescription", EmitDefaultValue=false)]
+        public string FullDescription { get; set; }
+    
+        /// <summary>
         /// Gets or Sets FactCost
         /// </summary>
         [DataMember(Name="factCost", EmitDefaultValue=false)]
@@ -330,10 +338,10 @@ namespace Infoplus.Model
         public double? Cost { get; set; }
     
         /// <summary>
-        /// Gets or Sets Sell
+        /// Gets or Sets SellPrice
         /// </summary>
-        [DataMember(Name="sell", EmitDefaultValue=false)]
-        public double? Sell { get; set; }
+        [DataMember(Name="sellPrice", EmitDefaultValue=false)]
+        public double? SellPrice { get; set; }
     
         /// <summary>
         /// Gets or Sets PricingPer
@@ -679,6 +687,7 @@ namespace Infoplus.Model
             sb.Append("  LegacyPoNo: ").Append(LegacyPoNo).Append("\n");
             sb.Append("  WarehouseId: ").Append(WarehouseId).Append("\n");
             sb.Append("  OrderDate: ").Append(OrderDate).Append("\n");
+            sb.Append("  FullDescription: ").Append(FullDescription).Append("\n");
             sb.Append("  FactCost: ").Append(FactCost).Append("\n");
             sb.Append("  MlCost: ").Append(MlCost).Append("\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
@@ -688,7 +697,7 @@ namespace Infoplus.Model
             sb.Append("  WrapCode: ").Append(WrapCode).Append("\n");
             sb.Append("  UnitsPerWrap: ").Append(UnitsPerWrap).Append("\n");
             sb.Append("  Cost: ").Append(Cost).Append("\n");
-            sb.Append("  Sell: ").Append(Sell).Append("\n");
+            sb.Append("  SellPrice: ").Append(SellPrice).Append("\n");
             sb.Append("  PricingPer: ").Append(PricingPer).Append("\n");
             sb.Append("  MaxFreight: ").Append(MaxFreight).Append("\n");
             sb.Append("  ChargeFreight: ").Append(ChargeFreight).Append("\n");
@@ -812,6 +821,11 @@ namespace Infoplus.Model
                     this.OrderDate.Equals(other.OrderDate)
                 ) && 
                 (
+                    this.FullDescription == other.FullDescription ||
+                    this.FullDescription != null &&
+                    this.FullDescription.Equals(other.FullDescription)
+                ) && 
+                (
                     this.FactCost == other.FactCost ||
                     this.FactCost != null &&
                     this.FactCost.Equals(other.FactCost)
@@ -857,9 +871,9 @@ namespace Infoplus.Model
                     this.Cost.Equals(other.Cost)
                 ) && 
                 (
-                    this.Sell == other.Sell ||
-                    this.Sell != null &&
-                    this.Sell.Equals(other.Sell)
+                    this.SellPrice == other.SellPrice ||
+                    this.SellPrice != null &&
+                    this.SellPrice.Equals(other.SellPrice)
                 ) && 
                 (
                     this.PricingPer == other.PricingPer ||
@@ -1168,6 +1182,9 @@ namespace Infoplus.Model
                 if (this.OrderDate != null)
                     hash = hash * 59 + this.OrderDate.GetHashCode();
                 
+                if (this.FullDescription != null)
+                    hash = hash * 59 + this.FullDescription.GetHashCode();
+                
                 if (this.FactCost != null)
                     hash = hash * 59 + this.FactCost.GetHashCode();
                 
@@ -1195,8 +1212,8 @@ namespace Infoplus.Model
                 if (this.Cost != null)
                     hash = hash * 59 + this.Cost.GetHashCode();
                 
-                if (this.Sell != null)
-                    hash = hash * 59 + this.Sell.GetHashCode();
+                if (this.SellPrice != null)
+                    hash = hash * 59 + this.SellPrice.GetHashCode();
                 
                 if (this.PricingPer != null)
                     hash = hash * 59 + this.PricingPer.GetHashCode();

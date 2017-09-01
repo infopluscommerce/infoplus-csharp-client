@@ -28,6 +28,7 @@ namespace Infoplus.Model
         /// <param name="Status">Status (required).</param>
         /// <param name="OrderSmartFilterId">OrderSmartFilterId.</param>
         /// <param name="LocationSmartFilterId">LocationSmartFilterId.</param>
+        /// <param name="Version">Version.</param>
         /// <param name="CompletedPicks">CompletedPicks.</param>
         /// <param name="TotalPicks">TotalPicks.</param>
         /// <param name="ShippedCasebreaks">ShippedCasebreaks.</param>
@@ -63,7 +64,7 @@ namespace Infoplus.Model
         /// <param name="ExternalShippingSystemId">ExternalShippingSystemId.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public FulfillmentProcess(int? WarehouseId = null, int? FulfillmentPlanId = null, int? PickScanSchemeId = null, string Status = null, int? OrderSmartFilterId = null, int? LocationSmartFilterId = null, int? CompletedPicks = null, int? TotalPicks = null, int? ShippedCasebreaks = null, int? TotalCasebreaksToShip = null, int? ShippedOrders = null, int? TotalOrdersToShip = null, int? CompletedToDo = null, int? TotalToDo = null, bool? CreatePickWork = null, string PickingRule = null, string LayoutRule = null, string PickSortRule = null, int? FirstPickPosition = null, string PickListFormat = null, string PickListLayout = null, string PickListGroup = null, string PickListSort = null, string PickSummaryFormat = null, string PickSummaryLayout = null, string PickSummarySort = null, bool? CreatePickSummary = null, bool? CreatePickList = null, bool? PreGenerateParcelLabels = null, DateTime? ShipDate = null, bool? AutoShipCasebreakCartons = null, bool? CartonizeOrders = null, string CreatePackingSlip = null, int? OverridePackingSlipTemplateId = null, bool? CreateOrderAssemblyGuide = null, string CreateOrderInvoice = null, int? OverrideOrderInvoiceTemplateId = null, bool? SendToExternalShippingSystem = null, int? ExternalShippingSystemId = null, Dictionary<string, Object> CustomFields = null)
+        public FulfillmentProcess(int? WarehouseId = null, int? FulfillmentPlanId = null, int? PickScanSchemeId = null, string Status = null, int? OrderSmartFilterId = null, int? LocationSmartFilterId = null, string Version = null, int? CompletedPicks = null, int? TotalPicks = null, int? ShippedCasebreaks = null, int? TotalCasebreaksToShip = null, int? ShippedOrders = null, int? TotalOrdersToShip = null, int? CompletedToDo = null, int? TotalToDo = null, bool? CreatePickWork = null, string PickingRule = null, string LayoutRule = null, string PickSortRule = null, int? FirstPickPosition = null, string PickListFormat = null, string PickListLayout = null, string PickListGroup = null, string PickListSort = null, string PickSummaryFormat = null, string PickSummaryLayout = null, string PickSummarySort = null, bool? CreatePickSummary = null, bool? CreatePickList = null, bool? PreGenerateParcelLabels = null, DateTime? ShipDate = null, bool? AutoShipCasebreakCartons = null, bool? CartonizeOrders = null, string CreatePackingSlip = null, int? OverridePackingSlipTemplateId = null, bool? CreateOrderAssemblyGuide = null, string CreateOrderInvoice = null, int? OverrideOrderInvoiceTemplateId = null, bool? SendToExternalShippingSystem = null, int? ExternalShippingSystemId = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -130,6 +131,7 @@ namespace Infoplus.Model
             }
             this.OrderSmartFilterId = OrderSmartFilterId;
             this.LocationSmartFilterId = LocationSmartFilterId;
+            this.Version = Version;
             this.CompletedPicks = CompletedPicks;
             this.TotalPicks = TotalPicks;
             this.ShippedCasebreaks = ShippedCasebreaks;
@@ -292,6 +294,12 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="orderLimit", EmitDefaultValue=false)]
         public int? OrderLimit { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets Version
+        /// </summary>
+        [DataMember(Name="version", EmitDefaultValue=false)]
+        public string Version { get; set; }
     
         /// <summary>
         /// Gets or Sets NumberOfOrders
@@ -535,6 +543,7 @@ namespace Infoplus.Model
             sb.Append("  OrderSmartFilterId: ").Append(OrderSmartFilterId).Append("\n");
             sb.Append("  LocationSmartFilterId: ").Append(LocationSmartFilterId).Append("\n");
             sb.Append("  OrderLimit: ").Append(OrderLimit).Append("\n");
+            sb.Append("  Version: ").Append(Version).Append("\n");
             sb.Append("  NumberOfOrders: ").Append(NumberOfOrders).Append("\n");
             sb.Append("  NumberOfLines: ").Append(NumberOfLines).Append("\n");
             sb.Append("  NumberOfSKUs: ").Append(NumberOfSKUs).Append("\n");
@@ -668,6 +677,11 @@ namespace Infoplus.Model
                     this.OrderLimit == other.OrderLimit ||
                     this.OrderLimit != null &&
                     this.OrderLimit.Equals(other.OrderLimit)
+                ) && 
+                (
+                    this.Version == other.Version ||
+                    this.Version != null &&
+                    this.Version.Equals(other.Version)
                 ) && 
                 (
                     this.NumberOfOrders == other.NumberOfOrders ||
@@ -903,6 +917,9 @@ namespace Infoplus.Model
                 
                 if (this.OrderLimit != null)
                     hash = hash * 59 + this.OrderLimit.GetHashCode();
+                
+                if (this.Version != null)
+                    hash = hash * 59 + this.Version.GetHashCode();
                 
                 if (this.NumberOfOrders != null)
                     hash = hash * 59 + this.NumberOfOrders.GetHashCode();

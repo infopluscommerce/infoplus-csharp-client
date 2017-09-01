@@ -24,6 +24,8 @@ namespace Infoplus.Model
         /// </summary>
         /// <param name="CreateDate">CreateDate.</param>
         /// <param name="ModifyDate">ModifyDate.</param>
+        /// <param name="ReceiptASNCreateDate">ReceiptASNCreateDate.</param>
+        /// <param name="ReceiptModifyDate">ReceiptModifyDate.</param>
         /// <param name="LobId">LobId (required).</param>
         /// <param name="PoNo">PoNo.</param>
         /// <param name="ReceiptDistributionDate">ReceiptDistributionDate.</param>
@@ -32,14 +34,20 @@ namespace Infoplus.Model
         /// <param name="ReceiptRevisionDate">ReceiptRevisionDate.</param>
         /// <param name="ReceiptProductionLot">ReceiptProductionLot.</param>
         /// <param name="ReceiptReceiveDate">ReceiptReceiveDate.</param>
+        /// <param name="ReceiptReceiveQuantity">ReceiptReceiveQuantity.</param>
+        /// <param name="ReceiptNumberOfCases">ReceiptNumberOfCases.</param>
         /// <param name="ReceiptStatus">ReceiptStatus.</param>
         /// <param name="ReceiptStatusName">ReceiptStatusName.</param>
         /// <param name="ReceiptUnitCode">ReceiptUnitCode.</param>
         /// <param name="ReceiptUnitCodeText">ReceiptUnitCodeText.</param>
         /// <param name="ReceiptWrapCode">ReceiptWrapCode.</param>
         /// <param name="ReceiptWrapCodeText">ReceiptWrapCodeText.</param>
+        /// <param name="ReceiptWrapUnitWeight">ReceiptWrapUnitWeight.</param>
         /// <param name="ReceiptCaseWeight">ReceiptCaseWeight.</param>
         /// <param name="ReceiptProductIdTag">ReceiptProductIdTag.</param>
+        /// <param name="ReceiptEnteredBy">ReceiptEnteredBy.</param>
+        /// <param name="ReceiptReceivedBy">ReceiptReceivedBy.</param>
+        /// <param name="ReceiptType">ReceiptType.</param>
         /// <param name="WarehouseId">WarehouseId.</param>
         /// <param name="WarehouseName">WarehouseName.</param>
         /// <param name="ItemId">ItemId.</param>
@@ -79,7 +87,7 @@ namespace Infoplus.Model
         /// <param name="VendorComplianceSurveyAnswer20">VendorComplianceSurveyAnswer20.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ItemReceiptActivity(DateTime? CreateDate = null, DateTime? ModifyDate = null, int? LobId = null, string PoNo = null, DateTime? ReceiptDistributionDate = null, int? ReceiptUnitsPerWrap = null, int? ReceiptUnitsPerCase = null, string ReceiptRevisionDate = null, string ReceiptProductionLot = null, DateTime? ReceiptReceiveDate = null, string ReceiptStatus = null, string ReceiptStatusName = null, int? ReceiptUnitCode = null, string ReceiptUnitCodeText = null, int? ReceiptWrapCode = null, string ReceiptWrapCodeText = null, double? ReceiptCaseWeight = null, string ReceiptProductIdTag = null, int? WarehouseId = null, string WarehouseName = null, int? ItemId = null, string Sku = null, string ItemVendorSku = null, string ItemUPC = null, int? ItemMajorGroup = null, string ItemMajorGroupName = null, int? ItemSubGroup = null, string ItemSubGroupName = null, int? ItemProductCode = null, string ItemProductCodeName = null, string ItemAccountCode = null, string ItemAccountCodeName = null, int? ItemSummaryCode = null, string ItemSummaryCodeName = null, string ItemSector = null, string VendorComplianceSurveyAnswer1 = null, string VendorComplianceSurveyAnswer2 = null, string VendorComplianceSurveyAnswer3 = null, string VendorComplianceSurveyAnswer4 = null, string VendorComplianceSurveyAnswer5 = null, string VendorComplianceSurveyAnswer6 = null, string VendorComplianceSurveyAnswer7 = null, string VendorComplianceSurveyAnswer8 = null, string VendorComplianceSurveyAnswer9 = null, string VendorComplianceSurveyAnswer10 = null, string VendorComplianceSurveyAnswer11 = null, string VendorComplianceSurveyAnswer12 = null, string VendorComplianceSurveyAnswer13 = null, string VendorComplianceSurveyAnswer14 = null, string VendorComplianceSurveyAnswer15 = null, string VendorComplianceSurveyAnswer16 = null, string VendorComplianceSurveyAnswer17 = null, string VendorComplianceSurveyAnswer18 = null, string VendorComplianceSurveyAnswer19 = null, string VendorComplianceSurveyAnswer20 = null, Dictionary<string, Object> CustomFields = null)
+        public ItemReceiptActivity(DateTime? CreateDate = null, DateTime? ModifyDate = null, DateTime? ReceiptASNCreateDate = null, DateTime? ReceiptModifyDate = null, int? LobId = null, string PoNo = null, DateTime? ReceiptDistributionDate = null, int? ReceiptUnitsPerWrap = null, int? ReceiptUnitsPerCase = null, string ReceiptRevisionDate = null, string ReceiptProductionLot = null, DateTime? ReceiptReceiveDate = null, int? ReceiptReceiveQuantity = null, int? ReceiptNumberOfCases = null, string ReceiptStatus = null, string ReceiptStatusName = null, int? ReceiptUnitCode = null, string ReceiptUnitCodeText = null, int? ReceiptWrapCode = null, string ReceiptWrapCodeText = null, double? ReceiptWrapUnitWeight = null, double? ReceiptCaseWeight = null, string ReceiptProductIdTag = null, string ReceiptEnteredBy = null, string ReceiptReceivedBy = null, string ReceiptType = null, int? WarehouseId = null, string WarehouseName = null, int? ItemId = null, string Sku = null, string ItemVendorSku = null, string ItemUPC = null, int? ItemMajorGroup = null, string ItemMajorGroupName = null, int? ItemSubGroup = null, string ItemSubGroupName = null, int? ItemProductCode = null, string ItemProductCodeName = null, string ItemAccountCode = null, string ItemAccountCodeName = null, int? ItemSummaryCode = null, string ItemSummaryCodeName = null, string ItemSector = null, string VendorComplianceSurveyAnswer1 = null, string VendorComplianceSurveyAnswer2 = null, string VendorComplianceSurveyAnswer3 = null, string VendorComplianceSurveyAnswer4 = null, string VendorComplianceSurveyAnswer5 = null, string VendorComplianceSurveyAnswer6 = null, string VendorComplianceSurveyAnswer7 = null, string VendorComplianceSurveyAnswer8 = null, string VendorComplianceSurveyAnswer9 = null, string VendorComplianceSurveyAnswer10 = null, string VendorComplianceSurveyAnswer11 = null, string VendorComplianceSurveyAnswer12 = null, string VendorComplianceSurveyAnswer13 = null, string VendorComplianceSurveyAnswer14 = null, string VendorComplianceSurveyAnswer15 = null, string VendorComplianceSurveyAnswer16 = null, string VendorComplianceSurveyAnswer17 = null, string VendorComplianceSurveyAnswer18 = null, string VendorComplianceSurveyAnswer19 = null, string VendorComplianceSurveyAnswer20 = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -92,6 +100,8 @@ namespace Infoplus.Model
             }
             this.CreateDate = CreateDate;
             this.ModifyDate = ModifyDate;
+            this.ReceiptASNCreateDate = ReceiptASNCreateDate;
+            this.ReceiptModifyDate = ReceiptModifyDate;
             this.PoNo = PoNo;
             this.ReceiptDistributionDate = ReceiptDistributionDate;
             this.ReceiptUnitsPerWrap = ReceiptUnitsPerWrap;
@@ -99,14 +109,20 @@ namespace Infoplus.Model
             this.ReceiptRevisionDate = ReceiptRevisionDate;
             this.ReceiptProductionLot = ReceiptProductionLot;
             this.ReceiptReceiveDate = ReceiptReceiveDate;
+            this.ReceiptReceiveQuantity = ReceiptReceiveQuantity;
+            this.ReceiptNumberOfCases = ReceiptNumberOfCases;
             this.ReceiptStatus = ReceiptStatus;
             this.ReceiptStatusName = ReceiptStatusName;
             this.ReceiptUnitCode = ReceiptUnitCode;
             this.ReceiptUnitCodeText = ReceiptUnitCodeText;
             this.ReceiptWrapCode = ReceiptWrapCode;
             this.ReceiptWrapCodeText = ReceiptWrapCodeText;
+            this.ReceiptWrapUnitWeight = ReceiptWrapUnitWeight;
             this.ReceiptCaseWeight = ReceiptCaseWeight;
             this.ReceiptProductIdTag = ReceiptProductIdTag;
+            this.ReceiptEnteredBy = ReceiptEnteredBy;
+            this.ReceiptReceivedBy = ReceiptReceivedBy;
+            this.ReceiptType = ReceiptType;
             this.WarehouseId = WarehouseId;
             this.WarehouseName = WarehouseName;
             this.ItemId = ItemId;
@@ -168,6 +184,18 @@ namespace Infoplus.Model
         public DateTime? ModifyDate { get; set; }
     
         /// <summary>
+        /// Gets or Sets ReceiptASNCreateDate
+        /// </summary>
+        [DataMember(Name="receiptASNCreateDate", EmitDefaultValue=false)]
+        public DateTime? ReceiptASNCreateDate { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets ReceiptModifyDate
+        /// </summary>
+        [DataMember(Name="receiptModifyDate", EmitDefaultValue=false)]
+        public DateTime? ReceiptModifyDate { get; set; }
+    
+        /// <summary>
         /// Gets or Sets ItemReceiptId
         /// </summary>
         [DataMember(Name="itemReceiptId", EmitDefaultValue=false)]
@@ -222,6 +250,18 @@ namespace Infoplus.Model
         public DateTime? ReceiptReceiveDate { get; set; }
     
         /// <summary>
+        /// Gets or Sets ReceiptReceiveQuantity
+        /// </summary>
+        [DataMember(Name="receiptReceiveQuantity", EmitDefaultValue=false)]
+        public int? ReceiptReceiveQuantity { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets ReceiptNumberOfCases
+        /// </summary>
+        [DataMember(Name="receiptNumberOfCases", EmitDefaultValue=false)]
+        public int? ReceiptNumberOfCases { get; set; }
+    
+        /// <summary>
         /// Gets or Sets ReceiptStatus
         /// </summary>
         [DataMember(Name="receiptStatus", EmitDefaultValue=false)]
@@ -258,6 +298,12 @@ namespace Infoplus.Model
         public string ReceiptWrapCodeText { get; set; }
     
         /// <summary>
+        /// Gets or Sets ReceiptWrapUnitWeight
+        /// </summary>
+        [DataMember(Name="receiptWrapUnitWeight", EmitDefaultValue=false)]
+        public double? ReceiptWrapUnitWeight { get; set; }
+    
+        /// <summary>
         /// Gets or Sets ReceiptCaseWeight
         /// </summary>
         [DataMember(Name="receiptCaseWeight", EmitDefaultValue=false)]
@@ -268,6 +314,24 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="receiptProductIdTag", EmitDefaultValue=false)]
         public string ReceiptProductIdTag { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets ReceiptEnteredBy
+        /// </summary>
+        [DataMember(Name="receiptEnteredBy", EmitDefaultValue=false)]
+        public string ReceiptEnteredBy { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets ReceiptReceivedBy
+        /// </summary>
+        [DataMember(Name="receiptReceivedBy", EmitDefaultValue=false)]
+        public string ReceiptReceivedBy { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets ReceiptType
+        /// </summary>
+        [DataMember(Name="receiptType", EmitDefaultValue=false)]
+        public string ReceiptType { get; set; }
     
         /// <summary>
         /// Gets or Sets WarehouseId
@@ -604,6 +668,8 @@ namespace Infoplus.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
+            sb.Append("  ReceiptASNCreateDate: ").Append(ReceiptASNCreateDate).Append("\n");
+            sb.Append("  ReceiptModifyDate: ").Append(ReceiptModifyDate).Append("\n");
             sb.Append("  ItemReceiptId: ").Append(ItemReceiptId).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  PoNo: ").Append(PoNo).Append("\n");
@@ -613,14 +679,20 @@ namespace Infoplus.Model
             sb.Append("  ReceiptRevisionDate: ").Append(ReceiptRevisionDate).Append("\n");
             sb.Append("  ReceiptProductionLot: ").Append(ReceiptProductionLot).Append("\n");
             sb.Append("  ReceiptReceiveDate: ").Append(ReceiptReceiveDate).Append("\n");
+            sb.Append("  ReceiptReceiveQuantity: ").Append(ReceiptReceiveQuantity).Append("\n");
+            sb.Append("  ReceiptNumberOfCases: ").Append(ReceiptNumberOfCases).Append("\n");
             sb.Append("  ReceiptStatus: ").Append(ReceiptStatus).Append("\n");
             sb.Append("  ReceiptStatusName: ").Append(ReceiptStatusName).Append("\n");
             sb.Append("  ReceiptUnitCode: ").Append(ReceiptUnitCode).Append("\n");
             sb.Append("  ReceiptUnitCodeText: ").Append(ReceiptUnitCodeText).Append("\n");
             sb.Append("  ReceiptWrapCode: ").Append(ReceiptWrapCode).Append("\n");
             sb.Append("  ReceiptWrapCodeText: ").Append(ReceiptWrapCodeText).Append("\n");
+            sb.Append("  ReceiptWrapUnitWeight: ").Append(ReceiptWrapUnitWeight).Append("\n");
             sb.Append("  ReceiptCaseWeight: ").Append(ReceiptCaseWeight).Append("\n");
             sb.Append("  ReceiptProductIdTag: ").Append(ReceiptProductIdTag).Append("\n");
+            sb.Append("  ReceiptEnteredBy: ").Append(ReceiptEnteredBy).Append("\n");
+            sb.Append("  ReceiptReceivedBy: ").Append(ReceiptReceivedBy).Append("\n");
+            sb.Append("  ReceiptType: ").Append(ReceiptType).Append("\n");
             sb.Append("  WarehouseId: ").Append(WarehouseId).Append("\n");
             sb.Append("  WarehouseName: ").Append(WarehouseName).Append("\n");
             sb.Append("  ItemId: ").Append(ItemId).Append("\n");
@@ -728,6 +800,16 @@ namespace Infoplus.Model
                     this.ModifyDate.Equals(other.ModifyDate)
                 ) && 
                 (
+                    this.ReceiptASNCreateDate == other.ReceiptASNCreateDate ||
+                    this.ReceiptASNCreateDate != null &&
+                    this.ReceiptASNCreateDate.Equals(other.ReceiptASNCreateDate)
+                ) && 
+                (
+                    this.ReceiptModifyDate == other.ReceiptModifyDate ||
+                    this.ReceiptModifyDate != null &&
+                    this.ReceiptModifyDate.Equals(other.ReceiptModifyDate)
+                ) && 
+                (
                     this.ItemReceiptId == other.ItemReceiptId ||
                     this.ItemReceiptId != null &&
                     this.ItemReceiptId.Equals(other.ItemReceiptId)
@@ -773,6 +855,16 @@ namespace Infoplus.Model
                     this.ReceiptReceiveDate.Equals(other.ReceiptReceiveDate)
                 ) && 
                 (
+                    this.ReceiptReceiveQuantity == other.ReceiptReceiveQuantity ||
+                    this.ReceiptReceiveQuantity != null &&
+                    this.ReceiptReceiveQuantity.Equals(other.ReceiptReceiveQuantity)
+                ) && 
+                (
+                    this.ReceiptNumberOfCases == other.ReceiptNumberOfCases ||
+                    this.ReceiptNumberOfCases != null &&
+                    this.ReceiptNumberOfCases.Equals(other.ReceiptNumberOfCases)
+                ) && 
+                (
                     this.ReceiptStatus == other.ReceiptStatus ||
                     this.ReceiptStatus != null &&
                     this.ReceiptStatus.Equals(other.ReceiptStatus)
@@ -803,6 +895,11 @@ namespace Infoplus.Model
                     this.ReceiptWrapCodeText.Equals(other.ReceiptWrapCodeText)
                 ) && 
                 (
+                    this.ReceiptWrapUnitWeight == other.ReceiptWrapUnitWeight ||
+                    this.ReceiptWrapUnitWeight != null &&
+                    this.ReceiptWrapUnitWeight.Equals(other.ReceiptWrapUnitWeight)
+                ) && 
+                (
                     this.ReceiptCaseWeight == other.ReceiptCaseWeight ||
                     this.ReceiptCaseWeight != null &&
                     this.ReceiptCaseWeight.Equals(other.ReceiptCaseWeight)
@@ -811,6 +908,21 @@ namespace Infoplus.Model
                     this.ReceiptProductIdTag == other.ReceiptProductIdTag ||
                     this.ReceiptProductIdTag != null &&
                     this.ReceiptProductIdTag.Equals(other.ReceiptProductIdTag)
+                ) && 
+                (
+                    this.ReceiptEnteredBy == other.ReceiptEnteredBy ||
+                    this.ReceiptEnteredBy != null &&
+                    this.ReceiptEnteredBy.Equals(other.ReceiptEnteredBy)
+                ) && 
+                (
+                    this.ReceiptReceivedBy == other.ReceiptReceivedBy ||
+                    this.ReceiptReceivedBy != null &&
+                    this.ReceiptReceivedBy.Equals(other.ReceiptReceivedBy)
+                ) && 
+                (
+                    this.ReceiptType == other.ReceiptType ||
+                    this.ReceiptType != null &&
+                    this.ReceiptType.Equals(other.ReceiptType)
                 ) && 
                 (
                     this.WarehouseId == other.WarehouseId ||
@@ -1105,6 +1217,12 @@ namespace Infoplus.Model
                 if (this.ModifyDate != null)
                     hash = hash * 59 + this.ModifyDate.GetHashCode();
                 
+                if (this.ReceiptASNCreateDate != null)
+                    hash = hash * 59 + this.ReceiptASNCreateDate.GetHashCode();
+                
+                if (this.ReceiptModifyDate != null)
+                    hash = hash * 59 + this.ReceiptModifyDate.GetHashCode();
+                
                 if (this.ItemReceiptId != null)
                     hash = hash * 59 + this.ItemReceiptId.GetHashCode();
                 
@@ -1132,6 +1250,12 @@ namespace Infoplus.Model
                 if (this.ReceiptReceiveDate != null)
                     hash = hash * 59 + this.ReceiptReceiveDate.GetHashCode();
                 
+                if (this.ReceiptReceiveQuantity != null)
+                    hash = hash * 59 + this.ReceiptReceiveQuantity.GetHashCode();
+                
+                if (this.ReceiptNumberOfCases != null)
+                    hash = hash * 59 + this.ReceiptNumberOfCases.GetHashCode();
+                
                 if (this.ReceiptStatus != null)
                     hash = hash * 59 + this.ReceiptStatus.GetHashCode();
                 
@@ -1150,11 +1274,23 @@ namespace Infoplus.Model
                 if (this.ReceiptWrapCodeText != null)
                     hash = hash * 59 + this.ReceiptWrapCodeText.GetHashCode();
                 
+                if (this.ReceiptWrapUnitWeight != null)
+                    hash = hash * 59 + this.ReceiptWrapUnitWeight.GetHashCode();
+                
                 if (this.ReceiptCaseWeight != null)
                     hash = hash * 59 + this.ReceiptCaseWeight.GetHashCode();
                 
                 if (this.ReceiptProductIdTag != null)
                     hash = hash * 59 + this.ReceiptProductIdTag.GetHashCode();
+                
+                if (this.ReceiptEnteredBy != null)
+                    hash = hash * 59 + this.ReceiptEnteredBy.GetHashCode();
+                
+                if (this.ReceiptReceivedBy != null)
+                    hash = hash * 59 + this.ReceiptReceivedBy.GetHashCode();
+                
+                if (this.ReceiptType != null)
+                    hash = hash * 59 + this.ReceiptType.GetHashCode();
                 
                 if (this.WarehouseId != null)
                     hash = hash * 59 + this.WarehouseId.GetHashCode();

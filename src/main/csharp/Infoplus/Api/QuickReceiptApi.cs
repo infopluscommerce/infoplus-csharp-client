@@ -134,6 +134,28 @@ namespace Infoplus.Api
         ApiResponse<Object> DeleteQuickReceiptTagWithHttpInfo (int? quickReceiptId, string quickReceiptTag);
         
         /// <summary>
+        /// Run the ExecuteQuickReceipt process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param>
+        /// <returns>List&lt;ProcessOutputAPIModel&gt;</returns>
+        List<ProcessOutputAPIModel> ExecuteQuickReceipt (ExecuteQuickReceiptInputAPIModel body);
+  
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param>
+        /// <returns>ApiResponse of List&lt;ProcessOutputAPIModel&gt;</returns>
+        ApiResponse<List<ProcessOutputAPIModel>> ExecuteQuickReceiptWithHttpInfo (ExecuteQuickReceiptInputAPIModel body);
+        
+        /// <summary>
         /// Get a duplicated a quickReceipt by id
         /// </summary>
         /// <remarks>
@@ -390,6 +412,28 @@ namespace Infoplus.Api
         /// <param name="quickReceiptTag">The tag to delete</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickReceiptTagAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptTag);
+        
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param>
+        /// <returns>Task of List&lt;ProcessOutputAPIModel&gt;</returns>
+        System.Threading.Tasks.Task<List<ProcessOutputAPIModel>> ExecuteQuickReceiptAsync (ExecuteQuickReceiptInputAPIModel body);
+
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param>
+        /// <returns>Task of ApiResponse (List&lt;ProcessOutputAPIModel&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ProcessOutputAPIModel>>> ExecuteQuickReceiptAsyncWithHttpInfo (ExecuteQuickReceiptInputAPIModel body);
         
         /// <summary>
         /// Get a duplicated a quickReceipt by id
@@ -1514,6 +1558,189 @@ namespace Infoplus.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+        
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param> 
+        /// <returns>List&lt;ProcessOutputAPIModel&gt;</returns>
+        public List<ProcessOutputAPIModel> ExecuteQuickReceipt (ExecuteQuickReceiptInputAPIModel body)
+        {
+             ApiResponse<List<ProcessOutputAPIModel>> localVarResponse = ExecuteQuickReceiptWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param> 
+        /// <returns>ApiResponse of List&lt;ProcessOutputAPIModel&gt;</returns>
+        public ApiResponse< List<ProcessOutputAPIModel> > ExecuteQuickReceiptWithHttpInfo (ExecuteQuickReceiptInputAPIModel body)
+        {
+            
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling QuickReceiptApi->ExecuteQuickReceipt");
+            
+    
+            var localVarPath = "/beta/quickReceipt/executeQuickReceipt";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+    
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+    
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickReceipt: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickReceipt: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+    
+            return new ApiResponse<List<ProcessOutputAPIModel>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProcessOutputAPIModel>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProcessOutputAPIModel>)));
+            
+        }
+
+        
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param>
+        /// <returns>Task of List&lt;ProcessOutputAPIModel&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ProcessOutputAPIModel>> ExecuteQuickReceiptAsync (ExecuteQuickReceiptInputAPIModel body)
+        {
+             ApiResponse<List<ProcessOutputAPIModel>> localVarResponse = await ExecuteQuickReceiptAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Run the ExecuteQuickReceipt process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickReceipt process.</param>
+        /// <returns>Task of ApiResponse (List&lt;ProcessOutputAPIModel&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ProcessOutputAPIModel>>> ExecuteQuickReceiptAsyncWithHttpInfo (ExecuteQuickReceiptInputAPIModel body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling ExecuteQuickReceipt");
+            
+    
+            var localVarPath = "/beta/quickReceipt/executeQuickReceipt";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+ 
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickReceipt: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickReceipt: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+
+            return new ApiResponse<List<ProcessOutputAPIModel>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProcessOutputAPIModel>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProcessOutputAPIModel>)));
+            
         }
         
         /// <summary>

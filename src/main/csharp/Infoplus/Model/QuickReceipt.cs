@@ -42,14 +42,14 @@ namespace Infoplus.Model
         /// <param name="CartonWidth">CartonWidth.</param>
         /// <param name="CartonHeight">CartonHeight.</param>
         /// <param name="Cost">Cost.</param>
-        /// <param name="Sell">Sell.</param>
+        /// <param name="SellPrice">SellPrice.</param>
         /// <param name="PricingPer">PricingPer.</param>
         /// <param name="DockDate">DockDate.</param>
         /// <param name="ProductIdTag">ProductIdTag.</param>
         /// <param name="CustomFields">CustomFields.</param>
         /// <param name="Sku">Sku.</param>
 
-        public QuickReceipt(int? WarehouseId = null, int? LobId = null, int? LocationId = null, int? Quantity = null, int? VendorId = null, string Carrier = null, string UnitCode = null, string WrapCode = null, double? WeightPerWrap = null, int? UnitsPerWrap = null, int? UnitsPerCase = null, int? CasesPerPallet = null, double? CaseWeight = null, string ProductionLot = null, string RevisionDate = null, string Origin = null, double? CartonLength = null, double? CartonWidth = null, double? CartonHeight = null, double? Cost = null, double? Sell = null, string PricingPer = null, DateTime? DockDate = null, string ProductIdTag = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
+        public QuickReceipt(int? WarehouseId = null, int? LobId = null, int? LocationId = null, int? Quantity = null, int? VendorId = null, string Carrier = null, string UnitCode = null, string WrapCode = null, double? WeightPerWrap = null, int? UnitsPerWrap = null, int? UnitsPerCase = null, int? CasesPerPallet = null, double? CaseWeight = null, string ProductionLot = null, string RevisionDate = null, string Origin = null, double? CartonLength = null, double? CartonWidth = null, double? CartonHeight = null, double? Cost = null, double? SellPrice = null, string PricingPer = null, DateTime? DockDate = null, string ProductIdTag = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -135,7 +135,7 @@ namespace Infoplus.Model
             this.CartonWidth = CartonWidth;
             this.CartonHeight = CartonHeight;
             this.Cost = Cost;
-            this.Sell = Sell;
+            this.SellPrice = SellPrice;
             this.PricingPer = PricingPer;
             this.DockDate = DockDate;
             this.ProductIdTag = ProductIdTag;
@@ -296,10 +296,10 @@ namespace Infoplus.Model
         public double? Cost { get; set; }
     
         /// <summary>
-        /// Gets or Sets Sell
+        /// Gets or Sets SellPrice
         /// </summary>
-        [DataMember(Name="sell", EmitDefaultValue=false)]
-        public double? Sell { get; set; }
+        [DataMember(Name="sellPrice", EmitDefaultValue=false)]
+        public double? SellPrice { get; set; }
     
         /// <summary>
         /// Gets or Sets PricingPer
@@ -376,7 +376,7 @@ namespace Infoplus.Model
             sb.Append("  CartonWidth: ").Append(CartonWidth).Append("\n");
             sb.Append("  CartonHeight: ").Append(CartonHeight).Append("\n");
             sb.Append("  Cost: ").Append(Cost).Append("\n");
-            sb.Append("  Sell: ").Append(Sell).Append("\n");
+            sb.Append("  SellPrice: ").Append(SellPrice).Append("\n");
             sb.Append("  PricingPer: ").Append(PricingPer).Append("\n");
             sb.Append("  GeneratedItemReceiptId: ").Append(GeneratedItemReceiptId).Append("\n");
             sb.Append("  GeneratedASNId: ").Append(GeneratedASNId).Append("\n");
@@ -547,9 +547,9 @@ namespace Infoplus.Model
                     this.Cost.Equals(other.Cost)
                 ) && 
                 (
-                    this.Sell == other.Sell ||
-                    this.Sell != null &&
-                    this.Sell.Equals(other.Sell)
+                    this.SellPrice == other.SellPrice ||
+                    this.SellPrice != null &&
+                    this.SellPrice.Equals(other.SellPrice)
                 ) && 
                 (
                     this.PricingPer == other.PricingPer ||
@@ -675,8 +675,8 @@ namespace Infoplus.Model
                 if (this.Cost != null)
                     hash = hash * 59 + this.Cost.GetHashCode();
                 
-                if (this.Sell != null)
-                    hash = hash * 59 + this.Sell.GetHashCode();
+                if (this.SellPrice != null)
+                    hash = hash * 59 + this.SellPrice.GetHashCode();
                 
                 if (this.PricingPer != null)
                     hash = hash * 59 + this.PricingPer.GetHashCode();

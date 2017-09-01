@@ -1186,6 +1186,18 @@ namespace Infoplus.Model
         public bool? DestinationAllowItemMixing { get; set; }
     
         /// <summary>
+        /// Gets or Sets WorkCreateDate
+        /// </summary>
+        [DataMember(Name="workCreateDate", EmitDefaultValue=false)]
+        public DateTime? WorkCreateDate { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets WorkModifyDate
+        /// </summary>
+        [DataMember(Name="workModifyDate", EmitDefaultValue=false)]
+        public DateTime? WorkModifyDate { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets MasterRef
         /// </summary>
         [DataMember(Name="masterRef", EmitDefaultValue=false)]
@@ -1238,6 +1250,30 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="unitsPerWrap", EmitDefaultValue=false)]
         public int? UnitsPerWrap { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets Quantity
+        /// </summary>
+        [DataMember(Name="quantity", EmitDefaultValue=false)]
+        public int? Quantity { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets NumberOfWraps
+        /// </summary>
+        [DataMember(Name="numberOfWraps", EmitDefaultValue=false)]
+        public int? NumberOfWraps { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets NumberOfCases
+        /// </summary>
+        [DataMember(Name="numberOfCases", EmitDefaultValue=false)]
+        public int? NumberOfCases { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets PickTouches
+        /// </summary>
+        [DataMember(Name="pickTouches", EmitDefaultValue=false)]
+        public int? PickTouches { get; private set; }
     
         /// <summary>
         /// Gets or Sets ClassRestriction
@@ -1710,6 +1746,8 @@ namespace Infoplus.Model
             sb.Append("  DestinationPriorityCode: ").Append(DestinationPriorityCode).Append("\n");
             sb.Append("  DestinationCost: ").Append(DestinationCost).Append("\n");
             sb.Append("  DestinationAllowItemMixing: ").Append(DestinationAllowItemMixing).Append("\n");
+            sb.Append("  WorkCreateDate: ").Append(WorkCreateDate).Append("\n");
+            sb.Append("  WorkModifyDate: ").Append(WorkModifyDate).Append("\n");
             sb.Append("  MasterRef: ").Append(MasterRef).Append("\n");
             sb.Append("  WeightPerWrap: ").Append(WeightPerWrap).Append("\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
@@ -1719,6 +1757,10 @@ namespace Infoplus.Model
             sb.Append("  UnitCode: ").Append(UnitCode).Append("\n");
             sb.Append("  WrapCode: ").Append(WrapCode).Append("\n");
             sb.Append("  UnitsPerWrap: ").Append(UnitsPerWrap).Append("\n");
+            sb.Append("  Quantity: ").Append(Quantity).Append("\n");
+            sb.Append("  NumberOfWraps: ").Append(NumberOfWraps).Append("\n");
+            sb.Append("  NumberOfCases: ").Append(NumberOfCases).Append("\n");
+            sb.Append("  PickTouches: ").Append(PickTouches).Append("\n");
             sb.Append("  ClassRestriction: ").Append(ClassRestriction).Append("\n");
             sb.Append("  MaxCycle: ").Append(MaxCycle).Append("\n");
             sb.Append("  MaxInterim: ").Append(MaxInterim).Append("\n");
@@ -2187,6 +2229,16 @@ namespace Infoplus.Model
                     this.DestinationAllowItemMixing.Equals(other.DestinationAllowItemMixing)
                 ) && 
                 (
+                    this.WorkCreateDate == other.WorkCreateDate ||
+                    this.WorkCreateDate != null &&
+                    this.WorkCreateDate.Equals(other.WorkCreateDate)
+                ) && 
+                (
+                    this.WorkModifyDate == other.WorkModifyDate ||
+                    this.WorkModifyDate != null &&
+                    this.WorkModifyDate.Equals(other.WorkModifyDate)
+                ) && 
+                (
                     this.MasterRef == other.MasterRef ||
                     this.MasterRef != null &&
                     this.MasterRef.Equals(other.MasterRef)
@@ -2230,6 +2282,26 @@ namespace Infoplus.Model
                     this.UnitsPerWrap == other.UnitsPerWrap ||
                     this.UnitsPerWrap != null &&
                     this.UnitsPerWrap.Equals(other.UnitsPerWrap)
+                ) && 
+                (
+                    this.Quantity == other.Quantity ||
+                    this.Quantity != null &&
+                    this.Quantity.Equals(other.Quantity)
+                ) && 
+                (
+                    this.NumberOfWraps == other.NumberOfWraps ||
+                    this.NumberOfWraps != null &&
+                    this.NumberOfWraps.Equals(other.NumberOfWraps)
+                ) && 
+                (
+                    this.NumberOfCases == other.NumberOfCases ||
+                    this.NumberOfCases != null &&
+                    this.NumberOfCases.Equals(other.NumberOfCases)
+                ) && 
+                (
+                    this.PickTouches == other.PickTouches ||
+                    this.PickTouches != null &&
+                    this.PickTouches.Equals(other.PickTouches)
                 ) && 
                 (
                     this.ClassRestriction == other.ClassRestriction ||
@@ -2789,6 +2861,12 @@ namespace Infoplus.Model
                 if (this.DestinationAllowItemMixing != null)
                     hash = hash * 59 + this.DestinationAllowItemMixing.GetHashCode();
                 
+                if (this.WorkCreateDate != null)
+                    hash = hash * 59 + this.WorkCreateDate.GetHashCode();
+                
+                if (this.WorkModifyDate != null)
+                    hash = hash * 59 + this.WorkModifyDate.GetHashCode();
+                
                 if (this.MasterRef != null)
                     hash = hash * 59 + this.MasterRef.GetHashCode();
                 
@@ -2815,6 +2893,18 @@ namespace Infoplus.Model
                 
                 if (this.UnitsPerWrap != null)
                     hash = hash * 59 + this.UnitsPerWrap.GetHashCode();
+                
+                if (this.Quantity != null)
+                    hash = hash * 59 + this.Quantity.GetHashCode();
+                
+                if (this.NumberOfWraps != null)
+                    hash = hash * 59 + this.NumberOfWraps.GetHashCode();
+                
+                if (this.NumberOfCases != null)
+                    hash = hash * 59 + this.NumberOfCases.GetHashCode();
+                
+                if (this.PickTouches != null)
+                    hash = hash * 59 + this.PickTouches.GetHashCode();
                 
                 if (this.ClassRestriction != null)
                     hash = hash * 59 + this.ClassRestriction.GetHashCode();

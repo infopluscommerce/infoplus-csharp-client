@@ -104,6 +104,12 @@ namespace Infoplus.Model
         public double? OrderNo { get; set; }
     
         /// <summary>
+        /// Gets or Sets CartonNo
+        /// </summary>
+        [DataMember(Name="cartonNo", EmitDefaultValue=false)]
+        public int? CartonNo { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets CartonId
         /// </summary>
         [DataMember(Name="cartonId", EmitDefaultValue=false)]
@@ -174,6 +180,7 @@ namespace Infoplus.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  GroupOrderId: ").Append(GroupOrderId).Append("\n");
             sb.Append("  OrderNo: ").Append(OrderNo).Append("\n");
+            sb.Append("  CartonNo: ").Append(CartonNo).Append("\n");
             sb.Append("  CartonId: ").Append(CartonId).Append("\n");
             sb.Append("  LineItemId: ").Append(LineItemId).Append("\n");
             sb.Append("  Location: ").Append(Location).Append("\n");
@@ -235,6 +242,11 @@ namespace Infoplus.Model
                     this.OrderNo == other.OrderNo ||
                     this.OrderNo != null &&
                     this.OrderNo.Equals(other.OrderNo)
+                ) && 
+                (
+                    this.CartonNo == other.CartonNo ||
+                    this.CartonNo != null &&
+                    this.CartonNo.Equals(other.CartonNo)
                 ) && 
                 (
                     this.CartonId == other.CartonId ||
@@ -308,6 +320,9 @@ namespace Infoplus.Model
                 
                 if (this.OrderNo != null)
                     hash = hash * 59 + this.OrderNo.GetHashCode();
+                
+                if (this.CartonNo != null)
+                    hash = hash * 59 + this.CartonNo.GetHashCode();
                 
                 if (this.CartonId != null)
                     hash = hash * 59 + this.CartonId.GetHashCode();

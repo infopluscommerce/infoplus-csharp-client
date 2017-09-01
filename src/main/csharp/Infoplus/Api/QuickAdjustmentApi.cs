@@ -134,6 +134,28 @@ namespace Infoplus.Api
         ApiResponse<Object> DeleteQuickAdjustmentTagWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag);
         
         /// <summary>
+        /// Run the ExecuteQuickAdjustment process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param>
+        /// <returns>List&lt;ProcessOutputAPIModel&gt;</returns>
+        List<ProcessOutputAPIModel> ExecuteQuickAdjustment (ExecuteQuickAdjustmentInputAPIModel body);
+  
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param>
+        /// <returns>ApiResponse of List&lt;ProcessOutputAPIModel&gt;</returns>
+        ApiResponse<List<ProcessOutputAPIModel>> ExecuteQuickAdjustmentWithHttpInfo (ExecuteQuickAdjustmentInputAPIModel body);
+        
+        /// <summary>
         /// Get a duplicated a quickAdjustment by id
         /// </summary>
         /// <remarks>
@@ -390,6 +412,28 @@ namespace Infoplus.Api
         /// <param name="quickAdjustmentTag">The tag to delete</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickAdjustmentTagAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag);
+        
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param>
+        /// <returns>Task of List&lt;ProcessOutputAPIModel&gt;</returns>
+        System.Threading.Tasks.Task<List<ProcessOutputAPIModel>> ExecuteQuickAdjustmentAsync (ExecuteQuickAdjustmentInputAPIModel body);
+
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param>
+        /// <returns>Task of ApiResponse (List&lt;ProcessOutputAPIModel&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ProcessOutputAPIModel>>> ExecuteQuickAdjustmentAsyncWithHttpInfo (ExecuteQuickAdjustmentInputAPIModel body);
         
         /// <summary>
         /// Get a duplicated a quickAdjustment by id
@@ -1514,6 +1558,189 @@ namespace Infoplus.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+        
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param> 
+        /// <returns>List&lt;ProcessOutputAPIModel&gt;</returns>
+        public List<ProcessOutputAPIModel> ExecuteQuickAdjustment (ExecuteQuickAdjustmentInputAPIModel body)
+        {
+             ApiResponse<List<ProcessOutputAPIModel>> localVarResponse = ExecuteQuickAdjustmentWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param> 
+        /// <returns>ApiResponse of List&lt;ProcessOutputAPIModel&gt;</returns>
+        public ApiResponse< List<ProcessOutputAPIModel> > ExecuteQuickAdjustmentWithHttpInfo (ExecuteQuickAdjustmentInputAPIModel body)
+        {
+            
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling QuickAdjustmentApi->ExecuteQuickAdjustment");
+            
+    
+            var localVarPath = "/beta/quickAdjustment/executeQuickAdjustment";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+    
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+    
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickAdjustment: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickAdjustment: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+    
+            return new ApiResponse<List<ProcessOutputAPIModel>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProcessOutputAPIModel>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProcessOutputAPIModel>)));
+            
+        }
+
+        
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param>
+        /// <returns>Task of List&lt;ProcessOutputAPIModel&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ProcessOutputAPIModel>> ExecuteQuickAdjustmentAsync (ExecuteQuickAdjustmentInputAPIModel body)
+        {
+             ApiResponse<List<ProcessOutputAPIModel>> localVarResponse = await ExecuteQuickAdjustmentAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Run the ExecuteQuickAdjustment process. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for ExecuteQuickAdjustment process.</param>
+        /// <returns>Task of ApiResponse (List&lt;ProcessOutputAPIModel&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ProcessOutputAPIModel>>> ExecuteQuickAdjustmentAsyncWithHttpInfo (ExecuteQuickAdjustmentInputAPIModel body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling ExecuteQuickAdjustment");
+            
+    
+            var localVarPath = "/beta/quickAdjustment/executeQuickAdjustment";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+ 
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickAdjustment: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling ExecuteQuickAdjustment: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+
+            return new ApiResponse<List<ProcessOutputAPIModel>>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (List<ProcessOutputAPIModel>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ProcessOutputAPIModel>)));
+            
         }
         
         /// <summary>

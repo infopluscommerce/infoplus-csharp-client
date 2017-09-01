@@ -26,6 +26,9 @@ namespace Infoplus.Model
         /// <param name="IsMixedReceipts">IsMixedReceipts (default to false).</param>
         /// <param name="Quantity">Quantity.</param>
         /// <param name="Address">Address.</param>
+        /// <param name="NumberOfCases">NumberOfCases.</param>
+        /// <param name="InventoryValue">InventoryValue.</param>
+        /// <param name="InventoryAgeDays">InventoryAgeDays.</param>
         /// <param name="WarehouseId">WarehouseId.</param>
         /// <param name="WarehouseName">WarehouseName.</param>
         /// <param name="WarehouseZoneId">WarehouseZoneId.</param>
@@ -53,7 +56,7 @@ namespace Infoplus.Model
         /// <param name="WarehouseLocationPriorityCode">WarehouseLocationPriorityCode.</param>
         /// <param name="WarehouseLocationAllowItemMixing">WarehouseLocationAllowItemMixing (default to false).</param>
         /// <param name="WarehouseLocationCost">WarehouseLocationCost.</param>
-        /// <param name="ControlNo">ControlNo.</param>
+        /// <param name="Sku">Sku.</param>
         /// <param name="ItemVendorSku">ItemVendorSku.</param>
         /// <param name="ItemUpc">ItemUpc.</param>
         /// <param name="ItemMajorGroup">ItemMajorGroup.</param>
@@ -84,7 +87,7 @@ namespace Infoplus.Model
         /// <param name="ReceiptProductIdTag">ReceiptProductIdTag.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public InventoryStorageActivity(int? LobId = null, bool? IsMixedReceipts = null, int? Quantity = null, string Address = null, int? WarehouseId = null, string WarehouseName = null, int? WarehouseZoneId = null, string WarehouseZoneName = null, string WarehouseZoneAddress = null, int? WarehouseBuildingId = null, string WarehouseBuildingName = null, int? WarehouseAisleId = null, string WarehouseAisleAddress = null, int? WarehouseLocationOriginId = null, string WarehouseLocationOriginName = null, int? WarehouseLocationBillingTypeId = null, string WarehouseLocationBillingTypeName = null, int? WarehouseLocationBehaviorTypeId = null, string WarehouseLocationBehaviorTypeName = null, int? WarehouseLocationFootprintId = null, string WarehouseLocationFootprintName = null, int? WarehouseLocationFootprintWidth = null, int? WarehouseLocationFootprintHeight = null, int? WarehouseLocationFootprintDepth = null, int? WarehouseLocationLevel = null, int? WarehouseLocationBay = null, int? WarehouseLocationNumber = null, bool? WarehouseLocationOnline = null, int? WarehouseLocationPriorityCode = null, bool? WarehouseLocationAllowItemMixing = null, int? WarehouseLocationCost = null, string ControlNo = null, string ItemVendorSku = null, string ItemUpc = null, int? ItemMajorGroup = null, string ItemMajorGroupName = null, int? ItemSubGroup = null, string ItemSubGroupName = null, int? ItemProductCode = null, string ItemProductCodeName = null, string ItemAccountCode = null, string ItemAccountCodeName = null, int? ItemSummaryCode = null, string ItemSummaryCodeName = null, string ItemSector = null, string PoNo = null, DateTime? ReceiptDistributionDate = null, int? ReceiptUnitsPerWrap = null, int? ReceiptUnitsPerCase = null, string ReceiptRevisionDate = null, string ReceiptProductionLot = null, DateTime? ReceiptReceiveDate = null, string ReceiptStatus = null, string ReceiptStatusName = null, int? ReceiptUnitCode = null, string ReceiptUnitCodeText = null, int? ReceiptWrapCode = null, string ReceiptWrapCodeText = null, double? ReceiptCaseWeight = null, string ReceiptProductIdTag = null, Dictionary<string, Object> CustomFields = null)
+        public InventoryStorageActivity(int? LobId = null, bool? IsMixedReceipts = null, int? Quantity = null, string Address = null, int? NumberOfCases = null, double? InventoryValue = null, int? InventoryAgeDays = null, int? WarehouseId = null, string WarehouseName = null, int? WarehouseZoneId = null, string WarehouseZoneName = null, string WarehouseZoneAddress = null, int? WarehouseBuildingId = null, string WarehouseBuildingName = null, int? WarehouseAisleId = null, string WarehouseAisleAddress = null, int? WarehouseLocationOriginId = null, string WarehouseLocationOriginName = null, int? WarehouseLocationBillingTypeId = null, string WarehouseLocationBillingTypeName = null, int? WarehouseLocationBehaviorTypeId = null, string WarehouseLocationBehaviorTypeName = null, int? WarehouseLocationFootprintId = null, string WarehouseLocationFootprintName = null, int? WarehouseLocationFootprintWidth = null, int? WarehouseLocationFootprintHeight = null, int? WarehouseLocationFootprintDepth = null, int? WarehouseLocationLevel = null, int? WarehouseLocationBay = null, int? WarehouseLocationNumber = null, bool? WarehouseLocationOnline = null, int? WarehouseLocationPriorityCode = null, bool? WarehouseLocationAllowItemMixing = null, int? WarehouseLocationCost = null, string Sku = null, string ItemVendorSku = null, string ItemUpc = null, int? ItemMajorGroup = null, string ItemMajorGroupName = null, int? ItemSubGroup = null, string ItemSubGroupName = null, int? ItemProductCode = null, string ItemProductCodeName = null, string ItemAccountCode = null, string ItemAccountCodeName = null, int? ItemSummaryCode = null, string ItemSummaryCodeName = null, string ItemSector = null, string PoNo = null, DateTime? ReceiptDistributionDate = null, int? ReceiptUnitsPerWrap = null, int? ReceiptUnitsPerCase = null, string ReceiptRevisionDate = null, string ReceiptProductionLot = null, DateTime? ReceiptReceiveDate = null, string ReceiptStatus = null, string ReceiptStatusName = null, int? ReceiptUnitCode = null, string ReceiptUnitCodeText = null, int? ReceiptWrapCode = null, string ReceiptWrapCodeText = null, double? ReceiptCaseWeight = null, string ReceiptProductIdTag = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -106,6 +109,9 @@ namespace Infoplus.Model
             }
             this.Quantity = Quantity;
             this.Address = Address;
+            this.NumberOfCases = NumberOfCases;
+            this.InventoryValue = InventoryValue;
+            this.InventoryAgeDays = InventoryAgeDays;
             this.WarehouseId = WarehouseId;
             this.WarehouseName = WarehouseName;
             this.WarehouseZoneId = WarehouseZoneId;
@@ -149,7 +155,7 @@ namespace Infoplus.Model
                 this.WarehouseLocationAllowItemMixing = WarehouseLocationAllowItemMixing;
             }
             this.WarehouseLocationCost = WarehouseLocationCost;
-            this.ControlNo = ControlNo;
+            this.Sku = Sku;
             this.ItemVendorSku = ItemVendorSku;
             this.ItemUpc = ItemUpc;
             this.ItemMajorGroup = ItemMajorGroup;
@@ -248,6 +254,24 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="address", EmitDefaultValue=false)]
         public string Address { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets NumberOfCases
+        /// </summary>
+        [DataMember(Name="numberOfCases", EmitDefaultValue=false)]
+        public int? NumberOfCases { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets InventoryValue
+        /// </summary>
+        [DataMember(Name="inventoryValue", EmitDefaultValue=false)]
+        public double? InventoryValue { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets InventoryAgeDays
+        /// </summary>
+        [DataMember(Name="inventoryAgeDays", EmitDefaultValue=false)]
+        public int? InventoryAgeDays { get; set; }
     
         /// <summary>
         /// Gets or Sets WarehouseId
@@ -412,10 +436,10 @@ namespace Infoplus.Model
         public int? WarehouseLocationCost { get; set; }
     
         /// <summary>
-        /// Gets or Sets ControlNo
+        /// Gets or Sets Sku
         /// </summary>
-        [DataMember(Name="controlNo", EmitDefaultValue=false)]
-        public string ControlNo { get; set; }
+        [DataMember(Name="sku", EmitDefaultValue=false)]
+        public string Sku { get; set; }
     
         /// <summary>
         /// Gets or Sets ItemVendorSku
@@ -706,6 +730,9 @@ namespace Infoplus.Model
             sb.Append("  IsMixedReceipts: ").Append(IsMixedReceipts).Append("\n");
             sb.Append("  Quantity: ").Append(Quantity).Append("\n");
             sb.Append("  Address: ").Append(Address).Append("\n");
+            sb.Append("  NumberOfCases: ").Append(NumberOfCases).Append("\n");
+            sb.Append("  InventoryValue: ").Append(InventoryValue).Append("\n");
+            sb.Append("  InventoryAgeDays: ").Append(InventoryAgeDays).Append("\n");
             sb.Append("  WarehouseId: ").Append(WarehouseId).Append("\n");
             sb.Append("  WarehouseName: ").Append(WarehouseName).Append("\n");
             sb.Append("  WarehouseZoneId: ").Append(WarehouseZoneId).Append("\n");
@@ -733,7 +760,7 @@ namespace Infoplus.Model
             sb.Append("  WarehouseLocationPriorityCode: ").Append(WarehouseLocationPriorityCode).Append("\n");
             sb.Append("  WarehouseLocationAllowItemMixing: ").Append(WarehouseLocationAllowItemMixing).Append("\n");
             sb.Append("  WarehouseLocationCost: ").Append(WarehouseLocationCost).Append("\n");
-            sb.Append("  ControlNo: ").Append(ControlNo).Append("\n");
+            sb.Append("  Sku: ").Append(Sku).Append("\n");
             sb.Append("  ItemVendorSku: ").Append(ItemVendorSku).Append("\n");
             sb.Append("  ItemUpc: ").Append(ItemUpc).Append("\n");
             sb.Append("  ItemMajorGroup: ").Append(ItemMajorGroup).Append("\n");
@@ -872,6 +899,21 @@ namespace Infoplus.Model
                     this.Address.Equals(other.Address)
                 ) && 
                 (
+                    this.NumberOfCases == other.NumberOfCases ||
+                    this.NumberOfCases != null &&
+                    this.NumberOfCases.Equals(other.NumberOfCases)
+                ) && 
+                (
+                    this.InventoryValue == other.InventoryValue ||
+                    this.InventoryValue != null &&
+                    this.InventoryValue.Equals(other.InventoryValue)
+                ) && 
+                (
+                    this.InventoryAgeDays == other.InventoryAgeDays ||
+                    this.InventoryAgeDays != null &&
+                    this.InventoryAgeDays.Equals(other.InventoryAgeDays)
+                ) && 
+                (
                     this.WarehouseId == other.WarehouseId ||
                     this.WarehouseId != null &&
                     this.WarehouseId.Equals(other.WarehouseId)
@@ -1007,9 +1049,9 @@ namespace Infoplus.Model
                     this.WarehouseLocationCost.Equals(other.WarehouseLocationCost)
                 ) && 
                 (
-                    this.ControlNo == other.ControlNo ||
-                    this.ControlNo != null &&
-                    this.ControlNo.Equals(other.ControlNo)
+                    this.Sku == other.Sku ||
+                    this.Sku != null &&
+                    this.Sku.Equals(other.Sku)
                 ) && 
                 (
                     this.ItemVendorSku == other.ItemVendorSku ||
@@ -1283,6 +1325,15 @@ namespace Infoplus.Model
                 if (this.Address != null)
                     hash = hash * 59 + this.Address.GetHashCode();
                 
+                if (this.NumberOfCases != null)
+                    hash = hash * 59 + this.NumberOfCases.GetHashCode();
+                
+                if (this.InventoryValue != null)
+                    hash = hash * 59 + this.InventoryValue.GetHashCode();
+                
+                if (this.InventoryAgeDays != null)
+                    hash = hash * 59 + this.InventoryAgeDays.GetHashCode();
+                
                 if (this.WarehouseId != null)
                     hash = hash * 59 + this.WarehouseId.GetHashCode();
                 
@@ -1364,8 +1415,8 @@ namespace Infoplus.Model
                 if (this.WarehouseLocationCost != null)
                     hash = hash * 59 + this.WarehouseLocationCost.GetHashCode();
                 
-                if (this.ControlNo != null)
-                    hash = hash * 59 + this.ControlNo.GetHashCode();
+                if (this.Sku != null)
+                    hash = hash * 59 + this.Sku.GetHashCode();
                 
                 if (this.ItemVendorSku != null)
                     hash = hash * 59 + this.ItemVendorSku.GetHashCode();

@@ -428,6 +428,18 @@ namespace Infoplus.Model
         public double? RetailFreightAmount { get; private set; }
     
         /// <summary>
+        /// Gets or Sets CartonCreateDate
+        /// </summary>
+        [DataMember(Name="cartonCreateDate", EmitDefaultValue=false)]
+        public DateTime? CartonCreateDate { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets CartonModifyDate
+        /// </summary>
+        [DataMember(Name="cartonModifyDate", EmitDefaultValue=false)]
+        public DateTime? CartonModifyDate { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets AlternateUsage
         /// </summary>
         [DataMember(Name="alternateUsage", EmitDefaultValue=false)]
@@ -558,6 +570,12 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="orderCreateDate", EmitDefaultValue=false)]
         public DateTime? OrderCreateDate { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets OrderModifyDate
+        /// </summary>
+        [DataMember(Name="orderModifyDate", EmitDefaultValue=false)]
+        public DateTime? OrderModifyDate { get; private set; }
     
         /// <summary>
         /// Gets or Sets ShipBy
@@ -1077,6 +1095,8 @@ namespace Infoplus.Model
             sb.Append("  ChargedFreightAmount: ").Append(ChargedFreightAmount).Append("\n");
             sb.Append("  PublishedFreightAmount: ").Append(PublishedFreightAmount).Append("\n");
             sb.Append("  RetailFreightAmount: ").Append(RetailFreightAmount).Append("\n");
+            sb.Append("  CartonCreateDate: ").Append(CartonCreateDate).Append("\n");
+            sb.Append("  CartonModifyDate: ").Append(CartonModifyDate).Append("\n");
             sb.Append("  AlternateUsage: ").Append(AlternateUsage).Append("\n");
             sb.Append("  GroupOrderId: ").Append(GroupOrderId).Append("\n");
             sb.Append("  OrderStatus: ").Append(OrderStatus).Append("\n");
@@ -1099,6 +1119,7 @@ namespace Infoplus.Model
             sb.Append("  CustomerOrderNo: ").Append(CustomerOrderNo).Append("\n");
             sb.Append("  PriceLevel: ").Append(PriceLevel).Append("\n");
             sb.Append("  OrderCreateDate: ").Append(OrderCreateDate).Append("\n");
+            sb.Append("  OrderModifyDate: ").Append(OrderModifyDate).Append("\n");
             sb.Append("  ShipBy: ").Append(ShipBy).Append("\n");
             sb.Append("  StopBackOrders: ").Append(StopBackOrders).Append("\n");
             sb.Append("  OrderSourceId: ").Append(OrderSourceId).Append("\n");
@@ -1367,6 +1388,16 @@ namespace Infoplus.Model
                     this.RetailFreightAmount.Equals(other.RetailFreightAmount)
                 ) && 
                 (
+                    this.CartonCreateDate == other.CartonCreateDate ||
+                    this.CartonCreateDate != null &&
+                    this.CartonCreateDate.Equals(other.CartonCreateDate)
+                ) && 
+                (
+                    this.CartonModifyDate == other.CartonModifyDate ||
+                    this.CartonModifyDate != null &&
+                    this.CartonModifyDate.Equals(other.CartonModifyDate)
+                ) && 
+                (
                     this.AlternateUsage == other.AlternateUsage ||
                     this.AlternateUsage != null &&
                     this.AlternateUsage.Equals(other.AlternateUsage)
@@ -1475,6 +1506,11 @@ namespace Infoplus.Model
                     this.OrderCreateDate == other.OrderCreateDate ||
                     this.OrderCreateDate != null &&
                     this.OrderCreateDate.Equals(other.OrderCreateDate)
+                ) && 
+                (
+                    this.OrderModifyDate == other.OrderModifyDate ||
+                    this.OrderModifyDate != null &&
+                    this.OrderModifyDate.Equals(other.OrderModifyDate)
                 ) && 
                 (
                     this.ShipBy == other.ShipBy ||
@@ -1980,6 +2016,12 @@ namespace Infoplus.Model
                 if (this.RetailFreightAmount != null)
                     hash = hash * 59 + this.RetailFreightAmount.GetHashCode();
                 
+                if (this.CartonCreateDate != null)
+                    hash = hash * 59 + this.CartonCreateDate.GetHashCode();
+                
+                if (this.CartonModifyDate != null)
+                    hash = hash * 59 + this.CartonModifyDate.GetHashCode();
+                
                 if (this.AlternateUsage != null)
                     hash = hash * 59 + this.AlternateUsage.GetHashCode();
                 
@@ -2045,6 +2087,9 @@ namespace Infoplus.Model
                 
                 if (this.OrderCreateDate != null)
                     hash = hash * 59 + this.OrderCreateDate.GetHashCode();
+                
+                if (this.OrderModifyDate != null)
+                    hash = hash * 59 + this.OrderModifyDate.GetHashCode();
                 
                 if (this.ShipBy != null)
                     hash = hash * 59 + this.ShipBy.GetHashCode();

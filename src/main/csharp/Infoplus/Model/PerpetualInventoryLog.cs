@@ -170,6 +170,12 @@ namespace Infoplus.Model
         public int? Id { get; private set; }
     
         /// <summary>
+        /// Gets or Sets ItemReceiptLocationId
+        /// </summary>
+        [DataMember(Name="itemReceiptLocationId", EmitDefaultValue=false)]
+        public int? ItemReceiptLocationId { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets ItemReceiptId
         /// </summary>
         [DataMember(Name="itemReceiptId", EmitDefaultValue=false)]
@@ -688,6 +694,7 @@ namespace Infoplus.Model
             var sb = new StringBuilder();
             sb.Append("class PerpetualInventoryLog {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
+            sb.Append("  ItemReceiptLocationId: ").Append(ItemReceiptLocationId).Append("\n");
             sb.Append("  ItemReceiptId: ").Append(ItemReceiptId).Append("\n");
             sb.Append("  SkuId: ").Append(SkuId).Append("\n");
             sb.Append("  AsnId: ").Append(AsnId).Append("\n");
@@ -814,6 +821,11 @@ namespace Infoplus.Model
                     this.Id == other.Id ||
                     this.Id != null &&
                     this.Id.Equals(other.Id)
+                ) && 
+                (
+                    this.ItemReceiptLocationId == other.ItemReceiptLocationId ||
+                    this.ItemReceiptLocationId != null &&
+                    this.ItemReceiptLocationId.Equals(other.ItemReceiptLocationId)
                 ) && 
                 (
                     this.ItemReceiptId == other.ItemReceiptId ||
@@ -1256,6 +1268,9 @@ namespace Infoplus.Model
                 
                 if (this.Id != null)
                     hash = hash * 59 + this.Id.GetHashCode();
+                
+                if (this.ItemReceiptLocationId != null)
+                    hash = hash * 59 + this.ItemReceiptLocationId.GetHashCode();
                 
                 if (this.ItemReceiptId != null)
                     hash = hash * 59 + this.ItemReceiptId.GetHashCode();
