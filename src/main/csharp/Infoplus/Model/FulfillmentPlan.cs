@@ -27,7 +27,8 @@ namespace Infoplus.Model
         /// <param name="WarehouseId">WarehouseId (required).</param>
         /// <param name="OrderSmartFilterId">OrderSmartFilterId (required).</param>
         /// <param name="LocationSmartFilterId">LocationSmartFilterId.</param>
-        /// <param name="MaximumNumberOfOrders">MaximumNumberOfOrders.</param>
+        /// <param name="MaxOrders">MaxOrders.</param>
+        /// <param name="BatchSize">BatchSize.</param>
         /// <param name="Version">Version.</param>
         /// <param name="CreatePickWork">CreatePickWork (required) (default to false).</param>
         /// <param name="PickingRule">PickingRule.</param>
@@ -55,7 +56,7 @@ namespace Infoplus.Model
         /// <param name="ExternalShippingSystemId">ExternalShippingSystemId.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public FulfillmentPlan(string Name = null, string Description = null, int? WarehouseId = null, int? OrderSmartFilterId = null, int? LocationSmartFilterId = null, int? MaximumNumberOfOrders = null, string Version = null, bool? CreatePickWork = null, string PickingRule = null, string LayoutRule = null, string PickSortRule = null, bool? CreatePickList = null, string PickListFormat = null, string PickListLayout = null, string PickListGroup = null, string PickListSort = null, bool? CreatePickSummary = null, string PickSummaryFormat = null, string PickSummaryLayout = null, string PickSummarySort = null, int? PickScanSchemeId = null, bool? CartonizeOrders = null, bool? AutoShipCasebreakCartons = null, bool? PreGenerateParcelLabels = null, string CreatePackingSlip = null, int? OverridePackingSlipTemplateId = null, bool? CreateOrderAssemblyGuide = null, string CreateOrderInvoice = null, int? OverrideOrderInvoiceTemplateId = null, bool? SendToExternalShippingSystem = null, int? ExternalShippingSystemId = null, Dictionary<string, Object> CustomFields = null)
+        public FulfillmentPlan(string Name = null, string Description = null, int? WarehouseId = null, int? OrderSmartFilterId = null, int? LocationSmartFilterId = null, int? MaxOrders = null, int? BatchSize = null, string Version = null, bool? CreatePickWork = null, string PickingRule = null, string LayoutRule = null, string PickSortRule = null, bool? CreatePickList = null, string PickListFormat = null, string PickListLayout = null, string PickListGroup = null, string PickListSort = null, bool? CreatePickSummary = null, string PickSummaryFormat = null, string PickSummaryLayout = null, string PickSummarySort = null, int? PickScanSchemeId = null, bool? CartonizeOrders = null, bool? AutoShipCasebreakCartons = null, bool? PreGenerateParcelLabels = null, string CreatePackingSlip = null, int? OverridePackingSlipTemplateId = null, bool? CreateOrderAssemblyGuide = null, string CreateOrderInvoice = null, int? OverrideOrderInvoiceTemplateId = null, bool? SendToExternalShippingSystem = null, int? ExternalShippingSystemId = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -140,7 +141,8 @@ namespace Infoplus.Model
             }
             this.Description = Description;
             this.LocationSmartFilterId = LocationSmartFilterId;
-            this.MaximumNumberOfOrders = MaximumNumberOfOrders;
+            this.MaxOrders = MaxOrders;
+            this.BatchSize = BatchSize;
             this.Version = Version;
             this.PickingRule = PickingRule;
             this.LayoutRule = LayoutRule;
@@ -260,10 +262,16 @@ namespace Infoplus.Model
         public int? LocationSmartFilterId { get; set; }
     
         /// <summary>
-        /// Gets or Sets MaximumNumberOfOrders
+        /// Gets or Sets MaxOrders
         /// </summary>
-        [DataMember(Name="maximumNumberOfOrders", EmitDefaultValue=false)]
-        public int? MaximumNumberOfOrders { get; set; }
+        [DataMember(Name="maxOrders", EmitDefaultValue=false)]
+        public int? MaxOrders { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets BatchSize
+        /// </summary>
+        [DataMember(Name="batchSize", EmitDefaultValue=false)]
+        public int? BatchSize { get; set; }
     
         /// <summary>
         /// Gets or Sets Version
@@ -438,7 +446,8 @@ namespace Infoplus.Model
             sb.Append("  LastRunTime: ").Append(LastRunTime).Append("\n");
             sb.Append("  OrderSmartFilterId: ").Append(OrderSmartFilterId).Append("\n");
             sb.Append("  LocationSmartFilterId: ").Append(LocationSmartFilterId).Append("\n");
-            sb.Append("  MaximumNumberOfOrders: ").Append(MaximumNumberOfOrders).Append("\n");
+            sb.Append("  MaxOrders: ").Append(MaxOrders).Append("\n");
+            sb.Append("  BatchSize: ").Append(BatchSize).Append("\n");
             sb.Append("  Version: ").Append(Version).Append("\n");
             sb.Append("  CreatePickWork: ").Append(CreatePickWork).Append("\n");
             sb.Append("  PickingRule: ").Append(PickingRule).Append("\n");
@@ -548,9 +557,14 @@ namespace Infoplus.Model
                     this.LocationSmartFilterId.Equals(other.LocationSmartFilterId)
                 ) && 
                 (
-                    this.MaximumNumberOfOrders == other.MaximumNumberOfOrders ||
-                    this.MaximumNumberOfOrders != null &&
-                    this.MaximumNumberOfOrders.Equals(other.MaximumNumberOfOrders)
+                    this.MaxOrders == other.MaxOrders ||
+                    this.MaxOrders != null &&
+                    this.MaxOrders.Equals(other.MaxOrders)
+                ) && 
+                (
+                    this.BatchSize == other.BatchSize ||
+                    this.BatchSize != null &&
+                    this.BatchSize.Equals(other.BatchSize)
                 ) && 
                 (
                     this.Version == other.Version ||
@@ -723,8 +737,11 @@ namespace Infoplus.Model
                 if (this.LocationSmartFilterId != null)
                     hash = hash * 59 + this.LocationSmartFilterId.GetHashCode();
                 
-                if (this.MaximumNumberOfOrders != null)
-                    hash = hash * 59 + this.MaximumNumberOfOrders.GetHashCode();
+                if (this.MaxOrders != null)
+                    hash = hash * 59 + this.MaxOrders.GetHashCode();
+                
+                if (this.BatchSize != null)
+                    hash = hash * 59 + this.BatchSize.GetHashCode();
                 
                 if (this.Version != null)
                     hash = hash * 59 + this.Version.GetHashCode();

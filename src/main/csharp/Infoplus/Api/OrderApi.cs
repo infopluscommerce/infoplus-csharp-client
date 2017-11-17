@@ -88,6 +88,28 @@ namespace Infoplus.Api
         ApiResponse<Object> AddOrderTagWithHttpInfo (double? orderId, string orderTag);
         
         /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>ApplyOrderWarehouseFulfillmentPlanOutput</returns>
+        ApplyOrderWarehouseFulfillmentPlanOutput ApplyOrderWarehouseFulfillmentPlan (ApplyOrderWarehouseFulfillmentPlanInput body);
+  
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>ApiResponse of ApplyOrderWarehouseFulfillmentPlanOutput</returns>
+        ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput> ApplyOrderWarehouseFulfillmentPlanWithHttpInfo (ApplyOrderWarehouseFulfillmentPlanInput body);
+        
+        /// <summary>
         /// Delete an order
         /// </summary>
         /// <remarks>
@@ -228,6 +250,28 @@ namespace Infoplus.Api
         ApiResponse<Object> GetOrderTagsWithHttpInfo (double? orderId);
         
         /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>GetOrderWarehouseFulfillmentDataOutput</returns>
+        GetOrderWarehouseFulfillmentDataOutput GetOrderWarehouseFulfillmentData (GetOrderWarehouseFulfillmentDataInput body);
+  
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>ApiResponse of GetOrderWarehouseFulfillmentDataOutput</returns>
+        ApiResponse<GetOrderWarehouseFulfillmentDataOutput> GetOrderWarehouseFulfillmentDataWithHttpInfo (GetOrderWarehouseFulfillmentDataInput body);
+        
+        /// <summary>
         /// Update an order
         /// </summary>
         /// <remarks>
@@ -344,6 +388,28 @@ namespace Infoplus.Api
         /// <param name="orderTag">The tag to add</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> AddOrderTagAsyncWithHttpInfo (double? orderId, string orderTag);
+        
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of ApplyOrderWarehouseFulfillmentPlanOutput</returns>
+        System.Threading.Tasks.Task<ApplyOrderWarehouseFulfillmentPlanOutput> ApplyOrderWarehouseFulfillmentPlanAsync (ApplyOrderWarehouseFulfillmentPlanInput body);
+
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of ApiResponse (ApplyOrderWarehouseFulfillmentPlanOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput>> ApplyOrderWarehouseFulfillmentPlanAsyncWithHttpInfo (ApplyOrderWarehouseFulfillmentPlanInput body);
         
         /// <summary>
         /// Delete an order
@@ -484,6 +550,28 @@ namespace Infoplus.Api
         /// <param name="orderId">Id of the order to get tags for</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> GetOrderTagsAsyncWithHttpInfo (double? orderId);
+        
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of GetOrderWarehouseFulfillmentDataOutput</returns>
+        System.Threading.Tasks.Task<GetOrderWarehouseFulfillmentDataOutput> GetOrderWarehouseFulfillmentDataAsync (GetOrderWarehouseFulfillmentDataInput body);
+
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method.
+        /// </summary>
+        /// <remarks>
+        /// 
+        /// </remarks>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of ApiResponse (GetOrderWarehouseFulfillmentDataOutput)</returns>
+        System.Threading.Tasks.Task<ApiResponse<GetOrderWarehouseFulfillmentDataOutput>> GetOrderWarehouseFulfillmentDataAsyncWithHttpInfo (GetOrderWarehouseFulfillmentDataInput body);
         
         /// <summary>
         /// Update an order
@@ -1164,6 +1252,189 @@ namespace Infoplus.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+        
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param> 
+        /// <returns>ApplyOrderWarehouseFulfillmentPlanOutput</returns>
+        public ApplyOrderWarehouseFulfillmentPlanOutput ApplyOrderWarehouseFulfillmentPlan (ApplyOrderWarehouseFulfillmentPlanInput body)
+        {
+             ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput> localVarResponse = ApplyOrderWarehouseFulfillmentPlanWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param> 
+        /// <returns>ApiResponse of ApplyOrderWarehouseFulfillmentPlanOutput</returns>
+        public ApiResponse< ApplyOrderWarehouseFulfillmentPlanOutput > ApplyOrderWarehouseFulfillmentPlanWithHttpInfo (ApplyOrderWarehouseFulfillmentPlanInput body)
+        {
+            
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling OrderApi->ApplyOrderWarehouseFulfillmentPlan");
+            
+    
+            var localVarPath = "/beta/order/applyOrderWarehouseFulfillmentPlan";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+    
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+    
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling ApplyOrderWarehouseFulfillmentPlan: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling ApplyOrderWarehouseFulfillmentPlan: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+    
+            return new ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ApplyOrderWarehouseFulfillmentPlanOutput) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ApplyOrderWarehouseFulfillmentPlanOutput)));
+            
+        }
+
+        
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of ApplyOrderWarehouseFulfillmentPlanOutput</returns>
+        public async System.Threading.Tasks.Task<ApplyOrderWarehouseFulfillmentPlanOutput> ApplyOrderWarehouseFulfillmentPlanAsync (ApplyOrderWarehouseFulfillmentPlanInput body)
+        {
+             ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput> localVarResponse = await ApplyOrderWarehouseFulfillmentPlanAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Run the Apply Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Apply Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of ApiResponse (ApplyOrderWarehouseFulfillmentPlanOutput)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput>> ApplyOrderWarehouseFulfillmentPlanAsyncWithHttpInfo (ApplyOrderWarehouseFulfillmentPlanInput body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling ApplyOrderWarehouseFulfillmentPlan");
+            
+    
+            var localVarPath = "/beta/order/applyOrderWarehouseFulfillmentPlan";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+ 
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling ApplyOrderWarehouseFulfillmentPlan: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling ApplyOrderWarehouseFulfillmentPlan: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+
+            return new ApiResponse<ApplyOrderWarehouseFulfillmentPlanOutput>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (ApplyOrderWarehouseFulfillmentPlanOutput) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ApplyOrderWarehouseFulfillmentPlanOutput)));
+            
         }
         
         /// <summary>
@@ -2208,6 +2479,189 @@ namespace Infoplus.Api
             return new ApiResponse<Object>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
                 null);
+        }
+        
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param> 
+        /// <returns>GetOrderWarehouseFulfillmentDataOutput</returns>
+        public GetOrderWarehouseFulfillmentDataOutput GetOrderWarehouseFulfillmentData (GetOrderWarehouseFulfillmentDataInput body)
+        {
+             ApiResponse<GetOrderWarehouseFulfillmentDataOutput> localVarResponse = GetOrderWarehouseFulfillmentDataWithHttpInfo(body);
+             return localVarResponse.Data;
+        }
+
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param> 
+        /// <returns>ApiResponse of GetOrderWarehouseFulfillmentDataOutput</returns>
+        public ApiResponse< GetOrderWarehouseFulfillmentDataOutput > GetOrderWarehouseFulfillmentDataWithHttpInfo (GetOrderWarehouseFulfillmentDataInput body)
+        {
+            
+            // verify the required parameter 'body' is set
+            if (body == null)
+                throw new ApiException(400, "Missing required parameter 'body' when calling OrderApi->GetOrderWarehouseFulfillmentData");
+            
+    
+            var localVarPath = "/beta/order/getOrderWarehouseFulfillmentData";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+    
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+    
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling GetOrderWarehouseFulfillmentData: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling GetOrderWarehouseFulfillmentData: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+    
+            return new ApiResponse<GetOrderWarehouseFulfillmentDataOutput>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (GetOrderWarehouseFulfillmentDataOutput) Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetOrderWarehouseFulfillmentDataOutput)));
+            
+        }
+
+        
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of GetOrderWarehouseFulfillmentDataOutput</returns>
+        public async System.Threading.Tasks.Task<GetOrderWarehouseFulfillmentDataOutput> GetOrderWarehouseFulfillmentDataAsync (GetOrderWarehouseFulfillmentDataInput body)
+        {
+             ApiResponse<GetOrderWarehouseFulfillmentDataOutput> localVarResponse = await GetOrderWarehouseFulfillmentDataAsyncWithHttpInfo(body);
+             return localVarResponse.Data;
+
+        }
+
+        /// <summary>
+        /// Run the Get Order Warehouse Fulfillment Plan method. 
+        /// </summary>
+        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
+        /// <param name="body">Input data for Get Order Warehouse Fulfillment Plan process.</param>
+        /// <returns>Task of ApiResponse (GetOrderWarehouseFulfillmentDataOutput)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<GetOrderWarehouseFulfillmentDataOutput>> GetOrderWarehouseFulfillmentDataAsyncWithHttpInfo (GetOrderWarehouseFulfillmentDataInput body)
+        {
+            // verify the required parameter 'body' is set
+            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling GetOrderWarehouseFulfillmentData");
+            
+    
+            var localVarPath = "/beta/order/getOrderWarehouseFulfillmentData";
+    
+            var localVarPathParams = new Dictionary<String, String>();
+            var localVarQueryParams = new Dictionary<String, String>();
+            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
+            var localVarFormParams = new Dictionary<String, String>();
+            var localVarFileParams = new Dictionary<String, FileParameter>();
+            Object localVarPostBody = null;
+
+            // to determine the Content-Type header
+            String[] localVarHttpContentTypes = new String[] {
+                
+            };
+            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
+
+            // to determine the Accept header
+            String[] localVarHttpHeaderAccepts = new String[] {
+                "application/json"
+            };
+            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
+            if (localVarHttpHeaderAccept != null)
+                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
+
+            // set "format" to json by default
+            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
+            localVarPathParams.Add("format", "json");
+            
+            
+            
+            
+            if (body.GetType() != typeof(byte[]))
+            {
+                localVarPostBody = Configuration.ApiClient.Serialize(body); // http body (model) parameter
+            }
+            else
+            {
+                localVarPostBody = body; // byte array
+            }
+
+            
+            // authentication (api_key) required
+            
+            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
+            {
+                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
+            }
+            
+
+            // make the HTTP request
+            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
+                Method.POST, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
+                localVarPathParams, localVarHttpContentType);
+
+            int localVarStatusCode = (int) localVarResponse.StatusCode;
+ 
+            if (localVarStatusCode >= 400)
+                throw new ApiException (localVarStatusCode, "Error calling GetOrderWarehouseFulfillmentData: " + localVarResponse.Content, localVarResponse.Content);
+            else if (localVarStatusCode == 0)
+                throw new ApiException (localVarStatusCode, "Error calling GetOrderWarehouseFulfillmentData: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+
+            return new ApiResponse<GetOrderWarehouseFulfillmentDataOutput>(localVarStatusCode,
+                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
+                (GetOrderWarehouseFulfillmentDataOutput) Configuration.ApiClient.Deserialize(localVarResponse, typeof(GetOrderWarehouseFulfillmentDataOutput)));
+            
         }
         
         /// <summary>

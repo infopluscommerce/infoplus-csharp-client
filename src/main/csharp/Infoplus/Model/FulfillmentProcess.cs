@@ -290,16 +290,28 @@ namespace Infoplus.Model
         public int? LocationSmartFilterId { get; set; }
     
         /// <summary>
-        /// Gets or Sets OrderLimit
+        /// Gets or Sets MaxOrders
         /// </summary>
-        [DataMember(Name="orderLimit", EmitDefaultValue=false)]
-        public int? OrderLimit { get; private set; }
+        [DataMember(Name="maxOrders", EmitDefaultValue=false)]
+        public int? MaxOrders { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets BatchSize
+        /// </summary>
+        [DataMember(Name="batchSize", EmitDefaultValue=false)]
+        public int? BatchSize { get; private set; }
     
         /// <summary>
         /// Gets or Sets Version
         /// </summary>
         [DataMember(Name="version", EmitDefaultValue=false)]
         public string Version { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets FulfillmentProcessGroup
+        /// </summary>
+        [DataMember(Name="fulfillmentProcessGroup", EmitDefaultValue=false)]
+        public int? FulfillmentProcessGroup { get; private set; }
     
         /// <summary>
         /// Gets or Sets NumberOfOrders
@@ -542,8 +554,10 @@ namespace Infoplus.Model
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  OrderSmartFilterId: ").Append(OrderSmartFilterId).Append("\n");
             sb.Append("  LocationSmartFilterId: ").Append(LocationSmartFilterId).Append("\n");
-            sb.Append("  OrderLimit: ").Append(OrderLimit).Append("\n");
+            sb.Append("  MaxOrders: ").Append(MaxOrders).Append("\n");
+            sb.Append("  BatchSize: ").Append(BatchSize).Append("\n");
             sb.Append("  Version: ").Append(Version).Append("\n");
+            sb.Append("  FulfillmentProcessGroup: ").Append(FulfillmentProcessGroup).Append("\n");
             sb.Append("  NumberOfOrders: ").Append(NumberOfOrders).Append("\n");
             sb.Append("  NumberOfLines: ").Append(NumberOfLines).Append("\n");
             sb.Append("  NumberOfSKUs: ").Append(NumberOfSKUs).Append("\n");
@@ -674,14 +688,24 @@ namespace Infoplus.Model
                     this.LocationSmartFilterId.Equals(other.LocationSmartFilterId)
                 ) && 
                 (
-                    this.OrderLimit == other.OrderLimit ||
-                    this.OrderLimit != null &&
-                    this.OrderLimit.Equals(other.OrderLimit)
+                    this.MaxOrders == other.MaxOrders ||
+                    this.MaxOrders != null &&
+                    this.MaxOrders.Equals(other.MaxOrders)
+                ) && 
+                (
+                    this.BatchSize == other.BatchSize ||
+                    this.BatchSize != null &&
+                    this.BatchSize.Equals(other.BatchSize)
                 ) && 
                 (
                     this.Version == other.Version ||
                     this.Version != null &&
                     this.Version.Equals(other.Version)
+                ) && 
+                (
+                    this.FulfillmentProcessGroup == other.FulfillmentProcessGroup ||
+                    this.FulfillmentProcessGroup != null &&
+                    this.FulfillmentProcessGroup.Equals(other.FulfillmentProcessGroup)
                 ) && 
                 (
                     this.NumberOfOrders == other.NumberOfOrders ||
@@ -915,11 +939,17 @@ namespace Infoplus.Model
                 if (this.LocationSmartFilterId != null)
                     hash = hash * 59 + this.LocationSmartFilterId.GetHashCode();
                 
-                if (this.OrderLimit != null)
-                    hash = hash * 59 + this.OrderLimit.GetHashCode();
+                if (this.MaxOrders != null)
+                    hash = hash * 59 + this.MaxOrders.GetHashCode();
+                
+                if (this.BatchSize != null)
+                    hash = hash * 59 + this.BatchSize.GetHashCode();
                 
                 if (this.Version != null)
                     hash = hash * 59 + this.Version.GetHashCode();
+                
+                if (this.FulfillmentProcessGroup != null)
+                    hash = hash * 59 + this.FulfillmentProcessGroup.GetHashCode();
                 
                 if (this.NumberOfOrders != null)
                     hash = hash * 59 + this.NumberOfOrders.GetHashCode();

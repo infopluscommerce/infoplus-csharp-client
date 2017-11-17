@@ -23,13 +23,16 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="BillingCode" />class.
         /// </summary>
         /// <param name="Quantity">Quantity (required).</param>
+        /// <param name="Date">Date.</param>
         /// <param name="UserId">UserId (required).</param>
-        /// <param name="LobId">LobId (required).</param>
+        /// <param name="LobId">LobId.</param>
         /// <param name="BillingCodeTypeId">BillingCodeTypeId (required).</param>
+        /// <param name="RecordType">RecordType.</param>
+        /// <param name="RecordId">RecordId.</param>
         /// <param name="Note">Note.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public BillingCode(int? Quantity = null, int? UserId = null, int? LobId = null, int? BillingCodeTypeId = null, string Note = null, Dictionary<string, Object> CustomFields = null)
+        public BillingCode(int? Quantity = null, DateTime? Date = null, int? UserId = null, int? LobId = null, int? BillingCodeTypeId = null, string RecordType = null, string RecordId = null, string Note = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "Quantity" is required (not null)
             if (Quantity == null)
@@ -49,15 +52,6 @@ namespace Infoplus.Model
             {
                 this.UserId = UserId;
             }
-            // to ensure "LobId" is required (not null)
-            if (LobId == null)
-            {
-                throw new InvalidDataException("LobId is a required property for BillingCode and cannot be null");
-            }
-            else
-            {
-                this.LobId = LobId;
-            }
             // to ensure "BillingCodeTypeId" is required (not null)
             if (BillingCodeTypeId == null)
             {
@@ -67,6 +61,10 @@ namespace Infoplus.Model
             {
                 this.BillingCodeTypeId = BillingCodeTypeId;
             }
+            this.Date = Date;
+            this.LobId = LobId;
+            this.RecordType = RecordType;
+            this.RecordId = RecordId;
             this.Note = Note;
             this.CustomFields = CustomFields;
             
@@ -101,7 +99,7 @@ namespace Infoplus.Model
         /// Gets or Sets Date
         /// </summary>
         [DataMember(Name="date", EmitDefaultValue=false)]
-        public DateTime? Date { get; private set; }
+        public DateTime? Date { get; set; }
     
         /// <summary>
         /// Gets or Sets UserId
@@ -120,6 +118,18 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="billingCodeTypeId", EmitDefaultValue=false)]
         public int? BillingCodeTypeId { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets RecordType
+        /// </summary>
+        [DataMember(Name="recordType", EmitDefaultValue=false)]
+        public string RecordType { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets RecordId
+        /// </summary>
+        [DataMember(Name="recordId", EmitDefaultValue=false)]
+        public string RecordId { get; set; }
     
         /// <summary>
         /// Gets or Sets Note
@@ -149,6 +159,8 @@ namespace Infoplus.Model
             sb.Append("  UserId: ").Append(UserId).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  BillingCodeTypeId: ").Append(BillingCodeTypeId).Append("\n");
+            sb.Append("  RecordType: ").Append(RecordType).Append("\n");
+            sb.Append("  RecordId: ").Append(RecordId).Append("\n");
             sb.Append("  Note: ").Append(Note).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
@@ -229,6 +241,16 @@ namespace Infoplus.Model
                     this.BillingCodeTypeId.Equals(other.BillingCodeTypeId)
                 ) && 
                 (
+                    this.RecordType == other.RecordType ||
+                    this.RecordType != null &&
+                    this.RecordType.Equals(other.RecordType)
+                ) && 
+                (
+                    this.RecordId == other.RecordId ||
+                    this.RecordId != null &&
+                    this.RecordId.Equals(other.RecordId)
+                ) && 
+                (
                     this.Note == other.Note ||
                     this.Note != null &&
                     this.Note.Equals(other.Note)
@@ -275,6 +297,12 @@ namespace Infoplus.Model
                 
                 if (this.BillingCodeTypeId != null)
                     hash = hash * 59 + this.BillingCodeTypeId.GetHashCode();
+                
+                if (this.RecordType != null)
+                    hash = hash * 59 + this.RecordType.GetHashCode();
+                
+                if (this.RecordId != null)
+                    hash = hash * 59 + this.RecordId.GetHashCode();
                 
                 if (this.Note != null)
                     hash = hash * 59 + this.Note.GetHashCode();

@@ -668,6 +668,18 @@ namespace Infoplus.Model
         public int? AsnLine { get; set; }
     
         /// <summary>
+        /// Gets or Sets Upc
+        /// </summary>
+        [DataMember(Name="upc", EmitDefaultValue=false)]
+        public string Upc { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets VendorSKU
+        /// </summary>
+        [DataMember(Name="vendorSKU", EmitDefaultValue=false)]
+        public string VendorSKU { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -752,6 +764,8 @@ namespace Infoplus.Model
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
             sb.Append("  Impressions: ").Append(Impressions).Append("\n");
             sb.Append("  AsnLine: ").Append(AsnLine).Append("\n");
+            sb.Append("  Upc: ").Append(Upc).Append("\n");
+            sb.Append("  VendorSKU: ").Append(VendorSKU).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -1146,6 +1160,16 @@ namespace Infoplus.Model
                     this.AsnLine.Equals(other.AsnLine)
                 ) && 
                 (
+                    this.Upc == other.Upc ||
+                    this.Upc != null &&
+                    this.Upc.Equals(other.Upc)
+                ) && 
+                (
+                    this.VendorSKU == other.VendorSKU ||
+                    this.VendorSKU != null &&
+                    this.VendorSKU.Equals(other.VendorSKU)
+                ) && 
+                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -1376,6 +1400,12 @@ namespace Infoplus.Model
                 
                 if (this.AsnLine != null)
                     hash = hash * 59 + this.AsnLine.GetHashCode();
+                
+                if (this.Upc != null)
+                    hash = hash * 59 + this.Upc.GetHashCode();
+                
+                if (this.VendorSKU != null)
+                    hash = hash * 59 + this.VendorSKU.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

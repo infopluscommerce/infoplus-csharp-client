@@ -32,9 +32,10 @@ namespace Infoplus.Model
         /// <param name="Dim2In">Dim2In.</param>
         /// <param name="Dim3In">Dim3In.</param>
         /// <param name="EstimatedZone">EstimatedZone.</param>
+        /// <param name="CarrierCompany">CarrierCompany (required).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Shipment(int? Id = null, int? WarehouseId = null, int? CartonNo = null, int? NumberOfCartons = null, bool? Shipped = null, int? CarrierServiceId = null, double? Dim1In = null, double? Dim2In = null, double? Dim3In = null, string EstimatedZone = null, Dictionary<string, Object> CustomFields = null)
+        public Shipment(int? Id = null, int? WarehouseId = null, int? CartonNo = null, int? NumberOfCartons = null, bool? Shipped = null, int? CarrierServiceId = null, double? Dim1In = null, double? Dim2In = null, double? Dim3In = null, string EstimatedZone = null, string CarrierCompany = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -44,6 +45,15 @@ namespace Infoplus.Model
             else
             {
                 this.WarehouseId = WarehouseId;
+            }
+            // to ensure "CarrierCompany" is required (not null)
+            if (CarrierCompany == null)
+            {
+                throw new InvalidDataException("CarrierCompany is a required property for Shipment and cannot be null");
+            }
+            else
+            {
+                this.CarrierCompany = CarrierCompany;
             }
             this.Id = Id;
             this.CartonNo = CartonNo;
@@ -188,6 +198,12 @@ namespace Infoplus.Model
         public string ThirdPartyParcelAccountNo { get; private set; }
     
         /// <summary>
+        /// Gets or Sets ShipmentID
+        /// </summary>
+        [DataMember(Name="shipmentID", EmitDefaultValue=false)]
+        public string ShipmentID { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets ManifestId
         /// </summary>
         [DataMember(Name="manifestId", EmitDefaultValue=false)]
@@ -254,6 +270,12 @@ namespace Infoplus.Model
         public string ShipmentType { get; private set; }
     
         /// <summary>
+        /// Gets or Sets CarrierCompany
+        /// </summary>
+        [DataMember(Name="carrierCompany", EmitDefaultValue=false)]
+        public string CarrierCompany { get; set; }
+    
+        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -287,6 +309,7 @@ namespace Infoplus.Model
             sb.Append("  EstimatedZone: ").Append(EstimatedZone).Append("\n");
             sb.Append("  ParcelAccountNo: ").Append(ParcelAccountNo).Append("\n");
             sb.Append("  ThirdPartyParcelAccountNo: ").Append(ThirdPartyParcelAccountNo).Append("\n");
+            sb.Append("  ShipmentID: ").Append(ShipmentID).Append("\n");
             sb.Append("  ManifestId: ").Append(ManifestId).Append("\n");
             sb.Append("  Residential: ").Append(Residential).Append("\n");
             sb.Append("  BillingOption: ").Append(BillingOption).Append("\n");
@@ -298,6 +321,7 @@ namespace Infoplus.Model
             sb.Append("  RetailFreightAmount: ").Append(RetailFreightAmount).Append("\n");
             sb.Append("  ExternalShippingSystemId: ").Append(ExternalShippingSystemId).Append("\n");
             sb.Append("  ShipmentType: ").Append(ShipmentType).Append("\n");
+            sb.Append("  CarrierCompany: ").Append(CarrierCompany).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -437,6 +461,11 @@ namespace Infoplus.Model
                     this.ThirdPartyParcelAccountNo.Equals(other.ThirdPartyParcelAccountNo)
                 ) && 
                 (
+                    this.ShipmentID == other.ShipmentID ||
+                    this.ShipmentID != null &&
+                    this.ShipmentID.Equals(other.ShipmentID)
+                ) && 
+                (
                     this.ManifestId == other.ManifestId ||
                     this.ManifestId != null &&
                     this.ManifestId.Equals(other.ManifestId)
@@ -490,6 +519,11 @@ namespace Infoplus.Model
                     this.ShipmentType == other.ShipmentType ||
                     this.ShipmentType != null &&
                     this.ShipmentType.Equals(other.ShipmentType)
+                ) && 
+                (
+                    this.CarrierCompany == other.CarrierCompany ||
+                    this.CarrierCompany != null &&
+                    this.CarrierCompany.Equals(other.CarrierCompany)
                 ) && 
                 (
                     this.CustomFields == other.CustomFields ||
@@ -570,6 +604,9 @@ namespace Infoplus.Model
                 if (this.ThirdPartyParcelAccountNo != null)
                     hash = hash * 59 + this.ThirdPartyParcelAccountNo.GetHashCode();
                 
+                if (this.ShipmentID != null)
+                    hash = hash * 59 + this.ShipmentID.GetHashCode();
+                
                 if (this.ManifestId != null)
                     hash = hash * 59 + this.ManifestId.GetHashCode();
                 
@@ -602,6 +639,9 @@ namespace Infoplus.Model
                 
                 if (this.ShipmentType != null)
                     hash = hash * 59 + this.ShipmentType.GetHashCode();
+                
+                if (this.CarrierCompany != null)
+                    hash = hash * 59 + this.CarrierCompany.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

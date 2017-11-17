@@ -77,6 +77,7 @@ namespace Infoplus.Model
         /// <param name="VendorId">VendorId.</param>
         /// <param name="VendorPrice">VendorPrice.</param>
         /// <param name="VendorPer">VendorPer.</param>
+        /// <param name="BehaviorType">BehaviorType.</param>
         /// <param name="ForwardLotMixingRule">ForwardLotMixingRule (required).</param>
         /// <param name="StorageLotMixingRule">StorageLotMixingRule (required).</param>
         /// <param name="ForwardItemMixingRule">ForwardItemMixingRule (required).</param>
@@ -106,7 +107,7 @@ namespace Infoplus.Model
         /// <param name="ShipSolo">ShipSolo (default to false).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? SellPrice = null, string PricingPer = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, int? VendorId = null, double? VendorPrice = null, string VendorPer = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string BarcodeField = null, string WarehouseDisplayField = null, int? ProductIdTagSchemeId = null, string Hazmat = null, bool? IsAlcohol = null, string AlcoholType = null, double? AlcoholContent = null, string AlcoholContainer = null, string AlcoholVintageYear = null, string AlcoholCountry = null, string AlcoholState = null, string AlcoholRegion = null, string AlcoholBrand = null, string AlcoholUPCCode = null, string AlcoholNAMBCACode = null, string AlcoholUNIMERCCode = null, string AlcoholSCCCode = null, double? Length = null, double? Width = null, double? Height = null, bool? TopUp = null, bool? ShipSolo = null, Dictionary<string, Object> CustomFields = null)
+        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? SellPrice = null, string PricingPer = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, int? VendorId = null, double? VendorPrice = null, string VendorPer = null, string BehaviorType = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string BarcodeField = null, string WarehouseDisplayField = null, int? ProductIdTagSchemeId = null, string Hazmat = null, bool? IsAlcohol = null, string AlcoholType = null, double? AlcoholContent = null, string AlcoholContainer = null, string AlcoholVintageYear = null, string AlcoholCountry = null, string AlcoholState = null, string AlcoholRegion = null, string AlcoholBrand = null, string AlcoholUPCCode = null, string AlcoholNAMBCACode = null, string AlcoholUNIMERCCode = null, string AlcoholSCCCode = null, double? Length = null, double? Width = null, double? Height = null, bool? TopUp = null, bool? ShipSolo = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "MajorGroupId" is required (not null)
             if (MajorGroupId == null)
@@ -353,6 +354,7 @@ namespace Infoplus.Model
             this.VendorId = VendorId;
             this.VendorPrice = VendorPrice;
             this.VendorPer = VendorPer;
+            this.BehaviorType = BehaviorType;
             this.BarcodeField = BarcodeField;
             this.WarehouseDisplayField = WarehouseDisplayField;
             this.ProductIdTagSchemeId = ProductIdTagSchemeId;
@@ -758,6 +760,12 @@ namespace Infoplus.Model
         public DateTime? ModifyDate { get; private set; }
     
         /// <summary>
+        /// Gets or Sets BehaviorType
+        /// </summary>
+        [DataMember(Name="behaviorType", EmitDefaultValue=false)]
+        public string BehaviorType { get; set; }
+    
+        /// <summary>
         /// Gets or Sets ForwardLotMixingRule
         /// </summary>
         [DataMember(Name="forwardLotMixingRule", EmitDefaultValue=false)]
@@ -1064,6 +1072,7 @@ namespace Infoplus.Model
             sb.Append("  VendorPrice: ").Append(VendorPrice).Append("\n");
             sb.Append("  VendorPer: ").Append(VendorPer).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
+            sb.Append("  BehaviorType: ").Append(BehaviorType).Append("\n");
             sb.Append("  ForwardLotMixingRule: ").Append(ForwardLotMixingRule).Append("\n");
             sb.Append("  StorageLotMixingRule: ").Append(StorageLotMixingRule).Append("\n");
             sb.Append("  ForwardItemMixingRule: ").Append(ForwardItemMixingRule).Append("\n");
@@ -1435,6 +1444,11 @@ namespace Infoplus.Model
                     this.ModifyDate == other.ModifyDate ||
                     this.ModifyDate != null &&
                     this.ModifyDate.Equals(other.ModifyDate)
+                ) && 
+                (
+                    this.BehaviorType == other.BehaviorType ||
+                    this.BehaviorType != null &&
+                    this.BehaviorType.Equals(other.BehaviorType)
                 ) && 
                 (
                     this.ForwardLotMixingRule == other.ForwardLotMixingRule ||
@@ -1826,6 +1840,9 @@ namespace Infoplus.Model
                 
                 if (this.ModifyDate != null)
                     hash = hash * 59 + this.ModifyDate.GetHashCode();
+                
+                if (this.BehaviorType != null)
+                    hash = hash * 59 + this.BehaviorType.GetHashCode();
                 
                 if (this.ForwardLotMixingRule != null)
                     hash = hash * 59 + this.ForwardLotMixingRule.GetHashCode();

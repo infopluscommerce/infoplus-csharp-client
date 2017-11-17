@@ -84,13 +84,14 @@ namespace Infoplus.Model
         /// <param name="Subtotal">Subtotal.</param>
         /// <param name="Tax">Tax.</param>
         /// <param name="Total">Total.</param>
+        /// <param name="TotalDiscount">TotalDiscount.</param>
         /// <param name="OrderAssemblyInstructions">OrderAssemblyInstructions.</param>
         /// <param name="LineItems">LineItems (required).</param>
         /// <param name="ExtraOrderData">ExtraOrderData.</param>
         /// <param name="ExtraLineItemData">ExtraLineItemData.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Order(string CustomerOrderNo = null, int? LobId = null, int? WarehouseId = null, DateTime? OrderDate = null, string CustomerNo = null, int? UseOrderNoRoot = null, DateTime? FirstShipDate = null, DateTime? LastShipDate = null, DateTime? DeliverOnDate = null, DateTime? NeedByDate = null, int? CarrierId = null, string ServiceTypeId = null, string ShipVia = null, string MediaCode = null, string LegacyRestrictionType = null, string AlcoholOrderType = null, string AlternateUsage = null, string AuthorizedBy = null, string BatchNo = null, string BillToAttention = null, string BillToCompany = null, string BillToStreet = null, string BillToStreet2 = null, string BillToStreet3 = null, string BillToCity = null, string BillToState = null, string BillToZip = null, string BillToCountry = null, string BillToPhone = null, string BillToEmail = null, int? ThirdPartyParcelAccountId = null, string CostCenter = null, string CustomerPONo = null, string DistributionChannel = null, int? Division = null, string GiftMessage = null, string HoldCode = null, string OrderMessage = null, int? OrderSourceId = null, int? PackingSlipTemplateId = null, int? OrderInvoiceTemplateId = null, int? OrderConfirmationEmailTemplateId = null, int? ShipmentConfirmationEmailTemplateId = null, string PriceLevel = null, string PriceMode = null, int? PriorityCode = null, string ShipCode = null, string ShipToAttention = null, string ShipToCompany = null, string ShipToStreet = null, string ShipToStreet2 = null, string ShipToStreet3 = null, string ShipToCity = null, string ShipToState = null, string ShipToZip = null, string ShipToCountry = null, string ShipToPhone = null, string ShipToEmail = null, double? ShippingCharge = null, double? Subtotal = null, double? Tax = null, double? Total = null, string OrderAssemblyInstructions = null, List<OrderLine> LineItems = null, List<OrderExtraOrderData> ExtraOrderData = null, List<OrderExtraLineItemData> ExtraLineItemData = null, Dictionary<string, Object> CustomFields = null)
+        public Order(string CustomerOrderNo = null, int? LobId = null, int? WarehouseId = null, DateTime? OrderDate = null, string CustomerNo = null, int? UseOrderNoRoot = null, DateTime? FirstShipDate = null, DateTime? LastShipDate = null, DateTime? DeliverOnDate = null, DateTime? NeedByDate = null, int? CarrierId = null, string ServiceTypeId = null, string ShipVia = null, string MediaCode = null, string LegacyRestrictionType = null, string AlcoholOrderType = null, string AlternateUsage = null, string AuthorizedBy = null, string BatchNo = null, string BillToAttention = null, string BillToCompany = null, string BillToStreet = null, string BillToStreet2 = null, string BillToStreet3 = null, string BillToCity = null, string BillToState = null, string BillToZip = null, string BillToCountry = null, string BillToPhone = null, string BillToEmail = null, int? ThirdPartyParcelAccountId = null, string CostCenter = null, string CustomerPONo = null, string DistributionChannel = null, int? Division = null, string GiftMessage = null, string HoldCode = null, string OrderMessage = null, int? OrderSourceId = null, int? PackingSlipTemplateId = null, int? OrderInvoiceTemplateId = null, int? OrderConfirmationEmailTemplateId = null, int? ShipmentConfirmationEmailTemplateId = null, string PriceLevel = null, string PriceMode = null, int? PriorityCode = null, string ShipCode = null, string ShipToAttention = null, string ShipToCompany = null, string ShipToStreet = null, string ShipToStreet2 = null, string ShipToStreet3 = null, string ShipToCity = null, string ShipToState = null, string ShipToZip = null, string ShipToCountry = null, string ShipToPhone = null, string ShipToEmail = null, double? ShippingCharge = null, double? Subtotal = null, double? Tax = null, double? Total = null, double? TotalDiscount = null, string OrderAssemblyInstructions = null, List<OrderLine> LineItems = null, List<OrderExtraOrderData> ExtraOrderData = null, List<OrderExtraLineItemData> ExtraLineItemData = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -203,6 +204,7 @@ namespace Infoplus.Model
             this.Subtotal = Subtotal;
             this.Tax = Tax;
             this.Total = Total;
+            this.TotalDiscount = TotalDiscount;
             this.OrderAssemblyInstructions = OrderAssemblyInstructions;
             this.ExtraOrderData = ExtraOrderData;
             this.ExtraLineItemData = ExtraLineItemData;
@@ -482,6 +484,12 @@ namespace Infoplus.Model
         public string EnteredBy { get; private set; }
     
         /// <summary>
+        /// Gets or Sets PreAllocationEstimatedWeight
+        /// </summary>
+        [DataMember(Name="preAllocationEstimatedWeight", EmitDefaultValue=false)]
+        public double? PreAllocationEstimatedWeight { get; private set; }
+    
+        /// <summary>
         /// Gets or Sets EstimatedWeightLbs
         /// </summary>
         [DataMember(Name="estimatedWeightLbs", EmitDefaultValue=false)]
@@ -504,6 +512,12 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="groupOrderId", EmitDefaultValue=false)]
         public double? GroupOrderId { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets ParentKODOrderId
+        /// </summary>
+        [DataMember(Name="parentKODOrderId", EmitDefaultValue=false)]
+        public double? ParentKODOrderId { get; private set; }
     
         /// <summary>
         /// Gets or Sets HoldCode
@@ -740,6 +754,12 @@ namespace Infoplus.Model
         public double? Total { get; set; }
     
         /// <summary>
+        /// Gets or Sets TotalDiscount
+        /// </summary>
+        [DataMember(Name="totalDiscount", EmitDefaultValue=false)]
+        public double? TotalDiscount { get; set; }
+    
+        /// <summary>
         /// Gets or Sets TotalPaid
         /// </summary>
         [DataMember(Name="totalPaid", EmitDefaultValue=false)]
@@ -846,10 +866,12 @@ namespace Infoplus.Model
             sb.Append("  DistributionCharges: ").Append(DistributionCharges).Append("\n");
             sb.Append("  Division: ").Append(Division).Append("\n");
             sb.Append("  EnteredBy: ").Append(EnteredBy).Append("\n");
+            sb.Append("  PreAllocationEstimatedWeight: ").Append(PreAllocationEstimatedWeight).Append("\n");
             sb.Append("  EstimatedWeightLbs: ").Append(EstimatedWeightLbs).Append("\n");
             sb.Append("  Freight: ").Append(Freight).Append("\n");
             sb.Append("  GiftMessage: ").Append(GiftMessage).Append("\n");
             sb.Append("  GroupOrderId: ").Append(GroupOrderId).Append("\n");
+            sb.Append("  ParentKODOrderId: ").Append(ParentKODOrderId).Append("\n");
             sb.Append("  HoldCode: ").Append(HoldCode).Append("\n");
             sb.Append("  IntegrationPartnerId: ").Append(IntegrationPartnerId).Append("\n");
             sb.Append("  NumberOfLineItems: ").Append(NumberOfLineItems).Append("\n");
@@ -889,6 +911,7 @@ namespace Infoplus.Model
             sb.Append("  Subtotal: ").Append(Subtotal).Append("\n");
             sb.Append("  Tax: ").Append(Tax).Append("\n");
             sb.Append("  Total: ").Append(Total).Append("\n");
+            sb.Append("  TotalDiscount: ").Append(TotalDiscount).Append("\n");
             sb.Append("  TotalPaid: ").Append(TotalPaid).Append("\n");
             sb.Append("  TotalQty: ").Append(TotalQty).Append("\n");
             sb.Append("  WeightLbs: ").Append(WeightLbs).Append("\n");
@@ -1161,6 +1184,11 @@ namespace Infoplus.Model
                     this.EnteredBy.Equals(other.EnteredBy)
                 ) && 
                 (
+                    this.PreAllocationEstimatedWeight == other.PreAllocationEstimatedWeight ||
+                    this.PreAllocationEstimatedWeight != null &&
+                    this.PreAllocationEstimatedWeight.Equals(other.PreAllocationEstimatedWeight)
+                ) && 
+                (
                     this.EstimatedWeightLbs == other.EstimatedWeightLbs ||
                     this.EstimatedWeightLbs != null &&
                     this.EstimatedWeightLbs.Equals(other.EstimatedWeightLbs)
@@ -1179,6 +1207,11 @@ namespace Infoplus.Model
                     this.GroupOrderId == other.GroupOrderId ||
                     this.GroupOrderId != null &&
                     this.GroupOrderId.Equals(other.GroupOrderId)
+                ) && 
+                (
+                    this.ParentKODOrderId == other.ParentKODOrderId ||
+                    this.ParentKODOrderId != null &&
+                    this.ParentKODOrderId.Equals(other.ParentKODOrderId)
                 ) && 
                 (
                     this.HoldCode == other.HoldCode ||
@@ -1376,6 +1409,11 @@ namespace Infoplus.Model
                     this.Total.Equals(other.Total)
                 ) && 
                 (
+                    this.TotalDiscount == other.TotalDiscount ||
+                    this.TotalDiscount != null &&
+                    this.TotalDiscount.Equals(other.TotalDiscount)
+                ) && 
+                (
                     this.TotalPaid == other.TotalPaid ||
                     this.TotalPaid != null &&
                     this.TotalPaid.Equals(other.TotalPaid)
@@ -1569,6 +1607,9 @@ namespace Infoplus.Model
                 if (this.EnteredBy != null)
                     hash = hash * 59 + this.EnteredBy.GetHashCode();
                 
+                if (this.PreAllocationEstimatedWeight != null)
+                    hash = hash * 59 + this.PreAllocationEstimatedWeight.GetHashCode();
+                
                 if (this.EstimatedWeightLbs != null)
                     hash = hash * 59 + this.EstimatedWeightLbs.GetHashCode();
                 
@@ -1580,6 +1621,9 @@ namespace Infoplus.Model
                 
                 if (this.GroupOrderId != null)
                     hash = hash * 59 + this.GroupOrderId.GetHashCode();
+                
+                if (this.ParentKODOrderId != null)
+                    hash = hash * 59 + this.ParentKODOrderId.GetHashCode();
                 
                 if (this.HoldCode != null)
                     hash = hash * 59 + this.HoldCode.GetHashCode();
@@ -1697,6 +1741,9 @@ namespace Infoplus.Model
                 
                 if (this.Total != null)
                     hash = hash * 59 + this.Total.GetHashCode();
+                
+                if (this.TotalDiscount != null)
+                    hash = hash * 59 + this.TotalDiscount.GetHashCode();
                 
                 if (this.TotalPaid != null)
                     hash = hash * 59 + this.TotalPaid.GetHashCode();

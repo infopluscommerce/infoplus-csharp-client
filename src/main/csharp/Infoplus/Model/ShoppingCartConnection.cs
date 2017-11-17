@@ -29,6 +29,7 @@ namespace Infoplus.Model
         /// <param name="ItemFilterId">ItemFilterId.</param>
         /// <param name="InfoplusSKUFieldToMap">InfoplusSKUFieldToMap (required).</param>
         /// <param name="ShoppingCartSKUFieldToMap">ShoppingCartSKUFieldToMap (required).</param>
+        /// <param name="ScriptId">ScriptId.</param>
         /// <param name="Name">Name (required).</param>
         /// <param name="ShoppingCartStoreURL">ShoppingCartStoreURL (required).</param>
         /// <param name="AccessCode">AccessCode (required).</param>
@@ -37,6 +38,7 @@ namespace Infoplus.Model
         /// <param name="Password">Password (required).</param>
         /// <param name="DefaultCarrierId">DefaultCarrierId.</param>
         /// <param name="OrderShipmentLevel">OrderShipmentLevel (required).</param>
+        /// <param name="CreateInvoices">CreateInvoices (default to false).</param>
         /// <param name="SyncOrders">SyncOrders (required) (default to false).</param>
         /// <param name="SyncInventory">SyncInventory (required) (default to false).</param>
         /// <param name="SyncTrackingData">SyncTrackingData (required) (default to false).</param>
@@ -45,7 +47,7 @@ namespace Infoplus.Model
         /// <param name="WarehouseList">WarehouseList.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ShoppingCartConnection(int? LobId = null, int? OrderSourceId = null, int? IntegrationPartnerId = null, string ConnectionType = null, int? ItemFilterId = null, string InfoplusSKUFieldToMap = null, string ShoppingCartSKUFieldToMap = null, string Name = null, string ShoppingCartStoreURL = null, string AccessCode = null, string AccessToken = null, string Username = null, string Password = null, int? DefaultCarrierId = null, string OrderShipmentLevel = null, bool? SyncOrders = null, bool? SyncInventory = null, bool? SyncTrackingData = null, bool? FulfillAllItems = null, string InventoryLevelWarehouseControls = null, List<Warehouse> WarehouseList = null, Dictionary<string, Object> CustomFields = null)
+        public ShoppingCartConnection(int? LobId = null, int? OrderSourceId = null, int? IntegrationPartnerId = null, string ConnectionType = null, int? ItemFilterId = null, string InfoplusSKUFieldToMap = null, string ShoppingCartSKUFieldToMap = null, int? ScriptId = null, string Name = null, string ShoppingCartStoreURL = null, string AccessCode = null, string AccessToken = null, string Username = null, string Password = null, int? DefaultCarrierId = null, string OrderShipmentLevel = null, bool? CreateInvoices = null, bool? SyncOrders = null, bool? SyncInventory = null, bool? SyncTrackingData = null, bool? FulfillAllItems = null, string InventoryLevelWarehouseControls = null, List<Warehouse> WarehouseList = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -210,7 +212,17 @@ namespace Infoplus.Model
                 this.InventoryLevelWarehouseControls = InventoryLevelWarehouseControls;
             }
             this.ItemFilterId = ItemFilterId;
+            this.ScriptId = ScriptId;
             this.DefaultCarrierId = DefaultCarrierId;
+            // use default value if no "CreateInvoices" provided
+            if (CreateInvoices == null)
+            {
+                this.CreateInvoices = false;
+            }
+            else
+            {
+                this.CreateInvoices = CreateInvoices;
+            }
             this.WarehouseList = WarehouseList;
             this.CustomFields = CustomFields;
             
@@ -290,6 +302,12 @@ namespace Infoplus.Model
         public string ShoppingCartSKUFieldToMap { get; set; }
     
         /// <summary>
+        /// Gets or Sets ScriptId
+        /// </summary>
+        [DataMember(Name="scriptId", EmitDefaultValue=false)]
+        public int? ScriptId { get; set; }
+    
+        /// <summary>
         /// Gets or Sets Name
         /// </summary>
         [DataMember(Name="name", EmitDefaultValue=false)]
@@ -336,6 +354,12 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="orderShipmentLevel", EmitDefaultValue=false)]
         public string OrderShipmentLevel { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets CreateInvoices
+        /// </summary>
+        [DataMember(Name="createInvoices", EmitDefaultValue=false)]
+        public bool? CreateInvoices { get; set; }
     
         /// <summary>
         /// Gets or Sets SyncOrders
@@ -411,6 +435,7 @@ namespace Infoplus.Model
             sb.Append("  ItemFilterId: ").Append(ItemFilterId).Append("\n");
             sb.Append("  InfoplusSKUFieldToMap: ").Append(InfoplusSKUFieldToMap).Append("\n");
             sb.Append("  ShoppingCartSKUFieldToMap: ").Append(ShoppingCartSKUFieldToMap).Append("\n");
+            sb.Append("  ScriptId: ").Append(ScriptId).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  ShoppingCartStoreURL: ").Append(ShoppingCartStoreURL).Append("\n");
             sb.Append("  AccessCode: ").Append(AccessCode).Append("\n");
@@ -419,6 +444,7 @@ namespace Infoplus.Model
             sb.Append("  Password: ").Append(Password).Append("\n");
             sb.Append("  DefaultCarrierId: ").Append(DefaultCarrierId).Append("\n");
             sb.Append("  OrderShipmentLevel: ").Append(OrderShipmentLevel).Append("\n");
+            sb.Append("  CreateInvoices: ").Append(CreateInvoices).Append("\n");
             sb.Append("  SyncOrders: ").Append(SyncOrders).Append("\n");
             sb.Append("  SyncInventory: ").Append(SyncInventory).Append("\n");
             sb.Append("  SyncTrackingData: ").Append(SyncTrackingData).Append("\n");
@@ -526,6 +552,11 @@ namespace Infoplus.Model
                     this.ShoppingCartSKUFieldToMap.Equals(other.ShoppingCartSKUFieldToMap)
                 ) && 
                 (
+                    this.ScriptId == other.ScriptId ||
+                    this.ScriptId != null &&
+                    this.ScriptId.Equals(other.ScriptId)
+                ) && 
+                (
                     this.Name == other.Name ||
                     this.Name != null &&
                     this.Name.Equals(other.Name)
@@ -564,6 +595,11 @@ namespace Infoplus.Model
                     this.OrderShipmentLevel == other.OrderShipmentLevel ||
                     this.OrderShipmentLevel != null &&
                     this.OrderShipmentLevel.Equals(other.OrderShipmentLevel)
+                ) && 
+                (
+                    this.CreateInvoices == other.CreateInvoices ||
+                    this.CreateInvoices != null &&
+                    this.CreateInvoices.Equals(other.CreateInvoices)
                 ) && 
                 (
                     this.SyncOrders == other.SyncOrders ||
@@ -660,6 +696,9 @@ namespace Infoplus.Model
                 if (this.ShoppingCartSKUFieldToMap != null)
                     hash = hash * 59 + this.ShoppingCartSKUFieldToMap.GetHashCode();
                 
+                if (this.ScriptId != null)
+                    hash = hash * 59 + this.ScriptId.GetHashCode();
+                
                 if (this.Name != null)
                     hash = hash * 59 + this.Name.GetHashCode();
                 
@@ -683,6 +722,9 @@ namespace Infoplus.Model
                 
                 if (this.OrderShipmentLevel != null)
                     hash = hash * 59 + this.OrderShipmentLevel.GetHashCode();
+                
+                if (this.CreateInvoices != null)
+                    hash = hash * 59 + this.CreateInvoices.GetHashCode();
                 
                 if (this.SyncOrders != null)
                     hash = hash * 59 + this.SyncOrders.GetHashCode();

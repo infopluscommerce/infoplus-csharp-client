@@ -22,14 +22,23 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="BillingCodeType" /> class.
         /// Initializes a new instance of the <see cref="BillingCodeType" />class.
         /// </summary>
+        /// <param name="BillingCode">BillingCode (required).</param>
         /// <param name="Name">Name (required).</param>
         /// <param name="Description">Description.</param>
-        /// <param name="BillingCode">BillingCode.</param>
         /// <param name="IsActive">IsActive (default to false).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public BillingCodeType(string Name = null, string Description = null, string BillingCode = null, bool? IsActive = null, Dictionary<string, Object> CustomFields = null)
+        public BillingCodeType(string BillingCode = null, string Name = null, string Description = null, bool? IsActive = null, Dictionary<string, Object> CustomFields = null)
         {
+            // to ensure "BillingCode" is required (not null)
+            if (BillingCode == null)
+            {
+                throw new InvalidDataException("BillingCode is a required property for BillingCodeType and cannot be null");
+            }
+            else
+            {
+                this.BillingCode = BillingCode;
+            }
             // to ensure "Name" is required (not null)
             if (Name == null)
             {
@@ -40,7 +49,6 @@ namespace Infoplus.Model
                 this.Name = Name;
             }
             this.Description = Description;
-            this.BillingCode = BillingCode;
             // use default value if no "IsActive" provided
             if (IsActive == null)
             {
@@ -68,16 +76,10 @@ namespace Infoplus.Model
         public int? ClientId { get; private set; }
     
         /// <summary>
-        /// Gets or Sets CreateDate
+        /// Gets or Sets BillingCode
         /// </summary>
-        [DataMember(Name="createDate", EmitDefaultValue=false)]
-        public DateTime? CreateDate { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets ModifyDate
-        /// </summary>
-        [DataMember(Name="modifyDate", EmitDefaultValue=false)]
-        public DateTime? ModifyDate { get; private set; }
+        [DataMember(Name="billingCode", EmitDefaultValue=false)]
+        public string BillingCode { get; set; }
     
         /// <summary>
         /// Gets or Sets Name
@@ -92,16 +94,22 @@ namespace Infoplus.Model
         public string Description { get; set; }
     
         /// <summary>
-        /// Gets or Sets BillingCode
-        /// </summary>
-        [DataMember(Name="billingCode", EmitDefaultValue=false)]
-        public string BillingCode { get; set; }
-    
-        /// <summary>
         /// Gets or Sets IsActive
         /// </summary>
         [DataMember(Name="isActive", EmitDefaultValue=false)]
         public bool? IsActive { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets CreateDate
+        /// </summary>
+        [DataMember(Name="createDate", EmitDefaultValue=false)]
+        public DateTime? CreateDate { get; private set; }
+    
+        /// <summary>
+        /// Gets or Sets ModifyDate
+        /// </summary>
+        [DataMember(Name="modifyDate", EmitDefaultValue=false)]
+        public DateTime? ModifyDate { get; private set; }
     
         /// <summary>
         /// Gets or Sets CustomFields
@@ -119,12 +127,12 @@ namespace Infoplus.Model
             sb.Append("class BillingCodeType {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  ClientId: ").Append(ClientId).Append("\n");
-            sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
-            sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
+            sb.Append("  BillingCode: ").Append(BillingCode).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  Description: ").Append(Description).Append("\n");
-            sb.Append("  BillingCode: ").Append(BillingCode).Append("\n");
             sb.Append("  IsActive: ").Append(IsActive).Append("\n");
+            sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
+            sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -174,14 +182,9 @@ namespace Infoplus.Model
                     this.ClientId.Equals(other.ClientId)
                 ) && 
                 (
-                    this.CreateDate == other.CreateDate ||
-                    this.CreateDate != null &&
-                    this.CreateDate.Equals(other.CreateDate)
-                ) && 
-                (
-                    this.ModifyDate == other.ModifyDate ||
-                    this.ModifyDate != null &&
-                    this.ModifyDate.Equals(other.ModifyDate)
+                    this.BillingCode == other.BillingCode ||
+                    this.BillingCode != null &&
+                    this.BillingCode.Equals(other.BillingCode)
                 ) && 
                 (
                     this.Name == other.Name ||
@@ -194,14 +197,19 @@ namespace Infoplus.Model
                     this.Description.Equals(other.Description)
                 ) && 
                 (
-                    this.BillingCode == other.BillingCode ||
-                    this.BillingCode != null &&
-                    this.BillingCode.Equals(other.BillingCode)
-                ) && 
-                (
                     this.IsActive == other.IsActive ||
                     this.IsActive != null &&
                     this.IsActive.Equals(other.IsActive)
+                ) && 
+                (
+                    this.CreateDate == other.CreateDate ||
+                    this.CreateDate != null &&
+                    this.CreateDate.Equals(other.CreateDate)
+                ) && 
+                (
+                    this.ModifyDate == other.ModifyDate ||
+                    this.ModifyDate != null &&
+                    this.ModifyDate.Equals(other.ModifyDate)
                 ) && 
                 (
                     this.CustomFields == other.CustomFields ||
@@ -228,11 +236,8 @@ namespace Infoplus.Model
                 if (this.ClientId != null)
                     hash = hash * 59 + this.ClientId.GetHashCode();
                 
-                if (this.CreateDate != null)
-                    hash = hash * 59 + this.CreateDate.GetHashCode();
-                
-                if (this.ModifyDate != null)
-                    hash = hash * 59 + this.ModifyDate.GetHashCode();
+                if (this.BillingCode != null)
+                    hash = hash * 59 + this.BillingCode.GetHashCode();
                 
                 if (this.Name != null)
                     hash = hash * 59 + this.Name.GetHashCode();
@@ -240,11 +245,14 @@ namespace Infoplus.Model
                 if (this.Description != null)
                     hash = hash * 59 + this.Description.GetHashCode();
                 
-                if (this.BillingCode != null)
-                    hash = hash * 59 + this.BillingCode.GetHashCode();
-                
                 if (this.IsActive != null)
                     hash = hash * 59 + this.IsActive.GetHashCode();
+                
+                if (this.CreateDate != null)
+                    hash = hash * 59 + this.CreateDate.GetHashCode();
+                
+                if (this.ModifyDate != null)
+                    hash = hash * 59 + this.ModifyDate.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

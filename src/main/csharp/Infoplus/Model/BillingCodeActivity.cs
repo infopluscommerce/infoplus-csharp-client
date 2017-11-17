@@ -29,9 +29,12 @@ namespace Infoplus.Model
         /// <param name="BillingCodeTypeId">BillingCodeTypeId (required).</param>
         /// <param name="BillingCodeTypeName">BillingCodeTypeName.</param>
         /// <param name="Note">Note.</param>
+        /// <param name="RecordTypeName">RecordTypeName.</param>
+        /// <param name="RecordTypeId">RecordTypeId.</param>
+        /// <param name="RecordId">RecordId.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public BillingCodeActivity(int? Quantity = null, int? LobId = null, int? UserId = null, string Email = null, int? BillingCodeTypeId = null, string BillingCodeTypeName = null, string Note = null, Dictionary<string, Object> CustomFields = null)
+        public BillingCodeActivity(int? Quantity = null, int? LobId = null, int? UserId = null, string Email = null, int? BillingCodeTypeId = null, string BillingCodeTypeName = null, string Note = null, string RecordTypeName = null, int? RecordTypeId = null, string RecordId = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "Quantity" is required (not null)
             if (Quantity == null)
@@ -72,6 +75,9 @@ namespace Infoplus.Model
             this.Email = Email;
             this.BillingCodeTypeName = BillingCodeTypeName;
             this.Note = Note;
+            this.RecordTypeName = RecordTypeName;
+            this.RecordTypeId = RecordTypeId;
+            this.RecordId = RecordId;
             this.CustomFields = CustomFields;
             
         }
@@ -150,6 +156,24 @@ namespace Infoplus.Model
         public string Note { get; set; }
     
         /// <summary>
+        /// Gets or Sets RecordTypeName
+        /// </summary>
+        [DataMember(Name="recordTypeName", EmitDefaultValue=false)]
+        public string RecordTypeName { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets RecordTypeId
+        /// </summary>
+        [DataMember(Name="recordTypeId", EmitDefaultValue=false)]
+        public int? RecordTypeId { get; set; }
+    
+        /// <summary>
+        /// Gets or Sets RecordId
+        /// </summary>
+        [DataMember(Name="recordId", EmitDefaultValue=false)]
+        public string RecordId { get; set; }
+    
+        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -175,6 +199,9 @@ namespace Infoplus.Model
             sb.Append("  BillingCodeTypeId: ").Append(BillingCodeTypeId).Append("\n");
             sb.Append("  BillingCodeTypeName: ").Append(BillingCodeTypeName).Append("\n");
             sb.Append("  Note: ").Append(Note).Append("\n");
+            sb.Append("  RecordTypeName: ").Append(RecordTypeName).Append("\n");
+            sb.Append("  RecordTypeId: ").Append(RecordTypeId).Append("\n");
+            sb.Append("  RecordId: ").Append(RecordId).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -274,6 +301,21 @@ namespace Infoplus.Model
                     this.Note.Equals(other.Note)
                 ) && 
                 (
+                    this.RecordTypeName == other.RecordTypeName ||
+                    this.RecordTypeName != null &&
+                    this.RecordTypeName.Equals(other.RecordTypeName)
+                ) && 
+                (
+                    this.RecordTypeId == other.RecordTypeId ||
+                    this.RecordTypeId != null &&
+                    this.RecordTypeId.Equals(other.RecordTypeId)
+                ) && 
+                (
+                    this.RecordId == other.RecordId ||
+                    this.RecordId != null &&
+                    this.RecordId.Equals(other.RecordId)
+                ) && 
+                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -327,6 +369,15 @@ namespace Infoplus.Model
                 
                 if (this.Note != null)
                     hash = hash * 59 + this.Note.GetHashCode();
+                
+                if (this.RecordTypeName != null)
+                    hash = hash * 59 + this.RecordTypeName.GetHashCode();
+                
+                if (this.RecordTypeId != null)
+                    hash = hash * 59 + this.RecordTypeId.GetHashCode();
+                
+                if (this.RecordId != null)
+                    hash = hash * 59 + this.RecordId.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();
