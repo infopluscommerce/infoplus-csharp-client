@@ -186,12 +186,6 @@ namespace Infoplus.Model
         public double? UnitSell { get; private set; }
     
         /// <summary>
-        /// Gets or Sets UnitDiscount
-        /// </summary>
-        [DataMember(Name="unitDiscount", EmitDefaultValue=false)]
-        public double? UnitDiscount { get; private set; }
-    
-        /// <summary>
         /// Gets or Sets ExtendedCost
         /// </summary>
         [DataMember(Name="extendedCost", EmitDefaultValue=false)]
@@ -202,12 +196,6 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="extendedSell", EmitDefaultValue=false)]
         public double? ExtendedSell { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets ExtendedDiscount
-        /// </summary>
-        [DataMember(Name="extendedDiscount", EmitDefaultValue=false)]
-        public double? ExtendedDiscount { get; private set; }
     
         /// <summary>
         /// Gets or Sets NcExtendedSell
@@ -306,10 +294,8 @@ namespace Infoplus.Model
             sb.Append("  OrderSourceSKU: ").Append(OrderSourceSKU).Append("\n");
             sb.Append("  UnitCost: ").Append(UnitCost).Append("\n");
             sb.Append("  UnitSell: ").Append(UnitSell).Append("\n");
-            sb.Append("  UnitDiscount: ").Append(UnitDiscount).Append("\n");
             sb.Append("  ExtendedCost: ").Append(ExtendedCost).Append("\n");
             sb.Append("  ExtendedSell: ").Append(ExtendedSell).Append("\n");
-            sb.Append("  ExtendedDiscount: ").Append(ExtendedDiscount).Append("\n");
             sb.Append("  NcExtendedSell: ").Append(NcExtendedSell).Append("\n");
             sb.Append("  ItemWeight: ").Append(ItemWeight).Append("\n");
             sb.Append("  ProductionLot: ").Append(ProductionLot).Append("\n");
@@ -445,11 +431,6 @@ namespace Infoplus.Model
                     this.UnitSell.Equals(other.UnitSell)
                 ) && 
                 (
-                    this.UnitDiscount == other.UnitDiscount ||
-                    this.UnitDiscount != null &&
-                    this.UnitDiscount.Equals(other.UnitDiscount)
-                ) && 
-                (
                     this.ExtendedCost == other.ExtendedCost ||
                     this.ExtendedCost != null &&
                     this.ExtendedCost.Equals(other.ExtendedCost)
@@ -458,11 +439,6 @@ namespace Infoplus.Model
                     this.ExtendedSell == other.ExtendedSell ||
                     this.ExtendedSell != null &&
                     this.ExtendedSell.Equals(other.ExtendedSell)
-                ) && 
-                (
-                    this.ExtendedDiscount == other.ExtendedDiscount ||
-                    this.ExtendedDiscount != null &&
-                    this.ExtendedDiscount.Equals(other.ExtendedDiscount)
                 ) && 
                 (
                     this.NcExtendedSell == other.NcExtendedSell ||
@@ -589,17 +565,11 @@ namespace Infoplus.Model
                 if (this.UnitSell != null)
                     hash = hash * 59 + this.UnitSell.GetHashCode();
                 
-                if (this.UnitDiscount != null)
-                    hash = hash * 59 + this.UnitDiscount.GetHashCode();
-                
                 if (this.ExtendedCost != null)
                     hash = hash * 59 + this.ExtendedCost.GetHashCode();
                 
                 if (this.ExtendedSell != null)
                     hash = hash * 59 + this.ExtendedSell.GetHashCode();
-                
-                if (this.ExtendedDiscount != null)
-                    hash = hash * 59 + this.ExtendedDiscount.GetHashCode();
                 
                 if (this.NcExtendedSell != null)
                     hash = hash * 59 + this.NcExtendedSell.GetHashCode();

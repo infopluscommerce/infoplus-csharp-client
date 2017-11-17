@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for a work
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param>
-        /// <param name="workAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddWorkAudit (int? workId, string workAudit);
-  
-        /// <summary>
-        /// Add new audit for a work
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param>
-        /// <param name="workAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddWorkAuditWithHttpInfo (int? workId, string workAudit);
-        
-        /// <summary>
-        /// Add new tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param>
-        /// <param name="workTag">The tag to add</param>
-        /// <returns></returns>
-        void AddWorkTag (int? workId, string workTag);
-  
-        /// <summary>
-        /// Add new tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param>
-        /// <param name="workTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddWorkTagWithHttpInfo (int? workId, string workTag);
-        
-        /// <summary>
-        /// Delete a tag for a work.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing work tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param>
-        /// <param name="workTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteWorkTag (int? workId, string workTag);
-  
-        /// <summary>
-        /// Delete a tag for a work.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing work tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param>
-        /// <param name="workTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteWorkTagWithHttpInfo (int? workId, string workTag);
-        
-        /// <summary>
         /// Get a duplicated a work by id
         /// </summary>
         /// <remarks>
@@ -162,28 +90,6 @@ namespace Infoplus.Api
         ApiResponse<Work> GetWorkByIdWithHttpInfo (int? workId);
         
         /// <summary>
-        /// Get the tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing work tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param>
-        /// <returns></returns>
-        void GetWorkTags (int? workId);
-  
-        /// <summary>
-        /// Get the tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing work tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetWorkTagsWithHttpInfo (int? workId);
-        
-        /// <summary>
         /// Update a work custom fields
         /// </summary>
         /// <remarks>
@@ -208,78 +114,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for a work
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param>
-        /// <param name="workAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddWorkAuditAsync (int? workId, string workAudit);
-
-        /// <summary>
-        /// Add new audit for a work
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param>
-        /// <param name="workAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddWorkAuditAsyncWithHttpInfo (int? workId, string workAudit);
-        
-        /// <summary>
-        /// Add new tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param>
-        /// <param name="workTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddWorkTagAsync (int? workId, string workTag);
-
-        /// <summary>
-        /// Add new tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing work.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param>
-        /// <param name="workTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddWorkTagAsyncWithHttpInfo (int? workId, string workTag);
-        
-        /// <summary>
-        /// Delete a tag for a work.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing work tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param>
-        /// <param name="workTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteWorkTagAsync (int? workId, string workTag);
-
-        /// <summary>
-        /// Delete a tag for a work.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing work tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param>
-        /// <param name="workTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteWorkTagAsyncWithHttpInfo (int? workId, string workTag);
         
         /// <summary>
         /// Get a duplicated a work by id
@@ -352,28 +186,6 @@ namespace Infoplus.Api
         /// <param name="workId">Id of the work to be returned.</param>
         /// <returns>Task of ApiResponse (Work)</returns>
         System.Threading.Tasks.Task<ApiResponse<Work>> GetWorkByIdAsyncWithHttpInfo (int? workId);
-        
-        /// <summary>
-        /// Get the tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing work tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetWorkTagsAsync (int? workId);
-
-        /// <summary>
-        /// Get the tags for a work.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing work tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetWorkTagsAsyncWithHttpInfo (int? workId);
         
         /// <summary>
         /// Update a work custom fields
@@ -490,549 +302,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for a work Adds an audit to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param> 
-        /// <param name="workAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddWorkAudit (int? workId, string workAudit)
-        {
-             AddWorkAuditWithHttpInfo(workId, workAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a work Adds an audit to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param> 
-        /// <param name="workAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddWorkAuditWithHttpInfo (int? workId, string workAudit)
-        {
-            
-            // verify the required parameter 'workId' is set
-            if (workId == null)
-                throw new ApiException(400, "Missing required parameter 'workId' when calling WorkApi->AddWorkAudit");
-            
-            // verify the required parameter 'workAudit' is set
-            if (workAudit == null)
-                throw new ApiException(400, "Missing required parameter 'workAudit' when calling WorkApi->AddWorkAudit");
-            
-    
-            var localVarPath = "/beta/work/{workId}/audit/{workAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            if (workAudit != null) localVarPathParams.Add("workAudit", Configuration.ApiClient.ParameterToString(workAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a work Adds an audit to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param>
-        /// <param name="workAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddWorkAuditAsync (int? workId, string workAudit)
-        {
-             await AddWorkAuditAsyncWithHttpInfo(workId, workAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a work Adds an audit to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add an audit to</param>
-        /// <param name="workAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddWorkAuditAsyncWithHttpInfo (int? workId, string workAudit)
-        {
-            // verify the required parameter 'workId' is set
-            if (workId == null) throw new ApiException(400, "Missing required parameter 'workId' when calling AddWorkAudit");
-            // verify the required parameter 'workAudit' is set
-            if (workAudit == null) throw new ApiException(400, "Missing required parameter 'workAudit' when calling AddWorkAudit");
-            
-    
-            var localVarPath = "/beta/work/{workId}/audit/{workAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            if (workAudit != null) localVarPathParams.Add("workAudit", Configuration.ApiClient.ParameterToString(workAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a work. Adds a tag to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param> 
-        /// <param name="workTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddWorkTag (int? workId, string workTag)
-        {
-             AddWorkTagWithHttpInfo(workId, workTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a work. Adds a tag to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param> 
-        /// <param name="workTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddWorkTagWithHttpInfo (int? workId, string workTag)
-        {
-            
-            // verify the required parameter 'workId' is set
-            if (workId == null)
-                throw new ApiException(400, "Missing required parameter 'workId' when calling WorkApi->AddWorkTag");
-            
-            // verify the required parameter 'workTag' is set
-            if (workTag == null)
-                throw new ApiException(400, "Missing required parameter 'workTag' when calling WorkApi->AddWorkTag");
-            
-    
-            var localVarPath = "/beta/work/{workId}/tag/{workTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            if (workTag != null) localVarPathParams.Add("workTag", Configuration.ApiClient.ParameterToString(workTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a work. Adds a tag to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param>
-        /// <param name="workTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddWorkTagAsync (int? workId, string workTag)
-        {
-             await AddWorkTagAsyncWithHttpInfo(workId, workTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a work. Adds a tag to an existing work.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to add a tag to</param>
-        /// <param name="workTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddWorkTagAsyncWithHttpInfo (int? workId, string workTag)
-        {
-            // verify the required parameter 'workId' is set
-            if (workId == null) throw new ApiException(400, "Missing required parameter 'workId' when calling AddWorkTag");
-            // verify the required parameter 'workTag' is set
-            if (workTag == null) throw new ApiException(400, "Missing required parameter 'workTag' when calling AddWorkTag");
-            
-    
-            var localVarPath = "/beta/work/{workId}/tag/{workTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            if (workTag != null) localVarPathParams.Add("workTag", Configuration.ApiClient.ParameterToString(workTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWorkTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for a work. Deletes an existing work tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param> 
-        /// <param name="workTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteWorkTag (int? workId, string workTag)
-        {
-             DeleteWorkTagWithHttpInfo(workId, workTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a work. Deletes an existing work tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param> 
-        /// <param name="workTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteWorkTagWithHttpInfo (int? workId, string workTag)
-        {
-            
-            // verify the required parameter 'workId' is set
-            if (workId == null)
-                throw new ApiException(400, "Missing required parameter 'workId' when calling WorkApi->DeleteWorkTag");
-            
-            // verify the required parameter 'workTag' is set
-            if (workTag == null)
-                throw new ApiException(400, "Missing required parameter 'workTag' when calling WorkApi->DeleteWorkTag");
-            
-    
-            var localVarPath = "/beta/work/{workId}/tag/{workTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            if (workTag != null) localVarPathParams.Add("workTag", Configuration.ApiClient.ParameterToString(workTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWorkTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWorkTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a work. Deletes an existing work tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param>
-        /// <param name="workTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteWorkTagAsync (int? workId, string workTag)
-        {
-             await DeleteWorkTagAsyncWithHttpInfo(workId, workTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a work. Deletes an existing work tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to remove tag from</param>
-        /// <param name="workTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteWorkTagAsyncWithHttpInfo (int? workId, string workTag)
-        {
-            // verify the required parameter 'workId' is set
-            if (workId == null) throw new ApiException(400, "Missing required parameter 'workId' when calling DeleteWorkTag");
-            // verify the required parameter 'workTag' is set
-            if (workTag == null) throw new ApiException(400, "Missing required parameter 'workTag' when calling DeleteWorkTag");
-            
-    
-            var localVarPath = "/beta/work/{workId}/tag/{workTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            if (workTag != null) localVarPathParams.Add("workTag", Configuration.ApiClient.ParameterToString(workTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWorkTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWorkTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a work by id Returns a duplicated work identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1058,7 +327,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'workId' when calling WorkApi->GetDuplicateWorkById");
             
     
-            var localVarPath = "/beta/work/duplicate/{workId}";
+            var localVarPath = "/v2.0/work/duplicate/{workId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1143,7 +412,7 @@ namespace Infoplus.Api
             if (workId == null) throw new ApiException(400, "Missing required parameter 'workId' when calling GetDuplicateWorkById");
             
     
-            var localVarPath = "/beta/work/duplicate/{workId}";
+            var localVarPath = "/v2.0/work/duplicate/{workId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +500,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/work/search";
+            var localVarPath = "/v2.0/work/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1323,7 +592,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/work/search";
+            var localVarPath = "/v2.0/work/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1412,7 +681,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'workId' when calling WorkApi->GetWorkById");
             
     
-            var localVarPath = "/beta/work/{workId}";
+            var localVarPath = "/v2.0/work/{workId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1497,7 +766,7 @@ namespace Infoplus.Api
             if (workId == null) throw new ApiException(400, "Missing required parameter 'workId' when calling GetWorkById");
             
     
-            var localVarPath = "/beta/work/{workId}";
+            var localVarPath = "/v2.0/work/{workId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1558,175 +827,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a work. Get all existing work tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param> 
-        /// <returns></returns>
-        public void GetWorkTags (int? workId)
-        {
-             GetWorkTagsWithHttpInfo(workId);
-        }
-
-        /// <summary>
-        /// Get the tags for a work. Get all existing work tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetWorkTagsWithHttpInfo (int? workId)
-        {
-            
-            // verify the required parameter 'workId' is set
-            if (workId == null)
-                throw new ApiException(400, "Missing required parameter 'workId' when calling WorkApi->GetWorkTags");
-            
-    
-            var localVarPath = "/beta/work/{workId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetWorkTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetWorkTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a work. Get all existing work tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetWorkTagsAsync (int? workId)
-        {
-             await GetWorkTagsAsyncWithHttpInfo(workId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a work. Get all existing work tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="workId">Id of the work to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetWorkTagsAsyncWithHttpInfo (int? workId)
-        {
-            // verify the required parameter 'workId' is set
-            if (workId == null) throw new ApiException(400, "Missing required parameter 'workId' when calling GetWorkTags");
-            
-    
-            var localVarPath = "/beta/work/{workId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (workId != null) localVarPathParams.Add("workId", Configuration.ApiClient.ParameterToString(workId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetWorkTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetWorkTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a work custom fields Updates an existing work custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1751,7 +851,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling WorkApi->UpdateWorkCustomFields");
             
     
-            var localVarPath = "/beta/work/customFields";
+            var localVarPath = "/v2.0/work/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1841,7 +941,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateWorkCustomFields");
             
     
-            var localVarPath = "/beta/work/customFields";
+            var localVarPath = "/v2.0/work/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ExternalShippingSystem> AddExternalShippingSystemWithHttpInfo (ExternalShippingSystem body);
         
         /// <summary>
-        /// Add new audit for an externalShippingSystem
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param>
-        /// <param name="externalShippingSystemAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddExternalShippingSystemAudit (int? externalShippingSystemId, string externalShippingSystemAudit);
-  
-        /// <summary>
-        /// Add new audit for an externalShippingSystem
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param>
-        /// <param name="externalShippingSystemAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddExternalShippingSystemAuditWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemAudit);
-        
-        /// <summary>
-        /// Add new tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param>
-        /// <param name="externalShippingSystemTag">The tag to add</param>
-        /// <returns></returns>
-        void AddExternalShippingSystemTag (int? externalShippingSystemId, string externalShippingSystemTag);
-  
-        /// <summary>
-        /// Add new tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param>
-        /// <param name="externalShippingSystemTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddExternalShippingSystemTagWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag);
-        
-        /// <summary>
         /// Delete an externalShippingSystem
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="externalShippingSystemId">Id of the externalShippingSystem to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteExternalShippingSystemWithHttpInfo (int? externalShippingSystemId);
-        
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing externalShippingSystem tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param>
-        /// <param name="externalShippingSystemTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteExternalShippingSystemTag (int? externalShippingSystemId, string externalShippingSystemTag);
-  
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing externalShippingSystem tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param>
-        /// <param name="externalShippingSystemTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteExternalShippingSystemTagWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag);
         
         /// <summary>
         /// Get a duplicated an externalShippingSystem by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ExternalShippingSystem> GetExternalShippingSystemByIdWithHttpInfo (int? externalShippingSystemId);
         
         /// <summary>
-        /// Get the tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing externalShippingSystem tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param>
-        /// <returns></returns>
-        void GetExternalShippingSystemTags (int? externalShippingSystemId);
-  
-        /// <summary>
-        /// Get the tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing externalShippingSystem tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetExternalShippingSystemTagsWithHttpInfo (int? externalShippingSystemId);
-        
-        /// <summary>
         /// Update an externalShippingSystem
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ExternalShippingSystem>> AddExternalShippingSystemAsyncWithHttpInfo (ExternalShippingSystem body);
         
         /// <summary>
-        /// Add new audit for an externalShippingSystem
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param>
-        /// <param name="externalShippingSystemAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddExternalShippingSystemAuditAsync (int? externalShippingSystemId, string externalShippingSystemAudit);
-
-        /// <summary>
-        /// Add new audit for an externalShippingSystem
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param>
-        /// <param name="externalShippingSystemAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddExternalShippingSystemAuditAsyncWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemAudit);
-        
-        /// <summary>
-        /// Add new tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param>
-        /// <param name="externalShippingSystemTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddExternalShippingSystemTagAsync (int? externalShippingSystemId, string externalShippingSystemTag);
-
-        /// <summary>
-        /// Add new tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing externalShippingSystem.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param>
-        /// <param name="externalShippingSystemTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddExternalShippingSystemTagAsyncWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag);
-        
-        /// <summary>
         /// Delete an externalShippingSystem
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="externalShippingSystemId">Id of the externalShippingSystem to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteExternalShippingSystemAsyncWithHttpInfo (int? externalShippingSystemId);
-        
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing externalShippingSystem tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param>
-        /// <param name="externalShippingSystemTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteExternalShippingSystemTagAsync (int? externalShippingSystemId, string externalShippingSystemTag);
-
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing externalShippingSystem tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param>
-        /// <param name="externalShippingSystemTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteExternalShippingSystemTagAsyncWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag);
         
         /// <summary>
         /// Get a duplicated an externalShippingSystem by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="externalShippingSystemId">Id of the externalShippingSystem to be returned.</param>
         /// <returns>Task of ApiResponse (ExternalShippingSystem)</returns>
         System.Threading.Tasks.Task<ApiResponse<ExternalShippingSystem>> GetExternalShippingSystemByIdAsyncWithHttpInfo (int? externalShippingSystemId);
-        
-        /// <summary>
-        /// Get the tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing externalShippingSystem tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetExternalShippingSystemTagsAsync (int? externalShippingSystemId);
-
-        /// <summary>
-        /// Get the tags for an externalShippingSystem.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing externalShippingSystem tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetExternalShippingSystemTagsAsyncWithHttpInfo (int? externalShippingSystemId);
         
         /// <summary>
         /// Update an externalShippingSystem
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ExternalShippingSystemApi->AddExternalShippingSystem");
             
     
-            var localVarPath = "/beta/externalShippingSystem";
+            var localVarPath = "/v2.0/externalShippingSystem";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddExternalShippingSystem");
             
     
-            var localVarPath = "/beta/externalShippingSystem";
+            var localVarPath = "/v2.0/externalShippingSystem";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an externalShippingSystem Adds an audit to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param> 
-        /// <param name="externalShippingSystemAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddExternalShippingSystemAudit (int? externalShippingSystemId, string externalShippingSystemAudit)
-        {
-             AddExternalShippingSystemAuditWithHttpInfo(externalShippingSystemId, externalShippingSystemAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an externalShippingSystem Adds an audit to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param> 
-        /// <param name="externalShippingSystemAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddExternalShippingSystemAuditWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemAudit)
-        {
-            
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->AddExternalShippingSystemAudit");
-            
-            // verify the required parameter 'externalShippingSystemAudit' is set
-            if (externalShippingSystemAudit == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemAudit' when calling ExternalShippingSystemApi->AddExternalShippingSystemAudit");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/audit/{externalShippingSystemAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            if (externalShippingSystemAudit != null) localVarPathParams.Add("externalShippingSystemAudit", Configuration.ApiClient.ParameterToString(externalShippingSystemAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an externalShippingSystem Adds an audit to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param>
-        /// <param name="externalShippingSystemAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddExternalShippingSystemAuditAsync (int? externalShippingSystemId, string externalShippingSystemAudit)
-        {
-             await AddExternalShippingSystemAuditAsyncWithHttpInfo(externalShippingSystemId, externalShippingSystemAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an externalShippingSystem Adds an audit to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add an audit to</param>
-        /// <param name="externalShippingSystemAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddExternalShippingSystemAuditAsyncWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemAudit)
-        {
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling AddExternalShippingSystemAudit");
-            // verify the required parameter 'externalShippingSystemAudit' is set
-            if (externalShippingSystemAudit == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemAudit' when calling AddExternalShippingSystemAudit");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/audit/{externalShippingSystemAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            if (externalShippingSystemAudit != null) localVarPathParams.Add("externalShippingSystemAudit", Configuration.ApiClient.ParameterToString(externalShippingSystemAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an externalShippingSystem. Adds a tag to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param> 
-        /// <param name="externalShippingSystemTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddExternalShippingSystemTag (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-             AddExternalShippingSystemTagWithHttpInfo(externalShippingSystemId, externalShippingSystemTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an externalShippingSystem. Adds a tag to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param> 
-        /// <param name="externalShippingSystemTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddExternalShippingSystemTagWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-            
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->AddExternalShippingSystemTag");
-            
-            // verify the required parameter 'externalShippingSystemTag' is set
-            if (externalShippingSystemTag == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemTag' when calling ExternalShippingSystemApi->AddExternalShippingSystemTag");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/tag/{externalShippingSystemTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            if (externalShippingSystemTag != null) localVarPathParams.Add("externalShippingSystemTag", Configuration.ApiClient.ParameterToString(externalShippingSystemTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an externalShippingSystem. Adds a tag to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param>
-        /// <param name="externalShippingSystemTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddExternalShippingSystemTagAsync (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-             await AddExternalShippingSystemTagAsyncWithHttpInfo(externalShippingSystemId, externalShippingSystemTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an externalShippingSystem. Adds a tag to an existing externalShippingSystem.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to add a tag to</param>
-        /// <param name="externalShippingSystemTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddExternalShippingSystemTagAsyncWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling AddExternalShippingSystemTag");
-            // verify the required parameter 'externalShippingSystemTag' is set
-            if (externalShippingSystemTag == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemTag' when calling AddExternalShippingSystemTag");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/tag/{externalShippingSystemTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            if (externalShippingSystemTag != null) localVarPathParams.Add("externalShippingSystemTag", Configuration.ApiClient.ParameterToString(externalShippingSystemTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddExternalShippingSystemTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an externalShippingSystem Deletes the externalShippingSystem identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->DeleteExternalShippingSystem");
             
     
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}";
+            var localVarPath = "/v2.0/externalShippingSystem/{externalShippingSystemId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling DeleteExternalShippingSystem");
             
     
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}";
+            var localVarPath = "/v2.0/externalShippingSystem/{externalShippingSystemId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an externalShippingSystem. Deletes an existing externalShippingSystem tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param> 
-        /// <param name="externalShippingSystemTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteExternalShippingSystemTag (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-             DeleteExternalShippingSystemTagWithHttpInfo(externalShippingSystemId, externalShippingSystemTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem. Deletes an existing externalShippingSystem tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param> 
-        /// <param name="externalShippingSystemTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteExternalShippingSystemTagWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-            
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->DeleteExternalShippingSystemTag");
-            
-            // verify the required parameter 'externalShippingSystemTag' is set
-            if (externalShippingSystemTag == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemTag' when calling ExternalShippingSystemApi->DeleteExternalShippingSystemTag");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/tag/{externalShippingSystemTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            if (externalShippingSystemTag != null) localVarPathParams.Add("externalShippingSystemTag", Configuration.ApiClient.ParameterToString(externalShippingSystemTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteExternalShippingSystemTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteExternalShippingSystemTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem. Deletes an existing externalShippingSystem tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param>
-        /// <param name="externalShippingSystemTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteExternalShippingSystemTagAsync (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-             await DeleteExternalShippingSystemTagAsyncWithHttpInfo(externalShippingSystemId, externalShippingSystemTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an externalShippingSystem. Deletes an existing externalShippingSystem tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to remove tag from</param>
-        /// <param name="externalShippingSystemTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteExternalShippingSystemTagAsyncWithHttpInfo (int? externalShippingSystemId, string externalShippingSystemTag)
-        {
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling DeleteExternalShippingSystemTag");
-            // verify the required parameter 'externalShippingSystemTag' is set
-            if (externalShippingSystemTag == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemTag' when calling DeleteExternalShippingSystemTag");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/tag/{externalShippingSystemTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            if (externalShippingSystemTag != null) localVarPathParams.Add("externalShippingSystemTag", Configuration.ApiClient.ParameterToString(externalShippingSystemTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteExternalShippingSystemTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteExternalShippingSystemTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an externalShippingSystem by id Returns a duplicated externalShippingSystem identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->GetDuplicateExternalShippingSystemById");
             
     
-            var localVarPath = "/beta/externalShippingSystem/duplicate/{externalShippingSystemId}";
+            var localVarPath = "/v2.0/externalShippingSystem/duplicate/{externalShippingSystemId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling GetDuplicateExternalShippingSystemById");
             
     
-            var localVarPath = "/beta/externalShippingSystem/duplicate/{externalShippingSystemId}";
+            var localVarPath = "/v2.0/externalShippingSystem/duplicate/{externalShippingSystemId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/externalShippingSystem/search";
+            var localVarPath = "/v2.0/externalShippingSystem/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/externalShippingSystem/search";
+            var localVarPath = "/v2.0/externalShippingSystem/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->GetExternalShippingSystemById");
             
     
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}";
+            var localVarPath = "/v2.0/externalShippingSystem/{externalShippingSystemId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling GetExternalShippingSystemById");
             
     
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}";
+            var localVarPath = "/v2.0/externalShippingSystem/{externalShippingSystemId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an externalShippingSystem. Get all existing externalShippingSystem tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param> 
-        /// <returns></returns>
-        public void GetExternalShippingSystemTags (int? externalShippingSystemId)
-        {
-             GetExternalShippingSystemTagsWithHttpInfo(externalShippingSystemId);
-        }
-
-        /// <summary>
-        /// Get the tags for an externalShippingSystem. Get all existing externalShippingSystem tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetExternalShippingSystemTagsWithHttpInfo (int? externalShippingSystemId)
-        {
-            
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null)
-                throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling ExternalShippingSystemApi->GetExternalShippingSystemTags");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetExternalShippingSystemTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetExternalShippingSystemTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an externalShippingSystem. Get all existing externalShippingSystem tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetExternalShippingSystemTagsAsync (int? externalShippingSystemId)
-        {
-             await GetExternalShippingSystemTagsAsyncWithHttpInfo(externalShippingSystemId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an externalShippingSystem. Get all existing externalShippingSystem tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="externalShippingSystemId">Id of the externalShippingSystem to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetExternalShippingSystemTagsAsyncWithHttpInfo (int? externalShippingSystemId)
-        {
-            // verify the required parameter 'externalShippingSystemId' is set
-            if (externalShippingSystemId == null) throw new ApiException(400, "Missing required parameter 'externalShippingSystemId' when calling GetExternalShippingSystemTags");
-            
-    
-            var localVarPath = "/beta/externalShippingSystem/{externalShippingSystemId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (externalShippingSystemId != null) localVarPathParams.Add("externalShippingSystemId", Configuration.ApiClient.ParameterToString(externalShippingSystemId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetExternalShippingSystemTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetExternalShippingSystemTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an externalShippingSystem Updates an existing externalShippingSystem using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ExternalShippingSystemApi->UpdateExternalShippingSystem");
             
     
-            var localVarPath = "/beta/externalShippingSystem";
+            var localVarPath = "/v2.0/externalShippingSystem";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateExternalShippingSystem");
             
     
-            var localVarPath = "/beta/externalShippingSystem";
+            var localVarPath = "/v2.0/externalShippingSystem";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ExternalShippingSystemApi->UpdateExternalShippingSystemCustomFields");
             
     
-            var localVarPath = "/beta/externalShippingSystem/customFields";
+            var localVarPath = "/v2.0/externalShippingSystem/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateExternalShippingSystemCustomFields");
             
     
-            var localVarPath = "/beta/externalShippingSystem/customFields";
+            var localVarPath = "/v2.0/externalShippingSystem/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

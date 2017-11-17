@@ -29,12 +29,11 @@ namespace Infoplus.Model
         /// <param name="RequireGS1128Label">RequireGS1128Label (default to false).</param>
         /// <param name="ShippingNotes">ShippingNotes.</param>
         /// <param name="PackingSlipId">PackingSlipId.</param>
-        /// <param name="OrderInvoiceId">OrderInvoiceId.</param>
         /// <param name="OrderConfirmationEmailId">OrderConfirmationEmailId.</param>
         /// <param name="ShipmentConfirmationEmailId">ShipmentConfirmationEmailId.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public OrderSource(int? LobId = null, string Name = null, string PackingNotes = null, bool? RequireCartonizedASN = null, bool? RequireGS1128Label = null, string ShippingNotes = null, int? PackingSlipId = null, int? OrderInvoiceId = null, int? OrderConfirmationEmailId = null, int? ShipmentConfirmationEmailId = null, Dictionary<string, Object> CustomFields = null)
+        public OrderSource(int? LobId = null, string Name = null, string PackingNotes = null, bool? RequireCartonizedASN = null, bool? RequireGS1128Label = null, string ShippingNotes = null, int? PackingSlipId = null, int? OrderConfirmationEmailId = null, int? ShipmentConfirmationEmailId = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -75,7 +74,6 @@ namespace Infoplus.Model
             }
             this.ShippingNotes = ShippingNotes;
             this.PackingSlipId = PackingSlipId;
-            this.OrderInvoiceId = OrderInvoiceId;
             this.OrderConfirmationEmailId = OrderConfirmationEmailId;
             this.ShipmentConfirmationEmailId = ShipmentConfirmationEmailId;
             this.CustomFields = CustomFields;
@@ -144,12 +142,6 @@ namespace Infoplus.Model
         public int? PackingSlipId { get; set; }
     
         /// <summary>
-        /// Gets or Sets OrderInvoiceId
-        /// </summary>
-        [DataMember(Name="orderInvoiceId", EmitDefaultValue=false)]
-        public int? OrderInvoiceId { get; set; }
-    
-        /// <summary>
         /// Gets or Sets OrderConfirmationEmailId
         /// </summary>
         [DataMember(Name="orderConfirmationEmailId", EmitDefaultValue=false)]
@@ -185,7 +177,6 @@ namespace Infoplus.Model
             sb.Append("  RequireGS1128Label: ").Append(RequireGS1128Label).Append("\n");
             sb.Append("  ShippingNotes: ").Append(ShippingNotes).Append("\n");
             sb.Append("  PackingSlipId: ").Append(PackingSlipId).Append("\n");
-            sb.Append("  OrderInvoiceId: ").Append(OrderInvoiceId).Append("\n");
             sb.Append("  OrderConfirmationEmailId: ").Append(OrderConfirmationEmailId).Append("\n");
             sb.Append("  ShipmentConfirmationEmailId: ").Append(ShipmentConfirmationEmailId).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
@@ -277,11 +268,6 @@ namespace Infoplus.Model
                     this.PackingSlipId.Equals(other.PackingSlipId)
                 ) && 
                 (
-                    this.OrderInvoiceId == other.OrderInvoiceId ||
-                    this.OrderInvoiceId != null &&
-                    this.OrderInvoiceId.Equals(other.OrderInvoiceId)
-                ) && 
-                (
                     this.OrderConfirmationEmailId == other.OrderConfirmationEmailId ||
                     this.OrderConfirmationEmailId != null &&
                     this.OrderConfirmationEmailId.Equals(other.OrderConfirmationEmailId)
@@ -339,9 +325,6 @@ namespace Infoplus.Model
                 
                 if (this.PackingSlipId != null)
                     hash = hash * 59 + this.PackingSlipId.GetHashCode();
-                
-                if (this.OrderInvoiceId != null)
-                    hash = hash * 59 + this.OrderInvoiceId.GetHashCode();
                 
                 if (this.OrderConfirmationEmailId != null)
                     hash = hash * 59 + this.OrderConfirmationEmailId.GetHashCode();

@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for a fulfillmentProcess
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param>
-        /// <param name="fulfillmentProcessAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddFulfillmentProcessAudit (int? fulfillmentProcessId, string fulfillmentProcessAudit);
-  
-        /// <summary>
-        /// Add new audit for a fulfillmentProcess
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param>
-        /// <param name="fulfillmentProcessAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddFulfillmentProcessAuditWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessAudit);
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param>
-        /// <param name="fulfillmentProcessTag">The tag to add</param>
-        /// <returns></returns>
-        void AddFulfillmentProcessTag (int? fulfillmentProcessId, string fulfillmentProcessTag);
-  
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param>
-        /// <param name="fulfillmentProcessTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddFulfillmentProcessTagWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag);
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param>
-        /// <param name="fulfillmentProcessTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteFulfillmentProcessTag (int? fulfillmentProcessId, string fulfillmentProcessTag);
-  
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param>
-        /// <param name="fulfillmentProcessTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteFulfillmentProcessTagWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag);
-        
-        /// <summary>
         /// Get a duplicated a fulfillmentProcess by id
         /// </summary>
         /// <remarks>
@@ -162,28 +90,6 @@ namespace Infoplus.Api
         ApiResponse<FulfillmentProcess> GetFulfillmentProcessByIdWithHttpInfo (int? fulfillmentProcessId);
         
         /// <summary>
-        /// Get the tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentProcess tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param>
-        /// <returns></returns>
-        void GetFulfillmentProcessTags (int? fulfillmentProcessId);
-  
-        /// <summary>
-        /// Get the tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentProcess tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetFulfillmentProcessTagsWithHttpInfo (int? fulfillmentProcessId);
-        
-        /// <summary>
         /// Update a fulfillmentProcess custom fields
         /// </summary>
         /// <remarks>
@@ -208,78 +114,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for a fulfillmentProcess
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param>
-        /// <param name="fulfillmentProcessAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddFulfillmentProcessAuditAsync (int? fulfillmentProcessId, string fulfillmentProcessAudit);
-
-        /// <summary>
-        /// Add new audit for a fulfillmentProcess
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param>
-        /// <param name="fulfillmentProcessAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentProcessAuditAsyncWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessAudit);
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param>
-        /// <param name="fulfillmentProcessTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddFulfillmentProcessTagAsync (int? fulfillmentProcessId, string fulfillmentProcessTag);
-
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentProcess.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param>
-        /// <param name="fulfillmentProcessTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentProcessTagAsyncWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag);
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param>
-        /// <param name="fulfillmentProcessTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteFulfillmentProcessTagAsync (int? fulfillmentProcessId, string fulfillmentProcessTag);
-
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param>
-        /// <param name="fulfillmentProcessTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteFulfillmentProcessTagAsyncWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag);
         
         /// <summary>
         /// Get a duplicated a fulfillmentProcess by id
@@ -352,28 +186,6 @@ namespace Infoplus.Api
         /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to be returned.</param>
         /// <returns>Task of ApiResponse (FulfillmentProcess)</returns>
         System.Threading.Tasks.Task<ApiResponse<FulfillmentProcess>> GetFulfillmentProcessByIdAsyncWithHttpInfo (int? fulfillmentProcessId);
-        
-        /// <summary>
-        /// Get the tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentProcess tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetFulfillmentProcessTagsAsync (int? fulfillmentProcessId);
-
-        /// <summary>
-        /// Get the tags for a fulfillmentProcess.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentProcess tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetFulfillmentProcessTagsAsyncWithHttpInfo (int? fulfillmentProcessId);
         
         /// <summary>
         /// Update a fulfillmentProcess custom fields
@@ -490,549 +302,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for a fulfillmentProcess Adds an audit to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param> 
-        /// <param name="fulfillmentProcessAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddFulfillmentProcessAudit (int? fulfillmentProcessId, string fulfillmentProcessAudit)
-        {
-             AddFulfillmentProcessAuditWithHttpInfo(fulfillmentProcessId, fulfillmentProcessAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a fulfillmentProcess Adds an audit to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param> 
-        /// <param name="fulfillmentProcessAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddFulfillmentProcessAuditWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessAudit)
-        {
-            
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling FulfillmentProcessApi->AddFulfillmentProcessAudit");
-            
-            // verify the required parameter 'fulfillmentProcessAudit' is set
-            if (fulfillmentProcessAudit == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessAudit' when calling FulfillmentProcessApi->AddFulfillmentProcessAudit");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/audit/{fulfillmentProcessAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            if (fulfillmentProcessAudit != null) localVarPathParams.Add("fulfillmentProcessAudit", Configuration.ApiClient.ParameterToString(fulfillmentProcessAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a fulfillmentProcess Adds an audit to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param>
-        /// <param name="fulfillmentProcessAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddFulfillmentProcessAuditAsync (int? fulfillmentProcessId, string fulfillmentProcessAudit)
-        {
-             await AddFulfillmentProcessAuditAsyncWithHttpInfo(fulfillmentProcessId, fulfillmentProcessAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a fulfillmentProcess Adds an audit to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add an audit to</param>
-        /// <param name="fulfillmentProcessAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentProcessAuditAsyncWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessAudit)
-        {
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling AddFulfillmentProcessAudit");
-            // verify the required parameter 'fulfillmentProcessAudit' is set
-            if (fulfillmentProcessAudit == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessAudit' when calling AddFulfillmentProcessAudit");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/audit/{fulfillmentProcessAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            if (fulfillmentProcessAudit != null) localVarPathParams.Add("fulfillmentProcessAudit", Configuration.ApiClient.ParameterToString(fulfillmentProcessAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess. Adds a tag to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param> 
-        /// <param name="fulfillmentProcessTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddFulfillmentProcessTag (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-             AddFulfillmentProcessTagWithHttpInfo(fulfillmentProcessId, fulfillmentProcessTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess. Adds a tag to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param> 
-        /// <param name="fulfillmentProcessTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddFulfillmentProcessTagWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-            
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling FulfillmentProcessApi->AddFulfillmentProcessTag");
-            
-            // verify the required parameter 'fulfillmentProcessTag' is set
-            if (fulfillmentProcessTag == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessTag' when calling FulfillmentProcessApi->AddFulfillmentProcessTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/tag/{fulfillmentProcessTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            if (fulfillmentProcessTag != null) localVarPathParams.Add("fulfillmentProcessTag", Configuration.ApiClient.ParameterToString(fulfillmentProcessTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess. Adds a tag to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param>
-        /// <param name="fulfillmentProcessTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddFulfillmentProcessTagAsync (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-             await AddFulfillmentProcessTagAsyncWithHttpInfo(fulfillmentProcessId, fulfillmentProcessTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a fulfillmentProcess. Adds a tag to an existing fulfillmentProcess.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to add a tag to</param>
-        /// <param name="fulfillmentProcessTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentProcessTagAsyncWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling AddFulfillmentProcessTag");
-            // verify the required parameter 'fulfillmentProcessTag' is set
-            if (fulfillmentProcessTag == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessTag' when calling AddFulfillmentProcessTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/tag/{fulfillmentProcessTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            if (fulfillmentProcessTag != null) localVarPathParams.Add("fulfillmentProcessTag", Configuration.ApiClient.ParameterToString(fulfillmentProcessTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentProcessTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess. Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param> 
-        /// <param name="fulfillmentProcessTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteFulfillmentProcessTag (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-             DeleteFulfillmentProcessTagWithHttpInfo(fulfillmentProcessId, fulfillmentProcessTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess. Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param> 
-        /// <param name="fulfillmentProcessTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteFulfillmentProcessTagWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-            
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling FulfillmentProcessApi->DeleteFulfillmentProcessTag");
-            
-            // verify the required parameter 'fulfillmentProcessTag' is set
-            if (fulfillmentProcessTag == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessTag' when calling FulfillmentProcessApi->DeleteFulfillmentProcessTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/tag/{fulfillmentProcessTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            if (fulfillmentProcessTag != null) localVarPathParams.Add("fulfillmentProcessTag", Configuration.ApiClient.ParameterToString(fulfillmentProcessTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentProcessTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentProcessTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess. Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param>
-        /// <param name="fulfillmentProcessTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteFulfillmentProcessTagAsync (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-             await DeleteFulfillmentProcessTagAsyncWithHttpInfo(fulfillmentProcessId, fulfillmentProcessTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a fulfillmentProcess. Deletes an existing fulfillmentProcess tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to remove tag from</param>
-        /// <param name="fulfillmentProcessTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteFulfillmentProcessTagAsyncWithHttpInfo (int? fulfillmentProcessId, string fulfillmentProcessTag)
-        {
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling DeleteFulfillmentProcessTag");
-            // verify the required parameter 'fulfillmentProcessTag' is set
-            if (fulfillmentProcessTag == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessTag' when calling DeleteFulfillmentProcessTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/tag/{fulfillmentProcessTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            if (fulfillmentProcessTag != null) localVarPathParams.Add("fulfillmentProcessTag", Configuration.ApiClient.ParameterToString(fulfillmentProcessTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentProcessTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentProcessTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a fulfillmentProcess by id Returns a duplicated fulfillmentProcess identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1058,7 +327,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling FulfillmentProcessApi->GetDuplicateFulfillmentProcessById");
             
     
-            var localVarPath = "/beta/fulfillmentProcess/duplicate/{fulfillmentProcessId}";
+            var localVarPath = "/v2.0/fulfillmentProcess/duplicate/{fulfillmentProcessId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1143,7 +412,7 @@ namespace Infoplus.Api
             if (fulfillmentProcessId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling GetDuplicateFulfillmentProcessById");
             
     
-            var localVarPath = "/beta/fulfillmentProcess/duplicate/{fulfillmentProcessId}";
+            var localVarPath = "/v2.0/fulfillmentProcess/duplicate/{fulfillmentProcessId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +500,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/fulfillmentProcess/search";
+            var localVarPath = "/v2.0/fulfillmentProcess/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1323,7 +592,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/fulfillmentProcess/search";
+            var localVarPath = "/v2.0/fulfillmentProcess/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1412,7 +681,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling FulfillmentProcessApi->GetFulfillmentProcessById");
             
     
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}";
+            var localVarPath = "/v2.0/fulfillmentProcess/{fulfillmentProcessId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1497,7 +766,7 @@ namespace Infoplus.Api
             if (fulfillmentProcessId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling GetFulfillmentProcessById");
             
     
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}";
+            var localVarPath = "/v2.0/fulfillmentProcess/{fulfillmentProcessId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1558,175 +827,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a fulfillmentProcess. Get all existing fulfillmentProcess tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param> 
-        /// <returns></returns>
-        public void GetFulfillmentProcessTags (int? fulfillmentProcessId)
-        {
-             GetFulfillmentProcessTagsWithHttpInfo(fulfillmentProcessId);
-        }
-
-        /// <summary>
-        /// Get the tags for a fulfillmentProcess. Get all existing fulfillmentProcess tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetFulfillmentProcessTagsWithHttpInfo (int? fulfillmentProcessId)
-        {
-            
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling FulfillmentProcessApi->GetFulfillmentProcessTags");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentProcessTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentProcessTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a fulfillmentProcess. Get all existing fulfillmentProcess tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetFulfillmentProcessTagsAsync (int? fulfillmentProcessId)
-        {
-             await GetFulfillmentProcessTagsAsyncWithHttpInfo(fulfillmentProcessId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a fulfillmentProcess. Get all existing fulfillmentProcess tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentProcessId">Id of the fulfillmentProcess to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetFulfillmentProcessTagsAsyncWithHttpInfo (int? fulfillmentProcessId)
-        {
-            // verify the required parameter 'fulfillmentProcessId' is set
-            if (fulfillmentProcessId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentProcessId' when calling GetFulfillmentProcessTags");
-            
-    
-            var localVarPath = "/beta/fulfillmentProcess/{fulfillmentProcessId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentProcessId != null) localVarPathParams.Add("fulfillmentProcessId", Configuration.ApiClient.ParameterToString(fulfillmentProcessId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentProcessTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentProcessTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a fulfillmentProcess custom fields Updates an existing fulfillmentProcess custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1751,7 +851,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling FulfillmentProcessApi->UpdateFulfillmentProcessCustomFields");
             
     
-            var localVarPath = "/beta/fulfillmentProcess/customFields";
+            var localVarPath = "/v2.0/fulfillmentProcess/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1841,7 +941,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateFulfillmentProcessCustomFields");
             
     
-            var localVarPath = "/beta/fulfillmentProcess/customFields";
+            var localVarPath = "/v2.0/fulfillmentProcess/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

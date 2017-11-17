@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Zone> AddZoneWithHttpInfo (Zone body);
         
         /// <summary>
-        /// Add new audit for a zone
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param>
-        /// <param name="zoneAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddZoneAudit (int? zoneId, string zoneAudit);
-  
-        /// <summary>
-        /// Add new audit for a zone
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param>
-        /// <param name="zoneAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddZoneAuditWithHttpInfo (int? zoneId, string zoneAudit);
-        
-        /// <summary>
-        /// Add new tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param>
-        /// <param name="zoneTag">The tag to add</param>
-        /// <returns></returns>
-        void AddZoneTag (int? zoneId, string zoneTag);
-  
-        /// <summary>
-        /// Add new tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param>
-        /// <param name="zoneTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddZoneTagWithHttpInfo (int? zoneId, string zoneTag);
-        
-        /// <summary>
         /// Delete a zone
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="zoneId">Id of the zone to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteZoneWithHttpInfo (int? zoneId);
-        
-        /// <summary>
-        /// Delete a tag for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing zone tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param>
-        /// <param name="zoneTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteZoneTag (int? zoneId, string zoneTag);
-  
-        /// <summary>
-        /// Delete a tag for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing zone tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param>
-        /// <param name="zoneTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteZoneTagWithHttpInfo (int? zoneId, string zoneTag);
         
         /// <summary>
         /// Get a duplicated a zone by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<Zone> GetZoneByIdWithHttpInfo (int? zoneId);
         
         /// <summary>
-        /// Get the tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing zone tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param>
-        /// <returns></returns>
-        void GetZoneTags (int? zoneId);
-  
-        /// <summary>
-        /// Get the tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing zone tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetZoneTagsWithHttpInfo (int? zoneId);
-        
-        /// <summary>
         /// Update a zone
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Zone>> AddZoneAsyncWithHttpInfo (Zone body);
         
         /// <summary>
-        /// Add new audit for a zone
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param>
-        /// <param name="zoneAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddZoneAuditAsync (int? zoneId, string zoneAudit);
-
-        /// <summary>
-        /// Add new audit for a zone
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param>
-        /// <param name="zoneAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddZoneAuditAsyncWithHttpInfo (int? zoneId, string zoneAudit);
-        
-        /// <summary>
-        /// Add new tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param>
-        /// <param name="zoneTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddZoneTagAsync (int? zoneId, string zoneTag);
-
-        /// <summary>
-        /// Add new tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing zone.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param>
-        /// <param name="zoneTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddZoneTagAsyncWithHttpInfo (int? zoneId, string zoneTag);
-        
-        /// <summary>
         /// Delete a zone
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="zoneId">Id of the zone to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteZoneAsyncWithHttpInfo (int? zoneId);
-        
-        /// <summary>
-        /// Delete a tag for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing zone tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param>
-        /// <param name="zoneTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteZoneTagAsync (int? zoneId, string zoneTag);
-
-        /// <summary>
-        /// Delete a tag for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing zone tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param>
-        /// <param name="zoneTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteZoneTagAsyncWithHttpInfo (int? zoneId, string zoneTag);
         
         /// <summary>
         /// Get a duplicated a zone by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="zoneId">Id of the zone to be returned.</param>
         /// <returns>Task of ApiResponse (Zone)</returns>
         System.Threading.Tasks.Task<ApiResponse<Zone>> GetZoneByIdAsyncWithHttpInfo (int? zoneId);
-        
-        /// <summary>
-        /// Get the tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing zone tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetZoneTagsAsync (int? zoneId);
-
-        /// <summary>
-        /// Get the tags for a zone.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing zone tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetZoneTagsAsyncWithHttpInfo (int? zoneId);
         
         /// <summary>
         /// Update a zone
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ZoneApi->AddZone");
             
     
-            var localVarPath = "/beta/zone";
+            var localVarPath = "/v2.0/zone";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddZone");
             
     
-            var localVarPath = "/beta/zone";
+            var localVarPath = "/v2.0/zone";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a zone Adds an audit to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param> 
-        /// <param name="zoneAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddZoneAudit (int? zoneId, string zoneAudit)
-        {
-             AddZoneAuditWithHttpInfo(zoneId, zoneAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a zone Adds an audit to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param> 
-        /// <param name="zoneAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddZoneAuditWithHttpInfo (int? zoneId, string zoneAudit)
-        {
-            
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null)
-                throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->AddZoneAudit");
-            
-            // verify the required parameter 'zoneAudit' is set
-            if (zoneAudit == null)
-                throw new ApiException(400, "Missing required parameter 'zoneAudit' when calling ZoneApi->AddZoneAudit");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/audit/{zoneAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            if (zoneAudit != null) localVarPathParams.Add("zoneAudit", Configuration.ApiClient.ParameterToString(zoneAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a zone Adds an audit to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param>
-        /// <param name="zoneAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddZoneAuditAsync (int? zoneId, string zoneAudit)
-        {
-             await AddZoneAuditAsyncWithHttpInfo(zoneId, zoneAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a zone Adds an audit to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add an audit to</param>
-        /// <param name="zoneAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddZoneAuditAsyncWithHttpInfo (int? zoneId, string zoneAudit)
-        {
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling AddZoneAudit");
-            // verify the required parameter 'zoneAudit' is set
-            if (zoneAudit == null) throw new ApiException(400, "Missing required parameter 'zoneAudit' when calling AddZoneAudit");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/audit/{zoneAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            if (zoneAudit != null) localVarPathParams.Add("zoneAudit", Configuration.ApiClient.ParameterToString(zoneAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a zone. Adds a tag to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param> 
-        /// <param name="zoneTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddZoneTag (int? zoneId, string zoneTag)
-        {
-             AddZoneTagWithHttpInfo(zoneId, zoneTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a zone. Adds a tag to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param> 
-        /// <param name="zoneTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddZoneTagWithHttpInfo (int? zoneId, string zoneTag)
-        {
-            
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null)
-                throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->AddZoneTag");
-            
-            // verify the required parameter 'zoneTag' is set
-            if (zoneTag == null)
-                throw new ApiException(400, "Missing required parameter 'zoneTag' when calling ZoneApi->AddZoneTag");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/tag/{zoneTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            if (zoneTag != null) localVarPathParams.Add("zoneTag", Configuration.ApiClient.ParameterToString(zoneTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a zone. Adds a tag to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param>
-        /// <param name="zoneTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddZoneTagAsync (int? zoneId, string zoneTag)
-        {
-             await AddZoneTagAsyncWithHttpInfo(zoneId, zoneTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a zone. Adds a tag to an existing zone.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to add a tag to</param>
-        /// <param name="zoneTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddZoneTagAsyncWithHttpInfo (int? zoneId, string zoneTag)
-        {
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling AddZoneTag");
-            // verify the required parameter 'zoneTag' is set
-            if (zoneTag == null) throw new ApiException(400, "Missing required parameter 'zoneTag' when calling AddZoneTag");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/tag/{zoneTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            if (zoneTag != null) localVarPathParams.Add("zoneTag", Configuration.ApiClient.ParameterToString(zoneTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddZoneTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a zone Deletes the zone identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->DeleteZone");
             
     
-            var localVarPath = "/beta/zone/{zoneId}";
+            var localVarPath = "/v2.0/zone/{zoneId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling DeleteZone");
             
     
-            var localVarPath = "/beta/zone/{zoneId}";
+            var localVarPath = "/v2.0/zone/{zoneId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a zone. Deletes an existing zone tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param> 
-        /// <param name="zoneTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteZoneTag (int? zoneId, string zoneTag)
-        {
-             DeleteZoneTagWithHttpInfo(zoneId, zoneTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a zone. Deletes an existing zone tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param> 
-        /// <param name="zoneTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteZoneTagWithHttpInfo (int? zoneId, string zoneTag)
-        {
-            
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null)
-                throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->DeleteZoneTag");
-            
-            // verify the required parameter 'zoneTag' is set
-            if (zoneTag == null)
-                throw new ApiException(400, "Missing required parameter 'zoneTag' when calling ZoneApi->DeleteZoneTag");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/tag/{zoneTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            if (zoneTag != null) localVarPathParams.Add("zoneTag", Configuration.ApiClient.ParameterToString(zoneTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteZoneTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteZoneTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a zone. Deletes an existing zone tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param>
-        /// <param name="zoneTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteZoneTagAsync (int? zoneId, string zoneTag)
-        {
-             await DeleteZoneTagAsyncWithHttpInfo(zoneId, zoneTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a zone. Deletes an existing zone tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to remove tag from</param>
-        /// <param name="zoneTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteZoneTagAsyncWithHttpInfo (int? zoneId, string zoneTag)
-        {
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling DeleteZoneTag");
-            // verify the required parameter 'zoneTag' is set
-            if (zoneTag == null) throw new ApiException(400, "Missing required parameter 'zoneTag' when calling DeleteZoneTag");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/tag/{zoneTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            if (zoneTag != null) localVarPathParams.Add("zoneTag", Configuration.ApiClient.ParameterToString(zoneTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteZoneTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteZoneTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a zone by id Returns a duplicated zone identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->GetDuplicateZoneById");
             
     
-            var localVarPath = "/beta/zone/duplicate/{zoneId}";
+            var localVarPath = "/v2.0/zone/duplicate/{zoneId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling GetDuplicateZoneById");
             
     
-            var localVarPath = "/beta/zone/duplicate/{zoneId}";
+            var localVarPath = "/v2.0/zone/duplicate/{zoneId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/zone/search";
+            var localVarPath = "/v2.0/zone/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/zone/search";
+            var localVarPath = "/v2.0/zone/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->GetZoneById");
             
     
-            var localVarPath = "/beta/zone/{zoneId}";
+            var localVarPath = "/v2.0/zone/{zoneId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling GetZoneById");
             
     
-            var localVarPath = "/beta/zone/{zoneId}";
+            var localVarPath = "/v2.0/zone/{zoneId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a zone. Get all existing zone tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param> 
-        /// <returns></returns>
-        public void GetZoneTags (int? zoneId)
-        {
-             GetZoneTagsWithHttpInfo(zoneId);
-        }
-
-        /// <summary>
-        /// Get the tags for a zone. Get all existing zone tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetZoneTagsWithHttpInfo (int? zoneId)
-        {
-            
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null)
-                throw new ApiException(400, "Missing required parameter 'zoneId' when calling ZoneApi->GetZoneTags");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetZoneTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetZoneTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a zone. Get all existing zone tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetZoneTagsAsync (int? zoneId)
-        {
-             await GetZoneTagsAsyncWithHttpInfo(zoneId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a zone. Get all existing zone tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="zoneId">Id of the zone to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetZoneTagsAsyncWithHttpInfo (int? zoneId)
-        {
-            // verify the required parameter 'zoneId' is set
-            if (zoneId == null) throw new ApiException(400, "Missing required parameter 'zoneId' when calling GetZoneTags");
-            
-    
-            var localVarPath = "/beta/zone/{zoneId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (zoneId != null) localVarPathParams.Add("zoneId", Configuration.ApiClient.ParameterToString(zoneId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetZoneTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetZoneTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a zone Updates an existing zone using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ZoneApi->UpdateZone");
             
     
-            var localVarPath = "/beta/zone";
+            var localVarPath = "/v2.0/zone";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateZone");
             
     
-            var localVarPath = "/beta/zone";
+            var localVarPath = "/v2.0/zone";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ZoneApi->UpdateZoneCustomFields");
             
     
-            var localVarPath = "/beta/zone/customFields";
+            var localVarPath = "/v2.0/zone/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateZoneCustomFields");
             
     
-            var localVarPath = "/beta/zone/customFields";
+            var localVarPath = "/v2.0/zone/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

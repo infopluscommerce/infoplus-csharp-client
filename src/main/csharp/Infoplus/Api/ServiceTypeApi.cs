@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'serviceTypeId' when calling ServiceTypeApi->GetServiceTypeById");
             
     
-            var localVarPath = "/beta/serviceType/{serviceTypeId}";
+            var localVarPath = "/v2.0/serviceType/{serviceTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (serviceTypeId == null) throw new ApiException(400, "Missing required parameter 'serviceTypeId' when calling GetServiceTypeById");
             
     
-            var localVarPath = "/beta/serviceType/{serviceTypeId}";
+            var localVarPath = "/v2.0/serviceType/{serviceTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/serviceType/search";
+            var localVarPath = "/v2.0/serviceType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/serviceType/search";
+            var localVarPath = "/v2.0/serviceType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

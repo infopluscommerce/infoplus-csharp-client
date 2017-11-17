@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'lineOfBusinessId' when calling LineOfBusinessApi->GetLineOfBusinessById");
             
     
-            var localVarPath = "/beta/lineOfBusiness/{lineOfBusinessId}";
+            var localVarPath = "/v2.0/lineOfBusiness/{lineOfBusinessId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (lineOfBusinessId == null) throw new ApiException(400, "Missing required parameter 'lineOfBusinessId' when calling GetLineOfBusinessById");
             
     
-            var localVarPath = "/beta/lineOfBusiness/{lineOfBusinessId}";
+            var localVarPath = "/v2.0/lineOfBusiness/{lineOfBusinessId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/lineOfBusiness/search";
+            var localVarPath = "/v2.0/lineOfBusiness/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/lineOfBusiness/search";
+            var localVarPath = "/v2.0/lineOfBusiness/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<LocationBillingType> AddLocationBillingTypeWithHttpInfo (LocationBillingType body);
         
         /// <summary>
-        /// Add new audit for a locationBillingType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param>
-        /// <param name="locationBillingTypeAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddLocationBillingTypeAudit (int? locationBillingTypeId, string locationBillingTypeAudit);
-  
-        /// <summary>
-        /// Add new audit for a locationBillingType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param>
-        /// <param name="locationBillingTypeAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddLocationBillingTypeAuditWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeAudit);
-        
-        /// <summary>
-        /// Add new tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param>
-        /// <param name="locationBillingTypeTag">The tag to add</param>
-        /// <returns></returns>
-        void AddLocationBillingTypeTag (int? locationBillingTypeId, string locationBillingTypeTag);
-  
-        /// <summary>
-        /// Add new tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param>
-        /// <param name="locationBillingTypeTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddLocationBillingTypeTagWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag);
-        
-        /// <summary>
         /// Delete a locationBillingType
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="locationBillingTypeId">Id of the locationBillingType to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteLocationBillingTypeWithHttpInfo (int? locationBillingTypeId);
-        
-        /// <summary>
-        /// Delete a tag for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationBillingType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param>
-        /// <param name="locationBillingTypeTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteLocationBillingTypeTag (int? locationBillingTypeId, string locationBillingTypeTag);
-  
-        /// <summary>
-        /// Delete a tag for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationBillingType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param>
-        /// <param name="locationBillingTypeTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteLocationBillingTypeTagWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag);
         
         /// <summary>
         /// Get a duplicated a locationBillingType by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<LocationBillingType> GetLocationBillingTypeByIdWithHttpInfo (int? locationBillingTypeId);
         
         /// <summary>
-        /// Get the tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationBillingType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param>
-        /// <returns></returns>
-        void GetLocationBillingTypeTags (int? locationBillingTypeId);
-  
-        /// <summary>
-        /// Get the tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationBillingType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetLocationBillingTypeTagsWithHttpInfo (int? locationBillingTypeId);
-        
-        /// <summary>
         /// Update a locationBillingType
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<LocationBillingType>> AddLocationBillingTypeAsyncWithHttpInfo (LocationBillingType body);
         
         /// <summary>
-        /// Add new audit for a locationBillingType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param>
-        /// <param name="locationBillingTypeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddLocationBillingTypeAuditAsync (int? locationBillingTypeId, string locationBillingTypeAudit);
-
-        /// <summary>
-        /// Add new audit for a locationBillingType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param>
-        /// <param name="locationBillingTypeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationBillingTypeAuditAsyncWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeAudit);
-        
-        /// <summary>
-        /// Add new tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param>
-        /// <param name="locationBillingTypeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddLocationBillingTypeTagAsync (int? locationBillingTypeId, string locationBillingTypeTag);
-
-        /// <summary>
-        /// Add new tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationBillingType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param>
-        /// <param name="locationBillingTypeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationBillingTypeTagAsyncWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag);
-        
-        /// <summary>
         /// Delete a locationBillingType
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="locationBillingTypeId">Id of the locationBillingType to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationBillingTypeAsyncWithHttpInfo (int? locationBillingTypeId);
-        
-        /// <summary>
-        /// Delete a tag for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationBillingType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param>
-        /// <param name="locationBillingTypeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteLocationBillingTypeTagAsync (int? locationBillingTypeId, string locationBillingTypeTag);
-
-        /// <summary>
-        /// Delete a tag for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationBillingType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param>
-        /// <param name="locationBillingTypeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationBillingTypeTagAsyncWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag);
         
         /// <summary>
         /// Get a duplicated a locationBillingType by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="locationBillingTypeId">Id of the locationBillingType to be returned.</param>
         /// <returns>Task of ApiResponse (LocationBillingType)</returns>
         System.Threading.Tasks.Task<ApiResponse<LocationBillingType>> GetLocationBillingTypeByIdAsyncWithHttpInfo (int? locationBillingTypeId);
-        
-        /// <summary>
-        /// Get the tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationBillingType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetLocationBillingTypeTagsAsync (int? locationBillingTypeId);
-
-        /// <summary>
-        /// Get the tags for a locationBillingType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationBillingType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetLocationBillingTypeTagsAsyncWithHttpInfo (int? locationBillingTypeId);
         
         /// <summary>
         /// Update a locationBillingType
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationBillingTypeApi->AddLocationBillingType");
             
     
-            var localVarPath = "/beta/locationBillingType";
+            var localVarPath = "/v2.0/locationBillingType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddLocationBillingType");
             
     
-            var localVarPath = "/beta/locationBillingType";
+            var localVarPath = "/v2.0/locationBillingType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a locationBillingType Adds an audit to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param> 
-        /// <param name="locationBillingTypeAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddLocationBillingTypeAudit (int? locationBillingTypeId, string locationBillingTypeAudit)
-        {
-             AddLocationBillingTypeAuditWithHttpInfo(locationBillingTypeId, locationBillingTypeAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a locationBillingType Adds an audit to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param> 
-        /// <param name="locationBillingTypeAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddLocationBillingTypeAuditWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeAudit)
-        {
-            
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->AddLocationBillingTypeAudit");
-            
-            // verify the required parameter 'locationBillingTypeAudit' is set
-            if (locationBillingTypeAudit == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeAudit' when calling LocationBillingTypeApi->AddLocationBillingTypeAudit");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/audit/{locationBillingTypeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            if (locationBillingTypeAudit != null) localVarPathParams.Add("locationBillingTypeAudit", Configuration.ApiClient.ParameterToString(locationBillingTypeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a locationBillingType Adds an audit to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param>
-        /// <param name="locationBillingTypeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddLocationBillingTypeAuditAsync (int? locationBillingTypeId, string locationBillingTypeAudit)
-        {
-             await AddLocationBillingTypeAuditAsyncWithHttpInfo(locationBillingTypeId, locationBillingTypeAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a locationBillingType Adds an audit to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add an audit to</param>
-        /// <param name="locationBillingTypeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationBillingTypeAuditAsyncWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeAudit)
-        {
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling AddLocationBillingTypeAudit");
-            // verify the required parameter 'locationBillingTypeAudit' is set
-            if (locationBillingTypeAudit == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeAudit' when calling AddLocationBillingTypeAudit");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/audit/{locationBillingTypeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            if (locationBillingTypeAudit != null) localVarPathParams.Add("locationBillingTypeAudit", Configuration.ApiClient.ParameterToString(locationBillingTypeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a locationBillingType. Adds a tag to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param> 
-        /// <param name="locationBillingTypeTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddLocationBillingTypeTag (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-             AddLocationBillingTypeTagWithHttpInfo(locationBillingTypeId, locationBillingTypeTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a locationBillingType. Adds a tag to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param> 
-        /// <param name="locationBillingTypeTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddLocationBillingTypeTagWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-            
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->AddLocationBillingTypeTag");
-            
-            // verify the required parameter 'locationBillingTypeTag' is set
-            if (locationBillingTypeTag == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeTag' when calling LocationBillingTypeApi->AddLocationBillingTypeTag");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/tag/{locationBillingTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            if (locationBillingTypeTag != null) localVarPathParams.Add("locationBillingTypeTag", Configuration.ApiClient.ParameterToString(locationBillingTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a locationBillingType. Adds a tag to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param>
-        /// <param name="locationBillingTypeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddLocationBillingTypeTagAsync (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-             await AddLocationBillingTypeTagAsyncWithHttpInfo(locationBillingTypeId, locationBillingTypeTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a locationBillingType. Adds a tag to an existing locationBillingType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to add a tag to</param>
-        /// <param name="locationBillingTypeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationBillingTypeTagAsyncWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling AddLocationBillingTypeTag");
-            // verify the required parameter 'locationBillingTypeTag' is set
-            if (locationBillingTypeTag == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeTag' when calling AddLocationBillingTypeTag");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/tag/{locationBillingTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            if (locationBillingTypeTag != null) localVarPathParams.Add("locationBillingTypeTag", Configuration.ApiClient.ParameterToString(locationBillingTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationBillingTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a locationBillingType Deletes the locationBillingType identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->DeleteLocationBillingType");
             
     
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}";
+            var localVarPath = "/v2.0/locationBillingType/{locationBillingTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling DeleteLocationBillingType");
             
     
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}";
+            var localVarPath = "/v2.0/locationBillingType/{locationBillingTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a locationBillingType. Deletes an existing locationBillingType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param> 
-        /// <param name="locationBillingTypeTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteLocationBillingTypeTag (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-             DeleteLocationBillingTypeTagWithHttpInfo(locationBillingTypeId, locationBillingTypeTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a locationBillingType. Deletes an existing locationBillingType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param> 
-        /// <param name="locationBillingTypeTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteLocationBillingTypeTagWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-            
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->DeleteLocationBillingTypeTag");
-            
-            // verify the required parameter 'locationBillingTypeTag' is set
-            if (locationBillingTypeTag == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeTag' when calling LocationBillingTypeApi->DeleteLocationBillingTypeTag");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/tag/{locationBillingTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            if (locationBillingTypeTag != null) localVarPathParams.Add("locationBillingTypeTag", Configuration.ApiClient.ParameterToString(locationBillingTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationBillingTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationBillingTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a locationBillingType. Deletes an existing locationBillingType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param>
-        /// <param name="locationBillingTypeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteLocationBillingTypeTagAsync (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-             await DeleteLocationBillingTypeTagAsyncWithHttpInfo(locationBillingTypeId, locationBillingTypeTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a locationBillingType. Deletes an existing locationBillingType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to remove tag from</param>
-        /// <param name="locationBillingTypeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationBillingTypeTagAsyncWithHttpInfo (int? locationBillingTypeId, string locationBillingTypeTag)
-        {
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling DeleteLocationBillingTypeTag");
-            // verify the required parameter 'locationBillingTypeTag' is set
-            if (locationBillingTypeTag == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeTag' when calling DeleteLocationBillingTypeTag");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/tag/{locationBillingTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            if (locationBillingTypeTag != null) localVarPathParams.Add("locationBillingTypeTag", Configuration.ApiClient.ParameterToString(locationBillingTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationBillingTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationBillingTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a locationBillingType by id Returns a duplicated locationBillingType identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->GetDuplicateLocationBillingTypeById");
             
     
-            var localVarPath = "/beta/locationBillingType/duplicate/{locationBillingTypeId}";
+            var localVarPath = "/v2.0/locationBillingType/duplicate/{locationBillingTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling GetDuplicateLocationBillingTypeById");
             
     
-            var localVarPath = "/beta/locationBillingType/duplicate/{locationBillingTypeId}";
+            var localVarPath = "/v2.0/locationBillingType/duplicate/{locationBillingTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/locationBillingType/search";
+            var localVarPath = "/v2.0/locationBillingType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/locationBillingType/search";
+            var localVarPath = "/v2.0/locationBillingType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->GetLocationBillingTypeById");
             
     
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}";
+            var localVarPath = "/v2.0/locationBillingType/{locationBillingTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling GetLocationBillingTypeById");
             
     
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}";
+            var localVarPath = "/v2.0/locationBillingType/{locationBillingTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a locationBillingType. Get all existing locationBillingType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param> 
-        /// <returns></returns>
-        public void GetLocationBillingTypeTags (int? locationBillingTypeId)
-        {
-             GetLocationBillingTypeTagsWithHttpInfo(locationBillingTypeId);
-        }
-
-        /// <summary>
-        /// Get the tags for a locationBillingType. Get all existing locationBillingType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetLocationBillingTypeTagsWithHttpInfo (int? locationBillingTypeId)
-        {
-            
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling LocationBillingTypeApi->GetLocationBillingTypeTags");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationBillingTypeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationBillingTypeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a locationBillingType. Get all existing locationBillingType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetLocationBillingTypeTagsAsync (int? locationBillingTypeId)
-        {
-             await GetLocationBillingTypeTagsAsyncWithHttpInfo(locationBillingTypeId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a locationBillingType. Get all existing locationBillingType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationBillingTypeId">Id of the locationBillingType to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetLocationBillingTypeTagsAsyncWithHttpInfo (int? locationBillingTypeId)
-        {
-            // verify the required parameter 'locationBillingTypeId' is set
-            if (locationBillingTypeId == null) throw new ApiException(400, "Missing required parameter 'locationBillingTypeId' when calling GetLocationBillingTypeTags");
-            
-    
-            var localVarPath = "/beta/locationBillingType/{locationBillingTypeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationBillingTypeId != null) localVarPathParams.Add("locationBillingTypeId", Configuration.ApiClient.ParameterToString(locationBillingTypeId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationBillingTypeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationBillingTypeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a locationBillingType Updates an existing locationBillingType using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationBillingTypeApi->UpdateLocationBillingType");
             
     
-            var localVarPath = "/beta/locationBillingType";
+            var localVarPath = "/v2.0/locationBillingType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateLocationBillingType");
             
     
-            var localVarPath = "/beta/locationBillingType";
+            var localVarPath = "/v2.0/locationBillingType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationBillingTypeApi->UpdateLocationBillingTypeCustomFields");
             
     
-            var localVarPath = "/beta/locationBillingType/customFields";
+            var localVarPath = "/v2.0/locationBillingType/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateLocationBillingTypeCustomFields");
             
     
-            var localVarPath = "/beta/locationBillingType/customFields";
+            var localVarPath = "/v2.0/locationBillingType/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

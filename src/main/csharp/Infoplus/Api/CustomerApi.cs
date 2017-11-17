@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Customer> AddCustomerWithHttpInfo (Customer body);
         
         /// <summary>
-        /// Add new audit for a customer
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param>
-        /// <param name="customerAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddCustomerAudit (int? customerId, string customerAudit);
-  
-        /// <summary>
-        /// Add new audit for a customer
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param>
-        /// <param name="customerAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddCustomerAuditWithHttpInfo (int? customerId, string customerAudit);
-        
-        /// <summary>
-        /// Add new tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param>
-        /// <param name="customerTag">The tag to add</param>
-        /// <returns></returns>
-        void AddCustomerTag (int? customerId, string customerTag);
-  
-        /// <summary>
-        /// Add new tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param>
-        /// <param name="customerTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddCustomerTagWithHttpInfo (int? customerId, string customerTag);
-        
-        /// <summary>
         /// Delete a customer
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="customerId">Id of the customer to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteCustomerWithHttpInfo (int? customerId);
-        
-        /// <summary>
-        /// Delete a tag for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing customer tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param>
-        /// <param name="customerTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteCustomerTag (int? customerId, string customerTag);
-  
-        /// <summary>
-        /// Delete a tag for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing customer tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param>
-        /// <param name="customerTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteCustomerTagWithHttpInfo (int? customerId, string customerTag);
         
         /// <summary>
         /// Get a customer by Customer No
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         /// <param name="customerId">Id of the customer to be returned.</param>
         /// <returns>ApiResponse of Customer</returns>
         ApiResponse<Customer> GetCustomerByIdWithHttpInfo (int? customerId);
-        
-        /// <summary>
-        /// Get the tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing customer tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param>
-        /// <returns></returns>
-        void GetCustomerTags (int? customerId);
-  
-        /// <summary>
-        /// Get the tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing customer tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetCustomerTagsWithHttpInfo (int? customerId);
         
         /// <summary>
         /// Get a duplicated a customer by id
@@ -322,54 +228,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Customer>> AddCustomerAsyncWithHttpInfo (Customer body);
         
         /// <summary>
-        /// Add new audit for a customer
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param>
-        /// <param name="customerAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddCustomerAuditAsync (int? customerId, string customerAudit);
-
-        /// <summary>
-        /// Add new audit for a customer
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param>
-        /// <param name="customerAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddCustomerAuditAsyncWithHttpInfo (int? customerId, string customerAudit);
-        
-        /// <summary>
-        /// Add new tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param>
-        /// <param name="customerTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddCustomerTagAsync (int? customerId, string customerTag);
-
-        /// <summary>
-        /// Add new tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing customer.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param>
-        /// <param name="customerTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddCustomerTagAsyncWithHttpInfo (int? customerId, string customerTag);
-        
-        /// <summary>
         /// Delete a customer
         /// </summary>
         /// <remarks>
@@ -390,30 +248,6 @@ namespace Infoplus.Api
         /// <param name="customerId">Id of the customer to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerAsyncWithHttpInfo (int? customerId);
-        
-        /// <summary>
-        /// Delete a tag for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing customer tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param>
-        /// <param name="customerTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteCustomerTagAsync (int? customerId, string customerTag);
-
-        /// <summary>
-        /// Delete a tag for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing customer tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param>
-        /// <param name="customerTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerTagAsyncWithHttpInfo (int? customerId, string customerTag);
         
         /// <summary>
         /// Get a customer by Customer No
@@ -488,28 +322,6 @@ namespace Infoplus.Api
         /// <param name="customerId">Id of the customer to be returned.</param>
         /// <returns>Task of ApiResponse (Customer)</returns>
         System.Threading.Tasks.Task<ApiResponse<Customer>> GetCustomerByIdAsyncWithHttpInfo (int? customerId);
-        
-        /// <summary>
-        /// Get the tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing customer tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetCustomerTagsAsync (int? customerId);
-
-        /// <summary>
-        /// Get the tags for a customer.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing customer tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetCustomerTagsAsyncWithHttpInfo (int? customerId);
         
         /// <summary>
         /// Get a duplicated a customer by id
@@ -695,7 +507,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling CustomerApi->AddCustomer");
             
     
-            var localVarPath = "/beta/customer";
+            var localVarPath = "/v2.0/customer";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -786,7 +598,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddCustomer");
             
     
-            var localVarPath = "/beta/customer";
+            var localVarPath = "/v2.0/customer";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -853,368 +665,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a customer Adds an audit to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param> 
-        /// <param name="customerAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddCustomerAudit (int? customerId, string customerAudit)
-        {
-             AddCustomerAuditWithHttpInfo(customerId, customerAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a customer Adds an audit to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param> 
-        /// <param name="customerAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddCustomerAuditWithHttpInfo (int? customerId, string customerAudit)
-        {
-            
-            // verify the required parameter 'customerId' is set
-            if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->AddCustomerAudit");
-            
-            // verify the required parameter 'customerAudit' is set
-            if (customerAudit == null)
-                throw new ApiException(400, "Missing required parameter 'customerAudit' when calling CustomerApi->AddCustomerAudit");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/audit/{customerAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            if (customerAudit != null) localVarPathParams.Add("customerAudit", Configuration.ApiClient.ParameterToString(customerAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a customer Adds an audit to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param>
-        /// <param name="customerAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddCustomerAuditAsync (int? customerId, string customerAudit)
-        {
-             await AddCustomerAuditAsyncWithHttpInfo(customerId, customerAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a customer Adds an audit to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add an audit to</param>
-        /// <param name="customerAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddCustomerAuditAsyncWithHttpInfo (int? customerId, string customerAudit)
-        {
-            // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling AddCustomerAudit");
-            // verify the required parameter 'customerAudit' is set
-            if (customerAudit == null) throw new ApiException(400, "Missing required parameter 'customerAudit' when calling AddCustomerAudit");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/audit/{customerAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            if (customerAudit != null) localVarPathParams.Add("customerAudit", Configuration.ApiClient.ParameterToString(customerAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a customer. Adds a tag to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param> 
-        /// <param name="customerTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddCustomerTag (int? customerId, string customerTag)
-        {
-             AddCustomerTagWithHttpInfo(customerId, customerTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a customer. Adds a tag to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param> 
-        /// <param name="customerTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddCustomerTagWithHttpInfo (int? customerId, string customerTag)
-        {
-            
-            // verify the required parameter 'customerId' is set
-            if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->AddCustomerTag");
-            
-            // verify the required parameter 'customerTag' is set
-            if (customerTag == null)
-                throw new ApiException(400, "Missing required parameter 'customerTag' when calling CustomerApi->AddCustomerTag");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/tag/{customerTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            if (customerTag != null) localVarPathParams.Add("customerTag", Configuration.ApiClient.ParameterToString(customerTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a customer. Adds a tag to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param>
-        /// <param name="customerTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddCustomerTagAsync (int? customerId, string customerTag)
-        {
-             await AddCustomerTagAsyncWithHttpInfo(customerId, customerTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a customer. Adds a tag to an existing customer.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to add a tag to</param>
-        /// <param name="customerTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddCustomerTagAsyncWithHttpInfo (int? customerId, string customerTag)
-        {
-            // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling AddCustomerTag");
-            // verify the required parameter 'customerTag' is set
-            if (customerTag == null) throw new ApiException(400, "Missing required parameter 'customerTag' when calling AddCustomerTag");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/tag/{customerTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            if (customerTag != null) localVarPathParams.Add("customerTag", Configuration.ApiClient.ParameterToString(customerTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCustomerTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a customer Deletes the customer identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1239,7 +689,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->DeleteCustomer");
             
     
-            var localVarPath = "/beta/customer/{customerId}";
+            var localVarPath = "/v2.0/customer/{customerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1323,7 +773,7 @@ namespace Infoplus.Api
             if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling DeleteCustomer");
             
     
-            var localVarPath = "/beta/customer/{customerId}";
+            var localVarPath = "/v2.0/customer/{customerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1384,187 +834,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a customer. Deletes an existing customer tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param> 
-        /// <param name="customerTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteCustomerTag (int? customerId, string customerTag)
-        {
-             DeleteCustomerTagWithHttpInfo(customerId, customerTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a customer. Deletes an existing customer tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param> 
-        /// <param name="customerTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteCustomerTagWithHttpInfo (int? customerId, string customerTag)
-        {
-            
-            // verify the required parameter 'customerId' is set
-            if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->DeleteCustomerTag");
-            
-            // verify the required parameter 'customerTag' is set
-            if (customerTag == null)
-                throw new ApiException(400, "Missing required parameter 'customerTag' when calling CustomerApi->DeleteCustomerTag");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/tag/{customerTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            if (customerTag != null) localVarPathParams.Add("customerTag", Configuration.ApiClient.ParameterToString(customerTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomerTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomerTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a customer. Deletes an existing customer tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param>
-        /// <param name="customerTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteCustomerTagAsync (int? customerId, string customerTag)
-        {
-             await DeleteCustomerTagAsyncWithHttpInfo(customerId, customerTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a customer. Deletes an existing customer tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to remove tag from</param>
-        /// <param name="customerTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCustomerTagAsyncWithHttpInfo (int? customerId, string customerTag)
-        {
-            // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling DeleteCustomerTag");
-            // verify the required parameter 'customerTag' is set
-            if (customerTag == null) throw new ApiException(400, "Missing required parameter 'customerTag' when calling DeleteCustomerTag");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/tag/{customerTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            if (customerTag != null) localVarPathParams.Add("customerTag", Configuration.ApiClient.ParameterToString(customerTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomerTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCustomerTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a customer by Customer No Returns the customer identified by the specified parameters.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1596,7 +865,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'customerNo' when calling CustomerApi->GetByCustomerNo");
             
     
-            var localVarPath = "/beta/customer/getByCustomerNo";
+            var localVarPath = "/v2.0/customer/getByCustomerNo";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1686,7 +955,7 @@ namespace Infoplus.Api
             if (customerNo == null) throw new ApiException(400, "Missing required parameter 'customerNo' when calling GetByCustomerNo");
             
     
-            var localVarPath = "/beta/customer/getByCustomerNo";
+            var localVarPath = "/v2.0/customer/getByCustomerNo";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1775,7 +1044,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/customer/search";
+            var localVarPath = "/v2.0/customer/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1867,7 +1136,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/customer/search";
+            var localVarPath = "/v2.0/customer/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1956,7 +1225,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->GetCustomerById");
             
     
-            var localVarPath = "/beta/customer/{customerId}";
+            var localVarPath = "/v2.0/customer/{customerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2041,7 +1310,7 @@ namespace Infoplus.Api
             if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling GetCustomerById");
             
     
-            var localVarPath = "/beta/customer/{customerId}";
+            var localVarPath = "/v2.0/customer/{customerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2102,175 +1371,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a customer. Get all existing customer tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param> 
-        /// <returns></returns>
-        public void GetCustomerTags (int? customerId)
-        {
-             GetCustomerTagsWithHttpInfo(customerId);
-        }
-
-        /// <summary>
-        /// Get the tags for a customer. Get all existing customer tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetCustomerTagsWithHttpInfo (int? customerId)
-        {
-            
-            // verify the required parameter 'customerId' is set
-            if (customerId == null)
-                throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->GetCustomerTags");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a customer. Get all existing customer tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetCustomerTagsAsync (int? customerId)
-        {
-             await GetCustomerTagsAsyncWithHttpInfo(customerId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a customer. Get all existing customer tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="customerId">Id of the customer to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetCustomerTagsAsyncWithHttpInfo (int? customerId)
-        {
-            // verify the required parameter 'customerId' is set
-            if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling GetCustomerTags");
-            
-    
-            var localVarPath = "/beta/customer/{customerId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (customerId != null) localVarPathParams.Add("customerId", Configuration.ApiClient.ParameterToString(customerId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetCustomerTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a customer by id Returns a duplicated customer identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2296,7 +1396,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'customerId' when calling CustomerApi->GetDuplicateCustomerById");
             
     
-            var localVarPath = "/beta/customer/duplicate/{customerId}";
+            var localVarPath = "/v2.0/customer/duplicate/{customerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2381,7 +1481,7 @@ namespace Infoplus.Api
             if (customerId == null) throw new ApiException(400, "Missing required parameter 'customerId' when calling GetDuplicateCustomerById");
             
     
-            var localVarPath = "/beta/customer/duplicate/{customerId}";
+            var localVarPath = "/v2.0/customer/duplicate/{customerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2466,7 +1566,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling CustomerApi->UpdateCustomer");
             
     
-            var localVarPath = "/beta/customer";
+            var localVarPath = "/v2.0/customer";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2556,7 +1656,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateCustomer");
             
     
-            var localVarPath = "/beta/customer";
+            var localVarPath = "/v2.0/customer";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2647,7 +1747,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling CustomerApi->UpdateCustomerCustomFields");
             
     
-            var localVarPath = "/beta/customer/customFields";
+            var localVarPath = "/v2.0/customer/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2737,7 +1837,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateCustomerCustomFields");
             
     
-            var localVarPath = "/beta/customer/customFields";
+            var localVarPath = "/v2.0/customer/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

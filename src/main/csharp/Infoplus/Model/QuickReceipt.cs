@@ -44,12 +44,10 @@ namespace Infoplus.Model
         /// <param name="Cost">Cost.</param>
         /// <param name="Sell">Sell.</param>
         /// <param name="PricingPer">PricingPer.</param>
-        /// <param name="DockDate">DockDate.</param>
-        /// <param name="ProductIdTag">ProductIdTag.</param>
         /// <param name="CustomFields">CustomFields.</param>
         /// <param name="Sku">Sku.</param>
 
-        public QuickReceipt(int? WarehouseId = null, int? LobId = null, int? LocationId = null, int? Quantity = null, int? VendorId = null, string Carrier = null, string UnitCode = null, string WrapCode = null, double? WeightPerWrap = null, int? UnitsPerWrap = null, int? UnitsPerCase = null, int? CasesPerPallet = null, double? CaseWeight = null, string ProductionLot = null, string RevisionDate = null, string Origin = null, double? CartonLength = null, double? CartonWidth = null, double? CartonHeight = null, double? Cost = null, double? Sell = null, string PricingPer = null, DateTime? DockDate = null, string ProductIdTag = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
+        public QuickReceipt(int? WarehouseId = null, int? LobId = null, int? LocationId = null, int? Quantity = null, int? VendorId = null, string Carrier = null, string UnitCode = null, string WrapCode = null, double? WeightPerWrap = null, int? UnitsPerWrap = null, int? UnitsPerCase = null, int? CasesPerPallet = null, double? CaseWeight = null, string ProductionLot = null, string RevisionDate = null, string Origin = null, double? CartonLength = null, double? CartonWidth = null, double? CartonHeight = null, double? Cost = null, double? Sell = null, string PricingPer = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -137,8 +135,6 @@ namespace Infoplus.Model
             this.Cost = Cost;
             this.Sell = Sell;
             this.PricingPer = PricingPer;
-            this.DockDate = DockDate;
-            this.ProductIdTag = ProductIdTag;
             this.CustomFields = CustomFields;
             this.Sku = Sku;
             
@@ -320,18 +316,6 @@ namespace Infoplus.Model
         public int? GeneratedASNId { get; private set; }
     
         /// <summary>
-        /// Gets or Sets DockDate
-        /// </summary>
-        [DataMember(Name="dockDate", EmitDefaultValue=false)]
-        public DateTime? DockDate { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets ProductIdTag
-        /// </summary>
-        [DataMember(Name="productIdTag", EmitDefaultValue=false)]
-        public string ProductIdTag { get; set; }
-    
-        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -380,8 +364,6 @@ namespace Infoplus.Model
             sb.Append("  PricingPer: ").Append(PricingPer).Append("\n");
             sb.Append("  GeneratedItemReceiptId: ").Append(GeneratedItemReceiptId).Append("\n");
             sb.Append("  GeneratedASNId: ").Append(GeneratedASNId).Append("\n");
-            sb.Append("  DockDate: ").Append(DockDate).Append("\n");
-            sb.Append("  ProductIdTag: ").Append(ProductIdTag).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
             
@@ -567,16 +549,6 @@ namespace Infoplus.Model
                     this.GeneratedASNId.Equals(other.GeneratedASNId)
                 ) && 
                 (
-                    this.DockDate == other.DockDate ||
-                    this.DockDate != null &&
-                    this.DockDate.Equals(other.DockDate)
-                ) && 
-                (
-                    this.ProductIdTag == other.ProductIdTag ||
-                    this.ProductIdTag != null &&
-                    this.ProductIdTag.Equals(other.ProductIdTag)
-                ) && 
-                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -686,12 +658,6 @@ namespace Infoplus.Model
                 
                 if (this.GeneratedASNId != null)
                     hash = hash * 59 + this.GeneratedASNId.GetHashCode();
-                
-                if (this.DockDate != null)
-                    hash = hash * 59 + this.DockDate.GetHashCode();
-                
-                if (this.ProductIdTag != null)
-                    hash = hash * 59 + this.ProductIdTag.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

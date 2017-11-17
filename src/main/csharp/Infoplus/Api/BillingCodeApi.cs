@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<BillingCode> AddBillingCodeWithHttpInfo (BillingCode body);
         
         /// <summary>
-        /// Add new audit for a billingCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param>
-        /// <param name="billingCodeAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddBillingCodeAudit (int? billingCodeId, string billingCodeAudit);
-  
-        /// <summary>
-        /// Add new audit for a billingCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param>
-        /// <param name="billingCodeAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddBillingCodeAuditWithHttpInfo (int? billingCodeId, string billingCodeAudit);
-        
-        /// <summary>
-        /// Add new tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param>
-        /// <param name="billingCodeTag">The tag to add</param>
-        /// <returns></returns>
-        void AddBillingCodeTag (int? billingCodeId, string billingCodeTag);
-  
-        /// <summary>
-        /// Add new tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param>
-        /// <param name="billingCodeTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddBillingCodeTagWithHttpInfo (int? billingCodeId, string billingCodeTag);
-        
-        /// <summary>
         /// Delete a billingCode
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="billingCodeId">Id of the billingCode to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteBillingCodeWithHttpInfo (int? billingCodeId);
-        
-        /// <summary>
-        /// Delete a tag for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billingCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param>
-        /// <param name="billingCodeTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteBillingCodeTag (int? billingCodeId, string billingCodeTag);
-  
-        /// <summary>
-        /// Delete a tag for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billingCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param>
-        /// <param name="billingCodeTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteBillingCodeTagWithHttpInfo (int? billingCodeId, string billingCodeTag);
         
         /// <summary>
         /// Search billingCodes by filter
@@ -182,28 +110,6 @@ namespace Infoplus.Api
         /// <param name="billingCodeId">Id of the billingCode to be returned.</param>
         /// <returns>ApiResponse of BillingCode</returns>
         ApiResponse<BillingCode> GetBillingCodeByIdWithHttpInfo (int? billingCodeId);
-        
-        /// <summary>
-        /// Get the tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billingCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param>
-        /// <returns></returns>
-        void GetBillingCodeTags (int? billingCodeId);
-  
-        /// <summary>
-        /// Get the tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billingCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetBillingCodeTagsWithHttpInfo (int? billingCodeId);
         
         /// <summary>
         /// Get a duplicated a billingCode by id
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<BillingCode>> AddBillingCodeAsyncWithHttpInfo (BillingCode body);
         
         /// <summary>
-        /// Add new audit for a billingCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param>
-        /// <param name="billingCodeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddBillingCodeAuditAsync (int? billingCodeId, string billingCodeAudit);
-
-        /// <summary>
-        /// Add new audit for a billingCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param>
-        /// <param name="billingCodeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddBillingCodeAuditAsyncWithHttpInfo (int? billingCodeId, string billingCodeAudit);
-        
-        /// <summary>
-        /// Add new tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param>
-        /// <param name="billingCodeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddBillingCodeTagAsync (int? billingCodeId, string billingCodeTag);
-
-        /// <summary>
-        /// Add new tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billingCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param>
-        /// <param name="billingCodeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddBillingCodeTagAsyncWithHttpInfo (int? billingCodeId, string billingCodeTag);
-        
-        /// <summary>
         /// Delete a billingCode
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="billingCodeId">Id of the billingCode to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBillingCodeAsyncWithHttpInfo (int? billingCodeId);
-        
-        /// <summary>
-        /// Delete a tag for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billingCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param>
-        /// <param name="billingCodeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteBillingCodeTagAsync (int? billingCodeId, string billingCodeTag);
-
-        /// <summary>
-        /// Delete a tag for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billingCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param>
-        /// <param name="billingCodeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBillingCodeTagAsyncWithHttpInfo (int? billingCodeId, string billingCodeTag);
         
         /// <summary>
         /// Search billingCodes by filter
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="billingCodeId">Id of the billingCode to be returned.</param>
         /// <returns>Task of ApiResponse (BillingCode)</returns>
         System.Threading.Tasks.Task<ApiResponse<BillingCode>> GetBillingCodeByIdAsyncWithHttpInfo (int? billingCodeId);
-        
-        /// <summary>
-        /// Get the tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billingCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetBillingCodeTagsAsync (int? billingCodeId);
-
-        /// <summary>
-        /// Get the tags for a billingCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billingCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetBillingCodeTagsAsyncWithHttpInfo (int? billingCodeId);
         
         /// <summary>
         /// Get a duplicated a billingCode by id
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BillingCodeApi->AddBillingCode");
             
     
-            var localVarPath = "/beta/billingCode";
+            var localVarPath = "/v2.0/billingCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddBillingCode");
             
     
-            var localVarPath = "/beta/billingCode";
+            var localVarPath = "/v2.0/billingCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a billingCode Adds an audit to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param> 
-        /// <param name="billingCodeAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddBillingCodeAudit (int? billingCodeId, string billingCodeAudit)
-        {
-             AddBillingCodeAuditWithHttpInfo(billingCodeId, billingCodeAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a billingCode Adds an audit to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param> 
-        /// <param name="billingCodeAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddBillingCodeAuditWithHttpInfo (int? billingCodeId, string billingCodeAudit)
-        {
-            
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->AddBillingCodeAudit");
-            
-            // verify the required parameter 'billingCodeAudit' is set
-            if (billingCodeAudit == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeAudit' when calling BillingCodeApi->AddBillingCodeAudit");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/audit/{billingCodeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            if (billingCodeAudit != null) localVarPathParams.Add("billingCodeAudit", Configuration.ApiClient.ParameterToString(billingCodeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a billingCode Adds an audit to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param>
-        /// <param name="billingCodeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddBillingCodeAuditAsync (int? billingCodeId, string billingCodeAudit)
-        {
-             await AddBillingCodeAuditAsyncWithHttpInfo(billingCodeId, billingCodeAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a billingCode Adds an audit to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add an audit to</param>
-        /// <param name="billingCodeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddBillingCodeAuditAsyncWithHttpInfo (int? billingCodeId, string billingCodeAudit)
-        {
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling AddBillingCodeAudit");
-            // verify the required parameter 'billingCodeAudit' is set
-            if (billingCodeAudit == null) throw new ApiException(400, "Missing required parameter 'billingCodeAudit' when calling AddBillingCodeAudit");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/audit/{billingCodeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            if (billingCodeAudit != null) localVarPathParams.Add("billingCodeAudit", Configuration.ApiClient.ParameterToString(billingCodeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a billingCode. Adds a tag to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param> 
-        /// <param name="billingCodeTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddBillingCodeTag (int? billingCodeId, string billingCodeTag)
-        {
-             AddBillingCodeTagWithHttpInfo(billingCodeId, billingCodeTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a billingCode. Adds a tag to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param> 
-        /// <param name="billingCodeTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddBillingCodeTagWithHttpInfo (int? billingCodeId, string billingCodeTag)
-        {
-            
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->AddBillingCodeTag");
-            
-            // verify the required parameter 'billingCodeTag' is set
-            if (billingCodeTag == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeTag' when calling BillingCodeApi->AddBillingCodeTag");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/tag/{billingCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            if (billingCodeTag != null) localVarPathParams.Add("billingCodeTag", Configuration.ApiClient.ParameterToString(billingCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a billingCode. Adds a tag to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param>
-        /// <param name="billingCodeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddBillingCodeTagAsync (int? billingCodeId, string billingCodeTag)
-        {
-             await AddBillingCodeTagAsyncWithHttpInfo(billingCodeId, billingCodeTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a billingCode. Adds a tag to an existing billingCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to add a tag to</param>
-        /// <param name="billingCodeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddBillingCodeTagAsyncWithHttpInfo (int? billingCodeId, string billingCodeTag)
-        {
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling AddBillingCodeTag");
-            // verify the required parameter 'billingCodeTag' is set
-            if (billingCodeTag == null) throw new ApiException(400, "Missing required parameter 'billingCodeTag' when calling AddBillingCodeTag");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/tag/{billingCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            if (billingCodeTag != null) localVarPathParams.Add("billingCodeTag", Configuration.ApiClient.ParameterToString(billingCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillingCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a billingCode Deletes the billingCode identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->DeleteBillingCode");
             
     
-            var localVarPath = "/beta/billingCode/{billingCodeId}";
+            var localVarPath = "/v2.0/billingCode/{billingCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling DeleteBillingCode");
             
     
-            var localVarPath = "/beta/billingCode/{billingCodeId}";
+            var localVarPath = "/v2.0/billingCode/{billingCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a billingCode. Deletes an existing billingCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param> 
-        /// <param name="billingCodeTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteBillingCodeTag (int? billingCodeId, string billingCodeTag)
-        {
-             DeleteBillingCodeTagWithHttpInfo(billingCodeId, billingCodeTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a billingCode. Deletes an existing billingCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param> 
-        /// <param name="billingCodeTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteBillingCodeTagWithHttpInfo (int? billingCodeId, string billingCodeTag)
-        {
-            
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->DeleteBillingCodeTag");
-            
-            // verify the required parameter 'billingCodeTag' is set
-            if (billingCodeTag == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeTag' when calling BillingCodeApi->DeleteBillingCodeTag");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/tag/{billingCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            if (billingCodeTag != null) localVarPathParams.Add("billingCodeTag", Configuration.ApiClient.ParameterToString(billingCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillingCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillingCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a billingCode. Deletes an existing billingCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param>
-        /// <param name="billingCodeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteBillingCodeTagAsync (int? billingCodeId, string billingCodeTag)
-        {
-             await DeleteBillingCodeTagAsyncWithHttpInfo(billingCodeId, billingCodeTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a billingCode. Deletes an existing billingCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to remove tag from</param>
-        /// <param name="billingCodeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBillingCodeTagAsyncWithHttpInfo (int? billingCodeId, string billingCodeTag)
-        {
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling DeleteBillingCodeTag");
-            // verify the required parameter 'billingCodeTag' is set
-            if (billingCodeTag == null) throw new ApiException(400, "Missing required parameter 'billingCodeTag' when calling DeleteBillingCodeTag");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/tag/{billingCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            if (billingCodeTag != null) localVarPathParams.Add("billingCodeTag", Configuration.ApiClient.ParameterToString(billingCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillingCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillingCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search billingCodes by filter Returns the list of billingCodes that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1544,7 +813,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/billingCode/search";
+            var localVarPath = "/v2.0/billingCode/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1636,7 +905,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/billingCode/search";
+            var localVarPath = "/v2.0/billingCode/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1725,7 +994,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->GetBillingCodeById");
             
     
-            var localVarPath = "/beta/billingCode/{billingCodeId}";
+            var localVarPath = "/v2.0/billingCode/{billingCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1810,7 +1079,7 @@ namespace Infoplus.Api
             if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling GetBillingCodeById");
             
     
-            var localVarPath = "/beta/billingCode/{billingCodeId}";
+            var localVarPath = "/v2.0/billingCode/{billingCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1871,175 +1140,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a billingCode. Get all existing billingCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param> 
-        /// <returns></returns>
-        public void GetBillingCodeTags (int? billingCodeId)
-        {
-             GetBillingCodeTagsWithHttpInfo(billingCodeId);
-        }
-
-        /// <summary>
-        /// Get the tags for a billingCode. Get all existing billingCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetBillingCodeTagsWithHttpInfo (int? billingCodeId)
-        {
-            
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->GetBillingCodeTags");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillingCodeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillingCodeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a billingCode. Get all existing billingCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetBillingCodeTagsAsync (int? billingCodeId)
-        {
-             await GetBillingCodeTagsAsyncWithHttpInfo(billingCodeId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a billingCode. Get all existing billingCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billingCodeId">Id of the billingCode to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetBillingCodeTagsAsyncWithHttpInfo (int? billingCodeId)
-        {
-            // verify the required parameter 'billingCodeId' is set
-            if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling GetBillingCodeTags");
-            
-    
-            var localVarPath = "/beta/billingCode/{billingCodeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billingCodeId != null) localVarPathParams.Add("billingCodeId", Configuration.ApiClient.ParameterToString(billingCodeId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillingCodeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillingCodeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a billingCode by id Returns a duplicated billingCode identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2065,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling BillingCodeApi->GetDuplicateBillingCodeById");
             
     
-            var localVarPath = "/beta/billingCode/duplicate/{billingCodeId}";
+            var localVarPath = "/v2.0/billingCode/duplicate/{billingCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2150,7 +1250,7 @@ namespace Infoplus.Api
             if (billingCodeId == null) throw new ApiException(400, "Missing required parameter 'billingCodeId' when calling GetDuplicateBillingCodeById");
             
     
-            var localVarPath = "/beta/billingCode/duplicate/{billingCodeId}";
+            var localVarPath = "/v2.0/billingCode/duplicate/{billingCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BillingCodeApi->UpdateBillingCode");
             
     
-            var localVarPath = "/beta/billingCode";
+            var localVarPath = "/v2.0/billingCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateBillingCode");
             
     
-            var localVarPath = "/beta/billingCode";
+            var localVarPath = "/v2.0/billingCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BillingCodeApi->UpdateBillingCodeCustomFields");
             
     
-            var localVarPath = "/beta/billingCode/customFields";
+            var localVarPath = "/v2.0/billingCode/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateBillingCodeCustomFields");
             
     
-            var localVarPath = "/beta/billingCode/customFields";
+            var localVarPath = "/v2.0/billingCode/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

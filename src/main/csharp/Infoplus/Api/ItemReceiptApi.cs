@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for an itemReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param>
-        /// <param name="itemReceiptAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddItemReceiptAudit (int? itemReceiptId, string itemReceiptAudit);
-  
-        /// <summary>
-        /// Add new audit for an itemReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param>
-        /// <param name="itemReceiptAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemReceiptAuditWithHttpInfo (int? itemReceiptId, string itemReceiptAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param>
-        /// <param name="itemReceiptTag">The tag to add</param>
-        /// <returns></returns>
-        void AddItemReceiptTag (int? itemReceiptId, string itemReceiptTag);
-  
-        /// <summary>
-        /// Add new tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param>
-        /// <param name="itemReceiptTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemReceiptTagWithHttpInfo (int? itemReceiptId, string itemReceiptTag);
-        
-        /// <summary>
-        /// Delete a tag for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param>
-        /// <param name="itemReceiptTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteItemReceiptTag (int? itemReceiptId, string itemReceiptTag);
-  
-        /// <summary>
-        /// Delete a tag for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param>
-        /// <param name="itemReceiptTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteItemReceiptTagWithHttpInfo (int? itemReceiptId, string itemReceiptTag);
-        
-        /// <summary>
         /// Get a duplicated an itemReceipt by id
         /// </summary>
         /// <remarks>
@@ -162,28 +90,6 @@ namespace Infoplus.Api
         ApiResponse<ItemReceipt> GetItemReceiptByIdWithHttpInfo (int? itemReceiptId);
         
         /// <summary>
-        /// Get the tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param>
-        /// <returns></returns>
-        void GetItemReceiptTags (int? itemReceiptId);
-  
-        /// <summary>
-        /// Get the tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetItemReceiptTagsWithHttpInfo (int? itemReceiptId);
-        
-        /// <summary>
         /// Update an itemReceipt custom fields
         /// </summary>
         /// <remarks>
@@ -208,78 +114,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for an itemReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param>
-        /// <param name="itemReceiptAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemReceiptAuditAsync (int? itemReceiptId, string itemReceiptAudit);
-
-        /// <summary>
-        /// Add new audit for an itemReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param>
-        /// <param name="itemReceiptAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemReceiptAuditAsyncWithHttpInfo (int? itemReceiptId, string itemReceiptAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param>
-        /// <param name="itemReceiptTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemReceiptTagAsync (int? itemReceiptId, string itemReceiptTag);
-
-        /// <summary>
-        /// Add new tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param>
-        /// <param name="itemReceiptTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemReceiptTagAsyncWithHttpInfo (int? itemReceiptId, string itemReceiptTag);
-        
-        /// <summary>
-        /// Delete a tag for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param>
-        /// <param name="itemReceiptTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteItemReceiptTagAsync (int? itemReceiptId, string itemReceiptTag);
-
-        /// <summary>
-        /// Delete a tag for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param>
-        /// <param name="itemReceiptTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemReceiptTagAsyncWithHttpInfo (int? itemReceiptId, string itemReceiptTag);
         
         /// <summary>
         /// Get a duplicated an itemReceipt by id
@@ -352,28 +186,6 @@ namespace Infoplus.Api
         /// <param name="itemReceiptId">Id of the itemReceipt to be returned.</param>
         /// <returns>Task of ApiResponse (ItemReceipt)</returns>
         System.Threading.Tasks.Task<ApiResponse<ItemReceipt>> GetItemReceiptByIdAsyncWithHttpInfo (int? itemReceiptId);
-        
-        /// <summary>
-        /// Get the tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetItemReceiptTagsAsync (int? itemReceiptId);
-
-        /// <summary>
-        /// Get the tags for an itemReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetItemReceiptTagsAsyncWithHttpInfo (int? itemReceiptId);
         
         /// <summary>
         /// Update an itemReceipt custom fields
@@ -490,549 +302,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for an itemReceipt Adds an audit to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param> 
-        /// <param name="itemReceiptAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddItemReceiptAudit (int? itemReceiptId, string itemReceiptAudit)
-        {
-             AddItemReceiptAuditWithHttpInfo(itemReceiptId, itemReceiptAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an itemReceipt Adds an audit to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param> 
-        /// <param name="itemReceiptAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemReceiptAuditWithHttpInfo (int? itemReceiptId, string itemReceiptAudit)
-        {
-            
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling ItemReceiptApi->AddItemReceiptAudit");
-            
-            // verify the required parameter 'itemReceiptAudit' is set
-            if (itemReceiptAudit == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptAudit' when calling ItemReceiptApi->AddItemReceiptAudit");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/audit/{itemReceiptAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            if (itemReceiptAudit != null) localVarPathParams.Add("itemReceiptAudit", Configuration.ApiClient.ParameterToString(itemReceiptAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an itemReceipt Adds an audit to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param>
-        /// <param name="itemReceiptAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemReceiptAuditAsync (int? itemReceiptId, string itemReceiptAudit)
-        {
-             await AddItemReceiptAuditAsyncWithHttpInfo(itemReceiptId, itemReceiptAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an itemReceipt Adds an audit to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add an audit to</param>
-        /// <param name="itemReceiptAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemReceiptAuditAsyncWithHttpInfo (int? itemReceiptId, string itemReceiptAudit)
-        {
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null) throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling AddItemReceiptAudit");
-            // verify the required parameter 'itemReceiptAudit' is set
-            if (itemReceiptAudit == null) throw new ApiException(400, "Missing required parameter 'itemReceiptAudit' when calling AddItemReceiptAudit");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/audit/{itemReceiptAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            if (itemReceiptAudit != null) localVarPathParams.Add("itemReceiptAudit", Configuration.ApiClient.ParameterToString(itemReceiptAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an itemReceipt. Adds a tag to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param> 
-        /// <param name="itemReceiptTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddItemReceiptTag (int? itemReceiptId, string itemReceiptTag)
-        {
-             AddItemReceiptTagWithHttpInfo(itemReceiptId, itemReceiptTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an itemReceipt. Adds a tag to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param> 
-        /// <param name="itemReceiptTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemReceiptTagWithHttpInfo (int? itemReceiptId, string itemReceiptTag)
-        {
-            
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling ItemReceiptApi->AddItemReceiptTag");
-            
-            // verify the required parameter 'itemReceiptTag' is set
-            if (itemReceiptTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptTag' when calling ItemReceiptApi->AddItemReceiptTag");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/tag/{itemReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            if (itemReceiptTag != null) localVarPathParams.Add("itemReceiptTag", Configuration.ApiClient.ParameterToString(itemReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an itemReceipt. Adds a tag to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param>
-        /// <param name="itemReceiptTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemReceiptTagAsync (int? itemReceiptId, string itemReceiptTag)
-        {
-             await AddItemReceiptTagAsyncWithHttpInfo(itemReceiptId, itemReceiptTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an itemReceipt. Adds a tag to an existing itemReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to add a tag to</param>
-        /// <param name="itemReceiptTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemReceiptTagAsyncWithHttpInfo (int? itemReceiptId, string itemReceiptTag)
-        {
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null) throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling AddItemReceiptTag");
-            // verify the required parameter 'itemReceiptTag' is set
-            if (itemReceiptTag == null) throw new ApiException(400, "Missing required parameter 'itemReceiptTag' when calling AddItemReceiptTag");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/tag/{itemReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            if (itemReceiptTag != null) localVarPathParams.Add("itemReceiptTag", Configuration.ApiClient.ParameterToString(itemReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for an itemReceipt. Deletes an existing itemReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param> 
-        /// <param name="itemReceiptTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteItemReceiptTag (int? itemReceiptId, string itemReceiptTag)
-        {
-             DeleteItemReceiptTagWithHttpInfo(itemReceiptId, itemReceiptTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemReceipt. Deletes an existing itemReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param> 
-        /// <param name="itemReceiptTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteItemReceiptTagWithHttpInfo (int? itemReceiptId, string itemReceiptTag)
-        {
-            
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling ItemReceiptApi->DeleteItemReceiptTag");
-            
-            // verify the required parameter 'itemReceiptTag' is set
-            if (itemReceiptTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptTag' when calling ItemReceiptApi->DeleteItemReceiptTag");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/tag/{itemReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            if (itemReceiptTag != null) localVarPathParams.Add("itemReceiptTag", Configuration.ApiClient.ParameterToString(itemReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an itemReceipt. Deletes an existing itemReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param>
-        /// <param name="itemReceiptTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteItemReceiptTagAsync (int? itemReceiptId, string itemReceiptTag)
-        {
-             await DeleteItemReceiptTagAsyncWithHttpInfo(itemReceiptId, itemReceiptTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemReceipt. Deletes an existing itemReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to remove tag from</param>
-        /// <param name="itemReceiptTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemReceiptTagAsyncWithHttpInfo (int? itemReceiptId, string itemReceiptTag)
-        {
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null) throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling DeleteItemReceiptTag");
-            // verify the required parameter 'itemReceiptTag' is set
-            if (itemReceiptTag == null) throw new ApiException(400, "Missing required parameter 'itemReceiptTag' when calling DeleteItemReceiptTag");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/tag/{itemReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            if (itemReceiptTag != null) localVarPathParams.Add("itemReceiptTag", Configuration.ApiClient.ParameterToString(itemReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an itemReceipt by id Returns a duplicated itemReceipt identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1058,7 +327,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling ItemReceiptApi->GetDuplicateItemReceiptById");
             
     
-            var localVarPath = "/beta/itemReceipt/duplicate/{itemReceiptId}";
+            var localVarPath = "/v2.0/itemReceipt/duplicate/{itemReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1143,7 +412,7 @@ namespace Infoplus.Api
             if (itemReceiptId == null) throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling GetDuplicateItemReceiptById");
             
     
-            var localVarPath = "/beta/itemReceipt/duplicate/{itemReceiptId}";
+            var localVarPath = "/v2.0/itemReceipt/duplicate/{itemReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +500,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemReceipt/search";
+            var localVarPath = "/v2.0/itemReceipt/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1323,7 +592,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemReceipt/search";
+            var localVarPath = "/v2.0/itemReceipt/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1412,7 +681,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling ItemReceiptApi->GetItemReceiptById");
             
     
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}";
+            var localVarPath = "/v2.0/itemReceipt/{itemReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1497,7 +766,7 @@ namespace Infoplus.Api
             if (itemReceiptId == null) throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling GetItemReceiptById");
             
     
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}";
+            var localVarPath = "/v2.0/itemReceipt/{itemReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1558,175 +827,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an itemReceipt. Get all existing itemReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param> 
-        /// <returns></returns>
-        public void GetItemReceiptTags (int? itemReceiptId)
-        {
-             GetItemReceiptTagsWithHttpInfo(itemReceiptId);
-        }
-
-        /// <summary>
-        /// Get the tags for an itemReceipt. Get all existing itemReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetItemReceiptTagsWithHttpInfo (int? itemReceiptId)
-        {
-            
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling ItemReceiptApi->GetItemReceiptTags");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemReceiptTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemReceiptTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an itemReceipt. Get all existing itemReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetItemReceiptTagsAsync (int? itemReceiptId)
-        {
-             await GetItemReceiptTagsAsyncWithHttpInfo(itemReceiptId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an itemReceipt. Get all existing itemReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemReceiptId">Id of the itemReceipt to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetItemReceiptTagsAsyncWithHttpInfo (int? itemReceiptId)
-        {
-            // verify the required parameter 'itemReceiptId' is set
-            if (itemReceiptId == null) throw new ApiException(400, "Missing required parameter 'itemReceiptId' when calling GetItemReceiptTags");
-            
-    
-            var localVarPath = "/beta/itemReceipt/{itemReceiptId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemReceiptId != null) localVarPathParams.Add("itemReceiptId", Configuration.ApiClient.ParameterToString(itemReceiptId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemReceiptTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemReceiptTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an itemReceipt custom fields Updates an existing itemReceipt custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1751,7 +851,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemReceiptApi->UpdateItemReceiptCustomFields");
             
     
-            var localVarPath = "/beta/itemReceipt/customFields";
+            var localVarPath = "/v2.0/itemReceipt/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1841,7 +941,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateItemReceiptCustomFields");
             
     
-            var localVarPath = "/beta/itemReceipt/customFields";
+            var localVarPath = "/v2.0/itemReceipt/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

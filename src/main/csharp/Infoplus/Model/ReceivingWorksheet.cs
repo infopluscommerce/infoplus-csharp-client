@@ -28,7 +28,6 @@ namespace Infoplus.Model
         /// <param name="VendorId">VendorId.</param>
         /// <param name="ServiceLevel">ServiceLevel (required).</param>
         /// <param name="ReceivingProcessId">ReceivingProcessId.</param>
-        /// <param name="DockDate">DockDate.</param>
         /// <param name="CreatedBy">CreatedBy.</param>
         /// <param name="WorksheetName">WorksheetName (required).</param>
         /// <param name="Carrier">Carrier.</param>
@@ -38,7 +37,7 @@ namespace Infoplus.Model
         /// <param name="Notes">Notes.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ReceivingWorksheet(int? WarehouseId = null, int? PoNoId = null, int? LobId = null, int? VendorId = null, string ServiceLevel = null, int? ReceivingProcessId = null, DateTime? DockDate = null, int? CreatedBy = null, string WorksheetName = null, string Carrier = null, bool? OnTheDock = null, bool? AutoCommit = null, List<ReceivingWorksheetLineItem> LineItems = null, string Notes = null, Dictionary<string, Object> CustomFields = null)
+        public ReceivingWorksheet(int? WarehouseId = null, int? PoNoId = null, int? LobId = null, int? VendorId = null, string ServiceLevel = null, int? ReceivingProcessId = null, int? CreatedBy = null, string WorksheetName = null, string Carrier = null, bool? OnTheDock = null, bool? AutoCommit = null, List<ReceivingWorksheetLineItem> LineItems = null, string Notes = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -80,7 +79,6 @@ namespace Infoplus.Model
             this.LobId = LobId;
             this.VendorId = VendorId;
             this.ReceivingProcessId = ReceivingProcessId;
-            this.DockDate = DockDate;
             this.CreatedBy = CreatedBy;
             this.Carrier = Carrier;
             // use default value if no "OnTheDock" provided
@@ -146,12 +144,6 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="receivingProcessId", EmitDefaultValue=false)]
         public int? ReceivingProcessId { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets DockDate
-        /// </summary>
-        [DataMember(Name="dockDate", EmitDefaultValue=false)]
-        public DateTime? DockDate { get; set; }
     
         /// <summary>
         /// Gets or Sets CreatedBy
@@ -235,7 +227,6 @@ namespace Infoplus.Model
             sb.Append("  Status: ").Append(Status).Append("\n");
             sb.Append("  ServiceLevel: ").Append(ServiceLevel).Append("\n");
             sb.Append("  ReceivingProcessId: ").Append(ReceivingProcessId).Append("\n");
-            sb.Append("  DockDate: ").Append(DockDate).Append("\n");
             sb.Append("  CreatedBy: ").Append(CreatedBy).Append("\n");
             sb.Append("  WorksheetName: ").Append(WorksheetName).Append("\n");
             sb.Append("  Carrier: ").Append(Carrier).Append("\n");
@@ -323,11 +314,6 @@ namespace Infoplus.Model
                     this.ReceivingProcessId == other.ReceivingProcessId ||
                     this.ReceivingProcessId != null &&
                     this.ReceivingProcessId.Equals(other.ReceivingProcessId)
-                ) && 
-                (
-                    this.DockDate == other.DockDate ||
-                    this.DockDate != null &&
-                    this.DockDate.Equals(other.DockDate)
                 ) && 
                 (
                     this.CreatedBy == other.CreatedBy ||
@@ -421,9 +407,6 @@ namespace Infoplus.Model
                 
                 if (this.ReceivingProcessId != null)
                     hash = hash * 59 + this.ReceivingProcessId.GetHashCode();
-                
-                if (this.DockDate != null)
-                    hash = hash * 59 + this.DockDate.GetHashCode();
                 
                 if (this.CreatedBy != null)
                     hash = hash * 59 + this.CreatedBy.GetHashCode();

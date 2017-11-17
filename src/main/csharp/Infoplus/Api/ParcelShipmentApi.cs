@@ -13,201 +13,201 @@ namespace Infoplus.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public interface IReplenishmentApi
+    public interface IParcelShipmentApi
     {
         #region Synchronous Operations
         
         /// <summary>
-        /// Get a duplicated a replenishment by id
+        /// Get a duplicated a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns a duplicated replenishment identified by the specified id.
+        /// Returns a duplicated parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param>
-        /// <returns>Replenishment</returns>
-        Replenishment GetDuplicateReplenishmentById (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param>
+        /// <returns>ParcelShipment</returns>
+        ParcelShipment GetDuplicateParcelShipmentById (int? parcelShipmentId);
   
         /// <summary>
-        /// Get a duplicated a replenishment by id
+        /// Get a duplicated a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns a duplicated replenishment identified by the specified id.
+        /// Returns a duplicated parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param>
-        /// <returns>ApiResponse of Replenishment</returns>
-        ApiResponse<Replenishment> GetDuplicateReplenishmentByIdWithHttpInfo (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param>
+        /// <returns>ApiResponse of ParcelShipment</returns>
+        ApiResponse<ParcelShipment> GetDuplicateParcelShipmentByIdWithHttpInfo (int? parcelShipmentId);
         
         /// <summary>
-        /// Search replenishments by filter
+        /// Search parcelShipments by filter
         /// </summary>
         /// <remarks>
-        /// Returns the list of replenishments that match the given filter.
+        /// Returns the list of parcelShipments that match the given filter.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param>
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param>
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param>
         /// <param name="sort">Sort results by specified field. (optional)</param>
-        /// <returns>List&lt;Replenishment&gt;</returns>
-        List<Replenishment> GetReplenishmentByFilter (string filter = null, int? page = null, int? limit = null, string sort = null);
+        /// <returns>List&lt;ParcelShipment&gt;</returns>
+        List<ParcelShipment> GetParcelShipmentByFilter (string filter = null, int? page = null, int? limit = null, string sort = null);
   
         /// <summary>
-        /// Search replenishments by filter
+        /// Search parcelShipments by filter
         /// </summary>
         /// <remarks>
-        /// Returns the list of replenishments that match the given filter.
+        /// Returns the list of parcelShipments that match the given filter.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param>
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param>
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param>
         /// <param name="sort">Sort results by specified field. (optional)</param>
-        /// <returns>ApiResponse of List&lt;Replenishment&gt;</returns>
-        ApiResponse<List<Replenishment>> GetReplenishmentByFilterWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null);
+        /// <returns>ApiResponse of List&lt;ParcelShipment&gt;</returns>
+        ApiResponse<List<ParcelShipment>> GetParcelShipmentByFilterWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null);
         
         /// <summary>
-        /// Get a replenishment by id
+        /// Get a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns the replenishment identified by the specified id.
+        /// Returns the parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param>
-        /// <returns>Replenishment</returns>
-        Replenishment GetReplenishmentById (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param>
+        /// <returns>ParcelShipment</returns>
+        ParcelShipment GetParcelShipmentById (int? parcelShipmentId);
   
         /// <summary>
-        /// Get a replenishment by id
+        /// Get a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns the replenishment identified by the specified id.
+        /// Returns the parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param>
-        /// <returns>ApiResponse of Replenishment</returns>
-        ApiResponse<Replenishment> GetReplenishmentByIdWithHttpInfo (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param>
+        /// <returns>ApiResponse of ParcelShipment</returns>
+        ApiResponse<ParcelShipment> GetParcelShipmentByIdWithHttpInfo (int? parcelShipmentId);
         
         /// <summary>
-        /// Update a replenishment custom fields
+        /// Update a parcelShipment custom fields
         /// </summary>
         /// <remarks>
-        /// Updates an existing replenishment custom fields using the specified data.
+        /// Updates an existing parcelShipment custom fields using the specified data.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param>
+        /// <param name="body">ParcelShipment to be updated.</param>
         /// <returns></returns>
-        void UpdateReplenishmentCustomFields (Replenishment body);
+        void UpdateParcelShipmentCustomFields (ParcelShipment body);
   
         /// <summary>
-        /// Update a replenishment custom fields
+        /// Update a parcelShipment custom fields
         /// </summary>
         /// <remarks>
-        /// Updates an existing replenishment custom fields using the specified data.
+        /// Updates an existing parcelShipment custom fields using the specified data.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param>
+        /// <param name="body">ParcelShipment to be updated.</param>
         /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> UpdateReplenishmentCustomFieldsWithHttpInfo (Replenishment body);
+        ApiResponse<Object> UpdateParcelShipmentCustomFieldsWithHttpInfo (ParcelShipment body);
         
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
         
         /// <summary>
-        /// Get a duplicated a replenishment by id
+        /// Get a duplicated a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns a duplicated replenishment identified by the specified id.
+        /// Returns a duplicated parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param>
-        /// <returns>Task of Replenishment</returns>
-        System.Threading.Tasks.Task<Replenishment> GetDuplicateReplenishmentByIdAsync (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param>
+        /// <returns>Task of ParcelShipment</returns>
+        System.Threading.Tasks.Task<ParcelShipment> GetDuplicateParcelShipmentByIdAsync (int? parcelShipmentId);
 
         /// <summary>
-        /// Get a duplicated a replenishment by id
+        /// Get a duplicated a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns a duplicated replenishment identified by the specified id.
+        /// Returns a duplicated parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param>
-        /// <returns>Task of ApiResponse (Replenishment)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Replenishment>> GetDuplicateReplenishmentByIdAsyncWithHttpInfo (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param>
+        /// <returns>Task of ApiResponse (ParcelShipment)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ParcelShipment>> GetDuplicateParcelShipmentByIdAsyncWithHttpInfo (int? parcelShipmentId);
         
         /// <summary>
-        /// Search replenishments by filter
+        /// Search parcelShipments by filter
         /// </summary>
         /// <remarks>
-        /// Returns the list of replenishments that match the given filter.
+        /// Returns the list of parcelShipments that match the given filter.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param>
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param>
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param>
         /// <param name="sort">Sort results by specified field. (optional)</param>
-        /// <returns>Task of List&lt;Replenishment&gt;</returns>
-        System.Threading.Tasks.Task<List<Replenishment>> GetReplenishmentByFilterAsync (string filter = null, int? page = null, int? limit = null, string sort = null);
+        /// <returns>Task of List&lt;ParcelShipment&gt;</returns>
+        System.Threading.Tasks.Task<List<ParcelShipment>> GetParcelShipmentByFilterAsync (string filter = null, int? page = null, int? limit = null, string sort = null);
 
         /// <summary>
-        /// Search replenishments by filter
+        /// Search parcelShipments by filter
         /// </summary>
         /// <remarks>
-        /// Returns the list of replenishments that match the given filter.
+        /// Returns the list of parcelShipments that match the given filter.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param>
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param>
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param>
         /// <param name="sort">Sort results by specified field. (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;Replenishment&gt;)</returns>
-        System.Threading.Tasks.Task<ApiResponse<List<Replenishment>>> GetReplenishmentByFilterAsyncWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null);
+        /// <returns>Task of ApiResponse (List&lt;ParcelShipment&gt;)</returns>
+        System.Threading.Tasks.Task<ApiResponse<List<ParcelShipment>>> GetParcelShipmentByFilterAsyncWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null);
         
         /// <summary>
-        /// Get a replenishment by id
+        /// Get a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns the replenishment identified by the specified id.
+        /// Returns the parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param>
-        /// <returns>Task of Replenishment</returns>
-        System.Threading.Tasks.Task<Replenishment> GetReplenishmentByIdAsync (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param>
+        /// <returns>Task of ParcelShipment</returns>
+        System.Threading.Tasks.Task<ParcelShipment> GetParcelShipmentByIdAsync (int? parcelShipmentId);
 
         /// <summary>
-        /// Get a replenishment by id
+        /// Get a parcelShipment by id
         /// </summary>
         /// <remarks>
-        /// Returns the replenishment identified by the specified id.
+        /// Returns the parcelShipment identified by the specified id.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param>
-        /// <returns>Task of ApiResponse (Replenishment)</returns>
-        System.Threading.Tasks.Task<ApiResponse<Replenishment>> GetReplenishmentByIdAsyncWithHttpInfo (int? replenishmentId);
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param>
+        /// <returns>Task of ApiResponse (ParcelShipment)</returns>
+        System.Threading.Tasks.Task<ApiResponse<ParcelShipment>> GetParcelShipmentByIdAsyncWithHttpInfo (int? parcelShipmentId);
         
         /// <summary>
-        /// Update a replenishment custom fields
+        /// Update a parcelShipment custom fields
         /// </summary>
         /// <remarks>
-        /// Updates an existing replenishment custom fields using the specified data.
+        /// Updates an existing parcelShipment custom fields using the specified data.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param>
+        /// <param name="body">ParcelShipment to be updated.</param>
         /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task UpdateReplenishmentCustomFieldsAsync (Replenishment body);
+        System.Threading.Tasks.Task UpdateParcelShipmentCustomFieldsAsync (ParcelShipment body);
 
         /// <summary>
-        /// Update a replenishment custom fields
+        /// Update a parcelShipment custom fields
         /// </summary>
         /// <remarks>
-        /// Updates an existing replenishment custom fields using the specified data.
+        /// Updates an existing parcelShipment custom fields using the specified data.
         /// </remarks>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param>
+        /// <param name="body">ParcelShipment to be updated.</param>
         /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateReplenishmentCustomFieldsAsyncWithHttpInfo (Replenishment body);
+        System.Threading.Tasks.Task<ApiResponse<Object>> UpdateParcelShipmentCustomFieldsAsyncWithHttpInfo (ParcelShipment body);
         
         #endregion Asynchronous Operations
         
@@ -216,13 +216,13 @@ namespace Infoplus.Api
     /// <summary>
     /// Represents a collection of functions to interact with the API endpoints
     /// </summary>
-    public class ReplenishmentApi : IReplenishmentApi
+    public class ParcelShipmentApi : IParcelShipmentApi
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReplenishmentApi"/> class.
+        /// Initializes a new instance of the <see cref="ParcelShipmentApi"/> class.
         /// </summary>
         /// <returns></returns>
-        public ReplenishmentApi(String basePath)
+        public ParcelShipmentApi(String basePath)
         {
             this.Configuration = new Configuration(new ApiClient(basePath));
 
@@ -234,12 +234,12 @@ namespace Infoplus.Api
         }
     
         /// <summary>
-        /// Initializes a new instance of the <see cref="ReplenishmentApi"/> class
+        /// Initializes a new instance of the <see cref="ParcelShipmentApi"/> class
         /// using Configuration object
         /// </summary>
         /// <param name="configuration">An instance of Configuration</param>
         /// <returns></returns>
-        public ReplenishmentApi(Configuration configuration = null)
+        public ParcelShipmentApi(Configuration configuration = null)
         {
             if (configuration == null) // use the default one in Configuration
                 this.Configuration = Configuration.Default; 
@@ -302,32 +302,32 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Get a duplicated a replenishment by id Returns a duplicated replenishment identified by the specified id.
+        /// Get a duplicated a parcelShipment by id Returns a duplicated parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param> 
-        /// <returns>Replenishment</returns>
-        public Replenishment GetDuplicateReplenishmentById (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param> 
+        /// <returns>ParcelShipment</returns>
+        public ParcelShipment GetDuplicateParcelShipmentById (int? parcelShipmentId)
         {
-             ApiResponse<Replenishment> localVarResponse = GetDuplicateReplenishmentByIdWithHttpInfo(replenishmentId);
+             ApiResponse<ParcelShipment> localVarResponse = GetDuplicateParcelShipmentByIdWithHttpInfo(parcelShipmentId);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get a duplicated a replenishment by id Returns a duplicated replenishment identified by the specified id.
+        /// Get a duplicated a parcelShipment by id Returns a duplicated parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param> 
-        /// <returns>ApiResponse of Replenishment</returns>
-        public ApiResponse< Replenishment > GetDuplicateReplenishmentByIdWithHttpInfo (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param> 
+        /// <returns>ApiResponse of ParcelShipment</returns>
+        public ApiResponse< ParcelShipment > GetDuplicateParcelShipmentByIdWithHttpInfo (int? parcelShipmentId)
         {
             
-            // verify the required parameter 'replenishmentId' is set
-            if (replenishmentId == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentId' when calling ReplenishmentApi->GetDuplicateReplenishmentById");
+            // verify the required parameter 'parcelShipmentId' is set
+            if (parcelShipmentId == null)
+                throw new ApiException(400, "Missing required parameter 'parcelShipmentId' when calling ParcelShipmentApi->GetDuplicateParcelShipmentById");
             
     
-            var localVarPath = "/v2.0/replenishment/duplicate/{replenishmentId}";
+            var localVarPath = "/v2.0/parcelShipment/duplicate/{parcelShipmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -353,7 +353,7 @@ namespace Infoplus.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
-            if (replenishmentId != null) localVarPathParams.Add("replenishmentId", Configuration.ApiClient.ParameterToString(replenishmentId)); // path parameter
+            if (parcelShipmentId != null) localVarPathParams.Add("parcelShipmentId", Configuration.ApiClient.ParameterToString(parcelShipmentId)); // path parameter
             
             
             
@@ -376,43 +376,43 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateReplenishmentById: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateParcelShipmentById: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateReplenishmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateParcelShipmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
-            return new ApiResponse<Replenishment>(localVarStatusCode,
+            return new ApiResponse<ParcelShipment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Replenishment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Replenishment)));
+                (ParcelShipment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ParcelShipment)));
             
         }
 
         
         /// <summary>
-        /// Get a duplicated a replenishment by id Returns a duplicated replenishment identified by the specified id.
+        /// Get a duplicated a parcelShipment by id Returns a duplicated parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param>
-        /// <returns>Task of Replenishment</returns>
-        public async System.Threading.Tasks.Task<Replenishment> GetDuplicateReplenishmentByIdAsync (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param>
+        /// <returns>Task of ParcelShipment</returns>
+        public async System.Threading.Tasks.Task<ParcelShipment> GetDuplicateParcelShipmentByIdAsync (int? parcelShipmentId)
         {
-             ApiResponse<Replenishment> localVarResponse = await GetDuplicateReplenishmentByIdAsyncWithHttpInfo(replenishmentId);
+             ApiResponse<ParcelShipment> localVarResponse = await GetDuplicateParcelShipmentByIdAsyncWithHttpInfo(parcelShipmentId);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Get a duplicated a replenishment by id Returns a duplicated replenishment identified by the specified id.
+        /// Get a duplicated a parcelShipment by id Returns a duplicated parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be duplicated.</param>
-        /// <returns>Task of ApiResponse (Replenishment)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Replenishment>> GetDuplicateReplenishmentByIdAsyncWithHttpInfo (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be duplicated.</param>
+        /// <returns>Task of ApiResponse (ParcelShipment)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ParcelShipment>> GetDuplicateParcelShipmentByIdAsyncWithHttpInfo (int? parcelShipmentId)
         {
-            // verify the required parameter 'replenishmentId' is set
-            if (replenishmentId == null) throw new ApiException(400, "Missing required parameter 'replenishmentId' when calling GetDuplicateReplenishmentById");
+            // verify the required parameter 'parcelShipmentId' is set
+            if (parcelShipmentId == null) throw new ApiException(400, "Missing required parameter 'parcelShipmentId' when calling GetDuplicateParcelShipmentById");
             
     
-            var localVarPath = "/v2.0/replenishment/duplicate/{replenishmentId}";
+            var localVarPath = "/v2.0/parcelShipment/duplicate/{parcelShipmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -438,7 +438,7 @@ namespace Infoplus.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
-            if (replenishmentId != null) localVarPathParams.Add("replenishmentId", Configuration.ApiClient.ParameterToString(replenishmentId)); // path parameter
+            if (parcelShipmentId != null) localVarPathParams.Add("parcelShipmentId", Configuration.ApiClient.ParameterToString(parcelShipmentId)); // path parameter
             
             
             
@@ -462,45 +462,45 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateReplenishmentById: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateParcelShipmentById: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateReplenishmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling GetDuplicateParcelShipmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
-            return new ApiResponse<Replenishment>(localVarStatusCode,
+            return new ApiResponse<ParcelShipment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Replenishment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Replenishment)));
+                (ParcelShipment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ParcelShipment)));
             
         }
         
         /// <summary>
-        /// Search replenishments by filter Returns the list of replenishments that match the given filter.
+        /// Search parcelShipments by filter Returns the list of parcelShipments that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param> 
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param> 
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param> 
         /// <param name="sort">Sort results by specified field. (optional)</param> 
-        /// <returns>List&lt;Replenishment&gt;</returns>
-        public List<Replenishment> GetReplenishmentByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
+        /// <returns>List&lt;ParcelShipment&gt;</returns>
+        public List<ParcelShipment> GetParcelShipmentByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
         {
-             ApiResponse<List<Replenishment>> localVarResponse = GetReplenishmentByFilterWithHttpInfo(filter, page, limit, sort);
+             ApiResponse<List<ParcelShipment>> localVarResponse = GetParcelShipmentByFilterWithHttpInfo(filter, page, limit, sort);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Search replenishments by filter Returns the list of replenishments that match the given filter.
+        /// Search parcelShipments by filter Returns the list of parcelShipments that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param> 
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param> 
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param> 
         /// <param name="sort">Sort results by specified field. (optional)</param> 
-        /// <returns>ApiResponse of List&lt;Replenishment&gt;</returns>
-        public ApiResponse< List<Replenishment> > GetReplenishmentByFilterWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null)
+        /// <returns>ApiResponse of List&lt;ParcelShipment&gt;</returns>
+        public ApiResponse< List<ParcelShipment> > GetParcelShipmentByFilterWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null)
         {
             
     
-            var localVarPath = "/v2.0/replenishment/search";
+            var localVarPath = "/v2.0/parcelShipment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -552,47 +552,47 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentByFilter: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentByFilter: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentByFilter: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentByFilter: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
-            return new ApiResponse<List<Replenishment>>(localVarStatusCode,
+            return new ApiResponse<List<ParcelShipment>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Replenishment>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Replenishment>)));
+                (List<ParcelShipment>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ParcelShipment>)));
             
         }
 
         
         /// <summary>
-        /// Search replenishments by filter Returns the list of replenishments that match the given filter.
+        /// Search parcelShipments by filter Returns the list of parcelShipments that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param>
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param>
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param>
         /// <param name="sort">Sort results by specified field. (optional)</param>
-        /// <returns>Task of List&lt;Replenishment&gt;</returns>
-        public async System.Threading.Tasks.Task<List<Replenishment>> GetReplenishmentByFilterAsync (string filter = null, int? page = null, int? limit = null, string sort = null)
+        /// <returns>Task of List&lt;ParcelShipment&gt;</returns>
+        public async System.Threading.Tasks.Task<List<ParcelShipment>> GetParcelShipmentByFilterAsync (string filter = null, int? page = null, int? limit = null, string sort = null)
         {
-             ApiResponse<List<Replenishment>> localVarResponse = await GetReplenishmentByFilterAsyncWithHttpInfo(filter, page, limit, sort);
+             ApiResponse<List<ParcelShipment>> localVarResponse = await GetParcelShipmentByFilterAsyncWithHttpInfo(filter, page, limit, sort);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Search replenishments by filter Returns the list of replenishments that match the given filter.
+        /// Search parcelShipments by filter Returns the list of parcelShipments that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
         /// <param name="filter">Query string, used to filter results. (optional)</param>
         /// <param name="page">Result page number.  Defaults to 1. (optional)</param>
         /// <param name="limit">Maximum results per page.  Defaults to 20.  Max allowed value is 250. (optional)</param>
         /// <param name="sort">Sort results by specified field. (optional)</param>
-        /// <returns>Task of ApiResponse (List&lt;Replenishment&gt;)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<List<Replenishment>>> GetReplenishmentByFilterAsyncWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null)
+        /// <returns>Task of ApiResponse (List&lt;ParcelShipment&gt;)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<List<ParcelShipment>>> GetParcelShipmentByFilterAsyncWithHttpInfo (string filter = null, int? page = null, int? limit = null, string sort = null)
         {
             
     
-            var localVarPath = "/v2.0/replenishment/search";
+            var localVarPath = "/v2.0/parcelShipment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -645,43 +645,43 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentByFilter: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentByFilter: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentByFilter: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentByFilter: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
-            return new ApiResponse<List<Replenishment>>(localVarStatusCode,
+            return new ApiResponse<List<ParcelShipment>>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (List<Replenishment>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<Replenishment>)));
+                (List<ParcelShipment>) Configuration.ApiClient.Deserialize(localVarResponse, typeof(List<ParcelShipment>)));
             
         }
         
         /// <summary>
-        /// Get a replenishment by id Returns the replenishment identified by the specified id.
+        /// Get a parcelShipment by id Returns the parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param> 
-        /// <returns>Replenishment</returns>
-        public Replenishment GetReplenishmentById (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param> 
+        /// <returns>ParcelShipment</returns>
+        public ParcelShipment GetParcelShipmentById (int? parcelShipmentId)
         {
-             ApiResponse<Replenishment> localVarResponse = GetReplenishmentByIdWithHttpInfo(replenishmentId);
+             ApiResponse<ParcelShipment> localVarResponse = GetParcelShipmentByIdWithHttpInfo(parcelShipmentId);
              return localVarResponse.Data;
         }
 
         /// <summary>
-        /// Get a replenishment by id Returns the replenishment identified by the specified id.
+        /// Get a parcelShipment by id Returns the parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param> 
-        /// <returns>ApiResponse of Replenishment</returns>
-        public ApiResponse< Replenishment > GetReplenishmentByIdWithHttpInfo (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param> 
+        /// <returns>ApiResponse of ParcelShipment</returns>
+        public ApiResponse< ParcelShipment > GetParcelShipmentByIdWithHttpInfo (int? parcelShipmentId)
         {
             
-            // verify the required parameter 'replenishmentId' is set
-            if (replenishmentId == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentId' when calling ReplenishmentApi->GetReplenishmentById");
+            // verify the required parameter 'parcelShipmentId' is set
+            if (parcelShipmentId == null)
+                throw new ApiException(400, "Missing required parameter 'parcelShipmentId' when calling ParcelShipmentApi->GetParcelShipmentById");
             
     
-            var localVarPath = "/v2.0/replenishment/{replenishmentId}";
+            var localVarPath = "/v2.0/parcelShipment/{parcelShipmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -707,7 +707,7 @@ namespace Infoplus.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
-            if (replenishmentId != null) localVarPathParams.Add("replenishmentId", Configuration.ApiClient.ParameterToString(replenishmentId)); // path parameter
+            if (parcelShipmentId != null) localVarPathParams.Add("parcelShipmentId", Configuration.ApiClient.ParameterToString(parcelShipmentId)); // path parameter
             
             
             
@@ -730,43 +730,43 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentById: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentById: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
-            return new ApiResponse<Replenishment>(localVarStatusCode,
+            return new ApiResponse<ParcelShipment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Replenishment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Replenishment)));
+                (ParcelShipment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ParcelShipment)));
             
         }
 
         
         /// <summary>
-        /// Get a replenishment by id Returns the replenishment identified by the specified id.
+        /// Get a parcelShipment by id Returns the parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param>
-        /// <returns>Task of Replenishment</returns>
-        public async System.Threading.Tasks.Task<Replenishment> GetReplenishmentByIdAsync (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param>
+        /// <returns>Task of ParcelShipment</returns>
+        public async System.Threading.Tasks.Task<ParcelShipment> GetParcelShipmentByIdAsync (int? parcelShipmentId)
         {
-             ApiResponse<Replenishment> localVarResponse = await GetReplenishmentByIdAsyncWithHttpInfo(replenishmentId);
+             ApiResponse<ParcelShipment> localVarResponse = await GetParcelShipmentByIdAsyncWithHttpInfo(parcelShipmentId);
              return localVarResponse.Data;
 
         }
 
         /// <summary>
-        /// Get a replenishment by id Returns the replenishment identified by the specified id.
+        /// Get a parcelShipment by id Returns the parcelShipment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentId">Id of the replenishment to be returned.</param>
-        /// <returns>Task of ApiResponse (Replenishment)</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Replenishment>> GetReplenishmentByIdAsyncWithHttpInfo (int? replenishmentId)
+        /// <param name="parcelShipmentId">Id of the parcelShipment to be returned.</param>
+        /// <returns>Task of ApiResponse (ParcelShipment)</returns>
+        public async System.Threading.Tasks.Task<ApiResponse<ParcelShipment>> GetParcelShipmentByIdAsyncWithHttpInfo (int? parcelShipmentId)
         {
-            // verify the required parameter 'replenishmentId' is set
-            if (replenishmentId == null) throw new ApiException(400, "Missing required parameter 'replenishmentId' when calling GetReplenishmentById");
+            // verify the required parameter 'parcelShipmentId' is set
+            if (parcelShipmentId == null) throw new ApiException(400, "Missing required parameter 'parcelShipmentId' when calling GetParcelShipmentById");
             
     
-            var localVarPath = "/v2.0/replenishment/{replenishmentId}";
+            var localVarPath = "/v2.0/parcelShipment/{parcelShipmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -792,7 +792,7 @@ namespace Infoplus.Api
             // set "format" to json by default
             // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
             localVarPathParams.Add("format", "json");
-            if (replenishmentId != null) localVarPathParams.Add("replenishmentId", Configuration.ApiClient.ParameterToString(replenishmentId)); // path parameter
+            if (parcelShipmentId != null) localVarPathParams.Add("parcelShipmentId", Configuration.ApiClient.ParameterToString(parcelShipmentId)); // path parameter
             
             
             
@@ -816,42 +816,42 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentById: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentById: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling GetParcelShipmentById: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
-            return new ApiResponse<Replenishment>(localVarStatusCode,
+            return new ApiResponse<ParcelShipment>(localVarStatusCode,
                 localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                (Replenishment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(Replenishment)));
+                (ParcelShipment) Configuration.ApiClient.Deserialize(localVarResponse, typeof(ParcelShipment)));
             
         }
         
         /// <summary>
-        /// Update a replenishment custom fields Updates an existing replenishment custom fields using the specified data.
+        /// Update a parcelShipment custom fields Updates an existing parcelShipment custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param> 
+        /// <param name="body">ParcelShipment to be updated.</param> 
         /// <returns></returns>
-        public void UpdateReplenishmentCustomFields (Replenishment body)
+        public void UpdateParcelShipmentCustomFields (ParcelShipment body)
         {
-             UpdateReplenishmentCustomFieldsWithHttpInfo(body);
+             UpdateParcelShipmentCustomFieldsWithHttpInfo(body);
         }
 
         /// <summary>
-        /// Update a replenishment custom fields Updates an existing replenishment custom fields using the specified data.
+        /// Update a parcelShipment custom fields Updates an existing parcelShipment custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param> 
+        /// <param name="body">ParcelShipment to be updated.</param> 
         /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> UpdateReplenishmentCustomFieldsWithHttpInfo (Replenishment body)
+        public ApiResponse<Object> UpdateParcelShipmentCustomFieldsWithHttpInfo (ParcelShipment body)
         {
             
             // verify the required parameter 'body' is set
             if (body == null)
-                throw new ApiException(400, "Missing required parameter 'body' when calling ReplenishmentApi->UpdateReplenishmentCustomFields");
+                throw new ApiException(400, "Missing required parameter 'body' when calling ParcelShipmentApi->UpdateParcelShipmentCustomFields");
             
     
-            var localVarPath = "/v2.0/replenishment/customFields";
+            var localVarPath = "/v2.0/parcelShipment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -906,9 +906,9 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
     
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateReplenishmentCustomFields: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling UpdateParcelShipmentCustomFields: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateReplenishmentCustomFields: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling UpdateParcelShipmentCustomFields: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
     
             
             return new ApiResponse<Object>(localVarStatusCode,
@@ -918,30 +918,30 @@ namespace Infoplus.Api
 
         
         /// <summary>
-        /// Update a replenishment custom fields Updates an existing replenishment custom fields using the specified data.
+        /// Update a parcelShipment custom fields Updates an existing parcelShipment custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param>
+        /// <param name="body">ParcelShipment to be updated.</param>
         /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task UpdateReplenishmentCustomFieldsAsync (Replenishment body)
+        public async System.Threading.Tasks.Task UpdateParcelShipmentCustomFieldsAsync (ParcelShipment body)
         {
-             await UpdateReplenishmentCustomFieldsAsyncWithHttpInfo(body);
+             await UpdateParcelShipmentCustomFieldsAsyncWithHttpInfo(body);
 
         }
 
         /// <summary>
-        /// Update a replenishment custom fields Updates an existing replenishment custom fields using the specified data.
+        /// Update a parcelShipment custom fields Updates an existing parcelShipment custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="body">Replenishment to be updated.</param>
+        /// <param name="body">ParcelShipment to be updated.</param>
         /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateReplenishmentCustomFieldsAsyncWithHttpInfo (Replenishment body)
+        public async System.Threading.Tasks.Task<ApiResponse<Object>> UpdateParcelShipmentCustomFieldsAsyncWithHttpInfo (ParcelShipment body)
         {
             // verify the required parameter 'body' is set
-            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateReplenishmentCustomFields");
+            if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateParcelShipmentCustomFields");
             
     
-            var localVarPath = "/v2.0/replenishment/customFields";
+            var localVarPath = "/v2.0/parcelShipment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -997,9 +997,9 @@ namespace Infoplus.Api
             int localVarStatusCode = (int) localVarResponse.StatusCode;
  
             if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateReplenishmentCustomFields: " + localVarResponse.Content, localVarResponse.Content);
+                throw new ApiException (localVarStatusCode, "Error calling UpdateParcelShipmentCustomFields: " + localVarResponse.Content, localVarResponse.Content);
             else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling UpdateReplenishmentCustomFields: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
+                throw new ApiException (localVarStatusCode, "Error calling UpdateParcelShipmentCustomFields: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
 
             
             return new ApiResponse<Object>(localVarStatusCode,

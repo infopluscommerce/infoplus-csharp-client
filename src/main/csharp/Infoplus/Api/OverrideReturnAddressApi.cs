@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<OverrideReturnAddress> AddOverrideReturnAddressWithHttpInfo (OverrideReturnAddress body);
         
         /// <summary>
-        /// Add new audit for an overrideReturnAddress
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param>
-        /// <param name="overrideReturnAddressAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddOverrideReturnAddressAudit (int? overrideReturnAddressId, string overrideReturnAddressAudit);
-  
-        /// <summary>
-        /// Add new audit for an overrideReturnAddress
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param>
-        /// <param name="overrideReturnAddressAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddOverrideReturnAddressAuditWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressAudit);
-        
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param>
-        /// <param name="overrideReturnAddressTag">The tag to add</param>
-        /// <returns></returns>
-        void AddOverrideReturnAddressTag (int? overrideReturnAddressId, string overrideReturnAddressTag);
-  
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param>
-        /// <param name="overrideReturnAddressTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddOverrideReturnAddressTagWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag);
-        
-        /// <summary>
         /// Delete an overrideReturnAddress
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteOverrideReturnAddressWithHttpInfo (int? overrideReturnAddressId);
-        
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param>
-        /// <param name="overrideReturnAddressTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteOverrideReturnAddressTag (int? overrideReturnAddressId, string overrideReturnAddressTag);
-  
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param>
-        /// <param name="overrideReturnAddressTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteOverrideReturnAddressTagWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag);
         
         /// <summary>
         /// Get a duplicated an overrideReturnAddress by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<OverrideReturnAddress> GetOverrideReturnAddressByIdWithHttpInfo (int? overrideReturnAddressId);
         
         /// <summary>
-        /// Get the tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing overrideReturnAddress tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param>
-        /// <returns></returns>
-        void GetOverrideReturnAddressTags (int? overrideReturnAddressId);
-  
-        /// <summary>
-        /// Get the tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing overrideReturnAddress tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetOverrideReturnAddressTagsWithHttpInfo (int? overrideReturnAddressId);
-        
-        /// <summary>
         /// Update an overrideReturnAddress
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<OverrideReturnAddress>> AddOverrideReturnAddressAsyncWithHttpInfo (OverrideReturnAddress body);
         
         /// <summary>
-        /// Add new audit for an overrideReturnAddress
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param>
-        /// <param name="overrideReturnAddressAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddOverrideReturnAddressAuditAsync (int? overrideReturnAddressId, string overrideReturnAddressAudit);
-
-        /// <summary>
-        /// Add new audit for an overrideReturnAddress
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param>
-        /// <param name="overrideReturnAddressAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddOverrideReturnAddressAuditAsyncWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressAudit);
-        
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param>
-        /// <param name="overrideReturnAddressTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddOverrideReturnAddressTagAsync (int? overrideReturnAddressId, string overrideReturnAddressTag);
-
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing overrideReturnAddress.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param>
-        /// <param name="overrideReturnAddressTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddOverrideReturnAddressTagAsyncWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag);
-        
-        /// <summary>
         /// Delete an overrideReturnAddress
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteOverrideReturnAddressAsyncWithHttpInfo (int? overrideReturnAddressId);
-        
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param>
-        /// <param name="overrideReturnAddressTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteOverrideReturnAddressTagAsync (int? overrideReturnAddressId, string overrideReturnAddressTag);
-
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param>
-        /// <param name="overrideReturnAddressTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteOverrideReturnAddressTagAsyncWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag);
         
         /// <summary>
         /// Get a duplicated an overrideReturnAddress by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to be returned.</param>
         /// <returns>Task of ApiResponse (OverrideReturnAddress)</returns>
         System.Threading.Tasks.Task<ApiResponse<OverrideReturnAddress>> GetOverrideReturnAddressByIdAsyncWithHttpInfo (int? overrideReturnAddressId);
-        
-        /// <summary>
-        /// Get the tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing overrideReturnAddress tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetOverrideReturnAddressTagsAsync (int? overrideReturnAddressId);
-
-        /// <summary>
-        /// Get the tags for an overrideReturnAddress.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing overrideReturnAddress tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetOverrideReturnAddressTagsAsyncWithHttpInfo (int? overrideReturnAddressId);
         
         /// <summary>
         /// Update an overrideReturnAddress
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling OverrideReturnAddressApi->AddOverrideReturnAddress");
             
     
-            var localVarPath = "/beta/overrideReturnAddress";
+            var localVarPath = "/v2.0/overrideReturnAddress";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddOverrideReturnAddress");
             
     
-            var localVarPath = "/beta/overrideReturnAddress";
+            var localVarPath = "/v2.0/overrideReturnAddress";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an overrideReturnAddress Adds an audit to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param> 
-        /// <param name="overrideReturnAddressAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddOverrideReturnAddressAudit (int? overrideReturnAddressId, string overrideReturnAddressAudit)
-        {
-             AddOverrideReturnAddressAuditWithHttpInfo(overrideReturnAddressId, overrideReturnAddressAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an overrideReturnAddress Adds an audit to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param> 
-        /// <param name="overrideReturnAddressAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddOverrideReturnAddressAuditWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressAudit)
-        {
-            
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->AddOverrideReturnAddressAudit");
-            
-            // verify the required parameter 'overrideReturnAddressAudit' is set
-            if (overrideReturnAddressAudit == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressAudit' when calling OverrideReturnAddressApi->AddOverrideReturnAddressAudit");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/audit/{overrideReturnAddressAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            if (overrideReturnAddressAudit != null) localVarPathParams.Add("overrideReturnAddressAudit", Configuration.ApiClient.ParameterToString(overrideReturnAddressAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an overrideReturnAddress Adds an audit to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param>
-        /// <param name="overrideReturnAddressAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddOverrideReturnAddressAuditAsync (int? overrideReturnAddressId, string overrideReturnAddressAudit)
-        {
-             await AddOverrideReturnAddressAuditAsyncWithHttpInfo(overrideReturnAddressId, overrideReturnAddressAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an overrideReturnAddress Adds an audit to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add an audit to</param>
-        /// <param name="overrideReturnAddressAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddOverrideReturnAddressAuditAsyncWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressAudit)
-        {
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling AddOverrideReturnAddressAudit");
-            // verify the required parameter 'overrideReturnAddressAudit' is set
-            if (overrideReturnAddressAudit == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressAudit' when calling AddOverrideReturnAddressAudit");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/audit/{overrideReturnAddressAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            if (overrideReturnAddressAudit != null) localVarPathParams.Add("overrideReturnAddressAudit", Configuration.ApiClient.ParameterToString(overrideReturnAddressAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress. Adds a tag to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param> 
-        /// <param name="overrideReturnAddressTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddOverrideReturnAddressTag (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-             AddOverrideReturnAddressTagWithHttpInfo(overrideReturnAddressId, overrideReturnAddressTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress. Adds a tag to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param> 
-        /// <param name="overrideReturnAddressTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddOverrideReturnAddressTagWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-            
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->AddOverrideReturnAddressTag");
-            
-            // verify the required parameter 'overrideReturnAddressTag' is set
-            if (overrideReturnAddressTag == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressTag' when calling OverrideReturnAddressApi->AddOverrideReturnAddressTag");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/tag/{overrideReturnAddressTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            if (overrideReturnAddressTag != null) localVarPathParams.Add("overrideReturnAddressTag", Configuration.ApiClient.ParameterToString(overrideReturnAddressTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress. Adds a tag to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param>
-        /// <param name="overrideReturnAddressTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddOverrideReturnAddressTagAsync (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-             await AddOverrideReturnAddressTagAsyncWithHttpInfo(overrideReturnAddressId, overrideReturnAddressTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an overrideReturnAddress. Adds a tag to an existing overrideReturnAddress.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to add a tag to</param>
-        /// <param name="overrideReturnAddressTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddOverrideReturnAddressTagAsyncWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling AddOverrideReturnAddressTag");
-            // verify the required parameter 'overrideReturnAddressTag' is set
-            if (overrideReturnAddressTag == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressTag' when calling AddOverrideReturnAddressTag");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/tag/{overrideReturnAddressTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            if (overrideReturnAddressTag != null) localVarPathParams.Add("overrideReturnAddressTag", Configuration.ApiClient.ParameterToString(overrideReturnAddressTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOverrideReturnAddressTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an overrideReturnAddress Deletes the overrideReturnAddress identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->DeleteOverrideReturnAddress");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}";
+            var localVarPath = "/v2.0/overrideReturnAddress/{overrideReturnAddressId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling DeleteOverrideReturnAddress");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}";
+            var localVarPath = "/v2.0/overrideReturnAddress/{overrideReturnAddressId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an overrideReturnAddress. Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param> 
-        /// <param name="overrideReturnAddressTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteOverrideReturnAddressTag (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-             DeleteOverrideReturnAddressTagWithHttpInfo(overrideReturnAddressId, overrideReturnAddressTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress. Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param> 
-        /// <param name="overrideReturnAddressTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteOverrideReturnAddressTagWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-            
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->DeleteOverrideReturnAddressTag");
-            
-            // verify the required parameter 'overrideReturnAddressTag' is set
-            if (overrideReturnAddressTag == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressTag' when calling OverrideReturnAddressApi->DeleteOverrideReturnAddressTag");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/tag/{overrideReturnAddressTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            if (overrideReturnAddressTag != null) localVarPathParams.Add("overrideReturnAddressTag", Configuration.ApiClient.ParameterToString(overrideReturnAddressTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOverrideReturnAddressTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOverrideReturnAddressTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress. Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param>
-        /// <param name="overrideReturnAddressTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteOverrideReturnAddressTagAsync (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-             await DeleteOverrideReturnAddressTagAsyncWithHttpInfo(overrideReturnAddressId, overrideReturnAddressTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an overrideReturnAddress. Deletes an existing overrideReturnAddress tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to remove tag from</param>
-        /// <param name="overrideReturnAddressTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteOverrideReturnAddressTagAsyncWithHttpInfo (int? overrideReturnAddressId, string overrideReturnAddressTag)
-        {
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling DeleteOverrideReturnAddressTag");
-            // verify the required parameter 'overrideReturnAddressTag' is set
-            if (overrideReturnAddressTag == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressTag' when calling DeleteOverrideReturnAddressTag");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/tag/{overrideReturnAddressTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            if (overrideReturnAddressTag != null) localVarPathParams.Add("overrideReturnAddressTag", Configuration.ApiClient.ParameterToString(overrideReturnAddressTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOverrideReturnAddressTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOverrideReturnAddressTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an overrideReturnAddress by id Returns a duplicated overrideReturnAddress identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->GetDuplicateOverrideReturnAddressById");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/duplicate/{overrideReturnAddressId}";
+            var localVarPath = "/v2.0/overrideReturnAddress/duplicate/{overrideReturnAddressId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling GetDuplicateOverrideReturnAddressById");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/duplicate/{overrideReturnAddressId}";
+            var localVarPath = "/v2.0/overrideReturnAddress/duplicate/{overrideReturnAddressId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/overrideReturnAddress/search";
+            var localVarPath = "/v2.0/overrideReturnAddress/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/overrideReturnAddress/search";
+            var localVarPath = "/v2.0/overrideReturnAddress/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->GetOverrideReturnAddressById");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}";
+            var localVarPath = "/v2.0/overrideReturnAddress/{overrideReturnAddressId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling GetOverrideReturnAddressById");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}";
+            var localVarPath = "/v2.0/overrideReturnAddress/{overrideReturnAddressId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an overrideReturnAddress. Get all existing overrideReturnAddress tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param> 
-        /// <returns></returns>
-        public void GetOverrideReturnAddressTags (int? overrideReturnAddressId)
-        {
-             GetOverrideReturnAddressTagsWithHttpInfo(overrideReturnAddressId);
-        }
-
-        /// <summary>
-        /// Get the tags for an overrideReturnAddress. Get all existing overrideReturnAddress tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetOverrideReturnAddressTagsWithHttpInfo (int? overrideReturnAddressId)
-        {
-            
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null)
-                throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling OverrideReturnAddressApi->GetOverrideReturnAddressTags");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetOverrideReturnAddressTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetOverrideReturnAddressTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an overrideReturnAddress. Get all existing overrideReturnAddress tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetOverrideReturnAddressTagsAsync (int? overrideReturnAddressId)
-        {
-             await GetOverrideReturnAddressTagsAsyncWithHttpInfo(overrideReturnAddressId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an overrideReturnAddress. Get all existing overrideReturnAddress tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="overrideReturnAddressId">Id of the overrideReturnAddress to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetOverrideReturnAddressTagsAsyncWithHttpInfo (int? overrideReturnAddressId)
-        {
-            // verify the required parameter 'overrideReturnAddressId' is set
-            if (overrideReturnAddressId == null) throw new ApiException(400, "Missing required parameter 'overrideReturnAddressId' when calling GetOverrideReturnAddressTags");
-            
-    
-            var localVarPath = "/beta/overrideReturnAddress/{overrideReturnAddressId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (overrideReturnAddressId != null) localVarPathParams.Add("overrideReturnAddressId", Configuration.ApiClient.ParameterToString(overrideReturnAddressId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetOverrideReturnAddressTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetOverrideReturnAddressTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an overrideReturnAddress Updates an existing overrideReturnAddress using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling OverrideReturnAddressApi->UpdateOverrideReturnAddress");
             
     
-            var localVarPath = "/beta/overrideReturnAddress";
+            var localVarPath = "/v2.0/overrideReturnAddress";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateOverrideReturnAddress");
             
     
-            var localVarPath = "/beta/overrideReturnAddress";
+            var localVarPath = "/v2.0/overrideReturnAddress";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling OverrideReturnAddressApi->UpdateOverrideReturnAddressCustomFields");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/customFields";
+            var localVarPath = "/v2.0/overrideReturnAddress/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateOverrideReturnAddressCustomFields");
             
     
-            var localVarPath = "/beta/overrideReturnAddress/customFields";
+            var localVarPath = "/v2.0/overrideReturnAddress/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

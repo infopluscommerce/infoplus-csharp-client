@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'integrationPartnerId' when calling IntegrationPartnerApi->GetIntegrationPartnerById");
             
     
-            var localVarPath = "/beta/integrationPartner/{integrationPartnerId}";
+            var localVarPath = "/v2.0/integrationPartner/{integrationPartnerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (integrationPartnerId == null) throw new ApiException(400, "Missing required parameter 'integrationPartnerId' when calling GetIntegrationPartnerById");
             
     
-            var localVarPath = "/beta/integrationPartner/{integrationPartnerId}";
+            var localVarPath = "/v2.0/integrationPartner/{integrationPartnerId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/integrationPartner/search";
+            var localVarPath = "/v2.0/integrationPartner/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/integrationPartner/search";
+            var localVarPath = "/v2.0/integrationPartner/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

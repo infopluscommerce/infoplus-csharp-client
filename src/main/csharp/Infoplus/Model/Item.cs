@@ -79,8 +79,6 @@ namespace Infoplus.Model
         /// <param name="StorageItemMixingRule">StorageItemMixingRule (required).</param>
         /// <param name="AllocationRule">AllocationRule (required).</param>
         /// <param name="BarcodeField">BarcodeField.</param>
-        /// <param name="WarehouseDisplayField">WarehouseDisplayField.</param>
-        /// <param name="ProductIdTagSchemeId">ProductIdTagSchemeId.</param>
         /// <param name="Hazmat">Hazmat (required).</param>
         /// <param name="IsAlcohol">IsAlcohol (default to false).</param>
         /// <param name="AlcoholType">AlcoholType.</param>
@@ -102,7 +100,7 @@ namespace Infoplus.Model
         /// <param name="ShipSolo">ShipSolo (default to false).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? ListPrice = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string BarcodeField = null, string WarehouseDisplayField = null, int? ProductIdTagSchemeId = null, string Hazmat = null, bool? IsAlcohol = null, string AlcoholType = null, double? AlcoholContent = null, string AlcoholContainer = null, string AlcoholVintageYear = null, string AlcoholCountry = null, string AlcoholState = null, string AlcoholRegion = null, string AlcoholBrand = null, string AlcoholUPCCode = null, string AlcoholNAMBCACode = null, string AlcoholUNIMERCCode = null, string AlcoholSCCCode = null, double? Length = null, double? Width = null, double? Height = null, bool? TopUp = null, bool? ShipSolo = null, Dictionary<string, Object> CustomFields = null)
+        public Item(int? AccountCodeId = null, int? LowStockContactId = null, int? LegacyLowLevelContactId = null, int? LowStockCodeId = null, int? MajorGroupId = null, int? SubGroupId = null, int? ProductCodeId = null, int? SummaryCodeId = null, int? BuyerId = null, int? LobId = null, string Sku = null, string VendorSKU = null, string Upc = null, string ItemDescription = null, string PackingSlipDescription = null, string AbsoluteMax = null, string AdditionalDescription = null, string Backorder = null, string ChargeCode = null, string CommodityCode = null, int? CompCode = null, int? CriticalAmount = null, int? OverallFixedReorderPoint = null, int? OverallLeadTime = null, double? ListPrice = null, string LotControlFlag = null, int? MaxCycle = null, int? MaxInterim = null, int? NumericSortOrder = null, int? OutsideVendor = null, string PickNo = null, int? PodOrderSuffix = null, string PodRevDate = null, string Status = null, string SeasonalItem = null, string RequiresProductionLot = null, string Sector = null, string Secure = null, string SerialCode = null, string UnitCode = null, int? UnitsPerWrap = null, double? WeightPerWrap = null, string WrapCode = null, string ExtrinsicText1 = null, string ExtrinsicText2 = null, string ExtrinsicText3 = null, int? ExtrinsicNumber1 = null, int? ExtrinsicNumber2 = null, double? ExtrinsicDecimal1 = null, double? ExtrinsicDecimal2 = null, string CasebreakEnabled = null, string ForwardLotMixingRule = null, string StorageLotMixingRule = null, string ForwardItemMixingRule = null, string StorageItemMixingRule = null, string AllocationRule = null, string BarcodeField = null, string Hazmat = null, bool? IsAlcohol = null, string AlcoholType = null, double? AlcoholContent = null, string AlcoholContainer = null, string AlcoholVintageYear = null, string AlcoholCountry = null, string AlcoholState = null, string AlcoholRegion = null, string AlcoholBrand = null, string AlcoholUPCCode = null, string AlcoholNAMBCACode = null, string AlcoholUNIMERCCode = null, string AlcoholSCCCode = null, double? Length = null, double? Width = null, double? Height = null, bool? TopUp = null, bool? ShipSolo = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "MajorGroupId" is required (not null)
             if (MajorGroupId == null)
@@ -346,8 +344,6 @@ namespace Infoplus.Model
             this.ExtrinsicDecimal2 = ExtrinsicDecimal2;
             this.CasebreakEnabled = CasebreakEnabled;
             this.BarcodeField = BarcodeField;
-            this.WarehouseDisplayField = WarehouseDisplayField;
-            this.ProductIdTagSchemeId = ProductIdTagSchemeId;
             // use default value if no "IsAlcohol" provided
             if (IsAlcohol == null)
             {
@@ -762,18 +758,6 @@ namespace Infoplus.Model
         public string BarcodeField { get; set; }
     
         /// <summary>
-        /// Gets or Sets WarehouseDisplayField
-        /// </summary>
-        [DataMember(Name="warehouseDisplayField", EmitDefaultValue=false)]
-        public string WarehouseDisplayField { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets ProductIdTagSchemeId
-        /// </summary>
-        [DataMember(Name="productIdTagSchemeId", EmitDefaultValue=false)]
-        public int? ProductIdTagSchemeId { get; set; }
-    
-        /// <summary>
         /// Gets or Sets Hazmat
         /// </summary>
         [DataMember(Name="hazmat", EmitDefaultValue=false)]
@@ -888,72 +872,6 @@ namespace Infoplus.Model
         public bool? ShipSolo { get; set; }
     
         /// <summary>
-        /// Gets or Sets AvailableQuantity
-        /// </summary>
-        [DataMember(Name="availableQuantity", EmitDefaultValue=false)]
-        public int? AvailableQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets DamagedQuantity
-        /// </summary>
-        [DataMember(Name="damagedQuantity", EmitDefaultValue=false)]
-        public int? DamagedQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets InFulfillmentProcessQuantity
-        /// </summary>
-        [DataMember(Name="inFulfillmentProcessQuantity", EmitDefaultValue=false)]
-        public int? InFulfillmentProcessQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets OnHandQuantity
-        /// </summary>
-        [DataMember(Name="onHandQuantity", EmitDefaultValue=false)]
-        public int? OnHandQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets OpenOrderQuantity
-        /// </summary>
-        [DataMember(Name="openOrderQuantity", EmitDefaultValue=false)]
-        public int? OpenOrderQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets OpenPOQuantity
-        /// </summary>
-        [DataMember(Name="openPOQuantity", EmitDefaultValue=false)]
-        public int? OpenPOQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets OrderableQuantity
-        /// </summary>
-        [DataMember(Name="orderableQuantity", EmitDefaultValue=false)]
-        public int? OrderableQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets UnallocatableQuantity
-        /// </summary>
-        [DataMember(Name="unallocatableQuantity", EmitDefaultValue=false)]
-        public int? UnallocatableQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets UnavailableQuantity
-        /// </summary>
-        [DataMember(Name="unavailableQuantity", EmitDefaultValue=false)]
-        public int? UnavailableQuantity { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets OverallDaysOnHand
-        /// </summary>
-        [DataMember(Name="overallDaysOnHand", EmitDefaultValue=false)]
-        public int? OverallDaysOnHand { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets OverallStockStatus
-        /// </summary>
-        [DataMember(Name="overallStockStatus", EmitDefaultValue=false)]
-        public string OverallStockStatus { get; private set; }
-    
-        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -1028,8 +946,6 @@ namespace Infoplus.Model
             sb.Append("  StorageItemMixingRule: ").Append(StorageItemMixingRule).Append("\n");
             sb.Append("  AllocationRule: ").Append(AllocationRule).Append("\n");
             sb.Append("  BarcodeField: ").Append(BarcodeField).Append("\n");
-            sb.Append("  WarehouseDisplayField: ").Append(WarehouseDisplayField).Append("\n");
-            sb.Append("  ProductIdTagSchemeId: ").Append(ProductIdTagSchemeId).Append("\n");
             sb.Append("  Hazmat: ").Append(Hazmat).Append("\n");
             sb.Append("  IsAlcohol: ").Append(IsAlcohol).Append("\n");
             sb.Append("  AlcoholType: ").Append(AlcoholType).Append("\n");
@@ -1049,17 +965,6 @@ namespace Infoplus.Model
             sb.Append("  Height: ").Append(Height).Append("\n");
             sb.Append("  TopUp: ").Append(TopUp).Append("\n");
             sb.Append("  ShipSolo: ").Append(ShipSolo).Append("\n");
-            sb.Append("  AvailableQuantity: ").Append(AvailableQuantity).Append("\n");
-            sb.Append("  DamagedQuantity: ").Append(DamagedQuantity).Append("\n");
-            sb.Append("  InFulfillmentProcessQuantity: ").Append(InFulfillmentProcessQuantity).Append("\n");
-            sb.Append("  OnHandQuantity: ").Append(OnHandQuantity).Append("\n");
-            sb.Append("  OpenOrderQuantity: ").Append(OpenOrderQuantity).Append("\n");
-            sb.Append("  OpenPOQuantity: ").Append(OpenPOQuantity).Append("\n");
-            sb.Append("  OrderableQuantity: ").Append(OrderableQuantity).Append("\n");
-            sb.Append("  UnallocatableQuantity: ").Append(UnallocatableQuantity).Append("\n");
-            sb.Append("  UnavailableQuantity: ").Append(UnavailableQuantity).Append("\n");
-            sb.Append("  OverallDaysOnHand: ").Append(OverallDaysOnHand).Append("\n");
-            sb.Append("  OverallStockStatus: ").Append(OverallStockStatus).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -1404,16 +1309,6 @@ namespace Infoplus.Model
                     this.BarcodeField.Equals(other.BarcodeField)
                 ) && 
                 (
-                    this.WarehouseDisplayField == other.WarehouseDisplayField ||
-                    this.WarehouseDisplayField != null &&
-                    this.WarehouseDisplayField.Equals(other.WarehouseDisplayField)
-                ) && 
-                (
-                    this.ProductIdTagSchemeId == other.ProductIdTagSchemeId ||
-                    this.ProductIdTagSchemeId != null &&
-                    this.ProductIdTagSchemeId.Equals(other.ProductIdTagSchemeId)
-                ) && 
-                (
                     this.Hazmat == other.Hazmat ||
                     this.Hazmat != null &&
                     this.Hazmat.Equals(other.Hazmat)
@@ -1507,61 +1402,6 @@ namespace Infoplus.Model
                     this.ShipSolo == other.ShipSolo ||
                     this.ShipSolo != null &&
                     this.ShipSolo.Equals(other.ShipSolo)
-                ) && 
-                (
-                    this.AvailableQuantity == other.AvailableQuantity ||
-                    this.AvailableQuantity != null &&
-                    this.AvailableQuantity.Equals(other.AvailableQuantity)
-                ) && 
-                (
-                    this.DamagedQuantity == other.DamagedQuantity ||
-                    this.DamagedQuantity != null &&
-                    this.DamagedQuantity.Equals(other.DamagedQuantity)
-                ) && 
-                (
-                    this.InFulfillmentProcessQuantity == other.InFulfillmentProcessQuantity ||
-                    this.InFulfillmentProcessQuantity != null &&
-                    this.InFulfillmentProcessQuantity.Equals(other.InFulfillmentProcessQuantity)
-                ) && 
-                (
-                    this.OnHandQuantity == other.OnHandQuantity ||
-                    this.OnHandQuantity != null &&
-                    this.OnHandQuantity.Equals(other.OnHandQuantity)
-                ) && 
-                (
-                    this.OpenOrderQuantity == other.OpenOrderQuantity ||
-                    this.OpenOrderQuantity != null &&
-                    this.OpenOrderQuantity.Equals(other.OpenOrderQuantity)
-                ) && 
-                (
-                    this.OpenPOQuantity == other.OpenPOQuantity ||
-                    this.OpenPOQuantity != null &&
-                    this.OpenPOQuantity.Equals(other.OpenPOQuantity)
-                ) && 
-                (
-                    this.OrderableQuantity == other.OrderableQuantity ||
-                    this.OrderableQuantity != null &&
-                    this.OrderableQuantity.Equals(other.OrderableQuantity)
-                ) && 
-                (
-                    this.UnallocatableQuantity == other.UnallocatableQuantity ||
-                    this.UnallocatableQuantity != null &&
-                    this.UnallocatableQuantity.Equals(other.UnallocatableQuantity)
-                ) && 
-                (
-                    this.UnavailableQuantity == other.UnavailableQuantity ||
-                    this.UnavailableQuantity != null &&
-                    this.UnavailableQuantity.Equals(other.UnavailableQuantity)
-                ) && 
-                (
-                    this.OverallDaysOnHand == other.OverallDaysOnHand ||
-                    this.OverallDaysOnHand != null &&
-                    this.OverallDaysOnHand.Equals(other.OverallDaysOnHand)
-                ) && 
-                (
-                    this.OverallStockStatus == other.OverallStockStatus ||
-                    this.OverallStockStatus != null &&
-                    this.OverallStockStatus.Equals(other.OverallStockStatus)
                 ) && 
                 (
                     this.CustomFields == other.CustomFields ||
@@ -1765,12 +1605,6 @@ namespace Infoplus.Model
                 if (this.BarcodeField != null)
                     hash = hash * 59 + this.BarcodeField.GetHashCode();
                 
-                if (this.WarehouseDisplayField != null)
-                    hash = hash * 59 + this.WarehouseDisplayField.GetHashCode();
-                
-                if (this.ProductIdTagSchemeId != null)
-                    hash = hash * 59 + this.ProductIdTagSchemeId.GetHashCode();
-                
                 if (this.Hazmat != null)
                     hash = hash * 59 + this.Hazmat.GetHashCode();
                 
@@ -1827,39 +1661,6 @@ namespace Infoplus.Model
                 
                 if (this.ShipSolo != null)
                     hash = hash * 59 + this.ShipSolo.GetHashCode();
-                
-                if (this.AvailableQuantity != null)
-                    hash = hash * 59 + this.AvailableQuantity.GetHashCode();
-                
-                if (this.DamagedQuantity != null)
-                    hash = hash * 59 + this.DamagedQuantity.GetHashCode();
-                
-                if (this.InFulfillmentProcessQuantity != null)
-                    hash = hash * 59 + this.InFulfillmentProcessQuantity.GetHashCode();
-                
-                if (this.OnHandQuantity != null)
-                    hash = hash * 59 + this.OnHandQuantity.GetHashCode();
-                
-                if (this.OpenOrderQuantity != null)
-                    hash = hash * 59 + this.OpenOrderQuantity.GetHashCode();
-                
-                if (this.OpenPOQuantity != null)
-                    hash = hash * 59 + this.OpenPOQuantity.GetHashCode();
-                
-                if (this.OrderableQuantity != null)
-                    hash = hash * 59 + this.OrderableQuantity.GetHashCode();
-                
-                if (this.UnallocatableQuantity != null)
-                    hash = hash * 59 + this.UnallocatableQuantity.GetHashCode();
-                
-                if (this.UnavailableQuantity != null)
-                    hash = hash * 59 + this.UnavailableQuantity.GetHashCode();
-                
-                if (this.OverallDaysOnHand != null)
-                    hash = hash * 59 + this.OverallDaysOnHand.GetHashCode();
-                
-                if (this.OverallStockStatus != null)
-                    hash = hash * 59 + this.OverallStockStatus.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

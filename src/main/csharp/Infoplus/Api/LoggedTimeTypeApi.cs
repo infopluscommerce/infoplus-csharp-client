@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'loggedTimeTypeId' when calling LoggedTimeTypeApi->GetLoggedTimeTypeById");
             
     
-            var localVarPath = "/beta/loggedTimeType/{loggedTimeTypeId}";
+            var localVarPath = "/v2.0/loggedTimeType/{loggedTimeTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (loggedTimeTypeId == null) throw new ApiException(400, "Missing required parameter 'loggedTimeTypeId' when calling GetLoggedTimeTypeById");
             
     
-            var localVarPath = "/beta/loggedTimeType/{loggedTimeTypeId}";
+            var localVarPath = "/v2.0/loggedTimeType/{loggedTimeTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/loggedTimeType/search";
+            var localVarPath = "/v2.0/loggedTimeType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/loggedTimeType/search";
+            var localVarPath = "/v2.0/loggedTimeType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

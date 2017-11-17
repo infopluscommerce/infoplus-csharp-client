@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ManageScheduledPlans> AddManageScheduledPlansWithHttpInfo (ManageScheduledPlans body);
         
         /// <summary>
-        /// Add new audit for a manageScheduledPlans
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param>
-        /// <param name="manageScheduledPlansAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddManageScheduledPlansAudit (int? manageScheduledPlansId, string manageScheduledPlansAudit);
-  
-        /// <summary>
-        /// Add new audit for a manageScheduledPlans
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param>
-        /// <param name="manageScheduledPlansAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddManageScheduledPlansAuditWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansAudit);
-        
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param>
-        /// <param name="manageScheduledPlansTag">The tag to add</param>
-        /// <returns></returns>
-        void AddManageScheduledPlansTag (int? manageScheduledPlansId, string manageScheduledPlansTag);
-  
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param>
-        /// <param name="manageScheduledPlansTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddManageScheduledPlansTagWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag);
-        
-        /// <summary>
         /// Delete a manageScheduledPlans
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteManageScheduledPlansWithHttpInfo (int? manageScheduledPlansId);
-        
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param>
-        /// <param name="manageScheduledPlansTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteManageScheduledPlansTag (int? manageScheduledPlansId, string manageScheduledPlansTag);
-  
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param>
-        /// <param name="manageScheduledPlansTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteManageScheduledPlansTagWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag);
         
         /// <summary>
         /// Get a duplicated a manageScheduledPlans by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ManageScheduledPlans> GetManageScheduledPlansByIdWithHttpInfo (int? manageScheduledPlansId);
         
         /// <summary>
-        /// Get the tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing manageScheduledPlans tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param>
-        /// <returns></returns>
-        void GetManageScheduledPlansTags (int? manageScheduledPlansId);
-  
-        /// <summary>
-        /// Get the tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing manageScheduledPlans tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetManageScheduledPlansTagsWithHttpInfo (int? manageScheduledPlansId);
-        
-        /// <summary>
         /// Update a manageScheduledPlans
         /// </summary>
         /// <remarks>
@@ -276,54 +182,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ManageScheduledPlans>> AddManageScheduledPlansAsyncWithHttpInfo (ManageScheduledPlans body);
         
         /// <summary>
-        /// Add new audit for a manageScheduledPlans
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param>
-        /// <param name="manageScheduledPlansAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddManageScheduledPlansAuditAsync (int? manageScheduledPlansId, string manageScheduledPlansAudit);
-
-        /// <summary>
-        /// Add new audit for a manageScheduledPlans
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param>
-        /// <param name="manageScheduledPlansAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddManageScheduledPlansAuditAsyncWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansAudit);
-        
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param>
-        /// <param name="manageScheduledPlansTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddManageScheduledPlansTagAsync (int? manageScheduledPlansId, string manageScheduledPlansTag);
-
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing manageScheduledPlans.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param>
-        /// <param name="manageScheduledPlansTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddManageScheduledPlansTagAsyncWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag);
-        
-        /// <summary>
         /// Delete a manageScheduledPlans
         /// </summary>
         /// <remarks>
@@ -344,30 +202,6 @@ namespace Infoplus.Api
         /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteManageScheduledPlansAsyncWithHttpInfo (int? manageScheduledPlansId);
-        
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param>
-        /// <param name="manageScheduledPlansTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteManageScheduledPlansTagAsync (int? manageScheduledPlansId, string manageScheduledPlansTag);
-
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param>
-        /// <param name="manageScheduledPlansTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteManageScheduledPlansTagAsyncWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag);
         
         /// <summary>
         /// Get a duplicated a manageScheduledPlans by id
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to be returned.</param>
         /// <returns>Task of ApiResponse (ManageScheduledPlans)</returns>
         System.Threading.Tasks.Task<ApiResponse<ManageScheduledPlans>> GetManageScheduledPlansByIdAsyncWithHttpInfo (int? manageScheduledPlansId);
-        
-        /// <summary>
-        /// Get the tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing manageScheduledPlans tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetManageScheduledPlansTagsAsync (int? manageScheduledPlansId);
-
-        /// <summary>
-        /// Get the tags for a manageScheduledPlans.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing manageScheduledPlans tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetManageScheduledPlansTagsAsyncWithHttpInfo (int? manageScheduledPlansId);
         
         /// <summary>
         /// Update a manageScheduledPlans
@@ -603,7 +415,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ManageScheduledPlansApi->AddManageScheduledPlans");
             
     
-            var localVarPath = "/beta/manageScheduledPlans";
+            var localVarPath = "/v2.0/manageScheduledPlans";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -694,7 +506,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddManageScheduledPlans");
             
     
-            var localVarPath = "/beta/manageScheduledPlans";
+            var localVarPath = "/v2.0/manageScheduledPlans";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -761,368 +573,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a manageScheduledPlans Adds an audit to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param> 
-        /// <param name="manageScheduledPlansAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddManageScheduledPlansAudit (int? manageScheduledPlansId, string manageScheduledPlansAudit)
-        {
-             AddManageScheduledPlansAuditWithHttpInfo(manageScheduledPlansId, manageScheduledPlansAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a manageScheduledPlans Adds an audit to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param> 
-        /// <param name="manageScheduledPlansAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddManageScheduledPlansAuditWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansAudit)
-        {
-            
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->AddManageScheduledPlansAudit");
-            
-            // verify the required parameter 'manageScheduledPlansAudit' is set
-            if (manageScheduledPlansAudit == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansAudit' when calling ManageScheduledPlansApi->AddManageScheduledPlansAudit");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/audit/{manageScheduledPlansAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            if (manageScheduledPlansAudit != null) localVarPathParams.Add("manageScheduledPlansAudit", Configuration.ApiClient.ParameterToString(manageScheduledPlansAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a manageScheduledPlans Adds an audit to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param>
-        /// <param name="manageScheduledPlansAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddManageScheduledPlansAuditAsync (int? manageScheduledPlansId, string manageScheduledPlansAudit)
-        {
-             await AddManageScheduledPlansAuditAsyncWithHttpInfo(manageScheduledPlansId, manageScheduledPlansAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a manageScheduledPlans Adds an audit to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add an audit to</param>
-        /// <param name="manageScheduledPlansAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddManageScheduledPlansAuditAsyncWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansAudit)
-        {
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling AddManageScheduledPlansAudit");
-            // verify the required parameter 'manageScheduledPlansAudit' is set
-            if (manageScheduledPlansAudit == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansAudit' when calling AddManageScheduledPlansAudit");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/audit/{manageScheduledPlansAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            if (manageScheduledPlansAudit != null) localVarPathParams.Add("manageScheduledPlansAudit", Configuration.ApiClient.ParameterToString(manageScheduledPlansAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans. Adds a tag to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param> 
-        /// <param name="manageScheduledPlansTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddManageScheduledPlansTag (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-             AddManageScheduledPlansTagWithHttpInfo(manageScheduledPlansId, manageScheduledPlansTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans. Adds a tag to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param> 
-        /// <param name="manageScheduledPlansTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddManageScheduledPlansTagWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-            
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->AddManageScheduledPlansTag");
-            
-            // verify the required parameter 'manageScheduledPlansTag' is set
-            if (manageScheduledPlansTag == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansTag' when calling ManageScheduledPlansApi->AddManageScheduledPlansTag");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/tag/{manageScheduledPlansTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            if (manageScheduledPlansTag != null) localVarPathParams.Add("manageScheduledPlansTag", Configuration.ApiClient.ParameterToString(manageScheduledPlansTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans. Adds a tag to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param>
-        /// <param name="manageScheduledPlansTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddManageScheduledPlansTagAsync (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-             await AddManageScheduledPlansTagAsyncWithHttpInfo(manageScheduledPlansId, manageScheduledPlansTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a manageScheduledPlans. Adds a tag to an existing manageScheduledPlans.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to add a tag to</param>
-        /// <param name="manageScheduledPlansTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddManageScheduledPlansTagAsyncWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling AddManageScheduledPlansTag");
-            // verify the required parameter 'manageScheduledPlansTag' is set
-            if (manageScheduledPlansTag == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansTag' when calling AddManageScheduledPlansTag");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/tag/{manageScheduledPlansTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            if (manageScheduledPlansTag != null) localVarPathParams.Add("manageScheduledPlansTag", Configuration.ApiClient.ParameterToString(manageScheduledPlansTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddManageScheduledPlansTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a manageScheduledPlans Deletes the manageScheduledPlans identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1147,7 +597,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->DeleteManageScheduledPlans");
             
     
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}";
+            var localVarPath = "/v2.0/manageScheduledPlans/{manageScheduledPlansId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +681,7 @@ namespace Infoplus.Api
             if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling DeleteManageScheduledPlans");
             
     
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}";
+            var localVarPath = "/v2.0/manageScheduledPlans/{manageScheduledPlansId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1292,187 +742,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a manageScheduledPlans. Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param> 
-        /// <param name="manageScheduledPlansTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteManageScheduledPlansTag (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-             DeleteManageScheduledPlansTagWithHttpInfo(manageScheduledPlansId, manageScheduledPlansTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans. Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param> 
-        /// <param name="manageScheduledPlansTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteManageScheduledPlansTagWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-            
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->DeleteManageScheduledPlansTag");
-            
-            // verify the required parameter 'manageScheduledPlansTag' is set
-            if (manageScheduledPlansTag == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansTag' when calling ManageScheduledPlansApi->DeleteManageScheduledPlansTag");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/tag/{manageScheduledPlansTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            if (manageScheduledPlansTag != null) localVarPathParams.Add("manageScheduledPlansTag", Configuration.ApiClient.ParameterToString(manageScheduledPlansTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteManageScheduledPlansTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteManageScheduledPlansTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans. Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param>
-        /// <param name="manageScheduledPlansTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteManageScheduledPlansTagAsync (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-             await DeleteManageScheduledPlansTagAsyncWithHttpInfo(manageScheduledPlansId, manageScheduledPlansTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a manageScheduledPlans. Deletes an existing manageScheduledPlans tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to remove tag from</param>
-        /// <param name="manageScheduledPlansTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteManageScheduledPlansTagAsyncWithHttpInfo (int? manageScheduledPlansId, string manageScheduledPlansTag)
-        {
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling DeleteManageScheduledPlansTag");
-            // verify the required parameter 'manageScheduledPlansTag' is set
-            if (manageScheduledPlansTag == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansTag' when calling DeleteManageScheduledPlansTag");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/tag/{manageScheduledPlansTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            if (manageScheduledPlansTag != null) localVarPathParams.Add("manageScheduledPlansTag", Configuration.ApiClient.ParameterToString(manageScheduledPlansTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteManageScheduledPlansTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteManageScheduledPlansTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a manageScheduledPlans by id Returns a duplicated manageScheduledPlans identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1498,7 +767,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->GetDuplicateManageScheduledPlansById");
             
     
-            var localVarPath = "/beta/manageScheduledPlans/duplicate/{manageScheduledPlansId}";
+            var localVarPath = "/v2.0/manageScheduledPlans/duplicate/{manageScheduledPlansId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1583,7 +852,7 @@ namespace Infoplus.Api
             if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling GetDuplicateManageScheduledPlansById");
             
     
-            var localVarPath = "/beta/manageScheduledPlans/duplicate/{manageScheduledPlansId}";
+            var localVarPath = "/v2.0/manageScheduledPlans/duplicate/{manageScheduledPlansId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1671,7 +940,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/manageScheduledPlans/search";
+            var localVarPath = "/v2.0/manageScheduledPlans/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1763,7 +1032,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/manageScheduledPlans/search";
+            var localVarPath = "/v2.0/manageScheduledPlans/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1852,7 +1121,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->GetManageScheduledPlansById");
             
     
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}";
+            var localVarPath = "/v2.0/manageScheduledPlans/{manageScheduledPlansId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1937,7 +1206,7 @@ namespace Infoplus.Api
             if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling GetManageScheduledPlansById");
             
     
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}";
+            var localVarPath = "/v2.0/manageScheduledPlans/{manageScheduledPlansId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1998,175 +1267,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a manageScheduledPlans. Get all existing manageScheduledPlans tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param> 
-        /// <returns></returns>
-        public void GetManageScheduledPlansTags (int? manageScheduledPlansId)
-        {
-             GetManageScheduledPlansTagsWithHttpInfo(manageScheduledPlansId);
-        }
-
-        /// <summary>
-        /// Get the tags for a manageScheduledPlans. Get all existing manageScheduledPlans tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetManageScheduledPlansTagsWithHttpInfo (int? manageScheduledPlansId)
-        {
-            
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null)
-                throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling ManageScheduledPlansApi->GetManageScheduledPlansTags");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetManageScheduledPlansTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetManageScheduledPlansTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a manageScheduledPlans. Get all existing manageScheduledPlans tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetManageScheduledPlansTagsAsync (int? manageScheduledPlansId)
-        {
-             await GetManageScheduledPlansTagsAsyncWithHttpInfo(manageScheduledPlansId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a manageScheduledPlans. Get all existing manageScheduledPlans tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="manageScheduledPlansId">Id of the manageScheduledPlans to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetManageScheduledPlansTagsAsyncWithHttpInfo (int? manageScheduledPlansId)
-        {
-            // verify the required parameter 'manageScheduledPlansId' is set
-            if (manageScheduledPlansId == null) throw new ApiException(400, "Missing required parameter 'manageScheduledPlansId' when calling GetManageScheduledPlansTags");
-            
-    
-            var localVarPath = "/beta/manageScheduledPlans/{manageScheduledPlansId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (manageScheduledPlansId != null) localVarPathParams.Add("manageScheduledPlansId", Configuration.ApiClient.ParameterToString(manageScheduledPlansId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetManageScheduledPlansTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetManageScheduledPlansTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a manageScheduledPlans Updates an existing manageScheduledPlans using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2191,7 +1291,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ManageScheduledPlansApi->UpdateManageScheduledPlans");
             
     
-            var localVarPath = "/beta/manageScheduledPlans";
+            var localVarPath = "/v2.0/manageScheduledPlans";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2281,7 +1381,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateManageScheduledPlans");
             
     
-            var localVarPath = "/beta/manageScheduledPlans";
+            var localVarPath = "/v2.0/manageScheduledPlans";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

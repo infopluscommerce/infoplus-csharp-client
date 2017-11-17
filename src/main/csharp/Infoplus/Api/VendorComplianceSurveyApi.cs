@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<VendorComplianceSurvey> AddVendorComplianceSurveyWithHttpInfo (VendorComplianceSurvey body);
         
         /// <summary>
-        /// Add new audit for a vendorComplianceSurvey
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param>
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddVendorComplianceSurveyAudit (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit);
-  
-        /// <summary>
-        /// Add new audit for a vendorComplianceSurvey
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param>
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddVendorComplianceSurveyAuditWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit);
-        
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param>
-        /// <returns></returns>
-        void AddVendorComplianceSurveyTag (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
-  
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddVendorComplianceSurveyTagWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
-        
-        /// <summary>
         /// Delete a vendorComplianceSurvey
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteVendorComplianceSurveyWithHttpInfo (int? vendorComplianceSurveyId);
-        
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteVendorComplianceSurveyTag (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
-  
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteVendorComplianceSurveyTagWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
         
         /// <summary>
         /// Get a duplicated a vendorComplianceSurvey by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<VendorComplianceSurvey> GetVendorComplianceSurveyByIdWithHttpInfo (int? vendorComplianceSurveyId);
         
         /// <summary>
-        /// Get the tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendorComplianceSurvey tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param>
-        /// <returns></returns>
-        void GetVendorComplianceSurveyTags (int? vendorComplianceSurveyId);
-  
-        /// <summary>
-        /// Get the tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendorComplianceSurvey tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetVendorComplianceSurveyTagsWithHttpInfo (int? vendorComplianceSurveyId);
-        
-        /// <summary>
         /// Update a vendorComplianceSurvey
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<VendorComplianceSurvey>> AddVendorComplianceSurveyAsyncWithHttpInfo (VendorComplianceSurvey body);
         
         /// <summary>
-        /// Add new audit for a vendorComplianceSurvey
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param>
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddVendorComplianceSurveyAuditAsync (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit);
-
-        /// <summary>
-        /// Add new audit for a vendorComplianceSurvey
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param>
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorComplianceSurveyAuditAsyncWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit);
-        
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddVendorComplianceSurveyTagAsync (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
-
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendorComplianceSurvey.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorComplianceSurveyTagAsyncWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
-        
-        /// <summary>
         /// Delete a vendorComplianceSurvey
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteVendorComplianceSurveyAsyncWithHttpInfo (int? vendorComplianceSurveyId);
-        
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteVendorComplianceSurveyTagAsync (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
-
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteVendorComplianceSurveyTagAsyncWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag);
         
         /// <summary>
         /// Get a duplicated a vendorComplianceSurvey by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to be returned.</param>
         /// <returns>Task of ApiResponse (VendorComplianceSurvey)</returns>
         System.Threading.Tasks.Task<ApiResponse<VendorComplianceSurvey>> GetVendorComplianceSurveyByIdAsyncWithHttpInfo (int? vendorComplianceSurveyId);
-        
-        /// <summary>
-        /// Get the tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendorComplianceSurvey tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetVendorComplianceSurveyTagsAsync (int? vendorComplianceSurveyId);
-
-        /// <summary>
-        /// Get the tags for a vendorComplianceSurvey.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendorComplianceSurvey tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetVendorComplianceSurveyTagsAsyncWithHttpInfo (int? vendorComplianceSurveyId);
         
         /// <summary>
         /// Update a vendorComplianceSurvey
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling VendorComplianceSurveyApi->AddVendorComplianceSurvey");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey";
+            var localVarPath = "/v2.0/vendorComplianceSurvey";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddVendorComplianceSurvey");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey";
+            var localVarPath = "/v2.0/vendorComplianceSurvey";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a vendorComplianceSurvey Adds an audit to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param> 
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddVendorComplianceSurveyAudit (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit)
-        {
-             AddVendorComplianceSurveyAuditWithHttpInfo(vendorComplianceSurveyId, vendorComplianceSurveyAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a vendorComplianceSurvey Adds an audit to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param> 
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddVendorComplianceSurveyAuditWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit)
-        {
-            
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->AddVendorComplianceSurveyAudit");
-            
-            // verify the required parameter 'vendorComplianceSurveyAudit' is set
-            if (vendorComplianceSurveyAudit == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyAudit' when calling VendorComplianceSurveyApi->AddVendorComplianceSurveyAudit");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/audit/{vendorComplianceSurveyAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            if (vendorComplianceSurveyAudit != null) localVarPathParams.Add("vendorComplianceSurveyAudit", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a vendorComplianceSurvey Adds an audit to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param>
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddVendorComplianceSurveyAuditAsync (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit)
-        {
-             await AddVendorComplianceSurveyAuditAsyncWithHttpInfo(vendorComplianceSurveyId, vendorComplianceSurveyAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a vendorComplianceSurvey Adds an audit to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add an audit to</param>
-        /// <param name="vendorComplianceSurveyAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorComplianceSurveyAuditAsyncWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit)
-        {
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling AddVendorComplianceSurveyAudit");
-            // verify the required parameter 'vendorComplianceSurveyAudit' is set
-            if (vendorComplianceSurveyAudit == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyAudit' when calling AddVendorComplianceSurveyAudit");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/audit/{vendorComplianceSurveyAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            if (vendorComplianceSurveyAudit != null) localVarPathParams.Add("vendorComplianceSurveyAudit", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey. Adds a tag to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param> 
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddVendorComplianceSurveyTag (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-             AddVendorComplianceSurveyTagWithHttpInfo(vendorComplianceSurveyId, vendorComplianceSurveyTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey. Adds a tag to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param> 
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddVendorComplianceSurveyTagWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-            
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->AddVendorComplianceSurveyTag");
-            
-            // verify the required parameter 'vendorComplianceSurveyTag' is set
-            if (vendorComplianceSurveyTag == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyTag' when calling VendorComplianceSurveyApi->AddVendorComplianceSurveyTag");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag/{vendorComplianceSurveyTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            if (vendorComplianceSurveyTag != null) localVarPathParams.Add("vendorComplianceSurveyTag", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey. Adds a tag to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddVendorComplianceSurveyTagAsync (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-             await AddVendorComplianceSurveyTagAsyncWithHttpInfo(vendorComplianceSurveyId, vendorComplianceSurveyTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a vendorComplianceSurvey. Adds a tag to an existing vendorComplianceSurvey.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to add a tag to</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorComplianceSurveyTagAsyncWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling AddVendorComplianceSurveyTag");
-            // verify the required parameter 'vendorComplianceSurveyTag' is set
-            if (vendorComplianceSurveyTag == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyTag' when calling AddVendorComplianceSurveyTag");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag/{vendorComplianceSurveyTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            if (vendorComplianceSurveyTag != null) localVarPathParams.Add("vendorComplianceSurveyTag", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorComplianceSurveyTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a vendorComplianceSurvey Deletes the vendorComplianceSurvey identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->DeleteVendorComplianceSurvey");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/{vendorComplianceSurveyId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling DeleteVendorComplianceSurvey");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/{vendorComplianceSurveyId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey. Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param> 
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteVendorComplianceSurveyTag (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-             DeleteVendorComplianceSurveyTagWithHttpInfo(vendorComplianceSurveyId, vendorComplianceSurveyTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey. Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param> 
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteVendorComplianceSurveyTagWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-            
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->DeleteVendorComplianceSurveyTag");
-            
-            // verify the required parameter 'vendorComplianceSurveyTag' is set
-            if (vendorComplianceSurveyTag == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyTag' when calling VendorComplianceSurveyApi->DeleteVendorComplianceSurveyTag");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag/{vendorComplianceSurveyTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            if (vendorComplianceSurveyTag != null) localVarPathParams.Add("vendorComplianceSurveyTag", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorComplianceSurveyTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorComplianceSurveyTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey. Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteVendorComplianceSurveyTagAsync (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-             await DeleteVendorComplianceSurveyTagAsyncWithHttpInfo(vendorComplianceSurveyId, vendorComplianceSurveyTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a vendorComplianceSurvey. Deletes an existing vendorComplianceSurvey tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to remove tag from</param>
-        /// <param name="vendorComplianceSurveyTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteVendorComplianceSurveyTagAsyncWithHttpInfo (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
-        {
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling DeleteVendorComplianceSurveyTag");
-            // verify the required parameter 'vendorComplianceSurveyTag' is set
-            if (vendorComplianceSurveyTag == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyTag' when calling DeleteVendorComplianceSurveyTag");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag/{vendorComplianceSurveyTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            if (vendorComplianceSurveyTag != null) localVarPathParams.Add("vendorComplianceSurveyTag", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorComplianceSurveyTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorComplianceSurveyTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a vendorComplianceSurvey by id Returns a duplicated vendorComplianceSurvey identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->GetDuplicateVendorComplianceSurveyById");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/duplicate/{vendorComplianceSurveyId}";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/duplicate/{vendorComplianceSurveyId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling GetDuplicateVendorComplianceSurveyById");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/duplicate/{vendorComplianceSurveyId}";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/duplicate/{vendorComplianceSurveyId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/search";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/search";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->GetVendorComplianceSurveyById");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/{vendorComplianceSurveyId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling GetVendorComplianceSurveyById");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/{vendorComplianceSurveyId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a vendorComplianceSurvey. Get all existing vendorComplianceSurvey tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param> 
-        /// <returns></returns>
-        public void GetVendorComplianceSurveyTags (int? vendorComplianceSurveyId)
-        {
-             GetVendorComplianceSurveyTagsWithHttpInfo(vendorComplianceSurveyId);
-        }
-
-        /// <summary>
-        /// Get the tags for a vendorComplianceSurvey. Get all existing vendorComplianceSurvey tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetVendorComplianceSurveyTagsWithHttpInfo (int? vendorComplianceSurveyId)
-        {
-            
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling VendorComplianceSurveyApi->GetVendorComplianceSurveyTags");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorComplianceSurveyTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorComplianceSurveyTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a vendorComplianceSurvey. Get all existing vendorComplianceSurvey tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetVendorComplianceSurveyTagsAsync (int? vendorComplianceSurveyId)
-        {
-             await GetVendorComplianceSurveyTagsAsyncWithHttpInfo(vendorComplianceSurveyId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a vendorComplianceSurvey. Get all existing vendorComplianceSurvey tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorComplianceSurveyId">Id of the vendorComplianceSurvey to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetVendorComplianceSurveyTagsAsyncWithHttpInfo (int? vendorComplianceSurveyId)
-        {
-            // verify the required parameter 'vendorComplianceSurveyId' is set
-            if (vendorComplianceSurveyId == null) throw new ApiException(400, "Missing required parameter 'vendorComplianceSurveyId' when calling GetVendorComplianceSurveyTags");
-            
-    
-            var localVarPath = "/beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorComplianceSurveyId != null) localVarPathParams.Add("vendorComplianceSurveyId", Configuration.ApiClient.ParameterToString(vendorComplianceSurveyId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorComplianceSurveyTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorComplianceSurveyTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a vendorComplianceSurvey Updates an existing vendorComplianceSurvey using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling VendorComplianceSurveyApi->UpdateVendorComplianceSurvey");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey";
+            var localVarPath = "/v2.0/vendorComplianceSurvey";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateVendorComplianceSurvey");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey";
+            var localVarPath = "/v2.0/vendorComplianceSurvey";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling VendorComplianceSurveyApi->UpdateVendorComplianceSurveyCustomFields");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/customFields";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateVendorComplianceSurveyCustomFields");
             
     
-            var localVarPath = "/beta/vendorComplianceSurvey/customFields";
+            var localVarPath = "/v2.0/vendorComplianceSurvey/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

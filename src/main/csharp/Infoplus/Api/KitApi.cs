@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Kit> AddKitWithHttpInfo (Kit body);
         
         /// <summary>
-        /// Add new audit for a kit
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param>
-        /// <param name="kitAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddKitAudit (int? kitId, string kitAudit);
-  
-        /// <summary>
-        /// Add new audit for a kit
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param>
-        /// <param name="kitAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddKitAuditWithHttpInfo (int? kitId, string kitAudit);
-        
-        /// <summary>
-        /// Add new tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param>
-        /// <param name="kitTag">The tag to add</param>
-        /// <returns></returns>
-        void AddKitTag (int? kitId, string kitTag);
-  
-        /// <summary>
-        /// Add new tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param>
-        /// <param name="kitTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddKitTagWithHttpInfo (int? kitId, string kitTag);
-        
-        /// <summary>
         /// Delete a kit
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="kitId">Id of the kit to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteKitWithHttpInfo (int? kitId);
-        
-        /// <summary>
-        /// Delete a tag for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing kit tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param>
-        /// <param name="kitTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteKitTag (int? kitId, string kitTag);
-  
-        /// <summary>
-        /// Delete a tag for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing kit tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param>
-        /// <param name="kitTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteKitTagWithHttpInfo (int? kitId, string kitTag);
         
         /// <summary>
         /// Get a duplicated a kit by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<Kit> GetKitByIdWithHttpInfo (int? kitId);
         
         /// <summary>
-        /// Get the tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing kit tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param>
-        /// <returns></returns>
-        void GetKitTags (int? kitId);
-  
-        /// <summary>
-        /// Get the tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing kit tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetKitTagsWithHttpInfo (int? kitId);
-        
-        /// <summary>
         /// Update a kit
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Kit>> AddKitAsyncWithHttpInfo (Kit body);
         
         /// <summary>
-        /// Add new audit for a kit
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param>
-        /// <param name="kitAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddKitAuditAsync (int? kitId, string kitAudit);
-
-        /// <summary>
-        /// Add new audit for a kit
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param>
-        /// <param name="kitAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddKitAuditAsyncWithHttpInfo (int? kitId, string kitAudit);
-        
-        /// <summary>
-        /// Add new tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param>
-        /// <param name="kitTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddKitTagAsync (int? kitId, string kitTag);
-
-        /// <summary>
-        /// Add new tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing kit.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param>
-        /// <param name="kitTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddKitTagAsyncWithHttpInfo (int? kitId, string kitTag);
-        
-        /// <summary>
         /// Delete a kit
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="kitId">Id of the kit to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteKitAsyncWithHttpInfo (int? kitId);
-        
-        /// <summary>
-        /// Delete a tag for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing kit tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param>
-        /// <param name="kitTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteKitTagAsync (int? kitId, string kitTag);
-
-        /// <summary>
-        /// Delete a tag for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing kit tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param>
-        /// <param name="kitTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteKitTagAsyncWithHttpInfo (int? kitId, string kitTag);
         
         /// <summary>
         /// Get a duplicated a kit by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="kitId">Id of the kit to be returned.</param>
         /// <returns>Task of ApiResponse (Kit)</returns>
         System.Threading.Tasks.Task<ApiResponse<Kit>> GetKitByIdAsyncWithHttpInfo (int? kitId);
-        
-        /// <summary>
-        /// Get the tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing kit tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetKitTagsAsync (int? kitId);
-
-        /// <summary>
-        /// Get the tags for a kit.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing kit tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetKitTagsAsyncWithHttpInfo (int? kitId);
         
         /// <summary>
         /// Update a kit
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling KitApi->AddKit");
             
     
-            var localVarPath = "/beta/kit";
+            var localVarPath = "/v2.0/kit";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddKit");
             
     
-            var localVarPath = "/beta/kit";
+            var localVarPath = "/v2.0/kit";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a kit Adds an audit to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param> 
-        /// <param name="kitAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddKitAudit (int? kitId, string kitAudit)
-        {
-             AddKitAuditWithHttpInfo(kitId, kitAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a kit Adds an audit to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param> 
-        /// <param name="kitAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddKitAuditWithHttpInfo (int? kitId, string kitAudit)
-        {
-            
-            // verify the required parameter 'kitId' is set
-            if (kitId == null)
-                throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->AddKitAudit");
-            
-            // verify the required parameter 'kitAudit' is set
-            if (kitAudit == null)
-                throw new ApiException(400, "Missing required parameter 'kitAudit' when calling KitApi->AddKitAudit");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/audit/{kitAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            if (kitAudit != null) localVarPathParams.Add("kitAudit", Configuration.ApiClient.ParameterToString(kitAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a kit Adds an audit to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param>
-        /// <param name="kitAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddKitAuditAsync (int? kitId, string kitAudit)
-        {
-             await AddKitAuditAsyncWithHttpInfo(kitId, kitAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a kit Adds an audit to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add an audit to</param>
-        /// <param name="kitAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddKitAuditAsyncWithHttpInfo (int? kitId, string kitAudit)
-        {
-            // verify the required parameter 'kitId' is set
-            if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling AddKitAudit");
-            // verify the required parameter 'kitAudit' is set
-            if (kitAudit == null) throw new ApiException(400, "Missing required parameter 'kitAudit' when calling AddKitAudit");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/audit/{kitAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            if (kitAudit != null) localVarPathParams.Add("kitAudit", Configuration.ApiClient.ParameterToString(kitAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a kit. Adds a tag to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param> 
-        /// <param name="kitTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddKitTag (int? kitId, string kitTag)
-        {
-             AddKitTagWithHttpInfo(kitId, kitTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a kit. Adds a tag to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param> 
-        /// <param name="kitTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddKitTagWithHttpInfo (int? kitId, string kitTag)
-        {
-            
-            // verify the required parameter 'kitId' is set
-            if (kitId == null)
-                throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->AddKitTag");
-            
-            // verify the required parameter 'kitTag' is set
-            if (kitTag == null)
-                throw new ApiException(400, "Missing required parameter 'kitTag' when calling KitApi->AddKitTag");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/tag/{kitTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            if (kitTag != null) localVarPathParams.Add("kitTag", Configuration.ApiClient.ParameterToString(kitTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a kit. Adds a tag to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param>
-        /// <param name="kitTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddKitTagAsync (int? kitId, string kitTag)
-        {
-             await AddKitTagAsyncWithHttpInfo(kitId, kitTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a kit. Adds a tag to an existing kit.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to add a tag to</param>
-        /// <param name="kitTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddKitTagAsyncWithHttpInfo (int? kitId, string kitTag)
-        {
-            // verify the required parameter 'kitId' is set
-            if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling AddKitTag");
-            // verify the required parameter 'kitTag' is set
-            if (kitTag == null) throw new ApiException(400, "Missing required parameter 'kitTag' when calling AddKitTag");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/tag/{kitTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            if (kitTag != null) localVarPathParams.Add("kitTag", Configuration.ApiClient.ParameterToString(kitTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddKitTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a kit Deletes the kit identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->DeleteKit");
             
     
-            var localVarPath = "/beta/kit/{kitId}";
+            var localVarPath = "/v2.0/kit/{kitId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling DeleteKit");
             
     
-            var localVarPath = "/beta/kit/{kitId}";
+            var localVarPath = "/v2.0/kit/{kitId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a kit. Deletes an existing kit tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param> 
-        /// <param name="kitTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteKitTag (int? kitId, string kitTag)
-        {
-             DeleteKitTagWithHttpInfo(kitId, kitTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a kit. Deletes an existing kit tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param> 
-        /// <param name="kitTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteKitTagWithHttpInfo (int? kitId, string kitTag)
-        {
-            
-            // verify the required parameter 'kitId' is set
-            if (kitId == null)
-                throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->DeleteKitTag");
-            
-            // verify the required parameter 'kitTag' is set
-            if (kitTag == null)
-                throw new ApiException(400, "Missing required parameter 'kitTag' when calling KitApi->DeleteKitTag");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/tag/{kitTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            if (kitTag != null) localVarPathParams.Add("kitTag", Configuration.ApiClient.ParameterToString(kitTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteKitTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteKitTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a kit. Deletes an existing kit tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param>
-        /// <param name="kitTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteKitTagAsync (int? kitId, string kitTag)
-        {
-             await DeleteKitTagAsyncWithHttpInfo(kitId, kitTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a kit. Deletes an existing kit tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to remove tag from</param>
-        /// <param name="kitTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteKitTagAsyncWithHttpInfo (int? kitId, string kitTag)
-        {
-            // verify the required parameter 'kitId' is set
-            if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling DeleteKitTag");
-            // verify the required parameter 'kitTag' is set
-            if (kitTag == null) throw new ApiException(400, "Missing required parameter 'kitTag' when calling DeleteKitTag");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/tag/{kitTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            if (kitTag != null) localVarPathParams.Add("kitTag", Configuration.ApiClient.ParameterToString(kitTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteKitTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteKitTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a kit by id Returns a duplicated kit identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->GetDuplicateKitById");
             
     
-            var localVarPath = "/beta/kit/duplicate/{kitId}";
+            var localVarPath = "/v2.0/kit/duplicate/{kitId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling GetDuplicateKitById");
             
     
-            var localVarPath = "/beta/kit/duplicate/{kitId}";
+            var localVarPath = "/v2.0/kit/duplicate/{kitId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/kit/search";
+            var localVarPath = "/v2.0/kit/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/kit/search";
+            var localVarPath = "/v2.0/kit/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->GetKitById");
             
     
-            var localVarPath = "/beta/kit/{kitId}";
+            var localVarPath = "/v2.0/kit/{kitId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling GetKitById");
             
     
-            var localVarPath = "/beta/kit/{kitId}";
+            var localVarPath = "/v2.0/kit/{kitId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a kit. Get all existing kit tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param> 
-        /// <returns></returns>
-        public void GetKitTags (int? kitId)
-        {
-             GetKitTagsWithHttpInfo(kitId);
-        }
-
-        /// <summary>
-        /// Get the tags for a kit. Get all existing kit tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetKitTagsWithHttpInfo (int? kitId)
-        {
-            
-            // verify the required parameter 'kitId' is set
-            if (kitId == null)
-                throw new ApiException(400, "Missing required parameter 'kitId' when calling KitApi->GetKitTags");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetKitTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetKitTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a kit. Get all existing kit tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetKitTagsAsync (int? kitId)
-        {
-             await GetKitTagsAsyncWithHttpInfo(kitId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a kit. Get all existing kit tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="kitId">Id of the kit to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetKitTagsAsyncWithHttpInfo (int? kitId)
-        {
-            // verify the required parameter 'kitId' is set
-            if (kitId == null) throw new ApiException(400, "Missing required parameter 'kitId' when calling GetKitTags");
-            
-    
-            var localVarPath = "/beta/kit/{kitId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (kitId != null) localVarPathParams.Add("kitId", Configuration.ApiClient.ParameterToString(kitId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetKitTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetKitTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a kit Updates an existing kit using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling KitApi->UpdateKit");
             
     
-            var localVarPath = "/beta/kit";
+            var localVarPath = "/v2.0/kit";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateKit");
             
     
-            var localVarPath = "/beta/kit";
+            var localVarPath = "/v2.0/kit";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling KitApi->UpdateKitCustomFields");
             
     
-            var localVarPath = "/beta/kit/customFields";
+            var localVarPath = "/v2.0/kit/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateKitCustomFields");
             
     
-            var localVarPath = "/beta/kit/customFields";
+            var localVarPath = "/v2.0/kit/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

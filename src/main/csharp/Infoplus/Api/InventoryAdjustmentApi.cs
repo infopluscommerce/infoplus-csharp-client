@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for an inventoryAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param>
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddInventoryAdjustmentAudit (int? inventoryAdjustmentId, string inventoryAdjustmentAudit);
-  
-        /// <summary>
-        /// Add new audit for an inventoryAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param>
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddInventoryAdjustmentAuditWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentAudit);
-        
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param>
-        /// <param name="inventoryAdjustmentTag">The tag to add</param>
-        /// <returns></returns>
-        void AddInventoryAdjustmentTag (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-  
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param>
-        /// <param name="inventoryAdjustmentTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddInventoryAdjustmentTagWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-        
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param>
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteInventoryAdjustmentTag (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-  
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param>
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteInventoryAdjustmentTagWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-        
-        /// <summary>
         /// Get a duplicated an inventoryAdjustment by id
         /// </summary>
         /// <remarks>
@@ -162,28 +90,6 @@ namespace Infoplus.Api
         ApiResponse<InventoryAdjustment> GetInventoryAdjustmentByIdWithHttpInfo (int? inventoryAdjustmentId);
         
         /// <summary>
-        /// Get the tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing inventoryAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param>
-        /// <returns></returns>
-        void GetInventoryAdjustmentTags (int? inventoryAdjustmentId);
-  
-        /// <summary>
-        /// Get the tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing inventoryAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetInventoryAdjustmentTagsWithHttpInfo (int? inventoryAdjustmentId);
-        
-        /// <summary>
         /// Update an inventoryAdjustment custom fields
         /// </summary>
         /// <remarks>
@@ -208,78 +114,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for an inventoryAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param>
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddInventoryAdjustmentAuditAsync (int? inventoryAdjustmentId, string inventoryAdjustmentAudit);
-
-        /// <summary>
-        /// Add new audit for an inventoryAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param>
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddInventoryAdjustmentAuditAsyncWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentAudit);
-        
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param>
-        /// <param name="inventoryAdjustmentTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddInventoryAdjustmentTagAsync (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing inventoryAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param>
-        /// <param name="inventoryAdjustmentTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddInventoryAdjustmentTagAsyncWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-        
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param>
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteInventoryAdjustmentTagAsync (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
-
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param>
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteInventoryAdjustmentTagAsyncWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag);
         
         /// <summary>
         /// Get a duplicated an inventoryAdjustment by id
@@ -352,28 +186,6 @@ namespace Infoplus.Api
         /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to be returned.</param>
         /// <returns>Task of ApiResponse (InventoryAdjustment)</returns>
         System.Threading.Tasks.Task<ApiResponse<InventoryAdjustment>> GetInventoryAdjustmentByIdAsyncWithHttpInfo (int? inventoryAdjustmentId);
-        
-        /// <summary>
-        /// Get the tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing inventoryAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetInventoryAdjustmentTagsAsync (int? inventoryAdjustmentId);
-
-        /// <summary>
-        /// Get the tags for an inventoryAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing inventoryAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetInventoryAdjustmentTagsAsyncWithHttpInfo (int? inventoryAdjustmentId);
         
         /// <summary>
         /// Update an inventoryAdjustment custom fields
@@ -490,549 +302,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for an inventoryAdjustment Adds an audit to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param> 
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddInventoryAdjustmentAudit (int? inventoryAdjustmentId, string inventoryAdjustmentAudit)
-        {
-             AddInventoryAdjustmentAuditWithHttpInfo(inventoryAdjustmentId, inventoryAdjustmentAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an inventoryAdjustment Adds an audit to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param> 
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddInventoryAdjustmentAuditWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentAudit)
-        {
-            
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling InventoryAdjustmentApi->AddInventoryAdjustmentAudit");
-            
-            // verify the required parameter 'inventoryAdjustmentAudit' is set
-            if (inventoryAdjustmentAudit == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentAudit' when calling InventoryAdjustmentApi->AddInventoryAdjustmentAudit");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/audit/{inventoryAdjustmentAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            if (inventoryAdjustmentAudit != null) localVarPathParams.Add("inventoryAdjustmentAudit", Configuration.ApiClient.ParameterToString(inventoryAdjustmentAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an inventoryAdjustment Adds an audit to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param>
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddInventoryAdjustmentAuditAsync (int? inventoryAdjustmentId, string inventoryAdjustmentAudit)
-        {
-             await AddInventoryAdjustmentAuditAsyncWithHttpInfo(inventoryAdjustmentId, inventoryAdjustmentAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an inventoryAdjustment Adds an audit to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add an audit to</param>
-        /// <param name="inventoryAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddInventoryAdjustmentAuditAsyncWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentAudit)
-        {
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling AddInventoryAdjustmentAudit");
-            // verify the required parameter 'inventoryAdjustmentAudit' is set
-            if (inventoryAdjustmentAudit == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentAudit' when calling AddInventoryAdjustmentAudit");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/audit/{inventoryAdjustmentAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            if (inventoryAdjustmentAudit != null) localVarPathParams.Add("inventoryAdjustmentAudit", Configuration.ApiClient.ParameterToString(inventoryAdjustmentAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment. Adds a tag to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param> 
-        /// <param name="inventoryAdjustmentTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddInventoryAdjustmentTag (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-             AddInventoryAdjustmentTagWithHttpInfo(inventoryAdjustmentId, inventoryAdjustmentTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment. Adds a tag to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param> 
-        /// <param name="inventoryAdjustmentTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddInventoryAdjustmentTagWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-            
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling InventoryAdjustmentApi->AddInventoryAdjustmentTag");
-            
-            // verify the required parameter 'inventoryAdjustmentTag' is set
-            if (inventoryAdjustmentTag == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentTag' when calling InventoryAdjustmentApi->AddInventoryAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/tag/{inventoryAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            if (inventoryAdjustmentTag != null) localVarPathParams.Add("inventoryAdjustmentTag", Configuration.ApiClient.ParameterToString(inventoryAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment. Adds a tag to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param>
-        /// <param name="inventoryAdjustmentTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddInventoryAdjustmentTagAsync (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-             await AddInventoryAdjustmentTagAsyncWithHttpInfo(inventoryAdjustmentId, inventoryAdjustmentTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an inventoryAdjustment. Adds a tag to an existing inventoryAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to add a tag to</param>
-        /// <param name="inventoryAdjustmentTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddInventoryAdjustmentTagAsyncWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling AddInventoryAdjustmentTag");
-            // verify the required parameter 'inventoryAdjustmentTag' is set
-            if (inventoryAdjustmentTag == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentTag' when calling AddInventoryAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/tag/{inventoryAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            if (inventoryAdjustmentTag != null) localVarPathParams.Add("inventoryAdjustmentTag", Configuration.ApiClient.ParameterToString(inventoryAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddInventoryAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment. Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param> 
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteInventoryAdjustmentTag (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-             DeleteInventoryAdjustmentTagWithHttpInfo(inventoryAdjustmentId, inventoryAdjustmentTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment. Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param> 
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteInventoryAdjustmentTagWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-            
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling InventoryAdjustmentApi->DeleteInventoryAdjustmentTag");
-            
-            // verify the required parameter 'inventoryAdjustmentTag' is set
-            if (inventoryAdjustmentTag == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentTag' when calling InventoryAdjustmentApi->DeleteInventoryAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/tag/{inventoryAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            if (inventoryAdjustmentTag != null) localVarPathParams.Add("inventoryAdjustmentTag", Configuration.ApiClient.ParameterToString(inventoryAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteInventoryAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteInventoryAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment. Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param>
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteInventoryAdjustmentTagAsync (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-             await DeleteInventoryAdjustmentTagAsyncWithHttpInfo(inventoryAdjustmentId, inventoryAdjustmentTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an inventoryAdjustment. Deletes an existing inventoryAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to remove tag from</param>
-        /// <param name="inventoryAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteInventoryAdjustmentTagAsyncWithHttpInfo (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
-        {
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling DeleteInventoryAdjustmentTag");
-            // verify the required parameter 'inventoryAdjustmentTag' is set
-            if (inventoryAdjustmentTag == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentTag' when calling DeleteInventoryAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/tag/{inventoryAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            if (inventoryAdjustmentTag != null) localVarPathParams.Add("inventoryAdjustmentTag", Configuration.ApiClient.ParameterToString(inventoryAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteInventoryAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteInventoryAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an inventoryAdjustment by id Returns a duplicated inventoryAdjustment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1058,7 +327,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling InventoryAdjustmentApi->GetDuplicateInventoryAdjustmentById");
             
     
-            var localVarPath = "/beta/inventoryAdjustment/duplicate/{inventoryAdjustmentId}";
+            var localVarPath = "/v2.0/inventoryAdjustment/duplicate/{inventoryAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1143,7 +412,7 @@ namespace Infoplus.Api
             if (inventoryAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling GetDuplicateInventoryAdjustmentById");
             
     
-            var localVarPath = "/beta/inventoryAdjustment/duplicate/{inventoryAdjustmentId}";
+            var localVarPath = "/v2.0/inventoryAdjustment/duplicate/{inventoryAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +500,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/inventoryAdjustment/search";
+            var localVarPath = "/v2.0/inventoryAdjustment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1323,7 +592,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/inventoryAdjustment/search";
+            var localVarPath = "/v2.0/inventoryAdjustment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1412,7 +681,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling InventoryAdjustmentApi->GetInventoryAdjustmentById");
             
     
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}";
+            var localVarPath = "/v2.0/inventoryAdjustment/{inventoryAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1497,7 +766,7 @@ namespace Infoplus.Api
             if (inventoryAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling GetInventoryAdjustmentById");
             
     
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}";
+            var localVarPath = "/v2.0/inventoryAdjustment/{inventoryAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1558,175 +827,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an inventoryAdjustment. Get all existing inventoryAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param> 
-        /// <returns></returns>
-        public void GetInventoryAdjustmentTags (int? inventoryAdjustmentId)
-        {
-             GetInventoryAdjustmentTagsWithHttpInfo(inventoryAdjustmentId);
-        }
-
-        /// <summary>
-        /// Get the tags for an inventoryAdjustment. Get all existing inventoryAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetInventoryAdjustmentTagsWithHttpInfo (int? inventoryAdjustmentId)
-        {
-            
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling InventoryAdjustmentApi->GetInventoryAdjustmentTags");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetInventoryAdjustmentTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetInventoryAdjustmentTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an inventoryAdjustment. Get all existing inventoryAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetInventoryAdjustmentTagsAsync (int? inventoryAdjustmentId)
-        {
-             await GetInventoryAdjustmentTagsAsyncWithHttpInfo(inventoryAdjustmentId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an inventoryAdjustment. Get all existing inventoryAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="inventoryAdjustmentId">Id of the inventoryAdjustment to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetInventoryAdjustmentTagsAsyncWithHttpInfo (int? inventoryAdjustmentId)
-        {
-            // verify the required parameter 'inventoryAdjustmentId' is set
-            if (inventoryAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'inventoryAdjustmentId' when calling GetInventoryAdjustmentTags");
-            
-    
-            var localVarPath = "/beta/inventoryAdjustment/{inventoryAdjustmentId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (inventoryAdjustmentId != null) localVarPathParams.Add("inventoryAdjustmentId", Configuration.ApiClient.ParameterToString(inventoryAdjustmentId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetInventoryAdjustmentTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetInventoryAdjustmentTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an inventoryAdjustment custom fields Updates an existing inventoryAdjustment custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1751,7 +851,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling InventoryAdjustmentApi->UpdateInventoryAdjustmentCustomFields");
             
     
-            var localVarPath = "/beta/inventoryAdjustment/customFields";
+            var localVarPath = "/v2.0/inventoryAdjustment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1841,7 +941,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateInventoryAdjustmentCustomFields");
             
     
-            var localVarPath = "/beta/inventoryAdjustment/customFields";
+            var localVarPath = "/v2.0/inventoryAdjustment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

@@ -81,18 +81,17 @@ namespace Infoplus.Model
         /// <param name="ReceivedBy">ReceivedBy.</param>
         /// <param name="LineNo">LineNo.</param>
         /// <param name="ProdLot">ProdLot.</param>
-        /// <param name="ProductIdTag">ProductIdTag.</param>
         /// <param name="UnitsPerCase">UnitsPerCase.</param>
         /// <param name="CaseWeight">CaseWeight.</param>
         /// <param name="Height">Height.</param>
         /// <param name="Width">Width.</param>
         /// <param name="Length">Length.</param>
-        /// <param name="DockDate">DockDate.</param>
+        /// <param name="DockTime">DockTime.</param>
         /// <param name="Impressions">Impressions.</param>
         /// <param name="AsnLine">AsnLine.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ItemReceipt(int? PoNoId = null, int? LobId = null, string LegacyPoNo = null, int? WarehouseId = null, DateTime? OrderDate = null, double? FactCost = null, double? MlCost = null, string Sku = null, int? OrderQuantity = null, DateTime? RequestedDeliveryDate = null, string UnitCode = null, string WrapCode = null, int? UnitsPerWrap = null, double? Cost = null, double? Sell = null, string PricingPer = null, double? MaxFreight = null, string ChargeFreight = null, double? MaxOther = null, DateTime? DistDate = null, DateTime? VoidDate = null, string FreezeAction = null, string RevDate = null, string ArtBack = null, string Origin = null, int? Sample = null, string SampleTo = null, int? MaxOvers = null, int? MaxUnders = null, int? ReceivedSfp = null, string BudgetCode = null, string AccountingCode = null, string TaxExempt = null, string Capitalize = null, string Accrual = null, int? OddQuantity = null, double? FreightCost = null, DateTime? ReceivedDate = null, int? ReceivedQuantity = null, int? FromProd = null, string SfpComplete = null, int? EndQuantity = null, double? EndVal = null, double? EndFact = null, int? InterimQuantity = null, double? InterimVal = null, double? InterimFact = null, DateTime? LastAct = null, double? WeightPerWrap = null, string Norcs = null, int? VendorId = null, int? BsVendor = null, int? MlVendor = null, int? ReceiptNo = null, string PaidFull = null, string EnteredBy = null, string ReceivedBy = null, int? LineNo = null, string ProdLot = null, string ProductIdTag = null, int? UnitsPerCase = null, double? CaseWeight = null, double? Height = null, double? Width = null, double? Length = null, DateTime? DockDate = null, int? Impressions = null, int? AsnLine = null, Dictionary<string, Object> CustomFields = null)
+        public ItemReceipt(int? PoNoId = null, int? LobId = null, string LegacyPoNo = null, int? WarehouseId = null, DateTime? OrderDate = null, double? FactCost = null, double? MlCost = null, string Sku = null, int? OrderQuantity = null, DateTime? RequestedDeliveryDate = null, string UnitCode = null, string WrapCode = null, int? UnitsPerWrap = null, double? Cost = null, double? Sell = null, string PricingPer = null, double? MaxFreight = null, string ChargeFreight = null, double? MaxOther = null, DateTime? DistDate = null, DateTime? VoidDate = null, string FreezeAction = null, string RevDate = null, string ArtBack = null, string Origin = null, int? Sample = null, string SampleTo = null, int? MaxOvers = null, int? MaxUnders = null, int? ReceivedSfp = null, string BudgetCode = null, string AccountingCode = null, string TaxExempt = null, string Capitalize = null, string Accrual = null, int? OddQuantity = null, double? FreightCost = null, DateTime? ReceivedDate = null, int? ReceivedQuantity = null, int? FromProd = null, string SfpComplete = null, int? EndQuantity = null, double? EndVal = null, double? EndFact = null, int? InterimQuantity = null, double? InterimVal = null, double? InterimFact = null, DateTime? LastAct = null, double? WeightPerWrap = null, string Norcs = null, int? VendorId = null, int? BsVendor = null, int? MlVendor = null, int? ReceiptNo = null, string PaidFull = null, string EnteredBy = null, string ReceivedBy = null, int? LineNo = null, string ProdLot = null, int? UnitsPerCase = null, double? CaseWeight = null, double? Height = null, double? Width = null, double? Length = null, DateTime? DockTime = null, int? Impressions = null, int? AsnLine = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -257,13 +256,12 @@ namespace Infoplus.Model
             this.ReceivedBy = ReceivedBy;
             this.LineNo = LineNo;
             this.ProdLot = ProdLot;
-            this.ProductIdTag = ProductIdTag;
             this.UnitsPerCase = UnitsPerCase;
             this.CaseWeight = CaseWeight;
             this.Height = Height;
             this.Width = Width;
             this.Length = Length;
-            this.DockDate = DockDate;
+            this.DockTime = DockTime;
             this.Impressions = Impressions;
             this.AsnLine = AsnLine;
             this.CustomFields = CustomFields;
@@ -632,12 +630,6 @@ namespace Infoplus.Model
         public string ProdLot { get; set; }
     
         /// <summary>
-        /// Gets or Sets ProductIdTag
-        /// </summary>
-        [DataMember(Name="productIdTag", EmitDefaultValue=false)]
-        public string ProductIdTag { get; set; }
-    
-        /// <summary>
         /// Gets or Sets UnitsPerCase
         /// </summary>
         [DataMember(Name="unitsPerCase", EmitDefaultValue=false)]
@@ -668,10 +660,10 @@ namespace Infoplus.Model
         public double? Length { get; set; }
     
         /// <summary>
-        /// Gets or Sets DockDate
+        /// Gets or Sets DockTime
         /// </summary>
-        [DataMember(Name="dockDate", EmitDefaultValue=false)]
-        public DateTime? DockDate { get; set; }
+        [DataMember(Name="dockTime", EmitDefaultValue=false)]
+        public DateTime? DockTime { get; set; }
     
         /// <summary>
         /// Gets or Sets ModifyDate
@@ -765,13 +757,12 @@ namespace Infoplus.Model
             sb.Append("  ReceivedBy: ").Append(ReceivedBy).Append("\n");
             sb.Append("  LineNo: ").Append(LineNo).Append("\n");
             sb.Append("  ProdLot: ").Append(ProdLot).Append("\n");
-            sb.Append("  ProductIdTag: ").Append(ProductIdTag).Append("\n");
             sb.Append("  UnitsPerCase: ").Append(UnitsPerCase).Append("\n");
             sb.Append("  CaseWeight: ").Append(CaseWeight).Append("\n");
             sb.Append("  Height: ").Append(Height).Append("\n");
             sb.Append("  Width: ").Append(Width).Append("\n");
             sb.Append("  Length: ").Append(Length).Append("\n");
-            sb.Append("  DockDate: ").Append(DockDate).Append("\n");
+            sb.Append("  DockTime: ").Append(DockTime).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
             sb.Append("  Impressions: ").Append(Impressions).Append("\n");
             sb.Append("  AsnLine: ").Append(AsnLine).Append("\n");
@@ -1114,11 +1105,6 @@ namespace Infoplus.Model
                     this.ProdLot.Equals(other.ProdLot)
                 ) && 
                 (
-                    this.ProductIdTag == other.ProductIdTag ||
-                    this.ProductIdTag != null &&
-                    this.ProductIdTag.Equals(other.ProductIdTag)
-                ) && 
-                (
                     this.UnitsPerCase == other.UnitsPerCase ||
                     this.UnitsPerCase != null &&
                     this.UnitsPerCase.Equals(other.UnitsPerCase)
@@ -1144,9 +1130,9 @@ namespace Infoplus.Model
                     this.Length.Equals(other.Length)
                 ) && 
                 (
-                    this.DockDate == other.DockDate ||
-                    this.DockDate != null &&
-                    this.DockDate.Equals(other.DockDate)
+                    this.DockTime == other.DockTime ||
+                    this.DockTime != null &&
+                    this.DockTime.Equals(other.DockTime)
                 ) && 
                 (
                     this.ModifyDate == other.ModifyDate ||
@@ -1362,9 +1348,6 @@ namespace Infoplus.Model
                 if (this.ProdLot != null)
                     hash = hash * 59 + this.ProdLot.GetHashCode();
                 
-                if (this.ProductIdTag != null)
-                    hash = hash * 59 + this.ProductIdTag.GetHashCode();
-                
                 if (this.UnitsPerCase != null)
                     hash = hash * 59 + this.UnitsPerCase.GetHashCode();
                 
@@ -1380,8 +1363,8 @@ namespace Infoplus.Model
                 if (this.Length != null)
                     hash = hash * 59 + this.Length.GetHashCode();
                 
-                if (this.DockDate != null)
-                    hash = hash * 59 + this.DockDate.GetHashCode();
+                if (this.DockTime != null)
+                    hash = hash * 59 + this.DockTime.GetHashCode();
                 
                 if (this.ModifyDate != null)
                     hash = hash * 59 + this.ModifyDate.GetHashCode();

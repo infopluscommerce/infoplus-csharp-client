@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<QuickReceipt> AddQuickReceiptWithHttpInfo (QuickReceipt body);
         
         /// <summary>
-        /// Add new audit for a quickReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param>
-        /// <param name="quickReceiptAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddQuickReceiptAudit (int? quickReceiptId, string quickReceiptAudit);
-  
-        /// <summary>
-        /// Add new audit for a quickReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param>
-        /// <param name="quickReceiptAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddQuickReceiptAuditWithHttpInfo (int? quickReceiptId, string quickReceiptAudit);
-        
-        /// <summary>
-        /// Add new tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param>
-        /// <param name="quickReceiptTag">The tag to add</param>
-        /// <returns></returns>
-        void AddQuickReceiptTag (int? quickReceiptId, string quickReceiptTag);
-  
-        /// <summary>
-        /// Add new tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param>
-        /// <param name="quickReceiptTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddQuickReceiptTagWithHttpInfo (int? quickReceiptId, string quickReceiptTag);
-        
-        /// <summary>
         /// Delete a quickReceipt
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="quickReceiptId">Id of the quickReceipt to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteQuickReceiptWithHttpInfo (int? quickReceiptId);
-        
-        /// <summary>
-        /// Delete a tag for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param>
-        /// <param name="quickReceiptTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteQuickReceiptTag (int? quickReceiptId, string quickReceiptTag);
-  
-        /// <summary>
-        /// Delete a tag for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param>
-        /// <param name="quickReceiptTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteQuickReceiptTagWithHttpInfo (int? quickReceiptId, string quickReceiptTag);
         
         /// <summary>
         /// Get a duplicated a quickReceipt by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<QuickReceipt> GetQuickReceiptByIdWithHttpInfo (int? quickReceiptId);
         
         /// <summary>
-        /// Get the tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param>
-        /// <returns></returns>
-        void GetQuickReceiptTags (int? quickReceiptId);
-  
-        /// <summary>
-        /// Get the tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetQuickReceiptTagsWithHttpInfo (int? quickReceiptId);
-        
-        /// <summary>
         /// Update a quickReceipt
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<QuickReceipt>> AddQuickReceiptAsyncWithHttpInfo (QuickReceipt body);
         
         /// <summary>
-        /// Add new audit for a quickReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param>
-        /// <param name="quickReceiptAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddQuickReceiptAuditAsync (int? quickReceiptId, string quickReceiptAudit);
-
-        /// <summary>
-        /// Add new audit for a quickReceipt
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param>
-        /// <param name="quickReceiptAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickReceiptAuditAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptAudit);
-        
-        /// <summary>
-        /// Add new tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param>
-        /// <param name="quickReceiptTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddQuickReceiptTagAsync (int? quickReceiptId, string quickReceiptTag);
-
-        /// <summary>
-        /// Add new tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickReceipt.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param>
-        /// <param name="quickReceiptTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickReceiptTagAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptTag);
-        
-        /// <summary>
         /// Delete a quickReceipt
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="quickReceiptId">Id of the quickReceipt to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickReceiptAsyncWithHttpInfo (int? quickReceiptId);
-        
-        /// <summary>
-        /// Delete a tag for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param>
-        /// <param name="quickReceiptTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteQuickReceiptTagAsync (int? quickReceiptId, string quickReceiptTag);
-
-        /// <summary>
-        /// Delete a tag for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickReceipt tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param>
-        /// <param name="quickReceiptTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickReceiptTagAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptTag);
         
         /// <summary>
         /// Get a duplicated a quickReceipt by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="quickReceiptId">Id of the quickReceipt to be returned.</param>
         /// <returns>Task of ApiResponse (QuickReceipt)</returns>
         System.Threading.Tasks.Task<ApiResponse<QuickReceipt>> GetQuickReceiptByIdAsyncWithHttpInfo (int? quickReceiptId);
-        
-        /// <summary>
-        /// Get the tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetQuickReceiptTagsAsync (int? quickReceiptId);
-
-        /// <summary>
-        /// Get the tags for a quickReceipt.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickReceipt tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetQuickReceiptTagsAsyncWithHttpInfo (int? quickReceiptId);
         
         /// <summary>
         /// Update a quickReceipt
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling QuickReceiptApi->AddQuickReceipt");
             
     
-            var localVarPath = "/beta/quickReceipt";
+            var localVarPath = "/v2.0/quickReceipt";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddQuickReceipt");
             
     
-            var localVarPath = "/beta/quickReceipt";
+            var localVarPath = "/v2.0/quickReceipt";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a quickReceipt Adds an audit to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param> 
-        /// <param name="quickReceiptAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddQuickReceiptAudit (int? quickReceiptId, string quickReceiptAudit)
-        {
-             AddQuickReceiptAuditWithHttpInfo(quickReceiptId, quickReceiptAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a quickReceipt Adds an audit to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param> 
-        /// <param name="quickReceiptAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddQuickReceiptAuditWithHttpInfo (int? quickReceiptId, string quickReceiptAudit)
-        {
-            
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->AddQuickReceiptAudit");
-            
-            // verify the required parameter 'quickReceiptAudit' is set
-            if (quickReceiptAudit == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptAudit' when calling QuickReceiptApi->AddQuickReceiptAudit");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/audit/{quickReceiptAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            if (quickReceiptAudit != null) localVarPathParams.Add("quickReceiptAudit", Configuration.ApiClient.ParameterToString(quickReceiptAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a quickReceipt Adds an audit to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param>
-        /// <param name="quickReceiptAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddQuickReceiptAuditAsync (int? quickReceiptId, string quickReceiptAudit)
-        {
-             await AddQuickReceiptAuditAsyncWithHttpInfo(quickReceiptId, quickReceiptAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a quickReceipt Adds an audit to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add an audit to</param>
-        /// <param name="quickReceiptAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickReceiptAuditAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptAudit)
-        {
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling AddQuickReceiptAudit");
-            // verify the required parameter 'quickReceiptAudit' is set
-            if (quickReceiptAudit == null) throw new ApiException(400, "Missing required parameter 'quickReceiptAudit' when calling AddQuickReceiptAudit");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/audit/{quickReceiptAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            if (quickReceiptAudit != null) localVarPathParams.Add("quickReceiptAudit", Configuration.ApiClient.ParameterToString(quickReceiptAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a quickReceipt. Adds a tag to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param> 
-        /// <param name="quickReceiptTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddQuickReceiptTag (int? quickReceiptId, string quickReceiptTag)
-        {
-             AddQuickReceiptTagWithHttpInfo(quickReceiptId, quickReceiptTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a quickReceipt. Adds a tag to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param> 
-        /// <param name="quickReceiptTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddQuickReceiptTagWithHttpInfo (int? quickReceiptId, string quickReceiptTag)
-        {
-            
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->AddQuickReceiptTag");
-            
-            // verify the required parameter 'quickReceiptTag' is set
-            if (quickReceiptTag == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptTag' when calling QuickReceiptApi->AddQuickReceiptTag");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/tag/{quickReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            if (quickReceiptTag != null) localVarPathParams.Add("quickReceiptTag", Configuration.ApiClient.ParameterToString(quickReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a quickReceipt. Adds a tag to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param>
-        /// <param name="quickReceiptTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddQuickReceiptTagAsync (int? quickReceiptId, string quickReceiptTag)
-        {
-             await AddQuickReceiptTagAsyncWithHttpInfo(quickReceiptId, quickReceiptTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a quickReceipt. Adds a tag to an existing quickReceipt.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to add a tag to</param>
-        /// <param name="quickReceiptTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickReceiptTagAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptTag)
-        {
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling AddQuickReceiptTag");
-            // verify the required parameter 'quickReceiptTag' is set
-            if (quickReceiptTag == null) throw new ApiException(400, "Missing required parameter 'quickReceiptTag' when calling AddQuickReceiptTag");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/tag/{quickReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            if (quickReceiptTag != null) localVarPathParams.Add("quickReceiptTag", Configuration.ApiClient.ParameterToString(quickReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a quickReceipt Deletes the quickReceipt identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->DeleteQuickReceipt");
             
     
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}";
+            var localVarPath = "/v2.0/quickReceipt/{quickReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling DeleteQuickReceipt");
             
     
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}";
+            var localVarPath = "/v2.0/quickReceipt/{quickReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a quickReceipt. Deletes an existing quickReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param> 
-        /// <param name="quickReceiptTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteQuickReceiptTag (int? quickReceiptId, string quickReceiptTag)
-        {
-             DeleteQuickReceiptTagWithHttpInfo(quickReceiptId, quickReceiptTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a quickReceipt. Deletes an existing quickReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param> 
-        /// <param name="quickReceiptTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteQuickReceiptTagWithHttpInfo (int? quickReceiptId, string quickReceiptTag)
-        {
-            
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->DeleteQuickReceiptTag");
-            
-            // verify the required parameter 'quickReceiptTag' is set
-            if (quickReceiptTag == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptTag' when calling QuickReceiptApi->DeleteQuickReceiptTag");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/tag/{quickReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            if (quickReceiptTag != null) localVarPathParams.Add("quickReceiptTag", Configuration.ApiClient.ParameterToString(quickReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a quickReceipt. Deletes an existing quickReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param>
-        /// <param name="quickReceiptTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteQuickReceiptTagAsync (int? quickReceiptId, string quickReceiptTag)
-        {
-             await DeleteQuickReceiptTagAsyncWithHttpInfo(quickReceiptId, quickReceiptTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a quickReceipt. Deletes an existing quickReceipt tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to remove tag from</param>
-        /// <param name="quickReceiptTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickReceiptTagAsyncWithHttpInfo (int? quickReceiptId, string quickReceiptTag)
-        {
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling DeleteQuickReceiptTag");
-            // verify the required parameter 'quickReceiptTag' is set
-            if (quickReceiptTag == null) throw new ApiException(400, "Missing required parameter 'quickReceiptTag' when calling DeleteQuickReceiptTag");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/tag/{quickReceiptTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            if (quickReceiptTag != null) localVarPathParams.Add("quickReceiptTag", Configuration.ApiClient.ParameterToString(quickReceiptTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickReceiptTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickReceiptTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a quickReceipt by id Returns a duplicated quickReceipt identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->GetDuplicateQuickReceiptById");
             
     
-            var localVarPath = "/beta/quickReceipt/duplicate/{quickReceiptId}";
+            var localVarPath = "/v2.0/quickReceipt/duplicate/{quickReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling GetDuplicateQuickReceiptById");
             
     
-            var localVarPath = "/beta/quickReceipt/duplicate/{quickReceiptId}";
+            var localVarPath = "/v2.0/quickReceipt/duplicate/{quickReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/quickReceipt/search";
+            var localVarPath = "/v2.0/quickReceipt/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/quickReceipt/search";
+            var localVarPath = "/v2.0/quickReceipt/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->GetQuickReceiptById");
             
     
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}";
+            var localVarPath = "/v2.0/quickReceipt/{quickReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling GetQuickReceiptById");
             
     
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}";
+            var localVarPath = "/v2.0/quickReceipt/{quickReceiptId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a quickReceipt. Get all existing quickReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param> 
-        /// <returns></returns>
-        public void GetQuickReceiptTags (int? quickReceiptId)
-        {
-             GetQuickReceiptTagsWithHttpInfo(quickReceiptId);
-        }
-
-        /// <summary>
-        /// Get the tags for a quickReceipt. Get all existing quickReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetQuickReceiptTagsWithHttpInfo (int? quickReceiptId)
-        {
-            
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null)
-                throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling QuickReceiptApi->GetQuickReceiptTags");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickReceiptTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickReceiptTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a quickReceipt. Get all existing quickReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetQuickReceiptTagsAsync (int? quickReceiptId)
-        {
-             await GetQuickReceiptTagsAsyncWithHttpInfo(quickReceiptId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a quickReceipt. Get all existing quickReceipt tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickReceiptId">Id of the quickReceipt to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetQuickReceiptTagsAsyncWithHttpInfo (int? quickReceiptId)
-        {
-            // verify the required parameter 'quickReceiptId' is set
-            if (quickReceiptId == null) throw new ApiException(400, "Missing required parameter 'quickReceiptId' when calling GetQuickReceiptTags");
-            
-    
-            var localVarPath = "/beta/quickReceipt/{quickReceiptId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickReceiptId != null) localVarPathParams.Add("quickReceiptId", Configuration.ApiClient.ParameterToString(quickReceiptId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickReceiptTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickReceiptTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a quickReceipt Updates an existing quickReceipt using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling QuickReceiptApi->UpdateQuickReceipt");
             
     
-            var localVarPath = "/beta/quickReceipt";
+            var localVarPath = "/v2.0/quickReceipt";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateQuickReceipt");
             
     
-            var localVarPath = "/beta/quickReceipt";
+            var localVarPath = "/v2.0/quickReceipt";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling QuickReceiptApi->UpdateQuickReceiptCustomFields");
             
     
-            var localVarPath = "/beta/quickReceipt/customFields";
+            var localVarPath = "/v2.0/quickReceipt/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateQuickReceiptCustomFields");
             
     
-            var localVarPath = "/beta/quickReceipt/customFields";
+            var localVarPath = "/v2.0/quickReceipt/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

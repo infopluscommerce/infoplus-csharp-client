@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Building> AddBuildingWithHttpInfo (Building body);
         
         /// <summary>
-        /// Add new audit for a building
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param>
-        /// <param name="buildingAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddBuildingAudit (int? buildingId, string buildingAudit);
-  
-        /// <summary>
-        /// Add new audit for a building
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param>
-        /// <param name="buildingAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddBuildingAuditWithHttpInfo (int? buildingId, string buildingAudit);
-        
-        /// <summary>
-        /// Add new tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param>
-        /// <param name="buildingTag">The tag to add</param>
-        /// <returns></returns>
-        void AddBuildingTag (int? buildingId, string buildingTag);
-  
-        /// <summary>
-        /// Add new tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param>
-        /// <param name="buildingTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddBuildingTagWithHttpInfo (int? buildingId, string buildingTag);
-        
-        /// <summary>
         /// Delete a building
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="buildingId">Id of the building to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteBuildingWithHttpInfo (int? buildingId);
-        
-        /// <summary>
-        /// Delete a tag for a building.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing building tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param>
-        /// <param name="buildingTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteBuildingTag (int? buildingId, string buildingTag);
-  
-        /// <summary>
-        /// Delete a tag for a building.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing building tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param>
-        /// <param name="buildingTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteBuildingTagWithHttpInfo (int? buildingId, string buildingTag);
         
         /// <summary>
         /// Search buildings by filter
@@ -182,28 +110,6 @@ namespace Infoplus.Api
         /// <param name="buildingId">Id of the building to be returned.</param>
         /// <returns>ApiResponse of Building</returns>
         ApiResponse<Building> GetBuildingByIdWithHttpInfo (int? buildingId);
-        
-        /// <summary>
-        /// Get the tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing building tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param>
-        /// <returns></returns>
-        void GetBuildingTags (int? buildingId);
-  
-        /// <summary>
-        /// Get the tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing building tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetBuildingTagsWithHttpInfo (int? buildingId);
         
         /// <summary>
         /// Get a duplicated a building by id
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Building>> AddBuildingAsyncWithHttpInfo (Building body);
         
         /// <summary>
-        /// Add new audit for a building
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param>
-        /// <param name="buildingAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddBuildingAuditAsync (int? buildingId, string buildingAudit);
-
-        /// <summary>
-        /// Add new audit for a building
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param>
-        /// <param name="buildingAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddBuildingAuditAsyncWithHttpInfo (int? buildingId, string buildingAudit);
-        
-        /// <summary>
-        /// Add new tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param>
-        /// <param name="buildingTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddBuildingTagAsync (int? buildingId, string buildingTag);
-
-        /// <summary>
-        /// Add new tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing building.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param>
-        /// <param name="buildingTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddBuildingTagAsyncWithHttpInfo (int? buildingId, string buildingTag);
-        
-        /// <summary>
         /// Delete a building
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="buildingId">Id of the building to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBuildingAsyncWithHttpInfo (int? buildingId);
-        
-        /// <summary>
-        /// Delete a tag for a building.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing building tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param>
-        /// <param name="buildingTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteBuildingTagAsync (int? buildingId, string buildingTag);
-
-        /// <summary>
-        /// Delete a tag for a building.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing building tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param>
-        /// <param name="buildingTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBuildingTagAsyncWithHttpInfo (int? buildingId, string buildingTag);
         
         /// <summary>
         /// Search buildings by filter
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="buildingId">Id of the building to be returned.</param>
         /// <returns>Task of ApiResponse (Building)</returns>
         System.Threading.Tasks.Task<ApiResponse<Building>> GetBuildingByIdAsyncWithHttpInfo (int? buildingId);
-        
-        /// <summary>
-        /// Get the tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing building tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetBuildingTagsAsync (int? buildingId);
-
-        /// <summary>
-        /// Get the tags for a building.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing building tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetBuildingTagsAsyncWithHttpInfo (int? buildingId);
         
         /// <summary>
         /// Get a duplicated a building by id
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BuildingApi->AddBuilding");
             
     
-            var localVarPath = "/beta/building";
+            var localVarPath = "/v2.0/building";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddBuilding");
             
     
-            var localVarPath = "/beta/building";
+            var localVarPath = "/v2.0/building";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a building Adds an audit to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param> 
-        /// <param name="buildingAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddBuildingAudit (int? buildingId, string buildingAudit)
-        {
-             AddBuildingAuditWithHttpInfo(buildingId, buildingAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a building Adds an audit to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param> 
-        /// <param name="buildingAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddBuildingAuditWithHttpInfo (int? buildingId, string buildingAudit)
-        {
-            
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null)
-                throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->AddBuildingAudit");
-            
-            // verify the required parameter 'buildingAudit' is set
-            if (buildingAudit == null)
-                throw new ApiException(400, "Missing required parameter 'buildingAudit' when calling BuildingApi->AddBuildingAudit");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/audit/{buildingAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            if (buildingAudit != null) localVarPathParams.Add("buildingAudit", Configuration.ApiClient.ParameterToString(buildingAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a building Adds an audit to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param>
-        /// <param name="buildingAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddBuildingAuditAsync (int? buildingId, string buildingAudit)
-        {
-             await AddBuildingAuditAsyncWithHttpInfo(buildingId, buildingAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a building Adds an audit to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add an audit to</param>
-        /// <param name="buildingAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddBuildingAuditAsyncWithHttpInfo (int? buildingId, string buildingAudit)
-        {
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling AddBuildingAudit");
-            // verify the required parameter 'buildingAudit' is set
-            if (buildingAudit == null) throw new ApiException(400, "Missing required parameter 'buildingAudit' when calling AddBuildingAudit");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/audit/{buildingAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            if (buildingAudit != null) localVarPathParams.Add("buildingAudit", Configuration.ApiClient.ParameterToString(buildingAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a building. Adds a tag to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param> 
-        /// <param name="buildingTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddBuildingTag (int? buildingId, string buildingTag)
-        {
-             AddBuildingTagWithHttpInfo(buildingId, buildingTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a building. Adds a tag to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param> 
-        /// <param name="buildingTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddBuildingTagWithHttpInfo (int? buildingId, string buildingTag)
-        {
-            
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null)
-                throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->AddBuildingTag");
-            
-            // verify the required parameter 'buildingTag' is set
-            if (buildingTag == null)
-                throw new ApiException(400, "Missing required parameter 'buildingTag' when calling BuildingApi->AddBuildingTag");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/tag/{buildingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            if (buildingTag != null) localVarPathParams.Add("buildingTag", Configuration.ApiClient.ParameterToString(buildingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a building. Adds a tag to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param>
-        /// <param name="buildingTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddBuildingTagAsync (int? buildingId, string buildingTag)
-        {
-             await AddBuildingTagAsyncWithHttpInfo(buildingId, buildingTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a building. Adds a tag to an existing building.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to add a tag to</param>
-        /// <param name="buildingTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddBuildingTagAsyncWithHttpInfo (int? buildingId, string buildingTag)
-        {
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling AddBuildingTag");
-            // verify the required parameter 'buildingTag' is set
-            if (buildingTag == null) throw new ApiException(400, "Missing required parameter 'buildingTag' when calling AddBuildingTag");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/tag/{buildingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            if (buildingTag != null) localVarPathParams.Add("buildingTag", Configuration.ApiClient.ParameterToString(buildingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBuildingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a building Deletes the building identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->DeleteBuilding");
             
     
-            var localVarPath = "/beta/building/{buildingId}";
+            var localVarPath = "/v2.0/building/{buildingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling DeleteBuilding");
             
     
-            var localVarPath = "/beta/building/{buildingId}";
+            var localVarPath = "/v2.0/building/{buildingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a building. Deletes an existing building tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param> 
-        /// <param name="buildingTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteBuildingTag (int? buildingId, string buildingTag)
-        {
-             DeleteBuildingTagWithHttpInfo(buildingId, buildingTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a building. Deletes an existing building tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param> 
-        /// <param name="buildingTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteBuildingTagWithHttpInfo (int? buildingId, string buildingTag)
-        {
-            
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null)
-                throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->DeleteBuildingTag");
-            
-            // verify the required parameter 'buildingTag' is set
-            if (buildingTag == null)
-                throw new ApiException(400, "Missing required parameter 'buildingTag' when calling BuildingApi->DeleteBuildingTag");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/tag/{buildingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            if (buildingTag != null) localVarPathParams.Add("buildingTag", Configuration.ApiClient.ParameterToString(buildingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBuildingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBuildingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a building. Deletes an existing building tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param>
-        /// <param name="buildingTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteBuildingTagAsync (int? buildingId, string buildingTag)
-        {
-             await DeleteBuildingTagAsyncWithHttpInfo(buildingId, buildingTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a building. Deletes an existing building tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to remove tag from</param>
-        /// <param name="buildingTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBuildingTagAsyncWithHttpInfo (int? buildingId, string buildingTag)
-        {
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling DeleteBuildingTag");
-            // verify the required parameter 'buildingTag' is set
-            if (buildingTag == null) throw new ApiException(400, "Missing required parameter 'buildingTag' when calling DeleteBuildingTag");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/tag/{buildingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            if (buildingTag != null) localVarPathParams.Add("buildingTag", Configuration.ApiClient.ParameterToString(buildingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBuildingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBuildingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search buildings by filter Returns the list of buildings that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1544,7 +813,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/building/search";
+            var localVarPath = "/v2.0/building/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1636,7 +905,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/building/search";
+            var localVarPath = "/v2.0/building/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1725,7 +994,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->GetBuildingById");
             
     
-            var localVarPath = "/beta/building/{buildingId}";
+            var localVarPath = "/v2.0/building/{buildingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1810,7 +1079,7 @@ namespace Infoplus.Api
             if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling GetBuildingById");
             
     
-            var localVarPath = "/beta/building/{buildingId}";
+            var localVarPath = "/v2.0/building/{buildingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1871,175 +1140,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a building. Get all existing building tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param> 
-        /// <returns></returns>
-        public void GetBuildingTags (int? buildingId)
-        {
-             GetBuildingTagsWithHttpInfo(buildingId);
-        }
-
-        /// <summary>
-        /// Get the tags for a building. Get all existing building tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetBuildingTagsWithHttpInfo (int? buildingId)
-        {
-            
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null)
-                throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->GetBuildingTags");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetBuildingTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetBuildingTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a building. Get all existing building tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetBuildingTagsAsync (int? buildingId)
-        {
-             await GetBuildingTagsAsyncWithHttpInfo(buildingId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a building. Get all existing building tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="buildingId">Id of the building to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetBuildingTagsAsyncWithHttpInfo (int? buildingId)
-        {
-            // verify the required parameter 'buildingId' is set
-            if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling GetBuildingTags");
-            
-    
-            var localVarPath = "/beta/building/{buildingId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (buildingId != null) localVarPathParams.Add("buildingId", Configuration.ApiClient.ParameterToString(buildingId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetBuildingTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetBuildingTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a building by id Returns a duplicated building identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2065,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'buildingId' when calling BuildingApi->GetDuplicateBuildingById");
             
     
-            var localVarPath = "/beta/building/duplicate/{buildingId}";
+            var localVarPath = "/v2.0/building/duplicate/{buildingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2150,7 +1250,7 @@ namespace Infoplus.Api
             if (buildingId == null) throw new ApiException(400, "Missing required parameter 'buildingId' when calling GetDuplicateBuildingById");
             
     
-            var localVarPath = "/beta/building/duplicate/{buildingId}";
+            var localVarPath = "/v2.0/building/duplicate/{buildingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BuildingApi->UpdateBuilding");
             
     
-            var localVarPath = "/beta/building";
+            var localVarPath = "/v2.0/building";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateBuilding");
             
     
-            var localVarPath = "/beta/building";
+            var localVarPath = "/v2.0/building";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BuildingApi->UpdateBuildingCustomFields");
             
     
-            var localVarPath = "/beta/building/customFields";
+            var localVarPath = "/v2.0/building/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateBuildingCustomFields");
             
     
-            var localVarPath = "/beta/building/customFields";
+            var localVarPath = "/v2.0/building/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

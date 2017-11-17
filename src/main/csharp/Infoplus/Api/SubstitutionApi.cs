@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Substitution> AddSubstitutionWithHttpInfo (Substitution body);
         
         /// <summary>
-        /// Add new audit for a substitution
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param>
-        /// <param name="substitutionAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddSubstitutionAudit (int? substitutionId, string substitutionAudit);
-  
-        /// <summary>
-        /// Add new audit for a substitution
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param>
-        /// <param name="substitutionAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddSubstitutionAuditWithHttpInfo (int? substitutionId, string substitutionAudit);
-        
-        /// <summary>
-        /// Add new tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param>
-        /// <param name="substitutionTag">The tag to add</param>
-        /// <returns></returns>
-        void AddSubstitutionTag (int? substitutionId, string substitutionTag);
-  
-        /// <summary>
-        /// Add new tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param>
-        /// <param name="substitutionTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddSubstitutionTagWithHttpInfo (int? substitutionId, string substitutionTag);
-        
-        /// <summary>
         /// Delete a substitution
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="substitutionId">Id of the substitution to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteSubstitutionWithHttpInfo (int? substitutionId);
-        
-        /// <summary>
-        /// Delete a tag for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing substitution tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param>
-        /// <param name="substitutionTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteSubstitutionTag (int? substitutionId, string substitutionTag);
-  
-        /// <summary>
-        /// Delete a tag for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing substitution tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param>
-        /// <param name="substitutionTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteSubstitutionTagWithHttpInfo (int? substitutionId, string substitutionTag);
         
         /// <summary>
         /// Get a duplicated a substitution by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<Substitution> GetSubstitutionByIdWithHttpInfo (int? substitutionId);
         
         /// <summary>
-        /// Get the tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing substitution tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param>
-        /// <returns></returns>
-        void GetSubstitutionTags (int? substitutionId);
-  
-        /// <summary>
-        /// Get the tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing substitution tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetSubstitutionTagsWithHttpInfo (int? substitutionId);
-        
-        /// <summary>
         /// Update a substitution
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Substitution>> AddSubstitutionAsyncWithHttpInfo (Substitution body);
         
         /// <summary>
-        /// Add new audit for a substitution
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param>
-        /// <param name="substitutionAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddSubstitutionAuditAsync (int? substitutionId, string substitutionAudit);
-
-        /// <summary>
-        /// Add new audit for a substitution
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param>
-        /// <param name="substitutionAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddSubstitutionAuditAsyncWithHttpInfo (int? substitutionId, string substitutionAudit);
-        
-        /// <summary>
-        /// Add new tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param>
-        /// <param name="substitutionTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddSubstitutionTagAsync (int? substitutionId, string substitutionTag);
-
-        /// <summary>
-        /// Add new tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing substitution.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param>
-        /// <param name="substitutionTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddSubstitutionTagAsyncWithHttpInfo (int? substitutionId, string substitutionTag);
-        
-        /// <summary>
         /// Delete a substitution
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="substitutionId">Id of the substitution to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSubstitutionAsyncWithHttpInfo (int? substitutionId);
-        
-        /// <summary>
-        /// Delete a tag for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing substitution tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param>
-        /// <param name="substitutionTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteSubstitutionTagAsync (int? substitutionId, string substitutionTag);
-
-        /// <summary>
-        /// Delete a tag for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing substitution tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param>
-        /// <param name="substitutionTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSubstitutionTagAsyncWithHttpInfo (int? substitutionId, string substitutionTag);
         
         /// <summary>
         /// Get a duplicated a substitution by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="substitutionId">Id of the substitution to be returned.</param>
         /// <returns>Task of ApiResponse (Substitution)</returns>
         System.Threading.Tasks.Task<ApiResponse<Substitution>> GetSubstitutionByIdAsyncWithHttpInfo (int? substitutionId);
-        
-        /// <summary>
-        /// Get the tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing substitution tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetSubstitutionTagsAsync (int? substitutionId);
-
-        /// <summary>
-        /// Get the tags for a substitution.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing substitution tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetSubstitutionTagsAsyncWithHttpInfo (int? substitutionId);
         
         /// <summary>
         /// Update a substitution
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling SubstitutionApi->AddSubstitution");
             
     
-            var localVarPath = "/beta/substitution";
+            var localVarPath = "/v2.0/substitution";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddSubstitution");
             
     
-            var localVarPath = "/beta/substitution";
+            var localVarPath = "/v2.0/substitution";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a substitution Adds an audit to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param> 
-        /// <param name="substitutionAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddSubstitutionAudit (int? substitutionId, string substitutionAudit)
-        {
-             AddSubstitutionAuditWithHttpInfo(substitutionId, substitutionAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a substitution Adds an audit to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param> 
-        /// <param name="substitutionAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddSubstitutionAuditWithHttpInfo (int? substitutionId, string substitutionAudit)
-        {
-            
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->AddSubstitutionAudit");
-            
-            // verify the required parameter 'substitutionAudit' is set
-            if (substitutionAudit == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionAudit' when calling SubstitutionApi->AddSubstitutionAudit");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/audit/{substitutionAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            if (substitutionAudit != null) localVarPathParams.Add("substitutionAudit", Configuration.ApiClient.ParameterToString(substitutionAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a substitution Adds an audit to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param>
-        /// <param name="substitutionAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddSubstitutionAuditAsync (int? substitutionId, string substitutionAudit)
-        {
-             await AddSubstitutionAuditAsyncWithHttpInfo(substitutionId, substitutionAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a substitution Adds an audit to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add an audit to</param>
-        /// <param name="substitutionAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddSubstitutionAuditAsyncWithHttpInfo (int? substitutionId, string substitutionAudit)
-        {
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling AddSubstitutionAudit");
-            // verify the required parameter 'substitutionAudit' is set
-            if (substitutionAudit == null) throw new ApiException(400, "Missing required parameter 'substitutionAudit' when calling AddSubstitutionAudit");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/audit/{substitutionAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            if (substitutionAudit != null) localVarPathParams.Add("substitutionAudit", Configuration.ApiClient.ParameterToString(substitutionAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a substitution. Adds a tag to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param> 
-        /// <param name="substitutionTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddSubstitutionTag (int? substitutionId, string substitutionTag)
-        {
-             AddSubstitutionTagWithHttpInfo(substitutionId, substitutionTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a substitution. Adds a tag to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param> 
-        /// <param name="substitutionTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddSubstitutionTagWithHttpInfo (int? substitutionId, string substitutionTag)
-        {
-            
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->AddSubstitutionTag");
-            
-            // verify the required parameter 'substitutionTag' is set
-            if (substitutionTag == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionTag' when calling SubstitutionApi->AddSubstitutionTag");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/tag/{substitutionTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            if (substitutionTag != null) localVarPathParams.Add("substitutionTag", Configuration.ApiClient.ParameterToString(substitutionTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a substitution. Adds a tag to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param>
-        /// <param name="substitutionTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddSubstitutionTagAsync (int? substitutionId, string substitutionTag)
-        {
-             await AddSubstitutionTagAsyncWithHttpInfo(substitutionId, substitutionTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a substitution. Adds a tag to an existing substitution.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to add a tag to</param>
-        /// <param name="substitutionTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddSubstitutionTagAsyncWithHttpInfo (int? substitutionId, string substitutionTag)
-        {
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling AddSubstitutionTag");
-            // verify the required parameter 'substitutionTag' is set
-            if (substitutionTag == null) throw new ApiException(400, "Missing required parameter 'substitutionTag' when calling AddSubstitutionTag");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/tag/{substitutionTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            if (substitutionTag != null) localVarPathParams.Add("substitutionTag", Configuration.ApiClient.ParameterToString(substitutionTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSubstitutionTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a substitution Deletes the substitution identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->DeleteSubstitution");
             
     
-            var localVarPath = "/beta/substitution/{substitutionId}";
+            var localVarPath = "/v2.0/substitution/{substitutionId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling DeleteSubstitution");
             
     
-            var localVarPath = "/beta/substitution/{substitutionId}";
+            var localVarPath = "/v2.0/substitution/{substitutionId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a substitution. Deletes an existing substitution tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param> 
-        /// <param name="substitutionTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteSubstitutionTag (int? substitutionId, string substitutionTag)
-        {
-             DeleteSubstitutionTagWithHttpInfo(substitutionId, substitutionTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a substitution. Deletes an existing substitution tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param> 
-        /// <param name="substitutionTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteSubstitutionTagWithHttpInfo (int? substitutionId, string substitutionTag)
-        {
-            
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->DeleteSubstitutionTag");
-            
-            // verify the required parameter 'substitutionTag' is set
-            if (substitutionTag == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionTag' when calling SubstitutionApi->DeleteSubstitutionTag");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/tag/{substitutionTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            if (substitutionTag != null) localVarPathParams.Add("substitutionTag", Configuration.ApiClient.ParameterToString(substitutionTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSubstitutionTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSubstitutionTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a substitution. Deletes an existing substitution tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param>
-        /// <param name="substitutionTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteSubstitutionTagAsync (int? substitutionId, string substitutionTag)
-        {
-             await DeleteSubstitutionTagAsyncWithHttpInfo(substitutionId, substitutionTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a substitution. Deletes an existing substitution tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to remove tag from</param>
-        /// <param name="substitutionTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSubstitutionTagAsyncWithHttpInfo (int? substitutionId, string substitutionTag)
-        {
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling DeleteSubstitutionTag");
-            // verify the required parameter 'substitutionTag' is set
-            if (substitutionTag == null) throw new ApiException(400, "Missing required parameter 'substitutionTag' when calling DeleteSubstitutionTag");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/tag/{substitutionTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            if (substitutionTag != null) localVarPathParams.Add("substitutionTag", Configuration.ApiClient.ParameterToString(substitutionTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSubstitutionTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSubstitutionTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a substitution by id Returns a duplicated substitution identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->GetDuplicateSubstitutionById");
             
     
-            var localVarPath = "/beta/substitution/duplicate/{substitutionId}";
+            var localVarPath = "/v2.0/substitution/duplicate/{substitutionId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling GetDuplicateSubstitutionById");
             
     
-            var localVarPath = "/beta/substitution/duplicate/{substitutionId}";
+            var localVarPath = "/v2.0/substitution/duplicate/{substitutionId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/substitution/search";
+            var localVarPath = "/v2.0/substitution/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/substitution/search";
+            var localVarPath = "/v2.0/substitution/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->GetSubstitutionById");
             
     
-            var localVarPath = "/beta/substitution/{substitutionId}";
+            var localVarPath = "/v2.0/substitution/{substitutionId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling GetSubstitutionById");
             
     
-            var localVarPath = "/beta/substitution/{substitutionId}";
+            var localVarPath = "/v2.0/substitution/{substitutionId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a substitution. Get all existing substitution tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param> 
-        /// <returns></returns>
-        public void GetSubstitutionTags (int? substitutionId)
-        {
-             GetSubstitutionTagsWithHttpInfo(substitutionId);
-        }
-
-        /// <summary>
-        /// Get the tags for a substitution. Get all existing substitution tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetSubstitutionTagsWithHttpInfo (int? substitutionId)
-        {
-            
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null)
-                throw new ApiException(400, "Missing required parameter 'substitutionId' when calling SubstitutionApi->GetSubstitutionTags");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetSubstitutionTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetSubstitutionTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a substitution. Get all existing substitution tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetSubstitutionTagsAsync (int? substitutionId)
-        {
-             await GetSubstitutionTagsAsyncWithHttpInfo(substitutionId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a substitution. Get all existing substitution tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="substitutionId">Id of the substitution to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetSubstitutionTagsAsyncWithHttpInfo (int? substitutionId)
-        {
-            // verify the required parameter 'substitutionId' is set
-            if (substitutionId == null) throw new ApiException(400, "Missing required parameter 'substitutionId' when calling GetSubstitutionTags");
-            
-    
-            var localVarPath = "/beta/substitution/{substitutionId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (substitutionId != null) localVarPathParams.Add("substitutionId", Configuration.ApiClient.ParameterToString(substitutionId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetSubstitutionTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetSubstitutionTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a substitution Updates an existing substitution using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling SubstitutionApi->UpdateSubstitution");
             
     
-            var localVarPath = "/beta/substitution";
+            var localVarPath = "/v2.0/substitution";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateSubstitution");
             
     
-            var localVarPath = "/beta/substitution";
+            var localVarPath = "/v2.0/substitution";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling SubstitutionApi->UpdateSubstitutionCustomFields");
             
     
-            var localVarPath = "/beta/substitution/customFields";
+            var localVarPath = "/v2.0/substitution/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateSubstitutionCustomFields");
             
     
-            var localVarPath = "/beta/substitution/customFields";
+            var localVarPath = "/v2.0/substitution/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

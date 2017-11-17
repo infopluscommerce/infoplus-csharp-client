@@ -54,16 +54,12 @@ namespace Infoplus.Model
         /// <param name="ShipDate">ShipDate.</param>
         /// <param name="AutoShipCasebreakCartons">AutoShipCasebreakCartons (default to false).</param>
         /// <param name="CartonizeOrders">CartonizeOrders (default to false).</param>
-        /// <param name="CreatePackingSlip">CreatePackingSlip (required).</param>
+        /// <param name="CreatePackingSlip">CreatePackingSlip (default to false).</param>
         /// <param name="OverridePackingSlipTemplateId">OverridePackingSlipTemplateId.</param>
         /// <param name="CreateOrderAssemblyGuide">CreateOrderAssemblyGuide (default to false).</param>
-        /// <param name="CreateOrderInvoice">CreateOrderInvoice (required).</param>
-        /// <param name="OverrideOrderInvoiceTemplateId">OverrideOrderInvoiceTemplateId.</param>
-        /// <param name="SendToExternalShippingSystem">SendToExternalShippingSystem (required) (default to false).</param>
-        /// <param name="ExternalShippingSystemId">ExternalShippingSystemId.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public FulfillmentProcess(int? WarehouseId = null, int? FulfillmentPlanId = null, int? PickScanSchemeId = null, string Status = null, int? OrderSmartFilterId = null, int? LocationSmartFilterId = null, int? CompletedPicks = null, int? TotalPicks = null, int? ShippedCasebreaks = null, int? TotalCasebreaksToShip = null, int? ShippedOrders = null, int? TotalOrdersToShip = null, int? CompletedToDo = null, int? TotalToDo = null, bool? CreatePickWork = null, string PickingRule = null, string LayoutRule = null, string PickSortRule = null, int? FirstPickPosition = null, string PickListFormat = null, string PickListLayout = null, string PickListGroup = null, string PickListSort = null, string PickSummaryFormat = null, string PickSummaryLayout = null, string PickSummarySort = null, bool? CreatePickSummary = null, bool? CreatePickList = null, bool? PreGenerateParcelLabels = null, DateTime? ShipDate = null, bool? AutoShipCasebreakCartons = null, bool? CartonizeOrders = null, string CreatePackingSlip = null, int? OverridePackingSlipTemplateId = null, bool? CreateOrderAssemblyGuide = null, string CreateOrderInvoice = null, int? OverrideOrderInvoiceTemplateId = null, bool? SendToExternalShippingSystem = null, int? ExternalShippingSystemId = null, Dictionary<string, Object> CustomFields = null)
+        public FulfillmentProcess(int? WarehouseId = null, int? FulfillmentPlanId = null, int? PickScanSchemeId = null, string Status = null, int? OrderSmartFilterId = null, int? LocationSmartFilterId = null, int? CompletedPicks = null, int? TotalPicks = null, int? ShippedCasebreaks = null, int? TotalCasebreaksToShip = null, int? ShippedOrders = null, int? TotalOrdersToShip = null, int? CompletedToDo = null, int? TotalToDo = null, bool? CreatePickWork = null, string PickingRule = null, string LayoutRule = null, string PickSortRule = null, int? FirstPickPosition = null, string PickListFormat = null, string PickListLayout = null, string PickListGroup = null, string PickListSort = null, string PickSummaryFormat = null, string PickSummaryLayout = null, string PickSummarySort = null, bool? CreatePickSummary = null, bool? CreatePickList = null, bool? PreGenerateParcelLabels = null, DateTime? ShipDate = null, bool? AutoShipCasebreakCartons = null, bool? CartonizeOrders = null, bool? CreatePackingSlip = null, int? OverridePackingSlipTemplateId = null, bool? CreateOrderAssemblyGuide = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -100,33 +96,6 @@ namespace Infoplus.Model
             else
             {
                 this.Status = Status;
-            }
-            // to ensure "CreatePackingSlip" is required (not null)
-            if (CreatePackingSlip == null)
-            {
-                throw new InvalidDataException("CreatePackingSlip is a required property for FulfillmentProcess and cannot be null");
-            }
-            else
-            {
-                this.CreatePackingSlip = CreatePackingSlip;
-            }
-            // to ensure "CreateOrderInvoice" is required (not null)
-            if (CreateOrderInvoice == null)
-            {
-                throw new InvalidDataException("CreateOrderInvoice is a required property for FulfillmentProcess and cannot be null");
-            }
-            else
-            {
-                this.CreateOrderInvoice = CreateOrderInvoice;
-            }
-            // to ensure "SendToExternalShippingSystem" is required (not null)
-            if (SendToExternalShippingSystem == null)
-            {
-                throw new InvalidDataException("SendToExternalShippingSystem is a required property for FulfillmentProcess and cannot be null");
-            }
-            else
-            {
-                this.SendToExternalShippingSystem = SendToExternalShippingSystem;
             }
             this.OrderSmartFilterId = OrderSmartFilterId;
             this.LocationSmartFilterId = LocationSmartFilterId;
@@ -204,6 +173,15 @@ namespace Infoplus.Model
             {
                 this.CartonizeOrders = CartonizeOrders;
             }
+            // use default value if no "CreatePackingSlip" provided
+            if (CreatePackingSlip == null)
+            {
+                this.CreatePackingSlip = false;
+            }
+            else
+            {
+                this.CreatePackingSlip = CreatePackingSlip;
+            }
             this.OverridePackingSlipTemplateId = OverridePackingSlipTemplateId;
             // use default value if no "CreateOrderAssemblyGuide" provided
             if (CreateOrderAssemblyGuide == null)
@@ -214,8 +192,6 @@ namespace Infoplus.Model
             {
                 this.CreateOrderAssemblyGuide = CreateOrderAssemblyGuide;
             }
-            this.OverrideOrderInvoiceTemplateId = OverrideOrderInvoiceTemplateId;
-            this.ExternalShippingSystemId = ExternalShippingSystemId;
             this.CustomFields = CustomFields;
             
         }
@@ -471,7 +447,7 @@ namespace Infoplus.Model
         /// Gets or Sets CreatePackingSlip
         /// </summary>
         [DataMember(Name="createPackingSlip", EmitDefaultValue=false)]
-        public string CreatePackingSlip { get; set; }
+        public bool? CreatePackingSlip { get; set; }
     
         /// <summary>
         /// Gets or Sets OverridePackingSlipTemplateId
@@ -484,30 +460,6 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="createOrderAssemblyGuide", EmitDefaultValue=false)]
         public bool? CreateOrderAssemblyGuide { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets CreateOrderInvoice
-        /// </summary>
-        [DataMember(Name="createOrderInvoice", EmitDefaultValue=false)]
-        public string CreateOrderInvoice { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets OverrideOrderInvoiceTemplateId
-        /// </summary>
-        [DataMember(Name="overrideOrderInvoiceTemplateId", EmitDefaultValue=false)]
-        public int? OverrideOrderInvoiceTemplateId { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets SendToExternalShippingSystem
-        /// </summary>
-        [DataMember(Name="sendToExternalShippingSystem", EmitDefaultValue=false)]
-        public bool? SendToExternalShippingSystem { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets ExternalShippingSystemId
-        /// </summary>
-        [DataMember(Name="externalShippingSystemId", EmitDefaultValue=false)]
-        public int? ExternalShippingSystemId { get; set; }
     
         /// <summary>
         /// Gets or Sets CustomFields
@@ -567,10 +519,6 @@ namespace Infoplus.Model
             sb.Append("  CreatePackingSlip: ").Append(CreatePackingSlip).Append("\n");
             sb.Append("  OverridePackingSlipTemplateId: ").Append(OverridePackingSlipTemplateId).Append("\n");
             sb.Append("  CreateOrderAssemblyGuide: ").Append(CreateOrderAssemblyGuide).Append("\n");
-            sb.Append("  CreateOrderInvoice: ").Append(CreateOrderInvoice).Append("\n");
-            sb.Append("  OverrideOrderInvoiceTemplateId: ").Append(OverrideOrderInvoiceTemplateId).Append("\n");
-            sb.Append("  SendToExternalShippingSystem: ").Append(SendToExternalShippingSystem).Append("\n");
-            sb.Append("  ExternalShippingSystemId: ").Append(ExternalShippingSystemId).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -830,26 +778,6 @@ namespace Infoplus.Model
                     this.CreateOrderAssemblyGuide.Equals(other.CreateOrderAssemblyGuide)
                 ) && 
                 (
-                    this.CreateOrderInvoice == other.CreateOrderInvoice ||
-                    this.CreateOrderInvoice != null &&
-                    this.CreateOrderInvoice.Equals(other.CreateOrderInvoice)
-                ) && 
-                (
-                    this.OverrideOrderInvoiceTemplateId == other.OverrideOrderInvoiceTemplateId ||
-                    this.OverrideOrderInvoiceTemplateId != null &&
-                    this.OverrideOrderInvoiceTemplateId.Equals(other.OverrideOrderInvoiceTemplateId)
-                ) && 
-                (
-                    this.SendToExternalShippingSystem == other.SendToExternalShippingSystem ||
-                    this.SendToExternalShippingSystem != null &&
-                    this.SendToExternalShippingSystem.Equals(other.SendToExternalShippingSystem)
-                ) && 
-                (
-                    this.ExternalShippingSystemId == other.ExternalShippingSystemId ||
-                    this.ExternalShippingSystemId != null &&
-                    this.ExternalShippingSystemId.Equals(other.ExternalShippingSystemId)
-                ) && 
-                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -999,18 +927,6 @@ namespace Infoplus.Model
                 
                 if (this.CreateOrderAssemblyGuide != null)
                     hash = hash * 59 + this.CreateOrderAssemblyGuide.GetHashCode();
-                
-                if (this.CreateOrderInvoice != null)
-                    hash = hash * 59 + this.CreateOrderInvoice.GetHashCode();
-                
-                if (this.OverrideOrderInvoiceTemplateId != null)
-                    hash = hash * 59 + this.OverrideOrderInvoiceTemplateId.GetHashCode();
-                
-                if (this.SendToExternalShippingSystem != null)
-                    hash = hash * 59 + this.SendToExternalShippingSystem.GetHashCode();
-                
-                if (this.ExternalShippingSystemId != null)
-                    hash = hash * 59 + this.ExternalShippingSystemId.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

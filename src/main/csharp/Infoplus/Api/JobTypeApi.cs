@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<JobType> AddJobTypeWithHttpInfo (JobType body);
         
         /// <summary>
-        /// Add new audit for a jobType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param>
-        /// <param name="jobTypeAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddJobTypeAudit (int? jobTypeId, string jobTypeAudit);
-  
-        /// <summary>
-        /// Add new audit for a jobType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param>
-        /// <param name="jobTypeAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddJobTypeAuditWithHttpInfo (int? jobTypeId, string jobTypeAudit);
-        
-        /// <summary>
-        /// Add new tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param>
-        /// <param name="jobTypeTag">The tag to add</param>
-        /// <returns></returns>
-        void AddJobTypeTag (int? jobTypeId, string jobTypeTag);
-  
-        /// <summary>
-        /// Add new tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param>
-        /// <param name="jobTypeTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddJobTypeTagWithHttpInfo (int? jobTypeId, string jobTypeTag);
-        
-        /// <summary>
         /// Delete a jobType
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="jobTypeId">Id of the jobType to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteJobTypeWithHttpInfo (int? jobTypeId);
-        
-        /// <summary>
-        /// Delete a tag for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing jobType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param>
-        /// <param name="jobTypeTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteJobTypeTag (int? jobTypeId, string jobTypeTag);
-  
-        /// <summary>
-        /// Delete a tag for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing jobType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param>
-        /// <param name="jobTypeTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteJobTypeTagWithHttpInfo (int? jobTypeId, string jobTypeTag);
         
         /// <summary>
         /// Get a duplicated a jobType by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<JobType> GetJobTypeByIdWithHttpInfo (int? jobTypeId);
         
         /// <summary>
-        /// Get the tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing jobType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param>
-        /// <returns></returns>
-        void GetJobTypeTags (int? jobTypeId);
-  
-        /// <summary>
-        /// Get the tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing jobType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetJobTypeTagsWithHttpInfo (int? jobTypeId);
-        
-        /// <summary>
         /// Update a jobType
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<JobType>> AddJobTypeAsyncWithHttpInfo (JobType body);
         
         /// <summary>
-        /// Add new audit for a jobType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param>
-        /// <param name="jobTypeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddJobTypeAuditAsync (int? jobTypeId, string jobTypeAudit);
-
-        /// <summary>
-        /// Add new audit for a jobType
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param>
-        /// <param name="jobTypeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddJobTypeAuditAsyncWithHttpInfo (int? jobTypeId, string jobTypeAudit);
-        
-        /// <summary>
-        /// Add new tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param>
-        /// <param name="jobTypeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddJobTypeTagAsync (int? jobTypeId, string jobTypeTag);
-
-        /// <summary>
-        /// Add new tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing jobType.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param>
-        /// <param name="jobTypeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddJobTypeTagAsyncWithHttpInfo (int? jobTypeId, string jobTypeTag);
-        
-        /// <summary>
         /// Delete a jobType
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="jobTypeId">Id of the jobType to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteJobTypeAsyncWithHttpInfo (int? jobTypeId);
-        
-        /// <summary>
-        /// Delete a tag for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing jobType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param>
-        /// <param name="jobTypeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteJobTypeTagAsync (int? jobTypeId, string jobTypeTag);
-
-        /// <summary>
-        /// Delete a tag for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing jobType tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param>
-        /// <param name="jobTypeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteJobTypeTagAsyncWithHttpInfo (int? jobTypeId, string jobTypeTag);
         
         /// <summary>
         /// Get a duplicated a jobType by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="jobTypeId">Id of the jobType to be returned.</param>
         /// <returns>Task of ApiResponse (JobType)</returns>
         System.Threading.Tasks.Task<ApiResponse<JobType>> GetJobTypeByIdAsyncWithHttpInfo (int? jobTypeId);
-        
-        /// <summary>
-        /// Get the tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing jobType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetJobTypeTagsAsync (int? jobTypeId);
-
-        /// <summary>
-        /// Get the tags for a jobType.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing jobType tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetJobTypeTagsAsyncWithHttpInfo (int? jobTypeId);
         
         /// <summary>
         /// Update a jobType
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling JobTypeApi->AddJobType");
             
     
-            var localVarPath = "/beta/jobType";
+            var localVarPath = "/v2.0/jobType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddJobType");
             
     
-            var localVarPath = "/beta/jobType";
+            var localVarPath = "/v2.0/jobType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a jobType Adds an audit to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param> 
-        /// <param name="jobTypeAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddJobTypeAudit (int? jobTypeId, string jobTypeAudit)
-        {
-             AddJobTypeAuditWithHttpInfo(jobTypeId, jobTypeAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a jobType Adds an audit to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param> 
-        /// <param name="jobTypeAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddJobTypeAuditWithHttpInfo (int? jobTypeId, string jobTypeAudit)
-        {
-            
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->AddJobTypeAudit");
-            
-            // verify the required parameter 'jobTypeAudit' is set
-            if (jobTypeAudit == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeAudit' when calling JobTypeApi->AddJobTypeAudit");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/audit/{jobTypeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            if (jobTypeAudit != null) localVarPathParams.Add("jobTypeAudit", Configuration.ApiClient.ParameterToString(jobTypeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a jobType Adds an audit to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param>
-        /// <param name="jobTypeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddJobTypeAuditAsync (int? jobTypeId, string jobTypeAudit)
-        {
-             await AddJobTypeAuditAsyncWithHttpInfo(jobTypeId, jobTypeAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a jobType Adds an audit to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add an audit to</param>
-        /// <param name="jobTypeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddJobTypeAuditAsyncWithHttpInfo (int? jobTypeId, string jobTypeAudit)
-        {
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling AddJobTypeAudit");
-            // verify the required parameter 'jobTypeAudit' is set
-            if (jobTypeAudit == null) throw new ApiException(400, "Missing required parameter 'jobTypeAudit' when calling AddJobTypeAudit");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/audit/{jobTypeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            if (jobTypeAudit != null) localVarPathParams.Add("jobTypeAudit", Configuration.ApiClient.ParameterToString(jobTypeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a jobType. Adds a tag to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param> 
-        /// <param name="jobTypeTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddJobTypeTag (int? jobTypeId, string jobTypeTag)
-        {
-             AddJobTypeTagWithHttpInfo(jobTypeId, jobTypeTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a jobType. Adds a tag to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param> 
-        /// <param name="jobTypeTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddJobTypeTagWithHttpInfo (int? jobTypeId, string jobTypeTag)
-        {
-            
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->AddJobTypeTag");
-            
-            // verify the required parameter 'jobTypeTag' is set
-            if (jobTypeTag == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeTag' when calling JobTypeApi->AddJobTypeTag");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/tag/{jobTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            if (jobTypeTag != null) localVarPathParams.Add("jobTypeTag", Configuration.ApiClient.ParameterToString(jobTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a jobType. Adds a tag to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param>
-        /// <param name="jobTypeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddJobTypeTagAsync (int? jobTypeId, string jobTypeTag)
-        {
-             await AddJobTypeTagAsyncWithHttpInfo(jobTypeId, jobTypeTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a jobType. Adds a tag to an existing jobType.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to add a tag to</param>
-        /// <param name="jobTypeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddJobTypeTagAsyncWithHttpInfo (int? jobTypeId, string jobTypeTag)
-        {
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling AddJobTypeTag");
-            // verify the required parameter 'jobTypeTag' is set
-            if (jobTypeTag == null) throw new ApiException(400, "Missing required parameter 'jobTypeTag' when calling AddJobTypeTag");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/tag/{jobTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            if (jobTypeTag != null) localVarPathParams.Add("jobTypeTag", Configuration.ApiClient.ParameterToString(jobTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddJobTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a jobType Deletes the jobType identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->DeleteJobType");
             
     
-            var localVarPath = "/beta/jobType/{jobTypeId}";
+            var localVarPath = "/v2.0/jobType/{jobTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling DeleteJobType");
             
     
-            var localVarPath = "/beta/jobType/{jobTypeId}";
+            var localVarPath = "/v2.0/jobType/{jobTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a jobType. Deletes an existing jobType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param> 
-        /// <param name="jobTypeTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteJobTypeTag (int? jobTypeId, string jobTypeTag)
-        {
-             DeleteJobTypeTagWithHttpInfo(jobTypeId, jobTypeTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a jobType. Deletes an existing jobType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param> 
-        /// <param name="jobTypeTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteJobTypeTagWithHttpInfo (int? jobTypeId, string jobTypeTag)
-        {
-            
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->DeleteJobTypeTag");
-            
-            // verify the required parameter 'jobTypeTag' is set
-            if (jobTypeTag == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeTag' when calling JobTypeApi->DeleteJobTypeTag");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/tag/{jobTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            if (jobTypeTag != null) localVarPathParams.Add("jobTypeTag", Configuration.ApiClient.ParameterToString(jobTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteJobTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteJobTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a jobType. Deletes an existing jobType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param>
-        /// <param name="jobTypeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteJobTypeTagAsync (int? jobTypeId, string jobTypeTag)
-        {
-             await DeleteJobTypeTagAsyncWithHttpInfo(jobTypeId, jobTypeTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a jobType. Deletes an existing jobType tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to remove tag from</param>
-        /// <param name="jobTypeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteJobTypeTagAsyncWithHttpInfo (int? jobTypeId, string jobTypeTag)
-        {
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling DeleteJobTypeTag");
-            // verify the required parameter 'jobTypeTag' is set
-            if (jobTypeTag == null) throw new ApiException(400, "Missing required parameter 'jobTypeTag' when calling DeleteJobTypeTag");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/tag/{jobTypeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            if (jobTypeTag != null) localVarPathParams.Add("jobTypeTag", Configuration.ApiClient.ParameterToString(jobTypeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteJobTypeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteJobTypeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a jobType by id Returns a duplicated jobType identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->GetDuplicateJobTypeById");
             
     
-            var localVarPath = "/beta/jobType/duplicate/{jobTypeId}";
+            var localVarPath = "/v2.0/jobType/duplicate/{jobTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling GetDuplicateJobTypeById");
             
     
-            var localVarPath = "/beta/jobType/duplicate/{jobTypeId}";
+            var localVarPath = "/v2.0/jobType/duplicate/{jobTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/jobType/search";
+            var localVarPath = "/v2.0/jobType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/jobType/search";
+            var localVarPath = "/v2.0/jobType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->GetJobTypeById");
             
     
-            var localVarPath = "/beta/jobType/{jobTypeId}";
+            var localVarPath = "/v2.0/jobType/{jobTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling GetJobTypeById");
             
     
-            var localVarPath = "/beta/jobType/{jobTypeId}";
+            var localVarPath = "/v2.0/jobType/{jobTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a jobType. Get all existing jobType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param> 
-        /// <returns></returns>
-        public void GetJobTypeTags (int? jobTypeId)
-        {
-             GetJobTypeTagsWithHttpInfo(jobTypeId);
-        }
-
-        /// <summary>
-        /// Get the tags for a jobType. Get all existing jobType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetJobTypeTagsWithHttpInfo (int? jobTypeId)
-        {
-            
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null)
-                throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling JobTypeApi->GetJobTypeTags");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetJobTypeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetJobTypeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a jobType. Get all existing jobType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetJobTypeTagsAsync (int? jobTypeId)
-        {
-             await GetJobTypeTagsAsyncWithHttpInfo(jobTypeId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a jobType. Get all existing jobType tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="jobTypeId">Id of the jobType to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetJobTypeTagsAsyncWithHttpInfo (int? jobTypeId)
-        {
-            // verify the required parameter 'jobTypeId' is set
-            if (jobTypeId == null) throw new ApiException(400, "Missing required parameter 'jobTypeId' when calling GetJobTypeTags");
-            
-    
-            var localVarPath = "/beta/jobType/{jobTypeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (jobTypeId != null) localVarPathParams.Add("jobTypeId", Configuration.ApiClient.ParameterToString(jobTypeId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetJobTypeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetJobTypeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a jobType Updates an existing jobType using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling JobTypeApi->UpdateJobType");
             
     
-            var localVarPath = "/beta/jobType";
+            var localVarPath = "/v2.0/jobType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateJobType");
             
     
-            var localVarPath = "/beta/jobType";
+            var localVarPath = "/v2.0/jobType";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling JobTypeApi->UpdateJobTypeCustomFields");
             
     
-            var localVarPath = "/beta/jobType/customFields";
+            var localVarPath = "/v2.0/jobType/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateJobTypeCustomFields");
             
     
-            var localVarPath = "/beta/jobType/customFields";
+            var localVarPath = "/v2.0/jobType/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

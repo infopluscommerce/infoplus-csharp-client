@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ItemSector> AddItemSectorWithHttpInfo (ItemSector body);
         
         /// <summary>
-        /// Add new audit for an itemSector
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param>
-        /// <param name="itemSectorAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddItemSectorAudit (int? itemSectorId, string itemSectorAudit);
-  
-        /// <summary>
-        /// Add new audit for an itemSector
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param>
-        /// <param name="itemSectorAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemSectorAuditWithHttpInfo (int? itemSectorId, string itemSectorAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param>
-        /// <param name="itemSectorTag">The tag to add</param>
-        /// <returns></returns>
-        void AddItemSectorTag (int? itemSectorId, string itemSectorTag);
-  
-        /// <summary>
-        /// Add new tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param>
-        /// <param name="itemSectorTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemSectorTagWithHttpInfo (int? itemSectorId, string itemSectorTag);
-        
-        /// <summary>
         /// Delete an itemSector
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="itemSectorId">Id of the itemSector to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteItemSectorWithHttpInfo (int? itemSectorId);
-        
-        /// <summary>
-        /// Delete a tag for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSector tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param>
-        /// <param name="itemSectorTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteItemSectorTag (int? itemSectorId, string itemSectorTag);
-  
-        /// <summary>
-        /// Delete a tag for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSector tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param>
-        /// <param name="itemSectorTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteItemSectorTagWithHttpInfo (int? itemSectorId, string itemSectorTag);
         
         /// <summary>
         /// Get a duplicated an itemSector by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ItemSector> GetItemSectorByIdWithHttpInfo (int? itemSectorId);
         
         /// <summary>
-        /// Get the tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSector tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param>
-        /// <returns></returns>
-        void GetItemSectorTags (int? itemSectorId);
-  
-        /// <summary>
-        /// Get the tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSector tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetItemSectorTagsWithHttpInfo (int? itemSectorId);
-        
-        /// <summary>
         /// Update an itemSector
         /// </summary>
         /// <remarks>
@@ -276,54 +182,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ItemSector>> AddItemSectorAsyncWithHttpInfo (ItemSector body);
         
         /// <summary>
-        /// Add new audit for an itemSector
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param>
-        /// <param name="itemSectorAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemSectorAuditAsync (int? itemSectorId, string itemSectorAudit);
-
-        /// <summary>
-        /// Add new audit for an itemSector
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param>
-        /// <param name="itemSectorAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSectorAuditAsyncWithHttpInfo (int? itemSectorId, string itemSectorAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param>
-        /// <param name="itemSectorTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemSectorTagAsync (int? itemSectorId, string itemSectorTag);
-
-        /// <summary>
-        /// Add new tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSector.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param>
-        /// <param name="itemSectorTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSectorTagAsyncWithHttpInfo (int? itemSectorId, string itemSectorTag);
-        
-        /// <summary>
         /// Delete an itemSector
         /// </summary>
         /// <remarks>
@@ -344,30 +202,6 @@ namespace Infoplus.Api
         /// <param name="itemSectorId">Id of the itemSector to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemSectorAsyncWithHttpInfo (int? itemSectorId);
-        
-        /// <summary>
-        /// Delete a tag for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSector tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param>
-        /// <param name="itemSectorTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteItemSectorTagAsync (int? itemSectorId, string itemSectorTag);
-
-        /// <summary>
-        /// Delete a tag for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSector tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param>
-        /// <param name="itemSectorTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemSectorTagAsyncWithHttpInfo (int? itemSectorId, string itemSectorTag);
         
         /// <summary>
         /// Get a duplicated an itemSector by id
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="itemSectorId">Id of the itemSector to be returned.</param>
         /// <returns>Task of ApiResponse (ItemSector)</returns>
         System.Threading.Tasks.Task<ApiResponse<ItemSector>> GetItemSectorByIdAsyncWithHttpInfo (int? itemSectorId);
-        
-        /// <summary>
-        /// Get the tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSector tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetItemSectorTagsAsync (int? itemSectorId);
-
-        /// <summary>
-        /// Get the tags for an itemSector.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSector tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetItemSectorTagsAsyncWithHttpInfo (int? itemSectorId);
         
         /// <summary>
         /// Update an itemSector
@@ -603,7 +415,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemSectorApi->AddItemSector");
             
     
-            var localVarPath = "/beta/itemSector";
+            var localVarPath = "/v2.0/itemSector";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -694,7 +506,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddItemSector");
             
     
-            var localVarPath = "/beta/itemSector";
+            var localVarPath = "/v2.0/itemSector";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -761,368 +573,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an itemSector Adds an audit to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param> 
-        /// <param name="itemSectorAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddItemSectorAudit (int? itemSectorId, string itemSectorAudit)
-        {
-             AddItemSectorAuditWithHttpInfo(itemSectorId, itemSectorAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an itemSector Adds an audit to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param> 
-        /// <param name="itemSectorAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemSectorAuditWithHttpInfo (int? itemSectorId, string itemSectorAudit)
-        {
-            
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->AddItemSectorAudit");
-            
-            // verify the required parameter 'itemSectorAudit' is set
-            if (itemSectorAudit == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorAudit' when calling ItemSectorApi->AddItemSectorAudit");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/audit/{itemSectorAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            if (itemSectorAudit != null) localVarPathParams.Add("itemSectorAudit", Configuration.ApiClient.ParameterToString(itemSectorAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an itemSector Adds an audit to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param>
-        /// <param name="itemSectorAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemSectorAuditAsync (int? itemSectorId, string itemSectorAudit)
-        {
-             await AddItemSectorAuditAsyncWithHttpInfo(itemSectorId, itemSectorAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an itemSector Adds an audit to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add an audit to</param>
-        /// <param name="itemSectorAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSectorAuditAsyncWithHttpInfo (int? itemSectorId, string itemSectorAudit)
-        {
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling AddItemSectorAudit");
-            // verify the required parameter 'itemSectorAudit' is set
-            if (itemSectorAudit == null) throw new ApiException(400, "Missing required parameter 'itemSectorAudit' when calling AddItemSectorAudit");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/audit/{itemSectorAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            if (itemSectorAudit != null) localVarPathParams.Add("itemSectorAudit", Configuration.ApiClient.ParameterToString(itemSectorAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an itemSector. Adds a tag to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param> 
-        /// <param name="itemSectorTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddItemSectorTag (int? itemSectorId, string itemSectorTag)
-        {
-             AddItemSectorTagWithHttpInfo(itemSectorId, itemSectorTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an itemSector. Adds a tag to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param> 
-        /// <param name="itemSectorTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemSectorTagWithHttpInfo (int? itemSectorId, string itemSectorTag)
-        {
-            
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->AddItemSectorTag");
-            
-            // verify the required parameter 'itemSectorTag' is set
-            if (itemSectorTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorTag' when calling ItemSectorApi->AddItemSectorTag");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/tag/{itemSectorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            if (itemSectorTag != null) localVarPathParams.Add("itemSectorTag", Configuration.ApiClient.ParameterToString(itemSectorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an itemSector. Adds a tag to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param>
-        /// <param name="itemSectorTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemSectorTagAsync (int? itemSectorId, string itemSectorTag)
-        {
-             await AddItemSectorTagAsyncWithHttpInfo(itemSectorId, itemSectorTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an itemSector. Adds a tag to an existing itemSector.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to add a tag to</param>
-        /// <param name="itemSectorTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSectorTagAsyncWithHttpInfo (int? itemSectorId, string itemSectorTag)
-        {
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling AddItemSectorTag");
-            // verify the required parameter 'itemSectorTag' is set
-            if (itemSectorTag == null) throw new ApiException(400, "Missing required parameter 'itemSectorTag' when calling AddItemSectorTag");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/tag/{itemSectorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            if (itemSectorTag != null) localVarPathParams.Add("itemSectorTag", Configuration.ApiClient.ParameterToString(itemSectorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSectorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an itemSector Deletes the itemSector identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1147,7 +597,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->DeleteItemSector");
             
     
-            var localVarPath = "/beta/itemSector/{itemSectorId}";
+            var localVarPath = "/v2.0/itemSector/{itemSectorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +681,7 @@ namespace Infoplus.Api
             if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling DeleteItemSector");
             
     
-            var localVarPath = "/beta/itemSector/{itemSectorId}";
+            var localVarPath = "/v2.0/itemSector/{itemSectorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1292,187 +742,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an itemSector. Deletes an existing itemSector tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param> 
-        /// <param name="itemSectorTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteItemSectorTag (int? itemSectorId, string itemSectorTag)
-        {
-             DeleteItemSectorTagWithHttpInfo(itemSectorId, itemSectorTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemSector. Deletes an existing itemSector tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param> 
-        /// <param name="itemSectorTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteItemSectorTagWithHttpInfo (int? itemSectorId, string itemSectorTag)
-        {
-            
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->DeleteItemSectorTag");
-            
-            // verify the required parameter 'itemSectorTag' is set
-            if (itemSectorTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorTag' when calling ItemSectorApi->DeleteItemSectorTag");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/tag/{itemSectorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            if (itemSectorTag != null) localVarPathParams.Add("itemSectorTag", Configuration.ApiClient.ParameterToString(itemSectorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSectorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSectorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an itemSector. Deletes an existing itemSector tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param>
-        /// <param name="itemSectorTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteItemSectorTagAsync (int? itemSectorId, string itemSectorTag)
-        {
-             await DeleteItemSectorTagAsyncWithHttpInfo(itemSectorId, itemSectorTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemSector. Deletes an existing itemSector tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to remove tag from</param>
-        /// <param name="itemSectorTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemSectorTagAsyncWithHttpInfo (int? itemSectorId, string itemSectorTag)
-        {
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling DeleteItemSectorTag");
-            // verify the required parameter 'itemSectorTag' is set
-            if (itemSectorTag == null) throw new ApiException(400, "Missing required parameter 'itemSectorTag' when calling DeleteItemSectorTag");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/tag/{itemSectorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            if (itemSectorTag != null) localVarPathParams.Add("itemSectorTag", Configuration.ApiClient.ParameterToString(itemSectorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSectorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSectorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an itemSector by id Returns a duplicated itemSector identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1498,7 +767,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->GetDuplicateItemSectorById");
             
     
-            var localVarPath = "/beta/itemSector/duplicate/{itemSectorId}";
+            var localVarPath = "/v2.0/itemSector/duplicate/{itemSectorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1583,7 +852,7 @@ namespace Infoplus.Api
             if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling GetDuplicateItemSectorById");
             
     
-            var localVarPath = "/beta/itemSector/duplicate/{itemSectorId}";
+            var localVarPath = "/v2.0/itemSector/duplicate/{itemSectorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1671,7 +940,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemSector/search";
+            var localVarPath = "/v2.0/itemSector/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1763,7 +1032,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemSector/search";
+            var localVarPath = "/v2.0/itemSector/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1852,7 +1121,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->GetItemSectorById");
             
     
-            var localVarPath = "/beta/itemSector/{itemSectorId}";
+            var localVarPath = "/v2.0/itemSector/{itemSectorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1937,7 +1206,7 @@ namespace Infoplus.Api
             if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling GetItemSectorById");
             
     
-            var localVarPath = "/beta/itemSector/{itemSectorId}";
+            var localVarPath = "/v2.0/itemSector/{itemSectorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1998,175 +1267,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an itemSector. Get all existing itemSector tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param> 
-        /// <returns></returns>
-        public void GetItemSectorTags (int? itemSectorId)
-        {
-             GetItemSectorTagsWithHttpInfo(itemSectorId);
-        }
-
-        /// <summary>
-        /// Get the tags for an itemSector. Get all existing itemSector tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetItemSectorTagsWithHttpInfo (int? itemSectorId)
-        {
-            
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling ItemSectorApi->GetItemSectorTags");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSectorTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSectorTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an itemSector. Get all existing itemSector tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetItemSectorTagsAsync (int? itemSectorId)
-        {
-             await GetItemSectorTagsAsyncWithHttpInfo(itemSectorId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an itemSector. Get all existing itemSector tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSectorId">Id of the itemSector to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetItemSectorTagsAsyncWithHttpInfo (int? itemSectorId)
-        {
-            // verify the required parameter 'itemSectorId' is set
-            if (itemSectorId == null) throw new ApiException(400, "Missing required parameter 'itemSectorId' when calling GetItemSectorTags");
-            
-    
-            var localVarPath = "/beta/itemSector/{itemSectorId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSectorId != null) localVarPathParams.Add("itemSectorId", Configuration.ApiClient.ParameterToString(itemSectorId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSectorTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSectorTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an itemSector Updates an existing itemSector using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2191,7 +1291,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemSectorApi->UpdateItemSector");
             
     
-            var localVarPath = "/beta/itemSector";
+            var localVarPath = "/v2.0/itemSector";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2281,7 +1381,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateItemSector");
             
     
-            var localVarPath = "/beta/itemSector";
+            var localVarPath = "/v2.0/itemSector";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

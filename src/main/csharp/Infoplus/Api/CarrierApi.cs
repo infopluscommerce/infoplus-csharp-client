@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'carrierId' when calling CarrierApi->GetCarrierById");
             
     
-            var localVarPath = "/beta/carrier/{carrierId}";
+            var localVarPath = "/v2.0/carrier/{carrierId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (carrierId == null) throw new ApiException(400, "Missing required parameter 'carrierId' when calling GetCarrierById");
             
     
-            var localVarPath = "/beta/carrier/{carrierId}";
+            var localVarPath = "/v2.0/carrier/{carrierId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/carrier/search";
+            var localVarPath = "/v2.0/carrier/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/carrier/search";
+            var localVarPath = "/v2.0/carrier/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

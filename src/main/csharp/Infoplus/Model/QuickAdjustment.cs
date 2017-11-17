@@ -27,11 +27,10 @@ namespace Infoplus.Model
         /// <param name="AdjustmentCode">AdjustmentCode (required).</param>
         /// <param name="TotalQuantity">TotalQuantity (required).</param>
         /// <param name="Message">Message.</param>
-        /// <param name="ProductIdTag">ProductIdTag.</param>
         /// <param name="CustomFields">CustomFields.</param>
         /// <param name="Sku">Sku.</param>
 
-        public QuickAdjustment(int? WarehouseId = null, int? LocationId = null, string AdjustmentCode = null, int? TotalQuantity = null, string Message = null, string ProductIdTag = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
+        public QuickAdjustment(int? WarehouseId = null, int? LocationId = null, string AdjustmentCode = null, int? TotalQuantity = null, string Message = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -70,7 +69,6 @@ namespace Infoplus.Model
                 this.TotalQuantity = TotalQuantity;
             }
             this.Message = Message;
-            this.ProductIdTag = ProductIdTag;
             this.CustomFields = CustomFields;
             this.Sku = Sku;
             
@@ -132,12 +130,6 @@ namespace Infoplus.Model
         public string Status { get; private set; }
     
         /// <summary>
-        /// Gets or Sets ProductIdTag
-        /// </summary>
-        [DataMember(Name="productIdTag", EmitDefaultValue=false)]
-        public string ProductIdTag { get; set; }
-    
-        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -166,7 +158,6 @@ namespace Infoplus.Model
             sb.Append("  TotalQuantity: ").Append(TotalQuantity).Append("\n");
             sb.Append("  Message: ").Append(Message).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
-            sb.Append("  ProductIdTag: ").Append(ProductIdTag).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
             
@@ -252,11 +243,6 @@ namespace Infoplus.Model
                     this.Status.Equals(other.Status)
                 ) && 
                 (
-                    this.ProductIdTag == other.ProductIdTag ||
-                    this.ProductIdTag != null &&
-                    this.ProductIdTag.Equals(other.ProductIdTag)
-                ) && 
-                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -306,9 +292,6 @@ namespace Infoplus.Model
                 
                 if (this.Status != null)
                     hash = hash * 59 + this.Status.GetHashCode();
-                
-                if (this.ProductIdTag != null)
-                    hash = hash * 59 + this.ProductIdTag.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

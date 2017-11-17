@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<OrderSource> AddOrderSourceWithHttpInfo (OrderSource body);
         
         /// <summary>
-        /// Add new audit for an orderSource
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param>
-        /// <param name="orderSourceAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddOrderSourceAudit (int? orderSourceId, string orderSourceAudit);
-  
-        /// <summary>
-        /// Add new audit for an orderSource
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param>
-        /// <param name="orderSourceAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddOrderSourceAuditWithHttpInfo (int? orderSourceId, string orderSourceAudit);
-        
-        /// <summary>
-        /// Add new tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param>
-        /// <param name="orderSourceTag">The tag to add</param>
-        /// <returns></returns>
-        void AddOrderSourceTag (int? orderSourceId, string orderSourceTag);
-  
-        /// <summary>
-        /// Add new tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param>
-        /// <param name="orderSourceTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddOrderSourceTagWithHttpInfo (int? orderSourceId, string orderSourceTag);
-        
-        /// <summary>
         /// Delete an orderSource
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="orderSourceId">Id of the orderSource to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteOrderSourceWithHttpInfo (int? orderSourceId);
-        
-        /// <summary>
-        /// Delete a tag for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing orderSource tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param>
-        /// <param name="orderSourceTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteOrderSourceTag (int? orderSourceId, string orderSourceTag);
-  
-        /// <summary>
-        /// Delete a tag for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing orderSource tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param>
-        /// <param name="orderSourceTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteOrderSourceTagWithHttpInfo (int? orderSourceId, string orderSourceTag);
         
         /// <summary>
         /// Get a duplicated an orderSource by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<OrderSource> GetOrderSourceByIdWithHttpInfo (int? orderSourceId);
         
         /// <summary>
-        /// Get the tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing orderSource tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param>
-        /// <returns></returns>
-        void GetOrderSourceTags (int? orderSourceId);
-  
-        /// <summary>
-        /// Get the tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing orderSource tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetOrderSourceTagsWithHttpInfo (int? orderSourceId);
-        
-        /// <summary>
         /// Update an orderSource
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<OrderSource>> AddOrderSourceAsyncWithHttpInfo (OrderSource body);
         
         /// <summary>
-        /// Add new audit for an orderSource
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param>
-        /// <param name="orderSourceAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddOrderSourceAuditAsync (int? orderSourceId, string orderSourceAudit);
-
-        /// <summary>
-        /// Add new audit for an orderSource
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param>
-        /// <param name="orderSourceAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddOrderSourceAuditAsyncWithHttpInfo (int? orderSourceId, string orderSourceAudit);
-        
-        /// <summary>
-        /// Add new tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param>
-        /// <param name="orderSourceTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddOrderSourceTagAsync (int? orderSourceId, string orderSourceTag);
-
-        /// <summary>
-        /// Add new tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing orderSource.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param>
-        /// <param name="orderSourceTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddOrderSourceTagAsyncWithHttpInfo (int? orderSourceId, string orderSourceTag);
-        
-        /// <summary>
         /// Delete an orderSource
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="orderSourceId">Id of the orderSource to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteOrderSourceAsyncWithHttpInfo (int? orderSourceId);
-        
-        /// <summary>
-        /// Delete a tag for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing orderSource tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param>
-        /// <param name="orderSourceTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteOrderSourceTagAsync (int? orderSourceId, string orderSourceTag);
-
-        /// <summary>
-        /// Delete a tag for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing orderSource tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param>
-        /// <param name="orderSourceTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteOrderSourceTagAsyncWithHttpInfo (int? orderSourceId, string orderSourceTag);
         
         /// <summary>
         /// Get a duplicated an orderSource by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="orderSourceId">Id of the orderSource to be returned.</param>
         /// <returns>Task of ApiResponse (OrderSource)</returns>
         System.Threading.Tasks.Task<ApiResponse<OrderSource>> GetOrderSourceByIdAsyncWithHttpInfo (int? orderSourceId);
-        
-        /// <summary>
-        /// Get the tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing orderSource tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetOrderSourceTagsAsync (int? orderSourceId);
-
-        /// <summary>
-        /// Get the tags for an orderSource.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing orderSource tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetOrderSourceTagsAsyncWithHttpInfo (int? orderSourceId);
         
         /// <summary>
         /// Update an orderSource
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling OrderSourceApi->AddOrderSource");
             
     
-            var localVarPath = "/beta/orderSource";
+            var localVarPath = "/v2.0/orderSource";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddOrderSource");
             
     
-            var localVarPath = "/beta/orderSource";
+            var localVarPath = "/v2.0/orderSource";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an orderSource Adds an audit to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param> 
-        /// <param name="orderSourceAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddOrderSourceAudit (int? orderSourceId, string orderSourceAudit)
-        {
-             AddOrderSourceAuditWithHttpInfo(orderSourceId, orderSourceAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an orderSource Adds an audit to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param> 
-        /// <param name="orderSourceAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddOrderSourceAuditWithHttpInfo (int? orderSourceId, string orderSourceAudit)
-        {
-            
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->AddOrderSourceAudit");
-            
-            // verify the required parameter 'orderSourceAudit' is set
-            if (orderSourceAudit == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceAudit' when calling OrderSourceApi->AddOrderSourceAudit");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/audit/{orderSourceAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            if (orderSourceAudit != null) localVarPathParams.Add("orderSourceAudit", Configuration.ApiClient.ParameterToString(orderSourceAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an orderSource Adds an audit to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param>
-        /// <param name="orderSourceAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddOrderSourceAuditAsync (int? orderSourceId, string orderSourceAudit)
-        {
-             await AddOrderSourceAuditAsyncWithHttpInfo(orderSourceId, orderSourceAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an orderSource Adds an audit to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add an audit to</param>
-        /// <param name="orderSourceAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddOrderSourceAuditAsyncWithHttpInfo (int? orderSourceId, string orderSourceAudit)
-        {
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling AddOrderSourceAudit");
-            // verify the required parameter 'orderSourceAudit' is set
-            if (orderSourceAudit == null) throw new ApiException(400, "Missing required parameter 'orderSourceAudit' when calling AddOrderSourceAudit");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/audit/{orderSourceAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            if (orderSourceAudit != null) localVarPathParams.Add("orderSourceAudit", Configuration.ApiClient.ParameterToString(orderSourceAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an orderSource. Adds a tag to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param> 
-        /// <param name="orderSourceTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddOrderSourceTag (int? orderSourceId, string orderSourceTag)
-        {
-             AddOrderSourceTagWithHttpInfo(orderSourceId, orderSourceTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an orderSource. Adds a tag to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param> 
-        /// <param name="orderSourceTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddOrderSourceTagWithHttpInfo (int? orderSourceId, string orderSourceTag)
-        {
-            
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->AddOrderSourceTag");
-            
-            // verify the required parameter 'orderSourceTag' is set
-            if (orderSourceTag == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceTag' when calling OrderSourceApi->AddOrderSourceTag");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/tag/{orderSourceTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            if (orderSourceTag != null) localVarPathParams.Add("orderSourceTag", Configuration.ApiClient.ParameterToString(orderSourceTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an orderSource. Adds a tag to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param>
-        /// <param name="orderSourceTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddOrderSourceTagAsync (int? orderSourceId, string orderSourceTag)
-        {
-             await AddOrderSourceTagAsyncWithHttpInfo(orderSourceId, orderSourceTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an orderSource. Adds a tag to an existing orderSource.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to add a tag to</param>
-        /// <param name="orderSourceTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddOrderSourceTagAsyncWithHttpInfo (int? orderSourceId, string orderSourceTag)
-        {
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling AddOrderSourceTag");
-            // verify the required parameter 'orderSourceTag' is set
-            if (orderSourceTag == null) throw new ApiException(400, "Missing required parameter 'orderSourceTag' when calling AddOrderSourceTag");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/tag/{orderSourceTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            if (orderSourceTag != null) localVarPathParams.Add("orderSourceTag", Configuration.ApiClient.ParameterToString(orderSourceTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddOrderSourceTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an orderSource Deletes the orderSource identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->DeleteOrderSource");
             
     
-            var localVarPath = "/beta/orderSource/{orderSourceId}";
+            var localVarPath = "/v2.0/orderSource/{orderSourceId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling DeleteOrderSource");
             
     
-            var localVarPath = "/beta/orderSource/{orderSourceId}";
+            var localVarPath = "/v2.0/orderSource/{orderSourceId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an orderSource. Deletes an existing orderSource tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param> 
-        /// <param name="orderSourceTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteOrderSourceTag (int? orderSourceId, string orderSourceTag)
-        {
-             DeleteOrderSourceTagWithHttpInfo(orderSourceId, orderSourceTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an orderSource. Deletes an existing orderSource tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param> 
-        /// <param name="orderSourceTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteOrderSourceTagWithHttpInfo (int? orderSourceId, string orderSourceTag)
-        {
-            
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->DeleteOrderSourceTag");
-            
-            // verify the required parameter 'orderSourceTag' is set
-            if (orderSourceTag == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceTag' when calling OrderSourceApi->DeleteOrderSourceTag");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/tag/{orderSourceTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            if (orderSourceTag != null) localVarPathParams.Add("orderSourceTag", Configuration.ApiClient.ParameterToString(orderSourceTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOrderSourceTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOrderSourceTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an orderSource. Deletes an existing orderSource tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param>
-        /// <param name="orderSourceTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteOrderSourceTagAsync (int? orderSourceId, string orderSourceTag)
-        {
-             await DeleteOrderSourceTagAsyncWithHttpInfo(orderSourceId, orderSourceTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an orderSource. Deletes an existing orderSource tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to remove tag from</param>
-        /// <param name="orderSourceTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteOrderSourceTagAsyncWithHttpInfo (int? orderSourceId, string orderSourceTag)
-        {
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling DeleteOrderSourceTag");
-            // verify the required parameter 'orderSourceTag' is set
-            if (orderSourceTag == null) throw new ApiException(400, "Missing required parameter 'orderSourceTag' when calling DeleteOrderSourceTag");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/tag/{orderSourceTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            if (orderSourceTag != null) localVarPathParams.Add("orderSourceTag", Configuration.ApiClient.ParameterToString(orderSourceTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOrderSourceTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteOrderSourceTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an orderSource by id Returns a duplicated orderSource identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->GetDuplicateOrderSourceById");
             
     
-            var localVarPath = "/beta/orderSource/duplicate/{orderSourceId}";
+            var localVarPath = "/v2.0/orderSource/duplicate/{orderSourceId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling GetDuplicateOrderSourceById");
             
     
-            var localVarPath = "/beta/orderSource/duplicate/{orderSourceId}";
+            var localVarPath = "/v2.0/orderSource/duplicate/{orderSourceId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/orderSource/search";
+            var localVarPath = "/v2.0/orderSource/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/orderSource/search";
+            var localVarPath = "/v2.0/orderSource/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->GetOrderSourceById");
             
     
-            var localVarPath = "/beta/orderSource/{orderSourceId}";
+            var localVarPath = "/v2.0/orderSource/{orderSourceId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling GetOrderSourceById");
             
     
-            var localVarPath = "/beta/orderSource/{orderSourceId}";
+            var localVarPath = "/v2.0/orderSource/{orderSourceId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an orderSource. Get all existing orderSource tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param> 
-        /// <returns></returns>
-        public void GetOrderSourceTags (int? orderSourceId)
-        {
-             GetOrderSourceTagsWithHttpInfo(orderSourceId);
-        }
-
-        /// <summary>
-        /// Get the tags for an orderSource. Get all existing orderSource tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetOrderSourceTagsWithHttpInfo (int? orderSourceId)
-        {
-            
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null)
-                throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling OrderSourceApi->GetOrderSourceTags");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetOrderSourceTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetOrderSourceTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an orderSource. Get all existing orderSource tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetOrderSourceTagsAsync (int? orderSourceId)
-        {
-             await GetOrderSourceTagsAsyncWithHttpInfo(orderSourceId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an orderSource. Get all existing orderSource tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="orderSourceId">Id of the orderSource to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetOrderSourceTagsAsyncWithHttpInfo (int? orderSourceId)
-        {
-            // verify the required parameter 'orderSourceId' is set
-            if (orderSourceId == null) throw new ApiException(400, "Missing required parameter 'orderSourceId' when calling GetOrderSourceTags");
-            
-    
-            var localVarPath = "/beta/orderSource/{orderSourceId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (orderSourceId != null) localVarPathParams.Add("orderSourceId", Configuration.ApiClient.ParameterToString(orderSourceId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetOrderSourceTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetOrderSourceTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an orderSource Updates an existing orderSource using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling OrderSourceApi->UpdateOrderSource");
             
     
-            var localVarPath = "/beta/orderSource";
+            var localVarPath = "/v2.0/orderSource";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateOrderSource");
             
     
-            var localVarPath = "/beta/orderSource";
+            var localVarPath = "/v2.0/orderSource";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling OrderSourceApi->UpdateOrderSourceCustomFields");
             
     
-            var localVarPath = "/beta/orderSource/customFields";
+            var localVarPath = "/v2.0/orderSource/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateOrderSourceCustomFields");
             
     
-            var localVarPath = "/beta/orderSource/customFields";
+            var localVarPath = "/v2.0/orderSource/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

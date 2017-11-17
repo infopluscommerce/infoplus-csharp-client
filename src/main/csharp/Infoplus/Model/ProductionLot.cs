@@ -22,31 +22,15 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="ProductionLot" /> class.
         /// Initializes a new instance of the <see cref="ProductionLot" />class.
         /// </summary>
-        /// <param name="ProductionLot">ProductionLot (required).</param>
-        /// <param name="Quantity">Quantity (required).</param>
+        /// <param name="ProductionLot">ProductionLot.</param>
+        /// <param name="Quantity">Quantity.</param>
         /// <param name="CustomFields">CustomFields.</param>
         /// <param name="Sku">Sku.</param>
 
         public ProductionLot(string ProductionLot = null, int? Quantity = null, Dictionary<string, Object> CustomFields = null, string Sku = null)
         {
-            // to ensure "ProductionLot" is required (not null)
-            if (ProductionLot == null)
-            {
-                throw new InvalidDataException("ProductionLot is a required property for ProductionLot and cannot be null");
-            }
-            else
-            {
-                this.ProductionLot = ProductionLot;
-            }
-            // to ensure "Quantity" is required (not null)
-            if (Quantity == null)
-            {
-                throw new InvalidDataException("Quantity is a required property for ProductionLot and cannot be null");
-            }
-            else
-            {
-                this.Quantity = Quantity;
-            }
+            this.ProductionLot = ProductionLot;
+            this.Quantity = Quantity;
             this.CustomFields = CustomFields;
             this.Sku = Sku;
             

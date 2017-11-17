@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for an alert
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param>
-        /// <param name="alertAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddAlertAudit (int? alertId, string alertAudit);
-  
-        /// <summary>
-        /// Add new audit for an alert
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param>
-        /// <param name="alertAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddAlertAuditWithHttpInfo (int? alertId, string alertAudit);
-        
-        /// <summary>
-        /// Add new tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param>
-        /// <param name="alertTag">The tag to add</param>
-        /// <returns></returns>
-        void AddAlertTag (int? alertId, string alertTag);
-  
-        /// <summary>
-        /// Add new tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param>
-        /// <param name="alertTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddAlertTagWithHttpInfo (int? alertId, string alertTag);
-        
-        /// <summary>
-        /// Delete a tag for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing alert tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param>
-        /// <param name="alertTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteAlertTag (int? alertId, string alertTag);
-  
-        /// <summary>
-        /// Delete a tag for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing alert tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param>
-        /// <param name="alertTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteAlertTagWithHttpInfo (int? alertId, string alertTag);
-        
-        /// <summary>
         /// Search alerts by filter
         /// </summary>
         /// <remarks>
@@ -140,28 +68,6 @@ namespace Infoplus.Api
         ApiResponse<Alert> GetAlertByIdWithHttpInfo (int? alertId);
         
         /// <summary>
-        /// Get the tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing alert tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param>
-        /// <returns></returns>
-        void GetAlertTags (int? alertId);
-  
-        /// <summary>
-        /// Get the tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing alert tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetAlertTagsWithHttpInfo (int? alertId);
-        
-        /// <summary>
         /// Get a duplicated an alert by id
         /// </summary>
         /// <remarks>
@@ -208,78 +114,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for an alert
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param>
-        /// <param name="alertAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddAlertAuditAsync (int? alertId, string alertAudit);
-
-        /// <summary>
-        /// Add new audit for an alert
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param>
-        /// <param name="alertAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddAlertAuditAsyncWithHttpInfo (int? alertId, string alertAudit);
-        
-        /// <summary>
-        /// Add new tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param>
-        /// <param name="alertTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddAlertTagAsync (int? alertId, string alertTag);
-
-        /// <summary>
-        /// Add new tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing alert.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param>
-        /// <param name="alertTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddAlertTagAsyncWithHttpInfo (int? alertId, string alertTag);
-        
-        /// <summary>
-        /// Delete a tag for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing alert tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param>
-        /// <param name="alertTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteAlertTagAsync (int? alertId, string alertTag);
-
-        /// <summary>
-        /// Delete a tag for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing alert tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param>
-        /// <param name="alertTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAlertTagAsyncWithHttpInfo (int? alertId, string alertTag);
         
         /// <summary>
         /// Search alerts by filter
@@ -330,28 +164,6 @@ namespace Infoplus.Api
         /// <param name="alertId">Id of the alert to be returned.</param>
         /// <returns>Task of ApiResponse (Alert)</returns>
         System.Threading.Tasks.Task<ApiResponse<Alert>> GetAlertByIdAsyncWithHttpInfo (int? alertId);
-        
-        /// <summary>
-        /// Get the tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing alert tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetAlertTagsAsync (int? alertId);
-
-        /// <summary>
-        /// Get the tags for an alert.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing alert tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetAlertTagsAsyncWithHttpInfo (int? alertId);
         
         /// <summary>
         /// Get a duplicated an alert by id
@@ -490,549 +302,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for an alert Adds an audit to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param> 
-        /// <param name="alertAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddAlertAudit (int? alertId, string alertAudit)
-        {
-             AddAlertAuditWithHttpInfo(alertId, alertAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an alert Adds an audit to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param> 
-        /// <param name="alertAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddAlertAuditWithHttpInfo (int? alertId, string alertAudit)
-        {
-            
-            // verify the required parameter 'alertId' is set
-            if (alertId == null)
-                throw new ApiException(400, "Missing required parameter 'alertId' when calling AlertApi->AddAlertAudit");
-            
-            // verify the required parameter 'alertAudit' is set
-            if (alertAudit == null)
-                throw new ApiException(400, "Missing required parameter 'alertAudit' when calling AlertApi->AddAlertAudit");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/audit/{alertAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            if (alertAudit != null) localVarPathParams.Add("alertAudit", Configuration.ApiClient.ParameterToString(alertAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an alert Adds an audit to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param>
-        /// <param name="alertAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddAlertAuditAsync (int? alertId, string alertAudit)
-        {
-             await AddAlertAuditAsyncWithHttpInfo(alertId, alertAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an alert Adds an audit to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add an audit to</param>
-        /// <param name="alertAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddAlertAuditAsyncWithHttpInfo (int? alertId, string alertAudit)
-        {
-            // verify the required parameter 'alertId' is set
-            if (alertId == null) throw new ApiException(400, "Missing required parameter 'alertId' when calling AddAlertAudit");
-            // verify the required parameter 'alertAudit' is set
-            if (alertAudit == null) throw new ApiException(400, "Missing required parameter 'alertAudit' when calling AddAlertAudit");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/audit/{alertAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            if (alertAudit != null) localVarPathParams.Add("alertAudit", Configuration.ApiClient.ParameterToString(alertAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an alert. Adds a tag to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param> 
-        /// <param name="alertTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddAlertTag (int? alertId, string alertTag)
-        {
-             AddAlertTagWithHttpInfo(alertId, alertTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an alert. Adds a tag to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param> 
-        /// <param name="alertTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddAlertTagWithHttpInfo (int? alertId, string alertTag)
-        {
-            
-            // verify the required parameter 'alertId' is set
-            if (alertId == null)
-                throw new ApiException(400, "Missing required parameter 'alertId' when calling AlertApi->AddAlertTag");
-            
-            // verify the required parameter 'alertTag' is set
-            if (alertTag == null)
-                throw new ApiException(400, "Missing required parameter 'alertTag' when calling AlertApi->AddAlertTag");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/tag/{alertTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            if (alertTag != null) localVarPathParams.Add("alertTag", Configuration.ApiClient.ParameterToString(alertTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an alert. Adds a tag to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param>
-        /// <param name="alertTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddAlertTagAsync (int? alertId, string alertTag)
-        {
-             await AddAlertTagAsyncWithHttpInfo(alertId, alertTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an alert. Adds a tag to an existing alert.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to add a tag to</param>
-        /// <param name="alertTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddAlertTagAsyncWithHttpInfo (int? alertId, string alertTag)
-        {
-            // verify the required parameter 'alertId' is set
-            if (alertId == null) throw new ApiException(400, "Missing required parameter 'alertId' when calling AddAlertTag");
-            // verify the required parameter 'alertTag' is set
-            if (alertTag == null) throw new ApiException(400, "Missing required parameter 'alertTag' when calling AddAlertTag");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/tag/{alertTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            if (alertTag != null) localVarPathParams.Add("alertTag", Configuration.ApiClient.ParameterToString(alertTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAlertTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for an alert. Deletes an existing alert tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param> 
-        /// <param name="alertTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteAlertTag (int? alertId, string alertTag)
-        {
-             DeleteAlertTagWithHttpInfo(alertId, alertTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an alert. Deletes an existing alert tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param> 
-        /// <param name="alertTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteAlertTagWithHttpInfo (int? alertId, string alertTag)
-        {
-            
-            // verify the required parameter 'alertId' is set
-            if (alertId == null)
-                throw new ApiException(400, "Missing required parameter 'alertId' when calling AlertApi->DeleteAlertTag");
-            
-            // verify the required parameter 'alertTag' is set
-            if (alertTag == null)
-                throw new ApiException(400, "Missing required parameter 'alertTag' when calling AlertApi->DeleteAlertTag");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/tag/{alertTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            if (alertTag != null) localVarPathParams.Add("alertTag", Configuration.ApiClient.ParameterToString(alertTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAlertTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAlertTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an alert. Deletes an existing alert tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param>
-        /// <param name="alertTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteAlertTagAsync (int? alertId, string alertTag)
-        {
-             await DeleteAlertTagAsyncWithHttpInfo(alertId, alertTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an alert. Deletes an existing alert tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to remove tag from</param>
-        /// <param name="alertTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAlertTagAsyncWithHttpInfo (int? alertId, string alertTag)
-        {
-            // verify the required parameter 'alertId' is set
-            if (alertId == null) throw new ApiException(400, "Missing required parameter 'alertId' when calling DeleteAlertTag");
-            // verify the required parameter 'alertTag' is set
-            if (alertTag == null) throw new ApiException(400, "Missing required parameter 'alertTag' when calling DeleteAlertTag");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/tag/{alertTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            if (alertTag != null) localVarPathParams.Add("alertTag", Configuration.ApiClient.ParameterToString(alertTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAlertTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAlertTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search alerts by filter Returns the list of alerts that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1060,7 +329,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/alert/search";
+            var localVarPath = "/v2.0/alert/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1152,7 +421,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/alert/search";
+            var localVarPath = "/v2.0/alert/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1241,7 +510,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'alertId' when calling AlertApi->GetAlertById");
             
     
-            var localVarPath = "/beta/alert/{alertId}";
+            var localVarPath = "/v2.0/alert/{alertId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1326,7 +595,7 @@ namespace Infoplus.Api
             if (alertId == null) throw new ApiException(400, "Missing required parameter 'alertId' when calling GetAlertById");
             
     
-            var localVarPath = "/beta/alert/{alertId}";
+            var localVarPath = "/v2.0/alert/{alertId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1387,175 +656,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an alert. Get all existing alert tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param> 
-        /// <returns></returns>
-        public void GetAlertTags (int? alertId)
-        {
-             GetAlertTagsWithHttpInfo(alertId);
-        }
-
-        /// <summary>
-        /// Get the tags for an alert. Get all existing alert tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetAlertTagsWithHttpInfo (int? alertId)
-        {
-            
-            // verify the required parameter 'alertId' is set
-            if (alertId == null)
-                throw new ApiException(400, "Missing required parameter 'alertId' when calling AlertApi->GetAlertTags");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetAlertTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetAlertTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an alert. Get all existing alert tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetAlertTagsAsync (int? alertId)
-        {
-             await GetAlertTagsAsyncWithHttpInfo(alertId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an alert. Get all existing alert tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="alertId">Id of the alert to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetAlertTagsAsyncWithHttpInfo (int? alertId)
-        {
-            // verify the required parameter 'alertId' is set
-            if (alertId == null) throw new ApiException(400, "Missing required parameter 'alertId' when calling GetAlertTags");
-            
-    
-            var localVarPath = "/beta/alert/{alertId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (alertId != null) localVarPathParams.Add("alertId", Configuration.ApiClient.ParameterToString(alertId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetAlertTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetAlertTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an alert by id Returns a duplicated alert identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1581,7 +681,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'alertId' when calling AlertApi->GetDuplicateAlertById");
             
     
-            var localVarPath = "/beta/alert/duplicate/{alertId}";
+            var localVarPath = "/v2.0/alert/duplicate/{alertId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1666,7 +766,7 @@ namespace Infoplus.Api
             if (alertId == null) throw new ApiException(400, "Missing required parameter 'alertId' when calling GetDuplicateAlertById");
             
     
-            var localVarPath = "/beta/alert/duplicate/{alertId}";
+            var localVarPath = "/v2.0/alert/duplicate/{alertId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1751,7 +851,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AlertApi->UpdateAlertCustomFields");
             
     
-            var localVarPath = "/beta/alert/customFields";
+            var localVarPath = "/v2.0/alert/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1841,7 +941,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateAlertCustomFields");
             
     
-            var localVarPath = "/beta/alert/customFields";
+            var localVarPath = "/v2.0/alert/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'userId' when calling UserApi->GetUserById");
             
     
-            var localVarPath = "/beta/user/{userId}";
+            var localVarPath = "/v2.0/user/{userId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (userId == null) throw new ApiException(400, "Missing required parameter 'userId' when calling GetUserById");
             
     
-            var localVarPath = "/beta/user/{userId}";
+            var localVarPath = "/v2.0/user/{userId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/user/search";
+            var localVarPath = "/v2.0/user/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/user/search";
+            var localVarPath = "/v2.0/user/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

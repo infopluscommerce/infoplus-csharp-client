@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<PickFaceAssignment> AddPickFaceAssignmentWithHttpInfo (PickFaceAssignment body);
         
         /// <summary>
-        /// Add new audit for a pickFaceAssignment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param>
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddPickFaceAssignmentAudit (int? pickFaceAssignmentId, string pickFaceAssignmentAudit);
-  
-        /// <summary>
-        /// Add new audit for a pickFaceAssignment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param>
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddPickFaceAssignmentAuditWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentAudit);
-        
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param>
-        /// <param name="pickFaceAssignmentTag">The tag to add</param>
-        /// <returns></returns>
-        void AddPickFaceAssignmentTag (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
-  
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param>
-        /// <param name="pickFaceAssignmentTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddPickFaceAssignmentTagWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
-        
-        /// <summary>
         /// Delete a pickFaceAssignment
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeletePickFaceAssignmentWithHttpInfo (int? pickFaceAssignmentId);
-        
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param>
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeletePickFaceAssignmentTag (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
-  
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param>
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeletePickFaceAssignmentTagWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
         
         /// <summary>
         /// Get a duplicated a pickFaceAssignment by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<PickFaceAssignment> GetPickFaceAssignmentByIdWithHttpInfo (int? pickFaceAssignmentId);
         
         /// <summary>
-        /// Get the tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing pickFaceAssignment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param>
-        /// <returns></returns>
-        void GetPickFaceAssignmentTags (int? pickFaceAssignmentId);
-  
-        /// <summary>
-        /// Get the tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing pickFaceAssignment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetPickFaceAssignmentTagsWithHttpInfo (int? pickFaceAssignmentId);
-        
-        /// <summary>
         /// Update a pickFaceAssignment
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<PickFaceAssignment>> AddPickFaceAssignmentAsyncWithHttpInfo (PickFaceAssignment body);
         
         /// <summary>
-        /// Add new audit for a pickFaceAssignment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param>
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddPickFaceAssignmentAuditAsync (int? pickFaceAssignmentId, string pickFaceAssignmentAudit);
-
-        /// <summary>
-        /// Add new audit for a pickFaceAssignment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param>
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddPickFaceAssignmentAuditAsyncWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentAudit);
-        
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param>
-        /// <param name="pickFaceAssignmentTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddPickFaceAssignmentTagAsync (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
-
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing pickFaceAssignment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param>
-        /// <param name="pickFaceAssignmentTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddPickFaceAssignmentTagAsyncWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
-        
-        /// <summary>
         /// Delete a pickFaceAssignment
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeletePickFaceAssignmentAsyncWithHttpInfo (int? pickFaceAssignmentId);
-        
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param>
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeletePickFaceAssignmentTagAsync (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
-
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param>
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeletePickFaceAssignmentTagAsyncWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag);
         
         /// <summary>
         /// Get a duplicated a pickFaceAssignment by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to be returned.</param>
         /// <returns>Task of ApiResponse (PickFaceAssignment)</returns>
         System.Threading.Tasks.Task<ApiResponse<PickFaceAssignment>> GetPickFaceAssignmentByIdAsyncWithHttpInfo (int? pickFaceAssignmentId);
-        
-        /// <summary>
-        /// Get the tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing pickFaceAssignment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetPickFaceAssignmentTagsAsync (int? pickFaceAssignmentId);
-
-        /// <summary>
-        /// Get the tags for a pickFaceAssignment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing pickFaceAssignment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetPickFaceAssignmentTagsAsyncWithHttpInfo (int? pickFaceAssignmentId);
         
         /// <summary>
         /// Update a pickFaceAssignment
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling PickFaceAssignmentApi->AddPickFaceAssignment");
             
     
-            var localVarPath = "/beta/pickFaceAssignment";
+            var localVarPath = "/v2.0/pickFaceAssignment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddPickFaceAssignment");
             
     
-            var localVarPath = "/beta/pickFaceAssignment";
+            var localVarPath = "/v2.0/pickFaceAssignment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a pickFaceAssignment Adds an audit to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param> 
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddPickFaceAssignmentAudit (int? pickFaceAssignmentId, string pickFaceAssignmentAudit)
-        {
-             AddPickFaceAssignmentAuditWithHttpInfo(pickFaceAssignmentId, pickFaceAssignmentAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a pickFaceAssignment Adds an audit to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param> 
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddPickFaceAssignmentAuditWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentAudit)
-        {
-            
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->AddPickFaceAssignmentAudit");
-            
-            // verify the required parameter 'pickFaceAssignmentAudit' is set
-            if (pickFaceAssignmentAudit == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentAudit' when calling PickFaceAssignmentApi->AddPickFaceAssignmentAudit");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/audit/{pickFaceAssignmentAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            if (pickFaceAssignmentAudit != null) localVarPathParams.Add("pickFaceAssignmentAudit", Configuration.ApiClient.ParameterToString(pickFaceAssignmentAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a pickFaceAssignment Adds an audit to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param>
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddPickFaceAssignmentAuditAsync (int? pickFaceAssignmentId, string pickFaceAssignmentAudit)
-        {
-             await AddPickFaceAssignmentAuditAsyncWithHttpInfo(pickFaceAssignmentId, pickFaceAssignmentAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a pickFaceAssignment Adds an audit to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add an audit to</param>
-        /// <param name="pickFaceAssignmentAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddPickFaceAssignmentAuditAsyncWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentAudit)
-        {
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling AddPickFaceAssignmentAudit");
-            // verify the required parameter 'pickFaceAssignmentAudit' is set
-            if (pickFaceAssignmentAudit == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentAudit' when calling AddPickFaceAssignmentAudit");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/audit/{pickFaceAssignmentAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            if (pickFaceAssignmentAudit != null) localVarPathParams.Add("pickFaceAssignmentAudit", Configuration.ApiClient.ParameterToString(pickFaceAssignmentAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment. Adds a tag to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param> 
-        /// <param name="pickFaceAssignmentTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddPickFaceAssignmentTag (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-             AddPickFaceAssignmentTagWithHttpInfo(pickFaceAssignmentId, pickFaceAssignmentTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment. Adds a tag to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param> 
-        /// <param name="pickFaceAssignmentTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddPickFaceAssignmentTagWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-            
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->AddPickFaceAssignmentTag");
-            
-            // verify the required parameter 'pickFaceAssignmentTag' is set
-            if (pickFaceAssignmentTag == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentTag' when calling PickFaceAssignmentApi->AddPickFaceAssignmentTag");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/tag/{pickFaceAssignmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            if (pickFaceAssignmentTag != null) localVarPathParams.Add("pickFaceAssignmentTag", Configuration.ApiClient.ParameterToString(pickFaceAssignmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment. Adds a tag to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param>
-        /// <param name="pickFaceAssignmentTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddPickFaceAssignmentTagAsync (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-             await AddPickFaceAssignmentTagAsyncWithHttpInfo(pickFaceAssignmentId, pickFaceAssignmentTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a pickFaceAssignment. Adds a tag to an existing pickFaceAssignment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to add a tag to</param>
-        /// <param name="pickFaceAssignmentTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddPickFaceAssignmentTagAsyncWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling AddPickFaceAssignmentTag");
-            // verify the required parameter 'pickFaceAssignmentTag' is set
-            if (pickFaceAssignmentTag == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentTag' when calling AddPickFaceAssignmentTag");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/tag/{pickFaceAssignmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            if (pickFaceAssignmentTag != null) localVarPathParams.Add("pickFaceAssignmentTag", Configuration.ApiClient.ParameterToString(pickFaceAssignmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddPickFaceAssignmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a pickFaceAssignment Deletes the pickFaceAssignment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->DeletePickFaceAssignment");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}";
+            var localVarPath = "/v2.0/pickFaceAssignment/{pickFaceAssignmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling DeletePickFaceAssignment");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}";
+            var localVarPath = "/v2.0/pickFaceAssignment/{pickFaceAssignmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a pickFaceAssignment. Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param> 
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeletePickFaceAssignmentTag (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-             DeletePickFaceAssignmentTagWithHttpInfo(pickFaceAssignmentId, pickFaceAssignmentTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment. Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param> 
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeletePickFaceAssignmentTagWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-            
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->DeletePickFaceAssignmentTag");
-            
-            // verify the required parameter 'pickFaceAssignmentTag' is set
-            if (pickFaceAssignmentTag == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentTag' when calling PickFaceAssignmentApi->DeletePickFaceAssignmentTag");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/tag/{pickFaceAssignmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            if (pickFaceAssignmentTag != null) localVarPathParams.Add("pickFaceAssignmentTag", Configuration.ApiClient.ParameterToString(pickFaceAssignmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeletePickFaceAssignmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeletePickFaceAssignmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment. Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param>
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeletePickFaceAssignmentTagAsync (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-             await DeletePickFaceAssignmentTagAsyncWithHttpInfo(pickFaceAssignmentId, pickFaceAssignmentTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a pickFaceAssignment. Deletes an existing pickFaceAssignment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to remove tag from</param>
-        /// <param name="pickFaceAssignmentTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeletePickFaceAssignmentTagAsyncWithHttpInfo (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
-        {
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling DeletePickFaceAssignmentTag");
-            // verify the required parameter 'pickFaceAssignmentTag' is set
-            if (pickFaceAssignmentTag == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentTag' when calling DeletePickFaceAssignmentTag");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/tag/{pickFaceAssignmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            if (pickFaceAssignmentTag != null) localVarPathParams.Add("pickFaceAssignmentTag", Configuration.ApiClient.ParameterToString(pickFaceAssignmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeletePickFaceAssignmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeletePickFaceAssignmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a pickFaceAssignment by id Returns a duplicated pickFaceAssignment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->GetDuplicatePickFaceAssignmentById");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/duplicate/{pickFaceAssignmentId}";
+            var localVarPath = "/v2.0/pickFaceAssignment/duplicate/{pickFaceAssignmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling GetDuplicatePickFaceAssignmentById");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/duplicate/{pickFaceAssignmentId}";
+            var localVarPath = "/v2.0/pickFaceAssignment/duplicate/{pickFaceAssignmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/pickFaceAssignment/search";
+            var localVarPath = "/v2.0/pickFaceAssignment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/pickFaceAssignment/search";
+            var localVarPath = "/v2.0/pickFaceAssignment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->GetPickFaceAssignmentById");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}";
+            var localVarPath = "/v2.0/pickFaceAssignment/{pickFaceAssignmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling GetPickFaceAssignmentById");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}";
+            var localVarPath = "/v2.0/pickFaceAssignment/{pickFaceAssignmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a pickFaceAssignment. Get all existing pickFaceAssignment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param> 
-        /// <returns></returns>
-        public void GetPickFaceAssignmentTags (int? pickFaceAssignmentId)
-        {
-             GetPickFaceAssignmentTagsWithHttpInfo(pickFaceAssignmentId);
-        }
-
-        /// <summary>
-        /// Get the tags for a pickFaceAssignment. Get all existing pickFaceAssignment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetPickFaceAssignmentTagsWithHttpInfo (int? pickFaceAssignmentId)
-        {
-            
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null)
-                throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling PickFaceAssignmentApi->GetPickFaceAssignmentTags");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetPickFaceAssignmentTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetPickFaceAssignmentTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a pickFaceAssignment. Get all existing pickFaceAssignment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetPickFaceAssignmentTagsAsync (int? pickFaceAssignmentId)
-        {
-             await GetPickFaceAssignmentTagsAsyncWithHttpInfo(pickFaceAssignmentId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a pickFaceAssignment. Get all existing pickFaceAssignment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="pickFaceAssignmentId">Id of the pickFaceAssignment to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetPickFaceAssignmentTagsAsyncWithHttpInfo (int? pickFaceAssignmentId)
-        {
-            // verify the required parameter 'pickFaceAssignmentId' is set
-            if (pickFaceAssignmentId == null) throw new ApiException(400, "Missing required parameter 'pickFaceAssignmentId' when calling GetPickFaceAssignmentTags");
-            
-    
-            var localVarPath = "/beta/pickFaceAssignment/{pickFaceAssignmentId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (pickFaceAssignmentId != null) localVarPathParams.Add("pickFaceAssignmentId", Configuration.ApiClient.ParameterToString(pickFaceAssignmentId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetPickFaceAssignmentTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetPickFaceAssignmentTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a pickFaceAssignment Updates an existing pickFaceAssignment using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling PickFaceAssignmentApi->UpdatePickFaceAssignment");
             
     
-            var localVarPath = "/beta/pickFaceAssignment";
+            var localVarPath = "/v2.0/pickFaceAssignment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdatePickFaceAssignment");
             
     
-            var localVarPath = "/beta/pickFaceAssignment";
+            var localVarPath = "/v2.0/pickFaceAssignment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling PickFaceAssignmentApi->UpdatePickFaceAssignmentCustomFields");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/customFields";
+            var localVarPath = "/v2.0/pickFaceAssignment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdatePickFaceAssignmentCustomFields");
             
     
-            var localVarPath = "/beta/pickFaceAssignment/customFields";
+            var localVarPath = "/v2.0/pickFaceAssignment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Carton> AddCartonWithHttpInfo (Carton body);
         
         /// <summary>
-        /// Add new audit for a carton
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param>
-        /// <param name="cartonAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddCartonAudit (int? cartonId, string cartonAudit);
-  
-        /// <summary>
-        /// Add new audit for a carton
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param>
-        /// <param name="cartonAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddCartonAuditWithHttpInfo (int? cartonId, string cartonAudit);
-        
-        /// <summary>
-        /// Add new tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param>
-        /// <param name="cartonTag">The tag to add</param>
-        /// <returns></returns>
-        void AddCartonTag (int? cartonId, string cartonTag);
-  
-        /// <summary>
-        /// Add new tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param>
-        /// <param name="cartonTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddCartonTagWithHttpInfo (int? cartonId, string cartonTag);
-        
-        /// <summary>
         /// Delete a carton
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="cartonId">Id of the carton to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteCartonWithHttpInfo (int? cartonId);
-        
-        /// <summary>
-        /// Delete a tag for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing carton tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param>
-        /// <param name="cartonTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteCartonTag (int? cartonId, string cartonTag);
-  
-        /// <summary>
-        /// Delete a tag for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing carton tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param>
-        /// <param name="cartonTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteCartonTagWithHttpInfo (int? cartonId, string cartonTag);
         
         /// <summary>
         /// Search cartons by filter
@@ -182,28 +110,6 @@ namespace Infoplus.Api
         /// <param name="cartonId">Id of the carton to be returned.</param>
         /// <returns>ApiResponse of Carton</returns>
         ApiResponse<Carton> GetCartonByIdWithHttpInfo (int? cartonId);
-        
-        /// <summary>
-        /// Get the tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing carton tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param>
-        /// <returns></returns>
-        void GetCartonTags (int? cartonId);
-  
-        /// <summary>
-        /// Get the tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing carton tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetCartonTagsWithHttpInfo (int? cartonId);
         
         /// <summary>
         /// Get a duplicated a carton by id
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Carton>> AddCartonAsyncWithHttpInfo (Carton body);
         
         /// <summary>
-        /// Add new audit for a carton
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param>
-        /// <param name="cartonAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddCartonAuditAsync (int? cartonId, string cartonAudit);
-
-        /// <summary>
-        /// Add new audit for a carton
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param>
-        /// <param name="cartonAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddCartonAuditAsyncWithHttpInfo (int? cartonId, string cartonAudit);
-        
-        /// <summary>
-        /// Add new tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param>
-        /// <param name="cartonTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddCartonTagAsync (int? cartonId, string cartonTag);
-
-        /// <summary>
-        /// Add new tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing carton.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param>
-        /// <param name="cartonTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddCartonTagAsyncWithHttpInfo (int? cartonId, string cartonTag);
-        
-        /// <summary>
         /// Delete a carton
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="cartonId">Id of the carton to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCartonAsyncWithHttpInfo (int? cartonId);
-        
-        /// <summary>
-        /// Delete a tag for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing carton tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param>
-        /// <param name="cartonTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteCartonTagAsync (int? cartonId, string cartonTag);
-
-        /// <summary>
-        /// Delete a tag for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing carton tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param>
-        /// <param name="cartonTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCartonTagAsyncWithHttpInfo (int? cartonId, string cartonTag);
         
         /// <summary>
         /// Search cartons by filter
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="cartonId">Id of the carton to be returned.</param>
         /// <returns>Task of ApiResponse (Carton)</returns>
         System.Threading.Tasks.Task<ApiResponse<Carton>> GetCartonByIdAsyncWithHttpInfo (int? cartonId);
-        
-        /// <summary>
-        /// Get the tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing carton tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetCartonTagsAsync (int? cartonId);
-
-        /// <summary>
-        /// Get the tags for a carton.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing carton tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetCartonTagsAsyncWithHttpInfo (int? cartonId);
         
         /// <summary>
         /// Get a duplicated a carton by id
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling CartonApi->AddCarton");
             
     
-            var localVarPath = "/beta/carton";
+            var localVarPath = "/v2.0/carton";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddCarton");
             
     
-            var localVarPath = "/beta/carton";
+            var localVarPath = "/v2.0/carton";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a carton Adds an audit to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param> 
-        /// <param name="cartonAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddCartonAudit (int? cartonId, string cartonAudit)
-        {
-             AddCartonAuditWithHttpInfo(cartonId, cartonAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a carton Adds an audit to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param> 
-        /// <param name="cartonAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddCartonAuditWithHttpInfo (int? cartonId, string cartonAudit)
-        {
-            
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null)
-                throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->AddCartonAudit");
-            
-            // verify the required parameter 'cartonAudit' is set
-            if (cartonAudit == null)
-                throw new ApiException(400, "Missing required parameter 'cartonAudit' when calling CartonApi->AddCartonAudit");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/audit/{cartonAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            if (cartonAudit != null) localVarPathParams.Add("cartonAudit", Configuration.ApiClient.ParameterToString(cartonAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a carton Adds an audit to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param>
-        /// <param name="cartonAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddCartonAuditAsync (int? cartonId, string cartonAudit)
-        {
-             await AddCartonAuditAsyncWithHttpInfo(cartonId, cartonAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a carton Adds an audit to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add an audit to</param>
-        /// <param name="cartonAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddCartonAuditAsyncWithHttpInfo (int? cartonId, string cartonAudit)
-        {
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling AddCartonAudit");
-            // verify the required parameter 'cartonAudit' is set
-            if (cartonAudit == null) throw new ApiException(400, "Missing required parameter 'cartonAudit' when calling AddCartonAudit");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/audit/{cartonAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            if (cartonAudit != null) localVarPathParams.Add("cartonAudit", Configuration.ApiClient.ParameterToString(cartonAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a carton. Adds a tag to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param> 
-        /// <param name="cartonTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddCartonTag (int? cartonId, string cartonTag)
-        {
-             AddCartonTagWithHttpInfo(cartonId, cartonTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a carton. Adds a tag to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param> 
-        /// <param name="cartonTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddCartonTagWithHttpInfo (int? cartonId, string cartonTag)
-        {
-            
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null)
-                throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->AddCartonTag");
-            
-            // verify the required parameter 'cartonTag' is set
-            if (cartonTag == null)
-                throw new ApiException(400, "Missing required parameter 'cartonTag' when calling CartonApi->AddCartonTag");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/tag/{cartonTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            if (cartonTag != null) localVarPathParams.Add("cartonTag", Configuration.ApiClient.ParameterToString(cartonTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a carton. Adds a tag to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param>
-        /// <param name="cartonTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddCartonTagAsync (int? cartonId, string cartonTag)
-        {
-             await AddCartonTagAsyncWithHttpInfo(cartonId, cartonTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a carton. Adds a tag to an existing carton.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to add a tag to</param>
-        /// <param name="cartonTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddCartonTagAsyncWithHttpInfo (int? cartonId, string cartonTag)
-        {
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling AddCartonTag");
-            // verify the required parameter 'cartonTag' is set
-            if (cartonTag == null) throw new ApiException(400, "Missing required parameter 'cartonTag' when calling AddCartonTag");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/tag/{cartonTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            if (cartonTag != null) localVarPathParams.Add("cartonTag", Configuration.ApiClient.ParameterToString(cartonTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddCartonTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a carton Deletes the carton identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->DeleteCarton");
             
     
-            var localVarPath = "/beta/carton/{cartonId}";
+            var localVarPath = "/v2.0/carton/{cartonId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling DeleteCarton");
             
     
-            var localVarPath = "/beta/carton/{cartonId}";
+            var localVarPath = "/v2.0/carton/{cartonId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a carton. Deletes an existing carton tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param> 
-        /// <param name="cartonTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteCartonTag (int? cartonId, string cartonTag)
-        {
-             DeleteCartonTagWithHttpInfo(cartonId, cartonTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a carton. Deletes an existing carton tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param> 
-        /// <param name="cartonTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteCartonTagWithHttpInfo (int? cartonId, string cartonTag)
-        {
-            
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null)
-                throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->DeleteCartonTag");
-            
-            // verify the required parameter 'cartonTag' is set
-            if (cartonTag == null)
-                throw new ApiException(400, "Missing required parameter 'cartonTag' when calling CartonApi->DeleteCartonTag");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/tag/{cartonTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            if (cartonTag != null) localVarPathParams.Add("cartonTag", Configuration.ApiClient.ParameterToString(cartonTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCartonTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCartonTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a carton. Deletes an existing carton tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param>
-        /// <param name="cartonTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteCartonTagAsync (int? cartonId, string cartonTag)
-        {
-             await DeleteCartonTagAsyncWithHttpInfo(cartonId, cartonTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a carton. Deletes an existing carton tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to remove tag from</param>
-        /// <param name="cartonTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteCartonTagAsyncWithHttpInfo (int? cartonId, string cartonTag)
-        {
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling DeleteCartonTag");
-            // verify the required parameter 'cartonTag' is set
-            if (cartonTag == null) throw new ApiException(400, "Missing required parameter 'cartonTag' when calling DeleteCartonTag");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/tag/{cartonTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            if (cartonTag != null) localVarPathParams.Add("cartonTag", Configuration.ApiClient.ParameterToString(cartonTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCartonTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteCartonTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search cartons by filter Returns the list of cartons that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1544,7 +813,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/carton/search";
+            var localVarPath = "/v2.0/carton/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1636,7 +905,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/carton/search";
+            var localVarPath = "/v2.0/carton/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1725,7 +994,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->GetCartonById");
             
     
-            var localVarPath = "/beta/carton/{cartonId}";
+            var localVarPath = "/v2.0/carton/{cartonId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1810,7 +1079,7 @@ namespace Infoplus.Api
             if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling GetCartonById");
             
     
-            var localVarPath = "/beta/carton/{cartonId}";
+            var localVarPath = "/v2.0/carton/{cartonId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1871,175 +1140,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a carton. Get all existing carton tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param> 
-        /// <returns></returns>
-        public void GetCartonTags (int? cartonId)
-        {
-             GetCartonTagsWithHttpInfo(cartonId);
-        }
-
-        /// <summary>
-        /// Get the tags for a carton. Get all existing carton tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetCartonTagsWithHttpInfo (int? cartonId)
-        {
-            
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null)
-                throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->GetCartonTags");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetCartonTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetCartonTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a carton. Get all existing carton tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetCartonTagsAsync (int? cartonId)
-        {
-             await GetCartonTagsAsyncWithHttpInfo(cartonId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a carton. Get all existing carton tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="cartonId">Id of the carton to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetCartonTagsAsyncWithHttpInfo (int? cartonId)
-        {
-            // verify the required parameter 'cartonId' is set
-            if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling GetCartonTags");
-            
-    
-            var localVarPath = "/beta/carton/{cartonId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (cartonId != null) localVarPathParams.Add("cartonId", Configuration.ApiClient.ParameterToString(cartonId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetCartonTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetCartonTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a carton by id Returns a duplicated carton identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2065,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'cartonId' when calling CartonApi->GetDuplicateCartonById");
             
     
-            var localVarPath = "/beta/carton/duplicate/{cartonId}";
+            var localVarPath = "/v2.0/carton/duplicate/{cartonId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2150,7 +1250,7 @@ namespace Infoplus.Api
             if (cartonId == null) throw new ApiException(400, "Missing required parameter 'cartonId' when calling GetDuplicateCartonById");
             
     
-            var localVarPath = "/beta/carton/duplicate/{cartonId}";
+            var localVarPath = "/v2.0/carton/duplicate/{cartonId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling CartonApi->UpdateCarton");
             
     
-            var localVarPath = "/beta/carton";
+            var localVarPath = "/v2.0/carton";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateCarton");
             
     
-            var localVarPath = "/beta/carton";
+            var localVarPath = "/v2.0/carton";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling CartonApi->UpdateCartonCustomFields");
             
     
-            var localVarPath = "/beta/carton/customFields";
+            var localVarPath = "/v2.0/carton/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateCartonCustomFields");
             
     
-            var localVarPath = "/beta/carton/customFields";
+            var localVarPath = "/v2.0/carton/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

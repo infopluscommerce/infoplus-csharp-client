@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<LocationAddressScheme> AddLocationAddressSchemeWithHttpInfo (LocationAddressScheme body);
         
         /// <summary>
-        /// Add new audit for a locationAddressScheme
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param>
-        /// <param name="locationAddressSchemeAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddLocationAddressSchemeAudit (int? locationAddressSchemeId, string locationAddressSchemeAudit);
-  
-        /// <summary>
-        /// Add new audit for a locationAddressScheme
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param>
-        /// <param name="locationAddressSchemeAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddLocationAddressSchemeAuditWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeAudit);
-        
-        /// <summary>
-        /// Add new tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param>
-        /// <param name="locationAddressSchemeTag">The tag to add</param>
-        /// <returns></returns>
-        void AddLocationAddressSchemeTag (int? locationAddressSchemeId, string locationAddressSchemeTag);
-  
-        /// <summary>
-        /// Add new tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param>
-        /// <param name="locationAddressSchemeTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddLocationAddressSchemeTagWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag);
-        
-        /// <summary>
         /// Delete a locationAddressScheme
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteLocationAddressSchemeWithHttpInfo (int? locationAddressSchemeId);
-        
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationAddressScheme tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param>
-        /// <param name="locationAddressSchemeTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteLocationAddressSchemeTag (int? locationAddressSchemeId, string locationAddressSchemeTag);
-  
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationAddressScheme tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param>
-        /// <param name="locationAddressSchemeTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteLocationAddressSchemeTagWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag);
         
         /// <summary>
         /// Get a duplicated a locationAddressScheme by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<LocationAddressScheme> GetLocationAddressSchemeByIdWithHttpInfo (int? locationAddressSchemeId);
         
         /// <summary>
-        /// Get the tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationAddressScheme tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param>
-        /// <returns></returns>
-        void GetLocationAddressSchemeTags (int? locationAddressSchemeId);
-  
-        /// <summary>
-        /// Get the tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationAddressScheme tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetLocationAddressSchemeTagsWithHttpInfo (int? locationAddressSchemeId);
-        
-        /// <summary>
         /// Update a locationAddressScheme
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<LocationAddressScheme>> AddLocationAddressSchemeAsyncWithHttpInfo (LocationAddressScheme body);
         
         /// <summary>
-        /// Add new audit for a locationAddressScheme
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param>
-        /// <param name="locationAddressSchemeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddLocationAddressSchemeAuditAsync (int? locationAddressSchemeId, string locationAddressSchemeAudit);
-
-        /// <summary>
-        /// Add new audit for a locationAddressScheme
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param>
-        /// <param name="locationAddressSchemeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationAddressSchemeAuditAsyncWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeAudit);
-        
-        /// <summary>
-        /// Add new tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param>
-        /// <param name="locationAddressSchemeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddLocationAddressSchemeTagAsync (int? locationAddressSchemeId, string locationAddressSchemeTag);
-
-        /// <summary>
-        /// Add new tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationAddressScheme.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param>
-        /// <param name="locationAddressSchemeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationAddressSchemeTagAsyncWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag);
-        
-        /// <summary>
         /// Delete a locationAddressScheme
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationAddressSchemeAsyncWithHttpInfo (int? locationAddressSchemeId);
-        
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationAddressScheme tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param>
-        /// <param name="locationAddressSchemeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteLocationAddressSchemeTagAsync (int? locationAddressSchemeId, string locationAddressSchemeTag);
-
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationAddressScheme tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param>
-        /// <param name="locationAddressSchemeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationAddressSchemeTagAsyncWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag);
         
         /// <summary>
         /// Get a duplicated a locationAddressScheme by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to be returned.</param>
         /// <returns>Task of ApiResponse (LocationAddressScheme)</returns>
         System.Threading.Tasks.Task<ApiResponse<LocationAddressScheme>> GetLocationAddressSchemeByIdAsyncWithHttpInfo (int? locationAddressSchemeId);
-        
-        /// <summary>
-        /// Get the tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationAddressScheme tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetLocationAddressSchemeTagsAsync (int? locationAddressSchemeId);
-
-        /// <summary>
-        /// Get the tags for a locationAddressScheme.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationAddressScheme tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetLocationAddressSchemeTagsAsyncWithHttpInfo (int? locationAddressSchemeId);
         
         /// <summary>
         /// Update a locationAddressScheme
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationAddressSchemeApi->AddLocationAddressScheme");
             
     
-            var localVarPath = "/beta/locationAddressScheme";
+            var localVarPath = "/v2.0/locationAddressScheme";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddLocationAddressScheme");
             
     
-            var localVarPath = "/beta/locationAddressScheme";
+            var localVarPath = "/v2.0/locationAddressScheme";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a locationAddressScheme Adds an audit to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param> 
-        /// <param name="locationAddressSchemeAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddLocationAddressSchemeAudit (int? locationAddressSchemeId, string locationAddressSchemeAudit)
-        {
-             AddLocationAddressSchemeAuditWithHttpInfo(locationAddressSchemeId, locationAddressSchemeAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a locationAddressScheme Adds an audit to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param> 
-        /// <param name="locationAddressSchemeAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddLocationAddressSchemeAuditWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeAudit)
-        {
-            
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->AddLocationAddressSchemeAudit");
-            
-            // verify the required parameter 'locationAddressSchemeAudit' is set
-            if (locationAddressSchemeAudit == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeAudit' when calling LocationAddressSchemeApi->AddLocationAddressSchemeAudit");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/audit/{locationAddressSchemeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            if (locationAddressSchemeAudit != null) localVarPathParams.Add("locationAddressSchemeAudit", Configuration.ApiClient.ParameterToString(locationAddressSchemeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a locationAddressScheme Adds an audit to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param>
-        /// <param name="locationAddressSchemeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddLocationAddressSchemeAuditAsync (int? locationAddressSchemeId, string locationAddressSchemeAudit)
-        {
-             await AddLocationAddressSchemeAuditAsyncWithHttpInfo(locationAddressSchemeId, locationAddressSchemeAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a locationAddressScheme Adds an audit to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add an audit to</param>
-        /// <param name="locationAddressSchemeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationAddressSchemeAuditAsyncWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeAudit)
-        {
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling AddLocationAddressSchemeAudit");
-            // verify the required parameter 'locationAddressSchemeAudit' is set
-            if (locationAddressSchemeAudit == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeAudit' when calling AddLocationAddressSchemeAudit");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/audit/{locationAddressSchemeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            if (locationAddressSchemeAudit != null) localVarPathParams.Add("locationAddressSchemeAudit", Configuration.ApiClient.ParameterToString(locationAddressSchemeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a locationAddressScheme. Adds a tag to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param> 
-        /// <param name="locationAddressSchemeTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddLocationAddressSchemeTag (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-             AddLocationAddressSchemeTagWithHttpInfo(locationAddressSchemeId, locationAddressSchemeTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a locationAddressScheme. Adds a tag to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param> 
-        /// <param name="locationAddressSchemeTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddLocationAddressSchemeTagWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-            
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->AddLocationAddressSchemeTag");
-            
-            // verify the required parameter 'locationAddressSchemeTag' is set
-            if (locationAddressSchemeTag == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeTag' when calling LocationAddressSchemeApi->AddLocationAddressSchemeTag");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/tag/{locationAddressSchemeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            if (locationAddressSchemeTag != null) localVarPathParams.Add("locationAddressSchemeTag", Configuration.ApiClient.ParameterToString(locationAddressSchemeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a locationAddressScheme. Adds a tag to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param>
-        /// <param name="locationAddressSchemeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddLocationAddressSchemeTagAsync (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-             await AddLocationAddressSchemeTagAsyncWithHttpInfo(locationAddressSchemeId, locationAddressSchemeTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a locationAddressScheme. Adds a tag to an existing locationAddressScheme.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to add a tag to</param>
-        /// <param name="locationAddressSchemeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationAddressSchemeTagAsyncWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling AddLocationAddressSchemeTag");
-            // verify the required parameter 'locationAddressSchemeTag' is set
-            if (locationAddressSchemeTag == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeTag' when calling AddLocationAddressSchemeTag");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/tag/{locationAddressSchemeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            if (locationAddressSchemeTag != null) localVarPathParams.Add("locationAddressSchemeTag", Configuration.ApiClient.ParameterToString(locationAddressSchemeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationAddressSchemeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a locationAddressScheme Deletes the locationAddressScheme identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->DeleteLocationAddressScheme");
             
     
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}";
+            var localVarPath = "/v2.0/locationAddressScheme/{locationAddressSchemeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling DeleteLocationAddressScheme");
             
     
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}";
+            var localVarPath = "/v2.0/locationAddressScheme/{locationAddressSchemeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a locationAddressScheme. Deletes an existing locationAddressScheme tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param> 
-        /// <param name="locationAddressSchemeTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteLocationAddressSchemeTag (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-             DeleteLocationAddressSchemeTagWithHttpInfo(locationAddressSchemeId, locationAddressSchemeTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme. Deletes an existing locationAddressScheme tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param> 
-        /// <param name="locationAddressSchemeTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteLocationAddressSchemeTagWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-            
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->DeleteLocationAddressSchemeTag");
-            
-            // verify the required parameter 'locationAddressSchemeTag' is set
-            if (locationAddressSchemeTag == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeTag' when calling LocationAddressSchemeApi->DeleteLocationAddressSchemeTag");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/tag/{locationAddressSchemeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            if (locationAddressSchemeTag != null) localVarPathParams.Add("locationAddressSchemeTag", Configuration.ApiClient.ParameterToString(locationAddressSchemeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationAddressSchemeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationAddressSchemeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme. Deletes an existing locationAddressScheme tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param>
-        /// <param name="locationAddressSchemeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteLocationAddressSchemeTagAsync (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-             await DeleteLocationAddressSchemeTagAsyncWithHttpInfo(locationAddressSchemeId, locationAddressSchemeTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a locationAddressScheme. Deletes an existing locationAddressScheme tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to remove tag from</param>
-        /// <param name="locationAddressSchemeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationAddressSchemeTagAsyncWithHttpInfo (int? locationAddressSchemeId, string locationAddressSchemeTag)
-        {
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling DeleteLocationAddressSchemeTag");
-            // verify the required parameter 'locationAddressSchemeTag' is set
-            if (locationAddressSchemeTag == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeTag' when calling DeleteLocationAddressSchemeTag");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/tag/{locationAddressSchemeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            if (locationAddressSchemeTag != null) localVarPathParams.Add("locationAddressSchemeTag", Configuration.ApiClient.ParameterToString(locationAddressSchemeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationAddressSchemeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationAddressSchemeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a locationAddressScheme by id Returns a duplicated locationAddressScheme identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->GetDuplicateLocationAddressSchemeById");
             
     
-            var localVarPath = "/beta/locationAddressScheme/duplicate/{locationAddressSchemeId}";
+            var localVarPath = "/v2.0/locationAddressScheme/duplicate/{locationAddressSchemeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling GetDuplicateLocationAddressSchemeById");
             
     
-            var localVarPath = "/beta/locationAddressScheme/duplicate/{locationAddressSchemeId}";
+            var localVarPath = "/v2.0/locationAddressScheme/duplicate/{locationAddressSchemeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/locationAddressScheme/search";
+            var localVarPath = "/v2.0/locationAddressScheme/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/locationAddressScheme/search";
+            var localVarPath = "/v2.0/locationAddressScheme/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->GetLocationAddressSchemeById");
             
     
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}";
+            var localVarPath = "/v2.0/locationAddressScheme/{locationAddressSchemeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling GetLocationAddressSchemeById");
             
     
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}";
+            var localVarPath = "/v2.0/locationAddressScheme/{locationAddressSchemeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a locationAddressScheme. Get all existing locationAddressScheme tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param> 
-        /// <returns></returns>
-        public void GetLocationAddressSchemeTags (int? locationAddressSchemeId)
-        {
-             GetLocationAddressSchemeTagsWithHttpInfo(locationAddressSchemeId);
-        }
-
-        /// <summary>
-        /// Get the tags for a locationAddressScheme. Get all existing locationAddressScheme tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetLocationAddressSchemeTagsWithHttpInfo (int? locationAddressSchemeId)
-        {
-            
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null)
-                throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling LocationAddressSchemeApi->GetLocationAddressSchemeTags");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationAddressSchemeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationAddressSchemeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a locationAddressScheme. Get all existing locationAddressScheme tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetLocationAddressSchemeTagsAsync (int? locationAddressSchemeId)
-        {
-             await GetLocationAddressSchemeTagsAsyncWithHttpInfo(locationAddressSchemeId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a locationAddressScheme. Get all existing locationAddressScheme tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationAddressSchemeId">Id of the locationAddressScheme to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetLocationAddressSchemeTagsAsyncWithHttpInfo (int? locationAddressSchemeId)
-        {
-            // verify the required parameter 'locationAddressSchemeId' is set
-            if (locationAddressSchemeId == null) throw new ApiException(400, "Missing required parameter 'locationAddressSchemeId' when calling GetLocationAddressSchemeTags");
-            
-    
-            var localVarPath = "/beta/locationAddressScheme/{locationAddressSchemeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationAddressSchemeId != null) localVarPathParams.Add("locationAddressSchemeId", Configuration.ApiClient.ParameterToString(locationAddressSchemeId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationAddressSchemeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationAddressSchemeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a locationAddressScheme Updates an existing locationAddressScheme using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationAddressSchemeApi->UpdateLocationAddressScheme");
             
     
-            var localVarPath = "/beta/locationAddressScheme";
+            var localVarPath = "/v2.0/locationAddressScheme";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateLocationAddressScheme");
             
     
-            var localVarPath = "/beta/locationAddressScheme";
+            var localVarPath = "/v2.0/locationAddressScheme";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationAddressSchemeApi->UpdateLocationAddressSchemeCustomFields");
             
     
-            var localVarPath = "/beta/locationAddressScheme/customFields";
+            var localVarPath = "/v2.0/locationAddressScheme/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateLocationAddressSchemeCustomFields");
             
     
-            var localVarPath = "/beta/locationAddressScheme/customFields";
+            var localVarPath = "/v2.0/locationAddressScheme/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

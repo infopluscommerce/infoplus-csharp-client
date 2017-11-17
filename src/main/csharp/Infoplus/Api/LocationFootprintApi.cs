@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<LocationFootprint> AddLocationFootprintWithHttpInfo (LocationFootprint body);
         
         /// <summary>
-        /// Add new audit for a locationFootprint
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param>
-        /// <param name="locationFootprintAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddLocationFootprintAudit (int? locationFootprintId, string locationFootprintAudit);
-  
-        /// <summary>
-        /// Add new audit for a locationFootprint
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param>
-        /// <param name="locationFootprintAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddLocationFootprintAuditWithHttpInfo (int? locationFootprintId, string locationFootprintAudit);
-        
-        /// <summary>
-        /// Add new tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param>
-        /// <param name="locationFootprintTag">The tag to add</param>
-        /// <returns></returns>
-        void AddLocationFootprintTag (int? locationFootprintId, string locationFootprintTag);
-  
-        /// <summary>
-        /// Add new tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param>
-        /// <param name="locationFootprintTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddLocationFootprintTagWithHttpInfo (int? locationFootprintId, string locationFootprintTag);
-        
-        /// <summary>
         /// Delete a locationFootprint
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="locationFootprintId">Id of the locationFootprint to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteLocationFootprintWithHttpInfo (int? locationFootprintId);
-        
-        /// <summary>
-        /// Delete a tag for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationFootprint tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param>
-        /// <param name="locationFootprintTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteLocationFootprintTag (int? locationFootprintId, string locationFootprintTag);
-  
-        /// <summary>
-        /// Delete a tag for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationFootprint tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param>
-        /// <param name="locationFootprintTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteLocationFootprintTagWithHttpInfo (int? locationFootprintId, string locationFootprintTag);
         
         /// <summary>
         /// Get a duplicated a locationFootprint by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<LocationFootprint> GetLocationFootprintByIdWithHttpInfo (int? locationFootprintId);
         
         /// <summary>
-        /// Get the tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationFootprint tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param>
-        /// <returns></returns>
-        void GetLocationFootprintTags (int? locationFootprintId);
-  
-        /// <summary>
-        /// Get the tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationFootprint tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetLocationFootprintTagsWithHttpInfo (int? locationFootprintId);
-        
-        /// <summary>
         /// Update a locationFootprint
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<LocationFootprint>> AddLocationFootprintAsyncWithHttpInfo (LocationFootprint body);
         
         /// <summary>
-        /// Add new audit for a locationFootprint
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param>
-        /// <param name="locationFootprintAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddLocationFootprintAuditAsync (int? locationFootprintId, string locationFootprintAudit);
-
-        /// <summary>
-        /// Add new audit for a locationFootprint
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param>
-        /// <param name="locationFootprintAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationFootprintAuditAsyncWithHttpInfo (int? locationFootprintId, string locationFootprintAudit);
-        
-        /// <summary>
-        /// Add new tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param>
-        /// <param name="locationFootprintTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddLocationFootprintTagAsync (int? locationFootprintId, string locationFootprintTag);
-
-        /// <summary>
-        /// Add new tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing locationFootprint.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param>
-        /// <param name="locationFootprintTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationFootprintTagAsyncWithHttpInfo (int? locationFootprintId, string locationFootprintTag);
-        
-        /// <summary>
         /// Delete a locationFootprint
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="locationFootprintId">Id of the locationFootprint to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationFootprintAsyncWithHttpInfo (int? locationFootprintId);
-        
-        /// <summary>
-        /// Delete a tag for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationFootprint tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param>
-        /// <param name="locationFootprintTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteLocationFootprintTagAsync (int? locationFootprintId, string locationFootprintTag);
-
-        /// <summary>
-        /// Delete a tag for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing locationFootprint tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param>
-        /// <param name="locationFootprintTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationFootprintTagAsyncWithHttpInfo (int? locationFootprintId, string locationFootprintTag);
         
         /// <summary>
         /// Get a duplicated a locationFootprint by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="locationFootprintId">Id of the locationFootprint to be returned.</param>
         /// <returns>Task of ApiResponse (LocationFootprint)</returns>
         System.Threading.Tasks.Task<ApiResponse<LocationFootprint>> GetLocationFootprintByIdAsyncWithHttpInfo (int? locationFootprintId);
-        
-        /// <summary>
-        /// Get the tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationFootprint tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetLocationFootprintTagsAsync (int? locationFootprintId);
-
-        /// <summary>
-        /// Get the tags for a locationFootprint.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing locationFootprint tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetLocationFootprintTagsAsyncWithHttpInfo (int? locationFootprintId);
         
         /// <summary>
         /// Update a locationFootprint
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationFootprintApi->AddLocationFootprint");
             
     
-            var localVarPath = "/beta/locationFootprint";
+            var localVarPath = "/v2.0/locationFootprint";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddLocationFootprint");
             
     
-            var localVarPath = "/beta/locationFootprint";
+            var localVarPath = "/v2.0/locationFootprint";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a locationFootprint Adds an audit to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param> 
-        /// <param name="locationFootprintAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddLocationFootprintAudit (int? locationFootprintId, string locationFootprintAudit)
-        {
-             AddLocationFootprintAuditWithHttpInfo(locationFootprintId, locationFootprintAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a locationFootprint Adds an audit to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param> 
-        /// <param name="locationFootprintAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddLocationFootprintAuditWithHttpInfo (int? locationFootprintId, string locationFootprintAudit)
-        {
-            
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->AddLocationFootprintAudit");
-            
-            // verify the required parameter 'locationFootprintAudit' is set
-            if (locationFootprintAudit == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintAudit' when calling LocationFootprintApi->AddLocationFootprintAudit");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/audit/{locationFootprintAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            if (locationFootprintAudit != null) localVarPathParams.Add("locationFootprintAudit", Configuration.ApiClient.ParameterToString(locationFootprintAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a locationFootprint Adds an audit to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param>
-        /// <param name="locationFootprintAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddLocationFootprintAuditAsync (int? locationFootprintId, string locationFootprintAudit)
-        {
-             await AddLocationFootprintAuditAsyncWithHttpInfo(locationFootprintId, locationFootprintAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a locationFootprint Adds an audit to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add an audit to</param>
-        /// <param name="locationFootprintAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationFootprintAuditAsyncWithHttpInfo (int? locationFootprintId, string locationFootprintAudit)
-        {
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling AddLocationFootprintAudit");
-            // verify the required parameter 'locationFootprintAudit' is set
-            if (locationFootprintAudit == null) throw new ApiException(400, "Missing required parameter 'locationFootprintAudit' when calling AddLocationFootprintAudit");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/audit/{locationFootprintAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            if (locationFootprintAudit != null) localVarPathParams.Add("locationFootprintAudit", Configuration.ApiClient.ParameterToString(locationFootprintAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a locationFootprint. Adds a tag to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param> 
-        /// <param name="locationFootprintTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddLocationFootprintTag (int? locationFootprintId, string locationFootprintTag)
-        {
-             AddLocationFootprintTagWithHttpInfo(locationFootprintId, locationFootprintTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a locationFootprint. Adds a tag to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param> 
-        /// <param name="locationFootprintTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddLocationFootprintTagWithHttpInfo (int? locationFootprintId, string locationFootprintTag)
-        {
-            
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->AddLocationFootprintTag");
-            
-            // verify the required parameter 'locationFootprintTag' is set
-            if (locationFootprintTag == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintTag' when calling LocationFootprintApi->AddLocationFootprintTag");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/tag/{locationFootprintTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            if (locationFootprintTag != null) localVarPathParams.Add("locationFootprintTag", Configuration.ApiClient.ParameterToString(locationFootprintTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a locationFootprint. Adds a tag to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param>
-        /// <param name="locationFootprintTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddLocationFootprintTagAsync (int? locationFootprintId, string locationFootprintTag)
-        {
-             await AddLocationFootprintTagAsyncWithHttpInfo(locationFootprintId, locationFootprintTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a locationFootprint. Adds a tag to an existing locationFootprint.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to add a tag to</param>
-        /// <param name="locationFootprintTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddLocationFootprintTagAsyncWithHttpInfo (int? locationFootprintId, string locationFootprintTag)
-        {
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling AddLocationFootprintTag");
-            // verify the required parameter 'locationFootprintTag' is set
-            if (locationFootprintTag == null) throw new ApiException(400, "Missing required parameter 'locationFootprintTag' when calling AddLocationFootprintTag");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/tag/{locationFootprintTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            if (locationFootprintTag != null) localVarPathParams.Add("locationFootprintTag", Configuration.ApiClient.ParameterToString(locationFootprintTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddLocationFootprintTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a locationFootprint Deletes the locationFootprint identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->DeleteLocationFootprint");
             
     
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}";
+            var localVarPath = "/v2.0/locationFootprint/{locationFootprintId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling DeleteLocationFootprint");
             
     
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}";
+            var localVarPath = "/v2.0/locationFootprint/{locationFootprintId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a locationFootprint. Deletes an existing locationFootprint tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param> 
-        /// <param name="locationFootprintTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteLocationFootprintTag (int? locationFootprintId, string locationFootprintTag)
-        {
-             DeleteLocationFootprintTagWithHttpInfo(locationFootprintId, locationFootprintTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a locationFootprint. Deletes an existing locationFootprint tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param> 
-        /// <param name="locationFootprintTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteLocationFootprintTagWithHttpInfo (int? locationFootprintId, string locationFootprintTag)
-        {
-            
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->DeleteLocationFootprintTag");
-            
-            // verify the required parameter 'locationFootprintTag' is set
-            if (locationFootprintTag == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintTag' when calling LocationFootprintApi->DeleteLocationFootprintTag");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/tag/{locationFootprintTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            if (locationFootprintTag != null) localVarPathParams.Add("locationFootprintTag", Configuration.ApiClient.ParameterToString(locationFootprintTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationFootprintTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationFootprintTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a locationFootprint. Deletes an existing locationFootprint tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param>
-        /// <param name="locationFootprintTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteLocationFootprintTagAsync (int? locationFootprintId, string locationFootprintTag)
-        {
-             await DeleteLocationFootprintTagAsyncWithHttpInfo(locationFootprintId, locationFootprintTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a locationFootprint. Deletes an existing locationFootprint tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to remove tag from</param>
-        /// <param name="locationFootprintTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteLocationFootprintTagAsyncWithHttpInfo (int? locationFootprintId, string locationFootprintTag)
-        {
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling DeleteLocationFootprintTag");
-            // verify the required parameter 'locationFootprintTag' is set
-            if (locationFootprintTag == null) throw new ApiException(400, "Missing required parameter 'locationFootprintTag' when calling DeleteLocationFootprintTag");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/tag/{locationFootprintTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            if (locationFootprintTag != null) localVarPathParams.Add("locationFootprintTag", Configuration.ApiClient.ParameterToString(locationFootprintTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationFootprintTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteLocationFootprintTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a locationFootprint by id Returns a duplicated locationFootprint identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->GetDuplicateLocationFootprintById");
             
     
-            var localVarPath = "/beta/locationFootprint/duplicate/{locationFootprintId}";
+            var localVarPath = "/v2.0/locationFootprint/duplicate/{locationFootprintId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling GetDuplicateLocationFootprintById");
             
     
-            var localVarPath = "/beta/locationFootprint/duplicate/{locationFootprintId}";
+            var localVarPath = "/v2.0/locationFootprint/duplicate/{locationFootprintId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/locationFootprint/search";
+            var localVarPath = "/v2.0/locationFootprint/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/locationFootprint/search";
+            var localVarPath = "/v2.0/locationFootprint/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->GetLocationFootprintById");
             
     
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}";
+            var localVarPath = "/v2.0/locationFootprint/{locationFootprintId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling GetLocationFootprintById");
             
     
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}";
+            var localVarPath = "/v2.0/locationFootprint/{locationFootprintId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a locationFootprint. Get all existing locationFootprint tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param> 
-        /// <returns></returns>
-        public void GetLocationFootprintTags (int? locationFootprintId)
-        {
-             GetLocationFootprintTagsWithHttpInfo(locationFootprintId);
-        }
-
-        /// <summary>
-        /// Get the tags for a locationFootprint. Get all existing locationFootprint tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetLocationFootprintTagsWithHttpInfo (int? locationFootprintId)
-        {
-            
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null)
-                throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling LocationFootprintApi->GetLocationFootprintTags");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationFootprintTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationFootprintTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a locationFootprint. Get all existing locationFootprint tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetLocationFootprintTagsAsync (int? locationFootprintId)
-        {
-             await GetLocationFootprintTagsAsyncWithHttpInfo(locationFootprintId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a locationFootprint. Get all existing locationFootprint tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="locationFootprintId">Id of the locationFootprint to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetLocationFootprintTagsAsyncWithHttpInfo (int? locationFootprintId)
-        {
-            // verify the required parameter 'locationFootprintId' is set
-            if (locationFootprintId == null) throw new ApiException(400, "Missing required parameter 'locationFootprintId' when calling GetLocationFootprintTags");
-            
-    
-            var localVarPath = "/beta/locationFootprint/{locationFootprintId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (locationFootprintId != null) localVarPathParams.Add("locationFootprintId", Configuration.ApiClient.ParameterToString(locationFootprintId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationFootprintTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetLocationFootprintTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a locationFootprint Updates an existing locationFootprint using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationFootprintApi->UpdateLocationFootprint");
             
     
-            var localVarPath = "/beta/locationFootprint";
+            var localVarPath = "/v2.0/locationFootprint";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateLocationFootprint");
             
     
-            var localVarPath = "/beta/locationFootprint";
+            var localVarPath = "/v2.0/locationFootprint";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling LocationFootprintApi->UpdateLocationFootprintCustomFields");
             
     
-            var localVarPath = "/beta/locationFootprint/customFields";
+            var localVarPath = "/v2.0/locationFootprint/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateLocationFootprintCustomFields");
             
     
-            var localVarPath = "/beta/locationFootprint/customFields";
+            var localVarPath = "/v2.0/locationFootprint/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

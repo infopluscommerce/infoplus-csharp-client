@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Aisle> AddAisleWithHttpInfo (Aisle body);
         
         /// <summary>
-        /// Add new audit for an aisle
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param>
-        /// <param name="aisleAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddAisleAudit (int? aisleId, string aisleAudit);
-  
-        /// <summary>
-        /// Add new audit for an aisle
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param>
-        /// <param name="aisleAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddAisleAuditWithHttpInfo (int? aisleId, string aisleAudit);
-        
-        /// <summary>
-        /// Add new tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param>
-        /// <param name="aisleTag">The tag to add</param>
-        /// <returns></returns>
-        void AddAisleTag (int? aisleId, string aisleTag);
-  
-        /// <summary>
-        /// Add new tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param>
-        /// <param name="aisleTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddAisleTagWithHttpInfo (int? aisleId, string aisleTag);
-        
-        /// <summary>
         /// Delete an aisle
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="aisleId">Id of the aisle to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteAisleWithHttpInfo (int? aisleId);
-        
-        /// <summary>
-        /// Delete a tag for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing aisle tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param>
-        /// <param name="aisleTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteAisleTag (int? aisleId, string aisleTag);
-  
-        /// <summary>
-        /// Delete a tag for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing aisle tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param>
-        /// <param name="aisleTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteAisleTagWithHttpInfo (int? aisleId, string aisleTag);
         
         /// <summary>
         /// Search aisles by filter
@@ -182,28 +110,6 @@ namespace Infoplus.Api
         /// <param name="aisleId">Id of the aisle to be returned.</param>
         /// <returns>ApiResponse of Aisle</returns>
         ApiResponse<Aisle> GetAisleByIdWithHttpInfo (int? aisleId);
-        
-        /// <summary>
-        /// Get the tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing aisle tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param>
-        /// <returns></returns>
-        void GetAisleTags (int? aisleId);
-  
-        /// <summary>
-        /// Get the tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing aisle tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetAisleTagsWithHttpInfo (int? aisleId);
         
         /// <summary>
         /// Get a duplicated an aisle by id
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Aisle>> AddAisleAsyncWithHttpInfo (Aisle body);
         
         /// <summary>
-        /// Add new audit for an aisle
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param>
-        /// <param name="aisleAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddAisleAuditAsync (int? aisleId, string aisleAudit);
-
-        /// <summary>
-        /// Add new audit for an aisle
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param>
-        /// <param name="aisleAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddAisleAuditAsyncWithHttpInfo (int? aisleId, string aisleAudit);
-        
-        /// <summary>
-        /// Add new tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param>
-        /// <param name="aisleTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddAisleTagAsync (int? aisleId, string aisleTag);
-
-        /// <summary>
-        /// Add new tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing aisle.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param>
-        /// <param name="aisleTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddAisleTagAsyncWithHttpInfo (int? aisleId, string aisleTag);
-        
-        /// <summary>
         /// Delete an aisle
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="aisleId">Id of the aisle to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAisleAsyncWithHttpInfo (int? aisleId);
-        
-        /// <summary>
-        /// Delete a tag for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing aisle tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param>
-        /// <param name="aisleTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteAisleTagAsync (int? aisleId, string aisleTag);
-
-        /// <summary>
-        /// Delete a tag for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing aisle tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param>
-        /// <param name="aisleTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAisleTagAsyncWithHttpInfo (int? aisleId, string aisleTag);
         
         /// <summary>
         /// Search aisles by filter
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="aisleId">Id of the aisle to be returned.</param>
         /// <returns>Task of ApiResponse (Aisle)</returns>
         System.Threading.Tasks.Task<ApiResponse<Aisle>> GetAisleByIdAsyncWithHttpInfo (int? aisleId);
-        
-        /// <summary>
-        /// Get the tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing aisle tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetAisleTagsAsync (int? aisleId);
-
-        /// <summary>
-        /// Get the tags for an aisle.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing aisle tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetAisleTagsAsyncWithHttpInfo (int? aisleId);
         
         /// <summary>
         /// Get a duplicated an aisle by id
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AisleApi->AddAisle");
             
     
-            var localVarPath = "/beta/aisle";
+            var localVarPath = "/v2.0/aisle";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddAisle");
             
     
-            var localVarPath = "/beta/aisle";
+            var localVarPath = "/v2.0/aisle";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an aisle Adds an audit to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param> 
-        /// <param name="aisleAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddAisleAudit (int? aisleId, string aisleAudit)
-        {
-             AddAisleAuditWithHttpInfo(aisleId, aisleAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an aisle Adds an audit to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param> 
-        /// <param name="aisleAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddAisleAuditWithHttpInfo (int? aisleId, string aisleAudit)
-        {
-            
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null)
-                throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->AddAisleAudit");
-            
-            // verify the required parameter 'aisleAudit' is set
-            if (aisleAudit == null)
-                throw new ApiException(400, "Missing required parameter 'aisleAudit' when calling AisleApi->AddAisleAudit");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/audit/{aisleAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            if (aisleAudit != null) localVarPathParams.Add("aisleAudit", Configuration.ApiClient.ParameterToString(aisleAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an aisle Adds an audit to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param>
-        /// <param name="aisleAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddAisleAuditAsync (int? aisleId, string aisleAudit)
-        {
-             await AddAisleAuditAsyncWithHttpInfo(aisleId, aisleAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an aisle Adds an audit to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add an audit to</param>
-        /// <param name="aisleAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddAisleAuditAsyncWithHttpInfo (int? aisleId, string aisleAudit)
-        {
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling AddAisleAudit");
-            // verify the required parameter 'aisleAudit' is set
-            if (aisleAudit == null) throw new ApiException(400, "Missing required parameter 'aisleAudit' when calling AddAisleAudit");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/audit/{aisleAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            if (aisleAudit != null) localVarPathParams.Add("aisleAudit", Configuration.ApiClient.ParameterToString(aisleAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an aisle. Adds a tag to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param> 
-        /// <param name="aisleTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddAisleTag (int? aisleId, string aisleTag)
-        {
-             AddAisleTagWithHttpInfo(aisleId, aisleTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an aisle. Adds a tag to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param> 
-        /// <param name="aisleTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddAisleTagWithHttpInfo (int? aisleId, string aisleTag)
-        {
-            
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null)
-                throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->AddAisleTag");
-            
-            // verify the required parameter 'aisleTag' is set
-            if (aisleTag == null)
-                throw new ApiException(400, "Missing required parameter 'aisleTag' when calling AisleApi->AddAisleTag");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/tag/{aisleTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            if (aisleTag != null) localVarPathParams.Add("aisleTag", Configuration.ApiClient.ParameterToString(aisleTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an aisle. Adds a tag to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param>
-        /// <param name="aisleTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddAisleTagAsync (int? aisleId, string aisleTag)
-        {
-             await AddAisleTagAsyncWithHttpInfo(aisleId, aisleTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an aisle. Adds a tag to an existing aisle.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to add a tag to</param>
-        /// <param name="aisleTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddAisleTagAsyncWithHttpInfo (int? aisleId, string aisleTag)
-        {
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling AddAisleTag");
-            // verify the required parameter 'aisleTag' is set
-            if (aisleTag == null) throw new ApiException(400, "Missing required parameter 'aisleTag' when calling AddAisleTag");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/tag/{aisleTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            if (aisleTag != null) localVarPathParams.Add("aisleTag", Configuration.ApiClient.ParameterToString(aisleTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAisleTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an aisle Deletes the aisle identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->DeleteAisle");
             
     
-            var localVarPath = "/beta/aisle/{aisleId}";
+            var localVarPath = "/v2.0/aisle/{aisleId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling DeleteAisle");
             
     
-            var localVarPath = "/beta/aisle/{aisleId}";
+            var localVarPath = "/v2.0/aisle/{aisleId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an aisle. Deletes an existing aisle tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param> 
-        /// <param name="aisleTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteAisleTag (int? aisleId, string aisleTag)
-        {
-             DeleteAisleTagWithHttpInfo(aisleId, aisleTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an aisle. Deletes an existing aisle tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param> 
-        /// <param name="aisleTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteAisleTagWithHttpInfo (int? aisleId, string aisleTag)
-        {
-            
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null)
-                throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->DeleteAisleTag");
-            
-            // verify the required parameter 'aisleTag' is set
-            if (aisleTag == null)
-                throw new ApiException(400, "Missing required parameter 'aisleTag' when calling AisleApi->DeleteAisleTag");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/tag/{aisleTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            if (aisleTag != null) localVarPathParams.Add("aisleTag", Configuration.ApiClient.ParameterToString(aisleTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAisleTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAisleTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an aisle. Deletes an existing aisle tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param>
-        /// <param name="aisleTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteAisleTagAsync (int? aisleId, string aisleTag)
-        {
-             await DeleteAisleTagAsyncWithHttpInfo(aisleId, aisleTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an aisle. Deletes an existing aisle tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to remove tag from</param>
-        /// <param name="aisleTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAisleTagAsyncWithHttpInfo (int? aisleId, string aisleTag)
-        {
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling DeleteAisleTag");
-            // verify the required parameter 'aisleTag' is set
-            if (aisleTag == null) throw new ApiException(400, "Missing required parameter 'aisleTag' when calling DeleteAisleTag");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/tag/{aisleTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            if (aisleTag != null) localVarPathParams.Add("aisleTag", Configuration.ApiClient.ParameterToString(aisleTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAisleTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAisleTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search aisles by filter Returns the list of aisles that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1544,7 +813,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/aisle/search";
+            var localVarPath = "/v2.0/aisle/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1636,7 +905,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/aisle/search";
+            var localVarPath = "/v2.0/aisle/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1725,7 +994,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->GetAisleById");
             
     
-            var localVarPath = "/beta/aisle/{aisleId}";
+            var localVarPath = "/v2.0/aisle/{aisleId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1810,7 +1079,7 @@ namespace Infoplus.Api
             if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling GetAisleById");
             
     
-            var localVarPath = "/beta/aisle/{aisleId}";
+            var localVarPath = "/v2.0/aisle/{aisleId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1871,175 +1140,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an aisle. Get all existing aisle tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param> 
-        /// <returns></returns>
-        public void GetAisleTags (int? aisleId)
-        {
-             GetAisleTagsWithHttpInfo(aisleId);
-        }
-
-        /// <summary>
-        /// Get the tags for an aisle. Get all existing aisle tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetAisleTagsWithHttpInfo (int? aisleId)
-        {
-            
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null)
-                throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->GetAisleTags");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetAisleTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetAisleTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an aisle. Get all existing aisle tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetAisleTagsAsync (int? aisleId)
-        {
-             await GetAisleTagsAsyncWithHttpInfo(aisleId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an aisle. Get all existing aisle tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="aisleId">Id of the aisle to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetAisleTagsAsyncWithHttpInfo (int? aisleId)
-        {
-            // verify the required parameter 'aisleId' is set
-            if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling GetAisleTags");
-            
-    
-            var localVarPath = "/beta/aisle/{aisleId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (aisleId != null) localVarPathParams.Add("aisleId", Configuration.ApiClient.ParameterToString(aisleId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetAisleTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetAisleTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an aisle by id Returns a duplicated aisle identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2065,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'aisleId' when calling AisleApi->GetDuplicateAisleById");
             
     
-            var localVarPath = "/beta/aisle/duplicate/{aisleId}";
+            var localVarPath = "/v2.0/aisle/duplicate/{aisleId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2150,7 +1250,7 @@ namespace Infoplus.Api
             if (aisleId == null) throw new ApiException(400, "Missing required parameter 'aisleId' when calling GetDuplicateAisleById");
             
     
-            var localVarPath = "/beta/aisle/duplicate/{aisleId}";
+            var localVarPath = "/v2.0/aisle/duplicate/{aisleId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AisleApi->UpdateAisle");
             
     
-            var localVarPath = "/beta/aisle";
+            var localVarPath = "/v2.0/aisle";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateAisle");
             
     
-            var localVarPath = "/beta/aisle";
+            var localVarPath = "/v2.0/aisle";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AisleApi->UpdateAisleCustomFields");
             
     
-            var localVarPath = "/beta/aisle/customFields";
+            var localVarPath = "/v2.0/aisle/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateAisleCustomFields");
             
     
-            var localVarPath = "/beta/aisle/customFields";
+            var localVarPath = "/v2.0/aisle/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

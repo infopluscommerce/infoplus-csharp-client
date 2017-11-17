@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<EmailTemplate> AddEmailTemplateWithHttpInfo (EmailTemplate body);
         
         /// <summary>
-        /// Add new audit for an emailTemplate
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param>
-        /// <param name="emailTemplateAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddEmailTemplateAudit (int? emailTemplateId, string emailTemplateAudit);
-  
-        /// <summary>
-        /// Add new audit for an emailTemplate
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param>
-        /// <param name="emailTemplateAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddEmailTemplateAuditWithHttpInfo (int? emailTemplateId, string emailTemplateAudit);
-        
-        /// <summary>
-        /// Add new tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param>
-        /// <param name="emailTemplateTag">The tag to add</param>
-        /// <returns></returns>
-        void AddEmailTemplateTag (int? emailTemplateId, string emailTemplateTag);
-  
-        /// <summary>
-        /// Add new tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param>
-        /// <param name="emailTemplateTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddEmailTemplateTagWithHttpInfo (int? emailTemplateId, string emailTemplateTag);
-        
-        /// <summary>
         /// Delete an emailTemplate
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="emailTemplateId">Id of the emailTemplate to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteEmailTemplateWithHttpInfo (int? emailTemplateId);
-        
-        /// <summary>
-        /// Delete a tag for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing emailTemplate tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param>
-        /// <param name="emailTemplateTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteEmailTemplateTag (int? emailTemplateId, string emailTemplateTag);
-  
-        /// <summary>
-        /// Delete a tag for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing emailTemplate tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param>
-        /// <param name="emailTemplateTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteEmailTemplateTagWithHttpInfo (int? emailTemplateId, string emailTemplateTag);
         
         /// <summary>
         /// Get a duplicated an emailTemplate by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<EmailTemplate> GetEmailTemplateByIdWithHttpInfo (int? emailTemplateId);
         
         /// <summary>
-        /// Get the tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing emailTemplate tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param>
-        /// <returns></returns>
-        void GetEmailTemplateTags (int? emailTemplateId);
-  
-        /// <summary>
-        /// Get the tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing emailTemplate tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetEmailTemplateTagsWithHttpInfo (int? emailTemplateId);
-        
-        /// <summary>
         /// Update an emailTemplate
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<EmailTemplate>> AddEmailTemplateAsyncWithHttpInfo (EmailTemplate body);
         
         /// <summary>
-        /// Add new audit for an emailTemplate
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param>
-        /// <param name="emailTemplateAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddEmailTemplateAuditAsync (int? emailTemplateId, string emailTemplateAudit);
-
-        /// <summary>
-        /// Add new audit for an emailTemplate
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param>
-        /// <param name="emailTemplateAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddEmailTemplateAuditAsyncWithHttpInfo (int? emailTemplateId, string emailTemplateAudit);
-        
-        /// <summary>
-        /// Add new tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param>
-        /// <param name="emailTemplateTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddEmailTemplateTagAsync (int? emailTemplateId, string emailTemplateTag);
-
-        /// <summary>
-        /// Add new tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing emailTemplate.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param>
-        /// <param name="emailTemplateTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddEmailTemplateTagAsyncWithHttpInfo (int? emailTemplateId, string emailTemplateTag);
-        
-        /// <summary>
         /// Delete an emailTemplate
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="emailTemplateId">Id of the emailTemplate to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailTemplateAsyncWithHttpInfo (int? emailTemplateId);
-        
-        /// <summary>
-        /// Delete a tag for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing emailTemplate tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param>
-        /// <param name="emailTemplateTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteEmailTemplateTagAsync (int? emailTemplateId, string emailTemplateTag);
-
-        /// <summary>
-        /// Delete a tag for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing emailTemplate tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param>
-        /// <param name="emailTemplateTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailTemplateTagAsyncWithHttpInfo (int? emailTemplateId, string emailTemplateTag);
         
         /// <summary>
         /// Get a duplicated an emailTemplate by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="emailTemplateId">Id of the emailTemplate to be returned.</param>
         /// <returns>Task of ApiResponse (EmailTemplate)</returns>
         System.Threading.Tasks.Task<ApiResponse<EmailTemplate>> GetEmailTemplateByIdAsyncWithHttpInfo (int? emailTemplateId);
-        
-        /// <summary>
-        /// Get the tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing emailTemplate tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetEmailTemplateTagsAsync (int? emailTemplateId);
-
-        /// <summary>
-        /// Get the tags for an emailTemplate.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing emailTemplate tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetEmailTemplateTagsAsyncWithHttpInfo (int? emailTemplateId);
         
         /// <summary>
         /// Update an emailTemplate
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling EmailTemplateApi->AddEmailTemplate");
             
     
-            var localVarPath = "/beta/emailTemplate";
+            var localVarPath = "/v2.0/emailTemplate";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddEmailTemplate");
             
     
-            var localVarPath = "/beta/emailTemplate";
+            var localVarPath = "/v2.0/emailTemplate";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an emailTemplate Adds an audit to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param> 
-        /// <param name="emailTemplateAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddEmailTemplateAudit (int? emailTemplateId, string emailTemplateAudit)
-        {
-             AddEmailTemplateAuditWithHttpInfo(emailTemplateId, emailTemplateAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an emailTemplate Adds an audit to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param> 
-        /// <param name="emailTemplateAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddEmailTemplateAuditWithHttpInfo (int? emailTemplateId, string emailTemplateAudit)
-        {
-            
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->AddEmailTemplateAudit");
-            
-            // verify the required parameter 'emailTemplateAudit' is set
-            if (emailTemplateAudit == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateAudit' when calling EmailTemplateApi->AddEmailTemplateAudit");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/audit/{emailTemplateAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            if (emailTemplateAudit != null) localVarPathParams.Add("emailTemplateAudit", Configuration.ApiClient.ParameterToString(emailTemplateAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an emailTemplate Adds an audit to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param>
-        /// <param name="emailTemplateAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddEmailTemplateAuditAsync (int? emailTemplateId, string emailTemplateAudit)
-        {
-             await AddEmailTemplateAuditAsyncWithHttpInfo(emailTemplateId, emailTemplateAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an emailTemplate Adds an audit to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add an audit to</param>
-        /// <param name="emailTemplateAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddEmailTemplateAuditAsyncWithHttpInfo (int? emailTemplateId, string emailTemplateAudit)
-        {
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling AddEmailTemplateAudit");
-            // verify the required parameter 'emailTemplateAudit' is set
-            if (emailTemplateAudit == null) throw new ApiException(400, "Missing required parameter 'emailTemplateAudit' when calling AddEmailTemplateAudit");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/audit/{emailTemplateAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            if (emailTemplateAudit != null) localVarPathParams.Add("emailTemplateAudit", Configuration.ApiClient.ParameterToString(emailTemplateAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an emailTemplate. Adds a tag to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param> 
-        /// <param name="emailTemplateTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddEmailTemplateTag (int? emailTemplateId, string emailTemplateTag)
-        {
-             AddEmailTemplateTagWithHttpInfo(emailTemplateId, emailTemplateTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an emailTemplate. Adds a tag to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param> 
-        /// <param name="emailTemplateTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddEmailTemplateTagWithHttpInfo (int? emailTemplateId, string emailTemplateTag)
-        {
-            
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->AddEmailTemplateTag");
-            
-            // verify the required parameter 'emailTemplateTag' is set
-            if (emailTemplateTag == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateTag' when calling EmailTemplateApi->AddEmailTemplateTag");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/tag/{emailTemplateTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            if (emailTemplateTag != null) localVarPathParams.Add("emailTemplateTag", Configuration.ApiClient.ParameterToString(emailTemplateTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an emailTemplate. Adds a tag to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param>
-        /// <param name="emailTemplateTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddEmailTemplateTagAsync (int? emailTemplateId, string emailTemplateTag)
-        {
-             await AddEmailTemplateTagAsyncWithHttpInfo(emailTemplateId, emailTemplateTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an emailTemplate. Adds a tag to an existing emailTemplate.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to add a tag to</param>
-        /// <param name="emailTemplateTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddEmailTemplateTagAsyncWithHttpInfo (int? emailTemplateId, string emailTemplateTag)
-        {
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling AddEmailTemplateTag");
-            // verify the required parameter 'emailTemplateTag' is set
-            if (emailTemplateTag == null) throw new ApiException(400, "Missing required parameter 'emailTemplateTag' when calling AddEmailTemplateTag");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/tag/{emailTemplateTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            if (emailTemplateTag != null) localVarPathParams.Add("emailTemplateTag", Configuration.ApiClient.ParameterToString(emailTemplateTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddEmailTemplateTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an emailTemplate Deletes the emailTemplate identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->DeleteEmailTemplate");
             
     
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}";
+            var localVarPath = "/v2.0/emailTemplate/{emailTemplateId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling DeleteEmailTemplate");
             
     
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}";
+            var localVarPath = "/v2.0/emailTemplate/{emailTemplateId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an emailTemplate. Deletes an existing emailTemplate tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param> 
-        /// <param name="emailTemplateTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteEmailTemplateTag (int? emailTemplateId, string emailTemplateTag)
-        {
-             DeleteEmailTemplateTagWithHttpInfo(emailTemplateId, emailTemplateTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an emailTemplate. Deletes an existing emailTemplate tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param> 
-        /// <param name="emailTemplateTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteEmailTemplateTagWithHttpInfo (int? emailTemplateId, string emailTemplateTag)
-        {
-            
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->DeleteEmailTemplateTag");
-            
-            // verify the required parameter 'emailTemplateTag' is set
-            if (emailTemplateTag == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateTag' when calling EmailTemplateApi->DeleteEmailTemplateTag");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/tag/{emailTemplateTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            if (emailTemplateTag != null) localVarPathParams.Add("emailTemplateTag", Configuration.ApiClient.ParameterToString(emailTemplateTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteEmailTemplateTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteEmailTemplateTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an emailTemplate. Deletes an existing emailTemplate tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param>
-        /// <param name="emailTemplateTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteEmailTemplateTagAsync (int? emailTemplateId, string emailTemplateTag)
-        {
-             await DeleteEmailTemplateTagAsyncWithHttpInfo(emailTemplateId, emailTemplateTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an emailTemplate. Deletes an existing emailTemplate tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to remove tag from</param>
-        /// <param name="emailTemplateTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteEmailTemplateTagAsyncWithHttpInfo (int? emailTemplateId, string emailTemplateTag)
-        {
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling DeleteEmailTemplateTag");
-            // verify the required parameter 'emailTemplateTag' is set
-            if (emailTemplateTag == null) throw new ApiException(400, "Missing required parameter 'emailTemplateTag' when calling DeleteEmailTemplateTag");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/tag/{emailTemplateTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            if (emailTemplateTag != null) localVarPathParams.Add("emailTemplateTag", Configuration.ApiClient.ParameterToString(emailTemplateTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteEmailTemplateTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteEmailTemplateTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an emailTemplate by id Returns a duplicated emailTemplate identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->GetDuplicateEmailTemplateById");
             
     
-            var localVarPath = "/beta/emailTemplate/duplicate/{emailTemplateId}";
+            var localVarPath = "/v2.0/emailTemplate/duplicate/{emailTemplateId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling GetDuplicateEmailTemplateById");
             
     
-            var localVarPath = "/beta/emailTemplate/duplicate/{emailTemplateId}";
+            var localVarPath = "/v2.0/emailTemplate/duplicate/{emailTemplateId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/emailTemplate/search";
+            var localVarPath = "/v2.0/emailTemplate/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/emailTemplate/search";
+            var localVarPath = "/v2.0/emailTemplate/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->GetEmailTemplateById");
             
     
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}";
+            var localVarPath = "/v2.0/emailTemplate/{emailTemplateId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling GetEmailTemplateById");
             
     
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}";
+            var localVarPath = "/v2.0/emailTemplate/{emailTemplateId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an emailTemplate. Get all existing emailTemplate tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param> 
-        /// <returns></returns>
-        public void GetEmailTemplateTags (int? emailTemplateId)
-        {
-             GetEmailTemplateTagsWithHttpInfo(emailTemplateId);
-        }
-
-        /// <summary>
-        /// Get the tags for an emailTemplate. Get all existing emailTemplate tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetEmailTemplateTagsWithHttpInfo (int? emailTemplateId)
-        {
-            
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null)
-                throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling EmailTemplateApi->GetEmailTemplateTags");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetEmailTemplateTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetEmailTemplateTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an emailTemplate. Get all existing emailTemplate tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetEmailTemplateTagsAsync (int? emailTemplateId)
-        {
-             await GetEmailTemplateTagsAsyncWithHttpInfo(emailTemplateId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an emailTemplate. Get all existing emailTemplate tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="emailTemplateId">Id of the emailTemplate to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetEmailTemplateTagsAsyncWithHttpInfo (int? emailTemplateId)
-        {
-            // verify the required parameter 'emailTemplateId' is set
-            if (emailTemplateId == null) throw new ApiException(400, "Missing required parameter 'emailTemplateId' when calling GetEmailTemplateTags");
-            
-    
-            var localVarPath = "/beta/emailTemplate/{emailTemplateId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (emailTemplateId != null) localVarPathParams.Add("emailTemplateId", Configuration.ApiClient.ParameterToString(emailTemplateId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetEmailTemplateTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetEmailTemplateTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an emailTemplate Updates an existing emailTemplate using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling EmailTemplateApi->UpdateEmailTemplate");
             
     
-            var localVarPath = "/beta/emailTemplate";
+            var localVarPath = "/v2.0/emailTemplate";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateEmailTemplate");
             
     
-            var localVarPath = "/beta/emailTemplate";
+            var localVarPath = "/v2.0/emailTemplate";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling EmailTemplateApi->UpdateEmailTemplateCustomFields");
             
     
-            var localVarPath = "/beta/emailTemplate/customFields";
+            var localVarPath = "/v2.0/emailTemplate/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateEmailTemplateCustomFields");
             
     
-            var localVarPath = "/beta/emailTemplate/customFields";
+            var localVarPath = "/v2.0/emailTemplate/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

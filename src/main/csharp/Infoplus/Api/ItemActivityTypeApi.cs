@@ -235,7 +235,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemActivityTypeId' when calling ItemActivityTypeApi->GetItemActivityTypeById");
             
     
-            var localVarPath = "/beta/itemActivityType/{itemActivityTypeId}";
+            var localVarPath = "/v2.0/itemActivityType/{itemActivityTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -320,7 +320,7 @@ namespace Infoplus.Api
             if (itemActivityTypeId == null) throw new ApiException(400, "Missing required parameter 'itemActivityTypeId' when calling GetItemActivityTypeById");
             
     
-            var localVarPath = "/beta/itemActivityType/{itemActivityTypeId}";
+            var localVarPath = "/v2.0/itemActivityType/{itemActivityTypeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -406,7 +406,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemActivityType/search";
+            var localVarPath = "/v2.0/itemActivityType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -495,7 +495,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemActivityType/search";
+            var localVarPath = "/v2.0/itemActivityType/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

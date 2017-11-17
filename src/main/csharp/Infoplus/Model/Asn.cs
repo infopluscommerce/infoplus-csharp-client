@@ -430,12 +430,6 @@ namespace Infoplus.Model
         public string Status { get; private set; }
     
         /// <summary>
-        /// Gets or Sets TransferOrderId
-        /// </summary>
-        [DataMember(Name="transferOrderId", EmitDefaultValue=false)]
-        public double? TransferOrderId { get; private set; }
-    
-        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -494,7 +488,6 @@ namespace Infoplus.Model
             sb.Append("  UsedBy: ").Append(UsedBy).Append("\n");
             sb.Append("  LineItems: ").Append(LineItems).Append("\n");
             sb.Append("  Status: ").Append(Status).Append("\n");
-            sb.Append("  TransferOrderId: ").Append(TransferOrderId).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -759,11 +752,6 @@ namespace Infoplus.Model
                     this.Status.Equals(other.Status)
                 ) && 
                 (
-                    this.TransferOrderId == other.TransferOrderId ||
-                    this.TransferOrderId != null &&
-                    this.TransferOrderId.Equals(other.TransferOrderId)
-                ) && 
-                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -916,9 +904,6 @@ namespace Infoplus.Model
                 
                 if (this.Status != null)
                     hash = hash * 59 + this.Status.GetHashCode();
-                
-                if (this.TransferOrderId != null)
-                    hash = hash * 59 + this.TransferOrderId.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ItemLowstockCode> AddItemLowstockCodeWithHttpInfo (ItemLowstockCode body);
         
         /// <summary>
-        /// Add new audit for an itemLowstockCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param>
-        /// <param name="itemLowstockCodeAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddItemLowstockCodeAudit (int? itemLowstockCodeId, string itemLowstockCodeAudit);
-  
-        /// <summary>
-        /// Add new audit for an itemLowstockCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param>
-        /// <param name="itemLowstockCodeAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemLowstockCodeAuditWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param>
-        /// <param name="itemLowstockCodeTag">The tag to add</param>
-        /// <returns></returns>
-        void AddItemLowstockCodeTag (int? itemLowstockCodeId, string itemLowstockCodeTag);
-  
-        /// <summary>
-        /// Add new tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param>
-        /// <param name="itemLowstockCodeTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemLowstockCodeTagWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag);
-        
-        /// <summary>
         /// Delete an itemLowstockCode
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteItemLowstockCodeWithHttpInfo (int? itemLowstockCodeId);
-        
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemLowstockCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param>
-        /// <param name="itemLowstockCodeTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteItemLowstockCodeTag (int? itemLowstockCodeId, string itemLowstockCodeTag);
-  
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemLowstockCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param>
-        /// <param name="itemLowstockCodeTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteItemLowstockCodeTagWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag);
         
         /// <summary>
         /// Get a duplicated an itemLowstockCode by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ItemLowstockCode> GetItemLowstockCodeByIdWithHttpInfo (int? itemLowstockCodeId);
         
         /// <summary>
-        /// Get the tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemLowstockCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param>
-        /// <returns></returns>
-        void GetItemLowstockCodeTags (int? itemLowstockCodeId);
-  
-        /// <summary>
-        /// Get the tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemLowstockCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetItemLowstockCodeTagsWithHttpInfo (int? itemLowstockCodeId);
-        
-        /// <summary>
         /// Update an itemLowstockCode
         /// </summary>
         /// <remarks>
@@ -276,54 +182,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ItemLowstockCode>> AddItemLowstockCodeAsyncWithHttpInfo (ItemLowstockCode body);
         
         /// <summary>
-        /// Add new audit for an itemLowstockCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param>
-        /// <param name="itemLowstockCodeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemLowstockCodeAuditAsync (int? itemLowstockCodeId, string itemLowstockCodeAudit);
-
-        /// <summary>
-        /// Add new audit for an itemLowstockCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param>
-        /// <param name="itemLowstockCodeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemLowstockCodeAuditAsyncWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param>
-        /// <param name="itemLowstockCodeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemLowstockCodeTagAsync (int? itemLowstockCodeId, string itemLowstockCodeTag);
-
-        /// <summary>
-        /// Add new tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemLowstockCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param>
-        /// <param name="itemLowstockCodeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemLowstockCodeTagAsyncWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag);
-        
-        /// <summary>
         /// Delete an itemLowstockCode
         /// </summary>
         /// <remarks>
@@ -344,30 +202,6 @@ namespace Infoplus.Api
         /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemLowstockCodeAsyncWithHttpInfo (int? itemLowstockCodeId);
-        
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemLowstockCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param>
-        /// <param name="itemLowstockCodeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteItemLowstockCodeTagAsync (int? itemLowstockCodeId, string itemLowstockCodeTag);
-
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemLowstockCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param>
-        /// <param name="itemLowstockCodeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemLowstockCodeTagAsyncWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag);
         
         /// <summary>
         /// Get a duplicated an itemLowstockCode by id
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to be returned.</param>
         /// <returns>Task of ApiResponse (ItemLowstockCode)</returns>
         System.Threading.Tasks.Task<ApiResponse<ItemLowstockCode>> GetItemLowstockCodeByIdAsyncWithHttpInfo (int? itemLowstockCodeId);
-        
-        /// <summary>
-        /// Get the tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemLowstockCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetItemLowstockCodeTagsAsync (int? itemLowstockCodeId);
-
-        /// <summary>
-        /// Get the tags for an itemLowstockCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemLowstockCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetItemLowstockCodeTagsAsyncWithHttpInfo (int? itemLowstockCodeId);
         
         /// <summary>
         /// Update an itemLowstockCode
@@ -603,7 +415,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemLowstockCodeApi->AddItemLowstockCode");
             
     
-            var localVarPath = "/beta/itemLowstockCode";
+            var localVarPath = "/v2.0/itemLowstockCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -694,7 +506,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddItemLowstockCode");
             
     
-            var localVarPath = "/beta/itemLowstockCode";
+            var localVarPath = "/v2.0/itemLowstockCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -761,368 +573,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an itemLowstockCode Adds an audit to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param> 
-        /// <param name="itemLowstockCodeAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddItemLowstockCodeAudit (int? itemLowstockCodeId, string itemLowstockCodeAudit)
-        {
-             AddItemLowstockCodeAuditWithHttpInfo(itemLowstockCodeId, itemLowstockCodeAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an itemLowstockCode Adds an audit to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param> 
-        /// <param name="itemLowstockCodeAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemLowstockCodeAuditWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeAudit)
-        {
-            
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->AddItemLowstockCodeAudit");
-            
-            // verify the required parameter 'itemLowstockCodeAudit' is set
-            if (itemLowstockCodeAudit == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeAudit' when calling ItemLowstockCodeApi->AddItemLowstockCodeAudit");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/audit/{itemLowstockCodeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            if (itemLowstockCodeAudit != null) localVarPathParams.Add("itemLowstockCodeAudit", Configuration.ApiClient.ParameterToString(itemLowstockCodeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an itemLowstockCode Adds an audit to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param>
-        /// <param name="itemLowstockCodeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemLowstockCodeAuditAsync (int? itemLowstockCodeId, string itemLowstockCodeAudit)
-        {
-             await AddItemLowstockCodeAuditAsyncWithHttpInfo(itemLowstockCodeId, itemLowstockCodeAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an itemLowstockCode Adds an audit to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add an audit to</param>
-        /// <param name="itemLowstockCodeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemLowstockCodeAuditAsyncWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeAudit)
-        {
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling AddItemLowstockCodeAudit");
-            // verify the required parameter 'itemLowstockCodeAudit' is set
-            if (itemLowstockCodeAudit == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeAudit' when calling AddItemLowstockCodeAudit");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/audit/{itemLowstockCodeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            if (itemLowstockCodeAudit != null) localVarPathParams.Add("itemLowstockCodeAudit", Configuration.ApiClient.ParameterToString(itemLowstockCodeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an itemLowstockCode. Adds a tag to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param> 
-        /// <param name="itemLowstockCodeTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddItemLowstockCodeTag (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-             AddItemLowstockCodeTagWithHttpInfo(itemLowstockCodeId, itemLowstockCodeTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an itemLowstockCode. Adds a tag to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param> 
-        /// <param name="itemLowstockCodeTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemLowstockCodeTagWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-            
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->AddItemLowstockCodeTag");
-            
-            // verify the required parameter 'itemLowstockCodeTag' is set
-            if (itemLowstockCodeTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeTag' when calling ItemLowstockCodeApi->AddItemLowstockCodeTag");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/tag/{itemLowstockCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            if (itemLowstockCodeTag != null) localVarPathParams.Add("itemLowstockCodeTag", Configuration.ApiClient.ParameterToString(itemLowstockCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an itemLowstockCode. Adds a tag to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param>
-        /// <param name="itemLowstockCodeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemLowstockCodeTagAsync (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-             await AddItemLowstockCodeTagAsyncWithHttpInfo(itemLowstockCodeId, itemLowstockCodeTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an itemLowstockCode. Adds a tag to an existing itemLowstockCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to add a tag to</param>
-        /// <param name="itemLowstockCodeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemLowstockCodeTagAsyncWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling AddItemLowstockCodeTag");
-            // verify the required parameter 'itemLowstockCodeTag' is set
-            if (itemLowstockCodeTag == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeTag' when calling AddItemLowstockCodeTag");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/tag/{itemLowstockCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            if (itemLowstockCodeTag != null) localVarPathParams.Add("itemLowstockCodeTag", Configuration.ApiClient.ParameterToString(itemLowstockCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemLowstockCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an itemLowstockCode Deletes the itemLowstockCode identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1147,7 +597,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->DeleteItemLowstockCode");
             
     
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}";
+            var localVarPath = "/v2.0/itemLowstockCode/{itemLowstockCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +681,7 @@ namespace Infoplus.Api
             if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling DeleteItemLowstockCode");
             
     
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}";
+            var localVarPath = "/v2.0/itemLowstockCode/{itemLowstockCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1292,187 +742,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an itemLowstockCode. Deletes an existing itemLowstockCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param> 
-        /// <param name="itemLowstockCodeTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteItemLowstockCodeTag (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-             DeleteItemLowstockCodeTagWithHttpInfo(itemLowstockCodeId, itemLowstockCodeTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode. Deletes an existing itemLowstockCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param> 
-        /// <param name="itemLowstockCodeTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteItemLowstockCodeTagWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-            
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->DeleteItemLowstockCodeTag");
-            
-            // verify the required parameter 'itemLowstockCodeTag' is set
-            if (itemLowstockCodeTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeTag' when calling ItemLowstockCodeApi->DeleteItemLowstockCodeTag");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/tag/{itemLowstockCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            if (itemLowstockCodeTag != null) localVarPathParams.Add("itemLowstockCodeTag", Configuration.ApiClient.ParameterToString(itemLowstockCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemLowstockCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemLowstockCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode. Deletes an existing itemLowstockCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param>
-        /// <param name="itemLowstockCodeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteItemLowstockCodeTagAsync (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-             await DeleteItemLowstockCodeTagAsyncWithHttpInfo(itemLowstockCodeId, itemLowstockCodeTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemLowstockCode. Deletes an existing itemLowstockCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to remove tag from</param>
-        /// <param name="itemLowstockCodeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemLowstockCodeTagAsyncWithHttpInfo (int? itemLowstockCodeId, string itemLowstockCodeTag)
-        {
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling DeleteItemLowstockCodeTag");
-            // verify the required parameter 'itemLowstockCodeTag' is set
-            if (itemLowstockCodeTag == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeTag' when calling DeleteItemLowstockCodeTag");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/tag/{itemLowstockCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            if (itemLowstockCodeTag != null) localVarPathParams.Add("itemLowstockCodeTag", Configuration.ApiClient.ParameterToString(itemLowstockCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemLowstockCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemLowstockCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an itemLowstockCode by id Returns a duplicated itemLowstockCode identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1498,7 +767,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->GetDuplicateItemLowstockCodeById");
             
     
-            var localVarPath = "/beta/itemLowstockCode/duplicate/{itemLowstockCodeId}";
+            var localVarPath = "/v2.0/itemLowstockCode/duplicate/{itemLowstockCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1583,7 +852,7 @@ namespace Infoplus.Api
             if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling GetDuplicateItemLowstockCodeById");
             
     
-            var localVarPath = "/beta/itemLowstockCode/duplicate/{itemLowstockCodeId}";
+            var localVarPath = "/v2.0/itemLowstockCode/duplicate/{itemLowstockCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1671,7 +940,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemLowstockCode/search";
+            var localVarPath = "/v2.0/itemLowstockCode/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1763,7 +1032,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemLowstockCode/search";
+            var localVarPath = "/v2.0/itemLowstockCode/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1852,7 +1121,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->GetItemLowstockCodeById");
             
     
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}";
+            var localVarPath = "/v2.0/itemLowstockCode/{itemLowstockCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1937,7 +1206,7 @@ namespace Infoplus.Api
             if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling GetItemLowstockCodeById");
             
     
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}";
+            var localVarPath = "/v2.0/itemLowstockCode/{itemLowstockCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1998,175 +1267,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an itemLowstockCode. Get all existing itemLowstockCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param> 
-        /// <returns></returns>
-        public void GetItemLowstockCodeTags (int? itemLowstockCodeId)
-        {
-             GetItemLowstockCodeTagsWithHttpInfo(itemLowstockCodeId);
-        }
-
-        /// <summary>
-        /// Get the tags for an itemLowstockCode. Get all existing itemLowstockCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetItemLowstockCodeTagsWithHttpInfo (int? itemLowstockCodeId)
-        {
-            
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling ItemLowstockCodeApi->GetItemLowstockCodeTags");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemLowstockCodeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemLowstockCodeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an itemLowstockCode. Get all existing itemLowstockCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetItemLowstockCodeTagsAsync (int? itemLowstockCodeId)
-        {
-             await GetItemLowstockCodeTagsAsyncWithHttpInfo(itemLowstockCodeId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an itemLowstockCode. Get all existing itemLowstockCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemLowstockCodeId">Id of the itemLowstockCode to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetItemLowstockCodeTagsAsyncWithHttpInfo (int? itemLowstockCodeId)
-        {
-            // verify the required parameter 'itemLowstockCodeId' is set
-            if (itemLowstockCodeId == null) throw new ApiException(400, "Missing required parameter 'itemLowstockCodeId' when calling GetItemLowstockCodeTags");
-            
-    
-            var localVarPath = "/beta/itemLowstockCode/{itemLowstockCodeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemLowstockCodeId != null) localVarPathParams.Add("itemLowstockCodeId", Configuration.ApiClient.ParameterToString(itemLowstockCodeId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemLowstockCodeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemLowstockCodeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an itemLowstockCode Updates an existing itemLowstockCode using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2191,7 +1291,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemLowstockCodeApi->UpdateItemLowstockCode");
             
     
-            var localVarPath = "/beta/itemLowstockCode";
+            var localVarPath = "/v2.0/itemLowstockCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2281,7 +1381,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateItemLowstockCode");
             
     
-            var localVarPath = "/beta/itemLowstockCode";
+            var localVarPath = "/v2.0/itemLowstockCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

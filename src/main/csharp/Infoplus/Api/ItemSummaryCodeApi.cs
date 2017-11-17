@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ItemSummaryCode> AddItemSummaryCodeWithHttpInfo (ItemSummaryCode body);
         
         /// <summary>
-        /// Add new audit for an itemSummaryCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param>
-        /// <param name="itemSummaryCodeAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddItemSummaryCodeAudit (int? itemSummaryCodeId, string itemSummaryCodeAudit);
-  
-        /// <summary>
-        /// Add new audit for an itemSummaryCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param>
-        /// <param name="itemSummaryCodeAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemSummaryCodeAuditWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param>
-        /// <param name="itemSummaryCodeTag">The tag to add</param>
-        /// <returns></returns>
-        void AddItemSummaryCodeTag (int? itemSummaryCodeId, string itemSummaryCodeTag);
-  
-        /// <summary>
-        /// Add new tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param>
-        /// <param name="itemSummaryCodeTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddItemSummaryCodeTagWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag);
-        
-        /// <summary>
         /// Delete an itemSummaryCode
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteItemSummaryCodeWithHttpInfo (int? itemSummaryCodeId);
-        
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSummaryCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param>
-        /// <param name="itemSummaryCodeTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteItemSummaryCodeTag (int? itemSummaryCodeId, string itemSummaryCodeTag);
-  
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSummaryCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param>
-        /// <param name="itemSummaryCodeTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteItemSummaryCodeTagWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag);
         
         /// <summary>
         /// Get a duplicated an itemSummaryCode by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ItemSummaryCode> GetItemSummaryCodeByIdWithHttpInfo (int? itemSummaryCodeId);
         
         /// <summary>
-        /// Get the tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSummaryCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param>
-        /// <returns></returns>
-        void GetItemSummaryCodeTags (int? itemSummaryCodeId);
-  
-        /// <summary>
-        /// Get the tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSummaryCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetItemSummaryCodeTagsWithHttpInfo (int? itemSummaryCodeId);
-        
-        /// <summary>
         /// Update an itemSummaryCode
         /// </summary>
         /// <remarks>
@@ -276,54 +182,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ItemSummaryCode>> AddItemSummaryCodeAsyncWithHttpInfo (ItemSummaryCode body);
         
         /// <summary>
-        /// Add new audit for an itemSummaryCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param>
-        /// <param name="itemSummaryCodeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemSummaryCodeAuditAsync (int? itemSummaryCodeId, string itemSummaryCodeAudit);
-
-        /// <summary>
-        /// Add new audit for an itemSummaryCode
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param>
-        /// <param name="itemSummaryCodeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSummaryCodeAuditAsyncWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeAudit);
-        
-        /// <summary>
-        /// Add new tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param>
-        /// <param name="itemSummaryCodeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddItemSummaryCodeTagAsync (int? itemSummaryCodeId, string itemSummaryCodeTag);
-
-        /// <summary>
-        /// Add new tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing itemSummaryCode.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param>
-        /// <param name="itemSummaryCodeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSummaryCodeTagAsyncWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag);
-        
-        /// <summary>
         /// Delete an itemSummaryCode
         /// </summary>
         /// <remarks>
@@ -344,30 +202,6 @@ namespace Infoplus.Api
         /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemSummaryCodeAsyncWithHttpInfo (int? itemSummaryCodeId);
-        
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSummaryCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param>
-        /// <param name="itemSummaryCodeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteItemSummaryCodeTagAsync (int? itemSummaryCodeId, string itemSummaryCodeTag);
-
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing itemSummaryCode tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param>
-        /// <param name="itemSummaryCodeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemSummaryCodeTagAsyncWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag);
         
         /// <summary>
         /// Get a duplicated an itemSummaryCode by id
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to be returned.</param>
         /// <returns>Task of ApiResponse (ItemSummaryCode)</returns>
         System.Threading.Tasks.Task<ApiResponse<ItemSummaryCode>> GetItemSummaryCodeByIdAsyncWithHttpInfo (int? itemSummaryCodeId);
-        
-        /// <summary>
-        /// Get the tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSummaryCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetItemSummaryCodeTagsAsync (int? itemSummaryCodeId);
-
-        /// <summary>
-        /// Get the tags for an itemSummaryCode.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing itemSummaryCode tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetItemSummaryCodeTagsAsyncWithHttpInfo (int? itemSummaryCodeId);
         
         /// <summary>
         /// Update an itemSummaryCode
@@ -603,7 +415,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemSummaryCodeApi->AddItemSummaryCode");
             
     
-            var localVarPath = "/beta/itemSummaryCode";
+            var localVarPath = "/v2.0/itemSummaryCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -694,7 +506,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddItemSummaryCode");
             
     
-            var localVarPath = "/beta/itemSummaryCode";
+            var localVarPath = "/v2.0/itemSummaryCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -761,368 +573,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an itemSummaryCode Adds an audit to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param> 
-        /// <param name="itemSummaryCodeAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddItemSummaryCodeAudit (int? itemSummaryCodeId, string itemSummaryCodeAudit)
-        {
-             AddItemSummaryCodeAuditWithHttpInfo(itemSummaryCodeId, itemSummaryCodeAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an itemSummaryCode Adds an audit to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param> 
-        /// <param name="itemSummaryCodeAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemSummaryCodeAuditWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeAudit)
-        {
-            
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->AddItemSummaryCodeAudit");
-            
-            // verify the required parameter 'itemSummaryCodeAudit' is set
-            if (itemSummaryCodeAudit == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeAudit' when calling ItemSummaryCodeApi->AddItemSummaryCodeAudit");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/audit/{itemSummaryCodeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            if (itemSummaryCodeAudit != null) localVarPathParams.Add("itemSummaryCodeAudit", Configuration.ApiClient.ParameterToString(itemSummaryCodeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an itemSummaryCode Adds an audit to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param>
-        /// <param name="itemSummaryCodeAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemSummaryCodeAuditAsync (int? itemSummaryCodeId, string itemSummaryCodeAudit)
-        {
-             await AddItemSummaryCodeAuditAsyncWithHttpInfo(itemSummaryCodeId, itemSummaryCodeAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an itemSummaryCode Adds an audit to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add an audit to</param>
-        /// <param name="itemSummaryCodeAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSummaryCodeAuditAsyncWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeAudit)
-        {
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling AddItemSummaryCodeAudit");
-            // verify the required parameter 'itemSummaryCodeAudit' is set
-            if (itemSummaryCodeAudit == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeAudit' when calling AddItemSummaryCodeAudit");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/audit/{itemSummaryCodeAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            if (itemSummaryCodeAudit != null) localVarPathParams.Add("itemSummaryCodeAudit", Configuration.ApiClient.ParameterToString(itemSummaryCodeAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an itemSummaryCode. Adds a tag to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param> 
-        /// <param name="itemSummaryCodeTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddItemSummaryCodeTag (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-             AddItemSummaryCodeTagWithHttpInfo(itemSummaryCodeId, itemSummaryCodeTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an itemSummaryCode. Adds a tag to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param> 
-        /// <param name="itemSummaryCodeTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddItemSummaryCodeTagWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-            
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->AddItemSummaryCodeTag");
-            
-            // verify the required parameter 'itemSummaryCodeTag' is set
-            if (itemSummaryCodeTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeTag' when calling ItemSummaryCodeApi->AddItemSummaryCodeTag");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/tag/{itemSummaryCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            if (itemSummaryCodeTag != null) localVarPathParams.Add("itemSummaryCodeTag", Configuration.ApiClient.ParameterToString(itemSummaryCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an itemSummaryCode. Adds a tag to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param>
-        /// <param name="itemSummaryCodeTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddItemSummaryCodeTagAsync (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-             await AddItemSummaryCodeTagAsyncWithHttpInfo(itemSummaryCodeId, itemSummaryCodeTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an itemSummaryCode. Adds a tag to an existing itemSummaryCode.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to add a tag to</param>
-        /// <param name="itemSummaryCodeTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddItemSummaryCodeTagAsyncWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling AddItemSummaryCodeTag");
-            // verify the required parameter 'itemSummaryCodeTag' is set
-            if (itemSummaryCodeTag == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeTag' when calling AddItemSummaryCodeTag");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/tag/{itemSummaryCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            if (itemSummaryCodeTag != null) localVarPathParams.Add("itemSummaryCodeTag", Configuration.ApiClient.ParameterToString(itemSummaryCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddItemSummaryCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an itemSummaryCode Deletes the itemSummaryCode identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1147,7 +597,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->DeleteItemSummaryCode");
             
     
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}";
+            var localVarPath = "/v2.0/itemSummaryCode/{itemSummaryCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +681,7 @@ namespace Infoplus.Api
             if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling DeleteItemSummaryCode");
             
     
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}";
+            var localVarPath = "/v2.0/itemSummaryCode/{itemSummaryCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1292,187 +742,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an itemSummaryCode. Deletes an existing itemSummaryCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param> 
-        /// <param name="itemSummaryCodeTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteItemSummaryCodeTag (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-             DeleteItemSummaryCodeTagWithHttpInfo(itemSummaryCodeId, itemSummaryCodeTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode. Deletes an existing itemSummaryCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param> 
-        /// <param name="itemSummaryCodeTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteItemSummaryCodeTagWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-            
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->DeleteItemSummaryCodeTag");
-            
-            // verify the required parameter 'itemSummaryCodeTag' is set
-            if (itemSummaryCodeTag == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeTag' when calling ItemSummaryCodeApi->DeleteItemSummaryCodeTag");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/tag/{itemSummaryCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            if (itemSummaryCodeTag != null) localVarPathParams.Add("itemSummaryCodeTag", Configuration.ApiClient.ParameterToString(itemSummaryCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSummaryCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSummaryCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode. Deletes an existing itemSummaryCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param>
-        /// <param name="itemSummaryCodeTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteItemSummaryCodeTagAsync (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-             await DeleteItemSummaryCodeTagAsyncWithHttpInfo(itemSummaryCodeId, itemSummaryCodeTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an itemSummaryCode. Deletes an existing itemSummaryCode tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to remove tag from</param>
-        /// <param name="itemSummaryCodeTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteItemSummaryCodeTagAsyncWithHttpInfo (int? itemSummaryCodeId, string itemSummaryCodeTag)
-        {
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling DeleteItemSummaryCodeTag");
-            // verify the required parameter 'itemSummaryCodeTag' is set
-            if (itemSummaryCodeTag == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeTag' when calling DeleteItemSummaryCodeTag");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/tag/{itemSummaryCodeTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            if (itemSummaryCodeTag != null) localVarPathParams.Add("itemSummaryCodeTag", Configuration.ApiClient.ParameterToString(itemSummaryCodeTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSummaryCodeTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteItemSummaryCodeTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an itemSummaryCode by id Returns a duplicated itemSummaryCode identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1498,7 +767,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->GetDuplicateItemSummaryCodeById");
             
     
-            var localVarPath = "/beta/itemSummaryCode/duplicate/{itemSummaryCodeId}";
+            var localVarPath = "/v2.0/itemSummaryCode/duplicate/{itemSummaryCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1583,7 +852,7 @@ namespace Infoplus.Api
             if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling GetDuplicateItemSummaryCodeById");
             
     
-            var localVarPath = "/beta/itemSummaryCode/duplicate/{itemSummaryCodeId}";
+            var localVarPath = "/v2.0/itemSummaryCode/duplicate/{itemSummaryCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1671,7 +940,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemSummaryCode/search";
+            var localVarPath = "/v2.0/itemSummaryCode/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1763,7 +1032,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/itemSummaryCode/search";
+            var localVarPath = "/v2.0/itemSummaryCode/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1852,7 +1121,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->GetItemSummaryCodeById");
             
     
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}";
+            var localVarPath = "/v2.0/itemSummaryCode/{itemSummaryCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1937,7 +1206,7 @@ namespace Infoplus.Api
             if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling GetItemSummaryCodeById");
             
     
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}";
+            var localVarPath = "/v2.0/itemSummaryCode/{itemSummaryCodeId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1998,175 +1267,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an itemSummaryCode. Get all existing itemSummaryCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param> 
-        /// <returns></returns>
-        public void GetItemSummaryCodeTags (int? itemSummaryCodeId)
-        {
-             GetItemSummaryCodeTagsWithHttpInfo(itemSummaryCodeId);
-        }
-
-        /// <summary>
-        /// Get the tags for an itemSummaryCode. Get all existing itemSummaryCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetItemSummaryCodeTagsWithHttpInfo (int? itemSummaryCodeId)
-        {
-            
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null)
-                throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling ItemSummaryCodeApi->GetItemSummaryCodeTags");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSummaryCodeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSummaryCodeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an itemSummaryCode. Get all existing itemSummaryCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetItemSummaryCodeTagsAsync (int? itemSummaryCodeId)
-        {
-             await GetItemSummaryCodeTagsAsyncWithHttpInfo(itemSummaryCodeId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an itemSummaryCode. Get all existing itemSummaryCode tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="itemSummaryCodeId">Id of the itemSummaryCode to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetItemSummaryCodeTagsAsyncWithHttpInfo (int? itemSummaryCodeId)
-        {
-            // verify the required parameter 'itemSummaryCodeId' is set
-            if (itemSummaryCodeId == null) throw new ApiException(400, "Missing required parameter 'itemSummaryCodeId' when calling GetItemSummaryCodeTags");
-            
-    
-            var localVarPath = "/beta/itemSummaryCode/{itemSummaryCodeId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (itemSummaryCodeId != null) localVarPathParams.Add("itemSummaryCodeId", Configuration.ApiClient.ParameterToString(itemSummaryCodeId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSummaryCodeTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetItemSummaryCodeTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update an itemSummaryCode Updates an existing itemSummaryCode using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2191,7 +1291,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ItemSummaryCodeApi->UpdateItemSummaryCode");
             
     
-            var localVarPath = "/beta/itemSummaryCode";
+            var localVarPath = "/v2.0/itemSummaryCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2281,7 +1381,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateItemSummaryCode");
             
     
-            var localVarPath = "/beta/itemSummaryCode";
+            var localVarPath = "/v2.0/itemSummaryCode";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

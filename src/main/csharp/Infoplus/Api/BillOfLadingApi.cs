@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<BillOfLading> AddBillOfLadingWithHttpInfo (BillOfLading body);
         
         /// <summary>
-        /// Add new audit for a billOfLading
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param>
-        /// <param name="billOfLadingAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddBillOfLadingAudit (int? billOfLadingId, string billOfLadingAudit);
-  
-        /// <summary>
-        /// Add new audit for a billOfLading
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param>
-        /// <param name="billOfLadingAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddBillOfLadingAuditWithHttpInfo (int? billOfLadingId, string billOfLadingAudit);
-        
-        /// <summary>
-        /// Add new tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param>
-        /// <param name="billOfLadingTag">The tag to add</param>
-        /// <returns></returns>
-        void AddBillOfLadingTag (int? billOfLadingId, string billOfLadingTag);
-  
-        /// <summary>
-        /// Add new tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param>
-        /// <param name="billOfLadingTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddBillOfLadingTagWithHttpInfo (int? billOfLadingId, string billOfLadingTag);
-        
-        /// <summary>
         /// Delete a billOfLading
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="billOfLadingId">Id of the billOfLading to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteBillOfLadingWithHttpInfo (int? billOfLadingId);
-        
-        /// <summary>
-        /// Delete a tag for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billOfLading tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param>
-        /// <param name="billOfLadingTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteBillOfLadingTag (int? billOfLadingId, string billOfLadingTag);
-  
-        /// <summary>
-        /// Delete a tag for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billOfLading tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param>
-        /// <param name="billOfLadingTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteBillOfLadingTagWithHttpInfo (int? billOfLadingId, string billOfLadingTag);
         
         /// <summary>
         /// Search billOfLadings by filter
@@ -182,28 +110,6 @@ namespace Infoplus.Api
         /// <param name="billOfLadingId">Id of the billOfLading to be returned.</param>
         /// <returns>ApiResponse of BillOfLading</returns>
         ApiResponse<BillOfLading> GetBillOfLadingByIdWithHttpInfo (int? billOfLadingId);
-        
-        /// <summary>
-        /// Get the tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billOfLading tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param>
-        /// <returns></returns>
-        void GetBillOfLadingTags (int? billOfLadingId);
-  
-        /// <summary>
-        /// Get the tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billOfLading tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetBillOfLadingTagsWithHttpInfo (int? billOfLadingId);
         
         /// <summary>
         /// Get a duplicated a billOfLading by id
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<BillOfLading>> AddBillOfLadingAsyncWithHttpInfo (BillOfLading body);
         
         /// <summary>
-        /// Add new audit for a billOfLading
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param>
-        /// <param name="billOfLadingAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddBillOfLadingAuditAsync (int? billOfLadingId, string billOfLadingAudit);
-
-        /// <summary>
-        /// Add new audit for a billOfLading
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param>
-        /// <param name="billOfLadingAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddBillOfLadingAuditAsyncWithHttpInfo (int? billOfLadingId, string billOfLadingAudit);
-        
-        /// <summary>
-        /// Add new tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param>
-        /// <param name="billOfLadingTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddBillOfLadingTagAsync (int? billOfLadingId, string billOfLadingTag);
-
-        /// <summary>
-        /// Add new tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing billOfLading.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param>
-        /// <param name="billOfLadingTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddBillOfLadingTagAsyncWithHttpInfo (int? billOfLadingId, string billOfLadingTag);
-        
-        /// <summary>
         /// Delete a billOfLading
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="billOfLadingId">Id of the billOfLading to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBillOfLadingAsyncWithHttpInfo (int? billOfLadingId);
-        
-        /// <summary>
-        /// Delete a tag for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billOfLading tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param>
-        /// <param name="billOfLadingTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteBillOfLadingTagAsync (int? billOfLadingId, string billOfLadingTag);
-
-        /// <summary>
-        /// Delete a tag for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing billOfLading tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param>
-        /// <param name="billOfLadingTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBillOfLadingTagAsyncWithHttpInfo (int? billOfLadingId, string billOfLadingTag);
         
         /// <summary>
         /// Search billOfLadings by filter
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="billOfLadingId">Id of the billOfLading to be returned.</param>
         /// <returns>Task of ApiResponse (BillOfLading)</returns>
         System.Threading.Tasks.Task<ApiResponse<BillOfLading>> GetBillOfLadingByIdAsyncWithHttpInfo (int? billOfLadingId);
-        
-        /// <summary>
-        /// Get the tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billOfLading tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetBillOfLadingTagsAsync (int? billOfLadingId);
-
-        /// <summary>
-        /// Get the tags for a billOfLading.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing billOfLading tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetBillOfLadingTagsAsyncWithHttpInfo (int? billOfLadingId);
         
         /// <summary>
         /// Get a duplicated a billOfLading by id
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BillOfLadingApi->AddBillOfLading");
             
     
-            var localVarPath = "/beta/billOfLading";
+            var localVarPath = "/v2.0/billOfLading";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddBillOfLading");
             
     
-            var localVarPath = "/beta/billOfLading";
+            var localVarPath = "/v2.0/billOfLading";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a billOfLading Adds an audit to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param> 
-        /// <param name="billOfLadingAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddBillOfLadingAudit (int? billOfLadingId, string billOfLadingAudit)
-        {
-             AddBillOfLadingAuditWithHttpInfo(billOfLadingId, billOfLadingAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a billOfLading Adds an audit to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param> 
-        /// <param name="billOfLadingAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddBillOfLadingAuditWithHttpInfo (int? billOfLadingId, string billOfLadingAudit)
-        {
-            
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->AddBillOfLadingAudit");
-            
-            // verify the required parameter 'billOfLadingAudit' is set
-            if (billOfLadingAudit == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingAudit' when calling BillOfLadingApi->AddBillOfLadingAudit");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/audit/{billOfLadingAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            if (billOfLadingAudit != null) localVarPathParams.Add("billOfLadingAudit", Configuration.ApiClient.ParameterToString(billOfLadingAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a billOfLading Adds an audit to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param>
-        /// <param name="billOfLadingAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddBillOfLadingAuditAsync (int? billOfLadingId, string billOfLadingAudit)
-        {
-             await AddBillOfLadingAuditAsyncWithHttpInfo(billOfLadingId, billOfLadingAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a billOfLading Adds an audit to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add an audit to</param>
-        /// <param name="billOfLadingAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddBillOfLadingAuditAsyncWithHttpInfo (int? billOfLadingId, string billOfLadingAudit)
-        {
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling AddBillOfLadingAudit");
-            // verify the required parameter 'billOfLadingAudit' is set
-            if (billOfLadingAudit == null) throw new ApiException(400, "Missing required parameter 'billOfLadingAudit' when calling AddBillOfLadingAudit");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/audit/{billOfLadingAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            if (billOfLadingAudit != null) localVarPathParams.Add("billOfLadingAudit", Configuration.ApiClient.ParameterToString(billOfLadingAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a billOfLading. Adds a tag to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param> 
-        /// <param name="billOfLadingTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddBillOfLadingTag (int? billOfLadingId, string billOfLadingTag)
-        {
-             AddBillOfLadingTagWithHttpInfo(billOfLadingId, billOfLadingTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a billOfLading. Adds a tag to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param> 
-        /// <param name="billOfLadingTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddBillOfLadingTagWithHttpInfo (int? billOfLadingId, string billOfLadingTag)
-        {
-            
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->AddBillOfLadingTag");
-            
-            // verify the required parameter 'billOfLadingTag' is set
-            if (billOfLadingTag == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingTag' when calling BillOfLadingApi->AddBillOfLadingTag");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/tag/{billOfLadingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            if (billOfLadingTag != null) localVarPathParams.Add("billOfLadingTag", Configuration.ApiClient.ParameterToString(billOfLadingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a billOfLading. Adds a tag to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param>
-        /// <param name="billOfLadingTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddBillOfLadingTagAsync (int? billOfLadingId, string billOfLadingTag)
-        {
-             await AddBillOfLadingTagAsyncWithHttpInfo(billOfLadingId, billOfLadingTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a billOfLading. Adds a tag to an existing billOfLading.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to add a tag to</param>
-        /// <param name="billOfLadingTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddBillOfLadingTagAsyncWithHttpInfo (int? billOfLadingId, string billOfLadingTag)
-        {
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling AddBillOfLadingTag");
-            // verify the required parameter 'billOfLadingTag' is set
-            if (billOfLadingTag == null) throw new ApiException(400, "Missing required parameter 'billOfLadingTag' when calling AddBillOfLadingTag");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/tag/{billOfLadingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            if (billOfLadingTag != null) localVarPathParams.Add("billOfLadingTag", Configuration.ApiClient.ParameterToString(billOfLadingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddBillOfLadingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a billOfLading Deletes the billOfLading identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->DeleteBillOfLading");
             
     
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}";
+            var localVarPath = "/v2.0/billOfLading/{billOfLadingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling DeleteBillOfLading");
             
     
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}";
+            var localVarPath = "/v2.0/billOfLading/{billOfLadingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a billOfLading. Deletes an existing billOfLading tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param> 
-        /// <param name="billOfLadingTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteBillOfLadingTag (int? billOfLadingId, string billOfLadingTag)
-        {
-             DeleteBillOfLadingTagWithHttpInfo(billOfLadingId, billOfLadingTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a billOfLading. Deletes an existing billOfLading tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param> 
-        /// <param name="billOfLadingTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteBillOfLadingTagWithHttpInfo (int? billOfLadingId, string billOfLadingTag)
-        {
-            
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->DeleteBillOfLadingTag");
-            
-            // verify the required parameter 'billOfLadingTag' is set
-            if (billOfLadingTag == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingTag' when calling BillOfLadingApi->DeleteBillOfLadingTag");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/tag/{billOfLadingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            if (billOfLadingTag != null) localVarPathParams.Add("billOfLadingTag", Configuration.ApiClient.ParameterToString(billOfLadingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillOfLadingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillOfLadingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a billOfLading. Deletes an existing billOfLading tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param>
-        /// <param name="billOfLadingTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteBillOfLadingTagAsync (int? billOfLadingId, string billOfLadingTag)
-        {
-             await DeleteBillOfLadingTagAsyncWithHttpInfo(billOfLadingId, billOfLadingTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a billOfLading. Deletes an existing billOfLading tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to remove tag from</param>
-        /// <param name="billOfLadingTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteBillOfLadingTagAsyncWithHttpInfo (int? billOfLadingId, string billOfLadingTag)
-        {
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling DeleteBillOfLadingTag");
-            // verify the required parameter 'billOfLadingTag' is set
-            if (billOfLadingTag == null) throw new ApiException(400, "Missing required parameter 'billOfLadingTag' when calling DeleteBillOfLadingTag");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/tag/{billOfLadingTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            if (billOfLadingTag != null) localVarPathParams.Add("billOfLadingTag", Configuration.ApiClient.ParameterToString(billOfLadingTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillOfLadingTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteBillOfLadingTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search billOfLadings by filter Returns the list of billOfLadings that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1544,7 +813,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/billOfLading/search";
+            var localVarPath = "/v2.0/billOfLading/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1636,7 +905,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/billOfLading/search";
+            var localVarPath = "/v2.0/billOfLading/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1725,7 +994,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->GetBillOfLadingById");
             
     
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}";
+            var localVarPath = "/v2.0/billOfLading/{billOfLadingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1810,7 +1079,7 @@ namespace Infoplus.Api
             if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling GetBillOfLadingById");
             
     
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}";
+            var localVarPath = "/v2.0/billOfLading/{billOfLadingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1871,175 +1140,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a billOfLading. Get all existing billOfLading tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param> 
-        /// <returns></returns>
-        public void GetBillOfLadingTags (int? billOfLadingId)
-        {
-             GetBillOfLadingTagsWithHttpInfo(billOfLadingId);
-        }
-
-        /// <summary>
-        /// Get the tags for a billOfLading. Get all existing billOfLading tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetBillOfLadingTagsWithHttpInfo (int? billOfLadingId)
-        {
-            
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null)
-                throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->GetBillOfLadingTags");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillOfLadingTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillOfLadingTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a billOfLading. Get all existing billOfLading tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetBillOfLadingTagsAsync (int? billOfLadingId)
-        {
-             await GetBillOfLadingTagsAsyncWithHttpInfo(billOfLadingId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a billOfLading. Get all existing billOfLading tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="billOfLadingId">Id of the billOfLading to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetBillOfLadingTagsAsyncWithHttpInfo (int? billOfLadingId)
-        {
-            // verify the required parameter 'billOfLadingId' is set
-            if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling GetBillOfLadingTags");
-            
-    
-            var localVarPath = "/beta/billOfLading/{billOfLadingId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (billOfLadingId != null) localVarPathParams.Add("billOfLadingId", Configuration.ApiClient.ParameterToString(billOfLadingId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillOfLadingTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetBillOfLadingTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a billOfLading by id Returns a duplicated billOfLading identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2065,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling BillOfLadingApi->GetDuplicateBillOfLadingById");
             
     
-            var localVarPath = "/beta/billOfLading/duplicate/{billOfLadingId}";
+            var localVarPath = "/v2.0/billOfLading/duplicate/{billOfLadingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2150,7 +1250,7 @@ namespace Infoplus.Api
             if (billOfLadingId == null) throw new ApiException(400, "Missing required parameter 'billOfLadingId' when calling GetDuplicateBillOfLadingById");
             
     
-            var localVarPath = "/beta/billOfLading/duplicate/{billOfLadingId}";
+            var localVarPath = "/v2.0/billOfLading/duplicate/{billOfLadingId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BillOfLadingApi->UpdateBillOfLading");
             
     
-            var localVarPath = "/beta/billOfLading";
+            var localVarPath = "/v2.0/billOfLading";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateBillOfLading");
             
     
-            var localVarPath = "/beta/billOfLading";
+            var localVarPath = "/v2.0/billOfLading";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling BillOfLadingApi->UpdateBillOfLadingCustomFields");
             
     
-            var localVarPath = "/beta/billOfLading/customFields";
+            var localVarPath = "/v2.0/billOfLading/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateBillOfLadingCustomFields");
             
     
-            var localVarPath = "/beta/billOfLading/customFields";
+            var localVarPath = "/v2.0/billOfLading/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

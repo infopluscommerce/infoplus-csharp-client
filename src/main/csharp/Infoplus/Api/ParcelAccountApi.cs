@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for a parcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param>
-        /// <param name="parcelAccountAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddParcelAccountAudit (int? parcelAccountId, string parcelAccountAudit);
-  
-        /// <summary>
-        /// Add new audit for a parcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param>
-        /// <param name="parcelAccountAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddParcelAccountAuditWithHttpInfo (int? parcelAccountId, string parcelAccountAudit);
-        
-        /// <summary>
-        /// Add new tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param>
-        /// <param name="parcelAccountTag">The tag to add</param>
-        /// <returns></returns>
-        void AddParcelAccountTag (int? parcelAccountId, string parcelAccountTag);
-  
-        /// <summary>
-        /// Add new tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param>
-        /// <param name="parcelAccountTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddParcelAccountTagWithHttpInfo (int? parcelAccountId, string parcelAccountTag);
-        
-        /// <summary>
-        /// Delete a tag for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing parcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param>
-        /// <param name="parcelAccountTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteParcelAccountTag (int? parcelAccountId, string parcelAccountTag);
-  
-        /// <summary>
-        /// Delete a tag for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing parcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param>
-        /// <param name="parcelAccountTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteParcelAccountTagWithHttpInfo (int? parcelAccountId, string parcelAccountTag);
-        
-        /// <summary>
         /// Get a duplicated a parcelAccount by id
         /// </summary>
         /// <remarks>
@@ -162,28 +90,6 @@ namespace Infoplus.Api
         ApiResponse<ParcelAccount> GetParcelAccountByIdWithHttpInfo (int? parcelAccountId);
         
         /// <summary>
-        /// Get the tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing parcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param>
-        /// <returns></returns>
-        void GetParcelAccountTags (int? parcelAccountId);
-  
-        /// <summary>
-        /// Get the tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing parcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetParcelAccountTagsWithHttpInfo (int? parcelAccountId);
-        
-        /// <summary>
         /// Update a parcelAccount custom fields
         /// </summary>
         /// <remarks>
@@ -208,78 +114,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for a parcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param>
-        /// <param name="parcelAccountAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddParcelAccountAuditAsync (int? parcelAccountId, string parcelAccountAudit);
-
-        /// <summary>
-        /// Add new audit for a parcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param>
-        /// <param name="parcelAccountAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddParcelAccountAuditAsyncWithHttpInfo (int? parcelAccountId, string parcelAccountAudit);
-        
-        /// <summary>
-        /// Add new tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param>
-        /// <param name="parcelAccountTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddParcelAccountTagAsync (int? parcelAccountId, string parcelAccountTag);
-
-        /// <summary>
-        /// Add new tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing parcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param>
-        /// <param name="parcelAccountTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddParcelAccountTagAsyncWithHttpInfo (int? parcelAccountId, string parcelAccountTag);
-        
-        /// <summary>
-        /// Delete a tag for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing parcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param>
-        /// <param name="parcelAccountTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteParcelAccountTagAsync (int? parcelAccountId, string parcelAccountTag);
-
-        /// <summary>
-        /// Delete a tag for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing parcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param>
-        /// <param name="parcelAccountTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteParcelAccountTagAsyncWithHttpInfo (int? parcelAccountId, string parcelAccountTag);
         
         /// <summary>
         /// Get a duplicated a parcelAccount by id
@@ -352,28 +186,6 @@ namespace Infoplus.Api
         /// <param name="parcelAccountId">Id of the parcelAccount to be returned.</param>
         /// <returns>Task of ApiResponse (ParcelAccount)</returns>
         System.Threading.Tasks.Task<ApiResponse<ParcelAccount>> GetParcelAccountByIdAsyncWithHttpInfo (int? parcelAccountId);
-        
-        /// <summary>
-        /// Get the tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing parcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetParcelAccountTagsAsync (int? parcelAccountId);
-
-        /// <summary>
-        /// Get the tags for a parcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing parcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetParcelAccountTagsAsyncWithHttpInfo (int? parcelAccountId);
         
         /// <summary>
         /// Update a parcelAccount custom fields
@@ -490,549 +302,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for a parcelAccount Adds an audit to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param> 
-        /// <param name="parcelAccountAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddParcelAccountAudit (int? parcelAccountId, string parcelAccountAudit)
-        {
-             AddParcelAccountAuditWithHttpInfo(parcelAccountId, parcelAccountAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a parcelAccount Adds an audit to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param> 
-        /// <param name="parcelAccountAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddParcelAccountAuditWithHttpInfo (int? parcelAccountId, string parcelAccountAudit)
-        {
-            
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling ParcelAccountApi->AddParcelAccountAudit");
-            
-            // verify the required parameter 'parcelAccountAudit' is set
-            if (parcelAccountAudit == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountAudit' when calling ParcelAccountApi->AddParcelAccountAudit");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/audit/{parcelAccountAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            if (parcelAccountAudit != null) localVarPathParams.Add("parcelAccountAudit", Configuration.ApiClient.ParameterToString(parcelAccountAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a parcelAccount Adds an audit to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param>
-        /// <param name="parcelAccountAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddParcelAccountAuditAsync (int? parcelAccountId, string parcelAccountAudit)
-        {
-             await AddParcelAccountAuditAsyncWithHttpInfo(parcelAccountId, parcelAccountAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a parcelAccount Adds an audit to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add an audit to</param>
-        /// <param name="parcelAccountAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddParcelAccountAuditAsyncWithHttpInfo (int? parcelAccountId, string parcelAccountAudit)
-        {
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null) throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling AddParcelAccountAudit");
-            // verify the required parameter 'parcelAccountAudit' is set
-            if (parcelAccountAudit == null) throw new ApiException(400, "Missing required parameter 'parcelAccountAudit' when calling AddParcelAccountAudit");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/audit/{parcelAccountAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            if (parcelAccountAudit != null) localVarPathParams.Add("parcelAccountAudit", Configuration.ApiClient.ParameterToString(parcelAccountAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a parcelAccount. Adds a tag to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param> 
-        /// <param name="parcelAccountTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddParcelAccountTag (int? parcelAccountId, string parcelAccountTag)
-        {
-             AddParcelAccountTagWithHttpInfo(parcelAccountId, parcelAccountTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a parcelAccount. Adds a tag to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param> 
-        /// <param name="parcelAccountTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddParcelAccountTagWithHttpInfo (int? parcelAccountId, string parcelAccountTag)
-        {
-            
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling ParcelAccountApi->AddParcelAccountTag");
-            
-            // verify the required parameter 'parcelAccountTag' is set
-            if (parcelAccountTag == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountTag' when calling ParcelAccountApi->AddParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/tag/{parcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            if (parcelAccountTag != null) localVarPathParams.Add("parcelAccountTag", Configuration.ApiClient.ParameterToString(parcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a parcelAccount. Adds a tag to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param>
-        /// <param name="parcelAccountTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddParcelAccountTagAsync (int? parcelAccountId, string parcelAccountTag)
-        {
-             await AddParcelAccountTagAsyncWithHttpInfo(parcelAccountId, parcelAccountTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a parcelAccount. Adds a tag to an existing parcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to add a tag to</param>
-        /// <param name="parcelAccountTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddParcelAccountTagAsyncWithHttpInfo (int? parcelAccountId, string parcelAccountTag)
-        {
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null) throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling AddParcelAccountTag");
-            // verify the required parameter 'parcelAccountTag' is set
-            if (parcelAccountTag == null) throw new ApiException(400, "Missing required parameter 'parcelAccountTag' when calling AddParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/tag/{parcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            if (parcelAccountTag != null) localVarPathParams.Add("parcelAccountTag", Configuration.ApiClient.ParameterToString(parcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for a parcelAccount. Deletes an existing parcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param> 
-        /// <param name="parcelAccountTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteParcelAccountTag (int? parcelAccountId, string parcelAccountTag)
-        {
-             DeleteParcelAccountTagWithHttpInfo(parcelAccountId, parcelAccountTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a parcelAccount. Deletes an existing parcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param> 
-        /// <param name="parcelAccountTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteParcelAccountTagWithHttpInfo (int? parcelAccountId, string parcelAccountTag)
-        {
-            
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling ParcelAccountApi->DeleteParcelAccountTag");
-            
-            // verify the required parameter 'parcelAccountTag' is set
-            if (parcelAccountTag == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountTag' when calling ParcelAccountApi->DeleteParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/tag/{parcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            if (parcelAccountTag != null) localVarPathParams.Add("parcelAccountTag", Configuration.ApiClient.ParameterToString(parcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a parcelAccount. Deletes an existing parcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param>
-        /// <param name="parcelAccountTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteParcelAccountTagAsync (int? parcelAccountId, string parcelAccountTag)
-        {
-             await DeleteParcelAccountTagAsyncWithHttpInfo(parcelAccountId, parcelAccountTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a parcelAccount. Deletes an existing parcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to remove tag from</param>
-        /// <param name="parcelAccountTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteParcelAccountTagAsyncWithHttpInfo (int? parcelAccountId, string parcelAccountTag)
-        {
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null) throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling DeleteParcelAccountTag");
-            // verify the required parameter 'parcelAccountTag' is set
-            if (parcelAccountTag == null) throw new ApiException(400, "Missing required parameter 'parcelAccountTag' when calling DeleteParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/tag/{parcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            if (parcelAccountTag != null) localVarPathParams.Add("parcelAccountTag", Configuration.ApiClient.ParameterToString(parcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a parcelAccount by id Returns a duplicated parcelAccount identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1058,7 +327,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling ParcelAccountApi->GetDuplicateParcelAccountById");
             
     
-            var localVarPath = "/beta/parcelAccount/duplicate/{parcelAccountId}";
+            var localVarPath = "/v2.0/parcelAccount/duplicate/{parcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1143,7 +412,7 @@ namespace Infoplus.Api
             if (parcelAccountId == null) throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling GetDuplicateParcelAccountById");
             
     
-            var localVarPath = "/beta/parcelAccount/duplicate/{parcelAccountId}";
+            var localVarPath = "/v2.0/parcelAccount/duplicate/{parcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1231,7 +500,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/parcelAccount/search";
+            var localVarPath = "/v2.0/parcelAccount/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1323,7 +592,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/parcelAccount/search";
+            var localVarPath = "/v2.0/parcelAccount/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1412,7 +681,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling ParcelAccountApi->GetParcelAccountById");
             
     
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}";
+            var localVarPath = "/v2.0/parcelAccount/{parcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1497,7 +766,7 @@ namespace Infoplus.Api
             if (parcelAccountId == null) throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling GetParcelAccountById");
             
     
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}";
+            var localVarPath = "/v2.0/parcelAccount/{parcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1558,175 +827,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a parcelAccount. Get all existing parcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param> 
-        /// <returns></returns>
-        public void GetParcelAccountTags (int? parcelAccountId)
-        {
-             GetParcelAccountTagsWithHttpInfo(parcelAccountId);
-        }
-
-        /// <summary>
-        /// Get the tags for a parcelAccount. Get all existing parcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetParcelAccountTagsWithHttpInfo (int? parcelAccountId)
-        {
-            
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling ParcelAccountApi->GetParcelAccountTags");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetParcelAccountTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetParcelAccountTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a parcelAccount. Get all existing parcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetParcelAccountTagsAsync (int? parcelAccountId)
-        {
-             await GetParcelAccountTagsAsyncWithHttpInfo(parcelAccountId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a parcelAccount. Get all existing parcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="parcelAccountId">Id of the parcelAccount to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetParcelAccountTagsAsyncWithHttpInfo (int? parcelAccountId)
-        {
-            // verify the required parameter 'parcelAccountId' is set
-            if (parcelAccountId == null) throw new ApiException(400, "Missing required parameter 'parcelAccountId' when calling GetParcelAccountTags");
-            
-    
-            var localVarPath = "/beta/parcelAccount/{parcelAccountId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (parcelAccountId != null) localVarPathParams.Add("parcelAccountId", Configuration.ApiClient.ParameterToString(parcelAccountId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetParcelAccountTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetParcelAccountTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a parcelAccount custom fields Updates an existing parcelAccount custom fields using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1751,7 +851,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ParcelAccountApi->UpdateParcelAccountCustomFields");
             
     
-            var localVarPath = "/beta/parcelAccount/customFields";
+            var localVarPath = "/v2.0/parcelAccount/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1841,7 +941,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateParcelAccountCustomFields");
             
     
-            var localVarPath = "/beta/parcelAccount/customFields";
+            var localVarPath = "/v2.0/parcelAccount/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

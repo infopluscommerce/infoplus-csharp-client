@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Supplement> AddSupplementWithHttpInfo (Supplement body);
         
         /// <summary>
-        /// Add new audit for a supplement
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param>
-        /// <param name="supplementAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddSupplementAudit (int? supplementId, string supplementAudit);
-  
-        /// <summary>
-        /// Add new audit for a supplement
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param>
-        /// <param name="supplementAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddSupplementAuditWithHttpInfo (int? supplementId, string supplementAudit);
-        
-        /// <summary>
-        /// Add new tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param>
-        /// <param name="supplementTag">The tag to add</param>
-        /// <returns></returns>
-        void AddSupplementTag (int? supplementId, string supplementTag);
-  
-        /// <summary>
-        /// Add new tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param>
-        /// <param name="supplementTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddSupplementTagWithHttpInfo (int? supplementId, string supplementTag);
-        
-        /// <summary>
         /// Delete a supplement
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="supplementId">Id of the supplement to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteSupplementWithHttpInfo (int? supplementId);
-        
-        /// <summary>
-        /// Delete a tag for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing supplement tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param>
-        /// <param name="supplementTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteSupplementTag (int? supplementId, string supplementTag);
-  
-        /// <summary>
-        /// Delete a tag for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing supplement tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param>
-        /// <param name="supplementTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteSupplementTagWithHttpInfo (int? supplementId, string supplementTag);
         
         /// <summary>
         /// Get a duplicated a supplement by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<Supplement> GetSupplementByIdWithHttpInfo (int? supplementId);
         
         /// <summary>
-        /// Get the tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing supplement tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param>
-        /// <returns></returns>
-        void GetSupplementTags (int? supplementId);
-  
-        /// <summary>
-        /// Get the tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing supplement tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetSupplementTagsWithHttpInfo (int? supplementId);
-        
-        /// <summary>
         /// Update a supplement
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Supplement>> AddSupplementAsyncWithHttpInfo (Supplement body);
         
         /// <summary>
-        /// Add new audit for a supplement
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param>
-        /// <param name="supplementAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddSupplementAuditAsync (int? supplementId, string supplementAudit);
-
-        /// <summary>
-        /// Add new audit for a supplement
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param>
-        /// <param name="supplementAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddSupplementAuditAsyncWithHttpInfo (int? supplementId, string supplementAudit);
-        
-        /// <summary>
-        /// Add new tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param>
-        /// <param name="supplementTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddSupplementTagAsync (int? supplementId, string supplementTag);
-
-        /// <summary>
-        /// Add new tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing supplement.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param>
-        /// <param name="supplementTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddSupplementTagAsyncWithHttpInfo (int? supplementId, string supplementTag);
-        
-        /// <summary>
         /// Delete a supplement
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="supplementId">Id of the supplement to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSupplementAsyncWithHttpInfo (int? supplementId);
-        
-        /// <summary>
-        /// Delete a tag for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing supplement tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param>
-        /// <param name="supplementTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteSupplementTagAsync (int? supplementId, string supplementTag);
-
-        /// <summary>
-        /// Delete a tag for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing supplement tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param>
-        /// <param name="supplementTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSupplementTagAsyncWithHttpInfo (int? supplementId, string supplementTag);
         
         /// <summary>
         /// Get a duplicated a supplement by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="supplementId">Id of the supplement to be returned.</param>
         /// <returns>Task of ApiResponse (Supplement)</returns>
         System.Threading.Tasks.Task<ApiResponse<Supplement>> GetSupplementByIdAsyncWithHttpInfo (int? supplementId);
-        
-        /// <summary>
-        /// Get the tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing supplement tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetSupplementTagsAsync (int? supplementId);
-
-        /// <summary>
-        /// Get the tags for a supplement.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing supplement tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetSupplementTagsAsyncWithHttpInfo (int? supplementId);
         
         /// <summary>
         /// Update a supplement
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling SupplementApi->AddSupplement");
             
     
-            var localVarPath = "/beta/supplement";
+            var localVarPath = "/v2.0/supplement";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddSupplement");
             
     
-            var localVarPath = "/beta/supplement";
+            var localVarPath = "/v2.0/supplement";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a supplement Adds an audit to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param> 
-        /// <param name="supplementAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddSupplementAudit (int? supplementId, string supplementAudit)
-        {
-             AddSupplementAuditWithHttpInfo(supplementId, supplementAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a supplement Adds an audit to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param> 
-        /// <param name="supplementAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddSupplementAuditWithHttpInfo (int? supplementId, string supplementAudit)
-        {
-            
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null)
-                throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->AddSupplementAudit");
-            
-            // verify the required parameter 'supplementAudit' is set
-            if (supplementAudit == null)
-                throw new ApiException(400, "Missing required parameter 'supplementAudit' when calling SupplementApi->AddSupplementAudit");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/audit/{supplementAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            if (supplementAudit != null) localVarPathParams.Add("supplementAudit", Configuration.ApiClient.ParameterToString(supplementAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a supplement Adds an audit to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param>
-        /// <param name="supplementAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddSupplementAuditAsync (int? supplementId, string supplementAudit)
-        {
-             await AddSupplementAuditAsyncWithHttpInfo(supplementId, supplementAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a supplement Adds an audit to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add an audit to</param>
-        /// <param name="supplementAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddSupplementAuditAsyncWithHttpInfo (int? supplementId, string supplementAudit)
-        {
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling AddSupplementAudit");
-            // verify the required parameter 'supplementAudit' is set
-            if (supplementAudit == null) throw new ApiException(400, "Missing required parameter 'supplementAudit' when calling AddSupplementAudit");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/audit/{supplementAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            if (supplementAudit != null) localVarPathParams.Add("supplementAudit", Configuration.ApiClient.ParameterToString(supplementAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a supplement. Adds a tag to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param> 
-        /// <param name="supplementTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddSupplementTag (int? supplementId, string supplementTag)
-        {
-             AddSupplementTagWithHttpInfo(supplementId, supplementTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a supplement. Adds a tag to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param> 
-        /// <param name="supplementTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddSupplementTagWithHttpInfo (int? supplementId, string supplementTag)
-        {
-            
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null)
-                throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->AddSupplementTag");
-            
-            // verify the required parameter 'supplementTag' is set
-            if (supplementTag == null)
-                throw new ApiException(400, "Missing required parameter 'supplementTag' when calling SupplementApi->AddSupplementTag");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/tag/{supplementTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            if (supplementTag != null) localVarPathParams.Add("supplementTag", Configuration.ApiClient.ParameterToString(supplementTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a supplement. Adds a tag to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param>
-        /// <param name="supplementTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddSupplementTagAsync (int? supplementId, string supplementTag)
-        {
-             await AddSupplementTagAsyncWithHttpInfo(supplementId, supplementTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a supplement. Adds a tag to an existing supplement.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to add a tag to</param>
-        /// <param name="supplementTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddSupplementTagAsyncWithHttpInfo (int? supplementId, string supplementTag)
-        {
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling AddSupplementTag");
-            // verify the required parameter 'supplementTag' is set
-            if (supplementTag == null) throw new ApiException(400, "Missing required parameter 'supplementTag' when calling AddSupplementTag");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/tag/{supplementTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            if (supplementTag != null) localVarPathParams.Add("supplementTag", Configuration.ApiClient.ParameterToString(supplementTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddSupplementTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a supplement Deletes the supplement identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->DeleteSupplement");
             
     
-            var localVarPath = "/beta/supplement/{supplementId}";
+            var localVarPath = "/v2.0/supplement/{supplementId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling DeleteSupplement");
             
     
-            var localVarPath = "/beta/supplement/{supplementId}";
+            var localVarPath = "/v2.0/supplement/{supplementId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a supplement. Deletes an existing supplement tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param> 
-        /// <param name="supplementTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteSupplementTag (int? supplementId, string supplementTag)
-        {
-             DeleteSupplementTagWithHttpInfo(supplementId, supplementTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a supplement. Deletes an existing supplement tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param> 
-        /// <param name="supplementTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteSupplementTagWithHttpInfo (int? supplementId, string supplementTag)
-        {
-            
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null)
-                throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->DeleteSupplementTag");
-            
-            // verify the required parameter 'supplementTag' is set
-            if (supplementTag == null)
-                throw new ApiException(400, "Missing required parameter 'supplementTag' when calling SupplementApi->DeleteSupplementTag");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/tag/{supplementTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            if (supplementTag != null) localVarPathParams.Add("supplementTag", Configuration.ApiClient.ParameterToString(supplementTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSupplementTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSupplementTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a supplement. Deletes an existing supplement tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param>
-        /// <param name="supplementTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteSupplementTagAsync (int? supplementId, string supplementTag)
-        {
-             await DeleteSupplementTagAsyncWithHttpInfo(supplementId, supplementTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a supplement. Deletes an existing supplement tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to remove tag from</param>
-        /// <param name="supplementTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteSupplementTagAsyncWithHttpInfo (int? supplementId, string supplementTag)
-        {
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling DeleteSupplementTag");
-            // verify the required parameter 'supplementTag' is set
-            if (supplementTag == null) throw new ApiException(400, "Missing required parameter 'supplementTag' when calling DeleteSupplementTag");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/tag/{supplementTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            if (supplementTag != null) localVarPathParams.Add("supplementTag", Configuration.ApiClient.ParameterToString(supplementTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSupplementTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteSupplementTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a supplement by id Returns a duplicated supplement identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->GetDuplicateSupplementById");
             
     
-            var localVarPath = "/beta/supplement/duplicate/{supplementId}";
+            var localVarPath = "/v2.0/supplement/duplicate/{supplementId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling GetDuplicateSupplementById");
             
     
-            var localVarPath = "/beta/supplement/duplicate/{supplementId}";
+            var localVarPath = "/v2.0/supplement/duplicate/{supplementId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/supplement/search";
+            var localVarPath = "/v2.0/supplement/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/supplement/search";
+            var localVarPath = "/v2.0/supplement/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->GetSupplementById");
             
     
-            var localVarPath = "/beta/supplement/{supplementId}";
+            var localVarPath = "/v2.0/supplement/{supplementId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling GetSupplementById");
             
     
-            var localVarPath = "/beta/supplement/{supplementId}";
+            var localVarPath = "/v2.0/supplement/{supplementId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a supplement. Get all existing supplement tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param> 
-        /// <returns></returns>
-        public void GetSupplementTags (int? supplementId)
-        {
-             GetSupplementTagsWithHttpInfo(supplementId);
-        }
-
-        /// <summary>
-        /// Get the tags for a supplement. Get all existing supplement tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetSupplementTagsWithHttpInfo (int? supplementId)
-        {
-            
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null)
-                throw new ApiException(400, "Missing required parameter 'supplementId' when calling SupplementApi->GetSupplementTags");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetSupplementTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetSupplementTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a supplement. Get all existing supplement tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetSupplementTagsAsync (int? supplementId)
-        {
-             await GetSupplementTagsAsyncWithHttpInfo(supplementId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a supplement. Get all existing supplement tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="supplementId">Id of the supplement to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetSupplementTagsAsyncWithHttpInfo (int? supplementId)
-        {
-            // verify the required parameter 'supplementId' is set
-            if (supplementId == null) throw new ApiException(400, "Missing required parameter 'supplementId' when calling GetSupplementTags");
-            
-    
-            var localVarPath = "/beta/supplement/{supplementId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (supplementId != null) localVarPathParams.Add("supplementId", Configuration.ApiClient.ParameterToString(supplementId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetSupplementTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetSupplementTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a supplement Updates an existing supplement using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling SupplementApi->UpdateSupplement");
             
     
-            var localVarPath = "/beta/supplement";
+            var localVarPath = "/v2.0/supplement";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateSupplement");
             
     
-            var localVarPath = "/beta/supplement";
+            var localVarPath = "/v2.0/supplement";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling SupplementApi->UpdateSupplementCustomFields");
             
     
-            var localVarPath = "/beta/supplement/customFields";
+            var localVarPath = "/v2.0/supplement/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateSupplementCustomFields");
             
     
-            var localVarPath = "/beta/supplement/customFields";
+            var localVarPath = "/v2.0/supplement/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

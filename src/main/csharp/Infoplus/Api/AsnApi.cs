@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Asn> AddAsnWithHttpInfo (Asn body);
         
         /// <summary>
-        /// Add new audit for an asn
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param>
-        /// <param name="asnAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddAsnAudit (int? asnId, string asnAudit);
-  
-        /// <summary>
-        /// Add new audit for an asn
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param>
-        /// <param name="asnAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddAsnAuditWithHttpInfo (int? asnId, string asnAudit);
-        
-        /// <summary>
-        /// Add new tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param>
-        /// <param name="asnTag">The tag to add</param>
-        /// <returns></returns>
-        void AddAsnTag (int? asnId, string asnTag);
-  
-        /// <summary>
-        /// Add new tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param>
-        /// <param name="asnTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddAsnTagWithHttpInfo (int? asnId, string asnTag);
-        
-        /// <summary>
         /// Delete an asn
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="asnId">Id of the asn to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteAsnWithHttpInfo (int? asnId);
-        
-        /// <summary>
-        /// Delete a tag for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing asn tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param>
-        /// <param name="asnTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteAsnTag (int? asnId, string asnTag);
-  
-        /// <summary>
-        /// Delete a tag for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing asn tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param>
-        /// <param name="asnTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteAsnTagWithHttpInfo (int? asnId, string asnTag);
         
         /// <summary>
         /// Search asns by filter
@@ -182,28 +110,6 @@ namespace Infoplus.Api
         /// <param name="asnId">Id of the asn to be returned.</param>
         /// <returns>ApiResponse of Asn</returns>
         ApiResponse<Asn> GetAsnByIdWithHttpInfo (int? asnId);
-        
-        /// <summary>
-        /// Get the tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing asn tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param>
-        /// <returns></returns>
-        void GetAsnTags (int? asnId);
-  
-        /// <summary>
-        /// Get the tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing asn tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetAsnTagsWithHttpInfo (int? asnId);
         
         /// <summary>
         /// Get a duplicated an asn by id
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Asn>> AddAsnAsyncWithHttpInfo (Asn body);
         
         /// <summary>
-        /// Add new audit for an asn
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param>
-        /// <param name="asnAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddAsnAuditAsync (int? asnId, string asnAudit);
-
-        /// <summary>
-        /// Add new audit for an asn
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param>
-        /// <param name="asnAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddAsnAuditAsyncWithHttpInfo (int? asnId, string asnAudit);
-        
-        /// <summary>
-        /// Add new tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param>
-        /// <param name="asnTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddAsnTagAsync (int? asnId, string asnTag);
-
-        /// <summary>
-        /// Add new tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing asn.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param>
-        /// <param name="asnTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddAsnTagAsyncWithHttpInfo (int? asnId, string asnTag);
-        
-        /// <summary>
         /// Delete an asn
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="asnId">Id of the asn to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAsnAsyncWithHttpInfo (int? asnId);
-        
-        /// <summary>
-        /// Delete a tag for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing asn tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param>
-        /// <param name="asnTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteAsnTagAsync (int? asnId, string asnTag);
-
-        /// <summary>
-        /// Delete a tag for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing asn tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param>
-        /// <param name="asnTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAsnTagAsyncWithHttpInfo (int? asnId, string asnTag);
         
         /// <summary>
         /// Search asns by filter
@@ -440,28 +274,6 @@ namespace Infoplus.Api
         /// <param name="asnId">Id of the asn to be returned.</param>
         /// <returns>Task of ApiResponse (Asn)</returns>
         System.Threading.Tasks.Task<ApiResponse<Asn>> GetAsnByIdAsyncWithHttpInfo (int? asnId);
-        
-        /// <summary>
-        /// Get the tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing asn tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetAsnTagsAsync (int? asnId);
-
-        /// <summary>
-        /// Get the tags for an asn.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing asn tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetAsnTagsAsyncWithHttpInfo (int? asnId);
         
         /// <summary>
         /// Get a duplicated an asn by id
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AsnApi->AddAsn");
             
     
-            var localVarPath = "/beta/asn";
+            var localVarPath = "/v2.0/asn";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddAsn");
             
     
-            var localVarPath = "/beta/asn";
+            var localVarPath = "/v2.0/asn";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for an asn Adds an audit to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param> 
-        /// <param name="asnAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddAsnAudit (int? asnId, string asnAudit)
-        {
-             AddAsnAuditWithHttpInfo(asnId, asnAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for an asn Adds an audit to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param> 
-        /// <param name="asnAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddAsnAuditWithHttpInfo (int? asnId, string asnAudit)
-        {
-            
-            // verify the required parameter 'asnId' is set
-            if (asnId == null)
-                throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->AddAsnAudit");
-            
-            // verify the required parameter 'asnAudit' is set
-            if (asnAudit == null)
-                throw new ApiException(400, "Missing required parameter 'asnAudit' when calling AsnApi->AddAsnAudit");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/audit/{asnAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            if (asnAudit != null) localVarPathParams.Add("asnAudit", Configuration.ApiClient.ParameterToString(asnAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for an asn Adds an audit to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param>
-        /// <param name="asnAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddAsnAuditAsync (int? asnId, string asnAudit)
-        {
-             await AddAsnAuditAsyncWithHttpInfo(asnId, asnAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for an asn Adds an audit to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add an audit to</param>
-        /// <param name="asnAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddAsnAuditAsyncWithHttpInfo (int? asnId, string asnAudit)
-        {
-            // verify the required parameter 'asnId' is set
-            if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling AddAsnAudit");
-            // verify the required parameter 'asnAudit' is set
-            if (asnAudit == null) throw new ApiException(400, "Missing required parameter 'asnAudit' when calling AddAsnAudit");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/audit/{asnAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            if (asnAudit != null) localVarPathParams.Add("asnAudit", Configuration.ApiClient.ParameterToString(asnAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for an asn. Adds a tag to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param> 
-        /// <param name="asnTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddAsnTag (int? asnId, string asnTag)
-        {
-             AddAsnTagWithHttpInfo(asnId, asnTag);
-        }
-
-        /// <summary>
-        /// Add new tags for an asn. Adds a tag to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param> 
-        /// <param name="asnTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddAsnTagWithHttpInfo (int? asnId, string asnTag)
-        {
-            
-            // verify the required parameter 'asnId' is set
-            if (asnId == null)
-                throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->AddAsnTag");
-            
-            // verify the required parameter 'asnTag' is set
-            if (asnTag == null)
-                throw new ApiException(400, "Missing required parameter 'asnTag' when calling AsnApi->AddAsnTag");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/tag/{asnTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            if (asnTag != null) localVarPathParams.Add("asnTag", Configuration.ApiClient.ParameterToString(asnTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for an asn. Adds a tag to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param>
-        /// <param name="asnTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddAsnTagAsync (int? asnId, string asnTag)
-        {
-             await AddAsnTagAsyncWithHttpInfo(asnId, asnTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for an asn. Adds a tag to an existing asn.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to add a tag to</param>
-        /// <param name="asnTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddAsnTagAsyncWithHttpInfo (int? asnId, string asnTag)
-        {
-            // verify the required parameter 'asnId' is set
-            if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling AddAsnTag");
-            // verify the required parameter 'asnTag' is set
-            if (asnTag == null) throw new ApiException(400, "Missing required parameter 'asnTag' when calling AddAsnTag");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/tag/{asnTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            if (asnTag != null) localVarPathParams.Add("asnTag", Configuration.ApiClient.ParameterToString(asnTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddAsnTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete an asn Deletes the asn identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->DeleteAsn");
             
     
-            var localVarPath = "/beta/asn/{asnId}";
+            var localVarPath = "/v2.0/asn/{asnId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling DeleteAsn");
             
     
-            var localVarPath = "/beta/asn/{asnId}";
+            var localVarPath = "/v2.0/asn/{asnId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for an asn. Deletes an existing asn tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param> 
-        /// <param name="asnTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteAsnTag (int? asnId, string asnTag)
-        {
-             DeleteAsnTagWithHttpInfo(asnId, asnTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for an asn. Deletes an existing asn tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param> 
-        /// <param name="asnTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteAsnTagWithHttpInfo (int? asnId, string asnTag)
-        {
-            
-            // verify the required parameter 'asnId' is set
-            if (asnId == null)
-                throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->DeleteAsnTag");
-            
-            // verify the required parameter 'asnTag' is set
-            if (asnTag == null)
-                throw new ApiException(400, "Missing required parameter 'asnTag' when calling AsnApi->DeleteAsnTag");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/tag/{asnTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            if (asnTag != null) localVarPathParams.Add("asnTag", Configuration.ApiClient.ParameterToString(asnTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAsnTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAsnTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for an asn. Deletes an existing asn tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param>
-        /// <param name="asnTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteAsnTagAsync (int? asnId, string asnTag)
-        {
-             await DeleteAsnTagAsyncWithHttpInfo(asnId, asnTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for an asn. Deletes an existing asn tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to remove tag from</param>
-        /// <param name="asnTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteAsnTagAsyncWithHttpInfo (int? asnId, string asnTag)
-        {
-            // verify the required parameter 'asnId' is set
-            if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling DeleteAsnTag");
-            // verify the required parameter 'asnTag' is set
-            if (asnTag == null) throw new ApiException(400, "Missing required parameter 'asnTag' when calling DeleteAsnTag");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/tag/{asnTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            if (asnTag != null) localVarPathParams.Add("asnTag", Configuration.ApiClient.ParameterToString(asnTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAsnTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteAsnTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Search asns by filter Returns the list of asns that match the given filter.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1544,7 +813,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/asn/search";
+            var localVarPath = "/v2.0/asn/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1636,7 +905,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/asn/search";
+            var localVarPath = "/v2.0/asn/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1725,7 +994,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->GetAsnById");
             
     
-            var localVarPath = "/beta/asn/{asnId}";
+            var localVarPath = "/v2.0/asn/{asnId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1810,7 +1079,7 @@ namespace Infoplus.Api
             if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling GetAsnById");
             
     
-            var localVarPath = "/beta/asn/{asnId}";
+            var localVarPath = "/v2.0/asn/{asnId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1871,175 +1140,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for an asn. Get all existing asn tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param> 
-        /// <returns></returns>
-        public void GetAsnTags (int? asnId)
-        {
-             GetAsnTagsWithHttpInfo(asnId);
-        }
-
-        /// <summary>
-        /// Get the tags for an asn. Get all existing asn tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetAsnTagsWithHttpInfo (int? asnId)
-        {
-            
-            // verify the required parameter 'asnId' is set
-            if (asnId == null)
-                throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->GetAsnTags");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetAsnTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetAsnTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for an asn. Get all existing asn tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetAsnTagsAsync (int? asnId)
-        {
-             await GetAsnTagsAsyncWithHttpInfo(asnId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for an asn. Get all existing asn tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="asnId">Id of the asn to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetAsnTagsAsyncWithHttpInfo (int? asnId)
-        {
-            // verify the required parameter 'asnId' is set
-            if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling GetAsnTags");
-            
-    
-            var localVarPath = "/beta/asn/{asnId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (asnId != null) localVarPathParams.Add("asnId", Configuration.ApiClient.ParameterToString(asnId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetAsnTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetAsnTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated an asn by id Returns a duplicated asn identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2065,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'asnId' when calling AsnApi->GetDuplicateAsnById");
             
     
-            var localVarPath = "/beta/asn/duplicate/{asnId}";
+            var localVarPath = "/v2.0/asn/duplicate/{asnId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2150,7 +1250,7 @@ namespace Infoplus.Api
             if (asnId == null) throw new ApiException(400, "Missing required parameter 'asnId' when calling GetDuplicateAsnById");
             
     
-            var localVarPath = "/beta/asn/duplicate/{asnId}";
+            var localVarPath = "/v2.0/asn/duplicate/{asnId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AsnApi->UpdateAsn");
             
     
-            var localVarPath = "/beta/asn";
+            var localVarPath = "/v2.0/asn";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateAsn");
             
     
-            var localVarPath = "/beta/asn";
+            var localVarPath = "/v2.0/asn";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling AsnApi->UpdateAsnCustomFields");
             
     
-            var localVarPath = "/beta/asn/customFields";
+            var localVarPath = "/v2.0/asn/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateAsnCustomFields");
             
     
-            var localVarPath = "/beta/asn/customFields";
+            var localVarPath = "/v2.0/asn/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

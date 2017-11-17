@@ -235,7 +235,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/orderLoadProgram/search";
+            var localVarPath = "/v2.0/orderLoadProgram/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -324,7 +324,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/orderLoadProgram/search";
+            var localVarPath = "/v2.0/orderLoadProgram/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -412,7 +412,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'orderLoadProgramId' when calling OrderLoadProgramApi->GetReqLoadProgramById");
             
     
-            var localVarPath = "/beta/orderLoadProgram/{orderLoadProgramId}";
+            var localVarPath = "/v2.0/orderLoadProgram/{orderLoadProgramId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -497,7 +497,7 @@ namespace Infoplus.Api
             if (orderLoadProgramId == null) throw new ApiException(400, "Missing required parameter 'orderLoadProgramId' when calling GetReqLoadProgramById");
             
     
-            var localVarPath = "/beta/orderLoadProgram/{orderLoadProgramId}";
+            var localVarPath = "/v2.0/orderLoadProgram/{orderLoadProgramId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

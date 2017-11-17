@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ReceivingWorksheet> AddReceivingWorksheetWithHttpInfo (ReceivingWorksheet body);
         
         /// <summary>
-        /// Add new audit for a receivingWorksheet
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param>
-        /// <param name="receivingWorksheetAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddReceivingWorksheetAudit (int? receivingWorksheetId, string receivingWorksheetAudit);
-  
-        /// <summary>
-        /// Add new audit for a receivingWorksheet
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param>
-        /// <param name="receivingWorksheetAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddReceivingWorksheetAuditWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetAudit);
-        
-        /// <summary>
-        /// Add new tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param>
-        /// <param name="receivingWorksheetTag">The tag to add</param>
-        /// <returns></returns>
-        void AddReceivingWorksheetTag (int? receivingWorksheetId, string receivingWorksheetTag);
-  
-        /// <summary>
-        /// Add new tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param>
-        /// <param name="receivingWorksheetTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddReceivingWorksheetTagWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag);
-        
-        /// <summary>
         /// Delete a receivingWorksheet
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="receivingWorksheetId">Id of the receivingWorksheet to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteReceivingWorksheetWithHttpInfo (int? receivingWorksheetId);
-        
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing receivingWorksheet tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param>
-        /// <param name="receivingWorksheetTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteReceivingWorksheetTag (int? receivingWorksheetId, string receivingWorksheetTag);
-  
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing receivingWorksheet tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param>
-        /// <param name="receivingWorksheetTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteReceivingWorksheetTagWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag);
         
         /// <summary>
         /// Get a duplicated a receivingWorksheet by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ReceivingWorksheet> GetReceivingWorksheetByIdWithHttpInfo (int? receivingWorksheetId);
         
         /// <summary>
-        /// Get the tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing receivingWorksheet tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param>
-        /// <returns></returns>
-        void GetReceivingWorksheetTags (int? receivingWorksheetId);
-  
-        /// <summary>
-        /// Get the tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing receivingWorksheet tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetReceivingWorksheetTagsWithHttpInfo (int? receivingWorksheetId);
-        
-        /// <summary>
         /// Update a receivingWorksheet
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ReceivingWorksheet>> AddReceivingWorksheetAsyncWithHttpInfo (ReceivingWorksheet body);
         
         /// <summary>
-        /// Add new audit for a receivingWorksheet
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param>
-        /// <param name="receivingWorksheetAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddReceivingWorksheetAuditAsync (int? receivingWorksheetId, string receivingWorksheetAudit);
-
-        /// <summary>
-        /// Add new audit for a receivingWorksheet
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param>
-        /// <param name="receivingWorksheetAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddReceivingWorksheetAuditAsyncWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetAudit);
-        
-        /// <summary>
-        /// Add new tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param>
-        /// <param name="receivingWorksheetTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddReceivingWorksheetTagAsync (int? receivingWorksheetId, string receivingWorksheetTag);
-
-        /// <summary>
-        /// Add new tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing receivingWorksheet.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param>
-        /// <param name="receivingWorksheetTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddReceivingWorksheetTagAsyncWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag);
-        
-        /// <summary>
         /// Delete a receivingWorksheet
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="receivingWorksheetId">Id of the receivingWorksheet to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteReceivingWorksheetAsyncWithHttpInfo (int? receivingWorksheetId);
-        
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing receivingWorksheet tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param>
-        /// <param name="receivingWorksheetTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteReceivingWorksheetTagAsync (int? receivingWorksheetId, string receivingWorksheetTag);
-
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing receivingWorksheet tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param>
-        /// <param name="receivingWorksheetTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteReceivingWorksheetTagAsyncWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag);
         
         /// <summary>
         /// Get a duplicated a receivingWorksheet by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="receivingWorksheetId">Id of the receivingWorksheet to be returned.</param>
         /// <returns>Task of ApiResponse (ReceivingWorksheet)</returns>
         System.Threading.Tasks.Task<ApiResponse<ReceivingWorksheet>> GetReceivingWorksheetByIdAsyncWithHttpInfo (int? receivingWorksheetId);
-        
-        /// <summary>
-        /// Get the tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing receivingWorksheet tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetReceivingWorksheetTagsAsync (int? receivingWorksheetId);
-
-        /// <summary>
-        /// Get the tags for a receivingWorksheet.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing receivingWorksheet tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetReceivingWorksheetTagsAsyncWithHttpInfo (int? receivingWorksheetId);
         
         /// <summary>
         /// Update a receivingWorksheet
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ReceivingWorksheetApi->AddReceivingWorksheet");
             
     
-            var localVarPath = "/beta/receivingWorksheet";
+            var localVarPath = "/v2.0/receivingWorksheet";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddReceivingWorksheet");
             
     
-            var localVarPath = "/beta/receivingWorksheet";
+            var localVarPath = "/v2.0/receivingWorksheet";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a receivingWorksheet Adds an audit to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param> 
-        /// <param name="receivingWorksheetAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddReceivingWorksheetAudit (int? receivingWorksheetId, string receivingWorksheetAudit)
-        {
-             AddReceivingWorksheetAuditWithHttpInfo(receivingWorksheetId, receivingWorksheetAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a receivingWorksheet Adds an audit to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param> 
-        /// <param name="receivingWorksheetAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddReceivingWorksheetAuditWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetAudit)
-        {
-            
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->AddReceivingWorksheetAudit");
-            
-            // verify the required parameter 'receivingWorksheetAudit' is set
-            if (receivingWorksheetAudit == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetAudit' when calling ReceivingWorksheetApi->AddReceivingWorksheetAudit");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/audit/{receivingWorksheetAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            if (receivingWorksheetAudit != null) localVarPathParams.Add("receivingWorksheetAudit", Configuration.ApiClient.ParameterToString(receivingWorksheetAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a receivingWorksheet Adds an audit to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param>
-        /// <param name="receivingWorksheetAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddReceivingWorksheetAuditAsync (int? receivingWorksheetId, string receivingWorksheetAudit)
-        {
-             await AddReceivingWorksheetAuditAsyncWithHttpInfo(receivingWorksheetId, receivingWorksheetAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a receivingWorksheet Adds an audit to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add an audit to</param>
-        /// <param name="receivingWorksheetAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddReceivingWorksheetAuditAsyncWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetAudit)
-        {
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling AddReceivingWorksheetAudit");
-            // verify the required parameter 'receivingWorksheetAudit' is set
-            if (receivingWorksheetAudit == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetAudit' when calling AddReceivingWorksheetAudit");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/audit/{receivingWorksheetAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            if (receivingWorksheetAudit != null) localVarPathParams.Add("receivingWorksheetAudit", Configuration.ApiClient.ParameterToString(receivingWorksheetAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a receivingWorksheet. Adds a tag to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param> 
-        /// <param name="receivingWorksheetTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddReceivingWorksheetTag (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-             AddReceivingWorksheetTagWithHttpInfo(receivingWorksheetId, receivingWorksheetTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a receivingWorksheet. Adds a tag to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param> 
-        /// <param name="receivingWorksheetTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddReceivingWorksheetTagWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-            
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->AddReceivingWorksheetTag");
-            
-            // verify the required parameter 'receivingWorksheetTag' is set
-            if (receivingWorksheetTag == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetTag' when calling ReceivingWorksheetApi->AddReceivingWorksheetTag");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/tag/{receivingWorksheetTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            if (receivingWorksheetTag != null) localVarPathParams.Add("receivingWorksheetTag", Configuration.ApiClient.ParameterToString(receivingWorksheetTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a receivingWorksheet. Adds a tag to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param>
-        /// <param name="receivingWorksheetTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddReceivingWorksheetTagAsync (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-             await AddReceivingWorksheetTagAsyncWithHttpInfo(receivingWorksheetId, receivingWorksheetTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a receivingWorksheet. Adds a tag to an existing receivingWorksheet.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to add a tag to</param>
-        /// <param name="receivingWorksheetTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddReceivingWorksheetTagAsyncWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling AddReceivingWorksheetTag");
-            // verify the required parameter 'receivingWorksheetTag' is set
-            if (receivingWorksheetTag == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetTag' when calling AddReceivingWorksheetTag");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/tag/{receivingWorksheetTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            if (receivingWorksheetTag != null) localVarPathParams.Add("receivingWorksheetTag", Configuration.ApiClient.ParameterToString(receivingWorksheetTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReceivingWorksheetTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a receivingWorksheet Deletes the receivingWorksheet identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->DeleteReceivingWorksheet");
             
     
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}";
+            var localVarPath = "/v2.0/receivingWorksheet/{receivingWorksheetId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling DeleteReceivingWorksheet");
             
     
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}";
+            var localVarPath = "/v2.0/receivingWorksheet/{receivingWorksheetId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a receivingWorksheet. Deletes an existing receivingWorksheet tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param> 
-        /// <param name="receivingWorksheetTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteReceivingWorksheetTag (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-             DeleteReceivingWorksheetTagWithHttpInfo(receivingWorksheetId, receivingWorksheetTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet. Deletes an existing receivingWorksheet tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param> 
-        /// <param name="receivingWorksheetTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteReceivingWorksheetTagWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-            
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->DeleteReceivingWorksheetTag");
-            
-            // verify the required parameter 'receivingWorksheetTag' is set
-            if (receivingWorksheetTag == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetTag' when calling ReceivingWorksheetApi->DeleteReceivingWorksheetTag");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/tag/{receivingWorksheetTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            if (receivingWorksheetTag != null) localVarPathParams.Add("receivingWorksheetTag", Configuration.ApiClient.ParameterToString(receivingWorksheetTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReceivingWorksheetTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReceivingWorksheetTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet. Deletes an existing receivingWorksheet tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param>
-        /// <param name="receivingWorksheetTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteReceivingWorksheetTagAsync (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-             await DeleteReceivingWorksheetTagAsyncWithHttpInfo(receivingWorksheetId, receivingWorksheetTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a receivingWorksheet. Deletes an existing receivingWorksheet tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to remove tag from</param>
-        /// <param name="receivingWorksheetTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteReceivingWorksheetTagAsyncWithHttpInfo (int? receivingWorksheetId, string receivingWorksheetTag)
-        {
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling DeleteReceivingWorksheetTag");
-            // verify the required parameter 'receivingWorksheetTag' is set
-            if (receivingWorksheetTag == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetTag' when calling DeleteReceivingWorksheetTag");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/tag/{receivingWorksheetTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            if (receivingWorksheetTag != null) localVarPathParams.Add("receivingWorksheetTag", Configuration.ApiClient.ParameterToString(receivingWorksheetTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReceivingWorksheetTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReceivingWorksheetTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a receivingWorksheet by id Returns a duplicated receivingWorksheet identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->GetDuplicateReceivingWorksheetById");
             
     
-            var localVarPath = "/beta/receivingWorksheet/duplicate/{receivingWorksheetId}";
+            var localVarPath = "/v2.0/receivingWorksheet/duplicate/{receivingWorksheetId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling GetDuplicateReceivingWorksheetById");
             
     
-            var localVarPath = "/beta/receivingWorksheet/duplicate/{receivingWorksheetId}";
+            var localVarPath = "/v2.0/receivingWorksheet/duplicate/{receivingWorksheetId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/receivingWorksheet/search";
+            var localVarPath = "/v2.0/receivingWorksheet/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/receivingWorksheet/search";
+            var localVarPath = "/v2.0/receivingWorksheet/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->GetReceivingWorksheetById");
             
     
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}";
+            var localVarPath = "/v2.0/receivingWorksheet/{receivingWorksheetId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling GetReceivingWorksheetById");
             
     
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}";
+            var localVarPath = "/v2.0/receivingWorksheet/{receivingWorksheetId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a receivingWorksheet. Get all existing receivingWorksheet tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param> 
-        /// <returns></returns>
-        public void GetReceivingWorksheetTags (int? receivingWorksheetId)
-        {
-             GetReceivingWorksheetTagsWithHttpInfo(receivingWorksheetId);
-        }
-
-        /// <summary>
-        /// Get the tags for a receivingWorksheet. Get all existing receivingWorksheet tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetReceivingWorksheetTagsWithHttpInfo (int? receivingWorksheetId)
-        {
-            
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null)
-                throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling ReceivingWorksheetApi->GetReceivingWorksheetTags");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReceivingWorksheetTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReceivingWorksheetTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a receivingWorksheet. Get all existing receivingWorksheet tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetReceivingWorksheetTagsAsync (int? receivingWorksheetId)
-        {
-             await GetReceivingWorksheetTagsAsyncWithHttpInfo(receivingWorksheetId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a receivingWorksheet. Get all existing receivingWorksheet tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="receivingWorksheetId">Id of the receivingWorksheet to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetReceivingWorksheetTagsAsyncWithHttpInfo (int? receivingWorksheetId)
-        {
-            // verify the required parameter 'receivingWorksheetId' is set
-            if (receivingWorksheetId == null) throw new ApiException(400, "Missing required parameter 'receivingWorksheetId' when calling GetReceivingWorksheetTags");
-            
-    
-            var localVarPath = "/beta/receivingWorksheet/{receivingWorksheetId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (receivingWorksheetId != null) localVarPathParams.Add("receivingWorksheetId", Configuration.ApiClient.ParameterToString(receivingWorksheetId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReceivingWorksheetTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReceivingWorksheetTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a receivingWorksheet Updates an existing receivingWorksheet using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ReceivingWorksheetApi->UpdateReceivingWorksheet");
             
     
-            var localVarPath = "/beta/receivingWorksheet";
+            var localVarPath = "/v2.0/receivingWorksheet";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateReceivingWorksheet");
             
     
-            var localVarPath = "/beta/receivingWorksheet";
+            var localVarPath = "/v2.0/receivingWorksheet";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ReceivingWorksheetApi->UpdateReceivingWorksheetCustomFields");
             
     
-            var localVarPath = "/beta/receivingWorksheet/customFields";
+            var localVarPath = "/v2.0/receivingWorksheet/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateReceivingWorksheetCustomFields");
             
     
-            var localVarPath = "/beta/receivingWorksheet/customFields";
+            var localVarPath = "/v2.0/receivingWorksheet/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

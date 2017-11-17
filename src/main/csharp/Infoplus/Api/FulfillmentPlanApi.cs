@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<FulfillmentPlan> AddFulfillmentPlanWithHttpInfo (FulfillmentPlan body);
         
         /// <summary>
-        /// Add new audit for a fulfillmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param>
-        /// <param name="fulfillmentPlanAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddFulfillmentPlanAudit (int? fulfillmentPlanId, string fulfillmentPlanAudit);
-  
-        /// <summary>
-        /// Add new audit for a fulfillmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param>
-        /// <param name="fulfillmentPlanAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddFulfillmentPlanAuditWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanAudit);
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param>
-        /// <param name="fulfillmentPlanTag">The tag to add</param>
-        /// <returns></returns>
-        void AddFulfillmentPlanTag (int? fulfillmentPlanId, string fulfillmentPlanTag);
-  
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param>
-        /// <param name="fulfillmentPlanTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddFulfillmentPlanTagWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag);
-        
-        /// <summary>
         /// Delete a fulfillmentPlan
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteFulfillmentPlanWithHttpInfo (int? fulfillmentPlanId);
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param>
-        /// <param name="fulfillmentPlanTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteFulfillmentPlanTag (int? fulfillmentPlanId, string fulfillmentPlanTag);
-  
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param>
-        /// <param name="fulfillmentPlanTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteFulfillmentPlanTagWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag);
         
         /// <summary>
         /// Get a duplicated a fulfillmentPlan by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<FulfillmentPlan> GetFulfillmentPlanByIdWithHttpInfo (int? fulfillmentPlanId);
         
         /// <summary>
-        /// Get the tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param>
-        /// <returns></returns>
-        void GetFulfillmentPlanTags (int? fulfillmentPlanId);
-  
-        /// <summary>
-        /// Get the tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetFulfillmentPlanTagsWithHttpInfo (int? fulfillmentPlanId);
-        
-        /// <summary>
         /// Update a fulfillmentPlan
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<FulfillmentPlan>> AddFulfillmentPlanAsyncWithHttpInfo (FulfillmentPlan body);
         
         /// <summary>
-        /// Add new audit for a fulfillmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param>
-        /// <param name="fulfillmentPlanAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddFulfillmentPlanAuditAsync (int? fulfillmentPlanId, string fulfillmentPlanAudit);
-
-        /// <summary>
-        /// Add new audit for a fulfillmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param>
-        /// <param name="fulfillmentPlanAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentPlanAuditAsyncWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanAudit);
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param>
-        /// <param name="fulfillmentPlanTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddFulfillmentPlanTagAsync (int? fulfillmentPlanId, string fulfillmentPlanTag);
-
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing fulfillmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param>
-        /// <param name="fulfillmentPlanTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentPlanTagAsyncWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag);
-        
-        /// <summary>
         /// Delete a fulfillmentPlan
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteFulfillmentPlanAsyncWithHttpInfo (int? fulfillmentPlanId);
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param>
-        /// <param name="fulfillmentPlanTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteFulfillmentPlanTagAsync (int? fulfillmentPlanId, string fulfillmentPlanTag);
-
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param>
-        /// <param name="fulfillmentPlanTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteFulfillmentPlanTagAsyncWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag);
         
         /// <summary>
         /// Get a duplicated a fulfillmentPlan by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to be returned.</param>
         /// <returns>Task of ApiResponse (FulfillmentPlan)</returns>
         System.Threading.Tasks.Task<ApiResponse<FulfillmentPlan>> GetFulfillmentPlanByIdAsyncWithHttpInfo (int? fulfillmentPlanId);
-        
-        /// <summary>
-        /// Get the tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetFulfillmentPlanTagsAsync (int? fulfillmentPlanId);
-
-        /// <summary>
-        /// Get the tags for a fulfillmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing fulfillmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetFulfillmentPlanTagsAsyncWithHttpInfo (int? fulfillmentPlanId);
         
         /// <summary>
         /// Update a fulfillmentPlan
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling FulfillmentPlanApi->AddFulfillmentPlan");
             
     
-            var localVarPath = "/beta/fulfillmentPlan";
+            var localVarPath = "/v2.0/fulfillmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddFulfillmentPlan");
             
     
-            var localVarPath = "/beta/fulfillmentPlan";
+            var localVarPath = "/v2.0/fulfillmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a fulfillmentPlan Adds an audit to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param> 
-        /// <param name="fulfillmentPlanAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddFulfillmentPlanAudit (int? fulfillmentPlanId, string fulfillmentPlanAudit)
-        {
-             AddFulfillmentPlanAuditWithHttpInfo(fulfillmentPlanId, fulfillmentPlanAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a fulfillmentPlan Adds an audit to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param> 
-        /// <param name="fulfillmentPlanAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddFulfillmentPlanAuditWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanAudit)
-        {
-            
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->AddFulfillmentPlanAudit");
-            
-            // verify the required parameter 'fulfillmentPlanAudit' is set
-            if (fulfillmentPlanAudit == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanAudit' when calling FulfillmentPlanApi->AddFulfillmentPlanAudit");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/audit/{fulfillmentPlanAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            if (fulfillmentPlanAudit != null) localVarPathParams.Add("fulfillmentPlanAudit", Configuration.ApiClient.ParameterToString(fulfillmentPlanAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a fulfillmentPlan Adds an audit to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param>
-        /// <param name="fulfillmentPlanAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddFulfillmentPlanAuditAsync (int? fulfillmentPlanId, string fulfillmentPlanAudit)
-        {
-             await AddFulfillmentPlanAuditAsyncWithHttpInfo(fulfillmentPlanId, fulfillmentPlanAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a fulfillmentPlan Adds an audit to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add an audit to</param>
-        /// <param name="fulfillmentPlanAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentPlanAuditAsyncWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanAudit)
-        {
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling AddFulfillmentPlanAudit");
-            // verify the required parameter 'fulfillmentPlanAudit' is set
-            if (fulfillmentPlanAudit == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanAudit' when calling AddFulfillmentPlanAudit");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/audit/{fulfillmentPlanAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            if (fulfillmentPlanAudit != null) localVarPathParams.Add("fulfillmentPlanAudit", Configuration.ApiClient.ParameterToString(fulfillmentPlanAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan. Adds a tag to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param> 
-        /// <param name="fulfillmentPlanTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddFulfillmentPlanTag (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-             AddFulfillmentPlanTagWithHttpInfo(fulfillmentPlanId, fulfillmentPlanTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan. Adds a tag to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param> 
-        /// <param name="fulfillmentPlanTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddFulfillmentPlanTagWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-            
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->AddFulfillmentPlanTag");
-            
-            // verify the required parameter 'fulfillmentPlanTag' is set
-            if (fulfillmentPlanTag == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanTag' when calling FulfillmentPlanApi->AddFulfillmentPlanTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/tag/{fulfillmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            if (fulfillmentPlanTag != null) localVarPathParams.Add("fulfillmentPlanTag", Configuration.ApiClient.ParameterToString(fulfillmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan. Adds a tag to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param>
-        /// <param name="fulfillmentPlanTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddFulfillmentPlanTagAsync (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-             await AddFulfillmentPlanTagAsyncWithHttpInfo(fulfillmentPlanId, fulfillmentPlanTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a fulfillmentPlan. Adds a tag to an existing fulfillmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to add a tag to</param>
-        /// <param name="fulfillmentPlanTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddFulfillmentPlanTagAsyncWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling AddFulfillmentPlanTag");
-            // verify the required parameter 'fulfillmentPlanTag' is set
-            if (fulfillmentPlanTag == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanTag' when calling AddFulfillmentPlanTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/tag/{fulfillmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            if (fulfillmentPlanTag != null) localVarPathParams.Add("fulfillmentPlanTag", Configuration.ApiClient.ParameterToString(fulfillmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddFulfillmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a fulfillmentPlan Deletes the fulfillmentPlan identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->DeleteFulfillmentPlan");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}";
+            var localVarPath = "/v2.0/fulfillmentPlan/{fulfillmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling DeleteFulfillmentPlan");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}";
+            var localVarPath = "/v2.0/fulfillmentPlan/{fulfillmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a fulfillmentPlan. Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param> 
-        /// <param name="fulfillmentPlanTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteFulfillmentPlanTag (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-             DeleteFulfillmentPlanTagWithHttpInfo(fulfillmentPlanId, fulfillmentPlanTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan. Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param> 
-        /// <param name="fulfillmentPlanTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteFulfillmentPlanTagWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-            
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->DeleteFulfillmentPlanTag");
-            
-            // verify the required parameter 'fulfillmentPlanTag' is set
-            if (fulfillmentPlanTag == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanTag' when calling FulfillmentPlanApi->DeleteFulfillmentPlanTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/tag/{fulfillmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            if (fulfillmentPlanTag != null) localVarPathParams.Add("fulfillmentPlanTag", Configuration.ApiClient.ParameterToString(fulfillmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan. Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param>
-        /// <param name="fulfillmentPlanTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteFulfillmentPlanTagAsync (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-             await DeleteFulfillmentPlanTagAsyncWithHttpInfo(fulfillmentPlanId, fulfillmentPlanTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a fulfillmentPlan. Deletes an existing fulfillmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to remove tag from</param>
-        /// <param name="fulfillmentPlanTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteFulfillmentPlanTagAsyncWithHttpInfo (int? fulfillmentPlanId, string fulfillmentPlanTag)
-        {
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling DeleteFulfillmentPlanTag");
-            // verify the required parameter 'fulfillmentPlanTag' is set
-            if (fulfillmentPlanTag == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanTag' when calling DeleteFulfillmentPlanTag");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/tag/{fulfillmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            if (fulfillmentPlanTag != null) localVarPathParams.Add("fulfillmentPlanTag", Configuration.ApiClient.ParameterToString(fulfillmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteFulfillmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a fulfillmentPlan by id Returns a duplicated fulfillmentPlan identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->GetDuplicateFulfillmentPlanById");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/duplicate/{fulfillmentPlanId}";
+            var localVarPath = "/v2.0/fulfillmentPlan/duplicate/{fulfillmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling GetDuplicateFulfillmentPlanById");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/duplicate/{fulfillmentPlanId}";
+            var localVarPath = "/v2.0/fulfillmentPlan/duplicate/{fulfillmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/fulfillmentPlan/search";
+            var localVarPath = "/v2.0/fulfillmentPlan/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/fulfillmentPlan/search";
+            var localVarPath = "/v2.0/fulfillmentPlan/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->GetFulfillmentPlanById");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}";
+            var localVarPath = "/v2.0/fulfillmentPlan/{fulfillmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling GetFulfillmentPlanById");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}";
+            var localVarPath = "/v2.0/fulfillmentPlan/{fulfillmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a fulfillmentPlan. Get all existing fulfillmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param> 
-        /// <returns></returns>
-        public void GetFulfillmentPlanTags (int? fulfillmentPlanId)
-        {
-             GetFulfillmentPlanTagsWithHttpInfo(fulfillmentPlanId);
-        }
-
-        /// <summary>
-        /// Get the tags for a fulfillmentPlan. Get all existing fulfillmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetFulfillmentPlanTagsWithHttpInfo (int? fulfillmentPlanId)
-        {
-            
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling FulfillmentPlanApi->GetFulfillmentPlanTags");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentPlanTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentPlanTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a fulfillmentPlan. Get all existing fulfillmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetFulfillmentPlanTagsAsync (int? fulfillmentPlanId)
-        {
-             await GetFulfillmentPlanTagsAsyncWithHttpInfo(fulfillmentPlanId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a fulfillmentPlan. Get all existing fulfillmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="fulfillmentPlanId">Id of the fulfillmentPlan to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetFulfillmentPlanTagsAsyncWithHttpInfo (int? fulfillmentPlanId)
-        {
-            // verify the required parameter 'fulfillmentPlanId' is set
-            if (fulfillmentPlanId == null) throw new ApiException(400, "Missing required parameter 'fulfillmentPlanId' when calling GetFulfillmentPlanTags");
-            
-    
-            var localVarPath = "/beta/fulfillmentPlan/{fulfillmentPlanId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (fulfillmentPlanId != null) localVarPathParams.Add("fulfillmentPlanId", Configuration.ApiClient.ParameterToString(fulfillmentPlanId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentPlanTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetFulfillmentPlanTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a fulfillmentPlan Updates an existing fulfillmentPlan using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling FulfillmentPlanApi->UpdateFulfillmentPlan");
             
     
-            var localVarPath = "/beta/fulfillmentPlan";
+            var localVarPath = "/v2.0/fulfillmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateFulfillmentPlan");
             
     
-            var localVarPath = "/beta/fulfillmentPlan";
+            var localVarPath = "/v2.0/fulfillmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling FulfillmentPlanApi->UpdateFulfillmentPlanCustomFields");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/customFields";
+            var localVarPath = "/v2.0/fulfillmentPlan/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateFulfillmentPlanCustomFields");
             
     
-            var localVarPath = "/beta/fulfillmentPlan/customFields";
+            var localVarPath = "/v2.0/fulfillmentPlan/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

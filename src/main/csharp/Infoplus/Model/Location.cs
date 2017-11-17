@@ -36,11 +36,10 @@ namespace Infoplus.Model
         /// <param name="Number">Number.</param>
         /// <param name="Online">Online (required) (default to false).</param>
         /// <param name="PriorityCode">PriorityCode.</param>
-        /// <param name="Cost">Cost.</param>
         /// <param name="AllowItemMixing">AllowItemMixing (required) (default to false).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Location(int? WarehouseId = null, int? BuildingId = null, int? ZoneId = null, int? AisleId = null, int? BillingTypeId = null, string BehaviorType = null, int? FootprintId = null, int? AddressSchemeId = null, string Address = null, int? Level = null, int? Bay = null, int? Number = null, bool? Online = null, int? PriorityCode = null, int? Cost = null, bool? AllowItemMixing = null, Dictionary<string, Object> CustomFields = null)
+        public Location(int? WarehouseId = null, int? BuildingId = null, int? ZoneId = null, int? AisleId = null, int? BillingTypeId = null, string BehaviorType = null, int? FootprintId = null, int? AddressSchemeId = null, string Address = null, int? Level = null, int? Bay = null, int? Number = null, bool? Online = null, int? PriorityCode = null, bool? AllowItemMixing = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "WarehouseId" is required (not null)
             if (WarehouseId == null)
@@ -105,7 +104,6 @@ namespace Infoplus.Model
             this.Bay = Bay;
             this.Number = Number;
             this.PriorityCode = PriorityCode;
-            this.Cost = Cost;
             this.CustomFields = CustomFields;
             
         }
@@ -208,12 +206,6 @@ namespace Infoplus.Model
         public int? PriorityCode { get; set; }
     
         /// <summary>
-        /// Gets or Sets Cost
-        /// </summary>
-        [DataMember(Name="cost", EmitDefaultValue=false)]
-        public int? Cost { get; set; }
-    
-        /// <summary>
         /// Gets or Sets AllowItemMixing
         /// </summary>
         [DataMember(Name="allowItemMixing", EmitDefaultValue=false)]
@@ -261,7 +253,6 @@ namespace Infoplus.Model
             sb.Append("  Number: ").Append(Number).Append("\n");
             sb.Append("  Online: ").Append(Online).Append("\n");
             sb.Append("  PriorityCode: ").Append(PriorityCode).Append("\n");
-            sb.Append("  Cost: ").Append(Cost).Append("\n");
             sb.Append("  AllowItemMixing: ").Append(AllowItemMixing).Append("\n");
             sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
@@ -384,11 +375,6 @@ namespace Infoplus.Model
                     this.PriorityCode.Equals(other.PriorityCode)
                 ) && 
                 (
-                    this.Cost == other.Cost ||
-                    this.Cost != null &&
-                    this.Cost.Equals(other.Cost)
-                ) && 
-                (
                     this.AllowItemMixing == other.AllowItemMixing ||
                     this.AllowItemMixing != null &&
                     this.AllowItemMixing.Equals(other.AllowItemMixing)
@@ -469,9 +455,6 @@ namespace Infoplus.Model
                 
                 if (this.PriorityCode != null)
                     hash = hash * 59 + this.PriorityCode.GetHashCode();
-                
-                if (this.Cost != null)
-                    hash = hash * 59 + this.Cost.GetHashCode();
                 
                 if (this.AllowItemMixing != null)
                     hash = hash * 59 + this.AllowItemMixing.GetHashCode();

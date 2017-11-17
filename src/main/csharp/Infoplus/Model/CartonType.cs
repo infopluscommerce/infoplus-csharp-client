@@ -33,10 +33,9 @@ namespace Infoplus.Model
         /// <param name="WeightLbs">WeightLbs.</param>
         /// <param name="LobId">LobId (required).</param>
         /// <param name="IsActive">IsActive (required) (default to false).</param>
-        /// <param name="PredefinedPackageTypeId">PredefinedPackageTypeId.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public CartonType(string Abbreviation = null, string Name = null, double? LengthIn = null, double? WidthIn = null, double? HeightIn = null, double? InnerLengthIn = null, double? InnerWidthIn = null, double? InnerHeightIn = null, double? WeightLbs = null, int? LobId = null, bool? IsActive = null, int? PredefinedPackageTypeId = null, Dictionary<string, Object> CustomFields = null)
+        public CartonType(string Abbreviation = null, string Name = null, double? LengthIn = null, double? WidthIn = null, double? HeightIn = null, double? InnerLengthIn = null, double? InnerWidthIn = null, double? InnerHeightIn = null, double? WeightLbs = null, int? LobId = null, bool? IsActive = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "Abbreviation" is required (not null)
             if (Abbreviation == null)
@@ -129,7 +128,6 @@ namespace Infoplus.Model
                 this.IsActive = IsActive;
             }
             this.WeightLbs = WeightLbs;
-            this.PredefinedPackageTypeId = PredefinedPackageTypeId;
             this.CustomFields = CustomFields;
             
         }
@@ -208,12 +206,6 @@ namespace Infoplus.Model
         public bool? IsActive { get; set; }
     
         /// <summary>
-        /// Gets or Sets PredefinedPackageTypeId
-        /// </summary>
-        [DataMember(Name="predefinedPackageTypeId", EmitDefaultValue=false)]
-        public int? PredefinedPackageTypeId { get; set; }
-    
-        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -239,7 +231,6 @@ namespace Infoplus.Model
             sb.Append("  WeightLbs: ").Append(WeightLbs).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
             sb.Append("  IsActive: ").Append(IsActive).Append("\n");
-            sb.Append("  PredefinedPackageTypeId: ").Append(PredefinedPackageTypeId).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -339,11 +330,6 @@ namespace Infoplus.Model
                     this.IsActive.Equals(other.IsActive)
                 ) && 
                 (
-                    this.PredefinedPackageTypeId == other.PredefinedPackageTypeId ||
-                    this.PredefinedPackageTypeId != null &&
-                    this.PredefinedPackageTypeId.Equals(other.PredefinedPackageTypeId)
-                ) && 
-                (
                     this.CustomFields == other.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(other.CustomFields)
@@ -397,9 +383,6 @@ namespace Infoplus.Model
                 
                 if (this.IsActive != null)
                     hash = hash * 59 + this.IsActive.GetHashCode();
-                
-                if (this.PredefinedPackageTypeId != null)
-                    hash = hash * 59 + this.PredefinedPackageTypeId.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

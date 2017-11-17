@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ReplenishmentPlan> AddReplenishmentPlanWithHttpInfo (ReplenishmentPlan body);
         
         /// <summary>
-        /// Add new audit for a replenishmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param>
-        /// <param name="replenishmentPlanAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddReplenishmentPlanAudit (int? replenishmentPlanId, string replenishmentPlanAudit);
-  
-        /// <summary>
-        /// Add new audit for a replenishmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param>
-        /// <param name="replenishmentPlanAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddReplenishmentPlanAuditWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanAudit);
-        
-        /// <summary>
-        /// Add new tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param>
-        /// <param name="replenishmentPlanTag">The tag to add</param>
-        /// <returns></returns>
-        void AddReplenishmentPlanTag (int? replenishmentPlanId, string replenishmentPlanTag);
-  
-        /// <summary>
-        /// Add new tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param>
-        /// <param name="replenishmentPlanTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddReplenishmentPlanTagWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag);
-        
-        /// <summary>
         /// Delete a replenishmentPlan
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="replenishmentPlanId">Id of the replenishmentPlan to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteReplenishmentPlanWithHttpInfo (int? replenishmentPlanId);
-        
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing replenishmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param>
-        /// <param name="replenishmentPlanTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteReplenishmentPlanTag (int? replenishmentPlanId, string replenishmentPlanTag);
-  
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing replenishmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param>
-        /// <param name="replenishmentPlanTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteReplenishmentPlanTagWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag);
         
         /// <summary>
         /// Get a duplicated a replenishmentPlan by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ReplenishmentPlan> GetReplenishmentPlanByIdWithHttpInfo (int? replenishmentPlanId);
         
         /// <summary>
-        /// Get the tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing replenishmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param>
-        /// <returns></returns>
-        void GetReplenishmentPlanTags (int? replenishmentPlanId);
-  
-        /// <summary>
-        /// Get the tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing replenishmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetReplenishmentPlanTagsWithHttpInfo (int? replenishmentPlanId);
-        
-        /// <summary>
         /// Update a replenishmentPlan
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ReplenishmentPlan>> AddReplenishmentPlanAsyncWithHttpInfo (ReplenishmentPlan body);
         
         /// <summary>
-        /// Add new audit for a replenishmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param>
-        /// <param name="replenishmentPlanAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddReplenishmentPlanAuditAsync (int? replenishmentPlanId, string replenishmentPlanAudit);
-
-        /// <summary>
-        /// Add new audit for a replenishmentPlan
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param>
-        /// <param name="replenishmentPlanAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddReplenishmentPlanAuditAsyncWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanAudit);
-        
-        /// <summary>
-        /// Add new tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param>
-        /// <param name="replenishmentPlanTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddReplenishmentPlanTagAsync (int? replenishmentPlanId, string replenishmentPlanTag);
-
-        /// <summary>
-        /// Add new tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing replenishmentPlan.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param>
-        /// <param name="replenishmentPlanTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddReplenishmentPlanTagAsyncWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag);
-        
-        /// <summary>
         /// Delete a replenishmentPlan
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="replenishmentPlanId">Id of the replenishmentPlan to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteReplenishmentPlanAsyncWithHttpInfo (int? replenishmentPlanId);
-        
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing replenishmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param>
-        /// <param name="replenishmentPlanTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteReplenishmentPlanTagAsync (int? replenishmentPlanId, string replenishmentPlanTag);
-
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing replenishmentPlan tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param>
-        /// <param name="replenishmentPlanTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteReplenishmentPlanTagAsyncWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag);
         
         /// <summary>
         /// Get a duplicated a replenishmentPlan by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="replenishmentPlanId">Id of the replenishmentPlan to be returned.</param>
         /// <returns>Task of ApiResponse (ReplenishmentPlan)</returns>
         System.Threading.Tasks.Task<ApiResponse<ReplenishmentPlan>> GetReplenishmentPlanByIdAsyncWithHttpInfo (int? replenishmentPlanId);
-        
-        /// <summary>
-        /// Get the tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing replenishmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetReplenishmentPlanTagsAsync (int? replenishmentPlanId);
-
-        /// <summary>
-        /// Get the tags for a replenishmentPlan.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing replenishmentPlan tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetReplenishmentPlanTagsAsyncWithHttpInfo (int? replenishmentPlanId);
         
         /// <summary>
         /// Update a replenishmentPlan
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ReplenishmentPlanApi->AddReplenishmentPlan");
             
     
-            var localVarPath = "/beta/replenishmentPlan";
+            var localVarPath = "/v2.0/replenishmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddReplenishmentPlan");
             
     
-            var localVarPath = "/beta/replenishmentPlan";
+            var localVarPath = "/v2.0/replenishmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a replenishmentPlan Adds an audit to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param> 
-        /// <param name="replenishmentPlanAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddReplenishmentPlanAudit (int? replenishmentPlanId, string replenishmentPlanAudit)
-        {
-             AddReplenishmentPlanAuditWithHttpInfo(replenishmentPlanId, replenishmentPlanAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a replenishmentPlan Adds an audit to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param> 
-        /// <param name="replenishmentPlanAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddReplenishmentPlanAuditWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanAudit)
-        {
-            
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->AddReplenishmentPlanAudit");
-            
-            // verify the required parameter 'replenishmentPlanAudit' is set
-            if (replenishmentPlanAudit == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanAudit' when calling ReplenishmentPlanApi->AddReplenishmentPlanAudit");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/audit/{replenishmentPlanAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            if (replenishmentPlanAudit != null) localVarPathParams.Add("replenishmentPlanAudit", Configuration.ApiClient.ParameterToString(replenishmentPlanAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a replenishmentPlan Adds an audit to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param>
-        /// <param name="replenishmentPlanAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddReplenishmentPlanAuditAsync (int? replenishmentPlanId, string replenishmentPlanAudit)
-        {
-             await AddReplenishmentPlanAuditAsyncWithHttpInfo(replenishmentPlanId, replenishmentPlanAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a replenishmentPlan Adds an audit to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add an audit to</param>
-        /// <param name="replenishmentPlanAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddReplenishmentPlanAuditAsyncWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanAudit)
-        {
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling AddReplenishmentPlanAudit");
-            // verify the required parameter 'replenishmentPlanAudit' is set
-            if (replenishmentPlanAudit == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanAudit' when calling AddReplenishmentPlanAudit");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/audit/{replenishmentPlanAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            if (replenishmentPlanAudit != null) localVarPathParams.Add("replenishmentPlanAudit", Configuration.ApiClient.ParameterToString(replenishmentPlanAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a replenishmentPlan. Adds a tag to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param> 
-        /// <param name="replenishmentPlanTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddReplenishmentPlanTag (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-             AddReplenishmentPlanTagWithHttpInfo(replenishmentPlanId, replenishmentPlanTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a replenishmentPlan. Adds a tag to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param> 
-        /// <param name="replenishmentPlanTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddReplenishmentPlanTagWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-            
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->AddReplenishmentPlanTag");
-            
-            // verify the required parameter 'replenishmentPlanTag' is set
-            if (replenishmentPlanTag == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanTag' when calling ReplenishmentPlanApi->AddReplenishmentPlanTag");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/tag/{replenishmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            if (replenishmentPlanTag != null) localVarPathParams.Add("replenishmentPlanTag", Configuration.ApiClient.ParameterToString(replenishmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a replenishmentPlan. Adds a tag to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param>
-        /// <param name="replenishmentPlanTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddReplenishmentPlanTagAsync (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-             await AddReplenishmentPlanTagAsyncWithHttpInfo(replenishmentPlanId, replenishmentPlanTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a replenishmentPlan. Adds a tag to an existing replenishmentPlan.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to add a tag to</param>
-        /// <param name="replenishmentPlanTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddReplenishmentPlanTagAsyncWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling AddReplenishmentPlanTag");
-            // verify the required parameter 'replenishmentPlanTag' is set
-            if (replenishmentPlanTag == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanTag' when calling AddReplenishmentPlanTag");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/tag/{replenishmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            if (replenishmentPlanTag != null) localVarPathParams.Add("replenishmentPlanTag", Configuration.ApiClient.ParameterToString(replenishmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddReplenishmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a replenishmentPlan Deletes the replenishmentPlan identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->DeleteReplenishmentPlan");
             
     
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}";
+            var localVarPath = "/v2.0/replenishmentPlan/{replenishmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling DeleteReplenishmentPlan");
             
     
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}";
+            var localVarPath = "/v2.0/replenishmentPlan/{replenishmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a replenishmentPlan. Deletes an existing replenishmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param> 
-        /// <param name="replenishmentPlanTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteReplenishmentPlanTag (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-             DeleteReplenishmentPlanTagWithHttpInfo(replenishmentPlanId, replenishmentPlanTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan. Deletes an existing replenishmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param> 
-        /// <param name="replenishmentPlanTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteReplenishmentPlanTagWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-            
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->DeleteReplenishmentPlanTag");
-            
-            // verify the required parameter 'replenishmentPlanTag' is set
-            if (replenishmentPlanTag == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanTag' when calling ReplenishmentPlanApi->DeleteReplenishmentPlanTag");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/tag/{replenishmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            if (replenishmentPlanTag != null) localVarPathParams.Add("replenishmentPlanTag", Configuration.ApiClient.ParameterToString(replenishmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReplenishmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReplenishmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan. Deletes an existing replenishmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param>
-        /// <param name="replenishmentPlanTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteReplenishmentPlanTagAsync (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-             await DeleteReplenishmentPlanTagAsyncWithHttpInfo(replenishmentPlanId, replenishmentPlanTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a replenishmentPlan. Deletes an existing replenishmentPlan tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to remove tag from</param>
-        /// <param name="replenishmentPlanTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteReplenishmentPlanTagAsyncWithHttpInfo (int? replenishmentPlanId, string replenishmentPlanTag)
-        {
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling DeleteReplenishmentPlanTag");
-            // verify the required parameter 'replenishmentPlanTag' is set
-            if (replenishmentPlanTag == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanTag' when calling DeleteReplenishmentPlanTag");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/tag/{replenishmentPlanTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            if (replenishmentPlanTag != null) localVarPathParams.Add("replenishmentPlanTag", Configuration.ApiClient.ParameterToString(replenishmentPlanTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReplenishmentPlanTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteReplenishmentPlanTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a replenishmentPlan by id Returns a duplicated replenishmentPlan identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->GetDuplicateReplenishmentPlanById");
             
     
-            var localVarPath = "/beta/replenishmentPlan/duplicate/{replenishmentPlanId}";
+            var localVarPath = "/v2.0/replenishmentPlan/duplicate/{replenishmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling GetDuplicateReplenishmentPlanById");
             
     
-            var localVarPath = "/beta/replenishmentPlan/duplicate/{replenishmentPlanId}";
+            var localVarPath = "/v2.0/replenishmentPlan/duplicate/{replenishmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/replenishmentPlan/search";
+            var localVarPath = "/v2.0/replenishmentPlan/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/replenishmentPlan/search";
+            var localVarPath = "/v2.0/replenishmentPlan/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->GetReplenishmentPlanById");
             
     
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}";
+            var localVarPath = "/v2.0/replenishmentPlan/{replenishmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling GetReplenishmentPlanById");
             
     
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}";
+            var localVarPath = "/v2.0/replenishmentPlan/{replenishmentPlanId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a replenishmentPlan. Get all existing replenishmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param> 
-        /// <returns></returns>
-        public void GetReplenishmentPlanTags (int? replenishmentPlanId)
-        {
-             GetReplenishmentPlanTagsWithHttpInfo(replenishmentPlanId);
-        }
-
-        /// <summary>
-        /// Get the tags for a replenishmentPlan. Get all existing replenishmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetReplenishmentPlanTagsWithHttpInfo (int? replenishmentPlanId)
-        {
-            
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null)
-                throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling ReplenishmentPlanApi->GetReplenishmentPlanTags");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentPlanTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentPlanTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a replenishmentPlan. Get all existing replenishmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetReplenishmentPlanTagsAsync (int? replenishmentPlanId)
-        {
-             await GetReplenishmentPlanTagsAsyncWithHttpInfo(replenishmentPlanId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a replenishmentPlan. Get all existing replenishmentPlan tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="replenishmentPlanId">Id of the replenishmentPlan to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetReplenishmentPlanTagsAsyncWithHttpInfo (int? replenishmentPlanId)
-        {
-            // verify the required parameter 'replenishmentPlanId' is set
-            if (replenishmentPlanId == null) throw new ApiException(400, "Missing required parameter 'replenishmentPlanId' when calling GetReplenishmentPlanTags");
-            
-    
-            var localVarPath = "/beta/replenishmentPlan/{replenishmentPlanId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (replenishmentPlanId != null) localVarPathParams.Add("replenishmentPlanId", Configuration.ApiClient.ParameterToString(replenishmentPlanId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentPlanTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetReplenishmentPlanTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a replenishmentPlan Updates an existing replenishmentPlan using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ReplenishmentPlanApi->UpdateReplenishmentPlan");
             
     
-            var localVarPath = "/beta/replenishmentPlan";
+            var localVarPath = "/v2.0/replenishmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateReplenishmentPlan");
             
     
-            var localVarPath = "/beta/replenishmentPlan";
+            var localVarPath = "/v2.0/replenishmentPlan";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ReplenishmentPlanApi->UpdateReplenishmentPlanCustomFields");
             
     
-            var localVarPath = "/beta/replenishmentPlan/customFields";
+            var localVarPath = "/v2.0/replenishmentPlan/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateReplenishmentPlanCustomFields");
             
     
-            var localVarPath = "/beta/replenishmentPlan/customFields";
+            var localVarPath = "/v2.0/replenishmentPlan/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

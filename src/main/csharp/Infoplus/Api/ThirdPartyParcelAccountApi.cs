@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<ThirdPartyParcelAccount> AddThirdPartyParcelAccountWithHttpInfo (ThirdPartyParcelAccount body);
         
         /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param>
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddThirdPartyParcelAccountAudit (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit);
-  
-        /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param>
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddThirdPartyParcelAccountAuditWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit);
-        
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param>
-        /// <returns></returns>
-        void AddThirdPartyParcelAccountTag (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
-  
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddThirdPartyParcelAccountTagWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
-        
-        /// <summary>
         /// Delete a thirdPartyParcelAccount
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteThirdPartyParcelAccountWithHttpInfo (int? thirdPartyParcelAccountId);
-        
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteThirdPartyParcelAccountTag (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
-  
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteThirdPartyParcelAccountTagWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
         
         /// <summary>
         /// Get a duplicated a thirdPartyParcelAccount by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<ThirdPartyParcelAccount> GetThirdPartyParcelAccountByIdWithHttpInfo (int? thirdPartyParcelAccountId);
         
         /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing thirdPartyParcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param>
-        /// <returns></returns>
-        void GetThirdPartyParcelAccountTags (int? thirdPartyParcelAccountId);
-  
-        /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing thirdPartyParcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetThirdPartyParcelAccountTagsWithHttpInfo (int? thirdPartyParcelAccountId);
-        
-        /// <summary>
         /// Update a thirdPartyParcelAccount
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<ThirdPartyParcelAccount>> AddThirdPartyParcelAccountAsyncWithHttpInfo (ThirdPartyParcelAccount body);
         
         /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param>
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddThirdPartyParcelAccountAuditAsync (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit);
-
-        /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param>
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddThirdPartyParcelAccountAuditAsyncWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit);
-        
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddThirdPartyParcelAccountTagAsync (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
-
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing thirdPartyParcelAccount.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddThirdPartyParcelAccountTagAsyncWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
-        
-        /// <summary>
         /// Delete a thirdPartyParcelAccount
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteThirdPartyParcelAccountAsyncWithHttpInfo (int? thirdPartyParcelAccountId);
-        
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteThirdPartyParcelAccountTagAsync (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
-
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteThirdPartyParcelAccountTagAsyncWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag);
         
         /// <summary>
         /// Get a duplicated a thirdPartyParcelAccount by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to be returned.</param>
         /// <returns>Task of ApiResponse (ThirdPartyParcelAccount)</returns>
         System.Threading.Tasks.Task<ApiResponse<ThirdPartyParcelAccount>> GetThirdPartyParcelAccountByIdAsyncWithHttpInfo (int? thirdPartyParcelAccountId);
-        
-        /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing thirdPartyParcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetThirdPartyParcelAccountTagsAsync (int? thirdPartyParcelAccountId);
-
-        /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing thirdPartyParcelAccount tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetThirdPartyParcelAccountTagsAsyncWithHttpInfo (int? thirdPartyParcelAccountId);
         
         /// <summary>
         /// Update a thirdPartyParcelAccount
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ThirdPartyParcelAccountApi->AddThirdPartyParcelAccount");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddThirdPartyParcelAccount");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount Adds an audit to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param> 
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddThirdPartyParcelAccountAudit (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit)
-        {
-             AddThirdPartyParcelAccountAuditWithHttpInfo(thirdPartyParcelAccountId, thirdPartyParcelAccountAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount Adds an audit to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param> 
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddThirdPartyParcelAccountAuditWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit)
-        {
-            
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->AddThirdPartyParcelAccountAudit");
-            
-            // verify the required parameter 'thirdPartyParcelAccountAudit' is set
-            if (thirdPartyParcelAccountAudit == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountAudit' when calling ThirdPartyParcelAccountApi->AddThirdPartyParcelAccountAudit");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/audit/{thirdPartyParcelAccountAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            if (thirdPartyParcelAccountAudit != null) localVarPathParams.Add("thirdPartyParcelAccountAudit", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount Adds an audit to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param>
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddThirdPartyParcelAccountAuditAsync (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit)
-        {
-             await AddThirdPartyParcelAccountAuditAsyncWithHttpInfo(thirdPartyParcelAccountId, thirdPartyParcelAccountAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a thirdPartyParcelAccount Adds an audit to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add an audit to</param>
-        /// <param name="thirdPartyParcelAccountAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddThirdPartyParcelAccountAuditAsyncWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountAudit)
-        {
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling AddThirdPartyParcelAccountAudit");
-            // verify the required parameter 'thirdPartyParcelAccountAudit' is set
-            if (thirdPartyParcelAccountAudit == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountAudit' when calling AddThirdPartyParcelAccountAudit");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/audit/{thirdPartyParcelAccountAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            if (thirdPartyParcelAccountAudit != null) localVarPathParams.Add("thirdPartyParcelAccountAudit", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount. Adds a tag to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param> 
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddThirdPartyParcelAccountTag (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-             AddThirdPartyParcelAccountTagWithHttpInfo(thirdPartyParcelAccountId, thirdPartyParcelAccountTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount. Adds a tag to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param> 
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddThirdPartyParcelAccountTagWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-            
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->AddThirdPartyParcelAccountTag");
-            
-            // verify the required parameter 'thirdPartyParcelAccountTag' is set
-            if (thirdPartyParcelAccountTag == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountTag' when calling ThirdPartyParcelAccountApi->AddThirdPartyParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/tag/{thirdPartyParcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            if (thirdPartyParcelAccountTag != null) localVarPathParams.Add("thirdPartyParcelAccountTag", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount. Adds a tag to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddThirdPartyParcelAccountTagAsync (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-             await AddThirdPartyParcelAccountTagAsyncWithHttpInfo(thirdPartyParcelAccountId, thirdPartyParcelAccountTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a thirdPartyParcelAccount. Adds a tag to an existing thirdPartyParcelAccount.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to add a tag to</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddThirdPartyParcelAccountTagAsyncWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling AddThirdPartyParcelAccountTag");
-            // verify the required parameter 'thirdPartyParcelAccountTag' is set
-            if (thirdPartyParcelAccountTag == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountTag' when calling AddThirdPartyParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/tag/{thirdPartyParcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            if (thirdPartyParcelAccountTag != null) localVarPathParams.Add("thirdPartyParcelAccountTag", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddThirdPartyParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a thirdPartyParcelAccount Deletes the thirdPartyParcelAccount identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->DeleteThirdPartyParcelAccount");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling DeleteThirdPartyParcelAccount");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount. Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param> 
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteThirdPartyParcelAccountTag (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-             DeleteThirdPartyParcelAccountTagWithHttpInfo(thirdPartyParcelAccountId, thirdPartyParcelAccountTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount. Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param> 
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteThirdPartyParcelAccountTagWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-            
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->DeleteThirdPartyParcelAccountTag");
-            
-            // verify the required parameter 'thirdPartyParcelAccountTag' is set
-            if (thirdPartyParcelAccountTag == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountTag' when calling ThirdPartyParcelAccountApi->DeleteThirdPartyParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/tag/{thirdPartyParcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            if (thirdPartyParcelAccountTag != null) localVarPathParams.Add("thirdPartyParcelAccountTag", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteThirdPartyParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteThirdPartyParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount. Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteThirdPartyParcelAccountTagAsync (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-             await DeleteThirdPartyParcelAccountTagAsyncWithHttpInfo(thirdPartyParcelAccountId, thirdPartyParcelAccountTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a thirdPartyParcelAccount. Deletes an existing thirdPartyParcelAccount tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to remove tag from</param>
-        /// <param name="thirdPartyParcelAccountTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteThirdPartyParcelAccountTagAsyncWithHttpInfo (int? thirdPartyParcelAccountId, string thirdPartyParcelAccountTag)
-        {
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling DeleteThirdPartyParcelAccountTag");
-            // verify the required parameter 'thirdPartyParcelAccountTag' is set
-            if (thirdPartyParcelAccountTag == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountTag' when calling DeleteThirdPartyParcelAccountTag");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/tag/{thirdPartyParcelAccountTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            if (thirdPartyParcelAccountTag != null) localVarPathParams.Add("thirdPartyParcelAccountTag", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteThirdPartyParcelAccountTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteThirdPartyParcelAccountTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a thirdPartyParcelAccount by id Returns a duplicated thirdPartyParcelAccount identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->GetDuplicateThirdPartyParcelAccountById");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/duplicate/{thirdPartyParcelAccountId}";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/duplicate/{thirdPartyParcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling GetDuplicateThirdPartyParcelAccountById");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/duplicate/{thirdPartyParcelAccountId}";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/duplicate/{thirdPartyParcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/search";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/search";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->GetThirdPartyParcelAccountById");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling GetThirdPartyParcelAccountById");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/{thirdPartyParcelAccountId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount. Get all existing thirdPartyParcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param> 
-        /// <returns></returns>
-        public void GetThirdPartyParcelAccountTags (int? thirdPartyParcelAccountId)
-        {
-             GetThirdPartyParcelAccountTagsWithHttpInfo(thirdPartyParcelAccountId);
-        }
-
-        /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount. Get all existing thirdPartyParcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetThirdPartyParcelAccountTagsWithHttpInfo (int? thirdPartyParcelAccountId)
-        {
-            
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null)
-                throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling ThirdPartyParcelAccountApi->GetThirdPartyParcelAccountTags");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetThirdPartyParcelAccountTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetThirdPartyParcelAccountTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount. Get all existing thirdPartyParcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetThirdPartyParcelAccountTagsAsync (int? thirdPartyParcelAccountId)
-        {
-             await GetThirdPartyParcelAccountTagsAsyncWithHttpInfo(thirdPartyParcelAccountId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a thirdPartyParcelAccount. Get all existing thirdPartyParcelAccount tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="thirdPartyParcelAccountId">Id of the thirdPartyParcelAccount to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetThirdPartyParcelAccountTagsAsyncWithHttpInfo (int? thirdPartyParcelAccountId)
-        {
-            // verify the required parameter 'thirdPartyParcelAccountId' is set
-            if (thirdPartyParcelAccountId == null) throw new ApiException(400, "Missing required parameter 'thirdPartyParcelAccountId' when calling GetThirdPartyParcelAccountTags");
-            
-    
-            var localVarPath = "/beta/thirdPartyParcelAccount/{thirdPartyParcelAccountId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (thirdPartyParcelAccountId != null) localVarPathParams.Add("thirdPartyParcelAccountId", Configuration.ApiClient.ParameterToString(thirdPartyParcelAccountId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetThirdPartyParcelAccountTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetThirdPartyParcelAccountTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a thirdPartyParcelAccount Updates an existing thirdPartyParcelAccount using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ThirdPartyParcelAccountApi->UpdateThirdPartyParcelAccount");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateThirdPartyParcelAccount");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling ThirdPartyParcelAccountApi->UpdateThirdPartyParcelAccountCustomFields");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/customFields";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateThirdPartyParcelAccountCustomFields");
             
     
-            var localVarPath = "/beta/thirdPartyParcelAccount/customFields";
+            var localVarPath = "/v2.0/thirdPartyParcelAccount/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

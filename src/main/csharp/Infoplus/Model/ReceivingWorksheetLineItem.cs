@@ -31,7 +31,6 @@ namespace Infoplus.Model
         /// <param name="WeightPerWrap">WeightPerWrap (required).</param>
         /// <param name="WeightPerCase">WeightPerCase.</param>
         /// <param name="ProductionLot">ProductionLot.</param>
-        /// <param name="ProductIdTag">ProductIdTag.</param>
         /// <param name="RevisionDate">RevisionDate.</param>
         /// <param name="Origin">Origin.</param>
         /// <param name="CartonLength">CartonLength.</param>
@@ -41,7 +40,7 @@ namespace Infoplus.Model
         /// <param name="Quantity">Quantity.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ReceivingWorksheetLineItem(int? ReceivingQty = null, string UnitCode = null, string WrapCode = null, int? UnitsPerWrap = null, int? UnitsPerCase = null, int? CasesPerPallet = null, double? WeightPerWrap = null, double? WeightPerCase = null, string ProductionLot = null, string ProductIdTag = null, string RevisionDate = null, string Origin = null, double? CartonLength = null, double? CartonWidth = null, double? CartonHeight = null, List<ReceivingWorksheetPutAwayPlan> PutAwayPlans = null, int? Quantity = null, Dictionary<string, Object> CustomFields = null)
+        public ReceivingWorksheetLineItem(int? ReceivingQty = null, string UnitCode = null, string WrapCode = null, int? UnitsPerWrap = null, int? UnitsPerCase = null, int? CasesPerPallet = null, double? WeightPerWrap = null, double? WeightPerCase = null, string ProductionLot = null, string RevisionDate = null, string Origin = null, double? CartonLength = null, double? CartonWidth = null, double? CartonHeight = null, List<ReceivingWorksheetPutAwayPlan> PutAwayPlans = null, int? Quantity = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "ReceivingQty" is required (not null)
             if (ReceivingQty == null)
@@ -84,7 +83,6 @@ namespace Infoplus.Model
             this.CasesPerPallet = CasesPerPallet;
             this.WeightPerCase = WeightPerCase;
             this.ProductionLot = ProductionLot;
-            this.ProductIdTag = ProductIdTag;
             this.RevisionDate = RevisionDate;
             this.Origin = Origin;
             this.CartonLength = CartonLength;
@@ -102,12 +100,6 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="sku", EmitDefaultValue=false)]
         public string Sku { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets Sku2
-        /// </summary>
-        [DataMember(Name="sku2", EmitDefaultValue=false)]
-        public string Sku2 { get; private set; }
     
         /// <summary>
         /// Gets or Sets FullDescription
@@ -188,12 +180,6 @@ namespace Infoplus.Model
         public string ProductionLot { get; set; }
     
         /// <summary>
-        /// Gets or Sets ProductIdTag
-        /// </summary>
-        [DataMember(Name="productIdTag", EmitDefaultValue=false)]
-        public string ProductIdTag { get; set; }
-    
-        /// <summary>
         /// Gets or Sets RevisionDate
         /// </summary>
         [DataMember(Name="revisionDate", EmitDefaultValue=false)]
@@ -250,7 +236,6 @@ namespace Infoplus.Model
             var sb = new StringBuilder();
             sb.Append("class ReceivingWorksheetLineItem {\n");
             sb.Append("  Sku: ").Append(Sku).Append("\n");
-            sb.Append("  Sku2: ").Append(Sku2).Append("\n");
             sb.Append("  FullDescription: ").Append(FullDescription).Append("\n");
             sb.Append("  OrderedQty: ").Append(OrderedQty).Append("\n");
             sb.Append("  PrevReceivedQty: ").Append(PrevReceivedQty).Append("\n");
@@ -264,7 +249,6 @@ namespace Infoplus.Model
             sb.Append("  WeightPerWrap: ").Append(WeightPerWrap).Append("\n");
             sb.Append("  WeightPerCase: ").Append(WeightPerCase).Append("\n");
             sb.Append("  ProductionLot: ").Append(ProductionLot).Append("\n");
-            sb.Append("  ProductIdTag: ").Append(ProductIdTag).Append("\n");
             sb.Append("  RevisionDate: ").Append(RevisionDate).Append("\n");
             sb.Append("  Origin: ").Append(Origin).Append("\n");
             sb.Append("  CartonLength: ").Append(CartonLength).Append("\n");
@@ -314,11 +298,6 @@ namespace Infoplus.Model
                     this.Sku == other.Sku ||
                     this.Sku != null &&
                     this.Sku.Equals(other.Sku)
-                ) && 
-                (
-                    this.Sku2 == other.Sku2 ||
-                    this.Sku2 != null &&
-                    this.Sku2.Equals(other.Sku2)
                 ) && 
                 (
                     this.FullDescription == other.FullDescription ||
@@ -386,11 +365,6 @@ namespace Infoplus.Model
                     this.ProductionLot.Equals(other.ProductionLot)
                 ) && 
                 (
-                    this.ProductIdTag == other.ProductIdTag ||
-                    this.ProductIdTag != null &&
-                    this.ProductIdTag.Equals(other.ProductIdTag)
-                ) && 
-                (
                     this.RevisionDate == other.RevisionDate ||
                     this.RevisionDate != null &&
                     this.RevisionDate.Equals(other.RevisionDate)
@@ -447,9 +421,6 @@ namespace Infoplus.Model
                 if (this.Sku != null)
                     hash = hash * 59 + this.Sku.GetHashCode();
                 
-                if (this.Sku2 != null)
-                    hash = hash * 59 + this.Sku2.GetHashCode();
-                
                 if (this.FullDescription != null)
                     hash = hash * 59 + this.FullDescription.GetHashCode();
                 
@@ -488,9 +459,6 @@ namespace Infoplus.Model
                 
                 if (this.ProductionLot != null)
                     hash = hash * 59 + this.ProductionLot.GetHashCode();
-                
-                if (this.ProductIdTag != null)
-                    hash = hash * 59 + this.ProductIdTag.GetHashCode();
                 
                 if (this.RevisionDate != null)
                     hash = hash * 59 + this.RevisionDate.GetHashCode();

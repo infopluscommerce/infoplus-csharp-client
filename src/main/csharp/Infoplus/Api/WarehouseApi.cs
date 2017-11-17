@@ -18,78 +18,6 @@ namespace Infoplus.Api
         #region Synchronous Operations
         
         /// <summary>
-        /// Add new audit for a warehouse
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param>
-        /// <param name="warehouseAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddWarehouseAudit (int? warehouseId, string warehouseAudit);
-  
-        /// <summary>
-        /// Add new audit for a warehouse
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param>
-        /// <param name="warehouseAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddWarehouseAuditWithHttpInfo (int? warehouseId, string warehouseAudit);
-        
-        /// <summary>
-        /// Add new tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param>
-        /// <param name="warehouseTag">The tag to add</param>
-        /// <returns></returns>
-        void AddWarehouseTag (int? warehouseId, string warehouseTag);
-  
-        /// <summary>
-        /// Add new tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param>
-        /// <param name="warehouseTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddWarehouseTagWithHttpInfo (int? warehouseId, string warehouseTag);
-        
-        /// <summary>
-        /// Delete a tag for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing warehouse tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param>
-        /// <param name="warehouseTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteWarehouseTag (int? warehouseId, string warehouseTag);
-  
-        /// <summary>
-        /// Delete a tag for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing warehouse tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param>
-        /// <param name="warehouseTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteWarehouseTagWithHttpInfo (int? warehouseId, string warehouseTag);
-        
-        /// <summary>
         /// Get a duplicated a warehouse by id
         /// </summary>
         /// <remarks>
@@ -162,28 +90,6 @@ namespace Infoplus.Api
         ApiResponse<Warehouse> GetWarehouseByIdWithHttpInfo (int? warehouseId);
         
         /// <summary>
-        /// Get the tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing warehouse tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param>
-        /// <returns></returns>
-        void GetWarehouseTags (int? warehouseId);
-  
-        /// <summary>
-        /// Get the tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing warehouse tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetWarehouseTagsWithHttpInfo (int? warehouseId);
-        
-        /// <summary>
         /// Update a warehouse
         /// </summary>
         /// <remarks>
@@ -230,78 +136,6 @@ namespace Infoplus.Api
         #endregion Synchronous Operations
         
         #region Asynchronous Operations
-        
-        /// <summary>
-        /// Add new audit for a warehouse
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param>
-        /// <param name="warehouseAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddWarehouseAuditAsync (int? warehouseId, string warehouseAudit);
-
-        /// <summary>
-        /// Add new audit for a warehouse
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param>
-        /// <param name="warehouseAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddWarehouseAuditAsyncWithHttpInfo (int? warehouseId, string warehouseAudit);
-        
-        /// <summary>
-        /// Add new tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param>
-        /// <param name="warehouseTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddWarehouseTagAsync (int? warehouseId, string warehouseTag);
-
-        /// <summary>
-        /// Add new tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing warehouse.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param>
-        /// <param name="warehouseTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddWarehouseTagAsyncWithHttpInfo (int? warehouseId, string warehouseTag);
-        
-        /// <summary>
-        /// Delete a tag for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing warehouse tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param>
-        /// <param name="warehouseTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteWarehouseTagAsync (int? warehouseId, string warehouseTag);
-
-        /// <summary>
-        /// Delete a tag for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing warehouse tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param>
-        /// <param name="warehouseTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteWarehouseTagAsyncWithHttpInfo (int? warehouseId, string warehouseTag);
         
         /// <summary>
         /// Get a duplicated a warehouse by id
@@ -374,28 +208,6 @@ namespace Infoplus.Api
         /// <param name="warehouseId">Id of the warehouse to be returned.</param>
         /// <returns>Task of ApiResponse (Warehouse)</returns>
         System.Threading.Tasks.Task<ApiResponse<Warehouse>> GetWarehouseByIdAsyncWithHttpInfo (int? warehouseId);
-        
-        /// <summary>
-        /// Get the tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing warehouse tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetWarehouseTagsAsync (int? warehouseId);
-
-        /// <summary>
-        /// Get the tags for a warehouse.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing warehouse tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetWarehouseTagsAsyncWithHttpInfo (int? warehouseId);
         
         /// <summary>
         /// Update a warehouse
@@ -534,549 +346,6 @@ namespace Infoplus.Api
    
         
         /// <summary>
-        /// Add new audit for a warehouse Adds an audit to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param> 
-        /// <param name="warehouseAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddWarehouseAudit (int? warehouseId, string warehouseAudit)
-        {
-             AddWarehouseAuditWithHttpInfo(warehouseId, warehouseAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a warehouse Adds an audit to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param> 
-        /// <param name="warehouseAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddWarehouseAuditWithHttpInfo (int? warehouseId, string warehouseAudit)
-        {
-            
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseId' when calling WarehouseApi->AddWarehouseAudit");
-            
-            // verify the required parameter 'warehouseAudit' is set
-            if (warehouseAudit == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseAudit' when calling WarehouseApi->AddWarehouseAudit");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/audit/{warehouseAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            if (warehouseAudit != null) localVarPathParams.Add("warehouseAudit", Configuration.ApiClient.ParameterToString(warehouseAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a warehouse Adds an audit to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param>
-        /// <param name="warehouseAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddWarehouseAuditAsync (int? warehouseId, string warehouseAudit)
-        {
-             await AddWarehouseAuditAsyncWithHttpInfo(warehouseId, warehouseAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a warehouse Adds an audit to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add an audit to</param>
-        /// <param name="warehouseAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddWarehouseAuditAsyncWithHttpInfo (int? warehouseId, string warehouseAudit)
-        {
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null) throw new ApiException(400, "Missing required parameter 'warehouseId' when calling AddWarehouseAudit");
-            // verify the required parameter 'warehouseAudit' is set
-            if (warehouseAudit == null) throw new ApiException(400, "Missing required parameter 'warehouseAudit' when calling AddWarehouseAudit");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/audit/{warehouseAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            if (warehouseAudit != null) localVarPathParams.Add("warehouseAudit", Configuration.ApiClient.ParameterToString(warehouseAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a warehouse. Adds a tag to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param> 
-        /// <param name="warehouseTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddWarehouseTag (int? warehouseId, string warehouseTag)
-        {
-             AddWarehouseTagWithHttpInfo(warehouseId, warehouseTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a warehouse. Adds a tag to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param> 
-        /// <param name="warehouseTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddWarehouseTagWithHttpInfo (int? warehouseId, string warehouseTag)
-        {
-            
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseId' when calling WarehouseApi->AddWarehouseTag");
-            
-            // verify the required parameter 'warehouseTag' is set
-            if (warehouseTag == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseTag' when calling WarehouseApi->AddWarehouseTag");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/tag/{warehouseTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            if (warehouseTag != null) localVarPathParams.Add("warehouseTag", Configuration.ApiClient.ParameterToString(warehouseTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a warehouse. Adds a tag to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param>
-        /// <param name="warehouseTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddWarehouseTagAsync (int? warehouseId, string warehouseTag)
-        {
-             await AddWarehouseTagAsyncWithHttpInfo(warehouseId, warehouseTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a warehouse. Adds a tag to an existing warehouse.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to add a tag to</param>
-        /// <param name="warehouseTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddWarehouseTagAsyncWithHttpInfo (int? warehouseId, string warehouseTag)
-        {
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null) throw new ApiException(400, "Missing required parameter 'warehouseId' when calling AddWarehouseTag");
-            // verify the required parameter 'warehouseTag' is set
-            if (warehouseTag == null) throw new ApiException(400, "Missing required parameter 'warehouseTag' when calling AddWarehouseTag");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/tag/{warehouseTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            if (warehouseTag != null) localVarPathParams.Add("warehouseTag", Configuration.ApiClient.ParameterToString(warehouseTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddWarehouseTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Delete a tag for a warehouse. Deletes an existing warehouse tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param> 
-        /// <param name="warehouseTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteWarehouseTag (int? warehouseId, string warehouseTag)
-        {
-             DeleteWarehouseTagWithHttpInfo(warehouseId, warehouseTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a warehouse. Deletes an existing warehouse tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param> 
-        /// <param name="warehouseTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteWarehouseTagWithHttpInfo (int? warehouseId, string warehouseTag)
-        {
-            
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseId' when calling WarehouseApi->DeleteWarehouseTag");
-            
-            // verify the required parameter 'warehouseTag' is set
-            if (warehouseTag == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseTag' when calling WarehouseApi->DeleteWarehouseTag");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/tag/{warehouseTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            if (warehouseTag != null) localVarPathParams.Add("warehouseTag", Configuration.ApiClient.ParameterToString(warehouseTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWarehouseTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWarehouseTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a warehouse. Deletes an existing warehouse tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param>
-        /// <param name="warehouseTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteWarehouseTagAsync (int? warehouseId, string warehouseTag)
-        {
-             await DeleteWarehouseTagAsyncWithHttpInfo(warehouseId, warehouseTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a warehouse. Deletes an existing warehouse tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to remove tag from</param>
-        /// <param name="warehouseTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteWarehouseTagAsyncWithHttpInfo (int? warehouseId, string warehouseTag)
-        {
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null) throw new ApiException(400, "Missing required parameter 'warehouseId' when calling DeleteWarehouseTag");
-            // verify the required parameter 'warehouseTag' is set
-            if (warehouseTag == null) throw new ApiException(400, "Missing required parameter 'warehouseTag' when calling DeleteWarehouseTag");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/tag/{warehouseTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            if (warehouseTag != null) localVarPathParams.Add("warehouseTag", Configuration.ApiClient.ParameterToString(warehouseTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWarehouseTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteWarehouseTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a warehouse by id Returns a duplicated warehouse identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1102,7 +371,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'warehouseId' when calling WarehouseApi->GetDuplicateWarehouseById");
             
     
-            var localVarPath = "/beta/warehouse/duplicate/{warehouseId}";
+            var localVarPath = "/v2.0/warehouse/duplicate/{warehouseId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1187,7 +456,7 @@ namespace Infoplus.Api
             if (warehouseId == null) throw new ApiException(400, "Missing required parameter 'warehouseId' when calling GetDuplicateWarehouseById");
             
     
-            var localVarPath = "/beta/warehouse/duplicate/{warehouseId}";
+            var localVarPath = "/v2.0/warehouse/duplicate/{warehouseId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +544,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/warehouse/search";
+            var localVarPath = "/v2.0/warehouse/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1367,7 +636,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/warehouse/search";
+            var localVarPath = "/v2.0/warehouse/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1456,7 +725,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'warehouseId' when calling WarehouseApi->GetWarehouseById");
             
     
-            var localVarPath = "/beta/warehouse/{warehouseId}";
+            var localVarPath = "/v2.0/warehouse/{warehouseId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1541,7 +810,7 @@ namespace Infoplus.Api
             if (warehouseId == null) throw new ApiException(400, "Missing required parameter 'warehouseId' when calling GetWarehouseById");
             
     
-            var localVarPath = "/beta/warehouse/{warehouseId}";
+            var localVarPath = "/v2.0/warehouse/{warehouseId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1602,175 +871,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a warehouse. Get all existing warehouse tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param> 
-        /// <returns></returns>
-        public void GetWarehouseTags (int? warehouseId)
-        {
-             GetWarehouseTagsWithHttpInfo(warehouseId);
-        }
-
-        /// <summary>
-        /// Get the tags for a warehouse. Get all existing warehouse tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetWarehouseTagsWithHttpInfo (int? warehouseId)
-        {
-            
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null)
-                throw new ApiException(400, "Missing required parameter 'warehouseId' when calling WarehouseApi->GetWarehouseTags");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetWarehouseTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetWarehouseTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a warehouse. Get all existing warehouse tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetWarehouseTagsAsync (int? warehouseId)
-        {
-             await GetWarehouseTagsAsyncWithHttpInfo(warehouseId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a warehouse. Get all existing warehouse tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="warehouseId">Id of the warehouse to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetWarehouseTagsAsyncWithHttpInfo (int? warehouseId)
-        {
-            // verify the required parameter 'warehouseId' is set
-            if (warehouseId == null) throw new ApiException(400, "Missing required parameter 'warehouseId' when calling GetWarehouseTags");
-            
-    
-            var localVarPath = "/beta/warehouse/{warehouseId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (warehouseId != null) localVarPathParams.Add("warehouseId", Configuration.ApiClient.ParameterToString(warehouseId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetWarehouseTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetWarehouseTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a warehouse Updates an existing warehouse using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1795,7 +895,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling WarehouseApi->UpdateWarehouse");
             
     
-            var localVarPath = "/beta/warehouse";
+            var localVarPath = "/v2.0/warehouse";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1885,7 +985,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateWarehouse");
             
     
-            var localVarPath = "/beta/warehouse";
+            var localVarPath = "/v2.0/warehouse";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1976,7 +1076,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling WarehouseApi->UpdateWarehouseCustomFields");
             
     
-            var localVarPath = "/beta/warehouse/customFields";
+            var localVarPath = "/v2.0/warehouse/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2066,7 +1166,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateWarehouseCustomFields");
             
     
-            var localVarPath = "/beta/warehouse/customFields";
+            var localVarPath = "/v2.0/warehouse/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

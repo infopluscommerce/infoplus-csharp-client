@@ -52,7 +52,6 @@ namespace Infoplus.Model
         /// <param name="BillToCountry">BillToCountry.</param>
         /// <param name="BillToPhone">BillToPhone.</param>
         /// <param name="BillToEmail">BillToEmail.</param>
-        /// <param name="ThirdPartyParcelAccountId">ThirdPartyParcelAccountId.</param>
         /// <param name="CostCenter">CostCenter.</param>
         /// <param name="CustomerPONo">CustomerPONo.</param>
         /// <param name="DistributionChannel">DistributionChannel.</param>
@@ -62,11 +61,9 @@ namespace Infoplus.Model
         /// <param name="OrderMessage">OrderMessage.</param>
         /// <param name="OrderSourceId">OrderSourceId.</param>
         /// <param name="PackingSlipTemplateId">PackingSlipTemplateId.</param>
-        /// <param name="OrderInvoiceTemplateId">OrderInvoiceTemplateId.</param>
         /// <param name="OrderConfirmationEmailTemplateId">OrderConfirmationEmailTemplateId.</param>
         /// <param name="ShipmentConfirmationEmailTemplateId">ShipmentConfirmationEmailTemplateId.</param>
         /// <param name="PriceLevel">PriceLevel.</param>
-        /// <param name="PriceMode">PriceMode.</param>
         /// <param name="PriorityCode">PriorityCode.</param>
         /// <param name="ShipCode">ShipCode.</param>
         /// <param name="ShipToAttention">ShipToAttention.</param>
@@ -80,16 +77,12 @@ namespace Infoplus.Model
         /// <param name="ShipToCountry">ShipToCountry.</param>
         /// <param name="ShipToPhone">ShipToPhone.</param>
         /// <param name="ShipToEmail">ShipToEmail.</param>
-        /// <param name="ShippingCharge">ShippingCharge.</param>
-        /// <param name="Subtotal">Subtotal.</param>
-        /// <param name="Tax">Tax.</param>
-        /// <param name="Total">Total.</param>
         /// <param name="LineItems">LineItems (required).</param>
         /// <param name="ExtraOrderData">ExtraOrderData.</param>
         /// <param name="ExtraLineItemData">ExtraLineItemData.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public Order(string CustomerOrderNo = null, int? LobId = null, int? WarehouseId = null, DateTime? OrderDate = null, string CustomerNo = null, int? UseOrderNoRoot = null, DateTime? FirstShipDate = null, DateTime? LastShipDate = null, DateTime? DeliverOnDate = null, DateTime? NeedByDate = null, int? CarrierId = null, string ServiceTypeId = null, string ShipVia = null, string MediaCode = null, string LegacyRestrictionType = null, string AlcoholOrderType = null, string AlternateUsage = null, string AuthorizedBy = null, string BatchNo = null, string BillToAttention = null, string BillToCompany = null, string BillToStreet = null, string BillToStreet2 = null, string BillToStreet3 = null, string BillToCity = null, string BillToState = null, string BillToZip = null, string BillToCountry = null, string BillToPhone = null, string BillToEmail = null, int? ThirdPartyParcelAccountId = null, string CostCenter = null, string CustomerPONo = null, string DistributionChannel = null, int? Division = null, string GiftMessage = null, string HoldCode = null, string OrderMessage = null, int? OrderSourceId = null, int? PackingSlipTemplateId = null, int? OrderInvoiceTemplateId = null, int? OrderConfirmationEmailTemplateId = null, int? ShipmentConfirmationEmailTemplateId = null, string PriceLevel = null, string PriceMode = null, int? PriorityCode = null, string ShipCode = null, string ShipToAttention = null, string ShipToCompany = null, string ShipToStreet = null, string ShipToStreet2 = null, string ShipToStreet3 = null, string ShipToCity = null, string ShipToState = null, string ShipToZip = null, string ShipToCountry = null, string ShipToPhone = null, string ShipToEmail = null, double? ShippingCharge = null, double? Subtotal = null, double? Tax = null, double? Total = null, List<OrderLine> LineItems = null, List<OrderExtraOrderData> ExtraOrderData = null, List<OrderExtraLineItemData> ExtraLineItemData = null, Dictionary<string, Object> CustomFields = null)
+        public Order(string CustomerOrderNo = null, int? LobId = null, int? WarehouseId = null, DateTime? OrderDate = null, string CustomerNo = null, int? UseOrderNoRoot = null, DateTime? FirstShipDate = null, DateTime? LastShipDate = null, DateTime? DeliverOnDate = null, DateTime? NeedByDate = null, int? CarrierId = null, string ServiceTypeId = null, string ShipVia = null, string MediaCode = null, string LegacyRestrictionType = null, string AlcoholOrderType = null, string AlternateUsage = null, string AuthorizedBy = null, string BatchNo = null, string BillToAttention = null, string BillToCompany = null, string BillToStreet = null, string BillToStreet2 = null, string BillToStreet3 = null, string BillToCity = null, string BillToState = null, string BillToZip = null, string BillToCountry = null, string BillToPhone = null, string BillToEmail = null, string CostCenter = null, string CustomerPONo = null, string DistributionChannel = null, int? Division = null, string GiftMessage = null, string HoldCode = null, string OrderMessage = null, int? OrderSourceId = null, int? PackingSlipTemplateId = null, int? OrderConfirmationEmailTemplateId = null, int? ShipmentConfirmationEmailTemplateId = null, string PriceLevel = null, int? PriorityCode = null, string ShipCode = null, string ShipToAttention = null, string ShipToCompany = null, string ShipToStreet = null, string ShipToStreet2 = null, string ShipToStreet3 = null, string ShipToCity = null, string ShipToState = null, string ShipToZip = null, string ShipToCountry = null, string ShipToPhone = null, string ShipToEmail = null, List<OrderLine> LineItems = null, List<OrderExtraOrderData> ExtraOrderData = null, List<OrderExtraLineItemData> ExtraLineItemData = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -170,7 +163,6 @@ namespace Infoplus.Model
             this.BillToCountry = BillToCountry;
             this.BillToPhone = BillToPhone;
             this.BillToEmail = BillToEmail;
-            this.ThirdPartyParcelAccountId = ThirdPartyParcelAccountId;
             this.CostCenter = CostCenter;
             this.CustomerPONo = CustomerPONo;
             this.DistributionChannel = DistributionChannel;
@@ -180,11 +172,9 @@ namespace Infoplus.Model
             this.OrderMessage = OrderMessage;
             this.OrderSourceId = OrderSourceId;
             this.PackingSlipTemplateId = PackingSlipTemplateId;
-            this.OrderInvoiceTemplateId = OrderInvoiceTemplateId;
             this.OrderConfirmationEmailTemplateId = OrderConfirmationEmailTemplateId;
             this.ShipmentConfirmationEmailTemplateId = ShipmentConfirmationEmailTemplateId;
             this.PriceLevel = PriceLevel;
-            this.PriceMode = PriceMode;
             this.PriorityCode = PriorityCode;
             this.ShipCode = ShipCode;
             this.ShipToAttention = ShipToAttention;
@@ -198,10 +188,6 @@ namespace Infoplus.Model
             this.ShipToCountry = ShipToCountry;
             this.ShipToPhone = ShipToPhone;
             this.ShipToEmail = ShipToEmail;
-            this.ShippingCharge = ShippingCharge;
-            this.Subtotal = Subtotal;
-            this.Tax = Tax;
-            this.Total = Total;
             this.ExtraOrderData = ExtraOrderData;
             this.ExtraLineItemData = ExtraLineItemData;
             this.CustomFields = CustomFields;
@@ -432,12 +418,6 @@ namespace Infoplus.Model
         public int? ParcelAccountId { get; private set; }
     
         /// <summary>
-        /// Gets or Sets ThirdPartyParcelAccountId
-        /// </summary>
-        [DataMember(Name="thirdPartyParcelAccountId", EmitDefaultValue=false)]
-        public int? ThirdPartyParcelAccountId { get; set; }
-    
-        /// <summary>
         /// Gets or Sets CostCenter
         /// </summary>
         [DataMember(Name="costCenter", EmitDefaultValue=false)]
@@ -522,12 +502,6 @@ namespace Infoplus.Model
         public int? NumberOfLineItems { get; private set; }
     
         /// <summary>
-        /// Gets or Sets EstimatedNumberOfPicks
-        /// </summary>
-        [DataMember(Name="estimatedNumberOfPicks", EmitDefaultValue=false)]
-        public int? EstimatedNumberOfPicks { get; private set; }
-    
-        /// <summary>
         /// Gets or Sets ModifyDate
         /// </summary>
         [DataMember(Name="modifyDate", EmitDefaultValue=false)]
@@ -576,12 +550,6 @@ namespace Infoplus.Model
         public int? PackingSlipTemplateId { get; set; }
     
         /// <summary>
-        /// Gets or Sets OrderInvoiceTemplateId
-        /// </summary>
-        [DataMember(Name="orderInvoiceTemplateId", EmitDefaultValue=false)]
-        public int? OrderInvoiceTemplateId { get; set; }
-    
-        /// <summary>
         /// Gets or Sets OrderConfirmationEmailTemplateId
         /// </summary>
         [DataMember(Name="orderConfirmationEmailTemplateId", EmitDefaultValue=false)]
@@ -598,12 +566,6 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="priceLevel", EmitDefaultValue=false)]
         public string PriceLevel { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets PriceMode
-        /// </summary>
-        [DataMember(Name="priceMode", EmitDefaultValue=false)]
-        public string PriceMode { get; set; }
     
         /// <summary>
         /// Gets or Sets PriorityCode
@@ -705,7 +667,7 @@ namespace Infoplus.Model
         /// Gets or Sets ShippingCharge
         /// </summary>
         [DataMember(Name="shippingCharge", EmitDefaultValue=false)]
-        public double? ShippingCharge { get; set; }
+        public double? ShippingCharge { get; private set; }
     
         /// <summary>
         /// Gets or Sets Status
@@ -723,19 +685,19 @@ namespace Infoplus.Model
         /// Gets or Sets Subtotal
         /// </summary>
         [DataMember(Name="subtotal", EmitDefaultValue=false)]
-        public double? Subtotal { get; set; }
+        public double? Subtotal { get; private set; }
     
         /// <summary>
         /// Gets or Sets Tax
         /// </summary>
         [DataMember(Name="tax", EmitDefaultValue=false)]
-        public double? Tax { get; set; }
+        public double? Tax { get; private set; }
     
         /// <summary>
         /// Gets or Sets Total
         /// </summary>
         [DataMember(Name="total", EmitDefaultValue=false)]
-        public double? Total { get; set; }
+        public double? Total { get; private set; }
     
         /// <summary>
         /// Gets or Sets TotalPaid
@@ -830,7 +792,6 @@ namespace Infoplus.Model
             sb.Append("  NumberOfPallets: ").Append(NumberOfPallets).Append("\n");
             sb.Append("  CompletionStatus: ").Append(CompletionStatus).Append("\n");
             sb.Append("  ParcelAccountId: ").Append(ParcelAccountId).Append("\n");
-            sb.Append("  ThirdPartyParcelAccountId: ").Append(ThirdPartyParcelAccountId).Append("\n");
             sb.Append("  CostCenter: ").Append(CostCenter).Append("\n");
             sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
             sb.Append("  CustomerPONo: ").Append(CustomerPONo).Append("\n");
@@ -845,7 +806,6 @@ namespace Infoplus.Model
             sb.Append("  HoldCode: ").Append(HoldCode).Append("\n");
             sb.Append("  IntegrationPartnerId: ").Append(IntegrationPartnerId).Append("\n");
             sb.Append("  NumberOfLineItems: ").Append(NumberOfLineItems).Append("\n");
-            sb.Append("  EstimatedNumberOfPicks: ").Append(EstimatedNumberOfPicks).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
             sb.Append("  OmsOrderNo: ").Append(OmsOrderNo).Append("\n");
             sb.Append("  OmsCustomerId: ").Append(OmsCustomerId).Append("\n");
@@ -854,11 +814,9 @@ namespace Infoplus.Model
             sb.Append("  OrderReason: ").Append(OrderReason).Append("\n");
             sb.Append("  OrderSourceId: ").Append(OrderSourceId).Append("\n");
             sb.Append("  PackingSlipTemplateId: ").Append(PackingSlipTemplateId).Append("\n");
-            sb.Append("  OrderInvoiceTemplateId: ").Append(OrderInvoiceTemplateId).Append("\n");
             sb.Append("  OrderConfirmationEmailTemplateId: ").Append(OrderConfirmationEmailTemplateId).Append("\n");
             sb.Append("  ShipmentConfirmationEmailTemplateId: ").Append(ShipmentConfirmationEmailTemplateId).Append("\n");
             sb.Append("  PriceLevel: ").Append(PriceLevel).Append("\n");
-            sb.Append("  PriceMode: ").Append(PriceMode).Append("\n");
             sb.Append("  PriorityCode: ").Append(PriorityCode).Append("\n");
             sb.Append("  FulfillmentProcessId: ").Append(FulfillmentProcessId).Append("\n");
             sb.Append("  ShipBy: ").Append(ShipBy).Append("\n");
@@ -1112,11 +1070,6 @@ namespace Infoplus.Model
                     this.ParcelAccountId.Equals(other.ParcelAccountId)
                 ) && 
                 (
-                    this.ThirdPartyParcelAccountId == other.ThirdPartyParcelAccountId ||
-                    this.ThirdPartyParcelAccountId != null &&
-                    this.ThirdPartyParcelAccountId.Equals(other.ThirdPartyParcelAccountId)
-                ) && 
-                (
                     this.CostCenter == other.CostCenter ||
                     this.CostCenter != null &&
                     this.CostCenter.Equals(other.CostCenter)
@@ -1187,11 +1140,6 @@ namespace Infoplus.Model
                     this.NumberOfLineItems.Equals(other.NumberOfLineItems)
                 ) && 
                 (
-                    this.EstimatedNumberOfPicks == other.EstimatedNumberOfPicks ||
-                    this.EstimatedNumberOfPicks != null &&
-                    this.EstimatedNumberOfPicks.Equals(other.EstimatedNumberOfPicks)
-                ) && 
-                (
                     this.ModifyDate == other.ModifyDate ||
                     this.ModifyDate != null &&
                     this.ModifyDate.Equals(other.ModifyDate)
@@ -1232,11 +1180,6 @@ namespace Infoplus.Model
                     this.PackingSlipTemplateId.Equals(other.PackingSlipTemplateId)
                 ) && 
                 (
-                    this.OrderInvoiceTemplateId == other.OrderInvoiceTemplateId ||
-                    this.OrderInvoiceTemplateId != null &&
-                    this.OrderInvoiceTemplateId.Equals(other.OrderInvoiceTemplateId)
-                ) && 
-                (
                     this.OrderConfirmationEmailTemplateId == other.OrderConfirmationEmailTemplateId ||
                     this.OrderConfirmationEmailTemplateId != null &&
                     this.OrderConfirmationEmailTemplateId.Equals(other.OrderConfirmationEmailTemplateId)
@@ -1250,11 +1193,6 @@ namespace Infoplus.Model
                     this.PriceLevel == other.PriceLevel ||
                     this.PriceLevel != null &&
                     this.PriceLevel.Equals(other.PriceLevel)
-                ) && 
-                (
-                    this.PriceMode == other.PriceMode ||
-                    this.PriceMode != null &&
-                    this.PriceMode.Equals(other.PriceMode)
                 ) && 
                 (
                     this.PriorityCode == other.PriorityCode ||
@@ -1531,9 +1469,6 @@ namespace Infoplus.Model
                 if (this.ParcelAccountId != null)
                     hash = hash * 59 + this.ParcelAccountId.GetHashCode();
                 
-                if (this.ThirdPartyParcelAccountId != null)
-                    hash = hash * 59 + this.ThirdPartyParcelAccountId.GetHashCode();
-                
                 if (this.CostCenter != null)
                     hash = hash * 59 + this.CostCenter.GetHashCode();
                 
@@ -1576,9 +1511,6 @@ namespace Infoplus.Model
                 if (this.NumberOfLineItems != null)
                     hash = hash * 59 + this.NumberOfLineItems.GetHashCode();
                 
-                if (this.EstimatedNumberOfPicks != null)
-                    hash = hash * 59 + this.EstimatedNumberOfPicks.GetHashCode();
-                
                 if (this.ModifyDate != null)
                     hash = hash * 59 + this.ModifyDate.GetHashCode();
                 
@@ -1603,9 +1535,6 @@ namespace Infoplus.Model
                 if (this.PackingSlipTemplateId != null)
                     hash = hash * 59 + this.PackingSlipTemplateId.GetHashCode();
                 
-                if (this.OrderInvoiceTemplateId != null)
-                    hash = hash * 59 + this.OrderInvoiceTemplateId.GetHashCode();
-                
                 if (this.OrderConfirmationEmailTemplateId != null)
                     hash = hash * 59 + this.OrderConfirmationEmailTemplateId.GetHashCode();
                 
@@ -1614,9 +1543,6 @@ namespace Infoplus.Model
                 
                 if (this.PriceLevel != null)
                     hash = hash * 59 + this.PriceLevel.GetHashCode();
-                
-                if (this.PriceMode != null)
-                    hash = hash * 59 + this.PriceMode.GetHashCode();
                 
                 if (this.PriorityCode != null)
                     hash = hash * 59 + this.PriorityCode.GetHashCode();

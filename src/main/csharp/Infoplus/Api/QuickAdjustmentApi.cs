@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<QuickAdjustment> AddQuickAdjustmentWithHttpInfo (QuickAdjustment body);
         
         /// <summary>
-        /// Add new audit for a quickAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param>
-        /// <param name="quickAdjustmentAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddQuickAdjustmentAudit (int? quickAdjustmentId, string quickAdjustmentAudit);
-  
-        /// <summary>
-        /// Add new audit for a quickAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param>
-        /// <param name="quickAdjustmentAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddQuickAdjustmentAuditWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentAudit);
-        
-        /// <summary>
-        /// Add new tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param>
-        /// <param name="quickAdjustmentTag">The tag to add</param>
-        /// <returns></returns>
-        void AddQuickAdjustmentTag (int? quickAdjustmentId, string quickAdjustmentTag);
-  
-        /// <summary>
-        /// Add new tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param>
-        /// <param name="quickAdjustmentTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddQuickAdjustmentTagWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag);
-        
-        /// <summary>
         /// Delete a quickAdjustment
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="quickAdjustmentId">Id of the quickAdjustment to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteQuickAdjustmentWithHttpInfo (int? quickAdjustmentId);
-        
-        /// <summary>
-        /// Delete a tag for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param>
-        /// <param name="quickAdjustmentTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteQuickAdjustmentTag (int? quickAdjustmentId, string quickAdjustmentTag);
-  
-        /// <summary>
-        /// Delete a tag for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param>
-        /// <param name="quickAdjustmentTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteQuickAdjustmentTagWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag);
         
         /// <summary>
         /// Get a duplicated a quickAdjustment by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<QuickAdjustment> GetQuickAdjustmentByIdWithHttpInfo (int? quickAdjustmentId);
         
         /// <summary>
-        /// Get the tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param>
-        /// <returns></returns>
-        void GetQuickAdjustmentTags (int? quickAdjustmentId);
-  
-        /// <summary>
-        /// Get the tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetQuickAdjustmentTagsWithHttpInfo (int? quickAdjustmentId);
-        
-        /// <summary>
         /// Update a quickAdjustment
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<QuickAdjustment>> AddQuickAdjustmentAsyncWithHttpInfo (QuickAdjustment body);
         
         /// <summary>
-        /// Add new audit for a quickAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param>
-        /// <param name="quickAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddQuickAdjustmentAuditAsync (int? quickAdjustmentId, string quickAdjustmentAudit);
-
-        /// <summary>
-        /// Add new audit for a quickAdjustment
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param>
-        /// <param name="quickAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickAdjustmentAuditAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentAudit);
-        
-        /// <summary>
-        /// Add new tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param>
-        /// <param name="quickAdjustmentTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddQuickAdjustmentTagAsync (int? quickAdjustmentId, string quickAdjustmentTag);
-
-        /// <summary>
-        /// Add new tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing quickAdjustment.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param>
-        /// <param name="quickAdjustmentTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickAdjustmentTagAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag);
-        
-        /// <summary>
         /// Delete a quickAdjustment
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="quickAdjustmentId">Id of the quickAdjustment to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickAdjustmentAsyncWithHttpInfo (int? quickAdjustmentId);
-        
-        /// <summary>
-        /// Delete a tag for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param>
-        /// <param name="quickAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteQuickAdjustmentTagAsync (int? quickAdjustmentId, string quickAdjustmentTag);
-
-        /// <summary>
-        /// Delete a tag for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing quickAdjustment tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param>
-        /// <param name="quickAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickAdjustmentTagAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag);
         
         /// <summary>
         /// Get a duplicated a quickAdjustment by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="quickAdjustmentId">Id of the quickAdjustment to be returned.</param>
         /// <returns>Task of ApiResponse (QuickAdjustment)</returns>
         System.Threading.Tasks.Task<ApiResponse<QuickAdjustment>> GetQuickAdjustmentByIdAsyncWithHttpInfo (int? quickAdjustmentId);
-        
-        /// <summary>
-        /// Get the tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetQuickAdjustmentTagsAsync (int? quickAdjustmentId);
-
-        /// <summary>
-        /// Get the tags for a quickAdjustment.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing quickAdjustment tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetQuickAdjustmentTagsAsyncWithHttpInfo (int? quickAdjustmentId);
         
         /// <summary>
         /// Update a quickAdjustment
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling QuickAdjustmentApi->AddQuickAdjustment");
             
     
-            var localVarPath = "/beta/quickAdjustment";
+            var localVarPath = "/v2.0/quickAdjustment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddQuickAdjustment");
             
     
-            var localVarPath = "/beta/quickAdjustment";
+            var localVarPath = "/v2.0/quickAdjustment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a quickAdjustment Adds an audit to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param> 
-        /// <param name="quickAdjustmentAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddQuickAdjustmentAudit (int? quickAdjustmentId, string quickAdjustmentAudit)
-        {
-             AddQuickAdjustmentAuditWithHttpInfo(quickAdjustmentId, quickAdjustmentAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a quickAdjustment Adds an audit to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param> 
-        /// <param name="quickAdjustmentAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddQuickAdjustmentAuditWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentAudit)
-        {
-            
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->AddQuickAdjustmentAudit");
-            
-            // verify the required parameter 'quickAdjustmentAudit' is set
-            if (quickAdjustmentAudit == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentAudit' when calling QuickAdjustmentApi->AddQuickAdjustmentAudit");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/audit/{quickAdjustmentAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            if (quickAdjustmentAudit != null) localVarPathParams.Add("quickAdjustmentAudit", Configuration.ApiClient.ParameterToString(quickAdjustmentAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a quickAdjustment Adds an audit to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param>
-        /// <param name="quickAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddQuickAdjustmentAuditAsync (int? quickAdjustmentId, string quickAdjustmentAudit)
-        {
-             await AddQuickAdjustmentAuditAsyncWithHttpInfo(quickAdjustmentId, quickAdjustmentAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a quickAdjustment Adds an audit to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add an audit to</param>
-        /// <param name="quickAdjustmentAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickAdjustmentAuditAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentAudit)
-        {
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling AddQuickAdjustmentAudit");
-            // verify the required parameter 'quickAdjustmentAudit' is set
-            if (quickAdjustmentAudit == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentAudit' when calling AddQuickAdjustmentAudit");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/audit/{quickAdjustmentAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            if (quickAdjustmentAudit != null) localVarPathParams.Add("quickAdjustmentAudit", Configuration.ApiClient.ParameterToString(quickAdjustmentAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a quickAdjustment. Adds a tag to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param> 
-        /// <param name="quickAdjustmentTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddQuickAdjustmentTag (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-             AddQuickAdjustmentTagWithHttpInfo(quickAdjustmentId, quickAdjustmentTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a quickAdjustment. Adds a tag to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param> 
-        /// <param name="quickAdjustmentTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddQuickAdjustmentTagWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-            
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->AddQuickAdjustmentTag");
-            
-            // verify the required parameter 'quickAdjustmentTag' is set
-            if (quickAdjustmentTag == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentTag' when calling QuickAdjustmentApi->AddQuickAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/tag/{quickAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            if (quickAdjustmentTag != null) localVarPathParams.Add("quickAdjustmentTag", Configuration.ApiClient.ParameterToString(quickAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a quickAdjustment. Adds a tag to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param>
-        /// <param name="quickAdjustmentTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddQuickAdjustmentTagAsync (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-             await AddQuickAdjustmentTagAsyncWithHttpInfo(quickAdjustmentId, quickAdjustmentTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a quickAdjustment. Adds a tag to an existing quickAdjustment.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to add a tag to</param>
-        /// <param name="quickAdjustmentTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddQuickAdjustmentTagAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling AddQuickAdjustmentTag");
-            // verify the required parameter 'quickAdjustmentTag' is set
-            if (quickAdjustmentTag == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentTag' when calling AddQuickAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/tag/{quickAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            if (quickAdjustmentTag != null) localVarPathParams.Add("quickAdjustmentTag", Configuration.ApiClient.ParameterToString(quickAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddQuickAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a quickAdjustment Deletes the quickAdjustment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->DeleteQuickAdjustment");
             
     
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}";
+            var localVarPath = "/v2.0/quickAdjustment/{quickAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling DeleteQuickAdjustment");
             
     
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}";
+            var localVarPath = "/v2.0/quickAdjustment/{quickAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a quickAdjustment. Deletes an existing quickAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param> 
-        /// <param name="quickAdjustmentTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteQuickAdjustmentTag (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-             DeleteQuickAdjustmentTagWithHttpInfo(quickAdjustmentId, quickAdjustmentTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a quickAdjustment. Deletes an existing quickAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param> 
-        /// <param name="quickAdjustmentTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteQuickAdjustmentTagWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-            
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->DeleteQuickAdjustmentTag");
-            
-            // verify the required parameter 'quickAdjustmentTag' is set
-            if (quickAdjustmentTag == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentTag' when calling QuickAdjustmentApi->DeleteQuickAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/tag/{quickAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            if (quickAdjustmentTag != null) localVarPathParams.Add("quickAdjustmentTag", Configuration.ApiClient.ParameterToString(quickAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a quickAdjustment. Deletes an existing quickAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param>
-        /// <param name="quickAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteQuickAdjustmentTagAsync (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-             await DeleteQuickAdjustmentTagAsyncWithHttpInfo(quickAdjustmentId, quickAdjustmentTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a quickAdjustment. Deletes an existing quickAdjustment tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to remove tag from</param>
-        /// <param name="quickAdjustmentTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteQuickAdjustmentTagAsyncWithHttpInfo (int? quickAdjustmentId, string quickAdjustmentTag)
-        {
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling DeleteQuickAdjustmentTag");
-            // verify the required parameter 'quickAdjustmentTag' is set
-            if (quickAdjustmentTag == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentTag' when calling DeleteQuickAdjustmentTag");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/tag/{quickAdjustmentTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            if (quickAdjustmentTag != null) localVarPathParams.Add("quickAdjustmentTag", Configuration.ApiClient.ParameterToString(quickAdjustmentTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickAdjustmentTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteQuickAdjustmentTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a quickAdjustment by id Returns a duplicated quickAdjustment identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->GetDuplicateQuickAdjustmentById");
             
     
-            var localVarPath = "/beta/quickAdjustment/duplicate/{quickAdjustmentId}";
+            var localVarPath = "/v2.0/quickAdjustment/duplicate/{quickAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling GetDuplicateQuickAdjustmentById");
             
     
-            var localVarPath = "/beta/quickAdjustment/duplicate/{quickAdjustmentId}";
+            var localVarPath = "/v2.0/quickAdjustment/duplicate/{quickAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/quickAdjustment/search";
+            var localVarPath = "/v2.0/quickAdjustment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/quickAdjustment/search";
+            var localVarPath = "/v2.0/quickAdjustment/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->GetQuickAdjustmentById");
             
     
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}";
+            var localVarPath = "/v2.0/quickAdjustment/{quickAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling GetQuickAdjustmentById");
             
     
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}";
+            var localVarPath = "/v2.0/quickAdjustment/{quickAdjustmentId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a quickAdjustment. Get all existing quickAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param> 
-        /// <returns></returns>
-        public void GetQuickAdjustmentTags (int? quickAdjustmentId)
-        {
-             GetQuickAdjustmentTagsWithHttpInfo(quickAdjustmentId);
-        }
-
-        /// <summary>
-        /// Get the tags for a quickAdjustment. Get all existing quickAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetQuickAdjustmentTagsWithHttpInfo (int? quickAdjustmentId)
-        {
-            
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null)
-                throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling QuickAdjustmentApi->GetQuickAdjustmentTags");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickAdjustmentTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickAdjustmentTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a quickAdjustment. Get all existing quickAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetQuickAdjustmentTagsAsync (int? quickAdjustmentId)
-        {
-             await GetQuickAdjustmentTagsAsyncWithHttpInfo(quickAdjustmentId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a quickAdjustment. Get all existing quickAdjustment tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="quickAdjustmentId">Id of the quickAdjustment to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetQuickAdjustmentTagsAsyncWithHttpInfo (int? quickAdjustmentId)
-        {
-            // verify the required parameter 'quickAdjustmentId' is set
-            if (quickAdjustmentId == null) throw new ApiException(400, "Missing required parameter 'quickAdjustmentId' when calling GetQuickAdjustmentTags");
-            
-    
-            var localVarPath = "/beta/quickAdjustment/{quickAdjustmentId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (quickAdjustmentId != null) localVarPathParams.Add("quickAdjustmentId", Configuration.ApiClient.ParameterToString(quickAdjustmentId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickAdjustmentTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetQuickAdjustmentTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a quickAdjustment Updates an existing quickAdjustment using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling QuickAdjustmentApi->UpdateQuickAdjustment");
             
     
-            var localVarPath = "/beta/quickAdjustment";
+            var localVarPath = "/v2.0/quickAdjustment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateQuickAdjustment");
             
     
-            var localVarPath = "/beta/quickAdjustment";
+            var localVarPath = "/v2.0/quickAdjustment";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling QuickAdjustmentApi->UpdateQuickAdjustmentCustomFields");
             
     
-            var localVarPath = "/beta/quickAdjustment/customFields";
+            var localVarPath = "/v2.0/quickAdjustment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateQuickAdjustmentCustomFields");
             
     
-            var localVarPath = "/beta/quickAdjustment/customFields";
+            var localVarPath = "/v2.0/quickAdjustment/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

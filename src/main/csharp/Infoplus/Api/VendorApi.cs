@@ -40,54 +40,6 @@ namespace Infoplus.Api
         ApiResponse<Vendor> AddVendorWithHttpInfo (Vendor body);
         
         /// <summary>
-        /// Add new audit for a vendor
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param>
-        /// <param name="vendorAudit">The audit to add</param>
-        /// <returns></returns>
-        void AddVendorAudit (int? vendorId, string vendorAudit);
-  
-        /// <summary>
-        /// Add new audit for a vendor
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param>
-        /// <param name="vendorAudit">The audit to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddVendorAuditWithHttpInfo (int? vendorId, string vendorAudit);
-        
-        /// <summary>
-        /// Add new tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param>
-        /// <param name="vendorTag">The tag to add</param>
-        /// <returns></returns>
-        void AddVendorTag (int? vendorId, string vendorTag);
-  
-        /// <summary>
-        /// Add new tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param>
-        /// <param name="vendorTag">The tag to add</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> AddVendorTagWithHttpInfo (int? vendorId, string vendorTag);
-        
-        /// <summary>
         /// Delete a vendor
         /// </summary>
         /// <remarks>
@@ -108,30 +60,6 @@ namespace Infoplus.Api
         /// <param name="vendorId">Id of the vendor to be deleted.</param>
         /// <returns>ApiResponse of Object(void)</returns>
         ApiResponse<Object> DeleteVendorWithHttpInfo (int? vendorId);
-        
-        /// <summary>
-        /// Delete a tag for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendor tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param>
-        /// <param name="vendorTag">The tag to delete</param>
-        /// <returns></returns>
-        void DeleteVendorTag (int? vendorId, string vendorTag);
-  
-        /// <summary>
-        /// Delete a tag for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendor tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param>
-        /// <param name="vendorTag">The tag to delete</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> DeleteVendorTagWithHttpInfo (int? vendorId, string vendorTag);
         
         /// <summary>
         /// Get a duplicated a vendor by id
@@ -206,28 +134,6 @@ namespace Infoplus.Api
         ApiResponse<Vendor> GetVendorByIdWithHttpInfo (int? vendorId);
         
         /// <summary>
-        /// Get the tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendor tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param>
-        /// <returns></returns>
-        void GetVendorTags (int? vendorId);
-  
-        /// <summary>
-        /// Get the tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendor tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param>
-        /// <returns>ApiResponse of Object(void)</returns>
-        ApiResponse<Object> GetVendorTagsWithHttpInfo (int? vendorId);
-        
-        /// <summary>
         /// Update a vendor
         /// </summary>
         /// <remarks>
@@ -298,54 +204,6 @@ namespace Infoplus.Api
         System.Threading.Tasks.Task<ApiResponse<Vendor>> AddVendorAsyncWithHttpInfo (Vendor body);
         
         /// <summary>
-        /// Add new audit for a vendor
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param>
-        /// <param name="vendorAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddVendorAuditAsync (int? vendorId, string vendorAudit);
-
-        /// <summary>
-        /// Add new audit for a vendor
-        /// </summary>
-        /// <remarks>
-        /// Adds an audit to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param>
-        /// <param name="vendorAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorAuditAsyncWithHttpInfo (int? vendorId, string vendorAudit);
-        
-        /// <summary>
-        /// Add new tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param>
-        /// <param name="vendorTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task AddVendorTagAsync (int? vendorId, string vendorTag);
-
-        /// <summary>
-        /// Add new tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Adds a tag to an existing vendor.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param>
-        /// <param name="vendorTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorTagAsyncWithHttpInfo (int? vendorId, string vendorTag);
-        
-        /// <summary>
         /// Delete a vendor
         /// </summary>
         /// <remarks>
@@ -366,30 +224,6 @@ namespace Infoplus.Api
         /// <param name="vendorId">Id of the vendor to be deleted.</param>
         /// <returns>Task of ApiResponse</returns>
         System.Threading.Tasks.Task<ApiResponse<Object>> DeleteVendorAsyncWithHttpInfo (int? vendorId);
-        
-        /// <summary>
-        /// Delete a tag for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendor tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param>
-        /// <param name="vendorTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task DeleteVendorTagAsync (int? vendorId, string vendorTag);
-
-        /// <summary>
-        /// Delete a tag for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Deletes an existing vendor tag using the specified data.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param>
-        /// <param name="vendorTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> DeleteVendorTagAsyncWithHttpInfo (int? vendorId, string vendorTag);
         
         /// <summary>
         /// Get a duplicated a vendor by id
@@ -462,28 +296,6 @@ namespace Infoplus.Api
         /// <param name="vendorId">Id of the vendor to be returned.</param>
         /// <returns>Task of ApiResponse (Vendor)</returns>
         System.Threading.Tasks.Task<ApiResponse<Vendor>> GetVendorByIdAsyncWithHttpInfo (int? vendorId);
-        
-        /// <summary>
-        /// Get the tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendor tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param>
-        /// <returns>Task of void</returns>
-        System.Threading.Tasks.Task GetVendorTagsAsync (int? vendorId);
-
-        /// <summary>
-        /// Get the tags for a vendor.
-        /// </summary>
-        /// <remarks>
-        /// Get all existing vendor tags.
-        /// </remarks>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        System.Threading.Tasks.Task<ApiResponse<Object>> GetVendorTagsAsyncWithHttpInfo (int? vendorId);
         
         /// <summary>
         /// Update a vendor
@@ -647,7 +459,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling VendorApi->AddVendor");
             
     
-            var localVarPath = "/beta/vendor";
+            var localVarPath = "/v2.0/vendor";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -738,7 +550,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling AddVendor");
             
     
-            var localVarPath = "/beta/vendor";
+            var localVarPath = "/v2.0/vendor";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -805,368 +617,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Add new audit for a vendor Adds an audit to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param> 
-        /// <param name="vendorAudit">The audit to add</param> 
-        /// <returns></returns>
-        public void AddVendorAudit (int? vendorId, string vendorAudit)
-        {
-             AddVendorAuditWithHttpInfo(vendorId, vendorAudit);
-        }
-
-        /// <summary>
-        /// Add new audit for a vendor Adds an audit to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param> 
-        /// <param name="vendorAudit">The audit to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddVendorAuditWithHttpInfo (int? vendorId, string vendorAudit)
-        {
-            
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->AddVendorAudit");
-            
-            // verify the required parameter 'vendorAudit' is set
-            if (vendorAudit == null)
-                throw new ApiException(400, "Missing required parameter 'vendorAudit' when calling VendorApi->AddVendorAudit");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/audit/{vendorAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            if (vendorAudit != null) localVarPathParams.Add("vendorAudit", Configuration.ApiClient.ParameterToString(vendorAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new audit for a vendor Adds an audit to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param>
-        /// <param name="vendorAudit">The audit to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddVendorAuditAsync (int? vendorId, string vendorAudit)
-        {
-             await AddVendorAuditAsyncWithHttpInfo(vendorId, vendorAudit);
-
-        }
-
-        /// <summary>
-        /// Add new audit for a vendor Adds an audit to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add an audit to</param>
-        /// <param name="vendorAudit">The audit to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorAuditAsyncWithHttpInfo (int? vendorId, string vendorAudit)
-        {
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling AddVendorAudit");
-            // verify the required parameter 'vendorAudit' is set
-            if (vendorAudit == null) throw new ApiException(400, "Missing required parameter 'vendorAudit' when calling AddVendorAudit");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/audit/{vendorAudit}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            if (vendorAudit != null) localVarPathParams.Add("vendorAudit", Configuration.ApiClient.ParameterToString(vendorAudit)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorAudit: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorAudit: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
-        /// Add new tags for a vendor. Adds a tag to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param> 
-        /// <param name="vendorTag">The tag to add</param> 
-        /// <returns></returns>
-        public void AddVendorTag (int? vendorId, string vendorTag)
-        {
-             AddVendorTagWithHttpInfo(vendorId, vendorTag);
-        }
-
-        /// <summary>
-        /// Add new tags for a vendor. Adds a tag to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param> 
-        /// <param name="vendorTag">The tag to add</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> AddVendorTagWithHttpInfo (int? vendorId, string vendorTag)
-        {
-            
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->AddVendorTag");
-            
-            // verify the required parameter 'vendorTag' is set
-            if (vendorTag == null)
-                throw new ApiException(400, "Missing required parameter 'vendorTag' when calling VendorApi->AddVendorTag");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/tag/{vendorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            if (vendorTag != null) localVarPathParams.Add("vendorTag", Configuration.ApiClient.ParameterToString(vendorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Add new tags for a vendor. Adds a tag to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param>
-        /// <param name="vendorTag">The tag to add</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task AddVendorTagAsync (int? vendorId, string vendorTag)
-        {
-             await AddVendorTagAsyncWithHttpInfo(vendorId, vendorTag);
-
-        }
-
-        /// <summary>
-        /// Add new tags for a vendor. Adds a tag to an existing vendor.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to add a tag to</param>
-        /// <param name="vendorTag">The tag to add</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> AddVendorTagAsyncWithHttpInfo (int? vendorId, string vendorTag)
-        {
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling AddVendorTag");
-            // verify the required parameter 'vendorTag' is set
-            if (vendorTag == null) throw new ApiException(400, "Missing required parameter 'vendorTag' when calling AddVendorTag");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/tag/{vendorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                "application/json"
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            if (vendorTag != null) localVarPathParams.Add("vendorTag", Configuration.ApiClient.ParameterToString(vendorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.PUT, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling AddVendorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Delete a vendor Deletes the vendor identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1191,7 +641,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->DeleteVendor");
             
     
-            var localVarPath = "/beta/vendor/{vendorId}";
+            var localVarPath = "/v2.0/vendor/{vendorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1275,7 +725,7 @@ namespace Infoplus.Api
             if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling DeleteVendor");
             
     
-            var localVarPath = "/beta/vendor/{vendorId}";
+            var localVarPath = "/v2.0/vendor/{vendorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1336,187 +786,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Delete a tag for a vendor. Deletes an existing vendor tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param> 
-        /// <param name="vendorTag">The tag to delete</param> 
-        /// <returns></returns>
-        public void DeleteVendorTag (int? vendorId, string vendorTag)
-        {
-             DeleteVendorTagWithHttpInfo(vendorId, vendorTag);
-        }
-
-        /// <summary>
-        /// Delete a tag for a vendor. Deletes an existing vendor tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param> 
-        /// <param name="vendorTag">The tag to delete</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> DeleteVendorTagWithHttpInfo (int? vendorId, string vendorTag)
-        {
-            
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->DeleteVendorTag");
-            
-            // verify the required parameter 'vendorTag' is set
-            if (vendorTag == null)
-                throw new ApiException(400, "Missing required parameter 'vendorTag' when calling VendorApi->DeleteVendorTag");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/tag/{vendorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            if (vendorTag != null) localVarPathParams.Add("vendorTag", Configuration.ApiClient.ParameterToString(vendorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Delete a tag for a vendor. Deletes an existing vendor tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param>
-        /// <param name="vendorTag">The tag to delete</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task DeleteVendorTagAsync (int? vendorId, string vendorTag)
-        {
-             await DeleteVendorTagAsyncWithHttpInfo(vendorId, vendorTag);
-
-        }
-
-        /// <summary>
-        /// Delete a tag for a vendor. Deletes an existing vendor tag using the specified data.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to remove tag from</param>
-        /// <param name="vendorTag">The tag to delete</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> DeleteVendorTagAsyncWithHttpInfo (int? vendorId, string vendorTag)
-        {
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling DeleteVendorTag");
-            // verify the required parameter 'vendorTag' is set
-            if (vendorTag == null) throw new ApiException(400, "Missing required parameter 'vendorTag' when calling DeleteVendorTag");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/tag/{vendorTag}";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            if (vendorTag != null) localVarPathParams.Add("vendorTag", Configuration.ApiClient.ParameterToString(vendorTag)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.DELETE, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorTag: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling DeleteVendorTag: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Get a duplicated a vendor by id Returns a duplicated vendor identified by the specified id.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -1542,7 +811,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->GetDuplicateVendorById");
             
     
-            var localVarPath = "/beta/vendor/duplicate/{vendorId}";
+            var localVarPath = "/v2.0/vendor/duplicate/{vendorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1627,7 +896,7 @@ namespace Infoplus.Api
             if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling GetDuplicateVendorById");
             
     
-            var localVarPath = "/beta/vendor/duplicate/{vendorId}";
+            var localVarPath = "/v2.0/vendor/duplicate/{vendorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1715,7 +984,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/vendor/search";
+            var localVarPath = "/v2.0/vendor/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1807,7 +1076,7 @@ namespace Infoplus.Api
         {
             
     
-            var localVarPath = "/beta/vendor/search";
+            var localVarPath = "/v2.0/vendor/search";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1896,7 +1165,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->GetVendorById");
             
     
-            var localVarPath = "/beta/vendor/{vendorId}";
+            var localVarPath = "/v2.0/vendor/{vendorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -1981,7 +1250,7 @@ namespace Infoplus.Api
             if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling GetVendorById");
             
     
-            var localVarPath = "/beta/vendor/{vendorId}";
+            var localVarPath = "/v2.0/vendor/{vendorId}";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2042,175 +1311,6 @@ namespace Infoplus.Api
         }
         
         /// <summary>
-        /// Get the tags for a vendor. Get all existing vendor tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param> 
-        /// <returns></returns>
-        public void GetVendorTags (int? vendorId)
-        {
-             GetVendorTagsWithHttpInfo(vendorId);
-        }
-
-        /// <summary>
-        /// Get the tags for a vendor. Get all existing vendor tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param> 
-        /// <returns>ApiResponse of Object(void)</returns>
-        public ApiResponse<Object> GetVendorTagsWithHttpInfo (int? vendorId)
-        {
-            
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null)
-                throw new ApiException(400, "Missing required parameter 'vendorId' when calling VendorApi->GetVendorTags");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            
-            
-            
-            
-            
-
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-    
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) Configuration.ApiClient.CallApi(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams,
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
-    
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-    
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-
-        
-        /// <summary>
-        /// Get the tags for a vendor. Get all existing vendor tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param>
-        /// <returns>Task of void</returns>
-        public async System.Threading.Tasks.Task GetVendorTagsAsync (int? vendorId)
-        {
-             await GetVendorTagsAsyncWithHttpInfo(vendorId);
-
-        }
-
-        /// <summary>
-        /// Get the tags for a vendor. Get all existing vendor tags.
-        /// </summary>
-        /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
-        /// <param name="vendorId">Id of the vendor to get tags for</param>
-        /// <returns>Task of ApiResponse</returns>
-        public async System.Threading.Tasks.Task<ApiResponse<Object>> GetVendorTagsAsyncWithHttpInfo (int? vendorId)
-        {
-            // verify the required parameter 'vendorId' is set
-            if (vendorId == null) throw new ApiException(400, "Missing required parameter 'vendorId' when calling GetVendorTags");
-            
-    
-            var localVarPath = "/beta/vendor/{vendorId}/tag";
-    
-            var localVarPathParams = new Dictionary<String, String>();
-            var localVarQueryParams = new Dictionary<String, String>();
-            var localVarHeaderParams = new Dictionary<String, String>(Configuration.DefaultHeader);
-            var localVarFormParams = new Dictionary<String, String>();
-            var localVarFileParams = new Dictionary<String, FileParameter>();
-            Object localVarPostBody = null;
-
-            // to determine the Content-Type header
-            String[] localVarHttpContentTypes = new String[] {
-                
-            };
-            String localVarHttpContentType = Configuration.ApiClient.SelectHeaderContentType(localVarHttpContentTypes);
-
-            // to determine the Accept header
-            String[] localVarHttpHeaderAccepts = new String[] {
-                "application/json"
-            };
-            String localVarHttpHeaderAccept = Configuration.ApiClient.SelectHeaderAccept(localVarHttpHeaderAccepts);
-            if (localVarHttpHeaderAccept != null)
-                localVarHeaderParams.Add("Accept", localVarHttpHeaderAccept);
-
-            // set "format" to json by default
-            // e.g. /pet/{petId}.{format} becomes /pet/{petId}.json
-            localVarPathParams.Add("format", "json");
-            if (vendorId != null) localVarPathParams.Add("vendorId", Configuration.ApiClient.ParameterToString(vendorId)); // path parameter
-            
-            
-            
-            
-            
-
-            
-            // authentication (api_key) required
-            
-            if (!String.IsNullOrEmpty(Configuration.GetApiKeyWithPrefix("API-Key")))
-            {
-                localVarHeaderParams["API-Key"] = Configuration.GetApiKeyWithPrefix("API-Key");
-            }
-            
-
-            // make the HTTP request
-            IRestResponse localVarResponse = (IRestResponse) await Configuration.ApiClient.CallApiAsync(localVarPath, 
-                Method.GET, localVarQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarFileParams, 
-                localVarPathParams, localVarHttpContentType);
-
-            int localVarStatusCode = (int) localVarResponse.StatusCode;
- 
-            if (localVarStatusCode >= 400)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorTags: " + localVarResponse.Content, localVarResponse.Content);
-            else if (localVarStatusCode == 0)
-                throw new ApiException (localVarStatusCode, "Error calling GetVendorTags: " + localVarResponse.ErrorMessage, localVarResponse.ErrorMessage);
-
-            
-            return new ApiResponse<Object>(localVarStatusCode,
-                localVarResponse.Headers.ToDictionary(x => x.Name, x => x.Value.ToString()),
-                null);
-        }
-        
-        /// <summary>
         /// Update a vendor Updates an existing vendor using the specified data.
         /// </summary>
         /// <exception cref="Infoplus.Client.ApiException">Thrown when fails to make API call</exception>
@@ -2235,7 +1335,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling VendorApi->UpdateVendor");
             
     
-            var localVarPath = "/beta/vendor";
+            var localVarPath = "/v2.0/vendor";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2325,7 +1425,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateVendor");
             
     
-            var localVarPath = "/beta/vendor";
+            var localVarPath = "/v2.0/vendor";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2416,7 +1516,7 @@ namespace Infoplus.Api
                 throw new ApiException(400, "Missing required parameter 'body' when calling VendorApi->UpdateVendorCustomFields");
             
     
-            var localVarPath = "/beta/vendor/customFields";
+            var localVarPath = "/v2.0/vendor/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();
@@ -2506,7 +1606,7 @@ namespace Infoplus.Api
             if (body == null) throw new ApiException(400, "Missing required parameter 'body' when calling UpdateVendorCustomFields");
             
     
-            var localVarPath = "/beta/vendor/customFields";
+            var localVarPath = "/v2.0/vendor/customFields";
     
             var localVarPathParams = new Dictionary<String, String>();
             var localVarQueryParams = new Dictionary<String, String>();

@@ -35,15 +35,12 @@ namespace Infoplus.Model
         /// <param name="AccessToken">AccessToken (required).</param>
         /// <param name="Username">Username (required).</param>
         /// <param name="Password">Password (required).</param>
-        /// <param name="DefaultCarrierId">DefaultCarrierId.</param>
-        /// <param name="OrderShipmentLevel">OrderShipmentLevel (required).</param>
         /// <param name="SyncOrders">SyncOrders (required) (default to false).</param>
         /// <param name="SyncInventory">SyncInventory (required) (default to false).</param>
         /// <param name="SyncTrackingData">SyncTrackingData (required) (default to false).</param>
-        /// <param name="FulfillAllItems">FulfillAllItems (required) (default to false).</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public ShoppingCartConnection(int? LobId = null, int? OrderSourceId = null, int? IntegrationPartnerId = null, string ConnectionType = null, int? ItemFilterId = null, string InfoplusSKUFieldToMap = null, string ShoppingCartSKUFieldToMap = null, string Name = null, string ShoppingCartStoreURL = null, string AccessCode = null, string AccessToken = null, string Username = null, string Password = null, int? DefaultCarrierId = null, string OrderShipmentLevel = null, bool? SyncOrders = null, bool? SyncInventory = null, bool? SyncTrackingData = null, bool? FulfillAllItems = null, Dictionary<string, Object> CustomFields = null)
+        public ShoppingCartConnection(int? LobId = null, int? OrderSourceId = null, int? IntegrationPartnerId = null, string ConnectionType = null, int? ItemFilterId = null, string InfoplusSKUFieldToMap = null, string ShoppingCartSKUFieldToMap = null, string Name = null, string ShoppingCartStoreURL = null, string AccessCode = null, string AccessToken = null, string Username = null, string Password = null, bool? SyncOrders = null, bool? SyncInventory = null, bool? SyncTrackingData = null, Dictionary<string, Object> CustomFields = null)
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -153,15 +150,6 @@ namespace Infoplus.Model
             {
                 this.Password = Password;
             }
-            // to ensure "OrderShipmentLevel" is required (not null)
-            if (OrderShipmentLevel == null)
-            {
-                throw new InvalidDataException("OrderShipmentLevel is a required property for ShoppingCartConnection and cannot be null");
-            }
-            else
-            {
-                this.OrderShipmentLevel = OrderShipmentLevel;
-            }
             // to ensure "SyncOrders" is required (not null)
             if (SyncOrders == null)
             {
@@ -189,17 +177,7 @@ namespace Infoplus.Model
             {
                 this.SyncTrackingData = SyncTrackingData;
             }
-            // to ensure "FulfillAllItems" is required (not null)
-            if (FulfillAllItems == null)
-            {
-                throw new InvalidDataException("FulfillAllItems is a required property for ShoppingCartConnection and cannot be null");
-            }
-            else
-            {
-                this.FulfillAllItems = FulfillAllItems;
-            }
             this.ItemFilterId = ItemFilterId;
-            this.DefaultCarrierId = DefaultCarrierId;
             this.CustomFields = CustomFields;
             
         }
@@ -314,18 +292,6 @@ namespace Infoplus.Model
         public string Password { get; set; }
     
         /// <summary>
-        /// Gets or Sets DefaultCarrierId
-        /// </summary>
-        [DataMember(Name="defaultCarrierId", EmitDefaultValue=false)]
-        public int? DefaultCarrierId { get; set; }
-    
-        /// <summary>
-        /// Gets or Sets OrderShipmentLevel
-        /// </summary>
-        [DataMember(Name="orderShipmentLevel", EmitDefaultValue=false)]
-        public string OrderShipmentLevel { get; set; }
-    
-        /// <summary>
         /// Gets or Sets SyncOrders
         /// </summary>
         [DataMember(Name="syncOrders", EmitDefaultValue=false)]
@@ -344,22 +310,10 @@ namespace Infoplus.Model
         public bool? SyncTrackingData { get; set; }
     
         /// <summary>
-        /// Gets or Sets FulfillAllItems
-        /// </summary>
-        [DataMember(Name="fulfillAllItems", EmitDefaultValue=false)]
-        public bool? FulfillAllItems { get; set; }
-    
-        /// <summary>
         /// Gets or Sets SyncInventoryLevelsLastRunTime
         /// </summary>
         [DataMember(Name="syncInventoryLevelsLastRunTime", EmitDefaultValue=false)]
         public DateTime? SyncInventoryLevelsLastRunTime { get; private set; }
-    
-        /// <summary>
-        /// Gets or Sets SyncOrdersLastRunTime
-        /// </summary>
-        [DataMember(Name="syncOrdersLastRunTime", EmitDefaultValue=false)]
-        public DateTime? SyncOrdersLastRunTime { get; private set; }
     
         /// <summary>
         /// Gets or Sets CustomFields
@@ -393,14 +347,10 @@ namespace Infoplus.Model
             sb.Append("  AccessToken: ").Append(AccessToken).Append("\n");
             sb.Append("  Username: ").Append(Username).Append("\n");
             sb.Append("  Password: ").Append(Password).Append("\n");
-            sb.Append("  DefaultCarrierId: ").Append(DefaultCarrierId).Append("\n");
-            sb.Append("  OrderShipmentLevel: ").Append(OrderShipmentLevel).Append("\n");
             sb.Append("  SyncOrders: ").Append(SyncOrders).Append("\n");
             sb.Append("  SyncInventory: ").Append(SyncInventory).Append("\n");
             sb.Append("  SyncTrackingData: ").Append(SyncTrackingData).Append("\n");
-            sb.Append("  FulfillAllItems: ").Append(FulfillAllItems).Append("\n");
             sb.Append("  SyncInventoryLevelsLastRunTime: ").Append(SyncInventoryLevelsLastRunTime).Append("\n");
-            sb.Append("  SyncOrdersLastRunTime: ").Append(SyncOrdersLastRunTime).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             
             sb.Append("}\n");
@@ -530,16 +480,6 @@ namespace Infoplus.Model
                     this.Password.Equals(other.Password)
                 ) && 
                 (
-                    this.DefaultCarrierId == other.DefaultCarrierId ||
-                    this.DefaultCarrierId != null &&
-                    this.DefaultCarrierId.Equals(other.DefaultCarrierId)
-                ) && 
-                (
-                    this.OrderShipmentLevel == other.OrderShipmentLevel ||
-                    this.OrderShipmentLevel != null &&
-                    this.OrderShipmentLevel.Equals(other.OrderShipmentLevel)
-                ) && 
-                (
                     this.SyncOrders == other.SyncOrders ||
                     this.SyncOrders != null &&
                     this.SyncOrders.Equals(other.SyncOrders)
@@ -555,19 +495,9 @@ namespace Infoplus.Model
                     this.SyncTrackingData.Equals(other.SyncTrackingData)
                 ) && 
                 (
-                    this.FulfillAllItems == other.FulfillAllItems ||
-                    this.FulfillAllItems != null &&
-                    this.FulfillAllItems.Equals(other.FulfillAllItems)
-                ) && 
-                (
                     this.SyncInventoryLevelsLastRunTime == other.SyncInventoryLevelsLastRunTime ||
                     this.SyncInventoryLevelsLastRunTime != null &&
                     this.SyncInventoryLevelsLastRunTime.Equals(other.SyncInventoryLevelsLastRunTime)
-                ) && 
-                (
-                    this.SyncOrdersLastRunTime == other.SyncOrdersLastRunTime ||
-                    this.SyncOrdersLastRunTime != null &&
-                    this.SyncOrdersLastRunTime.Equals(other.SyncOrdersLastRunTime)
                 ) && 
                 (
                     this.CustomFields == other.CustomFields ||
@@ -642,12 +572,6 @@ namespace Infoplus.Model
                 if (this.Password != null)
                     hash = hash * 59 + this.Password.GetHashCode();
                 
-                if (this.DefaultCarrierId != null)
-                    hash = hash * 59 + this.DefaultCarrierId.GetHashCode();
-                
-                if (this.OrderShipmentLevel != null)
-                    hash = hash * 59 + this.OrderShipmentLevel.GetHashCode();
-                
                 if (this.SyncOrders != null)
                     hash = hash * 59 + this.SyncOrders.GetHashCode();
                 
@@ -657,14 +581,8 @@ namespace Infoplus.Model
                 if (this.SyncTrackingData != null)
                     hash = hash * 59 + this.SyncTrackingData.GetHashCode();
                 
-                if (this.FulfillAllItems != null)
-                    hash = hash * 59 + this.FulfillAllItems.GetHashCode();
-                
                 if (this.SyncInventoryLevelsLastRunTime != null)
                     hash = hash * 59 + this.SyncInventoryLevelsLastRunTime.GetHashCode();
-                
-                if (this.SyncOrdersLastRunTime != null)
-                    hash = hash * 59 + this.SyncOrdersLastRunTime.GetHashCode();
                 
                 if (this.CustomFields != null)
                     hash = hash * 59 + this.CustomFields.GetHashCode();

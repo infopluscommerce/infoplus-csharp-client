@@ -23,7 +23,7 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="InventoryAdjustment" />class.
         /// </summary>
         /// <param name="Id">Id.</param>
-        /// <param name="LobId">LobId.</param>
+        /// <param name="Lob">Lob.</param>
         /// <param name="SkuId">SkuId.</param>
         /// <param name="PoNoId">PoNoId.</param>
         /// <param name="AdjustmentDate">AdjustmentDate.</param>
@@ -37,10 +37,10 @@ namespace Infoplus.Model
         /// <param name="AdjustmentCode">AdjustmentCode.</param>
         /// <param name="CustomFields">CustomFields.</param>
 
-        public InventoryAdjustment(int? Id = null, int? LobId = null, int? SkuId = null, int? PoNoId = null, DateTime? AdjustmentDate = null, string AdjustmentTime = null, string Location = null, int? Qty = null, string Note = null, string AuthorizedBy = null, string Printed = null, double? OrderNo = null, string AdjustmentCode = null, Dictionary<string, Object> CustomFields = null)
+        public InventoryAdjustment(int? Id = null, int? Lob = null, int? SkuId = null, int? PoNoId = null, DateTime? AdjustmentDate = null, string AdjustmentTime = null, string Location = null, int? Qty = null, string Note = null, string AuthorizedBy = null, string Printed = null, double? OrderNo = null, string AdjustmentCode = null, Dictionary<string, Object> CustomFields = null)
         {
             this.Id = Id;
-            this.LobId = LobId;
+            this.Lob = Lob;
             this.SkuId = SkuId;
             this.PoNoId = PoNoId;
             this.AdjustmentDate = AdjustmentDate;
@@ -64,10 +64,10 @@ namespace Infoplus.Model
         public int? Id { get; set; }
     
         /// <summary>
-        /// Gets or Sets LobId
+        /// Gets or Sets Lob
         /// </summary>
-        [DataMember(Name="lobId", EmitDefaultValue=false)]
-        public int? LobId { get; set; }
+        [DataMember(Name="lob", EmitDefaultValue=false)]
+        public int? Lob { get; set; }
     
         /// <summary>
         /// Gets or Sets SkuId
@@ -150,7 +150,7 @@ namespace Infoplus.Model
             var sb = new StringBuilder();
             sb.Append("class InventoryAdjustment {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  LobId: ").Append(LobId).Append("\n");
+            sb.Append("  Lob: ").Append(Lob).Append("\n");
             sb.Append("  SkuId: ").Append(SkuId).Append("\n");
             sb.Append("  PoNoId: ").Append(PoNoId).Append("\n");
             sb.Append("  AdjustmentDate: ").Append(AdjustmentDate).Append("\n");
@@ -206,9 +206,9 @@ namespace Infoplus.Model
                     this.Id.Equals(other.Id)
                 ) && 
                 (
-                    this.LobId == other.LobId ||
-                    this.LobId != null &&
-                    this.LobId.Equals(other.LobId)
+                    this.Lob == other.Lob ||
+                    this.Lob != null &&
+                    this.Lob.Equals(other.Lob)
                 ) && 
                 (
                     this.SkuId == other.SkuId ||
@@ -287,8 +287,8 @@ namespace Infoplus.Model
                 if (this.Id != null)
                     hash = hash * 59 + this.Id.GetHashCode();
                 
-                if (this.LobId != null)
-                    hash = hash * 59 + this.LobId.GetHashCode();
+                if (this.Lob != null)
+                    hash = hash * 59 + this.Lob.GetHashCode();
                 
                 if (this.SkuId != null)
                     hash = hash * 59 + this.SkuId.GetHashCode();
