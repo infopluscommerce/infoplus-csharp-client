@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddSubstitution**](SubstitutionApi.md#addsubstitution) | **POST** /beta/substitution | Create a substitution
+[**AddSubstitutionAudit**](SubstitutionApi.md#addsubstitutionaudit) | **PUT** /beta/substitution/{substitutionId}/audit/{substitutionAudit} | Add new audit for a substitution
+[**AddSubstitutionTag**](SubstitutionApi.md#addsubstitutiontag) | **PUT** /beta/substitution/{substitutionId}/tag/{substitutionTag} | Add new tags for a substitution.
 [**DeleteSubstitution**](SubstitutionApi.md#deletesubstitution) | **DELETE** /beta/substitution/{substitutionId} | Delete a substitution
+[**DeleteSubstitutionTag**](SubstitutionApi.md#deletesubstitutiontag) | **DELETE** /beta/substitution/{substitutionId}/tag/{substitutionTag} | Delete a tag for a substitution.
+[**GetDuplicateSubstitutionById**](SubstitutionApi.md#getduplicatesubstitutionbyid) | **GET** /beta/substitution/duplicate/{substitutionId} | Get a duplicated a substitution by id
 [**GetSubstitutionByFilter**](SubstitutionApi.md#getsubstitutionbyfilter) | **GET** /beta/substitution/search | Search substitutions by filter
 [**GetSubstitutionById**](SubstitutionApi.md#getsubstitutionbyid) | **GET** /beta/substitution/{substitutionId} | Get a substitution by id
+[**GetSubstitutionTags**](SubstitutionApi.md#getsubstitutiontags) | **GET** /beta/substitution/{substitutionId}/tag | Get the tags for a substitution.
 [**UpdateSubstitution**](SubstitutionApi.md#updatesubstitution) | **PUT** /beta/substitution | Update a substitution
 [**UpdateSubstitutionCustomFields**](SubstitutionApi.md#updatesubstitutioncustomfields) | **PUT** /beta/substitution/customFields | Update a substitution custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new SubstitutionApi();
             var body = new Substitution(); // Substitution | Substitution to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addsubstitutionaudit"></a>
+# **AddSubstitutionAudit**
+> void AddSubstitutionAudit (int? substitutionId, string substitutionAudit)
+
+Add new audit for a substitution
+
+Adds an audit to an existing substitution.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddSubstitutionAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new SubstitutionApi();
+            var substitutionId = 56;  // int? | Id of the substitution to add an audit to
+            var substitutionAudit = substitutionAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a substitution
+                apiInstance.AddSubstitutionAudit(substitutionId, substitutionAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SubstitutionApi.AddSubstitutionAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **substitutionId** | **int?**| Id of the substitution to add an audit to | 
+ **substitutionAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addsubstitutiontag"></a>
+# **AddSubstitutionTag**
+> void AddSubstitutionTag (int? substitutionId, string substitutionTag)
+
+Add new tags for a substitution.
+
+Adds a tag to an existing substitution.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddSubstitutionTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new SubstitutionApi();
+            var substitutionId = 56;  // int? | Id of the substitution to add a tag to
+            var substitutionTag = substitutionTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a substitution.
+                apiInstance.AddSubstitutionTag(substitutionId, substitutionTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SubstitutionApi.AddSubstitutionTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **substitutionId** | **int?**| Id of the substitution to add a tag to | 
+ **substitutionTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletesubstitution"></a>
 # **DeleteSubstitution**
 > void DeleteSubstitution (int? substitutionId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new SubstitutionApi();
             var substitutionId = 56;  // int? | Id of the substitution to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletesubstitutiontag"></a>
+# **DeleteSubstitutionTag**
+> void DeleteSubstitutionTag (int? substitutionId, string substitutionTag)
+
+Delete a tag for a substitution.
+
+Deletes an existing substitution tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteSubstitutionTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new SubstitutionApi();
+            var substitutionId = 56;  // int? | Id of the substitution to remove tag from
+            var substitutionTag = substitutionTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a substitution.
+                apiInstance.DeleteSubstitutionTag(substitutionId, substitutionTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SubstitutionApi.DeleteSubstitutionTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **substitutionId** | **int?**| Id of the substitution to remove tag from | 
+ **substitutionTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatesubstitutionbyid"></a>
+# **GetDuplicateSubstitutionById**
+> Substitution GetDuplicateSubstitutionById (int? substitutionId)
+
+Get a duplicated a substitution by id
+
+Returns a duplicated substitution identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateSubstitutionByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new SubstitutionApi();
+            var substitutionId = 56;  // int? | Id of the substitution to be duplicated.
+
+            try
+            {
+                // Get a duplicated a substitution by id
+                Substitution result = apiInstance.GetDuplicateSubstitutionById(substitutionId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SubstitutionApi.GetDuplicateSubstitutionById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **substitutionId** | **int?**| Id of the substitution to be duplicated. | 
+
+### Return type
+
+[**Substitution**](Substitution.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getsubstitutionbyfilter"></a>
 # **GetSubstitutionByFilter**
 > List<Substitution> GetSubstitutionByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new SubstitutionApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new SubstitutionApi();
             var substitutionId = 56;  // int? | Id of the substitution to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getsubstitutiontags"></a>
+# **GetSubstitutionTags**
+> void GetSubstitutionTags (int? substitutionId)
+
+Get the tags for a substitution.
+
+Get all existing substitution tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetSubstitutionTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new SubstitutionApi();
+            var substitutionId = 56;  // int? | Id of the substitution to get tags for
+
+            try
+            {
+                // Get the tags for a substitution.
+                apiInstance.GetSubstitutionTags(substitutionId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling SubstitutionApi.GetSubstitutionTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **substitutionId** | **int?**| Id of the substitution to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatesubstitution"></a>
 # **UpdateSubstitution**
 > void UpdateSubstitution (Substitution body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new SubstitutionApi();
             var body = new Substitution(); // Substitution | Substitution to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new SubstitutionApi();
             var body = new Substitution(); // Substitution | Substitution to be updated.

@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddBillOfLading**](BillOfLadingApi.md#addbilloflading) | **POST** /beta/billOfLading | Create a billOfLading
+[**AddBillOfLadingAudit**](BillOfLadingApi.md#addbillofladingaudit) | **PUT** /beta/billOfLading/{billOfLadingId}/audit/{billOfLadingAudit} | Add new audit for a billOfLading
+[**AddBillOfLadingTag**](BillOfLadingApi.md#addbillofladingtag) | **PUT** /beta/billOfLading/{billOfLadingId}/tag/{billOfLadingTag} | Add new tags for a billOfLading.
 [**DeleteBillOfLading**](BillOfLadingApi.md#deletebilloflading) | **DELETE** /beta/billOfLading/{billOfLadingId} | Delete a billOfLading
+[**DeleteBillOfLadingTag**](BillOfLadingApi.md#deletebillofladingtag) | **DELETE** /beta/billOfLading/{billOfLadingId}/tag/{billOfLadingTag} | Delete a tag for a billOfLading.
 [**GetBillOfLadingByFilter**](BillOfLadingApi.md#getbillofladingbyfilter) | **GET** /beta/billOfLading/search | Search billOfLadings by filter
 [**GetBillOfLadingById**](BillOfLadingApi.md#getbillofladingbyid) | **GET** /beta/billOfLading/{billOfLadingId} | Get a billOfLading by id
+[**GetBillOfLadingTags**](BillOfLadingApi.md#getbillofladingtags) | **GET** /beta/billOfLading/{billOfLadingId}/tag | Get the tags for a billOfLading.
+[**GetDuplicateBillOfLadingById**](BillOfLadingApi.md#getduplicatebillofladingbyid) | **GET** /beta/billOfLading/duplicate/{billOfLadingId} | Get a duplicated a billOfLading by id
 [**UpdateBillOfLading**](BillOfLadingApi.md#updatebilloflading) | **PUT** /beta/billOfLading | Update a billOfLading
 [**UpdateBillOfLadingCustomFields**](BillOfLadingApi.md#updatebillofladingcustomfields) | **PUT** /beta/billOfLading/customFields | Update a billOfLading custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillOfLadingApi();
             var body = new BillOfLading(); // BillOfLading | BillOfLading to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addbillofladingaudit"></a>
+# **AddBillOfLadingAudit**
+> void AddBillOfLadingAudit (int? billOfLadingId, string billOfLadingAudit)
+
+Add new audit for a billOfLading
+
+Adds an audit to an existing billOfLading.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddBillOfLadingAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillOfLadingApi();
+            var billOfLadingId = 56;  // int? | Id of the billOfLading to add an audit to
+            var billOfLadingAudit = billOfLadingAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a billOfLading
+                apiInstance.AddBillOfLadingAudit(billOfLadingId, billOfLadingAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillOfLadingApi.AddBillOfLadingAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billOfLadingId** | **int?**| Id of the billOfLading to add an audit to | 
+ **billOfLadingAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addbillofladingtag"></a>
+# **AddBillOfLadingTag**
+> void AddBillOfLadingTag (int? billOfLadingId, string billOfLadingTag)
+
+Add new tags for a billOfLading.
+
+Adds a tag to an existing billOfLading.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddBillOfLadingTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillOfLadingApi();
+            var billOfLadingId = 56;  // int? | Id of the billOfLading to add a tag to
+            var billOfLadingTag = billOfLadingTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a billOfLading.
+                apiInstance.AddBillOfLadingTag(billOfLadingId, billOfLadingTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillOfLadingApi.AddBillOfLadingTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billOfLadingId** | **int?**| Id of the billOfLading to add a tag to | 
+ **billOfLadingTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletebilloflading"></a>
 # **DeleteBillOfLading**
 > void DeleteBillOfLading (int? billOfLadingId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillOfLadingApi();
             var billOfLadingId = 56;  // int? | Id of the billOfLading to be deleted.
@@ -145,6 +282,73 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletebillofladingtag"></a>
+# **DeleteBillOfLadingTag**
+> void DeleteBillOfLadingTag (int? billOfLadingId, string billOfLadingTag)
+
+Delete a tag for a billOfLading.
+
+Deletes an existing billOfLading tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteBillOfLadingTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillOfLadingApi();
+            var billOfLadingId = 56;  // int? | Id of the billOfLading to remove tag from
+            var billOfLadingTag = billOfLadingTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a billOfLading.
+                apiInstance.DeleteBillOfLadingTag(billOfLadingId, billOfLadingTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillOfLadingApi.DeleteBillOfLadingTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billOfLadingId** | **int?**| Id of the billOfLading to remove tag from | 
+ **billOfLadingTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getbillofladingbyfilter"></a>
 # **GetBillOfLadingByFilter**
 > List<BillOfLading> GetBillOfLadingByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +371,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillOfLadingApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +443,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillOfLadingApi();
             var billOfLadingId = 56;  // int? | Id of the billOfLading to be returned.
@@ -285,6 +487,137 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getbillofladingtags"></a>
+# **GetBillOfLadingTags**
+> void GetBillOfLadingTags (int? billOfLadingId)
+
+Get the tags for a billOfLading.
+
+Get all existing billOfLading tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetBillOfLadingTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillOfLadingApi();
+            var billOfLadingId = 56;  // int? | Id of the billOfLading to get tags for
+
+            try
+            {
+                // Get the tags for a billOfLading.
+                apiInstance.GetBillOfLadingTags(billOfLadingId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillOfLadingApi.GetBillOfLadingTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billOfLadingId** | **int?**| Id of the billOfLading to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatebillofladingbyid"></a>
+# **GetDuplicateBillOfLadingById**
+> BillOfLading GetDuplicateBillOfLadingById (int? billOfLadingId)
+
+Get a duplicated a billOfLading by id
+
+Returns a duplicated billOfLading identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateBillOfLadingByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillOfLadingApi();
+            var billOfLadingId = 56;  // int? | Id of the billOfLading to be duplicated.
+
+            try
+            {
+                // Get a duplicated a billOfLading by id
+                BillOfLading result = apiInstance.GetDuplicateBillOfLadingById(billOfLadingId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillOfLadingApi.GetDuplicateBillOfLadingById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billOfLadingId** | **int?**| Id of the billOfLading to be duplicated. | 
+
+### Return type
+
+[**BillOfLading**](BillOfLading.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatebilloflading"></a>
 # **UpdateBillOfLading**
 > void UpdateBillOfLading (BillOfLading body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillOfLadingApi();
             var body = new BillOfLading(); // BillOfLading | BillOfLading to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillOfLadingApi();
             var body = new BillOfLading(); // BillOfLading | BillOfLading to be updated.

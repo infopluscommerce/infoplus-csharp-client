@@ -19,6 +19,7 @@ Name | Type | Description | Notes
 **Number** | **int?** |  | [optional] 
 **Online** | **bool?** |  | [default to false]
 **PriorityCode** | **int?** |  | [optional] 
+**Cost** | **int?** |  | [optional] 
 **AllowItemMixing** | **bool?** |  | [default to false]
 **CreateDate** | **DateTime?** |  | [optional] 
 **ModifyDate** | **DateTime?** |  | [optional] 

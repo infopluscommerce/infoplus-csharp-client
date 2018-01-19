@@ -5,7 +5,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **LobId** | **int?** |  | 
 **Id** | **int?** |  | [optional] 
-**KitSKUId** | **int?** |  | 
+**KitSKU** | **string** |  | 
 **PackagingType** | **string** |  | [optional] 
 **Other** | **string** |  | [optional] 
 **NumberOfComponents** | **int?** |  | [optional] 
@@ -25,6 +25,7 @@ Name | Type | Description | Notes
 **MaxInvQty** | **int?** |  | [optional] 
 **IsKOD** | **string** |  | 
 **KodType** | **string** |  | 
+**KitComponentList** | [**List&lt;KitComponent&gt;**](KitComponent.md) |  | 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

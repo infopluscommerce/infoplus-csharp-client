@@ -5,10 +5,15 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddItem**](ItemApi.md#additem) | **POST** /beta/item | Create an item
+[**AddItemAudit**](ItemApi.md#additemaudit) | **PUT** /beta/item/{itemId}/audit/{itemAudit} | Add new audit for an item
+[**AddItemTag**](ItemApi.md#additemtag) | **PUT** /beta/item/{itemId}/tag/{itemTag} | Add new tags for an item.
 [**DeleteItem**](ItemApi.md#deleteitem) | **DELETE** /beta/item/{itemId} | Delete an item
+[**DeleteItemTag**](ItemApi.md#deleteitemtag) | **DELETE** /beta/item/{itemId}/tag/{itemTag} | Delete a tag for an item.
 [**GetBySKU**](ItemApi.md#getbysku) | **GET** /beta/item/getBySKU | Get an item by SKU
+[**GetDuplicateItemById**](ItemApi.md#getduplicateitembyid) | **GET** /beta/item/duplicate/{itemId} | Get a duplicated an item by id
 [**GetItemByFilter**](ItemApi.md#getitembyfilter) | **GET** /beta/item/search | Search items by filter
 [**GetItemById**](ItemApi.md#getitembyid) | **GET** /beta/item/{itemId} | Get an item by id
+[**GetItemTags**](ItemApi.md#getitemtags) | **GET** /beta/item/{itemId}/tag | Get the tags for an item.
 [**UpdateItem**](ItemApi.md#updateitem) | **PUT** /beta/item | Update an item
 [**UpdateItemCustomFields**](ItemApi.md#updateitemcustomfields) | **PUT** /beta/item/customFields | Update an item custom fields
 
@@ -35,11 +40,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var body = new Item(); // Item | Item to be inserted.
@@ -80,6 +84,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="additemaudit"></a>
+# **AddItemAudit**
+> void AddItemAudit (int? itemId, string itemAudit)
+
+Add new audit for an item
+
+Adds an audit to an existing item.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddItemAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ItemApi();
+            var itemId = 56;  // int? | Id of the item to add an audit to
+            var itemAudit = itemAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an item
+                apiInstance.AddItemAudit(itemId, itemAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ItemApi.AddItemAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **itemId** | **int?**| Id of the item to add an audit to | 
+ **itemAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="additemtag"></a>
+# **AddItemTag**
+> void AddItemTag (int? itemId, string itemTag)
+
+Add new tags for an item.
+
+Adds a tag to an existing item.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddItemTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ItemApi();
+            var itemId = 56;  // int? | Id of the item to add a tag to
+            var itemTag = itemTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an item.
+                apiInstance.AddItemTag(itemId, itemTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ItemApi.AddItemTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **itemId** | **int?**| Id of the item to add a tag to | 
+ **itemTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteitem"></a>
 # **DeleteItem**
 > void DeleteItem (int? itemId)
@@ -102,11 +240,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var itemId = 56;  // int? | Id of the item to be deleted.
@@ -146,6 +283,73 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteitemtag"></a>
+# **DeleteItemTag**
+> void DeleteItemTag (int? itemId, string itemTag)
+
+Delete a tag for an item.
+
+Deletes an existing item tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteItemTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ItemApi();
+            var itemId = 56;  // int? | Id of the item to remove tag from
+            var itemTag = itemTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an item.
+                apiInstance.DeleteItemTag(itemId, itemTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ItemApi.DeleteItemTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **itemId** | **int?**| Id of the item to remove tag from | 
+ **itemTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getbysku"></a>
 # **GetBySKU**
 > Item GetBySKU (int? lobId, string sku)
@@ -168,11 +372,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var lobId = 56;  // int? | lobId of the item to be returned.
@@ -215,6 +418,72 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getduplicateitembyid"></a>
+# **GetDuplicateItemById**
+> Item GetDuplicateItemById (int? itemId)
+
+Get a duplicated an item by id
+
+Returns a duplicated item identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateItemByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ItemApi();
+            var itemId = 56;  // int? | Id of the item to be duplicated.
+
+            try
+            {
+                // Get a duplicated an item by id
+                Item result = apiInstance.GetDuplicateItemById(itemId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ItemApi.GetDuplicateItemById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **itemId** | **int?**| Id of the item to be duplicated. | 
+
+### Return type
+
+[**Item**](Item.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getitembyfilter"></a>
 # **GetItemByFilter**
 > List<Item> GetItemByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -237,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -310,11 +578,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var itemId = 56;  // int? | Id of the item to be returned.
@@ -355,6 +622,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getitemtags"></a>
+# **GetItemTags**
+> void GetItemTags (int? itemId)
+
+Get the tags for an item.
+
+Get all existing item tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetItemTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ItemApi();
+            var itemId = 56;  // int? | Id of the item to get tags for
+
+            try
+            {
+                // Get the tags for an item.
+                apiInstance.GetItemTags(itemId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ItemApi.GetItemTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **itemId** | **int?**| Id of the item to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateitem"></a>
 # **UpdateItem**
 > void UpdateItem (Item body)
@@ -377,11 +709,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var body = new Item(); // Item | Item to be updated.
@@ -443,11 +774,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ItemApi();
             var body = new Item(); // Item | Item to be updated.

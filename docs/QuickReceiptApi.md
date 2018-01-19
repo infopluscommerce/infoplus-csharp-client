@@ -5,9 +5,15 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddQuickReceipt**](QuickReceiptApi.md#addquickreceipt) | **POST** /beta/quickReceipt | Create a quickReceipt
+[**AddQuickReceiptAudit**](QuickReceiptApi.md#addquickreceiptaudit) | **PUT** /beta/quickReceipt/{quickReceiptId}/audit/{quickReceiptAudit} | Add new audit for a quickReceipt
+[**AddQuickReceiptTag**](QuickReceiptApi.md#addquickreceipttag) | **PUT** /beta/quickReceipt/{quickReceiptId}/tag/{quickReceiptTag} | Add new tags for a quickReceipt.
 [**DeleteQuickReceipt**](QuickReceiptApi.md#deletequickreceipt) | **DELETE** /beta/quickReceipt/{quickReceiptId} | Delete a quickReceipt
+[**DeleteQuickReceiptTag**](QuickReceiptApi.md#deletequickreceipttag) | **DELETE** /beta/quickReceipt/{quickReceiptId}/tag/{quickReceiptTag} | Delete a tag for a quickReceipt.
+[**ExecuteQuickReceipt**](QuickReceiptApi.md#executequickreceipt) | **POST** /beta/quickReceipt/executeQuickReceipt | Run the ExecuteQuickReceipt process.
+[**GetDuplicateQuickReceiptById**](QuickReceiptApi.md#getduplicatequickreceiptbyid) | **GET** /beta/quickReceipt/duplicate/{quickReceiptId} | Get a duplicated a quickReceipt by id
 [**GetQuickReceiptByFilter**](QuickReceiptApi.md#getquickreceiptbyfilter) | **GET** /beta/quickReceipt/search | Search quickReceipts by filter
 [**GetQuickReceiptById**](QuickReceiptApi.md#getquickreceiptbyid) | **GET** /beta/quickReceipt/{quickReceiptId} | Get a quickReceipt by id
+[**GetQuickReceiptTags**](QuickReceiptApi.md#getquickreceipttags) | **GET** /beta/quickReceipt/{quickReceiptId}/tag | Get the tags for a quickReceipt.
 [**UpdateQuickReceipt**](QuickReceiptApi.md#updatequickreceipt) | **PUT** /beta/quickReceipt | Update a quickReceipt
 [**UpdateQuickReceiptCustomFields**](QuickReceiptApi.md#updatequickreceiptcustomfields) | **PUT** /beta/quickReceipt/customFields | Update a quickReceipt custom fields
 
@@ -34,11 +40,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new QuickReceiptApi();
             var body = new QuickReceipt(); // QuickReceipt | QuickReceipt to be inserted.
@@ -79,6 +84,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addquickreceiptaudit"></a>
+# **AddQuickReceiptAudit**
+> void AddQuickReceiptAudit (int? quickReceiptId, string quickReceiptAudit)
+
+Add new audit for a quickReceipt
+
+Adds an audit to an existing quickReceipt.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddQuickReceiptAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new QuickReceiptApi();
+            var quickReceiptId = 56;  // int? | Id of the quickReceipt to add an audit to
+            var quickReceiptAudit = quickReceiptAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a quickReceipt
+                apiInstance.AddQuickReceiptAudit(quickReceiptId, quickReceiptAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuickReceiptApi.AddQuickReceiptAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **quickReceiptId** | **int?**| Id of the quickReceipt to add an audit to | 
+ **quickReceiptAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addquickreceipttag"></a>
+# **AddQuickReceiptTag**
+> void AddQuickReceiptTag (int? quickReceiptId, string quickReceiptTag)
+
+Add new tags for a quickReceipt.
+
+Adds a tag to an existing quickReceipt.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddQuickReceiptTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new QuickReceiptApi();
+            var quickReceiptId = 56;  // int? | Id of the quickReceipt to add a tag to
+            var quickReceiptTag = quickReceiptTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a quickReceipt.
+                apiInstance.AddQuickReceiptTag(quickReceiptId, quickReceiptTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuickReceiptApi.AddQuickReceiptTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **quickReceiptId** | **int?**| Id of the quickReceipt to add a tag to | 
+ **quickReceiptTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletequickreceipt"></a>
 # **DeleteQuickReceipt**
 > void DeleteQuickReceipt (int? quickReceiptId)
@@ -101,11 +240,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new QuickReceiptApi();
             var quickReceiptId = 56;  // int? | Id of the quickReceipt to be deleted.
@@ -145,6 +283,203 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletequickreceipttag"></a>
+# **DeleteQuickReceiptTag**
+> void DeleteQuickReceiptTag (int? quickReceiptId, string quickReceiptTag)
+
+Delete a tag for a quickReceipt.
+
+Deletes an existing quickReceipt tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteQuickReceiptTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new QuickReceiptApi();
+            var quickReceiptId = 56;  // int? | Id of the quickReceipt to remove tag from
+            var quickReceiptTag = quickReceiptTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a quickReceipt.
+                apiInstance.DeleteQuickReceiptTag(quickReceiptId, quickReceiptTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuickReceiptApi.DeleteQuickReceiptTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **quickReceiptId** | **int?**| Id of the quickReceipt to remove tag from | 
+ **quickReceiptTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="executequickreceipt"></a>
+# **ExecuteQuickReceipt**
+> List<ProcessOutputAPIModel> ExecuteQuickReceipt (ExecuteQuickReceiptInputAPIModel body)
+
+Run the ExecuteQuickReceipt process.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class ExecuteQuickReceiptExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new QuickReceiptApi();
+            var body = new ExecuteQuickReceiptInputAPIModel(); // ExecuteQuickReceiptInputAPIModel | Input data for ExecuteQuickReceipt process.
+
+            try
+            {
+                // Run the ExecuteQuickReceipt process.
+                List&lt;ProcessOutputAPIModel&gt; result = apiInstance.ExecuteQuickReceipt(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuickReceiptApi.ExecuteQuickReceipt: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ExecuteQuickReceiptInputAPIModel**](ExecuteQuickReceiptInputAPIModel.md)| Input data for ExecuteQuickReceipt process. | 
+
+### Return type
+
+[**List<ProcessOutputAPIModel>**](ProcessOutputAPIModel.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatequickreceiptbyid"></a>
+# **GetDuplicateQuickReceiptById**
+> QuickReceipt GetDuplicateQuickReceiptById (int? quickReceiptId)
+
+Get a duplicated a quickReceipt by id
+
+Returns a duplicated quickReceipt identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateQuickReceiptByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new QuickReceiptApi();
+            var quickReceiptId = 56;  // int? | Id of the quickReceipt to be duplicated.
+
+            try
+            {
+                // Get a duplicated a quickReceipt by id
+                QuickReceipt result = apiInstance.GetDuplicateQuickReceiptById(quickReceiptId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuickReceiptApi.GetDuplicateQuickReceiptById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **quickReceiptId** | **int?**| Id of the quickReceipt to be duplicated. | 
+
+### Return type
+
+[**QuickReceipt**](QuickReceipt.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getquickreceiptbyfilter"></a>
 # **GetQuickReceiptByFilter**
 > List<QuickReceipt> GetQuickReceiptByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +502,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new QuickReceiptApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +574,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new QuickReceiptApi();
             var quickReceiptId = 56;  // int? | Id of the quickReceipt to be returned.
@@ -285,6 +618,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getquickreceipttags"></a>
+# **GetQuickReceiptTags**
+> void GetQuickReceiptTags (int? quickReceiptId)
+
+Get the tags for a quickReceipt.
+
+Get all existing quickReceipt tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetQuickReceiptTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new QuickReceiptApi();
+            var quickReceiptId = 56;  // int? | Id of the quickReceipt to get tags for
+
+            try
+            {
+                // Get the tags for a quickReceipt.
+                apiInstance.GetQuickReceiptTags(quickReceiptId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling QuickReceiptApi.GetQuickReceiptTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **quickReceiptId** | **int?**| Id of the quickReceipt to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatequickreceipt"></a>
 # **UpdateQuickReceipt**
 > void UpdateQuickReceipt (QuickReceipt body)
@@ -307,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new QuickReceiptApi();
             var body = new QuickReceipt(); // QuickReceipt | QuickReceipt to be updated.
@@ -373,11 +770,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new QuickReceiptApi();
             var body = new QuickReceipt(); // QuickReceipt | QuickReceipt to be updated.

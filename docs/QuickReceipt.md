@@ -28,10 +28,12 @@ Name | Type | Description | Notes
 **CartonWidth** | **decimal?** |  | [optional] 
 **CartonHeight** | **decimal?** |  | [optional] 
 **Cost** | **decimal?** |  | [optional] 
-**Sell** | **decimal?** |  | [optional] 
+**SellPrice** | **decimal?** |  | [optional] 
 **PricingPer** | **string** |  | [optional] 
 **GeneratedItemReceiptId** | **int?** |  | [optional] 
 **GeneratedASNId** | **int?** |  | [optional] 
+**DockDate** | **DateTime?** |  | [optional] 
+**ProductIdTag** | **string** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 **Sku** | **string** |  | [optional] 
 

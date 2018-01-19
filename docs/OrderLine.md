@@ -20,13 +20,16 @@ Name | Type | Description | Notes
 **OrderSourceSKU** | **string** |  | [optional] 
 **UnitCost** | **decimal?** |  | [optional] 
 **UnitSell** | **decimal?** |  | [optional] 
+**UnitDiscount** | **decimal?** |  | [optional] 
 **ExtendedCost** | **decimal?** |  | [optional] 
 **ExtendedSell** | **decimal?** |  | [optional] 
+**ExtendedDiscount** | **decimal?** |  | [optional] 
 **NcExtendedSell** | **decimal?** |  | [optional] 
 **ItemWeight** | **decimal?** |  | [optional] 
 **ProductionLot** | **string** |  | [optional] 
 **WeightPerWrap** | **decimal?** |  | [optional] 
 **Sector** | **string** |  | [optional] 
+**OrderAssemblyInstructions** | **string** |  | [optional] 
 **ItemAccountCodeId** | **int?** |  | 
 **ItemLegacyLowStockContactId** | **int?** |  | 
 **ItemMajorGroupId** | **int?** |  | 

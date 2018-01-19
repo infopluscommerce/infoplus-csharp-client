@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddOrderSourceReservation**](OrderSourceReservationApi.md#addordersourcereservation) | **POST** /beta/orderSourceReservation | Create an orderSourceReservation
+[**AddOrderSourceReservationAudit**](OrderSourceReservationApi.md#addordersourcereservationaudit) | **PUT** /beta/orderSourceReservation/{orderSourceReservationId}/audit/{orderSourceReservationAudit} | Add new audit for an orderSourceReservation
+[**AddOrderSourceReservationTag**](OrderSourceReservationApi.md#addordersourcereservationtag) | **PUT** /beta/orderSourceReservation/{orderSourceReservationId}/tag/{orderSourceReservationTag} | Add new tags for an orderSourceReservation.
 [**DeleteOrderSourceReservation**](OrderSourceReservationApi.md#deleteordersourcereservation) | **DELETE** /beta/orderSourceReservation/{orderSourceReservationId} | Delete an orderSourceReservation
+[**DeleteOrderSourceReservationTag**](OrderSourceReservationApi.md#deleteordersourcereservationtag) | **DELETE** /beta/orderSourceReservation/{orderSourceReservationId}/tag/{orderSourceReservationTag} | Delete a tag for an orderSourceReservation.
+[**GetDuplicateOrderSourceReservationById**](OrderSourceReservationApi.md#getduplicateordersourcereservationbyid) | **GET** /beta/orderSourceReservation/duplicate/{orderSourceReservationId} | Get a duplicated an orderSourceReservation by id
 [**GetOrderSourceReservationByFilter**](OrderSourceReservationApi.md#getordersourcereservationbyfilter) | **GET** /beta/orderSourceReservation/search | Search orderSourceReservations by filter
 [**GetOrderSourceReservationById**](OrderSourceReservationApi.md#getordersourcereservationbyid) | **GET** /beta/orderSourceReservation/{orderSourceReservationId} | Get an orderSourceReservation by id
+[**GetOrderSourceReservationTags**](OrderSourceReservationApi.md#getordersourcereservationtags) | **GET** /beta/orderSourceReservation/{orderSourceReservationId}/tag | Get the tags for an orderSourceReservation.
 [**UpdateOrderSourceReservation**](OrderSourceReservationApi.md#updateordersourcereservation) | **PUT** /beta/orderSourceReservation | Update an orderSourceReservation
 [**UpdateOrderSourceReservationCustomFields**](OrderSourceReservationApi.md#updateordersourcereservationcustomfields) | **PUT** /beta/orderSourceReservation/customFields | Update an orderSourceReservation custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceReservationApi();
             var body = new OrderSourceReservation(); // OrderSourceReservation | OrderSourceReservation to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addordersourcereservationaudit"></a>
+# **AddOrderSourceReservationAudit**
+> void AddOrderSourceReservationAudit (int? orderSourceReservationId, string orderSourceReservationAudit)
+
+Add new audit for an orderSourceReservation
+
+Adds an audit to an existing orderSourceReservation.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddOrderSourceReservationAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceReservationApi();
+            var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to add an audit to
+            var orderSourceReservationAudit = orderSourceReservationAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an orderSourceReservation
+                apiInstance.AddOrderSourceReservationAudit(orderSourceReservationId, orderSourceReservationAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceReservationApi.AddOrderSourceReservationAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceReservationId** | **int?**| Id of the orderSourceReservation to add an audit to | 
+ **orderSourceReservationAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addordersourcereservationtag"></a>
+# **AddOrderSourceReservationTag**
+> void AddOrderSourceReservationTag (int? orderSourceReservationId, string orderSourceReservationTag)
+
+Add new tags for an orderSourceReservation.
+
+Adds a tag to an existing orderSourceReservation.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddOrderSourceReservationTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceReservationApi();
+            var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to add a tag to
+            var orderSourceReservationTag = orderSourceReservationTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an orderSourceReservation.
+                apiInstance.AddOrderSourceReservationTag(orderSourceReservationId, orderSourceReservationTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceReservationApi.AddOrderSourceReservationTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceReservationId** | **int?**| Id of the orderSourceReservation to add a tag to | 
+ **orderSourceReservationTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteordersourcereservation"></a>
 # **DeleteOrderSourceReservation**
 > void DeleteOrderSourceReservation (int? orderSourceReservationId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceReservationApi();
             var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteordersourcereservationtag"></a>
+# **DeleteOrderSourceReservationTag**
+> void DeleteOrderSourceReservationTag (int? orderSourceReservationId, string orderSourceReservationTag)
+
+Delete a tag for an orderSourceReservation.
+
+Deletes an existing orderSourceReservation tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteOrderSourceReservationTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceReservationApi();
+            var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to remove tag from
+            var orderSourceReservationTag = orderSourceReservationTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an orderSourceReservation.
+                apiInstance.DeleteOrderSourceReservationTag(orderSourceReservationId, orderSourceReservationTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceReservationApi.DeleteOrderSourceReservationTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceReservationId** | **int?**| Id of the orderSourceReservation to remove tag from | 
+ **orderSourceReservationTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateordersourcereservationbyid"></a>
+# **GetDuplicateOrderSourceReservationById**
+> OrderSourceReservation GetDuplicateOrderSourceReservationById (int? orderSourceReservationId)
+
+Get a duplicated an orderSourceReservation by id
+
+Returns a duplicated orderSourceReservation identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateOrderSourceReservationByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceReservationApi();
+            var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to be duplicated.
+
+            try
+            {
+                // Get a duplicated an orderSourceReservation by id
+                OrderSourceReservation result = apiInstance.GetDuplicateOrderSourceReservationById(orderSourceReservationId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceReservationApi.GetDuplicateOrderSourceReservationById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceReservationId** | **int?**| Id of the orderSourceReservation to be duplicated. | 
+
+### Return type
+
+[**OrderSourceReservation**](OrderSourceReservation.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getordersourcereservationbyfilter"></a>
 # **GetOrderSourceReservationByFilter**
 > List<OrderSourceReservation> GetOrderSourceReservationByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceReservationApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceReservationApi();
             var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getordersourcereservationtags"></a>
+# **GetOrderSourceReservationTags**
+> void GetOrderSourceReservationTags (int? orderSourceReservationId)
+
+Get the tags for an orderSourceReservation.
+
+Get all existing orderSourceReservation tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetOrderSourceReservationTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceReservationApi();
+            var orderSourceReservationId = 56;  // int? | Id of the orderSourceReservation to get tags for
+
+            try
+            {
+                // Get the tags for an orderSourceReservation.
+                apiInstance.GetOrderSourceReservationTags(orderSourceReservationId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceReservationApi.GetOrderSourceReservationTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceReservationId** | **int?**| Id of the orderSourceReservation to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateordersourcereservation"></a>
 # **UpdateOrderSourceReservation**
 > void UpdateOrderSourceReservation (OrderSourceReservation body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceReservationApi();
             var body = new OrderSourceReservation(); // OrderSourceReservation | OrderSourceReservation to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceReservationApi();
             var body = new OrderSourceReservation(); // OrderSourceReservation | OrderSourceReservation to be updated.

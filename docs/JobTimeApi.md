@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddJobTime**](JobTimeApi.md#addjobtime) | **POST** /beta/jobTime | Create a jobTime
+[**AddJobTimeAudit**](JobTimeApi.md#addjobtimeaudit) | **PUT** /beta/jobTime/{jobTimeId}/audit/{jobTimeAudit} | Add new audit for a jobTime
+[**AddJobTimeTag**](JobTimeApi.md#addjobtimetag) | **PUT** /beta/jobTime/{jobTimeId}/tag/{jobTimeTag} | Add new tags for a jobTime.
 [**DeleteJobTime**](JobTimeApi.md#deletejobtime) | **DELETE** /beta/jobTime/{jobTimeId} | Delete a jobTime
+[**DeleteJobTimeTag**](JobTimeApi.md#deletejobtimetag) | **DELETE** /beta/jobTime/{jobTimeId}/tag/{jobTimeTag} | Delete a tag for a jobTime.
+[**GetDuplicateJobTimeById**](JobTimeApi.md#getduplicatejobtimebyid) | **GET** /beta/jobTime/duplicate/{jobTimeId} | Get a duplicated a jobTime by id
 [**GetJobTimeByFilter**](JobTimeApi.md#getjobtimebyfilter) | **GET** /beta/jobTime/search | Search jobTimes by filter
 [**GetJobTimeById**](JobTimeApi.md#getjobtimebyid) | **GET** /beta/jobTime/{jobTimeId} | Get a jobTime by id
+[**GetJobTimeTags**](JobTimeApi.md#getjobtimetags) | **GET** /beta/jobTime/{jobTimeId}/tag | Get the tags for a jobTime.
 [**UpdateJobTime**](JobTimeApi.md#updatejobtime) | **PUT** /beta/jobTime | Update a jobTime
 [**UpdateJobTimeCustomFields**](JobTimeApi.md#updatejobtimecustomfields) | **PUT** /beta/jobTime/customFields | Update a jobTime custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTimeApi();
             var body = new JobTime(); // JobTime | JobTime to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addjobtimeaudit"></a>
+# **AddJobTimeAudit**
+> void AddJobTimeAudit (int? jobTimeId, string jobTimeAudit)
+
+Add new audit for a jobTime
+
+Adds an audit to an existing jobTime.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddJobTimeAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTimeApi();
+            var jobTimeId = 56;  // int? | Id of the jobTime to add an audit to
+            var jobTimeAudit = jobTimeAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a jobTime
+                apiInstance.AddJobTimeAudit(jobTimeId, jobTimeAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTimeApi.AddJobTimeAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTimeId** | **int?**| Id of the jobTime to add an audit to | 
+ **jobTimeAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addjobtimetag"></a>
+# **AddJobTimeTag**
+> void AddJobTimeTag (int? jobTimeId, string jobTimeTag)
+
+Add new tags for a jobTime.
+
+Adds a tag to an existing jobTime.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddJobTimeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTimeApi();
+            var jobTimeId = 56;  // int? | Id of the jobTime to add a tag to
+            var jobTimeTag = jobTimeTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a jobTime.
+                apiInstance.AddJobTimeTag(jobTimeId, jobTimeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTimeApi.AddJobTimeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTimeId** | **int?**| Id of the jobTime to add a tag to | 
+ **jobTimeTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletejobtime"></a>
 # **DeleteJobTime**
 > void DeleteJobTime (int? jobTimeId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTimeApi();
             var jobTimeId = 56;  // int? | Id of the jobTime to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletejobtimetag"></a>
+# **DeleteJobTimeTag**
+> void DeleteJobTimeTag (int? jobTimeId, string jobTimeTag)
+
+Delete a tag for a jobTime.
+
+Deletes an existing jobTime tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteJobTimeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTimeApi();
+            var jobTimeId = 56;  // int? | Id of the jobTime to remove tag from
+            var jobTimeTag = jobTimeTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a jobTime.
+                apiInstance.DeleteJobTimeTag(jobTimeId, jobTimeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTimeApi.DeleteJobTimeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTimeId** | **int?**| Id of the jobTime to remove tag from | 
+ **jobTimeTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatejobtimebyid"></a>
+# **GetDuplicateJobTimeById**
+> JobTime GetDuplicateJobTimeById (int? jobTimeId)
+
+Get a duplicated a jobTime by id
+
+Returns a duplicated jobTime identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateJobTimeByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTimeApi();
+            var jobTimeId = 56;  // int? | Id of the jobTime to be duplicated.
+
+            try
+            {
+                // Get a duplicated a jobTime by id
+                JobTime result = apiInstance.GetDuplicateJobTimeById(jobTimeId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTimeApi.GetDuplicateJobTimeById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTimeId** | **int?**| Id of the jobTime to be duplicated. | 
+
+### Return type
+
+[**JobTime**](JobTime.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getjobtimebyfilter"></a>
 # **GetJobTimeByFilter**
 > List<JobTime> GetJobTimeByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTimeApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTimeApi();
             var jobTimeId = 56;  // int? | Id of the jobTime to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getjobtimetags"></a>
+# **GetJobTimeTags**
+> void GetJobTimeTags (int? jobTimeId)
+
+Get the tags for a jobTime.
+
+Get all existing jobTime tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetJobTimeTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTimeApi();
+            var jobTimeId = 56;  // int? | Id of the jobTime to get tags for
+
+            try
+            {
+                // Get the tags for a jobTime.
+                apiInstance.GetJobTimeTags(jobTimeId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTimeApi.GetJobTimeTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTimeId** | **int?**| Id of the jobTime to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatejobtime"></a>
 # **UpdateJobTime**
 > void UpdateJobTime (JobTime body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTimeApi();
             var body = new JobTime(); // JobTime | JobTime to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTimeApi();
             var body = new JobTime(); // JobTime | JobTime to be updated.

@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **LegacyPoNo** | **string** |  | [optional] 
 **WarehouseId** | **int?** |  | 
 **OrderDate** | **DateTime?** |  | [optional] 
+**FullDescription** | **string** |  | [optional] 
 **FactCost** | **decimal?** |  | [optional] 
 **MlCost** | **decimal?** |  | [optional] 
 **Sku** | **string** |  | 
@@ -18,7 +19,7 @@ Name | Type | Description | Notes
 **WrapCode** | **string** |  | 
 **UnitsPerWrap** | **int?** |  | 
 **Cost** | **decimal?** |  | [optional] 
-**Sell** | **decimal?** |  | [optional] 
+**SellPrice** | **decimal?** |  | [optional] 
 **PricingPer** | **string** |  | [optional] 
 **MaxFreight** | **decimal?** |  | [optional] 
 **ChargeFreight** | **string** |  | 
@@ -63,15 +64,18 @@ Name | Type | Description | Notes
 **ReceivedBy** | **string** |  | [optional] 
 **LineNo** | **int?** |  | [optional] 
 **ProdLot** | **string** |  | [optional] 
+**ProductIdTag** | **string** |  | [optional] 
 **UnitsPerCase** | **int?** |  | [optional] 
 **CaseWeight** | **decimal?** |  | [optional] 
 **Height** | **decimal?** |  | [optional] 
 **Width** | **decimal?** |  | [optional] 
 **Length** | **decimal?** |  | [optional] 
-**DockTime** | **DateTime?** |  | [optional] 
+**DockDate** | **DateTime?** |  | [optional] 
 **ModifyDate** | **DateTime?** |  | [optional] 
 **Impressions** | **int?** |  | [optional] 
 **AsnLine** | **int?** |  | [optional] 
+**Upc** | **string** |  | [optional] 
+**VendorSKU** | **string** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

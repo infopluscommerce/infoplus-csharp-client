@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddVendor**](VendorApi.md#addvendor) | **POST** /beta/vendor | Create a vendor
+[**AddVendorAudit**](VendorApi.md#addvendoraudit) | **PUT** /beta/vendor/{vendorId}/audit/{vendorAudit} | Add new audit for a vendor
+[**AddVendorTag**](VendorApi.md#addvendortag) | **PUT** /beta/vendor/{vendorId}/tag/{vendorTag} | Add new tags for a vendor.
 [**DeleteVendor**](VendorApi.md#deletevendor) | **DELETE** /beta/vendor/{vendorId} | Delete a vendor
+[**DeleteVendorTag**](VendorApi.md#deletevendortag) | **DELETE** /beta/vendor/{vendorId}/tag/{vendorTag} | Delete a tag for a vendor.
+[**GetDuplicateVendorById**](VendorApi.md#getduplicatevendorbyid) | **GET** /beta/vendor/duplicate/{vendorId} | Get a duplicated a vendor by id
 [**GetVendorByFilter**](VendorApi.md#getvendorbyfilter) | **GET** /beta/vendor/search | Search vendors by filter
 [**GetVendorById**](VendorApi.md#getvendorbyid) | **GET** /beta/vendor/{vendorId} | Get a vendor by id
+[**GetVendorTags**](VendorApi.md#getvendortags) | **GET** /beta/vendor/{vendorId}/tag | Get the tags for a vendor.
 [**UpdateVendor**](VendorApi.md#updatevendor) | **PUT** /beta/vendor | Update a vendor
 [**UpdateVendorCustomFields**](VendorApi.md#updatevendorcustomfields) | **PUT** /beta/vendor/customFields | Update a vendor custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorApi();
             var body = new Vendor(); // Vendor | Vendor to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addvendoraudit"></a>
+# **AddVendorAudit**
+> void AddVendorAudit (int? vendorId, string vendorAudit)
+
+Add new audit for a vendor
+
+Adds an audit to an existing vendor.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddVendorAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorApi();
+            var vendorId = 56;  // int? | Id of the vendor to add an audit to
+            var vendorAudit = vendorAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a vendor
+                apiInstance.AddVendorAudit(vendorId, vendorAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorApi.AddVendorAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorId** | **int?**| Id of the vendor to add an audit to | 
+ **vendorAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addvendortag"></a>
+# **AddVendorTag**
+> void AddVendorTag (int? vendorId, string vendorTag)
+
+Add new tags for a vendor.
+
+Adds a tag to an existing vendor.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddVendorTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorApi();
+            var vendorId = 56;  // int? | Id of the vendor to add a tag to
+            var vendorTag = vendorTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a vendor.
+                apiInstance.AddVendorTag(vendorId, vendorTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorApi.AddVendorTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorId** | **int?**| Id of the vendor to add a tag to | 
+ **vendorTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletevendor"></a>
 # **DeleteVendor**
 > void DeleteVendor (int? vendorId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorApi();
             var vendorId = 56;  // int? | Id of the vendor to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletevendortag"></a>
+# **DeleteVendorTag**
+> void DeleteVendorTag (int? vendorId, string vendorTag)
+
+Delete a tag for a vendor.
+
+Deletes an existing vendor tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteVendorTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorApi();
+            var vendorId = 56;  // int? | Id of the vendor to remove tag from
+            var vendorTag = vendorTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a vendor.
+                apiInstance.DeleteVendorTag(vendorId, vendorTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorApi.DeleteVendorTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorId** | **int?**| Id of the vendor to remove tag from | 
+ **vendorTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatevendorbyid"></a>
+# **GetDuplicateVendorById**
+> Vendor GetDuplicateVendorById (int? vendorId)
+
+Get a duplicated a vendor by id
+
+Returns a duplicated vendor identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateVendorByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorApi();
+            var vendorId = 56;  // int? | Id of the vendor to be duplicated.
+
+            try
+            {
+                // Get a duplicated a vendor by id
+                Vendor result = apiInstance.GetDuplicateVendorById(vendorId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorApi.GetDuplicateVendorById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorId** | **int?**| Id of the vendor to be duplicated. | 
+
+### Return type
+
+[**Vendor**](Vendor.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getvendorbyfilter"></a>
 # **GetVendorByFilter**
 > List<Vendor> GetVendorByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorApi();
             var vendorId = 56;  // int? | Id of the vendor to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getvendortags"></a>
+# **GetVendorTags**
+> void GetVendorTags (int? vendorId)
+
+Get the tags for a vendor.
+
+Get all existing vendor tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetVendorTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorApi();
+            var vendorId = 56;  // int? | Id of the vendor to get tags for
+
+            try
+            {
+                // Get the tags for a vendor.
+                apiInstance.GetVendorTags(vendorId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorApi.GetVendorTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorId** | **int?**| Id of the vendor to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatevendor"></a>
 # **UpdateVendor**
 > void UpdateVendor (Vendor body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorApi();
             var body = new Vendor(); // Vendor | Vendor to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorApi();
             var body = new Vendor(); // Vendor | Vendor to be updated.

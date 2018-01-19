@@ -5,9 +5,16 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddOrder**](OrderApi.md#addorder) | **POST** /beta/order | Create an order
+[**AddOrderAudit**](OrderApi.md#addorderaudit) | **PUT** /beta/order/{orderId}/audit/{orderAudit} | Add new audit for an order
+[**AddOrderTag**](OrderApi.md#addordertag) | **PUT** /beta/order/{orderId}/tag/{orderTag} | Add new tags for an order.
+[**ApplyOrderWarehouseFulfillmentPlan**](OrderApi.md#applyorderwarehousefulfillmentplan) | **POST** /beta/order/applyOrderWarehouseFulfillmentPlan | Run the Apply Order Warehouse Fulfillment Plan method.
 [**DeleteOrder**](OrderApi.md#deleteorder) | **DELETE** /beta/order/{orderId} | Delete an order
+[**DeleteOrderTag**](OrderApi.md#deleteordertag) | **DELETE** /beta/order/{orderId}/tag/{orderTag} | Delete a tag for an order.
+[**GetDuplicateOrderById**](OrderApi.md#getduplicateorderbyid) | **GET** /beta/order/duplicate/{orderId} | Get a duplicated an order by id
 [**GetOrderByFilter**](OrderApi.md#getorderbyfilter) | **GET** /beta/order/search | Search orders by filter
 [**GetOrderById**](OrderApi.md#getorderbyid) | **GET** /beta/order/{orderId} | Get an order by id
+[**GetOrderTags**](OrderApi.md#getordertags) | **GET** /beta/order/{orderId}/tag | Get the tags for an order.
+[**GetOrderWarehouseFulfillmentData**](OrderApi.md#getorderwarehousefulfillmentdata) | **POST** /beta/order/getOrderWarehouseFulfillmentData | Run the Get Order Warehouse Fulfillment Plan method.
 [**UpdateOrder**](OrderApi.md#updateorder) | **PUT** /beta/order | Update an order
 [**UpdateOrderCustomFields**](OrderApi.md#updateordercustomfields) | **PUT** /beta/order/customFields | Update an order custom fields
 
@@ -34,11 +41,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderApi();
             var body = new Order(); // Order | Order to be inserted.
@@ -79,6 +85,204 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addorderaudit"></a>
+# **AddOrderAudit**
+> void AddOrderAudit (decimal? orderId, string orderAudit)
+
+Add new audit for an order
+
+Adds an audit to an existing order.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddOrderAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var orderId = 8.14;  // decimal? | Id of the order to add an audit to
+            var orderAudit = orderAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an order
+                apiInstance.AddOrderAudit(orderId, orderAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.AddOrderAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **decimal?**| Id of the order to add an audit to | 
+ **orderAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addordertag"></a>
+# **AddOrderTag**
+> void AddOrderTag (decimal? orderId, string orderTag)
+
+Add new tags for an order.
+
+Adds a tag to an existing order.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddOrderTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var orderId = 8.14;  // decimal? | Id of the order to add a tag to
+            var orderTag = orderTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an order.
+                apiInstance.AddOrderTag(orderId, orderTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.AddOrderTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **decimal?**| Id of the order to add a tag to | 
+ **orderTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="applyorderwarehousefulfillmentplan"></a>
+# **ApplyOrderWarehouseFulfillmentPlan**
+> ApplyOrderWarehouseFulfillmentPlanOutput ApplyOrderWarehouseFulfillmentPlan (ApplyOrderWarehouseFulfillmentPlanInput body)
+
+Run the Apply Order Warehouse Fulfillment Plan method.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class ApplyOrderWarehouseFulfillmentPlanExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var body = new ApplyOrderWarehouseFulfillmentPlanInput(); // ApplyOrderWarehouseFulfillmentPlanInput | Input data for Apply Order Warehouse Fulfillment Plan process.
+
+            try
+            {
+                // Run the Apply Order Warehouse Fulfillment Plan method.
+                ApplyOrderWarehouseFulfillmentPlanOutput result = apiInstance.ApplyOrderWarehouseFulfillmentPlan(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.ApplyOrderWarehouseFulfillmentPlan: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**ApplyOrderWarehouseFulfillmentPlanInput**](ApplyOrderWarehouseFulfillmentPlanInput.md)| Input data for Apply Order Warehouse Fulfillment Plan process. | 
+
+### Return type
+
+[**ApplyOrderWarehouseFulfillmentPlanOutput**](ApplyOrderWarehouseFulfillmentPlanOutput.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteorder"></a>
 # **DeleteOrder**
 > void DeleteOrder (decimal? orderId)
@@ -101,14 +305,13 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderApi();
-            var orderId = 3.4;  // decimal? | Id of the order to be deleted.
+            var orderId = 8.14;  // decimal? | Id of the order to be deleted.
 
             try
             {
@@ -145,6 +348,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteordertag"></a>
+# **DeleteOrderTag**
+> void DeleteOrderTag (decimal? orderId, string orderTag)
+
+Delete a tag for an order.
+
+Deletes an existing order tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteOrderTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var orderId = 8.14;  // decimal? | Id of the order to remove tag from
+            var orderTag = orderTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an order.
+                apiInstance.DeleteOrderTag(orderId, orderTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.DeleteOrderTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **decimal?**| Id of the order to remove tag from | 
+ **orderTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateorderbyid"></a>
+# **GetDuplicateOrderById**
+> Order GetDuplicateOrderById (decimal? orderId)
+
+Get a duplicated an order by id
+
+Returns a duplicated order identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateOrderByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var orderId = 8.14;  // decimal? | Id of the order to be duplicated.
+
+            try
+            {
+                // Get a duplicated an order by id
+                Order result = apiInstance.GetDuplicateOrderById(orderId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.GetDuplicateOrderById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **decimal?**| Id of the order to be duplicated. | 
+
+### Return type
+
+[**Order**](Order.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getorderbyfilter"></a>
 # **GetOrderByFilter**
 > List<Order> GetOrderByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +503,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,14 +575,13 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderApi();
-            var orderId = 3.4;  // decimal? | Id of the order to be returned.
+            var orderId = 8.14;  // decimal? | Id of the order to be returned.
 
             try
             {
@@ -285,6 +619,135 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getordertags"></a>
+# **GetOrderTags**
+> void GetOrderTags (decimal? orderId)
+
+Get the tags for an order.
+
+Get all existing order tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetOrderTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var orderId = 8.14;  // decimal? | Id of the order to get tags for
+
+            try
+            {
+                // Get the tags for an order.
+                apiInstance.GetOrderTags(orderId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.GetOrderTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderId** | **decimal?**| Id of the order to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getorderwarehousefulfillmentdata"></a>
+# **GetOrderWarehouseFulfillmentData**
+> GetOrderWarehouseFulfillmentDataOutput GetOrderWarehouseFulfillmentData (GetOrderWarehouseFulfillmentDataInput body)
+
+Run the Get Order Warehouse Fulfillment Plan method.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetOrderWarehouseFulfillmentDataExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var body = new GetOrderWarehouseFulfillmentDataInput(); // GetOrderWarehouseFulfillmentDataInput | Input data for Get Order Warehouse Fulfillment Plan process.
+
+            try
+            {
+                // Run the Get Order Warehouse Fulfillment Plan method.
+                GetOrderWarehouseFulfillmentDataOutput result = apiInstance.GetOrderWarehouseFulfillmentData(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.GetOrderWarehouseFulfillmentData: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**GetOrderWarehouseFulfillmentDataInput**](GetOrderWarehouseFulfillmentDataInput.md)| Input data for Get Order Warehouse Fulfillment Plan process. | 
+
+### Return type
+
+[**GetOrderWarehouseFulfillmentDataOutput**](GetOrderWarehouseFulfillmentDataOutput.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateorder"></a>
 # **UpdateOrder**
 > void UpdateOrder (Order body)
@@ -307,11 +770,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderApi();
             var body = new Order(); // Order | Order to be updated.
@@ -373,11 +835,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderApi();
             var body = new Order(); // Order | Order to be updated.

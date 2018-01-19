@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddOrderSource**](OrderSourceApi.md#addordersource) | **POST** /beta/orderSource | Create an orderSource
+[**AddOrderSourceAudit**](OrderSourceApi.md#addordersourceaudit) | **PUT** /beta/orderSource/{orderSourceId}/audit/{orderSourceAudit} | Add new audit for an orderSource
+[**AddOrderSourceTag**](OrderSourceApi.md#addordersourcetag) | **PUT** /beta/orderSource/{orderSourceId}/tag/{orderSourceTag} | Add new tags for an orderSource.
 [**DeleteOrderSource**](OrderSourceApi.md#deleteordersource) | **DELETE** /beta/orderSource/{orderSourceId} | Delete an orderSource
+[**DeleteOrderSourceTag**](OrderSourceApi.md#deleteordersourcetag) | **DELETE** /beta/orderSource/{orderSourceId}/tag/{orderSourceTag} | Delete a tag for an orderSource.
+[**GetDuplicateOrderSourceById**](OrderSourceApi.md#getduplicateordersourcebyid) | **GET** /beta/orderSource/duplicate/{orderSourceId} | Get a duplicated an orderSource by id
 [**GetOrderSourceByFilter**](OrderSourceApi.md#getordersourcebyfilter) | **GET** /beta/orderSource/search | Search orderSources by filter
 [**GetOrderSourceById**](OrderSourceApi.md#getordersourcebyid) | **GET** /beta/orderSource/{orderSourceId} | Get an orderSource by id
+[**GetOrderSourceTags**](OrderSourceApi.md#getordersourcetags) | **GET** /beta/orderSource/{orderSourceId}/tag | Get the tags for an orderSource.
 [**UpdateOrderSource**](OrderSourceApi.md#updateordersource) | **PUT** /beta/orderSource | Update an orderSource
 [**UpdateOrderSourceCustomFields**](OrderSourceApi.md#updateordersourcecustomfields) | **PUT** /beta/orderSource/customFields | Update an orderSource custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceApi();
             var body = new OrderSource(); // OrderSource | OrderSource to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addordersourceaudit"></a>
+# **AddOrderSourceAudit**
+> void AddOrderSourceAudit (int? orderSourceId, string orderSourceAudit)
+
+Add new audit for an orderSource
+
+Adds an audit to an existing orderSource.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddOrderSourceAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceApi();
+            var orderSourceId = 56;  // int? | Id of the orderSource to add an audit to
+            var orderSourceAudit = orderSourceAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an orderSource
+                apiInstance.AddOrderSourceAudit(orderSourceId, orderSourceAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceApi.AddOrderSourceAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceId** | **int?**| Id of the orderSource to add an audit to | 
+ **orderSourceAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addordersourcetag"></a>
+# **AddOrderSourceTag**
+> void AddOrderSourceTag (int? orderSourceId, string orderSourceTag)
+
+Add new tags for an orderSource.
+
+Adds a tag to an existing orderSource.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddOrderSourceTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceApi();
+            var orderSourceId = 56;  // int? | Id of the orderSource to add a tag to
+            var orderSourceTag = orderSourceTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an orderSource.
+                apiInstance.AddOrderSourceTag(orderSourceId, orderSourceTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceApi.AddOrderSourceTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceId** | **int?**| Id of the orderSource to add a tag to | 
+ **orderSourceTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteordersource"></a>
 # **DeleteOrderSource**
 > void DeleteOrderSource (int? orderSourceId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceApi();
             var orderSourceId = 56;  // int? | Id of the orderSource to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteordersourcetag"></a>
+# **DeleteOrderSourceTag**
+> void DeleteOrderSourceTag (int? orderSourceId, string orderSourceTag)
+
+Delete a tag for an orderSource.
+
+Deletes an existing orderSource tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteOrderSourceTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceApi();
+            var orderSourceId = 56;  // int? | Id of the orderSource to remove tag from
+            var orderSourceTag = orderSourceTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an orderSource.
+                apiInstance.DeleteOrderSourceTag(orderSourceId, orderSourceTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceApi.DeleteOrderSourceTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceId** | **int?**| Id of the orderSource to remove tag from | 
+ **orderSourceTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateordersourcebyid"></a>
+# **GetDuplicateOrderSourceById**
+> OrderSource GetDuplicateOrderSourceById (int? orderSourceId)
+
+Get a duplicated an orderSource by id
+
+Returns a duplicated orderSource identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateOrderSourceByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceApi();
+            var orderSourceId = 56;  // int? | Id of the orderSource to be duplicated.
+
+            try
+            {
+                // Get a duplicated an orderSource by id
+                OrderSource result = apiInstance.GetDuplicateOrderSourceById(orderSourceId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceApi.GetDuplicateOrderSourceById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceId** | **int?**| Id of the orderSource to be duplicated. | 
+
+### Return type
+
+[**OrderSource**](OrderSource.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getordersourcebyfilter"></a>
 # **GetOrderSourceByFilter**
 > List<OrderSource> GetOrderSourceByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceApi();
             var orderSourceId = 56;  // int? | Id of the orderSource to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getordersourcetags"></a>
+# **GetOrderSourceTags**
+> void GetOrderSourceTags (int? orderSourceId)
+
+Get the tags for an orderSource.
+
+Get all existing orderSource tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetOrderSourceTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderSourceApi();
+            var orderSourceId = 56;  // int? | Id of the orderSource to get tags for
+
+            try
+            {
+                // Get the tags for an orderSource.
+                apiInstance.GetOrderSourceTags(orderSourceId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderSourceApi.GetOrderSourceTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **orderSourceId** | **int?**| Id of the orderSource to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateordersource"></a>
 # **UpdateOrderSource**
 > void UpdateOrderSource (OrderSource body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceApi();
             var body = new OrderSource(); // OrderSource | OrderSource to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new OrderSourceApi();
             var body = new OrderSource(); // OrderSource | OrderSource to be updated.

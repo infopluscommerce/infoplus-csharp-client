@@ -9,9 +9,12 @@ Name | Type | Description | Notes
 **Name** | **string** |  | 
 **Description** | **string** |  | [optional] 
 **WarehouseId** | **int?** |  | 
+**LastRunTime** | **DateTime?** |  | [optional] 
 **OrderSmartFilterId** | **int?** |  | 
 **LocationSmartFilterId** | **int?** |  | [optional] 
-**MaximumNumberOfOrders** | **int?** |  | [optional] 
+**MaxOrders** | **int?** |  | [optional] 
+**BatchSize** | **int?** |  | [optional] 
+**Version** | **string** |  | [optional] 
 **CreatePickWork** | **bool?** |  | [default to false]
 **PickingRule** | **string** |  | [optional] 
 **LayoutRule** | **string** |  | [optional] 
@@ -29,9 +32,13 @@ Name | Type | Description | Notes
 **CartonizeOrders** | **bool?** |  | [default to false]
 **AutoShipCasebreakCartons** | **bool?** |  | [optional] [default to false]
 **PreGenerateParcelLabels** | **bool?** |  | [optional] [default to false]
+**CreatePackingSlip** | **string** |  | 
 **OverridePackingSlipTemplateId** | **int?** |  | [optional] 
-**CreatePackingSlip** | **bool?** |  | [default to false]
 **CreateOrderAssemblyGuide** | **bool?** |  | [optional] [default to false]
+**CreateOrderInvoice** | **string** |  | 
+**OverrideOrderInvoiceTemplateId** | **int?** |  | [optional] 
+**SendToExternalShippingSystem** | **bool?** |  | [default to false]
+**ExternalShippingSystemId** | **int?** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

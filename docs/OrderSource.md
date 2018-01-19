@@ -13,6 +13,7 @@ Name | Type | Description | Notes
 **RequireGS1128Label** | **bool?** |  | [optional] [default to false]
 **ShippingNotes** | **string** |  | [optional] 
 **PackingSlipId** | **int?** |  | [optional] 
+**OrderInvoiceId** | **int?** |  | [optional] 
 **OrderConfirmationEmailId** | **int?** |  | [optional] 
 **ShipmentConfirmationEmailId** | **int?** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 

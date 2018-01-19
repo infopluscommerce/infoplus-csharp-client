@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddEmailTemplate**](EmailTemplateApi.md#addemailtemplate) | **POST** /beta/emailTemplate | Create an emailTemplate
+[**AddEmailTemplateAudit**](EmailTemplateApi.md#addemailtemplateaudit) | **PUT** /beta/emailTemplate/{emailTemplateId}/audit/{emailTemplateAudit} | Add new audit for an emailTemplate
+[**AddEmailTemplateTag**](EmailTemplateApi.md#addemailtemplatetag) | **PUT** /beta/emailTemplate/{emailTemplateId}/tag/{emailTemplateTag} | Add new tags for an emailTemplate.
 [**DeleteEmailTemplate**](EmailTemplateApi.md#deleteemailtemplate) | **DELETE** /beta/emailTemplate/{emailTemplateId} | Delete an emailTemplate
+[**DeleteEmailTemplateTag**](EmailTemplateApi.md#deleteemailtemplatetag) | **DELETE** /beta/emailTemplate/{emailTemplateId}/tag/{emailTemplateTag} | Delete a tag for an emailTemplate.
+[**GetDuplicateEmailTemplateById**](EmailTemplateApi.md#getduplicateemailtemplatebyid) | **GET** /beta/emailTemplate/duplicate/{emailTemplateId} | Get a duplicated an emailTemplate by id
 [**GetEmailTemplateByFilter**](EmailTemplateApi.md#getemailtemplatebyfilter) | **GET** /beta/emailTemplate/search | Search emailTemplates by filter
 [**GetEmailTemplateById**](EmailTemplateApi.md#getemailtemplatebyid) | **GET** /beta/emailTemplate/{emailTemplateId} | Get an emailTemplate by id
+[**GetEmailTemplateTags**](EmailTemplateApi.md#getemailtemplatetags) | **GET** /beta/emailTemplate/{emailTemplateId}/tag | Get the tags for an emailTemplate.
 [**UpdateEmailTemplate**](EmailTemplateApi.md#updateemailtemplate) | **PUT** /beta/emailTemplate | Update an emailTemplate
 [**UpdateEmailTemplateCustomFields**](EmailTemplateApi.md#updateemailtemplatecustomfields) | **PUT** /beta/emailTemplate/customFields | Update an emailTemplate custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new EmailTemplateApi();
             var body = new EmailTemplate(); // EmailTemplate | EmailTemplate to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addemailtemplateaudit"></a>
+# **AddEmailTemplateAudit**
+> void AddEmailTemplateAudit (int? emailTemplateId, string emailTemplateAudit)
+
+Add new audit for an emailTemplate
+
+Adds an audit to an existing emailTemplate.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddEmailTemplateAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new EmailTemplateApi();
+            var emailTemplateId = 56;  // int? | Id of the emailTemplate to add an audit to
+            var emailTemplateAudit = emailTemplateAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an emailTemplate
+                apiInstance.AddEmailTemplateAudit(emailTemplateId, emailTemplateAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling EmailTemplateApi.AddEmailTemplateAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailTemplateId** | **int?**| Id of the emailTemplate to add an audit to | 
+ **emailTemplateAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addemailtemplatetag"></a>
+# **AddEmailTemplateTag**
+> void AddEmailTemplateTag (int? emailTemplateId, string emailTemplateTag)
+
+Add new tags for an emailTemplate.
+
+Adds a tag to an existing emailTemplate.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddEmailTemplateTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new EmailTemplateApi();
+            var emailTemplateId = 56;  // int? | Id of the emailTemplate to add a tag to
+            var emailTemplateTag = emailTemplateTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an emailTemplate.
+                apiInstance.AddEmailTemplateTag(emailTemplateId, emailTemplateTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling EmailTemplateApi.AddEmailTemplateTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailTemplateId** | **int?**| Id of the emailTemplate to add a tag to | 
+ **emailTemplateTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteemailtemplate"></a>
 # **DeleteEmailTemplate**
 > void DeleteEmailTemplate (int? emailTemplateId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new EmailTemplateApi();
             var emailTemplateId = 56;  // int? | Id of the emailTemplate to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteemailtemplatetag"></a>
+# **DeleteEmailTemplateTag**
+> void DeleteEmailTemplateTag (int? emailTemplateId, string emailTemplateTag)
+
+Delete a tag for an emailTemplate.
+
+Deletes an existing emailTemplate tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteEmailTemplateTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new EmailTemplateApi();
+            var emailTemplateId = 56;  // int? | Id of the emailTemplate to remove tag from
+            var emailTemplateTag = emailTemplateTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an emailTemplate.
+                apiInstance.DeleteEmailTemplateTag(emailTemplateId, emailTemplateTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling EmailTemplateApi.DeleteEmailTemplateTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailTemplateId** | **int?**| Id of the emailTemplate to remove tag from | 
+ **emailTemplateTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateemailtemplatebyid"></a>
+# **GetDuplicateEmailTemplateById**
+> EmailTemplate GetDuplicateEmailTemplateById (int? emailTemplateId)
+
+Get a duplicated an emailTemplate by id
+
+Returns a duplicated emailTemplate identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateEmailTemplateByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new EmailTemplateApi();
+            var emailTemplateId = 56;  // int? | Id of the emailTemplate to be duplicated.
+
+            try
+            {
+                // Get a duplicated an emailTemplate by id
+                EmailTemplate result = apiInstance.GetDuplicateEmailTemplateById(emailTemplateId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling EmailTemplateApi.GetDuplicateEmailTemplateById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailTemplateId** | **int?**| Id of the emailTemplate to be duplicated. | 
+
+### Return type
+
+[**EmailTemplate**](EmailTemplate.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getemailtemplatebyfilter"></a>
 # **GetEmailTemplateByFilter**
 > List<EmailTemplate> GetEmailTemplateByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new EmailTemplateApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new EmailTemplateApi();
             var emailTemplateId = 56;  // int? | Id of the emailTemplate to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getemailtemplatetags"></a>
+# **GetEmailTemplateTags**
+> void GetEmailTemplateTags (int? emailTemplateId)
+
+Get the tags for an emailTemplate.
+
+Get all existing emailTemplate tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetEmailTemplateTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new EmailTemplateApi();
+            var emailTemplateId = 56;  // int? | Id of the emailTemplate to get tags for
+
+            try
+            {
+                // Get the tags for an emailTemplate.
+                apiInstance.GetEmailTemplateTags(emailTemplateId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling EmailTemplateApi.GetEmailTemplateTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **emailTemplateId** | **int?**| Id of the emailTemplate to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateemailtemplate"></a>
 # **UpdateEmailTemplate**
 > void UpdateEmailTemplate (EmailTemplate body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new EmailTemplateApi();
             var body = new EmailTemplate(); // EmailTemplate | EmailTemplate to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new EmailTemplateApi();
             var body = new EmailTemplate(); // EmailTemplate | EmailTemplate to be updated.

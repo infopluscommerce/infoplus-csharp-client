@@ -4,8 +4,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** |  | [optional] 
-**Lob** | **int?** |  | [optional] 
-**SkuId** | **int?** |  | [optional] 
+**LobId** | **int?** |  | [optional] 
+**Sku** | **string** |  | [optional] 
 **PoNoId** | **int?** |  | [optional] 
 **AdjustmentDate** | **DateTime?** |  | [optional] 
 **AdjustmentTime** | **string** |  | [optional] 

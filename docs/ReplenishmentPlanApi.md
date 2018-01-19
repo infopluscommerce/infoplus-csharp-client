@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddReplenishmentPlan**](ReplenishmentPlanApi.md#addreplenishmentplan) | **POST** /beta/replenishmentPlan | Create a replenishmentPlan
+[**AddReplenishmentPlanAudit**](ReplenishmentPlanApi.md#addreplenishmentplanaudit) | **PUT** /beta/replenishmentPlan/{replenishmentPlanId}/audit/{replenishmentPlanAudit} | Add new audit for a replenishmentPlan
+[**AddReplenishmentPlanTag**](ReplenishmentPlanApi.md#addreplenishmentplantag) | **PUT** /beta/replenishmentPlan/{replenishmentPlanId}/tag/{replenishmentPlanTag} | Add new tags for a replenishmentPlan.
 [**DeleteReplenishmentPlan**](ReplenishmentPlanApi.md#deletereplenishmentplan) | **DELETE** /beta/replenishmentPlan/{replenishmentPlanId} | Delete a replenishmentPlan
+[**DeleteReplenishmentPlanTag**](ReplenishmentPlanApi.md#deletereplenishmentplantag) | **DELETE** /beta/replenishmentPlan/{replenishmentPlanId}/tag/{replenishmentPlanTag} | Delete a tag for a replenishmentPlan.
+[**GetDuplicateReplenishmentPlanById**](ReplenishmentPlanApi.md#getduplicatereplenishmentplanbyid) | **GET** /beta/replenishmentPlan/duplicate/{replenishmentPlanId} | Get a duplicated a replenishmentPlan by id
 [**GetReplenishmentPlanByFilter**](ReplenishmentPlanApi.md#getreplenishmentplanbyfilter) | **GET** /beta/replenishmentPlan/search | Search replenishmentPlans by filter
 [**GetReplenishmentPlanById**](ReplenishmentPlanApi.md#getreplenishmentplanbyid) | **GET** /beta/replenishmentPlan/{replenishmentPlanId} | Get a replenishmentPlan by id
+[**GetReplenishmentPlanTags**](ReplenishmentPlanApi.md#getreplenishmentplantags) | **GET** /beta/replenishmentPlan/{replenishmentPlanId}/tag | Get the tags for a replenishmentPlan.
 [**UpdateReplenishmentPlan**](ReplenishmentPlanApi.md#updatereplenishmentplan) | **PUT** /beta/replenishmentPlan | Update a replenishmentPlan
 [**UpdateReplenishmentPlanCustomFields**](ReplenishmentPlanApi.md#updatereplenishmentplancustomfields) | **PUT** /beta/replenishmentPlan/customFields | Update a replenishmentPlan custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReplenishmentPlanApi();
             var body = new ReplenishmentPlan(); // ReplenishmentPlan | ReplenishmentPlan to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addreplenishmentplanaudit"></a>
+# **AddReplenishmentPlanAudit**
+> void AddReplenishmentPlanAudit (int? replenishmentPlanId, string replenishmentPlanAudit)
+
+Add new audit for a replenishmentPlan
+
+Adds an audit to an existing replenishmentPlan.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddReplenishmentPlanAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReplenishmentPlanApi();
+            var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to add an audit to
+            var replenishmentPlanAudit = replenishmentPlanAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a replenishmentPlan
+                apiInstance.AddReplenishmentPlanAudit(replenishmentPlanId, replenishmentPlanAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReplenishmentPlanApi.AddReplenishmentPlanAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **replenishmentPlanId** | **int?**| Id of the replenishmentPlan to add an audit to | 
+ **replenishmentPlanAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addreplenishmentplantag"></a>
+# **AddReplenishmentPlanTag**
+> void AddReplenishmentPlanTag (int? replenishmentPlanId, string replenishmentPlanTag)
+
+Add new tags for a replenishmentPlan.
+
+Adds a tag to an existing replenishmentPlan.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddReplenishmentPlanTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReplenishmentPlanApi();
+            var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to add a tag to
+            var replenishmentPlanTag = replenishmentPlanTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a replenishmentPlan.
+                apiInstance.AddReplenishmentPlanTag(replenishmentPlanId, replenishmentPlanTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReplenishmentPlanApi.AddReplenishmentPlanTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **replenishmentPlanId** | **int?**| Id of the replenishmentPlan to add a tag to | 
+ **replenishmentPlanTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletereplenishmentplan"></a>
 # **DeleteReplenishmentPlan**
 > void DeleteReplenishmentPlan (int? replenishmentPlanId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReplenishmentPlanApi();
             var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletereplenishmentplantag"></a>
+# **DeleteReplenishmentPlanTag**
+> void DeleteReplenishmentPlanTag (int? replenishmentPlanId, string replenishmentPlanTag)
+
+Delete a tag for a replenishmentPlan.
+
+Deletes an existing replenishmentPlan tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteReplenishmentPlanTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReplenishmentPlanApi();
+            var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to remove tag from
+            var replenishmentPlanTag = replenishmentPlanTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a replenishmentPlan.
+                apiInstance.DeleteReplenishmentPlanTag(replenishmentPlanId, replenishmentPlanTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReplenishmentPlanApi.DeleteReplenishmentPlanTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **replenishmentPlanId** | **int?**| Id of the replenishmentPlan to remove tag from | 
+ **replenishmentPlanTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatereplenishmentplanbyid"></a>
+# **GetDuplicateReplenishmentPlanById**
+> ReplenishmentPlan GetDuplicateReplenishmentPlanById (int? replenishmentPlanId)
+
+Get a duplicated a replenishmentPlan by id
+
+Returns a duplicated replenishmentPlan identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateReplenishmentPlanByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReplenishmentPlanApi();
+            var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to be duplicated.
+
+            try
+            {
+                // Get a duplicated a replenishmentPlan by id
+                ReplenishmentPlan result = apiInstance.GetDuplicateReplenishmentPlanById(replenishmentPlanId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReplenishmentPlanApi.GetDuplicateReplenishmentPlanById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **replenishmentPlanId** | **int?**| Id of the replenishmentPlan to be duplicated. | 
+
+### Return type
+
+[**ReplenishmentPlan**](ReplenishmentPlan.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getreplenishmentplanbyfilter"></a>
 # **GetReplenishmentPlanByFilter**
 > List<ReplenishmentPlan> GetReplenishmentPlanByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReplenishmentPlanApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReplenishmentPlanApi();
             var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getreplenishmentplantags"></a>
+# **GetReplenishmentPlanTags**
+> void GetReplenishmentPlanTags (int? replenishmentPlanId)
+
+Get the tags for a replenishmentPlan.
+
+Get all existing replenishmentPlan tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetReplenishmentPlanTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReplenishmentPlanApi();
+            var replenishmentPlanId = 56;  // int? | Id of the replenishmentPlan to get tags for
+
+            try
+            {
+                // Get the tags for a replenishmentPlan.
+                apiInstance.GetReplenishmentPlanTags(replenishmentPlanId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReplenishmentPlanApi.GetReplenishmentPlanTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **replenishmentPlanId** | **int?**| Id of the replenishmentPlan to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatereplenishmentplan"></a>
 # **UpdateReplenishmentPlan**
 > void UpdateReplenishmentPlan (ReplenishmentPlan body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReplenishmentPlanApi();
             var body = new ReplenishmentPlan(); // ReplenishmentPlan | ReplenishmentPlan to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReplenishmentPlanApi();
             var body = new ReplenishmentPlan(); // ReplenishmentPlan | ReplenishmentPlan to be updated.

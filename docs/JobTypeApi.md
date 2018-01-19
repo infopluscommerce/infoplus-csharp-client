@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddJobType**](JobTypeApi.md#addjobtype) | **POST** /beta/jobType | Create a jobType
+[**AddJobTypeAudit**](JobTypeApi.md#addjobtypeaudit) | **PUT** /beta/jobType/{jobTypeId}/audit/{jobTypeAudit} | Add new audit for a jobType
+[**AddJobTypeTag**](JobTypeApi.md#addjobtypetag) | **PUT** /beta/jobType/{jobTypeId}/tag/{jobTypeTag} | Add new tags for a jobType.
 [**DeleteJobType**](JobTypeApi.md#deletejobtype) | **DELETE** /beta/jobType/{jobTypeId} | Delete a jobType
+[**DeleteJobTypeTag**](JobTypeApi.md#deletejobtypetag) | **DELETE** /beta/jobType/{jobTypeId}/tag/{jobTypeTag} | Delete a tag for a jobType.
+[**GetDuplicateJobTypeById**](JobTypeApi.md#getduplicatejobtypebyid) | **GET** /beta/jobType/duplicate/{jobTypeId} | Get a duplicated a jobType by id
 [**GetJobTypeByFilter**](JobTypeApi.md#getjobtypebyfilter) | **GET** /beta/jobType/search | Search jobTypes by filter
 [**GetJobTypeById**](JobTypeApi.md#getjobtypebyid) | **GET** /beta/jobType/{jobTypeId} | Get a jobType by id
+[**GetJobTypeTags**](JobTypeApi.md#getjobtypetags) | **GET** /beta/jobType/{jobTypeId}/tag | Get the tags for a jobType.
 [**UpdateJobType**](JobTypeApi.md#updatejobtype) | **PUT** /beta/jobType | Update a jobType
 [**UpdateJobTypeCustomFields**](JobTypeApi.md#updatejobtypecustomfields) | **PUT** /beta/jobType/customFields | Update a jobType custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTypeApi();
             var body = new JobType(); // JobType | JobType to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addjobtypeaudit"></a>
+# **AddJobTypeAudit**
+> void AddJobTypeAudit (int? jobTypeId, string jobTypeAudit)
+
+Add new audit for a jobType
+
+Adds an audit to an existing jobType.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddJobTypeAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTypeApi();
+            var jobTypeId = 56;  // int? | Id of the jobType to add an audit to
+            var jobTypeAudit = jobTypeAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a jobType
+                apiInstance.AddJobTypeAudit(jobTypeId, jobTypeAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTypeApi.AddJobTypeAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTypeId** | **int?**| Id of the jobType to add an audit to | 
+ **jobTypeAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addjobtypetag"></a>
+# **AddJobTypeTag**
+> void AddJobTypeTag (int? jobTypeId, string jobTypeTag)
+
+Add new tags for a jobType.
+
+Adds a tag to an existing jobType.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddJobTypeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTypeApi();
+            var jobTypeId = 56;  // int? | Id of the jobType to add a tag to
+            var jobTypeTag = jobTypeTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a jobType.
+                apiInstance.AddJobTypeTag(jobTypeId, jobTypeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTypeApi.AddJobTypeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTypeId** | **int?**| Id of the jobType to add a tag to | 
+ **jobTypeTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletejobtype"></a>
 # **DeleteJobType**
 > void DeleteJobType (int? jobTypeId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTypeApi();
             var jobTypeId = 56;  // int? | Id of the jobType to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletejobtypetag"></a>
+# **DeleteJobTypeTag**
+> void DeleteJobTypeTag (int? jobTypeId, string jobTypeTag)
+
+Delete a tag for a jobType.
+
+Deletes an existing jobType tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteJobTypeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTypeApi();
+            var jobTypeId = 56;  // int? | Id of the jobType to remove tag from
+            var jobTypeTag = jobTypeTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a jobType.
+                apiInstance.DeleteJobTypeTag(jobTypeId, jobTypeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTypeApi.DeleteJobTypeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTypeId** | **int?**| Id of the jobType to remove tag from | 
+ **jobTypeTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatejobtypebyid"></a>
+# **GetDuplicateJobTypeById**
+> JobType GetDuplicateJobTypeById (int? jobTypeId)
+
+Get a duplicated a jobType by id
+
+Returns a duplicated jobType identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateJobTypeByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTypeApi();
+            var jobTypeId = 56;  // int? | Id of the jobType to be duplicated.
+
+            try
+            {
+                // Get a duplicated a jobType by id
+                JobType result = apiInstance.GetDuplicateJobTypeById(jobTypeId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTypeApi.GetDuplicateJobTypeById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTypeId** | **int?**| Id of the jobType to be duplicated. | 
+
+### Return type
+
+[**JobType**](JobType.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getjobtypebyfilter"></a>
 # **GetJobTypeByFilter**
 > List<JobType> GetJobTypeByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTypeApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTypeApi();
             var jobTypeId = 56;  // int? | Id of the jobType to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getjobtypetags"></a>
+# **GetJobTypeTags**
+> void GetJobTypeTags (int? jobTypeId)
+
+Get the tags for a jobType.
+
+Get all existing jobType tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetJobTypeTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new JobTypeApi();
+            var jobTypeId = 56;  // int? | Id of the jobType to get tags for
+
+            try
+            {
+                // Get the tags for a jobType.
+                apiInstance.GetJobTypeTags(jobTypeId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling JobTypeApi.GetJobTypeTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **jobTypeId** | **int?**| Id of the jobType to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatejobtype"></a>
 # **UpdateJobType**
 > void UpdateJobType (JobType body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTypeApi();
             var body = new JobType(); // JobType | JobType to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new JobTypeApi();
             var body = new JobType(); // JobType | JobType to be updated.

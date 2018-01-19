@@ -4,10 +4,282 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddFulfillmentProcessAudit**](FulfillmentProcessApi.md#addfulfillmentprocessaudit) | **PUT** /beta/fulfillmentProcess/{fulfillmentProcessId}/audit/{fulfillmentProcessAudit} | Add new audit for a fulfillmentProcess
+[**AddFulfillmentProcessTag**](FulfillmentProcessApi.md#addfulfillmentprocesstag) | **PUT** /beta/fulfillmentProcess/{fulfillmentProcessId}/tag/{fulfillmentProcessTag} | Add new tags for a fulfillmentProcess.
+[**DeleteFulfillmentProcessTag**](FulfillmentProcessApi.md#deletefulfillmentprocesstag) | **DELETE** /beta/fulfillmentProcess/{fulfillmentProcessId}/tag/{fulfillmentProcessTag} | Delete a tag for a fulfillmentProcess.
+[**GetDuplicateFulfillmentProcessById**](FulfillmentProcessApi.md#getduplicatefulfillmentprocessbyid) | **GET** /beta/fulfillmentProcess/duplicate/{fulfillmentProcessId} | Get a duplicated a fulfillmentProcess by id
 [**GetFulfillmentProcessByFilter**](FulfillmentProcessApi.md#getfulfillmentprocessbyfilter) | **GET** /beta/fulfillmentProcess/search | Search fulfillmentProcesses by filter
 [**GetFulfillmentProcessById**](FulfillmentProcessApi.md#getfulfillmentprocessbyid) | **GET** /beta/fulfillmentProcess/{fulfillmentProcessId} | Get a fulfillmentProcess by id
+[**GetFulfillmentProcessTags**](FulfillmentProcessApi.md#getfulfillmentprocesstags) | **GET** /beta/fulfillmentProcess/{fulfillmentProcessId}/tag | Get the tags for a fulfillmentProcess.
 [**UpdateFulfillmentProcessCustomFields**](FulfillmentProcessApi.md#updatefulfillmentprocesscustomfields) | **PUT** /beta/fulfillmentProcess/customFields | Update a fulfillmentProcess custom fields
 
+
+<a name="addfulfillmentprocessaudit"></a>
+# **AddFulfillmentProcessAudit**
+> void AddFulfillmentProcessAudit (int? fulfillmentProcessId, string fulfillmentProcessAudit)
+
+Add new audit for a fulfillmentProcess
+
+Adds an audit to an existing fulfillmentProcess.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddFulfillmentProcessAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentProcessApi();
+            var fulfillmentProcessId = 56;  // int? | Id of the fulfillmentProcess to add an audit to
+            var fulfillmentProcessAudit = fulfillmentProcessAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a fulfillmentProcess
+                apiInstance.AddFulfillmentProcessAudit(fulfillmentProcessId, fulfillmentProcessAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentProcessApi.AddFulfillmentProcessAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentProcessId** | **int?**| Id of the fulfillmentProcess to add an audit to | 
+ **fulfillmentProcessAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addfulfillmentprocesstag"></a>
+# **AddFulfillmentProcessTag**
+> void AddFulfillmentProcessTag (int? fulfillmentProcessId, string fulfillmentProcessTag)
+
+Add new tags for a fulfillmentProcess.
+
+Adds a tag to an existing fulfillmentProcess.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddFulfillmentProcessTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentProcessApi();
+            var fulfillmentProcessId = 56;  // int? | Id of the fulfillmentProcess to add a tag to
+            var fulfillmentProcessTag = fulfillmentProcessTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a fulfillmentProcess.
+                apiInstance.AddFulfillmentProcessTag(fulfillmentProcessId, fulfillmentProcessTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentProcessApi.AddFulfillmentProcessTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentProcessId** | **int?**| Id of the fulfillmentProcess to add a tag to | 
+ **fulfillmentProcessTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletefulfillmentprocesstag"></a>
+# **DeleteFulfillmentProcessTag**
+> void DeleteFulfillmentProcessTag (int? fulfillmentProcessId, string fulfillmentProcessTag)
+
+Delete a tag for a fulfillmentProcess.
+
+Deletes an existing fulfillmentProcess tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteFulfillmentProcessTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentProcessApi();
+            var fulfillmentProcessId = 56;  // int? | Id of the fulfillmentProcess to remove tag from
+            var fulfillmentProcessTag = fulfillmentProcessTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a fulfillmentProcess.
+                apiInstance.DeleteFulfillmentProcessTag(fulfillmentProcessId, fulfillmentProcessTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentProcessApi.DeleteFulfillmentProcessTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentProcessId** | **int?**| Id of the fulfillmentProcess to remove tag from | 
+ **fulfillmentProcessTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatefulfillmentprocessbyid"></a>
+# **GetDuplicateFulfillmentProcessById**
+> FulfillmentProcess GetDuplicateFulfillmentProcessById (int? fulfillmentProcessId)
+
+Get a duplicated a fulfillmentProcess by id
+
+Returns a duplicated fulfillmentProcess identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateFulfillmentProcessByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentProcessApi();
+            var fulfillmentProcessId = 56;  // int? | Id of the fulfillmentProcess to be duplicated.
+
+            try
+            {
+                // Get a duplicated a fulfillmentProcess by id
+                FulfillmentProcess result = apiInstance.GetDuplicateFulfillmentProcessById(fulfillmentProcessId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentProcessApi.GetDuplicateFulfillmentProcessById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentProcessId** | **int?**| Id of the fulfillmentProcess to be duplicated. | 
+
+### Return type
+
+[**FulfillmentProcess**](FulfillmentProcess.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getfulfillmentprocessbyfilter"></a>
 # **GetFulfillmentProcessByFilter**
@@ -31,11 +303,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentProcessApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -104,11 +375,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentProcessApi();
             var fulfillmentProcessId = 56;  // int? | Id of the fulfillmentProcess to be returned.
@@ -149,6 +419,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getfulfillmentprocesstags"></a>
+# **GetFulfillmentProcessTags**
+> void GetFulfillmentProcessTags (int? fulfillmentProcessId)
+
+Get the tags for a fulfillmentProcess.
+
+Get all existing fulfillmentProcess tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetFulfillmentProcessTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentProcessApi();
+            var fulfillmentProcessId = 56;  // int? | Id of the fulfillmentProcess to get tags for
+
+            try
+            {
+                // Get the tags for a fulfillmentProcess.
+                apiInstance.GetFulfillmentProcessTags(fulfillmentProcessId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentProcessApi.GetFulfillmentProcessTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentProcessId** | **int?**| Id of the fulfillmentProcess to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatefulfillmentprocesscustomfields"></a>
 # **UpdateFulfillmentProcessCustomFields**
 > void UpdateFulfillmentProcessCustomFields (FulfillmentProcess body)
@@ -171,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentProcessApi();
             var body = new FulfillmentProcess(); // FulfillmentProcess | FulfillmentProcess to be updated.

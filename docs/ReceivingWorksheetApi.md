@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddReceivingWorksheet**](ReceivingWorksheetApi.md#addreceivingworksheet) | **POST** /beta/receivingWorksheet | Create a receivingWorksheet
+[**AddReceivingWorksheetAudit**](ReceivingWorksheetApi.md#addreceivingworksheetaudit) | **PUT** /beta/receivingWorksheet/{receivingWorksheetId}/audit/{receivingWorksheetAudit} | Add new audit for a receivingWorksheet
+[**AddReceivingWorksheetTag**](ReceivingWorksheetApi.md#addreceivingworksheettag) | **PUT** /beta/receivingWorksheet/{receivingWorksheetId}/tag/{receivingWorksheetTag} | Add new tags for a receivingWorksheet.
 [**DeleteReceivingWorksheet**](ReceivingWorksheetApi.md#deletereceivingworksheet) | **DELETE** /beta/receivingWorksheet/{receivingWorksheetId} | Delete a receivingWorksheet
+[**DeleteReceivingWorksheetTag**](ReceivingWorksheetApi.md#deletereceivingworksheettag) | **DELETE** /beta/receivingWorksheet/{receivingWorksheetId}/tag/{receivingWorksheetTag} | Delete a tag for a receivingWorksheet.
+[**GetDuplicateReceivingWorksheetById**](ReceivingWorksheetApi.md#getduplicatereceivingworksheetbyid) | **GET** /beta/receivingWorksheet/duplicate/{receivingWorksheetId} | Get a duplicated a receivingWorksheet by id
 [**GetReceivingWorksheetByFilter**](ReceivingWorksheetApi.md#getreceivingworksheetbyfilter) | **GET** /beta/receivingWorksheet/search | Search receivingWorksheets by filter
 [**GetReceivingWorksheetById**](ReceivingWorksheetApi.md#getreceivingworksheetbyid) | **GET** /beta/receivingWorksheet/{receivingWorksheetId} | Get a receivingWorksheet by id
+[**GetReceivingWorksheetTags**](ReceivingWorksheetApi.md#getreceivingworksheettags) | **GET** /beta/receivingWorksheet/{receivingWorksheetId}/tag | Get the tags for a receivingWorksheet.
 [**UpdateReceivingWorksheet**](ReceivingWorksheetApi.md#updatereceivingworksheet) | **PUT** /beta/receivingWorksheet | Update a receivingWorksheet
 [**UpdateReceivingWorksheetCustomFields**](ReceivingWorksheetApi.md#updatereceivingworksheetcustomfields) | **PUT** /beta/receivingWorksheet/customFields | Update a receivingWorksheet custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingWorksheetApi();
             var body = new ReceivingWorksheet(); // ReceivingWorksheet | ReceivingWorksheet to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addreceivingworksheetaudit"></a>
+# **AddReceivingWorksheetAudit**
+> void AddReceivingWorksheetAudit (int? receivingWorksheetId, string receivingWorksheetAudit)
+
+Add new audit for a receivingWorksheet
+
+Adds an audit to an existing receivingWorksheet.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddReceivingWorksheetAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingWorksheetApi();
+            var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to add an audit to
+            var receivingWorksheetAudit = receivingWorksheetAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a receivingWorksheet
+                apiInstance.AddReceivingWorksheetAudit(receivingWorksheetId, receivingWorksheetAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingWorksheetApi.AddReceivingWorksheetAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingWorksheetId** | **int?**| Id of the receivingWorksheet to add an audit to | 
+ **receivingWorksheetAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addreceivingworksheettag"></a>
+# **AddReceivingWorksheetTag**
+> void AddReceivingWorksheetTag (int? receivingWorksheetId, string receivingWorksheetTag)
+
+Add new tags for a receivingWorksheet.
+
+Adds a tag to an existing receivingWorksheet.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddReceivingWorksheetTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingWorksheetApi();
+            var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to add a tag to
+            var receivingWorksheetTag = receivingWorksheetTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a receivingWorksheet.
+                apiInstance.AddReceivingWorksheetTag(receivingWorksheetId, receivingWorksheetTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingWorksheetApi.AddReceivingWorksheetTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingWorksheetId** | **int?**| Id of the receivingWorksheet to add a tag to | 
+ **receivingWorksheetTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletereceivingworksheet"></a>
 # **DeleteReceivingWorksheet**
 > void DeleteReceivingWorksheet (int? receivingWorksheetId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingWorksheetApi();
             var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletereceivingworksheettag"></a>
+# **DeleteReceivingWorksheetTag**
+> void DeleteReceivingWorksheetTag (int? receivingWorksheetId, string receivingWorksheetTag)
+
+Delete a tag for a receivingWorksheet.
+
+Deletes an existing receivingWorksheet tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteReceivingWorksheetTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingWorksheetApi();
+            var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to remove tag from
+            var receivingWorksheetTag = receivingWorksheetTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a receivingWorksheet.
+                apiInstance.DeleteReceivingWorksheetTag(receivingWorksheetId, receivingWorksheetTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingWorksheetApi.DeleteReceivingWorksheetTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingWorksheetId** | **int?**| Id of the receivingWorksheet to remove tag from | 
+ **receivingWorksheetTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatereceivingworksheetbyid"></a>
+# **GetDuplicateReceivingWorksheetById**
+> ReceivingWorksheet GetDuplicateReceivingWorksheetById (int? receivingWorksheetId)
+
+Get a duplicated a receivingWorksheet by id
+
+Returns a duplicated receivingWorksheet identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateReceivingWorksheetByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingWorksheetApi();
+            var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to be duplicated.
+
+            try
+            {
+                // Get a duplicated a receivingWorksheet by id
+                ReceivingWorksheet result = apiInstance.GetDuplicateReceivingWorksheetById(receivingWorksheetId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingWorksheetApi.GetDuplicateReceivingWorksheetById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingWorksheetId** | **int?**| Id of the receivingWorksheet to be duplicated. | 
+
+### Return type
+
+[**ReceivingWorksheet**](ReceivingWorksheet.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getreceivingworksheetbyfilter"></a>
 # **GetReceivingWorksheetByFilter**
 > List<ReceivingWorksheet> GetReceivingWorksheetByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingWorksheetApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingWorksheetApi();
             var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getreceivingworksheettags"></a>
+# **GetReceivingWorksheetTags**
+> void GetReceivingWorksheetTags (int? receivingWorksheetId)
+
+Get the tags for a receivingWorksheet.
+
+Get all existing receivingWorksheet tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetReceivingWorksheetTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingWorksheetApi();
+            var receivingWorksheetId = 56;  // int? | Id of the receivingWorksheet to get tags for
+
+            try
+            {
+                // Get the tags for a receivingWorksheet.
+                apiInstance.GetReceivingWorksheetTags(receivingWorksheetId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingWorksheetApi.GetReceivingWorksheetTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingWorksheetId** | **int?**| Id of the receivingWorksheet to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatereceivingworksheet"></a>
 # **UpdateReceivingWorksheet**
 > void UpdateReceivingWorksheet (ReceivingWorksheet body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingWorksheetApi();
             var body = new ReceivingWorksheet(); // ReceivingWorksheet | ReceivingWorksheet to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingWorksheetApi();
             var body = new ReceivingWorksheet(); // ReceivingWorksheet | ReceivingWorksheet to be updated.

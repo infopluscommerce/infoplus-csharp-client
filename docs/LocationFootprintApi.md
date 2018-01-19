@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddLocationFootprint**](LocationFootprintApi.md#addlocationfootprint) | **POST** /beta/locationFootprint | Create a locationFootprint
+[**AddLocationFootprintAudit**](LocationFootprintApi.md#addlocationfootprintaudit) | **PUT** /beta/locationFootprint/{locationFootprintId}/audit/{locationFootprintAudit} | Add new audit for a locationFootprint
+[**AddLocationFootprintTag**](LocationFootprintApi.md#addlocationfootprinttag) | **PUT** /beta/locationFootprint/{locationFootprintId}/tag/{locationFootprintTag} | Add new tags for a locationFootprint.
 [**DeleteLocationFootprint**](LocationFootprintApi.md#deletelocationfootprint) | **DELETE** /beta/locationFootprint/{locationFootprintId} | Delete a locationFootprint
+[**DeleteLocationFootprintTag**](LocationFootprintApi.md#deletelocationfootprinttag) | **DELETE** /beta/locationFootprint/{locationFootprintId}/tag/{locationFootprintTag} | Delete a tag for a locationFootprint.
+[**GetDuplicateLocationFootprintById**](LocationFootprintApi.md#getduplicatelocationfootprintbyid) | **GET** /beta/locationFootprint/duplicate/{locationFootprintId} | Get a duplicated a locationFootprint by id
 [**GetLocationFootprintByFilter**](LocationFootprintApi.md#getlocationfootprintbyfilter) | **GET** /beta/locationFootprint/search | Search locationFootprints by filter
 [**GetLocationFootprintById**](LocationFootprintApi.md#getlocationfootprintbyid) | **GET** /beta/locationFootprint/{locationFootprintId} | Get a locationFootprint by id
+[**GetLocationFootprintTags**](LocationFootprintApi.md#getlocationfootprinttags) | **GET** /beta/locationFootprint/{locationFootprintId}/tag | Get the tags for a locationFootprint.
 [**UpdateLocationFootprint**](LocationFootprintApi.md#updatelocationfootprint) | **PUT** /beta/locationFootprint | Update a locationFootprint
 [**UpdateLocationFootprintCustomFields**](LocationFootprintApi.md#updatelocationfootprintcustomfields) | **PUT** /beta/locationFootprint/customFields | Update a locationFootprint custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new LocationFootprintApi();
             var body = new LocationFootprint(); // LocationFootprint | LocationFootprint to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addlocationfootprintaudit"></a>
+# **AddLocationFootprintAudit**
+> void AddLocationFootprintAudit (int? locationFootprintId, string locationFootprintAudit)
+
+Add new audit for a locationFootprint
+
+Adds an audit to an existing locationFootprint.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddLocationFootprintAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new LocationFootprintApi();
+            var locationFootprintId = 56;  // int? | Id of the locationFootprint to add an audit to
+            var locationFootprintAudit = locationFootprintAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a locationFootprint
+                apiInstance.AddLocationFootprintAudit(locationFootprintId, locationFootprintAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LocationFootprintApi.AddLocationFootprintAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **locationFootprintId** | **int?**| Id of the locationFootprint to add an audit to | 
+ **locationFootprintAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addlocationfootprinttag"></a>
+# **AddLocationFootprintTag**
+> void AddLocationFootprintTag (int? locationFootprintId, string locationFootprintTag)
+
+Add new tags for a locationFootprint.
+
+Adds a tag to an existing locationFootprint.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddLocationFootprintTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new LocationFootprintApi();
+            var locationFootprintId = 56;  // int? | Id of the locationFootprint to add a tag to
+            var locationFootprintTag = locationFootprintTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a locationFootprint.
+                apiInstance.AddLocationFootprintTag(locationFootprintId, locationFootprintTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LocationFootprintApi.AddLocationFootprintTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **locationFootprintId** | **int?**| Id of the locationFootprint to add a tag to | 
+ **locationFootprintTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletelocationfootprint"></a>
 # **DeleteLocationFootprint**
 > void DeleteLocationFootprint (int? locationFootprintId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new LocationFootprintApi();
             var locationFootprintId = 56;  // int? | Id of the locationFootprint to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletelocationfootprinttag"></a>
+# **DeleteLocationFootprintTag**
+> void DeleteLocationFootprintTag (int? locationFootprintId, string locationFootprintTag)
+
+Delete a tag for a locationFootprint.
+
+Deletes an existing locationFootprint tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteLocationFootprintTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new LocationFootprintApi();
+            var locationFootprintId = 56;  // int? | Id of the locationFootprint to remove tag from
+            var locationFootprintTag = locationFootprintTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a locationFootprint.
+                apiInstance.DeleteLocationFootprintTag(locationFootprintId, locationFootprintTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LocationFootprintApi.DeleteLocationFootprintTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **locationFootprintId** | **int?**| Id of the locationFootprint to remove tag from | 
+ **locationFootprintTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatelocationfootprintbyid"></a>
+# **GetDuplicateLocationFootprintById**
+> LocationFootprint GetDuplicateLocationFootprintById (int? locationFootprintId)
+
+Get a duplicated a locationFootprint by id
+
+Returns a duplicated locationFootprint identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateLocationFootprintByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new LocationFootprintApi();
+            var locationFootprintId = 56;  // int? | Id of the locationFootprint to be duplicated.
+
+            try
+            {
+                // Get a duplicated a locationFootprint by id
+                LocationFootprint result = apiInstance.GetDuplicateLocationFootprintById(locationFootprintId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LocationFootprintApi.GetDuplicateLocationFootprintById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **locationFootprintId** | **int?**| Id of the locationFootprint to be duplicated. | 
+
+### Return type
+
+[**LocationFootprint**](LocationFootprint.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getlocationfootprintbyfilter"></a>
 # **GetLocationFootprintByFilter**
 > List<LocationFootprint> GetLocationFootprintByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new LocationFootprintApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new LocationFootprintApi();
             var locationFootprintId = 56;  // int? | Id of the locationFootprint to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getlocationfootprinttags"></a>
+# **GetLocationFootprintTags**
+> void GetLocationFootprintTags (int? locationFootprintId)
+
+Get the tags for a locationFootprint.
+
+Get all existing locationFootprint tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetLocationFootprintTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new LocationFootprintApi();
+            var locationFootprintId = 56;  // int? | Id of the locationFootprint to get tags for
+
+            try
+            {
+                // Get the tags for a locationFootprint.
+                apiInstance.GetLocationFootprintTags(locationFootprintId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling LocationFootprintApi.GetLocationFootprintTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **locationFootprintId** | **int?**| Id of the locationFootprint to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatelocationfootprint"></a>
 # **UpdateLocationFootprint**
 > void UpdateLocationFootprint (LocationFootprint body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new LocationFootprintApi();
             var body = new LocationFootprint(); // LocationFootprint | LocationFootprint to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new LocationFootprintApi();
             var body = new LocationFootprint(); // LocationFootprint | LocationFootprint to be updated.

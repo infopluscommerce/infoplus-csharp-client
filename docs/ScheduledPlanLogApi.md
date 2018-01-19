@@ -4,9 +4,281 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddScheduledPlanLogAudit**](ScheduledPlanLogApi.md#addscheduledplanlogaudit) | **PUT** /beta/scheduledPlanLog/{scheduledPlanLogId}/audit/{scheduledPlanLogAudit} | Add new audit for a scheduledPlanLog
+[**AddScheduledPlanLogTag**](ScheduledPlanLogApi.md#addscheduledplanlogtag) | **PUT** /beta/scheduledPlanLog/{scheduledPlanLogId}/tag/{scheduledPlanLogTag} | Add new tags for a scheduledPlanLog.
+[**DeleteScheduledPlanLogTag**](ScheduledPlanLogApi.md#deletescheduledplanlogtag) | **DELETE** /beta/scheduledPlanLog/{scheduledPlanLogId}/tag/{scheduledPlanLogTag} | Delete a tag for a scheduledPlanLog.
+[**GetDuplicateScheduledPlanLogById**](ScheduledPlanLogApi.md#getduplicatescheduledplanlogbyid) | **GET** /beta/scheduledPlanLog/duplicate/{scheduledPlanLogId} | Get a duplicated a scheduledPlanLog by id
 [**GetScheduledPlanLogByFilter**](ScheduledPlanLogApi.md#getscheduledplanlogbyfilter) | **GET** /beta/scheduledPlanLog/search | Search scheduledPlanLogs by filter
 [**GetScheduledPlanLogById**](ScheduledPlanLogApi.md#getscheduledplanlogbyid) | **GET** /beta/scheduledPlanLog/{scheduledPlanLogId} | Get a scheduledPlanLog by id
+[**GetScheduledPlanLogTags**](ScheduledPlanLogApi.md#getscheduledplanlogtags) | **GET** /beta/scheduledPlanLog/{scheduledPlanLogId}/tag | Get the tags for a scheduledPlanLog.
 
+
+<a name="addscheduledplanlogaudit"></a>
+# **AddScheduledPlanLogAudit**
+> void AddScheduledPlanLogAudit (int? scheduledPlanLogId, string scheduledPlanLogAudit)
+
+Add new audit for a scheduledPlanLog
+
+Adds an audit to an existing scheduledPlanLog.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddScheduledPlanLogAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ScheduledPlanLogApi();
+            var scheduledPlanLogId = 56;  // int? | Id of the scheduledPlanLog to add an audit to
+            var scheduledPlanLogAudit = scheduledPlanLogAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a scheduledPlanLog
+                apiInstance.AddScheduledPlanLogAudit(scheduledPlanLogId, scheduledPlanLogAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ScheduledPlanLogApi.AddScheduledPlanLogAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scheduledPlanLogId** | **int?**| Id of the scheduledPlanLog to add an audit to | 
+ **scheduledPlanLogAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addscheduledplanlogtag"></a>
+# **AddScheduledPlanLogTag**
+> void AddScheduledPlanLogTag (int? scheduledPlanLogId, string scheduledPlanLogTag)
+
+Add new tags for a scheduledPlanLog.
+
+Adds a tag to an existing scheduledPlanLog.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddScheduledPlanLogTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ScheduledPlanLogApi();
+            var scheduledPlanLogId = 56;  // int? | Id of the scheduledPlanLog to add a tag to
+            var scheduledPlanLogTag = scheduledPlanLogTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a scheduledPlanLog.
+                apiInstance.AddScheduledPlanLogTag(scheduledPlanLogId, scheduledPlanLogTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ScheduledPlanLogApi.AddScheduledPlanLogTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scheduledPlanLogId** | **int?**| Id of the scheduledPlanLog to add a tag to | 
+ **scheduledPlanLogTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletescheduledplanlogtag"></a>
+# **DeleteScheduledPlanLogTag**
+> void DeleteScheduledPlanLogTag (int? scheduledPlanLogId, string scheduledPlanLogTag)
+
+Delete a tag for a scheduledPlanLog.
+
+Deletes an existing scheduledPlanLog tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteScheduledPlanLogTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ScheduledPlanLogApi();
+            var scheduledPlanLogId = 56;  // int? | Id of the scheduledPlanLog to remove tag from
+            var scheduledPlanLogTag = scheduledPlanLogTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a scheduledPlanLog.
+                apiInstance.DeleteScheduledPlanLogTag(scheduledPlanLogId, scheduledPlanLogTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ScheduledPlanLogApi.DeleteScheduledPlanLogTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scheduledPlanLogId** | **int?**| Id of the scheduledPlanLog to remove tag from | 
+ **scheduledPlanLogTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatescheduledplanlogbyid"></a>
+# **GetDuplicateScheduledPlanLogById**
+> ScheduledPlanLog GetDuplicateScheduledPlanLogById (int? scheduledPlanLogId)
+
+Get a duplicated a scheduledPlanLog by id
+
+Returns a duplicated scheduledPlanLog identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateScheduledPlanLogByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ScheduledPlanLogApi();
+            var scheduledPlanLogId = 56;  // int? | Id of the scheduledPlanLog to be duplicated.
+
+            try
+            {
+                // Get a duplicated a scheduledPlanLog by id
+                ScheduledPlanLog result = apiInstance.GetDuplicateScheduledPlanLogById(scheduledPlanLogId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ScheduledPlanLogApi.GetDuplicateScheduledPlanLogById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scheduledPlanLogId** | **int?**| Id of the scheduledPlanLog to be duplicated. | 
+
+### Return type
+
+[**ScheduledPlanLog**](ScheduledPlanLog.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getscheduledplanlogbyfilter"></a>
 # **GetScheduledPlanLogByFilter**
@@ -30,11 +302,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ScheduledPlanLogApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -103,11 +374,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ScheduledPlanLogApi();
             var scheduledPlanLogId = 56;  // int? | Id of the scheduledPlanLog to be returned.
@@ -136,6 +406,71 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**ScheduledPlanLog**](ScheduledPlanLog.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getscheduledplanlogtags"></a>
+# **GetScheduledPlanLogTags**
+> void GetScheduledPlanLogTags (int? scheduledPlanLogId)
+
+Get the tags for a scheduledPlanLog.
+
+Get all existing scheduledPlanLog tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetScheduledPlanLogTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ScheduledPlanLogApi();
+            var scheduledPlanLogId = 56;  // int? | Id of the scheduledPlanLog to get tags for
+
+            try
+            {
+                // Get the tags for a scheduledPlanLog.
+                apiInstance.GetScheduledPlanLogTags(scheduledPlanLogId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ScheduledPlanLogApi.GetScheduledPlanLogTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **scheduledPlanLogId** | **int?**| Id of the scheduledPlanLog to get tags for | 
+
+### Return type
+
+void (empty response body)
 
 ### Authorization
 

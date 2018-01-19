@@ -4,11 +4,150 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddReceivingProcessAudit**](ReceivingProcessApi.md#addreceivingprocessaudit) | **PUT** /beta/receivingProcess/{receivingProcessId}/audit/{receivingProcessAudit} | Add new audit for a receivingProcess
+[**AddReceivingProcessTag**](ReceivingProcessApi.md#addreceivingprocesstag) | **PUT** /beta/receivingProcess/{receivingProcessId}/tag/{receivingProcessTag} | Add new tags for a receivingProcess.
 [**DeleteReceivingProcess**](ReceivingProcessApi.md#deletereceivingprocess) | **DELETE** /beta/receivingProcess/{receivingProcessId} | Delete a receivingProcess
+[**DeleteReceivingProcessTag**](ReceivingProcessApi.md#deletereceivingprocesstag) | **DELETE** /beta/receivingProcess/{receivingProcessId}/tag/{receivingProcessTag} | Delete a tag for a receivingProcess.
+[**GetDuplicateReceivingProcessById**](ReceivingProcessApi.md#getduplicatereceivingprocessbyid) | **GET** /beta/receivingProcess/duplicate/{receivingProcessId} | Get a duplicated a receivingProcess by id
 [**GetReceivingProcessByFilter**](ReceivingProcessApi.md#getreceivingprocessbyfilter) | **GET** /beta/receivingProcess/search | Search receivingProcesses by filter
 [**GetReceivingProcessById**](ReceivingProcessApi.md#getreceivingprocessbyid) | **GET** /beta/receivingProcess/{receivingProcessId} | Get a receivingProcess by id
+[**GetReceivingProcessTags**](ReceivingProcessApi.md#getreceivingprocesstags) | **GET** /beta/receivingProcess/{receivingProcessId}/tag | Get the tags for a receivingProcess.
 [**UpdateReceivingProcessCustomFields**](ReceivingProcessApi.md#updatereceivingprocesscustomfields) | **PUT** /beta/receivingProcess/customFields | Update a receivingProcess custom fields
 
+
+<a name="addreceivingprocessaudit"></a>
+# **AddReceivingProcessAudit**
+> void AddReceivingProcessAudit (int? receivingProcessId, string receivingProcessAudit)
+
+Add new audit for a receivingProcess
+
+Adds an audit to an existing receivingProcess.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddReceivingProcessAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingProcessApi();
+            var receivingProcessId = 56;  // int? | Id of the receivingProcess to add an audit to
+            var receivingProcessAudit = receivingProcessAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a receivingProcess
+                apiInstance.AddReceivingProcessAudit(receivingProcessId, receivingProcessAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingProcessApi.AddReceivingProcessAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingProcessId** | **int?**| Id of the receivingProcess to add an audit to | 
+ **receivingProcessAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addreceivingprocesstag"></a>
+# **AddReceivingProcessTag**
+> void AddReceivingProcessTag (int? receivingProcessId, string receivingProcessTag)
+
+Add new tags for a receivingProcess.
+
+Adds a tag to an existing receivingProcess.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddReceivingProcessTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingProcessApi();
+            var receivingProcessId = 56;  // int? | Id of the receivingProcess to add a tag to
+            var receivingProcessTag = receivingProcessTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a receivingProcess.
+                apiInstance.AddReceivingProcessTag(receivingProcessId, receivingProcessTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingProcessApi.AddReceivingProcessTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingProcessId** | **int?**| Id of the receivingProcess to add a tag to | 
+ **receivingProcessTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="deletereceivingprocess"></a>
 # **DeleteReceivingProcess**
@@ -32,11 +171,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingProcessApi();
             var receivingProcessId = 56;  // int? | Id of the receivingProcess to be deleted.
@@ -76,6 +214,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletereceivingprocesstag"></a>
+# **DeleteReceivingProcessTag**
+> void DeleteReceivingProcessTag (int? receivingProcessId, string receivingProcessTag)
+
+Delete a tag for a receivingProcess.
+
+Deletes an existing receivingProcess tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteReceivingProcessTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingProcessApi();
+            var receivingProcessId = 56;  // int? | Id of the receivingProcess to remove tag from
+            var receivingProcessTag = receivingProcessTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a receivingProcess.
+                apiInstance.DeleteReceivingProcessTag(receivingProcessId, receivingProcessTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingProcessApi.DeleteReceivingProcessTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingProcessId** | **int?**| Id of the receivingProcess to remove tag from | 
+ **receivingProcessTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatereceivingprocessbyid"></a>
+# **GetDuplicateReceivingProcessById**
+> ReceivingProcess GetDuplicateReceivingProcessById (int? receivingProcessId)
+
+Get a duplicated a receivingProcess by id
+
+Returns a duplicated receivingProcess identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateReceivingProcessByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingProcessApi();
+            var receivingProcessId = 56;  // int? | Id of the receivingProcess to be duplicated.
+
+            try
+            {
+                // Get a duplicated a receivingProcess by id
+                ReceivingProcess result = apiInstance.GetDuplicateReceivingProcessById(receivingProcessId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingProcessApi.GetDuplicateReceivingProcessById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingProcessId** | **int?**| Id of the receivingProcess to be duplicated. | 
+
+### Return type
+
+[**ReceivingProcess**](ReceivingProcess.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getreceivingprocessbyfilter"></a>
 # **GetReceivingProcessByFilter**
 > List<ReceivingProcess> GetReceivingProcessByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -98,11 +369,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingProcessApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -171,11 +441,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingProcessApi();
             var receivingProcessId = 56;  // int? | Id of the receivingProcess to be returned.
@@ -216,6 +485,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getreceivingprocesstags"></a>
+# **GetReceivingProcessTags**
+> void GetReceivingProcessTags (int? receivingProcessId)
+
+Get the tags for a receivingProcess.
+
+Get all existing receivingProcess tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetReceivingProcessTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ReceivingProcessApi();
+            var receivingProcessId = 56;  // int? | Id of the receivingProcess to get tags for
+
+            try
+            {
+                // Get the tags for a receivingProcess.
+                apiInstance.GetReceivingProcessTags(receivingProcessId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ReceivingProcessApi.GetReceivingProcessTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **receivingProcessId** | **int?**| Id of the receivingProcess to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatereceivingprocesscustomfields"></a>
 # **UpdateReceivingProcessCustomFields**
 > void UpdateReceivingProcessCustomFields (ReceivingProcess body)
@@ -238,11 +572,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ReceivingProcessApi();
             var body = new ReceivingProcess(); // ReceivingProcess | ReceivingProcess to be updated.

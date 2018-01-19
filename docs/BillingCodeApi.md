@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddBillingCode**](BillingCodeApi.md#addbillingcode) | **POST** /beta/billingCode | Create a billingCode
+[**AddBillingCodeAudit**](BillingCodeApi.md#addbillingcodeaudit) | **PUT** /beta/billingCode/{billingCodeId}/audit/{billingCodeAudit} | Add new audit for a billingCode
+[**AddBillingCodeTag**](BillingCodeApi.md#addbillingcodetag) | **PUT** /beta/billingCode/{billingCodeId}/tag/{billingCodeTag} | Add new tags for a billingCode.
 [**DeleteBillingCode**](BillingCodeApi.md#deletebillingcode) | **DELETE** /beta/billingCode/{billingCodeId} | Delete a billingCode
+[**DeleteBillingCodeTag**](BillingCodeApi.md#deletebillingcodetag) | **DELETE** /beta/billingCode/{billingCodeId}/tag/{billingCodeTag} | Delete a tag for a billingCode.
 [**GetBillingCodeByFilter**](BillingCodeApi.md#getbillingcodebyfilter) | **GET** /beta/billingCode/search | Search billingCodes by filter
 [**GetBillingCodeById**](BillingCodeApi.md#getbillingcodebyid) | **GET** /beta/billingCode/{billingCodeId} | Get a billingCode by id
+[**GetBillingCodeTags**](BillingCodeApi.md#getbillingcodetags) | **GET** /beta/billingCode/{billingCodeId}/tag | Get the tags for a billingCode.
+[**GetDuplicateBillingCodeById**](BillingCodeApi.md#getduplicatebillingcodebyid) | **GET** /beta/billingCode/duplicate/{billingCodeId} | Get a duplicated a billingCode by id
 [**UpdateBillingCode**](BillingCodeApi.md#updatebillingcode) | **PUT** /beta/billingCode | Update a billingCode
 [**UpdateBillingCodeCustomFields**](BillingCodeApi.md#updatebillingcodecustomfields) | **PUT** /beta/billingCode/customFields | Update a billingCode custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillingCodeApi();
             var body = new BillingCode(); // BillingCode | BillingCode to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addbillingcodeaudit"></a>
+# **AddBillingCodeAudit**
+> void AddBillingCodeAudit (int? billingCodeId, string billingCodeAudit)
+
+Add new audit for a billingCode
+
+Adds an audit to an existing billingCode.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddBillingCodeAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillingCodeApi();
+            var billingCodeId = 56;  // int? | Id of the billingCode to add an audit to
+            var billingCodeAudit = billingCodeAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a billingCode
+                apiInstance.AddBillingCodeAudit(billingCodeId, billingCodeAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillingCodeApi.AddBillingCodeAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billingCodeId** | **int?**| Id of the billingCode to add an audit to | 
+ **billingCodeAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addbillingcodetag"></a>
+# **AddBillingCodeTag**
+> void AddBillingCodeTag (int? billingCodeId, string billingCodeTag)
+
+Add new tags for a billingCode.
+
+Adds a tag to an existing billingCode.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddBillingCodeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillingCodeApi();
+            var billingCodeId = 56;  // int? | Id of the billingCode to add a tag to
+            var billingCodeTag = billingCodeTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a billingCode.
+                apiInstance.AddBillingCodeTag(billingCodeId, billingCodeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillingCodeApi.AddBillingCodeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billingCodeId** | **int?**| Id of the billingCode to add a tag to | 
+ **billingCodeTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletebillingcode"></a>
 # **DeleteBillingCode**
 > void DeleteBillingCode (int? billingCodeId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillingCodeApi();
             var billingCodeId = 56;  // int? | Id of the billingCode to be deleted.
@@ -145,6 +282,73 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletebillingcodetag"></a>
+# **DeleteBillingCodeTag**
+> void DeleteBillingCodeTag (int? billingCodeId, string billingCodeTag)
+
+Delete a tag for a billingCode.
+
+Deletes an existing billingCode tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteBillingCodeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillingCodeApi();
+            var billingCodeId = 56;  // int? | Id of the billingCode to remove tag from
+            var billingCodeTag = billingCodeTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a billingCode.
+                apiInstance.DeleteBillingCodeTag(billingCodeId, billingCodeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillingCodeApi.DeleteBillingCodeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billingCodeId** | **int?**| Id of the billingCode to remove tag from | 
+ **billingCodeTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getbillingcodebyfilter"></a>
 # **GetBillingCodeByFilter**
 > List<BillingCode> GetBillingCodeByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +371,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillingCodeApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +443,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillingCodeApi();
             var billingCodeId = 56;  // int? | Id of the billingCode to be returned.
@@ -285,6 +487,137 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getbillingcodetags"></a>
+# **GetBillingCodeTags**
+> void GetBillingCodeTags (int? billingCodeId)
+
+Get the tags for a billingCode.
+
+Get all existing billingCode tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetBillingCodeTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillingCodeApi();
+            var billingCodeId = 56;  // int? | Id of the billingCode to get tags for
+
+            try
+            {
+                // Get the tags for a billingCode.
+                apiInstance.GetBillingCodeTags(billingCodeId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillingCodeApi.GetBillingCodeTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billingCodeId** | **int?**| Id of the billingCode to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatebillingcodebyid"></a>
+# **GetDuplicateBillingCodeById**
+> BillingCode GetDuplicateBillingCodeById (int? billingCodeId)
+
+Get a duplicated a billingCode by id
+
+Returns a duplicated billingCode identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateBillingCodeByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BillingCodeApi();
+            var billingCodeId = 56;  // int? | Id of the billingCode to be duplicated.
+
+            try
+            {
+                // Get a duplicated a billingCode by id
+                BillingCode result = apiInstance.GetDuplicateBillingCodeById(billingCodeId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BillingCodeApi.GetDuplicateBillingCodeById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **billingCodeId** | **int?**| Id of the billingCode to be duplicated. | 
+
+### Return type
+
+[**BillingCode**](BillingCode.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatebillingcode"></a>
 # **UpdateBillingCode**
 > void UpdateBillingCode (BillingCode body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillingCodeApi();
             var body = new BillingCode(); // BillingCode | BillingCode to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BillingCodeApi();
             var body = new BillingCode(); // BillingCode | BillingCode to be updated.

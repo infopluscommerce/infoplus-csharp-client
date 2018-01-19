@@ -5,8 +5,8 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** |  | [optional] 
 **LobId** | **int?** |  | [optional] 
-**_ProductionLot** | **string** |  | [optional] 
-**Quantity** | **int?** |  | [optional] 
+**_ProductionLot** | **string** |  | 
+**Quantity** | **int?** |  | 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 **Sku** | **string** |  | [optional] 
 

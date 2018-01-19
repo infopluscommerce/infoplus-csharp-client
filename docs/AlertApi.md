@@ -4,10 +4,216 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddAlertAudit**](AlertApi.md#addalertaudit) | **PUT** /beta/alert/{alertId}/audit/{alertAudit} | Add new audit for an alert
+[**AddAlertTag**](AlertApi.md#addalerttag) | **PUT** /beta/alert/{alertId}/tag/{alertTag} | Add new tags for an alert.
+[**DeleteAlertTag**](AlertApi.md#deletealerttag) | **DELETE** /beta/alert/{alertId}/tag/{alertTag} | Delete a tag for an alert.
 [**GetAlertByFilter**](AlertApi.md#getalertbyfilter) | **GET** /beta/alert/search | Search alerts by filter
 [**GetAlertById**](AlertApi.md#getalertbyid) | **GET** /beta/alert/{alertId} | Get an alert by id
+[**GetAlertTags**](AlertApi.md#getalerttags) | **GET** /beta/alert/{alertId}/tag | Get the tags for an alert.
+[**GetDuplicateAlertById**](AlertApi.md#getduplicatealertbyid) | **GET** /beta/alert/duplicate/{alertId} | Get a duplicated an alert by id
 [**UpdateAlertCustomFields**](AlertApi.md#updatealertcustomfields) | **PUT** /beta/alert/customFields | Update an alert custom fields
 
+
+<a name="addalertaudit"></a>
+# **AddAlertAudit**
+> void AddAlertAudit (int? alertId, string alertAudit)
+
+Add new audit for an alert
+
+Adds an audit to an existing alert.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddAlertAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new AlertApi();
+            var alertId = 56;  // int? | Id of the alert to add an audit to
+            var alertAudit = alertAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an alert
+                apiInstance.AddAlertAudit(alertId, alertAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AlertApi.AddAlertAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alertId** | **int?**| Id of the alert to add an audit to | 
+ **alertAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addalerttag"></a>
+# **AddAlertTag**
+> void AddAlertTag (int? alertId, string alertTag)
+
+Add new tags for an alert.
+
+Adds a tag to an existing alert.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddAlertTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new AlertApi();
+            var alertId = 56;  // int? | Id of the alert to add a tag to
+            var alertTag = alertTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an alert.
+                apiInstance.AddAlertTag(alertId, alertTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AlertApi.AddAlertTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alertId** | **int?**| Id of the alert to add a tag to | 
+ **alertTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletealerttag"></a>
+# **DeleteAlertTag**
+> void DeleteAlertTag (int? alertId, string alertTag)
+
+Delete a tag for an alert.
+
+Deletes an existing alert tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteAlertTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new AlertApi();
+            var alertId = 56;  // int? | Id of the alert to remove tag from
+            var alertTag = alertTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an alert.
+                apiInstance.DeleteAlertTag(alertId, alertTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AlertApi.DeleteAlertTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alertId** | **int?**| Id of the alert to remove tag from | 
+ **alertTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getalertbyfilter"></a>
 # **GetAlertByFilter**
@@ -31,11 +237,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new AlertApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -104,11 +309,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new AlertApi();
             var alertId = 56;  // int? | Id of the alert to be returned.
@@ -149,6 +353,137 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getalerttags"></a>
+# **GetAlertTags**
+> void GetAlertTags (int? alertId)
+
+Get the tags for an alert.
+
+Get all existing alert tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetAlertTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new AlertApi();
+            var alertId = 56;  // int? | Id of the alert to get tags for
+
+            try
+            {
+                // Get the tags for an alert.
+                apiInstance.GetAlertTags(alertId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AlertApi.GetAlertTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alertId** | **int?**| Id of the alert to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatealertbyid"></a>
+# **GetDuplicateAlertById**
+> Alert GetDuplicateAlertById (int? alertId)
+
+Get a duplicated an alert by id
+
+Returns a duplicated alert identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateAlertByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new AlertApi();
+            var alertId = 56;  // int? | Id of the alert to be duplicated.
+
+            try
+            {
+                // Get a duplicated an alert by id
+                Alert result = apiInstance.GetDuplicateAlertById(alertId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling AlertApi.GetDuplicateAlertById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **alertId** | **int?**| Id of the alert to be duplicated. | 
+
+### Return type
+
+[**Alert**](Alert.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatealertcustomfields"></a>
 # **UpdateAlertCustomFields**
 > void UpdateAlertCustomFields (Alert body)
@@ -171,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new AlertApi();
             var body = new Alert(); // Alert | Alert to be updated.

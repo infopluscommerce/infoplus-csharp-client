@@ -4,10 +4,216 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddBusinessTransactionAudit**](BusinessTransactionApi.md#addbusinesstransactionaudit) | **PUT** /beta/businessTransaction/{businessTransactionId}/audit/{businessTransactionAudit} | Add new audit for a businessTransaction
+[**AddBusinessTransactionTag**](BusinessTransactionApi.md#addbusinesstransactiontag) | **PUT** /beta/businessTransaction/{businessTransactionId}/tag/{businessTransactionTag} | Add new tags for a businessTransaction.
+[**DeleteBusinessTransactionTag**](BusinessTransactionApi.md#deletebusinesstransactiontag) | **DELETE** /beta/businessTransaction/{businessTransactionId}/tag/{businessTransactionTag} | Delete a tag for a businessTransaction.
 [**GetBusinessTransactionByFilter**](BusinessTransactionApi.md#getbusinesstransactionbyfilter) | **GET** /beta/businessTransaction/search | Search businessTransactions by filter
 [**GetBusinessTransactionById**](BusinessTransactionApi.md#getbusinesstransactionbyid) | **GET** /beta/businessTransaction/{businessTransactionId} | Get a businessTransaction by id
+[**GetBusinessTransactionTags**](BusinessTransactionApi.md#getbusinesstransactiontags) | **GET** /beta/businessTransaction/{businessTransactionId}/tag | Get the tags for a businessTransaction.
+[**GetDuplicateBusinessTransactionById**](BusinessTransactionApi.md#getduplicatebusinesstransactionbyid) | **GET** /beta/businessTransaction/duplicate/{businessTransactionId} | Get a duplicated a businessTransaction by id
 [**UpdateBusinessTransactionCustomFields**](BusinessTransactionApi.md#updatebusinesstransactioncustomfields) | **PUT** /beta/businessTransaction/customFields | Update a businessTransaction custom fields
 
+
+<a name="addbusinesstransactionaudit"></a>
+# **AddBusinessTransactionAudit**
+> void AddBusinessTransactionAudit (int? businessTransactionId, string businessTransactionAudit)
+
+Add new audit for a businessTransaction
+
+Adds an audit to an existing businessTransaction.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddBusinessTransactionAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BusinessTransactionApi();
+            var businessTransactionId = 56;  // int? | Id of the businessTransaction to add an audit to
+            var businessTransactionAudit = businessTransactionAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a businessTransaction
+                apiInstance.AddBusinessTransactionAudit(businessTransactionId, businessTransactionAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BusinessTransactionApi.AddBusinessTransactionAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **businessTransactionId** | **int?**| Id of the businessTransaction to add an audit to | 
+ **businessTransactionAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addbusinesstransactiontag"></a>
+# **AddBusinessTransactionTag**
+> void AddBusinessTransactionTag (int? businessTransactionId, string businessTransactionTag)
+
+Add new tags for a businessTransaction.
+
+Adds a tag to an existing businessTransaction.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddBusinessTransactionTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BusinessTransactionApi();
+            var businessTransactionId = 56;  // int? | Id of the businessTransaction to add a tag to
+            var businessTransactionTag = businessTransactionTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a businessTransaction.
+                apiInstance.AddBusinessTransactionTag(businessTransactionId, businessTransactionTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BusinessTransactionApi.AddBusinessTransactionTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **businessTransactionId** | **int?**| Id of the businessTransaction to add a tag to | 
+ **businessTransactionTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletebusinesstransactiontag"></a>
+# **DeleteBusinessTransactionTag**
+> void DeleteBusinessTransactionTag (int? businessTransactionId, string businessTransactionTag)
+
+Delete a tag for a businessTransaction.
+
+Deletes an existing businessTransaction tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteBusinessTransactionTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BusinessTransactionApi();
+            var businessTransactionId = 56;  // int? | Id of the businessTransaction to remove tag from
+            var businessTransactionTag = businessTransactionTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a businessTransaction.
+                apiInstance.DeleteBusinessTransactionTag(businessTransactionId, businessTransactionTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BusinessTransactionApi.DeleteBusinessTransactionTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **businessTransactionId** | **int?**| Id of the businessTransaction to remove tag from | 
+ **businessTransactionTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getbusinesstransactionbyfilter"></a>
 # **GetBusinessTransactionByFilter**
@@ -31,11 +237,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BusinessTransactionApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -104,11 +309,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BusinessTransactionApi();
             var businessTransactionId = 56;  // int? | Id of the businessTransaction to be returned.
@@ -149,6 +353,137 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getbusinesstransactiontags"></a>
+# **GetBusinessTransactionTags**
+> void GetBusinessTransactionTags (int? businessTransactionId)
+
+Get the tags for a businessTransaction.
+
+Get all existing businessTransaction tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetBusinessTransactionTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BusinessTransactionApi();
+            var businessTransactionId = 56;  // int? | Id of the businessTransaction to get tags for
+
+            try
+            {
+                // Get the tags for a businessTransaction.
+                apiInstance.GetBusinessTransactionTags(businessTransactionId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BusinessTransactionApi.GetBusinessTransactionTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **businessTransactionId** | **int?**| Id of the businessTransaction to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatebusinesstransactionbyid"></a>
+# **GetDuplicateBusinessTransactionById**
+> BusinessTransaction GetDuplicateBusinessTransactionById (int? businessTransactionId)
+
+Get a duplicated a businessTransaction by id
+
+Returns a duplicated businessTransaction identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateBusinessTransactionByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new BusinessTransactionApi();
+            var businessTransactionId = 56;  // int? | Id of the businessTransaction to be duplicated.
+
+            try
+            {
+                // Get a duplicated a businessTransaction by id
+                BusinessTransaction result = apiInstance.GetDuplicateBusinessTransactionById(businessTransactionId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling BusinessTransactionApi.GetDuplicateBusinessTransactionById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **businessTransactionId** | **int?**| Id of the businessTransaction to be duplicated. | 
+
+### Return type
+
+[**BusinessTransaction**](BusinessTransaction.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatebusinesstransactioncustomfields"></a>
 # **UpdateBusinessTransactionCustomFields**
 > void UpdateBusinessTransactionCustomFields (BusinessTransaction body)
@@ -171,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new BusinessTransactionApi();
             var body = new BusinessTransaction(); // BusinessTransaction | BusinessTransaction to be updated.

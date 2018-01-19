@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddCartonType**](CartonTypeApi.md#addcartontype) | **POST** /beta/cartonType | Create a cartonType
+[**AddCartonTypeAudit**](CartonTypeApi.md#addcartontypeaudit) | **PUT** /beta/cartonType/{cartonTypeId}/audit/{cartonTypeAudit} | Add new audit for a cartonType
+[**AddCartonTypeTag**](CartonTypeApi.md#addcartontypetag) | **PUT** /beta/cartonType/{cartonTypeId}/tag/{cartonTypeTag} | Add new tags for a cartonType.
 [**DeleteCartonType**](CartonTypeApi.md#deletecartontype) | **DELETE** /beta/cartonType/{cartonTypeId} | Delete a cartonType
+[**DeleteCartonTypeTag**](CartonTypeApi.md#deletecartontypetag) | **DELETE** /beta/cartonType/{cartonTypeId}/tag/{cartonTypeTag} | Delete a tag for a cartonType.
 [**GetCartonTypeByFilter**](CartonTypeApi.md#getcartontypebyfilter) | **GET** /beta/cartonType/search | Search cartonTypes by filter
 [**GetCartonTypeById**](CartonTypeApi.md#getcartontypebyid) | **GET** /beta/cartonType/{cartonTypeId} | Get a cartonType by id
+[**GetCartonTypeTags**](CartonTypeApi.md#getcartontypetags) | **GET** /beta/cartonType/{cartonTypeId}/tag | Get the tags for a cartonType.
+[**GetDuplicateCartonTypeById**](CartonTypeApi.md#getduplicatecartontypebyid) | **GET** /beta/cartonType/duplicate/{cartonTypeId} | Get a duplicated a cartonType by id
 [**UpdateCartonType**](CartonTypeApi.md#updatecartontype) | **PUT** /beta/cartonType | Update a cartonType
 [**UpdateCartonTypeCustomFields**](CartonTypeApi.md#updatecartontypecustomfields) | **PUT** /beta/cartonType/customFields | Update a cartonType custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CartonTypeApi();
             var body = new CartonType(); // CartonType | CartonType to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addcartontypeaudit"></a>
+# **AddCartonTypeAudit**
+> void AddCartonTypeAudit (int? cartonTypeId, string cartonTypeAudit)
+
+Add new audit for a cartonType
+
+Adds an audit to an existing cartonType.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddCartonTypeAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CartonTypeApi();
+            var cartonTypeId = 56;  // int? | Id of the cartonType to add an audit to
+            var cartonTypeAudit = cartonTypeAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a cartonType
+                apiInstance.AddCartonTypeAudit(cartonTypeId, cartonTypeAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CartonTypeApi.AddCartonTypeAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartonTypeId** | **int?**| Id of the cartonType to add an audit to | 
+ **cartonTypeAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addcartontypetag"></a>
+# **AddCartonTypeTag**
+> void AddCartonTypeTag (int? cartonTypeId, string cartonTypeTag)
+
+Add new tags for a cartonType.
+
+Adds a tag to an existing cartonType.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddCartonTypeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CartonTypeApi();
+            var cartonTypeId = 56;  // int? | Id of the cartonType to add a tag to
+            var cartonTypeTag = cartonTypeTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a cartonType.
+                apiInstance.AddCartonTypeTag(cartonTypeId, cartonTypeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CartonTypeApi.AddCartonTypeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartonTypeId** | **int?**| Id of the cartonType to add a tag to | 
+ **cartonTypeTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletecartontype"></a>
 # **DeleteCartonType**
 > void DeleteCartonType (int? cartonTypeId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CartonTypeApi();
             var cartonTypeId = 56;  // int? | Id of the cartonType to be deleted.
@@ -145,6 +282,73 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletecartontypetag"></a>
+# **DeleteCartonTypeTag**
+> void DeleteCartonTypeTag (int? cartonTypeId, string cartonTypeTag)
+
+Delete a tag for a cartonType.
+
+Deletes an existing cartonType tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteCartonTypeTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CartonTypeApi();
+            var cartonTypeId = 56;  // int? | Id of the cartonType to remove tag from
+            var cartonTypeTag = cartonTypeTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a cartonType.
+                apiInstance.DeleteCartonTypeTag(cartonTypeId, cartonTypeTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CartonTypeApi.DeleteCartonTypeTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartonTypeId** | **int?**| Id of the cartonType to remove tag from | 
+ **cartonTypeTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getcartontypebyfilter"></a>
 # **GetCartonTypeByFilter**
 > List<CartonType> GetCartonTypeByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +371,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CartonTypeApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +443,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CartonTypeApi();
             var cartonTypeId = 56;  // int? | Id of the cartonType to be returned.
@@ -285,6 +487,137 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getcartontypetags"></a>
+# **GetCartonTypeTags**
+> void GetCartonTypeTags (int? cartonTypeId)
+
+Get the tags for a cartonType.
+
+Get all existing cartonType tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetCartonTypeTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CartonTypeApi();
+            var cartonTypeId = 56;  // int? | Id of the cartonType to get tags for
+
+            try
+            {
+                // Get the tags for a cartonType.
+                apiInstance.GetCartonTypeTags(cartonTypeId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CartonTypeApi.GetCartonTypeTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartonTypeId** | **int?**| Id of the cartonType to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatecartontypebyid"></a>
+# **GetDuplicateCartonTypeById**
+> CartonType GetDuplicateCartonTypeById (int? cartonTypeId)
+
+Get a duplicated a cartonType by id
+
+Returns a duplicated cartonType identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateCartonTypeByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CartonTypeApi();
+            var cartonTypeId = 56;  // int? | Id of the cartonType to be duplicated.
+
+            try
+            {
+                // Get a duplicated a cartonType by id
+                CartonType result = apiInstance.GetDuplicateCartonTypeById(cartonTypeId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CartonTypeApi.GetDuplicateCartonTypeById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **cartonTypeId** | **int?**| Id of the cartonType to be duplicated. | 
+
+### Return type
+
+[**CartonType**](CartonType.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatecartontype"></a>
 # **UpdateCartonType**
 > void UpdateCartonType (CartonType body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CartonTypeApi();
             var body = new CartonType(); // CartonType | CartonType to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CartonTypeApi();
             var body = new CartonType(); // CartonType | CartonType to be updated.

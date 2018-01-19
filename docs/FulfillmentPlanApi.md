@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddFulfillmentPlan**](FulfillmentPlanApi.md#addfulfillmentplan) | **POST** /beta/fulfillmentPlan | Create a fulfillmentPlan
+[**AddFulfillmentPlanAudit**](FulfillmentPlanApi.md#addfulfillmentplanaudit) | **PUT** /beta/fulfillmentPlan/{fulfillmentPlanId}/audit/{fulfillmentPlanAudit} | Add new audit for a fulfillmentPlan
+[**AddFulfillmentPlanTag**](FulfillmentPlanApi.md#addfulfillmentplantag) | **PUT** /beta/fulfillmentPlan/{fulfillmentPlanId}/tag/{fulfillmentPlanTag} | Add new tags for a fulfillmentPlan.
 [**DeleteFulfillmentPlan**](FulfillmentPlanApi.md#deletefulfillmentplan) | **DELETE** /beta/fulfillmentPlan/{fulfillmentPlanId} | Delete a fulfillmentPlan
+[**DeleteFulfillmentPlanTag**](FulfillmentPlanApi.md#deletefulfillmentplantag) | **DELETE** /beta/fulfillmentPlan/{fulfillmentPlanId}/tag/{fulfillmentPlanTag} | Delete a tag for a fulfillmentPlan.
+[**GetDuplicateFulfillmentPlanById**](FulfillmentPlanApi.md#getduplicatefulfillmentplanbyid) | **GET** /beta/fulfillmentPlan/duplicate/{fulfillmentPlanId} | Get a duplicated a fulfillmentPlan by id
 [**GetFulfillmentPlanByFilter**](FulfillmentPlanApi.md#getfulfillmentplanbyfilter) | **GET** /beta/fulfillmentPlan/search | Search fulfillmentPlans by filter
 [**GetFulfillmentPlanById**](FulfillmentPlanApi.md#getfulfillmentplanbyid) | **GET** /beta/fulfillmentPlan/{fulfillmentPlanId} | Get a fulfillmentPlan by id
+[**GetFulfillmentPlanTags**](FulfillmentPlanApi.md#getfulfillmentplantags) | **GET** /beta/fulfillmentPlan/{fulfillmentPlanId}/tag | Get the tags for a fulfillmentPlan.
 [**UpdateFulfillmentPlan**](FulfillmentPlanApi.md#updatefulfillmentplan) | **PUT** /beta/fulfillmentPlan | Update a fulfillmentPlan
 [**UpdateFulfillmentPlanCustomFields**](FulfillmentPlanApi.md#updatefulfillmentplancustomfields) | **PUT** /beta/fulfillmentPlan/customFields | Update a fulfillmentPlan custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentPlanApi();
             var body = new FulfillmentPlan(); // FulfillmentPlan | FulfillmentPlan to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addfulfillmentplanaudit"></a>
+# **AddFulfillmentPlanAudit**
+> void AddFulfillmentPlanAudit (int? fulfillmentPlanId, string fulfillmentPlanAudit)
+
+Add new audit for a fulfillmentPlan
+
+Adds an audit to an existing fulfillmentPlan.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddFulfillmentPlanAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentPlanApi();
+            var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to add an audit to
+            var fulfillmentPlanAudit = fulfillmentPlanAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a fulfillmentPlan
+                apiInstance.AddFulfillmentPlanAudit(fulfillmentPlanId, fulfillmentPlanAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentPlanApi.AddFulfillmentPlanAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentPlanId** | **int?**| Id of the fulfillmentPlan to add an audit to | 
+ **fulfillmentPlanAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addfulfillmentplantag"></a>
+# **AddFulfillmentPlanTag**
+> void AddFulfillmentPlanTag (int? fulfillmentPlanId, string fulfillmentPlanTag)
+
+Add new tags for a fulfillmentPlan.
+
+Adds a tag to an existing fulfillmentPlan.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddFulfillmentPlanTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentPlanApi();
+            var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to add a tag to
+            var fulfillmentPlanTag = fulfillmentPlanTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a fulfillmentPlan.
+                apiInstance.AddFulfillmentPlanTag(fulfillmentPlanId, fulfillmentPlanTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentPlanApi.AddFulfillmentPlanTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentPlanId** | **int?**| Id of the fulfillmentPlan to add a tag to | 
+ **fulfillmentPlanTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletefulfillmentplan"></a>
 # **DeleteFulfillmentPlan**
 > void DeleteFulfillmentPlan (int? fulfillmentPlanId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentPlanApi();
             var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletefulfillmentplantag"></a>
+# **DeleteFulfillmentPlanTag**
+> void DeleteFulfillmentPlanTag (int? fulfillmentPlanId, string fulfillmentPlanTag)
+
+Delete a tag for a fulfillmentPlan.
+
+Deletes an existing fulfillmentPlan tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteFulfillmentPlanTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentPlanApi();
+            var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to remove tag from
+            var fulfillmentPlanTag = fulfillmentPlanTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a fulfillmentPlan.
+                apiInstance.DeleteFulfillmentPlanTag(fulfillmentPlanId, fulfillmentPlanTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentPlanApi.DeleteFulfillmentPlanTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentPlanId** | **int?**| Id of the fulfillmentPlan to remove tag from | 
+ **fulfillmentPlanTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatefulfillmentplanbyid"></a>
+# **GetDuplicateFulfillmentPlanById**
+> FulfillmentPlan GetDuplicateFulfillmentPlanById (int? fulfillmentPlanId)
+
+Get a duplicated a fulfillmentPlan by id
+
+Returns a duplicated fulfillmentPlan identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateFulfillmentPlanByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentPlanApi();
+            var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to be duplicated.
+
+            try
+            {
+                // Get a duplicated a fulfillmentPlan by id
+                FulfillmentPlan result = apiInstance.GetDuplicateFulfillmentPlanById(fulfillmentPlanId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentPlanApi.GetDuplicateFulfillmentPlanById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentPlanId** | **int?**| Id of the fulfillmentPlan to be duplicated. | 
+
+### Return type
+
+[**FulfillmentPlan**](FulfillmentPlan.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getfulfillmentplanbyfilter"></a>
 # **GetFulfillmentPlanByFilter**
 > List<FulfillmentPlan> GetFulfillmentPlanByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentPlanApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentPlanApi();
             var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getfulfillmentplantags"></a>
+# **GetFulfillmentPlanTags**
+> void GetFulfillmentPlanTags (int? fulfillmentPlanId)
+
+Get the tags for a fulfillmentPlan.
+
+Get all existing fulfillmentPlan tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetFulfillmentPlanTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new FulfillmentPlanApi();
+            var fulfillmentPlanId = 56;  // int? | Id of the fulfillmentPlan to get tags for
+
+            try
+            {
+                // Get the tags for a fulfillmentPlan.
+                apiInstance.GetFulfillmentPlanTags(fulfillmentPlanId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling FulfillmentPlanApi.GetFulfillmentPlanTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **fulfillmentPlanId** | **int?**| Id of the fulfillmentPlan to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatefulfillmentplan"></a>
 # **UpdateFulfillmentPlan**
 > void UpdateFulfillmentPlan (FulfillmentPlan body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentPlanApi();
             var body = new FulfillmentPlan(); // FulfillmentPlan | FulfillmentPlan to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new FulfillmentPlanApi();
             var body = new FulfillmentPlan(); // FulfillmentPlan | FulfillmentPlan to be updated.

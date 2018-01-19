@@ -9,8 +9,10 @@ Name | Type | Description | Notes
 **Quantity** | **int?** |  | 
 **Date** | **DateTime?** |  | [optional] 
 **UserId** | **int?** |  | 
-**LobId** | **int?** |  | 
+**LobId** | **int?** |  | [optional] 
 **BillingCodeTypeId** | **int?** |  | 
+**RecordType** | **string** |  | [optional] 
+**RecordId** | **string** |  | [optional] 
 **Note** | **string** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 

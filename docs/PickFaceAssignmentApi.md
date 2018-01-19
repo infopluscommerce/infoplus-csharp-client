@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddPickFaceAssignment**](PickFaceAssignmentApi.md#addpickfaceassignment) | **POST** /beta/pickFaceAssignment | Create a pickFaceAssignment
+[**AddPickFaceAssignmentAudit**](PickFaceAssignmentApi.md#addpickfaceassignmentaudit) | **PUT** /beta/pickFaceAssignment/{pickFaceAssignmentId}/audit/{pickFaceAssignmentAudit} | Add new audit for a pickFaceAssignment
+[**AddPickFaceAssignmentTag**](PickFaceAssignmentApi.md#addpickfaceassignmenttag) | **PUT** /beta/pickFaceAssignment/{pickFaceAssignmentId}/tag/{pickFaceAssignmentTag} | Add new tags for a pickFaceAssignment.
 [**DeletePickFaceAssignment**](PickFaceAssignmentApi.md#deletepickfaceassignment) | **DELETE** /beta/pickFaceAssignment/{pickFaceAssignmentId} | Delete a pickFaceAssignment
+[**DeletePickFaceAssignmentTag**](PickFaceAssignmentApi.md#deletepickfaceassignmenttag) | **DELETE** /beta/pickFaceAssignment/{pickFaceAssignmentId}/tag/{pickFaceAssignmentTag} | Delete a tag for a pickFaceAssignment.
+[**GetDuplicatePickFaceAssignmentById**](PickFaceAssignmentApi.md#getduplicatepickfaceassignmentbyid) | **GET** /beta/pickFaceAssignment/duplicate/{pickFaceAssignmentId} | Get a duplicated a pickFaceAssignment by id
 [**GetPickFaceAssignmentByFilter**](PickFaceAssignmentApi.md#getpickfaceassignmentbyfilter) | **GET** /beta/pickFaceAssignment/search | Search pickFaceAssignments by filter
 [**GetPickFaceAssignmentById**](PickFaceAssignmentApi.md#getpickfaceassignmentbyid) | **GET** /beta/pickFaceAssignment/{pickFaceAssignmentId} | Get a pickFaceAssignment by id
+[**GetPickFaceAssignmentTags**](PickFaceAssignmentApi.md#getpickfaceassignmenttags) | **GET** /beta/pickFaceAssignment/{pickFaceAssignmentId}/tag | Get the tags for a pickFaceAssignment.
 [**UpdatePickFaceAssignment**](PickFaceAssignmentApi.md#updatepickfaceassignment) | **PUT** /beta/pickFaceAssignment | Update a pickFaceAssignment
 [**UpdatePickFaceAssignmentCustomFields**](PickFaceAssignmentApi.md#updatepickfaceassignmentcustomfields) | **PUT** /beta/pickFaceAssignment/customFields | Update a pickFaceAssignment custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new PickFaceAssignmentApi();
             var body = new PickFaceAssignment(); // PickFaceAssignment | PickFaceAssignment to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addpickfaceassignmentaudit"></a>
+# **AddPickFaceAssignmentAudit**
+> void AddPickFaceAssignmentAudit (int? pickFaceAssignmentId, string pickFaceAssignmentAudit)
+
+Add new audit for a pickFaceAssignment
+
+Adds an audit to an existing pickFaceAssignment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddPickFaceAssignmentAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new PickFaceAssignmentApi();
+            var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to add an audit to
+            var pickFaceAssignmentAudit = pickFaceAssignmentAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a pickFaceAssignment
+                apiInstance.AddPickFaceAssignmentAudit(pickFaceAssignmentId, pickFaceAssignmentAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PickFaceAssignmentApi.AddPickFaceAssignmentAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pickFaceAssignmentId** | **int?**| Id of the pickFaceAssignment to add an audit to | 
+ **pickFaceAssignmentAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addpickfaceassignmenttag"></a>
+# **AddPickFaceAssignmentTag**
+> void AddPickFaceAssignmentTag (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
+
+Add new tags for a pickFaceAssignment.
+
+Adds a tag to an existing pickFaceAssignment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddPickFaceAssignmentTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new PickFaceAssignmentApi();
+            var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to add a tag to
+            var pickFaceAssignmentTag = pickFaceAssignmentTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a pickFaceAssignment.
+                apiInstance.AddPickFaceAssignmentTag(pickFaceAssignmentId, pickFaceAssignmentTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PickFaceAssignmentApi.AddPickFaceAssignmentTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pickFaceAssignmentId** | **int?**| Id of the pickFaceAssignment to add a tag to | 
+ **pickFaceAssignmentTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletepickfaceassignment"></a>
 # **DeletePickFaceAssignment**
 > void DeletePickFaceAssignment (int? pickFaceAssignmentId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new PickFaceAssignmentApi();
             var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletepickfaceassignmenttag"></a>
+# **DeletePickFaceAssignmentTag**
+> void DeletePickFaceAssignmentTag (int? pickFaceAssignmentId, string pickFaceAssignmentTag)
+
+Delete a tag for a pickFaceAssignment.
+
+Deletes an existing pickFaceAssignment tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeletePickFaceAssignmentTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new PickFaceAssignmentApi();
+            var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to remove tag from
+            var pickFaceAssignmentTag = pickFaceAssignmentTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a pickFaceAssignment.
+                apiInstance.DeletePickFaceAssignmentTag(pickFaceAssignmentId, pickFaceAssignmentTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PickFaceAssignmentApi.DeletePickFaceAssignmentTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pickFaceAssignmentId** | **int?**| Id of the pickFaceAssignment to remove tag from | 
+ **pickFaceAssignmentTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatepickfaceassignmentbyid"></a>
+# **GetDuplicatePickFaceAssignmentById**
+> PickFaceAssignment GetDuplicatePickFaceAssignmentById (int? pickFaceAssignmentId)
+
+Get a duplicated a pickFaceAssignment by id
+
+Returns a duplicated pickFaceAssignment identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicatePickFaceAssignmentByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new PickFaceAssignmentApi();
+            var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to be duplicated.
+
+            try
+            {
+                // Get a duplicated a pickFaceAssignment by id
+                PickFaceAssignment result = apiInstance.GetDuplicatePickFaceAssignmentById(pickFaceAssignmentId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PickFaceAssignmentApi.GetDuplicatePickFaceAssignmentById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pickFaceAssignmentId** | **int?**| Id of the pickFaceAssignment to be duplicated. | 
+
+### Return type
+
+[**PickFaceAssignment**](PickFaceAssignment.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getpickfaceassignmentbyfilter"></a>
 # **GetPickFaceAssignmentByFilter**
 > List<PickFaceAssignment> GetPickFaceAssignmentByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new PickFaceAssignmentApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new PickFaceAssignmentApi();
             var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getpickfaceassignmenttags"></a>
+# **GetPickFaceAssignmentTags**
+> void GetPickFaceAssignmentTags (int? pickFaceAssignmentId)
+
+Get the tags for a pickFaceAssignment.
+
+Get all existing pickFaceAssignment tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetPickFaceAssignmentTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new PickFaceAssignmentApi();
+            var pickFaceAssignmentId = 56;  // int? | Id of the pickFaceAssignment to get tags for
+
+            try
+            {
+                // Get the tags for a pickFaceAssignment.
+                apiInstance.GetPickFaceAssignmentTags(pickFaceAssignmentId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling PickFaceAssignmentApi.GetPickFaceAssignmentTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **pickFaceAssignmentId** | **int?**| Id of the pickFaceAssignment to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatepickfaceassignment"></a>
 # **UpdatePickFaceAssignment**
 > void UpdatePickFaceAssignment (PickFaceAssignment body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new PickFaceAssignmentApi();
             var body = new PickFaceAssignment(); // PickFaceAssignment | PickFaceAssignment to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new PickFaceAssignmentApi();
             var body = new PickFaceAssignment(); // PickFaceAssignment | PickFaceAssignment to be updated.

@@ -5,10 +5,15 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddCustomer**](CustomerApi.md#addcustomer) | **POST** /beta/customer | Create a customer
+[**AddCustomerAudit**](CustomerApi.md#addcustomeraudit) | **PUT** /beta/customer/{customerId}/audit/{customerAudit} | Add new audit for a customer
+[**AddCustomerTag**](CustomerApi.md#addcustomertag) | **PUT** /beta/customer/{customerId}/tag/{customerTag} | Add new tags for a customer.
 [**DeleteCustomer**](CustomerApi.md#deletecustomer) | **DELETE** /beta/customer/{customerId} | Delete a customer
+[**DeleteCustomerTag**](CustomerApi.md#deletecustomertag) | **DELETE** /beta/customer/{customerId}/tag/{customerTag} | Delete a tag for a customer.
 [**GetByCustomerNo**](CustomerApi.md#getbycustomerno) | **GET** /beta/customer/getByCustomerNo | Get a customer by Customer No
 [**GetCustomerByFilter**](CustomerApi.md#getcustomerbyfilter) | **GET** /beta/customer/search | Search customers by filter
 [**GetCustomerById**](CustomerApi.md#getcustomerbyid) | **GET** /beta/customer/{customerId} | Get a customer by id
+[**GetCustomerTags**](CustomerApi.md#getcustomertags) | **GET** /beta/customer/{customerId}/tag | Get the tags for a customer.
+[**GetDuplicateCustomerById**](CustomerApi.md#getduplicatecustomerbyid) | **GET** /beta/customer/duplicate/{customerId} | Get a duplicated a customer by id
 [**UpdateCustomer**](CustomerApi.md#updatecustomer) | **PUT** /beta/customer | Update a customer
 [**UpdateCustomerCustomFields**](CustomerApi.md#updatecustomercustomfields) | **PUT** /beta/customer/customFields | Update a customer custom fields
 
@@ -35,11 +40,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var body = new Customer(); // Customer | Customer to be inserted.
@@ -80,6 +84,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addcustomeraudit"></a>
+# **AddCustomerAudit**
+> void AddCustomerAudit (int? customerId, string customerAudit)
+
+Add new audit for a customer
+
+Adds an audit to an existing customer.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddCustomerAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var customerId = 56;  // int? | Id of the customer to add an audit to
+            var customerAudit = customerAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a customer
+                apiInstance.AddCustomerAudit(customerId, customerAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.AddCustomerAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **int?**| Id of the customer to add an audit to | 
+ **customerAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addcustomertag"></a>
+# **AddCustomerTag**
+> void AddCustomerTag (int? customerId, string customerTag)
+
+Add new tags for a customer.
+
+Adds a tag to an existing customer.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddCustomerTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var customerId = 56;  // int? | Id of the customer to add a tag to
+            var customerTag = customerTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a customer.
+                apiInstance.AddCustomerTag(customerId, customerTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.AddCustomerTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **int?**| Id of the customer to add a tag to | 
+ **customerTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletecustomer"></a>
 # **DeleteCustomer**
 > void DeleteCustomer (int? customerId)
@@ -102,11 +240,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var customerId = 56;  // int? | Id of the customer to be deleted.
@@ -146,6 +283,73 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletecustomertag"></a>
+# **DeleteCustomerTag**
+> void DeleteCustomerTag (int? customerId, string customerTag)
+
+Delete a tag for a customer.
+
+Deletes an existing customer tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteCustomerTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var customerId = 56;  // int? | Id of the customer to remove tag from
+            var customerTag = customerTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a customer.
+                apiInstance.DeleteCustomerTag(customerId, customerTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.DeleteCustomerTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **int?**| Id of the customer to remove tag from | 
+ **customerTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getbycustomerno"></a>
 # **GetByCustomerNo**
 > Customer GetByCustomerNo (int? lobId, string customerNo)
@@ -168,11 +372,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var lobId = 56;  // int? | lobId of the customer to be returned.
@@ -237,11 +440,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -310,11 +512,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var customerId = 56;  // int? | Id of the customer to be returned.
@@ -355,6 +556,137 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getcustomertags"></a>
+# **GetCustomerTags**
+> void GetCustomerTags (int? customerId)
+
+Get the tags for a customer.
+
+Get all existing customer tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetCustomerTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var customerId = 56;  // int? | Id of the customer to get tags for
+
+            try
+            {
+                // Get the tags for a customer.
+                apiInstance.GetCustomerTags(customerId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.GetCustomerTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **int?**| Id of the customer to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatecustomerbyid"></a>
+# **GetDuplicateCustomerById**
+> Customer GetDuplicateCustomerById (int? customerId)
+
+Get a duplicated a customer by id
+
+Returns a duplicated customer identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateCustomerByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new CustomerApi();
+            var customerId = 56;  // int? | Id of the customer to be duplicated.
+
+            try
+            {
+                // Get a duplicated a customer by id
+                Customer result = apiInstance.GetDuplicateCustomerById(customerId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling CustomerApi.GetDuplicateCustomerById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **customerId** | **int?**| Id of the customer to be duplicated. | 
+
+### Return type
+
+[**Customer**](Customer.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatecustomer"></a>
 # **UpdateCustomer**
 > void UpdateCustomer (Customer body)
@@ -377,11 +709,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var body = new Customer(); // Customer | Customer to be updated.
@@ -443,11 +774,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new CustomerApi();
             var body = new Customer(); // Customer | Customer to be updated.

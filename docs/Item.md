@@ -29,7 +29,8 @@ Name | Type | Description | Notes
 **CriticalAmount** | **int?** |  | 
 **OverallFixedReorderPoint** | **int?** |  | [optional] 
 **OverallLeadTime** | **int?** |  | [optional] 
-**ListPrice** | **decimal?** |  | [optional] 
+**SellPrice** | **decimal?** |  | [optional] 
+**PricingPer** | **string** |  | [optional] 
 **LotControlFlag** | **string** |  | [optional] 
 **MaxCycle** | **int?** |  | 
 **MaxInterim** | **int?** |  | 
@@ -57,14 +58,50 @@ Name | Type | Description | Notes
 **ExtrinsicDecimal1** | **decimal?** |  | [optional] 
 **ExtrinsicDecimal2** | **decimal?** |  | [optional] 
 **CasebreakEnabled** | **string** |  | [optional] 
+**VendorId** | **int?** |  | [optional] 
+**VendorPrice** | **decimal?** |  | [optional] 
+**VendorPer** | **string** |  | [optional] 
 **ModifyDate** | **DateTime?** |  | [optional] 
+**BehaviorType** | **string** |  | [optional] 
 **ForwardLotMixingRule** | **string** |  | 
 **StorageLotMixingRule** | **string** |  | 
 **ForwardItemMixingRule** | **string** |  | 
 **StorageItemMixingRule** | **string** |  | 
 **AllocationRule** | **string** |  | 
 **BarcodeField** | **string** |  | [optional] 
+**WarehouseDisplayField** | **string** |  | [optional] 
+**ProductIdTagSchemeId** | **int?** |  | [optional] 
 **Hazmat** | **string** |  | 
+**IsAlcohol** | **bool?** |  | [optional] [default to false]
+**AlcoholType** | **string** |  | [optional] 
+**AlcoholContent** | **decimal?** |  | [optional] 
+**AlcoholContainer** | **string** |  | [optional] 
+**AlcoholVintageYear** | **string** |  | [optional] 
+**AlcoholCountry** | **string** |  | [optional] 
+**AlcoholState** | **string** |  | [optional] 
+**AlcoholRegion** | **string** |  | [optional] 
+**AlcoholBrand** | **string** |  | [optional] 
+**AlcoholUPCCode** | **string** |  | [optional] 
+**AlcoholNAMBCACode** | **string** |  | [optional] 
+**AlcoholUNIMERCCode** | **string** |  | [optional] 
+**AlcoholSCCCode** | **string** |  | [optional] 
+**Length** | **decimal?** |  | [optional] 
+**Width** | **decimal?** |  | [optional] 
+**Height** | **decimal?** |  | [optional] 
+**TopUp** | **bool?** |  | [optional] [default to false]
+**ShipSolo** | **bool?** |  | [optional] [default to false]
+**InventoryUpdateTimestamp** | **DateTime?** |  | [optional] 
+**AvailableQuantity** | **int?** |  | [optional] 
+**DamagedQuantity** | **int?** |  | [optional] 
+**InFulfillmentProcessQuantity** | **int?** |  | [optional] 
+**OnHandQuantity** | **int?** |  | [optional] 
+**OpenOrderQuantity** | **int?** |  | [optional] 
+**OpenPOQuantity** | **int?** |  | [optional] 
+**OrderableQuantity** | **int?** |  | [optional] 
+**UnallocatableQuantity** | **int?** |  | [optional] 
+**UnavailableQuantity** | **int?** |  | [optional] 
+**OverallDaysOnHand** | **int?** |  | [optional] 
+**OverallStockStatus** | **string** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

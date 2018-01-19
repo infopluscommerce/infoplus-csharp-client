@@ -4,10 +4,282 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddParcelAccountAudit**](ParcelAccountApi.md#addparcelaccountaudit) | **PUT** /beta/parcelAccount/{parcelAccountId}/audit/{parcelAccountAudit} | Add new audit for a parcelAccount
+[**AddParcelAccountTag**](ParcelAccountApi.md#addparcelaccounttag) | **PUT** /beta/parcelAccount/{parcelAccountId}/tag/{parcelAccountTag} | Add new tags for a parcelAccount.
+[**DeleteParcelAccountTag**](ParcelAccountApi.md#deleteparcelaccounttag) | **DELETE** /beta/parcelAccount/{parcelAccountId}/tag/{parcelAccountTag} | Delete a tag for a parcelAccount.
+[**GetDuplicateParcelAccountById**](ParcelAccountApi.md#getduplicateparcelaccountbyid) | **GET** /beta/parcelAccount/duplicate/{parcelAccountId} | Get a duplicated a parcelAccount by id
 [**GetParcelAccountByFilter**](ParcelAccountApi.md#getparcelaccountbyfilter) | **GET** /beta/parcelAccount/search | Search parcelAccounts by filter
 [**GetParcelAccountById**](ParcelAccountApi.md#getparcelaccountbyid) | **GET** /beta/parcelAccount/{parcelAccountId} | Get a parcelAccount by id
+[**GetParcelAccountTags**](ParcelAccountApi.md#getparcelaccounttags) | **GET** /beta/parcelAccount/{parcelAccountId}/tag | Get the tags for a parcelAccount.
 [**UpdateParcelAccountCustomFields**](ParcelAccountApi.md#updateparcelaccountcustomfields) | **PUT** /beta/parcelAccount/customFields | Update a parcelAccount custom fields
 
+
+<a name="addparcelaccountaudit"></a>
+# **AddParcelAccountAudit**
+> void AddParcelAccountAudit (int? parcelAccountId, string parcelAccountAudit)
+
+Add new audit for a parcelAccount
+
+Adds an audit to an existing parcelAccount.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddParcelAccountAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ParcelAccountApi();
+            var parcelAccountId = 56;  // int? | Id of the parcelAccount to add an audit to
+            var parcelAccountAudit = parcelAccountAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a parcelAccount
+                apiInstance.AddParcelAccountAudit(parcelAccountId, parcelAccountAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ParcelAccountApi.AddParcelAccountAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **parcelAccountId** | **int?**| Id of the parcelAccount to add an audit to | 
+ **parcelAccountAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addparcelaccounttag"></a>
+# **AddParcelAccountTag**
+> void AddParcelAccountTag (int? parcelAccountId, string parcelAccountTag)
+
+Add new tags for a parcelAccount.
+
+Adds a tag to an existing parcelAccount.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddParcelAccountTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ParcelAccountApi();
+            var parcelAccountId = 56;  // int? | Id of the parcelAccount to add a tag to
+            var parcelAccountTag = parcelAccountTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a parcelAccount.
+                apiInstance.AddParcelAccountTag(parcelAccountId, parcelAccountTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ParcelAccountApi.AddParcelAccountTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **parcelAccountId** | **int?**| Id of the parcelAccount to add a tag to | 
+ **parcelAccountTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteparcelaccounttag"></a>
+# **DeleteParcelAccountTag**
+> void DeleteParcelAccountTag (int? parcelAccountId, string parcelAccountTag)
+
+Delete a tag for a parcelAccount.
+
+Deletes an existing parcelAccount tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteParcelAccountTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ParcelAccountApi();
+            var parcelAccountId = 56;  // int? | Id of the parcelAccount to remove tag from
+            var parcelAccountTag = parcelAccountTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a parcelAccount.
+                apiInstance.DeleteParcelAccountTag(parcelAccountId, parcelAccountTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ParcelAccountApi.DeleteParcelAccountTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **parcelAccountId** | **int?**| Id of the parcelAccount to remove tag from | 
+ **parcelAccountTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateparcelaccountbyid"></a>
+# **GetDuplicateParcelAccountById**
+> ParcelAccount GetDuplicateParcelAccountById (int? parcelAccountId)
+
+Get a duplicated a parcelAccount by id
+
+Returns a duplicated parcelAccount identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateParcelAccountByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ParcelAccountApi();
+            var parcelAccountId = 56;  // int? | Id of the parcelAccount to be duplicated.
+
+            try
+            {
+                // Get a duplicated a parcelAccount by id
+                ParcelAccount result = apiInstance.GetDuplicateParcelAccountById(parcelAccountId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ParcelAccountApi.GetDuplicateParcelAccountById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **parcelAccountId** | **int?**| Id of the parcelAccount to be duplicated. | 
+
+### Return type
+
+[**ParcelAccount**](ParcelAccount.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getparcelaccountbyfilter"></a>
 # **GetParcelAccountByFilter**
@@ -31,11 +303,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ParcelAccountApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -104,11 +375,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ParcelAccountApi();
             var parcelAccountId = 56;  // int? | Id of the parcelAccount to be returned.
@@ -149,6 +419,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getparcelaccounttags"></a>
+# **GetParcelAccountTags**
+> void GetParcelAccountTags (int? parcelAccountId)
+
+Get the tags for a parcelAccount.
+
+Get all existing parcelAccount tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetParcelAccountTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ParcelAccountApi();
+            var parcelAccountId = 56;  // int? | Id of the parcelAccount to get tags for
+
+            try
+            {
+                // Get the tags for a parcelAccount.
+                apiInstance.GetParcelAccountTags(parcelAccountId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ParcelAccountApi.GetParcelAccountTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **parcelAccountId** | **int?**| Id of the parcelAccount to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateparcelaccountcustomfields"></a>
 # **UpdateParcelAccountCustomFields**
 > void UpdateParcelAccountCustomFields (ParcelAccount body)
@@ -171,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ParcelAccountApi();
             var body = new ParcelAccount(); // ParcelAccount | ParcelAccount to be updated.

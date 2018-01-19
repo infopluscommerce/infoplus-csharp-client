@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddVendorComplianceSurvey**](VendorComplianceSurveyApi.md#addvendorcompliancesurvey) | **POST** /beta/vendorComplianceSurvey | Create a vendorComplianceSurvey
+[**AddVendorComplianceSurveyAudit**](VendorComplianceSurveyApi.md#addvendorcompliancesurveyaudit) | **PUT** /beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/audit/{vendorComplianceSurveyAudit} | Add new audit for a vendorComplianceSurvey
+[**AddVendorComplianceSurveyTag**](VendorComplianceSurveyApi.md#addvendorcompliancesurveytag) | **PUT** /beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag/{vendorComplianceSurveyTag} | Add new tags for a vendorComplianceSurvey.
 [**DeleteVendorComplianceSurvey**](VendorComplianceSurveyApi.md#deletevendorcompliancesurvey) | **DELETE** /beta/vendorComplianceSurvey/{vendorComplianceSurveyId} | Delete a vendorComplianceSurvey
+[**DeleteVendorComplianceSurveyTag**](VendorComplianceSurveyApi.md#deletevendorcompliancesurveytag) | **DELETE** /beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag/{vendorComplianceSurveyTag} | Delete a tag for a vendorComplianceSurvey.
+[**GetDuplicateVendorComplianceSurveyById**](VendorComplianceSurveyApi.md#getduplicatevendorcompliancesurveybyid) | **GET** /beta/vendorComplianceSurvey/duplicate/{vendorComplianceSurveyId} | Get a duplicated a vendorComplianceSurvey by id
 [**GetVendorComplianceSurveyByFilter**](VendorComplianceSurveyApi.md#getvendorcompliancesurveybyfilter) | **GET** /beta/vendorComplianceSurvey/search | Search vendorComplianceSurveys by filter
 [**GetVendorComplianceSurveyById**](VendorComplianceSurveyApi.md#getvendorcompliancesurveybyid) | **GET** /beta/vendorComplianceSurvey/{vendorComplianceSurveyId} | Get a vendorComplianceSurvey by id
+[**GetVendorComplianceSurveyTags**](VendorComplianceSurveyApi.md#getvendorcompliancesurveytags) | **GET** /beta/vendorComplianceSurvey/{vendorComplianceSurveyId}/tag | Get the tags for a vendorComplianceSurvey.
 [**UpdateVendorComplianceSurvey**](VendorComplianceSurveyApi.md#updatevendorcompliancesurvey) | **PUT** /beta/vendorComplianceSurvey | Update a vendorComplianceSurvey
 [**UpdateVendorComplianceSurveyCustomFields**](VendorComplianceSurveyApi.md#updatevendorcompliancesurveycustomfields) | **PUT** /beta/vendorComplianceSurvey/customFields | Update a vendorComplianceSurvey custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorComplianceSurveyApi();
             var body = new VendorComplianceSurvey(); // VendorComplianceSurvey | VendorComplianceSurvey to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addvendorcompliancesurveyaudit"></a>
+# **AddVendorComplianceSurveyAudit**
+> void AddVendorComplianceSurveyAudit (int? vendorComplianceSurveyId, string vendorComplianceSurveyAudit)
+
+Add new audit for a vendorComplianceSurvey
+
+Adds an audit to an existing vendorComplianceSurvey.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddVendorComplianceSurveyAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorComplianceSurveyApi();
+            var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to add an audit to
+            var vendorComplianceSurveyAudit = vendorComplianceSurveyAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a vendorComplianceSurvey
+                apiInstance.AddVendorComplianceSurveyAudit(vendorComplianceSurveyId, vendorComplianceSurveyAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorComplianceSurveyApi.AddVendorComplianceSurveyAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorComplianceSurveyId** | **int?**| Id of the vendorComplianceSurvey to add an audit to | 
+ **vendorComplianceSurveyAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addvendorcompliancesurveytag"></a>
+# **AddVendorComplianceSurveyTag**
+> void AddVendorComplianceSurveyTag (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
+
+Add new tags for a vendorComplianceSurvey.
+
+Adds a tag to an existing vendorComplianceSurvey.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddVendorComplianceSurveyTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorComplianceSurveyApi();
+            var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to add a tag to
+            var vendorComplianceSurveyTag = vendorComplianceSurveyTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a vendorComplianceSurvey.
+                apiInstance.AddVendorComplianceSurveyTag(vendorComplianceSurveyId, vendorComplianceSurveyTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorComplianceSurveyApi.AddVendorComplianceSurveyTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorComplianceSurveyId** | **int?**| Id of the vendorComplianceSurvey to add a tag to | 
+ **vendorComplianceSurveyTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deletevendorcompliancesurvey"></a>
 # **DeleteVendorComplianceSurvey**
 > void DeleteVendorComplianceSurvey (int? vendorComplianceSurveyId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorComplianceSurveyApi();
             var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deletevendorcompliancesurveytag"></a>
+# **DeleteVendorComplianceSurveyTag**
+> void DeleteVendorComplianceSurveyTag (int? vendorComplianceSurveyId, string vendorComplianceSurveyTag)
+
+Delete a tag for a vendorComplianceSurvey.
+
+Deletes an existing vendorComplianceSurvey tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteVendorComplianceSurveyTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorComplianceSurveyApi();
+            var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to remove tag from
+            var vendorComplianceSurveyTag = vendorComplianceSurveyTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a vendorComplianceSurvey.
+                apiInstance.DeleteVendorComplianceSurveyTag(vendorComplianceSurveyId, vendorComplianceSurveyTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorComplianceSurveyApi.DeleteVendorComplianceSurveyTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorComplianceSurveyId** | **int?**| Id of the vendorComplianceSurvey to remove tag from | 
+ **vendorComplianceSurveyTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatevendorcompliancesurveybyid"></a>
+# **GetDuplicateVendorComplianceSurveyById**
+> VendorComplianceSurvey GetDuplicateVendorComplianceSurveyById (int? vendorComplianceSurveyId)
+
+Get a duplicated a vendorComplianceSurvey by id
+
+Returns a duplicated vendorComplianceSurvey identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateVendorComplianceSurveyByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorComplianceSurveyApi();
+            var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to be duplicated.
+
+            try
+            {
+                // Get a duplicated a vendorComplianceSurvey by id
+                VendorComplianceSurvey result = apiInstance.GetDuplicateVendorComplianceSurveyById(vendorComplianceSurveyId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorComplianceSurveyApi.GetDuplicateVendorComplianceSurveyById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorComplianceSurveyId** | **int?**| Id of the vendorComplianceSurvey to be duplicated. | 
+
+### Return type
+
+[**VendorComplianceSurvey**](VendorComplianceSurvey.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getvendorcompliancesurveybyfilter"></a>
 # **GetVendorComplianceSurveyByFilter**
 > List<VendorComplianceSurvey> GetVendorComplianceSurveyByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorComplianceSurveyApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorComplianceSurveyApi();
             var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getvendorcompliancesurveytags"></a>
+# **GetVendorComplianceSurveyTags**
+> void GetVendorComplianceSurveyTags (int? vendorComplianceSurveyId)
+
+Get the tags for a vendorComplianceSurvey.
+
+Get all existing vendorComplianceSurvey tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetVendorComplianceSurveyTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new VendorComplianceSurveyApi();
+            var vendorComplianceSurveyId = 56;  // int? | Id of the vendorComplianceSurvey to get tags for
+
+            try
+            {
+                // Get the tags for a vendorComplianceSurvey.
+                apiInstance.GetVendorComplianceSurveyTags(vendorComplianceSurveyId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling VendorComplianceSurveyApi.GetVendorComplianceSurveyTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **vendorComplianceSurveyId** | **int?**| Id of the vendorComplianceSurvey to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatevendorcompliancesurvey"></a>
 # **UpdateVendorComplianceSurvey**
 > void UpdateVendorComplianceSurvey (VendorComplianceSurvey body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorComplianceSurveyApi();
             var body = new VendorComplianceSurvey(); // VendorComplianceSurvey | VendorComplianceSurvey to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new VendorComplianceSurveyApi();
             var body = new VendorComplianceSurvey(); // VendorComplianceSurvey | VendorComplianceSurvey to be updated.

@@ -12,6 +12,7 @@ Name | Type | Description | Notes
 **TotalQuantity** | **int?** |  | 
 **Message** | **string** |  | [optional] 
 **Status** | **string** |  | [optional] 
+**ProductIdTag** | **string** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 **Sku** | **string** |  | [optional] 
 

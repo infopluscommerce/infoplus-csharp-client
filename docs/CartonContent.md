@@ -6,7 +6,8 @@ Name | Type | Description | Notes
 **Id** | **int?** |  | [optional] 
 **GroupOrderId** | **decimal?** |  | [optional] 
 **OrderNo** | **decimal?** |  | 
-**CartonNoId** | **int?** |  | 
+**CartonNo** | **int?** |  | [optional] 
+**CartonId** | **int?** |  | 
 **LineItemId** | **int?** |  | 
 **Location** | **string** |  | [optional] 
 **Quantity** | **int?** |  | 

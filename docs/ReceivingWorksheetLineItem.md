@@ -4,6 +4,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Sku** | **string** |  | [optional] 
+**Sku2** | **string** |  | [optional] 
 **FullDescription** | **string** |  | [optional] 
 **OrderedQty** | **int?** |  | [optional] 
 **PrevReceivedQty** | **int?** |  | [optional] 
@@ -17,6 +18,7 @@ Name | Type | Description | Notes
 **WeightPerWrap** | **decimal?** |  | 
 **WeightPerCase** | **decimal?** |  | [optional] 
 **ProductionLot** | **string** |  | [optional] 
+**ProductIdTag** | **string** |  | [optional] 
 **RevisionDate** | **string** |  | [optional] 
 **Origin** | **string** |  | [optional] 
 **CartonLength** | **decimal?** |  | [optional] 

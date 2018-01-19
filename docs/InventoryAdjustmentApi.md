@@ -4,10 +4,282 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddInventoryAdjustmentAudit**](InventoryAdjustmentApi.md#addinventoryadjustmentaudit) | **PUT** /beta/inventoryAdjustment/{inventoryAdjustmentId}/audit/{inventoryAdjustmentAudit} | Add new audit for an inventoryAdjustment
+[**AddInventoryAdjustmentTag**](InventoryAdjustmentApi.md#addinventoryadjustmenttag) | **PUT** /beta/inventoryAdjustment/{inventoryAdjustmentId}/tag/{inventoryAdjustmentTag} | Add new tags for an inventoryAdjustment.
+[**DeleteInventoryAdjustmentTag**](InventoryAdjustmentApi.md#deleteinventoryadjustmenttag) | **DELETE** /beta/inventoryAdjustment/{inventoryAdjustmentId}/tag/{inventoryAdjustmentTag} | Delete a tag for an inventoryAdjustment.
+[**GetDuplicateInventoryAdjustmentById**](InventoryAdjustmentApi.md#getduplicateinventoryadjustmentbyid) | **GET** /beta/inventoryAdjustment/duplicate/{inventoryAdjustmentId} | Get a duplicated an inventoryAdjustment by id
 [**GetInventoryAdjustmentByFilter**](InventoryAdjustmentApi.md#getinventoryadjustmentbyfilter) | **GET** /beta/inventoryAdjustment/search | Search inventoryAdjustments by filter
 [**GetInventoryAdjustmentById**](InventoryAdjustmentApi.md#getinventoryadjustmentbyid) | **GET** /beta/inventoryAdjustment/{inventoryAdjustmentId} | Get an inventoryAdjustment by id
+[**GetInventoryAdjustmentTags**](InventoryAdjustmentApi.md#getinventoryadjustmenttags) | **GET** /beta/inventoryAdjustment/{inventoryAdjustmentId}/tag | Get the tags for an inventoryAdjustment.
 [**UpdateInventoryAdjustmentCustomFields**](InventoryAdjustmentApi.md#updateinventoryadjustmentcustomfields) | **PUT** /beta/inventoryAdjustment/customFields | Update an inventoryAdjustment custom fields
 
+
+<a name="addinventoryadjustmentaudit"></a>
+# **AddInventoryAdjustmentAudit**
+> void AddInventoryAdjustmentAudit (int? inventoryAdjustmentId, string inventoryAdjustmentAudit)
+
+Add new audit for an inventoryAdjustment
+
+Adds an audit to an existing inventoryAdjustment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddInventoryAdjustmentAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new InventoryAdjustmentApi();
+            var inventoryAdjustmentId = 56;  // int? | Id of the inventoryAdjustment to add an audit to
+            var inventoryAdjustmentAudit = inventoryAdjustmentAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an inventoryAdjustment
+                apiInstance.AddInventoryAdjustmentAudit(inventoryAdjustmentId, inventoryAdjustmentAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InventoryAdjustmentApi.AddInventoryAdjustmentAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inventoryAdjustmentId** | **int?**| Id of the inventoryAdjustment to add an audit to | 
+ **inventoryAdjustmentAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addinventoryadjustmenttag"></a>
+# **AddInventoryAdjustmentTag**
+> void AddInventoryAdjustmentTag (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
+
+Add new tags for an inventoryAdjustment.
+
+Adds a tag to an existing inventoryAdjustment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddInventoryAdjustmentTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new InventoryAdjustmentApi();
+            var inventoryAdjustmentId = 56;  // int? | Id of the inventoryAdjustment to add a tag to
+            var inventoryAdjustmentTag = inventoryAdjustmentTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an inventoryAdjustment.
+                apiInstance.AddInventoryAdjustmentTag(inventoryAdjustmentId, inventoryAdjustmentTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InventoryAdjustmentApi.AddInventoryAdjustmentTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inventoryAdjustmentId** | **int?**| Id of the inventoryAdjustment to add a tag to | 
+ **inventoryAdjustmentTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteinventoryadjustmenttag"></a>
+# **DeleteInventoryAdjustmentTag**
+> void DeleteInventoryAdjustmentTag (int? inventoryAdjustmentId, string inventoryAdjustmentTag)
+
+Delete a tag for an inventoryAdjustment.
+
+Deletes an existing inventoryAdjustment tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteInventoryAdjustmentTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new InventoryAdjustmentApi();
+            var inventoryAdjustmentId = 56;  // int? | Id of the inventoryAdjustment to remove tag from
+            var inventoryAdjustmentTag = inventoryAdjustmentTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an inventoryAdjustment.
+                apiInstance.DeleteInventoryAdjustmentTag(inventoryAdjustmentId, inventoryAdjustmentTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InventoryAdjustmentApi.DeleteInventoryAdjustmentTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inventoryAdjustmentId** | **int?**| Id of the inventoryAdjustment to remove tag from | 
+ **inventoryAdjustmentTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateinventoryadjustmentbyid"></a>
+# **GetDuplicateInventoryAdjustmentById**
+> InventoryAdjustment GetDuplicateInventoryAdjustmentById (int? inventoryAdjustmentId)
+
+Get a duplicated an inventoryAdjustment by id
+
+Returns a duplicated inventoryAdjustment identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateInventoryAdjustmentByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new InventoryAdjustmentApi();
+            var inventoryAdjustmentId = 56;  // int? | Id of the inventoryAdjustment to be duplicated.
+
+            try
+            {
+                // Get a duplicated an inventoryAdjustment by id
+                InventoryAdjustment result = apiInstance.GetDuplicateInventoryAdjustmentById(inventoryAdjustmentId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InventoryAdjustmentApi.GetDuplicateInventoryAdjustmentById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inventoryAdjustmentId** | **int?**| Id of the inventoryAdjustment to be duplicated. | 
+
+### Return type
+
+[**InventoryAdjustment**](InventoryAdjustment.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getinventoryadjustmentbyfilter"></a>
 # **GetInventoryAdjustmentByFilter**
@@ -31,11 +303,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new InventoryAdjustmentApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -104,11 +375,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new InventoryAdjustmentApi();
             var inventoryAdjustmentId = 56;  // int? | Id of the inventoryAdjustment to be returned.
@@ -149,6 +419,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getinventoryadjustmenttags"></a>
+# **GetInventoryAdjustmentTags**
+> void GetInventoryAdjustmentTags (int? inventoryAdjustmentId)
+
+Get the tags for an inventoryAdjustment.
+
+Get all existing inventoryAdjustment tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetInventoryAdjustmentTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new InventoryAdjustmentApi();
+            var inventoryAdjustmentId = 56;  // int? | Id of the inventoryAdjustment to get tags for
+
+            try
+            {
+                // Get the tags for an inventoryAdjustment.
+                apiInstance.GetInventoryAdjustmentTags(inventoryAdjustmentId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling InventoryAdjustmentApi.GetInventoryAdjustmentTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **inventoryAdjustmentId** | **int?**| Id of the inventoryAdjustment to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateinventoryadjustmentcustomfields"></a>
 # **UpdateInventoryAdjustmentCustomFields**
 > void UpdateInventoryAdjustmentCustomFields (InventoryAdjustment body)
@@ -171,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new InventoryAdjustmentApi();
             var body = new InventoryAdjustment(); // InventoryAdjustment | InventoryAdjustment to be updated.

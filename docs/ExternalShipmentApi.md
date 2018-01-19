@@ -5,9 +5,14 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**AddExternalShipment**](ExternalShipmentApi.md#addexternalshipment) | **POST** /beta/externalShipment | Create an externalShipment
+[**AddExternalShipmentAudit**](ExternalShipmentApi.md#addexternalshipmentaudit) | **PUT** /beta/externalShipment/{externalShipmentId}/audit/{externalShipmentAudit} | Add new audit for an externalShipment
+[**AddExternalShipmentTag**](ExternalShipmentApi.md#addexternalshipmenttag) | **PUT** /beta/externalShipment/{externalShipmentId}/tag/{externalShipmentTag} | Add new tags for an externalShipment.
 [**DeleteExternalShipment**](ExternalShipmentApi.md#deleteexternalshipment) | **DELETE** /beta/externalShipment/{externalShipmentId} | Delete an externalShipment
+[**DeleteExternalShipmentTag**](ExternalShipmentApi.md#deleteexternalshipmenttag) | **DELETE** /beta/externalShipment/{externalShipmentId}/tag/{externalShipmentTag} | Delete a tag for an externalShipment.
+[**GetDuplicateExternalShipmentById**](ExternalShipmentApi.md#getduplicateexternalshipmentbyid) | **GET** /beta/externalShipment/duplicate/{externalShipmentId} | Get a duplicated an externalShipment by id
 [**GetExternalShipmentByFilter**](ExternalShipmentApi.md#getexternalshipmentbyfilter) | **GET** /beta/externalShipment/search | Search externalShipments by filter
 [**GetExternalShipmentById**](ExternalShipmentApi.md#getexternalshipmentbyid) | **GET** /beta/externalShipment/{externalShipmentId} | Get an externalShipment by id
+[**GetExternalShipmentTags**](ExternalShipmentApi.md#getexternalshipmenttags) | **GET** /beta/externalShipment/{externalShipmentId}/tag | Get the tags for an externalShipment.
 [**UpdateExternalShipment**](ExternalShipmentApi.md#updateexternalshipment) | **PUT** /beta/externalShipment | Update an externalShipment
 [**UpdateExternalShipmentCustomFields**](ExternalShipmentApi.md#updateexternalshipmentcustomfields) | **PUT** /beta/externalShipment/customFields | Update an externalShipment custom fields
 
@@ -34,11 +39,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ExternalShipmentApi();
             var body = new ExternalShipment(); // ExternalShipment | ExternalShipment to be inserted.
@@ -79,6 +83,140 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="addexternalshipmentaudit"></a>
+# **AddExternalShipmentAudit**
+> void AddExternalShipmentAudit (int? externalShipmentId, string externalShipmentAudit)
+
+Add new audit for an externalShipment
+
+Adds an audit to an existing externalShipment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddExternalShipmentAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ExternalShipmentApi();
+            var externalShipmentId = 56;  // int? | Id of the externalShipment to add an audit to
+            var externalShipmentAudit = externalShipmentAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for an externalShipment
+                apiInstance.AddExternalShipmentAudit(externalShipmentId, externalShipmentAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExternalShipmentApi.AddExternalShipmentAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **externalShipmentId** | **int?**| Id of the externalShipment to add an audit to | 
+ **externalShipmentAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addexternalshipmenttag"></a>
+# **AddExternalShipmentTag**
+> void AddExternalShipmentTag (int? externalShipmentId, string externalShipmentTag)
+
+Add new tags for an externalShipment.
+
+Adds a tag to an existing externalShipment.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddExternalShipmentTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ExternalShipmentApi();
+            var externalShipmentId = 56;  // int? | Id of the externalShipment to add a tag to
+            var externalShipmentTag = externalShipmentTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for an externalShipment.
+                apiInstance.AddExternalShipmentTag(externalShipmentId, externalShipmentTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExternalShipmentApi.AddExternalShipmentTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **externalShipmentId** | **int?**| Id of the externalShipment to add a tag to | 
+ **externalShipmentTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="deleteexternalshipment"></a>
 # **DeleteExternalShipment**
 > void DeleteExternalShipment (int? externalShipmentId)
@@ -101,11 +239,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ExternalShipmentApi();
             var externalShipmentId = 56;  // int? | Id of the externalShipment to be deleted.
@@ -145,6 +282,139 @@ void (empty response body)
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="deleteexternalshipmenttag"></a>
+# **DeleteExternalShipmentTag**
+> void DeleteExternalShipmentTag (int? externalShipmentId, string externalShipmentTag)
+
+Delete a tag for an externalShipment.
+
+Deletes an existing externalShipment tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteExternalShipmentTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ExternalShipmentApi();
+            var externalShipmentId = 56;  // int? | Id of the externalShipment to remove tag from
+            var externalShipmentTag = externalShipmentTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for an externalShipment.
+                apiInstance.DeleteExternalShipmentTag(externalShipmentId, externalShipmentTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExternalShipmentApi.DeleteExternalShipmentTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **externalShipmentId** | **int?**| Id of the externalShipment to remove tag from | 
+ **externalShipmentTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateexternalshipmentbyid"></a>
+# **GetDuplicateExternalShipmentById**
+> ExternalShipment GetDuplicateExternalShipmentById (int? externalShipmentId)
+
+Get a duplicated an externalShipment by id
+
+Returns a duplicated externalShipment identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateExternalShipmentByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ExternalShipmentApi();
+            var externalShipmentId = 56;  // int? | Id of the externalShipment to be duplicated.
+
+            try
+            {
+                // Get a duplicated an externalShipment by id
+                ExternalShipment result = apiInstance.GetDuplicateExternalShipmentById(externalShipmentId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExternalShipmentApi.GetDuplicateExternalShipmentById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **externalShipmentId** | **int?**| Id of the externalShipment to be duplicated. | 
+
+### Return type
+
+[**ExternalShipment**](ExternalShipment.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="getexternalshipmentbyfilter"></a>
 # **GetExternalShipmentByFilter**
 > List<ExternalShipment> GetExternalShipmentByFilter (string filter = null, int? page = null, int? limit = null, string sort = null)
@@ -167,11 +437,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ExternalShipmentApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -240,11 +509,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ExternalShipmentApi();
             var externalShipmentId = 56;  // int? | Id of the externalShipment to be returned.
@@ -285,6 +553,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getexternalshipmenttags"></a>
+# **GetExternalShipmentTags**
+> void GetExternalShipmentTags (int? externalShipmentId)
+
+Get the tags for an externalShipment.
+
+Get all existing externalShipment tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetExternalShipmentTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new ExternalShipmentApi();
+            var externalShipmentId = 56;  // int? | Id of the externalShipment to get tags for
+
+            try
+            {
+                // Get the tags for an externalShipment.
+                apiInstance.GetExternalShipmentTags(externalShipmentId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling ExternalShipmentApi.GetExternalShipmentTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **externalShipmentId** | **int?**| Id of the externalShipment to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateexternalshipment"></a>
 # **UpdateExternalShipment**
 > void UpdateExternalShipment (ExternalShipment body)
@@ -307,11 +640,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ExternalShipmentApi();
             var body = new ExternalShipment(); // ExternalShipment | ExternalShipment to be updated.
@@ -373,11 +705,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new ExternalShipmentApi();
             var body = new ExternalShipment(); // ExternalShipment | ExternalShipment to be updated.

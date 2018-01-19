@@ -4,10 +4,282 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddWorkBatchAudit**](WorkBatchApi.md#addworkbatchaudit) | **PUT** /beta/workBatch/{workBatchId}/audit/{workBatchAudit} | Add new audit for a workBatch
+[**AddWorkBatchTag**](WorkBatchApi.md#addworkbatchtag) | **PUT** /beta/workBatch/{workBatchId}/tag/{workBatchTag} | Add new tags for a workBatch.
+[**DeleteWorkBatchTag**](WorkBatchApi.md#deleteworkbatchtag) | **DELETE** /beta/workBatch/{workBatchId}/tag/{workBatchTag} | Delete a tag for a workBatch.
+[**GetDuplicateWorkBatchById**](WorkBatchApi.md#getduplicateworkbatchbyid) | **GET** /beta/workBatch/duplicate/{workBatchId} | Get a duplicated a workBatch by id
 [**GetWorkBatchByFilter**](WorkBatchApi.md#getworkbatchbyfilter) | **GET** /beta/workBatch/search | Search workBatchs by filter
 [**GetWorkBatchById**](WorkBatchApi.md#getworkbatchbyid) | **GET** /beta/workBatch/{workBatchId} | Get a workBatch by id
+[**GetWorkBatchTags**](WorkBatchApi.md#getworkbatchtags) | **GET** /beta/workBatch/{workBatchId}/tag | Get the tags for a workBatch.
 [**UpdateWorkBatchCustomFields**](WorkBatchApi.md#updateworkbatchcustomfields) | **PUT** /beta/workBatch/customFields | Update a workBatch custom fields
 
+
+<a name="addworkbatchaudit"></a>
+# **AddWorkBatchAudit**
+> void AddWorkBatchAudit (int? workBatchId, string workBatchAudit)
+
+Add new audit for a workBatch
+
+Adds an audit to an existing workBatch.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddWorkBatchAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WorkBatchApi();
+            var workBatchId = 56;  // int? | Id of the workBatch to add an audit to
+            var workBatchAudit = workBatchAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a workBatch
+                apiInstance.AddWorkBatchAudit(workBatchId, workBatchAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WorkBatchApi.AddWorkBatchAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workBatchId** | **int?**| Id of the workBatch to add an audit to | 
+ **workBatchAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addworkbatchtag"></a>
+# **AddWorkBatchTag**
+> void AddWorkBatchTag (int? workBatchId, string workBatchTag)
+
+Add new tags for a workBatch.
+
+Adds a tag to an existing workBatch.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddWorkBatchTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WorkBatchApi();
+            var workBatchId = 56;  // int? | Id of the workBatch to add a tag to
+            var workBatchTag = workBatchTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a workBatch.
+                apiInstance.AddWorkBatchTag(workBatchId, workBatchTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WorkBatchApi.AddWorkBatchTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workBatchId** | **int?**| Id of the workBatch to add a tag to | 
+ **workBatchTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deleteworkbatchtag"></a>
+# **DeleteWorkBatchTag**
+> void DeleteWorkBatchTag (int? workBatchId, string workBatchTag)
+
+Delete a tag for a workBatch.
+
+Deletes an existing workBatch tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteWorkBatchTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WorkBatchApi();
+            var workBatchId = 56;  // int? | Id of the workBatch to remove tag from
+            var workBatchTag = workBatchTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a workBatch.
+                apiInstance.DeleteWorkBatchTag(workBatchId, workBatchTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WorkBatchApi.DeleteWorkBatchTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workBatchId** | **int?**| Id of the workBatch to remove tag from | 
+ **workBatchTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicateworkbatchbyid"></a>
+# **GetDuplicateWorkBatchById**
+> WorkBatch GetDuplicateWorkBatchById (int? workBatchId)
+
+Get a duplicated a workBatch by id
+
+Returns a duplicated workBatch identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateWorkBatchByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WorkBatchApi();
+            var workBatchId = 56;  // int? | Id of the workBatch to be duplicated.
+
+            try
+            {
+                // Get a duplicated a workBatch by id
+                WorkBatch result = apiInstance.GetDuplicateWorkBatchById(workBatchId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WorkBatchApi.GetDuplicateWorkBatchById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workBatchId** | **int?**| Id of the workBatch to be duplicated. | 
+
+### Return type
+
+[**WorkBatch**](WorkBatch.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getworkbatchbyfilter"></a>
 # **GetWorkBatchByFilter**
@@ -31,11 +303,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WorkBatchApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -104,11 +375,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WorkBatchApi();
             var workBatchId = 56;  // int? | Id of the workBatch to be returned.
@@ -149,6 +419,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getworkbatchtags"></a>
+# **GetWorkBatchTags**
+> void GetWorkBatchTags (int? workBatchId)
+
+Get the tags for a workBatch.
+
+Get all existing workBatch tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetWorkBatchTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WorkBatchApi();
+            var workBatchId = 56;  // int? | Id of the workBatch to get tags for
+
+            try
+            {
+                // Get the tags for a workBatch.
+                apiInstance.GetWorkBatchTags(workBatchId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WorkBatchApi.GetWorkBatchTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **workBatchId** | **int?**| Id of the workBatch to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updateworkbatchcustomfields"></a>
 # **UpdateWorkBatchCustomFields**
 > void UpdateWorkBatchCustomFields (WorkBatch body)
@@ -171,11 +506,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WorkBatchApi();
             var body = new WorkBatch(); // WorkBatch | WorkBatch to be updated.

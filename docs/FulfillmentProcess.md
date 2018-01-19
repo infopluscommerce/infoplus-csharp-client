@@ -14,7 +14,10 @@ Name | Type | Description | Notes
 **Status** | **string** |  | 
 **OrderSmartFilterId** | **int?** |  | [optional] 
 **LocationSmartFilterId** | **int?** |  | [optional] 
-**OrderLimit** | **int?** |  | [optional] 
+**MaxOrders** | **int?** |  | [optional] 
+**BatchSize** | **int?** |  | [optional] 
+**Version** | **string** |  | [optional] 
+**FulfillmentProcessGroup** | **int?** |  | [optional] 
 **NumberOfOrders** | **int?** |  | [optional] 
 **NumberOfLines** | **int?** |  | [optional] 
 **NumberOfSKUs** | **int?** |  | [optional] 
@@ -44,9 +47,13 @@ Name | Type | Description | Notes
 **ShipDate** | **DateTime?** |  | [optional] 
 **AutoShipCasebreakCartons** | **bool?** |  | [optional] [default to false]
 **CartonizeOrders** | **bool?** |  | [optional] [default to false]
-**CreatePackingSlip** | **bool?** |  | [optional] [default to false]
+**CreatePackingSlip** | **string** |  | 
 **OverridePackingSlipTemplateId** | **int?** |  | [optional] 
 **CreateOrderAssemblyGuide** | **bool?** |  | [optional] [default to false]
+**CreateOrderInvoice** | **string** |  | 
+**OverrideOrderInvoiceTemplateId** | **int?** |  | [optional] 
+**SendToExternalShippingSystem** | **bool?** |  | [default to false]
+**ExternalShippingSystemId** | **int?** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

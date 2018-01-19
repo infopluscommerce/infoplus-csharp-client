@@ -4,11 +4,283 @@ All URIs are relative to *https://kingsrook.localhost-testsubdomain1.infopluswms
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**AddWarehouseAudit**](WarehouseApi.md#addwarehouseaudit) | **PUT** /beta/warehouse/{warehouseId}/audit/{warehouseAudit} | Add new audit for a warehouse
+[**AddWarehouseTag**](WarehouseApi.md#addwarehousetag) | **PUT** /beta/warehouse/{warehouseId}/tag/{warehouseTag} | Add new tags for a warehouse.
+[**DeleteWarehouseTag**](WarehouseApi.md#deletewarehousetag) | **DELETE** /beta/warehouse/{warehouseId}/tag/{warehouseTag} | Delete a tag for a warehouse.
+[**GetDuplicateWarehouseById**](WarehouseApi.md#getduplicatewarehousebyid) | **GET** /beta/warehouse/duplicate/{warehouseId} | Get a duplicated a warehouse by id
 [**GetWarehouseByFilter**](WarehouseApi.md#getwarehousebyfilter) | **GET** /beta/warehouse/search | Search warehouses by filter
 [**GetWarehouseById**](WarehouseApi.md#getwarehousebyid) | **GET** /beta/warehouse/{warehouseId} | Get a warehouse by id
+[**GetWarehouseTags**](WarehouseApi.md#getwarehousetags) | **GET** /beta/warehouse/{warehouseId}/tag | Get the tags for a warehouse.
 [**UpdateWarehouse**](WarehouseApi.md#updatewarehouse) | **PUT** /beta/warehouse | Update a warehouse
 [**UpdateWarehouseCustomFields**](WarehouseApi.md#updatewarehousecustomfields) | **PUT** /beta/warehouse/customFields | Update a warehouse custom fields
 
+
+<a name="addwarehouseaudit"></a>
+# **AddWarehouseAudit**
+> void AddWarehouseAudit (int? warehouseId, string warehouseAudit)
+
+Add new audit for a warehouse
+
+Adds an audit to an existing warehouse.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddWarehouseAuditExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WarehouseApi();
+            var warehouseId = 56;  // int? | Id of the warehouse to add an audit to
+            var warehouseAudit = warehouseAudit_example;  // string | The audit to add
+
+            try
+            {
+                // Add new audit for a warehouse
+                apiInstance.AddWarehouseAudit(warehouseId, warehouseAudit);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WarehouseApi.AddWarehouseAudit: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **warehouseId** | **int?**| Id of the warehouse to add an audit to | 
+ **warehouseAudit** | **string**| The audit to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="addwarehousetag"></a>
+# **AddWarehouseTag**
+> void AddWarehouseTag (int? warehouseId, string warehouseTag)
+
+Add new tags for a warehouse.
+
+Adds a tag to an existing warehouse.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class AddWarehouseTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WarehouseApi();
+            var warehouseId = 56;  // int? | Id of the warehouse to add a tag to
+            var warehouseTag = warehouseTag_example;  // string | The tag to add
+
+            try
+            {
+                // Add new tags for a warehouse.
+                apiInstance.AddWarehouseTag(warehouseId, warehouseTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WarehouseApi.AddWarehouseTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **warehouseId** | **int?**| Id of the warehouse to add a tag to | 
+ **warehouseTag** | **string**| The tag to add | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: application/json
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="deletewarehousetag"></a>
+# **DeleteWarehouseTag**
+> void DeleteWarehouseTag (int? warehouseId, string warehouseTag)
+
+Delete a tag for a warehouse.
+
+Deletes an existing warehouse tag using the specified data.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class DeleteWarehouseTagExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WarehouseApi();
+            var warehouseId = 56;  // int? | Id of the warehouse to remove tag from
+            var warehouseTag = warehouseTag_example;  // string | The tag to delete
+
+            try
+            {
+                // Delete a tag for a warehouse.
+                apiInstance.DeleteWarehouseTag(warehouseId, warehouseTag);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WarehouseApi.DeleteWarehouseTag: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **warehouseId** | **int?**| Id of the warehouse to remove tag from | 
+ **warehouseTag** | **string**| The tag to delete | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="getduplicatewarehousebyid"></a>
+# **GetDuplicateWarehouseById**
+> Warehouse GetDuplicateWarehouseById (int? warehouseId)
+
+Get a duplicated a warehouse by id
+
+Returns a duplicated warehouse identified by the specified id.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetDuplicateWarehouseByIdExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WarehouseApi();
+            var warehouseId = 56;  // int? | Id of the warehouse to be duplicated.
+
+            try
+            {
+                // Get a duplicated a warehouse by id
+                Warehouse result = apiInstance.GetDuplicateWarehouseById(warehouseId);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WarehouseApi.GetDuplicateWarehouseById: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **warehouseId** | **int?**| Id of the warehouse to be duplicated. | 
+
+### Return type
+
+[**Warehouse**](Warehouse.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 <a name="getwarehousebyfilter"></a>
 # **GetWarehouseByFilter**
@@ -32,11 +304,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WarehouseApi();
             var filter = filter_example;  // string | Query string, used to filter results. (optional) 
@@ -105,11 +376,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WarehouseApi();
             var warehouseId = 56;  // int? | Id of the warehouse to be returned.
@@ -150,6 +420,71 @@ Name | Type | Description  | Notes
 
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
+<a name="getwarehousetags"></a>
+# **GetWarehouseTags**
+> void GetWarehouseTags (int? warehouseId)
+
+Get the tags for a warehouse.
+
+Get all existing warehouse tags.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class GetWarehouseTagsExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new WarehouseApi();
+            var warehouseId = 56;  // int? | Id of the warehouse to get tags for
+
+            try
+            {
+                // Get the tags for a warehouse.
+                apiInstance.GetWarehouseTags(warehouseId);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling WarehouseApi.GetWarehouseTags: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **warehouseId** | **int?**| Id of the warehouse to get tags for | 
+
+### Return type
+
+void (empty response body)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
 <a name="updatewarehouse"></a>
 # **UpdateWarehouse**
 > void UpdateWarehouse (Warehouse body)
@@ -172,11 +507,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WarehouseApi();
             var body = new Warehouse(); // Warehouse | Warehouse to be updated.
@@ -238,11 +572,10 @@ namespace Example
     {
         public void main()
         {
-            
             // Configure API key authorization: api_key
-            Configuration.Default.ApiKey.Add("API-Key", "YOUR_API_KEY");
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
             // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
-            // Configuration.Default.ApiKeyPrefix.Add("API-Key", "Bearer");
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
 
             var apiInstance = new WarehouseApi();
             var body = new Warehouse(); // Warehouse | Warehouse to be updated.
