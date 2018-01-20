@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **BatchSize** | **int?** |  | [optional] 
 **Version** | **string** |  | [optional] 
 **FulfillmentProcessGroup** | **int?** |  | [optional] 
+**IsMassDistribution** | **bool?** |  | [optional] [default to false]
 **NumberOfOrders** | **int?** |  | [optional] 
 **NumberOfLines** | **int?** |  | [optional] 
 **NumberOfSKUs** | **int?** |  | [optional] 
@@ -46,6 +47,7 @@ Name | Type | Description | Notes
 **PreGenerateParcelLabels** | **bool?** |  | [optional] [default to false]
 **ShipDate** | **DateTime?** |  | [optional] 
 **AutoShipCasebreakCartons** | **bool?** |  | [optional] [default to false]
+**AutoShipOrders** | **bool?** |  | [optional] [default to false]
 **CartonizeOrders** | **bool?** |  | [optional] [default to false]
 **CreatePackingSlip** | **string** |  | 
 **OverridePackingSlipTemplateId** | **int?** |  | [optional] 

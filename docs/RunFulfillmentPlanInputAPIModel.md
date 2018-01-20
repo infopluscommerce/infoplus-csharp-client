@@ -1,12 +1,12 @@
-# Infoplus.Model.ProcessOutputAPIModel
+# Infoplus.Model.RunFulfillmentPlanInputAPIModel
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**Id** | **Object** |  | [optional] 
-**Status** | **string** |  | [optional] 
-**Entity** | **Object** |  | [optional] 
-**MessageList** | **List&lt;string&gt;** |  | [optional] 
+**OrderNoList** | **List&lt;decimal?&gt;** |  | [optional] 
+**FulfillmentPlanId** | **int?** |  | 
+**FirstPickPosition** | **int?** |  | [optional] 
+**ShipDate** | **DateTime?** |  | 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

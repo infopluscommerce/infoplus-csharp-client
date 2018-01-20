@@ -5,11 +5,18 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **Id** | **int?** |  | [optional] 
 **LobId** | **int?** |  | 
-**SubjectText** | **string** |  | [optional] 
+**Subject** | **string** |  | 
 **Name** | **string** |  | 
 **FromName** | **string** |  | 
 **FromAddress** | **string** |  | 
+**ToName** | **string** |  | [optional] 
+**ToAddress** | **string** |  | [optional] 
+**CcAddress** | **string** |  | [optional] 
+**BccAddress** | **string** |  | [optional] 
 **EmailTemplateType** | **string** |  | 
+**RecordType** | **string** |  | [optional] 
+**ApiVersion** | **string** |  | [optional] 
+**ScriptId** | **int?** |  | [optional] 
 **CreateDate** | **DateTime?** |  | [optional] 
 **ModifyDate** | **DateTime?** |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 

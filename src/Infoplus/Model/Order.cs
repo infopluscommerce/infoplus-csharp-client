@@ -102,11 +102,14 @@ namespace Infoplus.Model
         /// <param name="Total">Total.</param>
         /// <param name="TotalDiscount">TotalDiscount.</param>
         /// <param name="OrderAssemblyInstructions">OrderAssemblyInstructions.</param>
+        /// <param name="ParcelLabelRef1">ParcelLabelRef1.</param>
+        /// <param name="ParcelLabelRef2">ParcelLabelRef2.</param>
+        /// <param name="ParcelLabelRef3">ParcelLabelRef3.</param>
         /// <param name="LineItems">LineItems (required).</param>
         /// <param name="ExtraOrderData">ExtraOrderData.</param>
         /// <param name="ExtraLineItemData">ExtraLineItemData.</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public Order(string CustomerOrderNo = default(string), int? LobId = default(int?), int? WarehouseId = default(int?), DateTime? OrderDate = default(DateTime?), string CustomerNo = default(string), int? UseOrderNoRoot = default(int?), DateTime? FirstShipDate = default(DateTime?), DateTime? LastShipDate = default(DateTime?), DateTime? DeliverOnDate = default(DateTime?), DateTime? NeedByDate = default(DateTime?), int? CarrierId = default(int?), string ServiceTypeId = default(string), string ShipVia = default(string), string MediaCode = default(string), string LegacyRestrictionType = default(string), string AlcoholOrderType = default(string), string AlternateUsage = default(string), string AuthorizedBy = default(string), string BatchNo = default(string), string BillToAttention = default(string), string BillToCompany = default(string), string BillToStreet = default(string), string BillToStreet2 = default(string), string BillToStreet3 = default(string), string BillToCity = default(string), string BillToState = default(string), string BillToZip = default(string), string BillToCountry = default(string), string BillToPhone = default(string), string BillToEmail = default(string), int? ThirdPartyParcelAccountId = default(int?), string CostCenter = default(string), string CustomerPONo = default(string), string DistributionChannel = default(string), int? Division = default(int?), string GiftMessage = default(string), string HoldCode = default(string), string OrderMessage = default(string), int? OrderSourceId = default(int?), int? PackingSlipTemplateId = default(int?), int? OrderInvoiceTemplateId = default(int?), int? OrderConfirmationEmailTemplateId = default(int?), int? ShipmentConfirmationEmailTemplateId = default(int?), string PriceLevel = default(string), string PriceMode = default(string), int? PriorityCode = default(int?), string ShipCode = default(string), string ShipToAttention = default(string), string ShipToCompany = default(string), string ShipToStreet = default(string), string ShipToStreet2 = default(string), string ShipToStreet3 = default(string), string ShipToCity = default(string), string ShipToState = default(string), string ShipToZip = default(string), string ShipToCountry = default(string), string ShipToPhone = default(string), string ShipToEmail = default(string), decimal? ShippingCharge = default(decimal?), decimal? Subtotal = default(decimal?), decimal? Tax = default(decimal?), decimal? Total = default(decimal?), decimal? TotalDiscount = default(decimal?), string OrderAssemblyInstructions = default(string), List<OrderLine> LineItems = default(List<OrderLine>), List<OrderExtraOrderData> ExtraOrderData = default(List<OrderExtraOrderData>), List<OrderExtraLineItemData> ExtraLineItemData = default(List<OrderExtraLineItemData>), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public Order(string CustomerOrderNo = default(string), int? LobId = default(int?), int? WarehouseId = default(int?), DateTime? OrderDate = default(DateTime?), string CustomerNo = default(string), int? UseOrderNoRoot = default(int?), DateTime? FirstShipDate = default(DateTime?), DateTime? LastShipDate = default(DateTime?), DateTime? DeliverOnDate = default(DateTime?), DateTime? NeedByDate = default(DateTime?), int? CarrierId = default(int?), string ServiceTypeId = default(string), string ShipVia = default(string), string MediaCode = default(string), string LegacyRestrictionType = default(string), string AlcoholOrderType = default(string), string AlternateUsage = default(string), string AuthorizedBy = default(string), string BatchNo = default(string), string BillToAttention = default(string), string BillToCompany = default(string), string BillToStreet = default(string), string BillToStreet2 = default(string), string BillToStreet3 = default(string), string BillToCity = default(string), string BillToState = default(string), string BillToZip = default(string), string BillToCountry = default(string), string BillToPhone = default(string), string BillToEmail = default(string), int? ThirdPartyParcelAccountId = default(int?), string CostCenter = default(string), string CustomerPONo = default(string), string DistributionChannel = default(string), int? Division = default(int?), string GiftMessage = default(string), string HoldCode = default(string), string OrderMessage = default(string), int? OrderSourceId = default(int?), int? PackingSlipTemplateId = default(int?), int? OrderInvoiceTemplateId = default(int?), int? OrderConfirmationEmailTemplateId = default(int?), int? ShipmentConfirmationEmailTemplateId = default(int?), string PriceLevel = default(string), string PriceMode = default(string), int? PriorityCode = default(int?), string ShipCode = default(string), string ShipToAttention = default(string), string ShipToCompany = default(string), string ShipToStreet = default(string), string ShipToStreet2 = default(string), string ShipToStreet3 = default(string), string ShipToCity = default(string), string ShipToState = default(string), string ShipToZip = default(string), string ShipToCountry = default(string), string ShipToPhone = default(string), string ShipToEmail = default(string), decimal? ShippingCharge = default(decimal?), decimal? Subtotal = default(decimal?), decimal? Tax = default(decimal?), decimal? Total = default(decimal?), decimal? TotalDiscount = default(decimal?), string OrderAssemblyInstructions = default(string), string ParcelLabelRef1 = default(string), string ParcelLabelRef2 = default(string), string ParcelLabelRef3 = default(string), List<OrderLine> LineItems = default(List<OrderLine>), List<OrderExtraOrderData> ExtraOrderData = default(List<OrderExtraOrderData>), List<OrderExtraLineItemData> ExtraLineItemData = default(List<OrderExtraLineItemData>), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -221,6 +224,9 @@ namespace Infoplus.Model
             this.Total = Total;
             this.TotalDiscount = TotalDiscount;
             this.OrderAssemblyInstructions = OrderAssemblyInstructions;
+            this.ParcelLabelRef1 = ParcelLabelRef1;
+            this.ParcelLabelRef2 = ParcelLabelRef2;
+            this.ParcelLabelRef3 = ParcelLabelRef3;
             this.ExtraOrderData = ExtraOrderData;
             this.ExtraLineItemData = ExtraLineItemData;
             this.CustomFields = CustomFields;
@@ -797,6 +803,24 @@ namespace Infoplus.Model
         public string OrderAssemblyInstructions { get; set; }
 
         /// <summary>
+        /// Gets or Sets ParcelLabelRef1
+        /// </summary>
+        [DataMember(Name="parcelLabelRef1", EmitDefaultValue=false)]
+        public string ParcelLabelRef1 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ParcelLabelRef2
+        /// </summary>
+        [DataMember(Name="parcelLabelRef2", EmitDefaultValue=false)]
+        public string ParcelLabelRef2 { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ParcelLabelRef3
+        /// </summary>
+        [DataMember(Name="parcelLabelRef3", EmitDefaultValue=false)]
+        public string ParcelLabelRef3 { get; set; }
+
+        /// <summary>
         /// Gets or Sets LineItems
         /// </summary>
         [DataMember(Name="lineItems", EmitDefaultValue=false)]
@@ -929,6 +953,9 @@ namespace Infoplus.Model
             sb.Append("  TotalQty: ").Append(TotalQty).Append("\n");
             sb.Append("  WeightLbs: ").Append(WeightLbs).Append("\n");
             sb.Append("  OrderAssemblyInstructions: ").Append(OrderAssemblyInstructions).Append("\n");
+            sb.Append("  ParcelLabelRef1: ").Append(ParcelLabelRef1).Append("\n");
+            sb.Append("  ParcelLabelRef2: ").Append(ParcelLabelRef2).Append("\n");
+            sb.Append("  ParcelLabelRef3: ").Append(ParcelLabelRef3).Append("\n");
             sb.Append("  LineItems: ").Append(LineItems).Append("\n");
             sb.Append("  ExtraOrderData: ").Append(ExtraOrderData).Append("\n");
             sb.Append("  ExtraLineItemData: ").Append(ExtraLineItemData).Append("\n");
@@ -1444,6 +1471,21 @@ namespace Infoplus.Model
                     this.OrderAssemblyInstructions.Equals(input.OrderAssemblyInstructions))
                 ) && 
                 (
+                    this.ParcelLabelRef1 == input.ParcelLabelRef1 ||
+                    (this.ParcelLabelRef1 != null &&
+                    this.ParcelLabelRef1.Equals(input.ParcelLabelRef1))
+                ) && 
+                (
+                    this.ParcelLabelRef2 == input.ParcelLabelRef2 ||
+                    (this.ParcelLabelRef2 != null &&
+                    this.ParcelLabelRef2.Equals(input.ParcelLabelRef2))
+                ) && 
+                (
+                    this.ParcelLabelRef3 == input.ParcelLabelRef3 ||
+                    (this.ParcelLabelRef3 != null &&
+                    this.ParcelLabelRef3.Equals(input.ParcelLabelRef3))
+                ) && 
+                (
                     this.LineItems == input.LineItems ||
                     this.LineItems != null &&
                     this.LineItems.SequenceEqual(input.LineItems)
@@ -1669,6 +1711,12 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.WeightLbs.GetHashCode();
                 if (this.OrderAssemblyInstructions != null)
                     hashCode = hashCode * 59 + this.OrderAssemblyInstructions.GetHashCode();
+                if (this.ParcelLabelRef1 != null)
+                    hashCode = hashCode * 59 + this.ParcelLabelRef1.GetHashCode();
+                if (this.ParcelLabelRef2 != null)
+                    hashCode = hashCode * 59 + this.ParcelLabelRef2.GetHashCode();
+                if (this.ParcelLabelRef3 != null)
+                    hashCode = hashCode * 59 + this.ParcelLabelRef3.GetHashCode();
                 if (this.LineItems != null)
                     hashCode = hashCode * 59 + this.LineItems.GetHashCode();
                 if (this.ExtraOrderData != null)

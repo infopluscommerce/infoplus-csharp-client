@@ -25,49 +25,49 @@ using SwaggerDateConverter = Infoplus.Client.SwaggerDateConverter;
 namespace Infoplus.Model
 {
     /// <summary>
-    /// ProcessOutputAPIModel
+    /// InvoiceTemplateLinePriceLevel
     /// </summary>
     [DataContract]
-    public partial class ProcessOutputAPIModel :  IEquatable<ProcessOutputAPIModel>, IValidatableObject
+    public partial class InvoiceTemplateLinePriceLevel :  IEquatable<InvoiceTemplateLinePriceLevel>, IValidatableObject
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ProcessOutputAPIModel" /> class.
+        /// Initializes a new instance of the <see cref="InvoiceTemplateLinePriceLevel" /> class.
         /// </summary>
         /// <param name="Id">Id.</param>
-        /// <param name="Status">Status.</param>
-        /// <param name="Entity">Entity.</param>
-        /// <param name="MessageList">MessageList.</param>
-        public ProcessOutputAPIModel(Object Id = default(Object), string Status = default(string), Object Entity = default(Object), List<string> MessageList = default(List<string>))
+        /// <param name="Quantity">Quantity.</param>
+        /// <param name="Rate">Rate.</param>
+        /// <param name="CustomFields">CustomFields.</param>
+        public InvoiceTemplateLinePriceLevel(int? Id = default(int?), int? Quantity = default(int?), decimal? Rate = default(decimal?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             this.Id = Id;
-            this.Status = Status;
-            this.Entity = Entity;
-            this.MessageList = MessageList;
+            this.Quantity = Quantity;
+            this.Rate = Rate;
+            this.CustomFields = CustomFields;
         }
         
         /// <summary>
         /// Gets or Sets Id
         /// </summary>
         [DataMember(Name="id", EmitDefaultValue=false)]
-        public Object Id { get; set; }
+        public int? Id { get; set; }
 
         /// <summary>
-        /// Gets or Sets Status
+        /// Gets or Sets Quantity
         /// </summary>
-        [DataMember(Name="status", EmitDefaultValue=false)]
-        public string Status { get; set; }
+        [DataMember(Name="quantity", EmitDefaultValue=false)]
+        public int? Quantity { get; set; }
 
         /// <summary>
-        /// Gets or Sets Entity
+        /// Gets or Sets Rate
         /// </summary>
-        [DataMember(Name="entity", EmitDefaultValue=false)]
-        public Object Entity { get; set; }
+        [DataMember(Name="rate", EmitDefaultValue=false)]
+        public decimal? Rate { get; set; }
 
         /// <summary>
-        /// Gets or Sets MessageList
+        /// Gets or Sets CustomFields
         /// </summary>
-        [DataMember(Name="messageList", EmitDefaultValue=false)]
-        public List<string> MessageList { get; set; }
+        [DataMember(Name="customFields", EmitDefaultValue=false)]
+        public Dictionary<string, Object> CustomFields { get; set; }
 
         /// <summary>
         /// Returns the string presentation of the object
@@ -76,11 +76,11 @@ namespace Infoplus.Model
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.Append("class ProcessOutputAPIModel {\n");
+            sb.Append("class InvoiceTemplateLinePriceLevel {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
-            sb.Append("  Status: ").Append(Status).Append("\n");
-            sb.Append("  Entity: ").Append(Entity).Append("\n");
-            sb.Append("  MessageList: ").Append(MessageList).Append("\n");
+            sb.Append("  Quantity: ").Append(Quantity).Append("\n");
+            sb.Append("  Rate: ").Append(Rate).Append("\n");
+            sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
         }
@@ -101,15 +101,15 @@ namespace Infoplus.Model
         /// <returns>Boolean</returns>
         public override bool Equals(object input)
         {
-            return this.Equals(input as ProcessOutputAPIModel);
+            return this.Equals(input as InvoiceTemplateLinePriceLevel);
         }
 
         /// <summary>
-        /// Returns true if ProcessOutputAPIModel instances are equal
+        /// Returns true if InvoiceTemplateLinePriceLevel instances are equal
         /// </summary>
-        /// <param name="input">Instance of ProcessOutputAPIModel to be compared</param>
+        /// <param name="input">Instance of InvoiceTemplateLinePriceLevel to be compared</param>
         /// <returns>Boolean</returns>
-        public bool Equals(ProcessOutputAPIModel input)
+        public bool Equals(InvoiceTemplateLinePriceLevel input)
         {
             if (input == null)
                 return false;
@@ -121,19 +121,19 @@ namespace Infoplus.Model
                     this.Id.Equals(input.Id))
                 ) && 
                 (
-                    this.Status == input.Status ||
-                    (this.Status != null &&
-                    this.Status.Equals(input.Status))
+                    this.Quantity == input.Quantity ||
+                    (this.Quantity != null &&
+                    this.Quantity.Equals(input.Quantity))
                 ) && 
                 (
-                    this.Entity == input.Entity ||
-                    (this.Entity != null &&
-                    this.Entity.Equals(input.Entity))
+                    this.Rate == input.Rate ||
+                    (this.Rate != null &&
+                    this.Rate.Equals(input.Rate))
                 ) && 
                 (
-                    this.MessageList == input.MessageList ||
-                    this.MessageList != null &&
-                    this.MessageList.SequenceEqual(input.MessageList)
+                    this.CustomFields == input.CustomFields ||
+                    this.CustomFields != null &&
+                    this.CustomFields.SequenceEqual(input.CustomFields)
                 );
         }
 
@@ -148,12 +148,12 @@ namespace Infoplus.Model
                 int hashCode = 41;
                 if (this.Id != null)
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
-                if (this.Status != null)
-                    hashCode = hashCode * 59 + this.Status.GetHashCode();
-                if (this.Entity != null)
-                    hashCode = hashCode * 59 + this.Entity.GetHashCode();
-                if (this.MessageList != null)
-                    hashCode = hashCode * 59 + this.MessageList.GetHashCode();
+                if (this.Quantity != null)
+                    hashCode = hashCode * 59 + this.Quantity.GetHashCode();
+                if (this.Rate != null)
+                    hashCode = hashCode * 59 + this.Rate.GetHashCode();
+                if (this.CustomFields != null)
+                    hashCode = hashCode * 59 + this.CustomFields.GetHashCode();
                 return hashCode;
             }
         }

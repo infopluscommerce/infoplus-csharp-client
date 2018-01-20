@@ -40,10 +40,11 @@ namespace Infoplus.Model
         /// </summary>
         /// <param name="Name">Name (required).</param>
         /// <param name="SystemType">SystemType (required).</param>
+        /// <param name="ScriptId">ScriptId.</param>
         /// <param name="ApiKey">ApiKey (required).</param>
         /// <param name="ApiSecret">ApiSecret (required).</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public ExternalShippingSystem(string Name = default(string), string SystemType = default(string), string ApiKey = default(string), string ApiSecret = default(string), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public ExternalShippingSystem(string Name = default(string), string SystemType = default(string), int? ScriptId = default(int?), string ApiKey = default(string), string ApiSecret = default(string), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -81,6 +82,7 @@ namespace Infoplus.Model
             {
                 this.ApiSecret = ApiSecret;
             }
+            this.ScriptId = ScriptId;
             this.CustomFields = CustomFields;
         }
         
@@ -101,6 +103,12 @@ namespace Infoplus.Model
         /// </summary>
         [DataMember(Name="systemType", EmitDefaultValue=false)]
         public string SystemType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ScriptId
+        /// </summary>
+        [DataMember(Name="scriptId", EmitDefaultValue=false)]
+        public int? ScriptId { get; set; }
 
         /// <summary>
         /// Gets or Sets ApiKey
@@ -143,6 +151,7 @@ namespace Infoplus.Model
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  SystemType: ").Append(SystemType).Append("\n");
+            sb.Append("  ScriptId: ").Append(ScriptId).Append("\n");
             sb.Append("  ApiKey: ").Append(ApiKey).Append("\n");
             sb.Append("  ApiSecret: ").Append(ApiSecret).Append("\n");
             sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
@@ -198,6 +207,11 @@ namespace Infoplus.Model
                     this.SystemType.Equals(input.SystemType))
                 ) && 
                 (
+                    this.ScriptId == input.ScriptId ||
+                    (this.ScriptId != null &&
+                    this.ScriptId.Equals(input.ScriptId))
+                ) && 
+                (
                     this.ApiKey == input.ApiKey ||
                     (this.ApiKey != null &&
                     this.ApiKey.Equals(input.ApiKey))
@@ -239,6 +253,8 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.SystemType != null)
                     hashCode = hashCode * 59 + this.SystemType.GetHashCode();
+                if (this.ScriptId != null)
+                    hashCode = hashCode * 59 + this.ScriptId.GetHashCode();
                 if (this.ApiKey != null)
                     hashCode = hashCode * 59 + this.ApiKey.GetHashCode();
                 if (this.ApiSecret != null)

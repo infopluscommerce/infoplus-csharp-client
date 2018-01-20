@@ -50,8 +50,9 @@ namespace Infoplus.Model
         /// <param name="BillingRuleId">BillingRuleId (required).</param>
         /// <param name="PriceLevelMode">PriceLevelMode (required).</param>
         /// <param name="ScriptId">ScriptId.</param>
+        /// <param name="PriceLevelList">PriceLevelList.</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public CustomerInvoiceTemplateLine(int? LobId = default(int?), string Description = default(string), int? SeqNo = default(int?), string AccountCode = default(string), bool? Active = false, bool? IncludeIfZero = false, string Department = default(string), string ItemCode = default(string), int? InvoiceTemplateId = default(int?), int? BillingRuleId = default(int?), string PriceLevelMode = default(string), int? ScriptId = default(int?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public CustomerInvoiceTemplateLine(int? LobId = default(int?), string Description = default(string), int? SeqNo = default(int?), string AccountCode = default(string), bool? Active = false, bool? IncludeIfZero = false, string Department = default(string), string ItemCode = default(string), int? InvoiceTemplateId = default(int?), int? BillingRuleId = default(int?), string PriceLevelMode = default(string), int? ScriptId = default(int?), List<InvoiceTemplateLinePriceLevel> PriceLevelList = default(List<InvoiceTemplateLinePriceLevel>), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -105,6 +106,7 @@ namespace Infoplus.Model
             this.ItemCode = ItemCode;
             this.InvoiceTemplateId = InvoiceTemplateId;
             this.ScriptId = ScriptId;
+            this.PriceLevelList = PriceLevelList;
             this.CustomFields = CustomFields;
         }
         
@@ -199,6 +201,12 @@ namespace Infoplus.Model
         public int? ScriptId { get; set; }
 
         /// <summary>
+        /// Gets or Sets PriceLevelList
+        /// </summary>
+        [DataMember(Name="priceLevelList", EmitDefaultValue=false)]
+        public List<InvoiceTemplateLinePriceLevel> PriceLevelList { get; set; }
+
+        /// <summary>
         /// Gets or Sets CustomFields
         /// </summary>
         [DataMember(Name="customFields", EmitDefaultValue=false)]
@@ -227,6 +235,7 @@ namespace Infoplus.Model
             sb.Append("  BillingRuleId: ").Append(BillingRuleId).Append("\n");
             sb.Append("  PriceLevelMode: ").Append(PriceLevelMode).Append("\n");
             sb.Append("  ScriptId: ").Append(ScriptId).Append("\n");
+            sb.Append("  PriceLevelList: ").Append(PriceLevelList).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
             sb.Append("}\n");
             return sb.ToString();
@@ -338,6 +347,11 @@ namespace Infoplus.Model
                     this.ScriptId.Equals(input.ScriptId))
                 ) && 
                 (
+                    this.PriceLevelList == input.PriceLevelList ||
+                    this.PriceLevelList != null &&
+                    this.PriceLevelList.SequenceEqual(input.PriceLevelList)
+                ) && 
+                (
                     this.CustomFields == input.CustomFields ||
                     this.CustomFields != null &&
                     this.CustomFields.SequenceEqual(input.CustomFields)
@@ -383,6 +397,8 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.PriceLevelMode.GetHashCode();
                 if (this.ScriptId != null)
                     hashCode = hashCode * 59 + this.ScriptId.GetHashCode();
+                if (this.PriceLevelList != null)
+                    hashCode = hashCode * 59 + this.PriceLevelList.GetHashCode();
                 if (this.CustomFields != null)
                     hashCode = hashCode * 59 + this.CustomFields.GetHashCode();
                 return hashCode;

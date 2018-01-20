@@ -39,13 +39,20 @@ namespace Infoplus.Model
         /// Initializes a new instance of the <see cref="EmailTemplate" /> class.
         /// </summary>
         /// <param name="LobId">LobId (required).</param>
-        /// <param name="SubjectText">SubjectText.</param>
+        /// <param name="Subject">Subject (required).</param>
         /// <param name="Name">Name (required).</param>
         /// <param name="FromName">FromName (required).</param>
         /// <param name="FromAddress">FromAddress (required).</param>
+        /// <param name="ToName">ToName.</param>
+        /// <param name="ToAddress">ToAddress.</param>
+        /// <param name="CcAddress">CcAddress.</param>
+        /// <param name="BccAddress">BccAddress.</param>
         /// <param name="EmailTemplateType">EmailTemplateType (required).</param>
+        /// <param name="RecordType">RecordType.</param>
+        /// <param name="ApiVersion">ApiVersion.</param>
+        /// <param name="ScriptId">ScriptId.</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public EmailTemplate(int? LobId = default(int?), string SubjectText = default(string), string Name = default(string), string FromName = default(string), string FromAddress = default(string), string EmailTemplateType = default(string), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public EmailTemplate(int? LobId = default(int?), string Subject = default(string), string Name = default(string), string FromName = default(string), string FromAddress = default(string), string ToName = default(string), string ToAddress = default(string), string CcAddress = default(string), string BccAddress = default(string), string EmailTemplateType = default(string), string RecordType = default(string), string ApiVersion = default(string), int? ScriptId = default(int?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -55,6 +62,15 @@ namespace Infoplus.Model
             else
             {
                 this.LobId = LobId;
+            }
+            // to ensure "Subject" is required (not null)
+            if (Subject == null)
+            {
+                throw new InvalidDataException("Subject is a required property for EmailTemplate and cannot be null");
+            }
+            else
+            {
+                this.Subject = Subject;
             }
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -92,7 +108,13 @@ namespace Infoplus.Model
             {
                 this.EmailTemplateType = EmailTemplateType;
             }
-            this.SubjectText = SubjectText;
+            this.ToName = ToName;
+            this.ToAddress = ToAddress;
+            this.CcAddress = CcAddress;
+            this.BccAddress = BccAddress;
+            this.RecordType = RecordType;
+            this.ApiVersion = ApiVersion;
+            this.ScriptId = ScriptId;
             this.CustomFields = CustomFields;
         }
         
@@ -109,10 +131,10 @@ namespace Infoplus.Model
         public int? LobId { get; set; }
 
         /// <summary>
-        /// Gets or Sets SubjectText
+        /// Gets or Sets Subject
         /// </summary>
-        [DataMember(Name="subjectText", EmitDefaultValue=false)]
-        public string SubjectText { get; set; }
+        [DataMember(Name="subject", EmitDefaultValue=false)]
+        public string Subject { get; set; }
 
         /// <summary>
         /// Gets or Sets Name
@@ -133,10 +155,52 @@ namespace Infoplus.Model
         public string FromAddress { get; set; }
 
         /// <summary>
+        /// Gets or Sets ToName
+        /// </summary>
+        [DataMember(Name="toName", EmitDefaultValue=false)]
+        public string ToName { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ToAddress
+        /// </summary>
+        [DataMember(Name="toAddress", EmitDefaultValue=false)]
+        public string ToAddress { get; set; }
+
+        /// <summary>
+        /// Gets or Sets CcAddress
+        /// </summary>
+        [DataMember(Name="ccAddress", EmitDefaultValue=false)]
+        public string CcAddress { get; set; }
+
+        /// <summary>
+        /// Gets or Sets BccAddress
+        /// </summary>
+        [DataMember(Name="bccAddress", EmitDefaultValue=false)]
+        public string BccAddress { get; set; }
+
+        /// <summary>
         /// Gets or Sets EmailTemplateType
         /// </summary>
         [DataMember(Name="emailTemplateType", EmitDefaultValue=false)]
         public string EmailTemplateType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets RecordType
+        /// </summary>
+        [DataMember(Name="recordType", EmitDefaultValue=false)]
+        public string RecordType { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ApiVersion
+        /// </summary>
+        [DataMember(Name="apiVersion", EmitDefaultValue=false)]
+        public string ApiVersion { get; set; }
+
+        /// <summary>
+        /// Gets or Sets ScriptId
+        /// </summary>
+        [DataMember(Name="scriptId", EmitDefaultValue=false)]
+        public int? ScriptId { get; set; }
 
         /// <summary>
         /// Gets or Sets CreateDate
@@ -166,11 +230,18 @@ namespace Infoplus.Model
             sb.Append("class EmailTemplate {\n");
             sb.Append("  Id: ").Append(Id).Append("\n");
             sb.Append("  LobId: ").Append(LobId).Append("\n");
-            sb.Append("  SubjectText: ").Append(SubjectText).Append("\n");
+            sb.Append("  Subject: ").Append(Subject).Append("\n");
             sb.Append("  Name: ").Append(Name).Append("\n");
             sb.Append("  FromName: ").Append(FromName).Append("\n");
             sb.Append("  FromAddress: ").Append(FromAddress).Append("\n");
+            sb.Append("  ToName: ").Append(ToName).Append("\n");
+            sb.Append("  ToAddress: ").Append(ToAddress).Append("\n");
+            sb.Append("  CcAddress: ").Append(CcAddress).Append("\n");
+            sb.Append("  BccAddress: ").Append(BccAddress).Append("\n");
             sb.Append("  EmailTemplateType: ").Append(EmailTemplateType).Append("\n");
+            sb.Append("  RecordType: ").Append(RecordType).Append("\n");
+            sb.Append("  ApiVersion: ").Append(ApiVersion).Append("\n");
+            sb.Append("  ScriptId: ").Append(ScriptId).Append("\n");
             sb.Append("  CreateDate: ").Append(CreateDate).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
             sb.Append("  CustomFields: ").Append(CustomFields).Append("\n");
@@ -219,9 +290,9 @@ namespace Infoplus.Model
                     this.LobId.Equals(input.LobId))
                 ) && 
                 (
-                    this.SubjectText == input.SubjectText ||
-                    (this.SubjectText != null &&
-                    this.SubjectText.Equals(input.SubjectText))
+                    this.Subject == input.Subject ||
+                    (this.Subject != null &&
+                    this.Subject.Equals(input.Subject))
                 ) && 
                 (
                     this.Name == input.Name ||
@@ -239,9 +310,44 @@ namespace Infoplus.Model
                     this.FromAddress.Equals(input.FromAddress))
                 ) && 
                 (
+                    this.ToName == input.ToName ||
+                    (this.ToName != null &&
+                    this.ToName.Equals(input.ToName))
+                ) && 
+                (
+                    this.ToAddress == input.ToAddress ||
+                    (this.ToAddress != null &&
+                    this.ToAddress.Equals(input.ToAddress))
+                ) && 
+                (
+                    this.CcAddress == input.CcAddress ||
+                    (this.CcAddress != null &&
+                    this.CcAddress.Equals(input.CcAddress))
+                ) && 
+                (
+                    this.BccAddress == input.BccAddress ||
+                    (this.BccAddress != null &&
+                    this.BccAddress.Equals(input.BccAddress))
+                ) && 
+                (
                     this.EmailTemplateType == input.EmailTemplateType ||
                     (this.EmailTemplateType != null &&
                     this.EmailTemplateType.Equals(input.EmailTemplateType))
+                ) && 
+                (
+                    this.RecordType == input.RecordType ||
+                    (this.RecordType != null &&
+                    this.RecordType.Equals(input.RecordType))
+                ) && 
+                (
+                    this.ApiVersion == input.ApiVersion ||
+                    (this.ApiVersion != null &&
+                    this.ApiVersion.Equals(input.ApiVersion))
+                ) && 
+                (
+                    this.ScriptId == input.ScriptId ||
+                    (this.ScriptId != null &&
+                    this.ScriptId.Equals(input.ScriptId))
                 ) && 
                 (
                     this.CreateDate == input.CreateDate ||
@@ -273,16 +379,30 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.Id.GetHashCode();
                 if (this.LobId != null)
                     hashCode = hashCode * 59 + this.LobId.GetHashCode();
-                if (this.SubjectText != null)
-                    hashCode = hashCode * 59 + this.SubjectText.GetHashCode();
+                if (this.Subject != null)
+                    hashCode = hashCode * 59 + this.Subject.GetHashCode();
                 if (this.Name != null)
                     hashCode = hashCode * 59 + this.Name.GetHashCode();
                 if (this.FromName != null)
                     hashCode = hashCode * 59 + this.FromName.GetHashCode();
                 if (this.FromAddress != null)
                     hashCode = hashCode * 59 + this.FromAddress.GetHashCode();
+                if (this.ToName != null)
+                    hashCode = hashCode * 59 + this.ToName.GetHashCode();
+                if (this.ToAddress != null)
+                    hashCode = hashCode * 59 + this.ToAddress.GetHashCode();
+                if (this.CcAddress != null)
+                    hashCode = hashCode * 59 + this.CcAddress.GetHashCode();
+                if (this.BccAddress != null)
+                    hashCode = hashCode * 59 + this.BccAddress.GetHashCode();
                 if (this.EmailTemplateType != null)
                     hashCode = hashCode * 59 + this.EmailTemplateType.GetHashCode();
+                if (this.RecordType != null)
+                    hashCode = hashCode * 59 + this.RecordType.GetHashCode();
+                if (this.ApiVersion != null)
+                    hashCode = hashCode * 59 + this.ApiVersion.GetHashCode();
+                if (this.ScriptId != null)
+                    hashCode = hashCode * 59 + this.ScriptId.GetHashCode();
                 if (this.CreateDate != null)
                     hashCode = hashCode * 59 + this.CreateDate.GetHashCode();
                 if (this.ModifyDate != null)

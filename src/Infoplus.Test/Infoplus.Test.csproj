@@ -81,7 +81,7 @@ Contact: api@infopluscommerce.com
   <Import Project="$(MsBuildToolsPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
       <ProjectReference Include="..\Infoplus\Infoplus.csproj">
-          <Project>{489FB843-3F5E-4E93-AD9E-ED75D5B71F3D}</Project>
+          <Project>{A76E12CA-7C3E-4805-82CD-A9B7963AD591}</Project>
           <Name>Infoplus</Name>
       </ProjectReference>
   </ItemGroup>

@@ -18,6 +18,7 @@ Name | Type | Description | Notes
 **BillingRuleId** | **int?** |  | 
 **PriceLevelMode** | **string** |  | 
 **ScriptId** | **int?** |  | [optional] 
+**PriceLevelList** | [**List&lt;InvoiceTemplateLinePriceLevel&gt;**](InvoiceTemplateLinePriceLevel.md) |  | [optional] 
 **CustomFields** | **Dictionary&lt;string, Object&gt;** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)

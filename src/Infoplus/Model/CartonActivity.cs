@@ -109,6 +109,7 @@ namespace Infoplus.Model
         /// <param name="Tax">Tax.</param>
         /// <param name="ShippingCharge">ShippingCharge.</param>
         /// <param name="TotalDiscount">TotalDiscount.</param>
+        /// <param name="ThirdPartyParcelAccountId">ThirdPartyParcelAccountId.</param>
         /// <param name="PackingSlipTemplateId">PackingSlipTemplateId.</param>
         /// <param name="GiftMessage">GiftMessage.</param>
         /// <param name="BranchSector">BranchSector.</param>
@@ -123,7 +124,7 @@ namespace Infoplus.Model
         /// <param name="OrderInvoiceTemplateId">OrderInvoiceTemplateId.</param>
         /// <param name="PriceMode">PriceMode.</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public CartonActivity(int? LobId = default(int?), int? WarehouseId = default(int?), int? CartonNo = default(int?), int? NumberOfCartons = default(int?), bool? Shipped = false, int? CarrierServiceId = default(int?), decimal? Dim1In = default(decimal?), decimal? Dim2In = default(decimal?), decimal? Dim3In = default(decimal?), string EstimatedZone = default(string), string AlternateUsage = default(string), string OrderStatusName = default(string), int? CarrierId = default(int?), string CarrierName = default(string), string MediaCode = default(string), string LegacyRestrictionType = default(string), string ReqTypeName = default(string), string ServiceTypeId = default(string), string ServiceTypeName = default(string), string AlcoholOrderType = default(string), string DistributionChannel = default(string), string DistributionChannelName = default(string), int? PriorityCode = default(int?), DateTime? OrderDate = default(DateTime?), string CustomerOrderNo = default(string), string PriceLevel = default(string), int? OrderSourceId = default(int?), string OrderSourceName = default(string), string IntegrationPartnerName = default(string), string OrderLoadProgramName = default(string), string ShipToAttention = default(string), string ShipToCompany = default(string), string ShipToStreet = default(string), string ShipToStreet2 = default(string), string ShipToStreet3 = default(string), string ShipToCity = default(string), string ShipToState = default(string), string ShipToZip = default(string), string ShipToCountry = default(string), string ShipToPhone = default(string), string ShipToEmail = default(string), string BillToAttention = default(string), string BillToCompany = default(string), string BillToStreet = default(string), string BillToStreet2 = default(string), string BillToStreet3 = default(string), string BillToCity = default(string), string BillToState = default(string), string BillToZip = default(string), string BillToCountry = default(string), string BillToPhone = default(string), string BillToEmail = default(string), string HoldCode = default(string), string ShipCode = default(string), string OrderMessage = default(string), int? Division = default(int?), string CostCenter = default(string), string AuthorizedBy = default(string), string BatchNo = default(string), DateTime? FirstShipDate = default(DateTime?), DateTime? LastShipDate = default(DateTime?), DateTime? DeliverOnDate = default(DateTime?), string CustomerPONo = default(string), string ShipVia = default(string), DateTime? NeedByDate = default(DateTime?), decimal? Total = default(decimal?), decimal? Subtotal = default(decimal?), decimal? TaxOnFreight = default(decimal?), decimal? Tax = default(decimal?), decimal? ShippingCharge = default(decimal?), decimal? TotalDiscount = default(decimal?), int? PackingSlipTemplateId = default(int?), string GiftMessage = default(string), string BranchSector = default(string), string BranchArea = default(string), string BranchCustomerType = default(string), string BranchId = default(string), string OrderCode = default(string), string LeadPackageId = default(string), int? OrderConfirmationEmailTemplateId = default(int?), int? ShipmentConfirmationEmailTemplateId = default(int?), string ShippingSystemName = default(string), int? OrderInvoiceTemplateId = default(int?), string PriceMode = default(string), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public CartonActivity(int? LobId = default(int?), int? WarehouseId = default(int?), int? CartonNo = default(int?), int? NumberOfCartons = default(int?), bool? Shipped = false, int? CarrierServiceId = default(int?), decimal? Dim1In = default(decimal?), decimal? Dim2In = default(decimal?), decimal? Dim3In = default(decimal?), string EstimatedZone = default(string), string AlternateUsage = default(string), string OrderStatusName = default(string), int? CarrierId = default(int?), string CarrierName = default(string), string MediaCode = default(string), string LegacyRestrictionType = default(string), string ReqTypeName = default(string), string ServiceTypeId = default(string), string ServiceTypeName = default(string), string AlcoholOrderType = default(string), string DistributionChannel = default(string), string DistributionChannelName = default(string), int? PriorityCode = default(int?), DateTime? OrderDate = default(DateTime?), string CustomerOrderNo = default(string), string PriceLevel = default(string), int? OrderSourceId = default(int?), string OrderSourceName = default(string), string IntegrationPartnerName = default(string), string OrderLoadProgramName = default(string), string ShipToAttention = default(string), string ShipToCompany = default(string), string ShipToStreet = default(string), string ShipToStreet2 = default(string), string ShipToStreet3 = default(string), string ShipToCity = default(string), string ShipToState = default(string), string ShipToZip = default(string), string ShipToCountry = default(string), string ShipToPhone = default(string), string ShipToEmail = default(string), string BillToAttention = default(string), string BillToCompany = default(string), string BillToStreet = default(string), string BillToStreet2 = default(string), string BillToStreet3 = default(string), string BillToCity = default(string), string BillToState = default(string), string BillToZip = default(string), string BillToCountry = default(string), string BillToPhone = default(string), string BillToEmail = default(string), string HoldCode = default(string), string ShipCode = default(string), string OrderMessage = default(string), int? Division = default(int?), string CostCenter = default(string), string AuthorizedBy = default(string), string BatchNo = default(string), DateTime? FirstShipDate = default(DateTime?), DateTime? LastShipDate = default(DateTime?), DateTime? DeliverOnDate = default(DateTime?), string CustomerPONo = default(string), string ShipVia = default(string), DateTime? NeedByDate = default(DateTime?), decimal? Total = default(decimal?), decimal? Subtotal = default(decimal?), decimal? TaxOnFreight = default(decimal?), decimal? Tax = default(decimal?), decimal? ShippingCharge = default(decimal?), decimal? TotalDiscount = default(decimal?), int? ThirdPartyParcelAccountId = default(int?), int? PackingSlipTemplateId = default(int?), string GiftMessage = default(string), string BranchSector = default(string), string BranchArea = default(string), string BranchCustomerType = default(string), string BranchId = default(string), string OrderCode = default(string), string LeadPackageId = default(string), int? OrderConfirmationEmailTemplateId = default(int?), int? ShipmentConfirmationEmailTemplateId = default(int?), string ShippingSystemName = default(string), int? OrderInvoiceTemplateId = default(int?), string PriceMode = default(string), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             // to ensure "LobId" is required (not null)
             if (LobId == null)
@@ -244,6 +245,7 @@ namespace Infoplus.Model
             this.Tax = Tax;
             this.ShippingCharge = ShippingCharge;
             this.TotalDiscount = TotalDiscount;
+            this.ThirdPartyParcelAccountId = ThirdPartyParcelAccountId;
             this.PackingSlipTemplateId = PackingSlipTemplateId;
             this.GiftMessage = GiftMessage;
             this.BranchSector = BranchSector;
@@ -969,6 +971,12 @@ namespace Infoplus.Model
         public int? ParcelAccountId { get; private set; }
 
         /// <summary>
+        /// Gets or Sets ThirdPartyParcelAccountId
+        /// </summary>
+        [DataMember(Name="thirdPartyParcelAccountId", EmitDefaultValue=false)]
+        public int? ThirdPartyParcelAccountId { get; set; }
+
+        /// <summary>
         /// Gets or Sets PackingSlipTemplateId
         /// </summary>
         [DataMember(Name="packingSlipTemplateId", EmitDefaultValue=false)]
@@ -1196,6 +1204,7 @@ namespace Infoplus.Model
             sb.Append("  ShippingCharge: ").Append(ShippingCharge).Append("\n");
             sb.Append("  TotalDiscount: ").Append(TotalDiscount).Append("\n");
             sb.Append("  ParcelAccountId: ").Append(ParcelAccountId).Append("\n");
+            sb.Append("  ThirdPartyParcelAccountId: ").Append(ThirdPartyParcelAccountId).Append("\n");
             sb.Append("  PackingSlipTemplateId: ").Append(PackingSlipTemplateId).Append("\n");
             sb.Append("  GiftMessage: ").Append(GiftMessage).Append("\n");
             sb.Append("  BranchSector: ").Append(BranchSector).Append("\n");
@@ -1838,6 +1847,11 @@ namespace Infoplus.Model
                     this.ParcelAccountId.Equals(input.ParcelAccountId))
                 ) && 
                 (
+                    this.ThirdPartyParcelAccountId == input.ThirdPartyParcelAccountId ||
+                    (this.ThirdPartyParcelAccountId != null &&
+                    this.ThirdPartyParcelAccountId.Equals(input.ThirdPartyParcelAccountId))
+                ) && 
+                (
                     this.PackingSlipTemplateId == input.PackingSlipTemplateId ||
                     (this.PackingSlipTemplateId != null &&
                     this.PackingSlipTemplateId.Equals(input.PackingSlipTemplateId))
@@ -2169,6 +2183,8 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.TotalDiscount.GetHashCode();
                 if (this.ParcelAccountId != null)
                     hashCode = hashCode * 59 + this.ParcelAccountId.GetHashCode();
+                if (this.ThirdPartyParcelAccountId != null)
+                    hashCode = hashCode * 59 + this.ThirdPartyParcelAccountId.GetHashCode();
                 if (this.PackingSlipTemplateId != null)
                     hashCode = hashCode * 59 + this.PackingSlipTemplateId.GetHashCode();
                 if (this.GiftMessage != null)

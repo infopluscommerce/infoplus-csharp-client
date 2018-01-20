@@ -15,6 +15,7 @@ Method | HTTP request | Description
 [**GetOrderById**](OrderApi.md#getorderbyid) | **GET** /beta/order/{orderId} | Get an order by id
 [**GetOrderTags**](OrderApi.md#getordertags) | **GET** /beta/order/{orderId}/tag | Get the tags for an order.
 [**GetOrderWarehouseFulfillmentData**](OrderApi.md#getorderwarehousefulfillmentdata) | **POST** /beta/order/getOrderWarehouseFulfillmentData | Run the Get Order Warehouse Fulfillment Plan method.
+[**RunFulfillmentPlan**](OrderApi.md#runfulfillmentplan) | **POST** /beta/order/runFulfillmentPlan | Run the RunFulfillmentPlan process.
 [**UpdateOrder**](OrderApi.md#updateorder) | **PUT** /beta/order | Update an order
 [**UpdateOrderCustomFields**](OrderApi.md#updateordercustomfields) | **PUT** /beta/order/customFields | Update an order custom fields
 
@@ -736,6 +737,70 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**GetOrderWarehouseFulfillmentDataOutput**](GetOrderWarehouseFulfillmentDataOutput.md)
+
+### Authorization
+
+[api_key](../README.md#api_key)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+<a name="runfulfillmentplan"></a>
+# **RunFulfillmentPlan**
+> List<ProcessOutputAPIModel> RunFulfillmentPlan (RunFulfillmentPlanInputAPIModel body)
+
+Run the RunFulfillmentPlan process.
+
+### Example
+```csharp
+using System;
+using System.Diagnostics;
+using Infoplus.Api;
+using Infoplus.Client;
+using Infoplus.Model;
+
+namespace Example
+{
+    public class RunFulfillmentPlanExample
+    {
+        public void main()
+        {
+            // Configure API key authorization: api_key
+            Configuration.Default.AddApiKey("API-Key", "YOUR_API_KEY");
+            // Uncomment below to setup prefix (e.g. Bearer) for API key, if needed
+            // Configuration.Default.AddApiKeyPrefix("API-Key", "Bearer");
+
+            var apiInstance = new OrderApi();
+            var body = new RunFulfillmentPlanInputAPIModel(); // RunFulfillmentPlanInputAPIModel | Input data for RunFulfillmentPlan process.
+
+            try
+            {
+                // Run the RunFulfillmentPlan process.
+                List&lt;ProcessOutputAPIModel&gt; result = apiInstance.RunFulfillmentPlan(body);
+                Debug.WriteLine(result);
+            }
+            catch (Exception e)
+            {
+                Debug.Print("Exception when calling OrderApi.RunFulfillmentPlan: " + e.Message );
+            }
+        }
+    }
+}
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **body** | [**RunFulfillmentPlanInputAPIModel**](RunFulfillmentPlanInputAPIModel.md)| Input data for RunFulfillmentPlan process. | 
+
+### Return type
+
+[**List<ProcessOutputAPIModel>**](ProcessOutputAPIModel.md)
 
 ### Authorization
 

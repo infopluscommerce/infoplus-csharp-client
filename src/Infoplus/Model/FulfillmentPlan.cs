@@ -46,6 +46,7 @@ namespace Infoplus.Model
         /// <param name="MaxOrders">MaxOrders.</param>
         /// <param name="BatchSize">BatchSize.</param>
         /// <param name="Version">Version.</param>
+        /// <param name="IsMassDistribution">IsMassDistribution (default to false).</param>
         /// <param name="CreatePickWork">CreatePickWork (required) (default to false).</param>
         /// <param name="PickingRule">PickingRule.</param>
         /// <param name="LayoutRule">LayoutRule.</param>
@@ -62,6 +63,7 @@ namespace Infoplus.Model
         /// <param name="PickScanSchemeId">PickScanSchemeId (required).</param>
         /// <param name="CartonizeOrders">CartonizeOrders (required) (default to false).</param>
         /// <param name="AutoShipCasebreakCartons">AutoShipCasebreakCartons (default to false).</param>
+        /// <param name="AutoShipOrders">AutoShipOrders (default to false).</param>
         /// <param name="PreGenerateParcelLabels">PreGenerateParcelLabels (default to false).</param>
         /// <param name="CreatePackingSlip">CreatePackingSlip (required).</param>
         /// <param name="OverridePackingSlipTemplateId">OverridePackingSlipTemplateId.</param>
@@ -71,7 +73,7 @@ namespace Infoplus.Model
         /// <param name="SendToExternalShippingSystem">SendToExternalShippingSystem (required) (default to false).</param>
         /// <param name="ExternalShippingSystemId">ExternalShippingSystemId.</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public FulfillmentPlan(string Name = default(string), string Description = default(string), int? WarehouseId = default(int?), int? OrderSmartFilterId = default(int?), int? LocationSmartFilterId = default(int?), int? MaxOrders = default(int?), int? BatchSize = default(int?), string Version = default(string), bool? CreatePickWork = false, string PickingRule = default(string), string LayoutRule = default(string), string PickSortRule = default(string), bool? CreatePickList = false, string PickListFormat = default(string), string PickListLayout = default(string), string PickListGroup = default(string), string PickListSort = default(string), bool? CreatePickSummary = false, string PickSummaryFormat = default(string), string PickSummaryLayout = default(string), string PickSummarySort = default(string), int? PickScanSchemeId = default(int?), bool? CartonizeOrders = false, bool? AutoShipCasebreakCartons = false, bool? PreGenerateParcelLabels = false, string CreatePackingSlip = default(string), int? OverridePackingSlipTemplateId = default(int?), bool? CreateOrderAssemblyGuide = false, string CreateOrderInvoice = default(string), int? OverrideOrderInvoiceTemplateId = default(int?), bool? SendToExternalShippingSystem = false, int? ExternalShippingSystemId = default(int?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public FulfillmentPlan(string Name = default(string), string Description = default(string), int? WarehouseId = default(int?), int? OrderSmartFilterId = default(int?), int? LocationSmartFilterId = default(int?), int? MaxOrders = default(int?), int? BatchSize = default(int?), string Version = default(string), bool? IsMassDistribution = false, bool? CreatePickWork = false, string PickingRule = default(string), string LayoutRule = default(string), string PickSortRule = default(string), bool? CreatePickList = false, string PickListFormat = default(string), string PickListLayout = default(string), string PickListGroup = default(string), string PickListSort = default(string), bool? CreatePickSummary = false, string PickSummaryFormat = default(string), string PickSummaryLayout = default(string), string PickSummarySort = default(string), int? PickScanSchemeId = default(int?), bool? CartonizeOrders = false, bool? AutoShipCasebreakCartons = false, bool? AutoShipOrders = false, bool? PreGenerateParcelLabels = false, string CreatePackingSlip = default(string), int? OverridePackingSlipTemplateId = default(int?), bool? CreateOrderAssemblyGuide = false, string CreateOrderInvoice = default(string), int? OverrideOrderInvoiceTemplateId = default(int?), bool? SendToExternalShippingSystem = false, int? ExternalShippingSystemId = default(int?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
             // to ensure "Name" is required (not null)
             if (Name == null)
@@ -159,6 +161,15 @@ namespace Infoplus.Model
             this.MaxOrders = MaxOrders;
             this.BatchSize = BatchSize;
             this.Version = Version;
+            // use default value if no "IsMassDistribution" provided
+            if (IsMassDistribution == null)
+            {
+                this.IsMassDistribution = false;
+            }
+            else
+            {
+                this.IsMassDistribution = IsMassDistribution;
+            }
             this.PickingRule = PickingRule;
             this.LayoutRule = LayoutRule;
             this.PickSortRule = PickSortRule;
@@ -195,6 +206,15 @@ namespace Infoplus.Model
             else
             {
                 this.AutoShipCasebreakCartons = AutoShipCasebreakCartons;
+            }
+            // use default value if no "AutoShipOrders" provided
+            if (AutoShipOrders == null)
+            {
+                this.AutoShipOrders = false;
+            }
+            else
+            {
+                this.AutoShipOrders = AutoShipOrders;
             }
             // use default value if no "PreGenerateParcelLabels" provided
             if (PreGenerateParcelLabels == null)
@@ -293,6 +313,12 @@ namespace Infoplus.Model
         public string Version { get; set; }
 
         /// <summary>
+        /// Gets or Sets IsMassDistribution
+        /// </summary>
+        [DataMember(Name="isMassDistribution", EmitDefaultValue=false)]
+        public bool? IsMassDistribution { get; set; }
+
+        /// <summary>
         /// Gets or Sets CreatePickWork
         /// </summary>
         [DataMember(Name="createPickWork", EmitDefaultValue=false)]
@@ -389,6 +415,12 @@ namespace Infoplus.Model
         public bool? AutoShipCasebreakCartons { get; set; }
 
         /// <summary>
+        /// Gets or Sets AutoShipOrders
+        /// </summary>
+        [DataMember(Name="autoShipOrders", EmitDefaultValue=false)]
+        public bool? AutoShipOrders { get; set; }
+
+        /// <summary>
         /// Gets or Sets PreGenerateParcelLabels
         /// </summary>
         [DataMember(Name="preGenerateParcelLabels", EmitDefaultValue=false)]
@@ -462,6 +494,7 @@ namespace Infoplus.Model
             sb.Append("  MaxOrders: ").Append(MaxOrders).Append("\n");
             sb.Append("  BatchSize: ").Append(BatchSize).Append("\n");
             sb.Append("  Version: ").Append(Version).Append("\n");
+            sb.Append("  IsMassDistribution: ").Append(IsMassDistribution).Append("\n");
             sb.Append("  CreatePickWork: ").Append(CreatePickWork).Append("\n");
             sb.Append("  PickingRule: ").Append(PickingRule).Append("\n");
             sb.Append("  LayoutRule: ").Append(LayoutRule).Append("\n");
@@ -478,6 +511,7 @@ namespace Infoplus.Model
             sb.Append("  PickScanSchemeId: ").Append(PickScanSchemeId).Append("\n");
             sb.Append("  CartonizeOrders: ").Append(CartonizeOrders).Append("\n");
             sb.Append("  AutoShipCasebreakCartons: ").Append(AutoShipCasebreakCartons).Append("\n");
+            sb.Append("  AutoShipOrders: ").Append(AutoShipOrders).Append("\n");
             sb.Append("  PreGenerateParcelLabels: ").Append(PreGenerateParcelLabels).Append("\n");
             sb.Append("  CreatePackingSlip: ").Append(CreatePackingSlip).Append("\n");
             sb.Append("  OverridePackingSlipTemplateId: ").Append(OverridePackingSlipTemplateId).Append("\n");
@@ -582,6 +616,11 @@ namespace Infoplus.Model
                     this.Version.Equals(input.Version))
                 ) && 
                 (
+                    this.IsMassDistribution == input.IsMassDistribution ||
+                    (this.IsMassDistribution != null &&
+                    this.IsMassDistribution.Equals(input.IsMassDistribution))
+                ) && 
+                (
                     this.CreatePickWork == input.CreatePickWork ||
                     (this.CreatePickWork != null &&
                     this.CreatePickWork.Equals(input.CreatePickWork))
@@ -660,6 +699,11 @@ namespace Infoplus.Model
                     this.AutoShipCasebreakCartons == input.AutoShipCasebreakCartons ||
                     (this.AutoShipCasebreakCartons != null &&
                     this.AutoShipCasebreakCartons.Equals(input.AutoShipCasebreakCartons))
+                ) && 
+                (
+                    this.AutoShipOrders == input.AutoShipOrders ||
+                    (this.AutoShipOrders != null &&
+                    this.AutoShipOrders.Equals(input.AutoShipOrders))
                 ) && 
                 (
                     this.PreGenerateParcelLabels == input.PreGenerateParcelLabels ||
@@ -741,6 +785,8 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.BatchSize.GetHashCode();
                 if (this.Version != null)
                     hashCode = hashCode * 59 + this.Version.GetHashCode();
+                if (this.IsMassDistribution != null)
+                    hashCode = hashCode * 59 + this.IsMassDistribution.GetHashCode();
                 if (this.CreatePickWork != null)
                     hashCode = hashCode * 59 + this.CreatePickWork.GetHashCode();
                 if (this.PickingRule != null)
@@ -773,6 +819,8 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.CartonizeOrders.GetHashCode();
                 if (this.AutoShipCasebreakCartons != null)
                     hashCode = hashCode * 59 + this.AutoShipCasebreakCartons.GetHashCode();
+                if (this.AutoShipOrders != null)
+                    hashCode = hashCode * 59 + this.AutoShipOrders.GetHashCode();
                 if (this.PreGenerateParcelLabels != null)
                     hashCode = hashCode * 59 + this.PreGenerateParcelLabels.GetHashCode();
                 if (this.CreatePackingSlip != null)

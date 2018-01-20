@@ -773,6 +773,18 @@ namespace Infoplus.Model
         public DateTime? ModifyDate { get; private set; }
 
         /// <summary>
+        /// Gets or Sets PrimaryImage
+        /// </summary>
+        [DataMember(Name="primaryImage", EmitDefaultValue=false)]
+        public string PrimaryImage { get; private set; }
+
+        /// <summary>
+        /// Gets or Sets PickImage
+        /// </summary>
+        [DataMember(Name="pickImage", EmitDefaultValue=false)]
+        public string PickImage { get; private set; }
+
+        /// <summary>
         /// Gets or Sets BehaviorType
         /// </summary>
         [DataMember(Name="behaviorType", EmitDefaultValue=false)]
@@ -1085,6 +1097,8 @@ namespace Infoplus.Model
             sb.Append("  VendorPrice: ").Append(VendorPrice).Append("\n");
             sb.Append("  VendorPer: ").Append(VendorPer).Append("\n");
             sb.Append("  ModifyDate: ").Append(ModifyDate).Append("\n");
+            sb.Append("  PrimaryImage: ").Append(PrimaryImage).Append("\n");
+            sb.Append("  PickImage: ").Append(PickImage).Append("\n");
             sb.Append("  BehaviorType: ").Append(BehaviorType).Append("\n");
             sb.Append("  ForwardLotMixingRule: ").Append(ForwardLotMixingRule).Append("\n");
             sb.Append("  StorageLotMixingRule: ").Append(StorageLotMixingRule).Append("\n");
@@ -1456,6 +1470,16 @@ namespace Infoplus.Model
                     this.ModifyDate.Equals(input.ModifyDate))
                 ) && 
                 (
+                    this.PrimaryImage == input.PrimaryImage ||
+                    (this.PrimaryImage != null &&
+                    this.PrimaryImage.Equals(input.PrimaryImage))
+                ) && 
+                (
+                    this.PickImage == input.PickImage ||
+                    (this.PickImage != null &&
+                    this.PickImage.Equals(input.PickImage))
+                ) && 
+                (
                     this.BehaviorType == input.BehaviorType ||
                     (this.BehaviorType != null &&
                     this.BehaviorType.Equals(input.BehaviorType))
@@ -1789,6 +1813,10 @@ namespace Infoplus.Model
                     hashCode = hashCode * 59 + this.VendorPer.GetHashCode();
                 if (this.ModifyDate != null)
                     hashCode = hashCode * 59 + this.ModifyDate.GetHashCode();
+                if (this.PrimaryImage != null)
+                    hashCode = hashCode * 59 + this.PrimaryImage.GetHashCode();
+                if (this.PickImage != null)
+                    hashCode = hashCode * 59 + this.PickImage.GetHashCode();
                 if (this.BehaviorType != null)
                     hashCode = hashCode * 59 + this.BehaviorType.GetHashCode();
                 if (this.ForwardLotMixingRule != null)

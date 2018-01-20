@@ -38,6 +38,8 @@ namespace Infoplus.Model
         /// <summary>
         /// Initializes a new instance of the <see cref="OrderLine" /> class.
         /// </summary>
+        /// <param name="Sku">Sku (required).</param>
+        /// <param name="OrderedQty">OrderedQty.</param>
         /// <param name="OrderAssemblyInstructions">OrderAssemblyInstructions.</param>
         /// <param name="ItemAccountCodeId">ItemAccountCodeId (required).</param>
         /// <param name="ItemLegacyLowStockContactId">ItemLegacyLowStockContactId (required).</param>
@@ -46,8 +48,17 @@ namespace Infoplus.Model
         /// <param name="ItemProductCodeId">ItemProductCodeId.</param>
         /// <param name="ItemSummaryCodeId">ItemSummaryCodeId (required).</param>
         /// <param name="CustomFields">CustomFields.</param>
-        public OrderLine(string OrderAssemblyInstructions = default(string), int? ItemAccountCodeId = default(int?), int? ItemLegacyLowStockContactId = default(int?), int? ItemMajorGroupId = default(int?), int? ItemSubGroupId = default(int?), int? ItemProductCodeId = default(int?), int? ItemSummaryCodeId = default(int?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
+        public OrderLine(string Sku = default(string), int? OrderedQty = default(int?), string OrderAssemblyInstructions = default(string), int? ItemAccountCodeId = default(int?), int? ItemLegacyLowStockContactId = default(int?), int? ItemMajorGroupId = default(int?), int? ItemSubGroupId = default(int?), int? ItemProductCodeId = default(int?), int? ItemSummaryCodeId = default(int?), Dictionary<string, Object> CustomFields = default(Dictionary<string, Object>))
         {
+            // to ensure "Sku" is required (not null)
+            if (Sku == null)
+            {
+                throw new InvalidDataException("Sku is a required property for OrderLine and cannot be null");
+            }
+            else
+            {
+                this.Sku = Sku;
+            }
             // to ensure "ItemAccountCodeId" is required (not null)
             if (ItemAccountCodeId == null)
             {
@@ -93,6 +104,7 @@ namespace Infoplus.Model
             {
                 this.ItemSummaryCodeId = ItemSummaryCodeId;
             }
+            this.OrderedQty = OrderedQty;
             this.OrderAssemblyInstructions = OrderAssemblyInstructions;
             this.ItemProductCodeId = ItemProductCodeId;
             this.CustomFields = CustomFields;
@@ -120,7 +132,7 @@ namespace Infoplus.Model
         /// Gets or Sets Sku
         /// </summary>
         [DataMember(Name="sku", EmitDefaultValue=false)]
-        public string Sku { get; private set; }
+        public string Sku { get; set; }
 
         /// <summary>
         /// Gets or Sets PoNoId
@@ -132,7 +144,7 @@ namespace Infoplus.Model
         /// Gets or Sets OrderedQty
         /// </summary>
         [DataMember(Name="orderedQty", EmitDefaultValue=false)]
-        public int? OrderedQty { get; private set; }
+        public int? OrderedQty { get; set; }
 
         /// <summary>
         /// Gets or Sets AllowedQty
