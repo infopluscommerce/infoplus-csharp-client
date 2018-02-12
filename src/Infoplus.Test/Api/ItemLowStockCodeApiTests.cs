@@ -45,7 +45,7 @@ namespace Infoplus.Test
     [TestFixture]
     public class ItemLowStockCodeApiTests
     {
-        private ItemLowStockCodeApi instance;
+        private ItemLowstockCodeApi instance;
 
         /// <summary>
         /// Setup before each unit test
@@ -53,7 +53,7 @@ namespace Infoplus.Test
         [SetUp]
         public void Init()
         {
-            instance = new ItemLowStockCodeApi();
+            instance = new ItemLowstockCodeApi();
         }
 
         /// <summary>
@@ -72,7 +72,7 @@ namespace Infoplus.Test
         public void InstanceTest()
         {
             // test 'IsInstanceOfType' ItemLowStockCodeApi
-            Assert.IsInstanceOfType(typeof(ItemLowStockCodeApi), instance, "instance is a ItemLowStockCodeApi");
+            Assert.IsInstanceOfType(typeof(ItemLowstockCodeApi), instance, "instance is a ItemLowStockCodeApi");
         }
 
         
